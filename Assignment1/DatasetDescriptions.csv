@@ -1,1 +1,11 @@
 Your name; Your GitHub user; Dataset name; Dataset URL; Dataset brief description
+Ádám Váradi; Hunvadam; Chickenpox Cases in Hungary; https://graphai-datasets.web.app/hungary_county_edges.csv; Description A spatio-temporal dataset of weekly chickenpox (childhood disease) cases from Hungary. The dataset consists of a county-level adjacency matrix of the county-level reported cases between 2005 and 2015. 
+Citation:
+@misc{rozemberczki2021chickenpox,
+      title={{Chickenpox Cases in Hungary: a Benchmark Dataset for Spatiotemporal Signal Processing with Graph Neural Networks}}, 
+      author={Benedek Rozemberczki and Paul Scherer and Oliver Kiss and Rik Sarkar and Tamas Ferenci},
+      year={2021},
+      eprint={2102.08100},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
