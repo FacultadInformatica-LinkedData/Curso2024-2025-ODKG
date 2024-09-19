@@ -1,0 +1,485 @@
+{
+	"@context": 
+	{
+		"schema": "https://schema.org",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"foaf:age":
+		{
+			"@id": "http://xmlns.com/foaf/0.1/age",
+			"@type": "xsd:integer"
+		}
+	},
+	"@type": "Person",
+	"givenName": "Carlos de la Cruz",
+	"familyName": "Ayala Vargas",
+	"name": "Carlos de la Cruz Ayala Vargas",
+	"sameAs": "https://www.linkedin.com/in/carlos-ayala-vargas/",
+	"birthPlace":
+	{
+		"@type": "Hospital",
+		"geo":
+		{
+			"@type": "GeoCoordinates",
+			"latitude": "41.384",
+			"longitude": "2.102"
+		},
+		"name": "Hospital San Juan de Dios",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"addressCountry": "España",
+			"addressRegion": "Cataluña",
+			"addressLocality": "Esplugas de Llobregat",
+			"postalCode": "08950",
+			"streetAddress": "Paseo de San Juan de Dios, 2"
+		},
+		"description": "Hospital San Juan de Dios Barcelona is a teaching hospital specializing in the fields of pediatrics, gynecology and obstetrics.",
+		"sameAs": "https://en.wikipedia.org/wiki/Hospital_Sant_Joan_de_D%C3%A9u_Barcelona"
+	},
+	"birthDate": "1980-04-02",
+	"foaf:age": "44",
+	"alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Politécnica de Cartagena",
+            "sameAs": "https://en.wikipedia.org/wiki/Polytechnic_University_of_Cartagena"
+        },
+        "parent":
+        [
+        	{
+        		"@type": "Person",
+			"givenName": "Antonio",
+			"familyName": "Ayala Abenza",
+			"birthPlace":
+			{
+				"@type": "Place",
+				"geo":
+				{
+					"@type": "GeoCoordinates",
+					"latitude": "41.384",
+					"longitude": "2.102"
+				},
+				"address":
+				{
+					"@type": "PostalAddress",
+					"addressCountry": "España",
+					"addressRegion": "Murcia",
+					"addressLocality": "Ulea",
+					"postalCode": "30612"
+				}
+			},
+			"birthDate": "1942-11-23",
+			"deathDate": "2021-10-23"
+        	},
+       	{
+        		"@type": "Person",
+			"givenName": "Victoria",
+			"familyName": "Vargas Abenza",
+			"birthPlace":
+			{
+				"@type": "Place",
+				"geo":
+				{
+					"@type": "GeoCoordinates",
+					"latitude": "38.139",
+					"longitude": "-1.33"
+				},
+				"address":
+				{
+					"@type": "PostalAddress",
+					"addressCountry": "España",
+					"addressRegion": "Murcia",
+					"addressLocality": "Ulea",
+					"postalCode": "30612"
+				}
+			},
+			"birthDate": "1945-01-14",
+			"foaf:age": "79"
+        	}
+        ],
+        "coursesList": 
+        [
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "Spanish",
+				"alternateName": "es"
+			},
+			"courseCode": "105000020",
+			"name": "Algoritmos y Estructuras de Datos",
+			"alternateName": "AED",
+			"description": "Teaching of main algorithms and data structures using Java as main learning tool",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-06",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Guillermo",
+						"familyName": "Román Díez"
+					},
+					{
+						"@type": "Person",
+						"givenName": "Lars-Åke",
+						"familyName": "Fredlund"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "Spanish",
+				"alternateName": "es"
+			},
+			"courseCode": "105000021",
+			"name": "Bases de Datos",
+			"alternateName": "BD",
+			"description": "Teaching of the main foundations for Open Data and Knowledge Graphs: RDF, RDF Schema, SPARQL, OWL, SHACL, etc",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-10",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Antonio Jesús",
+						"familyName": "Díaz Honrubia"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000893",
+			"name": "Big Data",
+			"alternateName": "BD",
+			"description": "Teaching of the fundamentals for the analysis of large volumes of data",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-11-05",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Antonio",
+						"familyName": "Latorre de la Fuente"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000899",
+			"name": "Cloud Computing and Big Data Ecosystems",
+			"alternateName": "CCBDE",
+			"description": "Teaching traditional data management systems and architectures for scalable distributed systems and data management systems",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-11",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Marta",
+						"familyName": "Patiño Martínez"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000895",
+			"name": "Data Processes",
+			"alternateName": "DP",
+			"description": "Teaching how to plan and a manage a data science project",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-09",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Ernestina",
+						"familyName": "Menasalvas Ruiz"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000892",
+			"name": "Data Visualization",
+			"alternateName": "DV",
+			"description": "Teaching of the fundamentals for the visualization of all kinds of information",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-09",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Pablo",
+						"familyName": "Toharia Rabasco"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000898",
+			"name": "Deep Learning",
+			"alternateName": "DL",
+			"description": "Presenting a theoretical and practical view of deep learning",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2025-01-28",
+				"endDate": "2025-04-08",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Martín",
+						"familyName": "Molina González"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000906",
+			"name": "Image Processing, Analysis and Classification",
+			"alternateName": "IPAC",
+			"description": "Teaching of the main foundations for image processing and analysis",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2025-01-28",
+				"endDate": "2025-04-08",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "José",
+						"familyName": "Crespo del Arco"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000897",
+			"name": "Machine Learning",
+			"alternateName": "ML",
+			"description": "Teaching how to solve supervised and unsupervised classification to transform data into knowledge",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-18",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "María Concepción",
+						"familyName": "Bielza González"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000899",
+			"name": "Open Data and Knowledge Graphs",
+			"alternateName": "ODKG",
+			"description": "Teaching of the main foundations for Open Data and Knowledge Graphs: RDF, RDF Schema, SPARQL, OWL, SHACL, etc",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-10",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Óscar",
+						"familyName": "Corcho García"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000905",
+			"name": "Programming for Data Science",
+			"alternateName": "PDS",
+			"description": "Teaching of Python as programming tool for data manipulation",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2025-01-28",
+				"endDate": "2025-04-08",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Guillermo Antonio",
+						"familyName": "Vigueras González"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000891",
+			"name": "Research Methodology",
+			"alternateName": "RM",
+			"description": "Introduction on methods, techniques and systems used in scientific research",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-04",
+				"endDate": "2024-09-06",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Óscar",
+						"familyName": "Corcho García"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000896",
+			"name": "Statistical Data Analysis",
+			"alternateName": "SDA",
+			"description": "Teaching of techniques to transform multivariate data into useful information",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2024-09-10",
+				"endDate": "2025-01-24",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Arminda",
+						"familyName": "Moreno Díaz"
+					}
+				]
+			}
+        	},
+        	{
+        		"@type": "Course",
+        		"availableLanguage":
+        		{
+				"@type": "Language",
+				"name": "English",
+				"alternateName": "en"
+			},
+			"courseCode": "103000907",
+			"name": "Time Series Data Mining",
+			"alternateName": "TSDM",
+			"description": "Teaching of all stages of the Knowledge Discovery process, focusing on time series",
+			"hasCourseInstance":
+			{
+				"@type": "CourseInstance",
+				"startDate": "2025-01-27",
+				"endDate": "2025-04-08",
+				"instructor": 
+				[
+					{
+						"@type": "Person",
+						"givenName": "Juan Pedro",
+						"familyName": "Caraca-Valente Hernández"
+					}
+				]
+			}
+        	}
+        ]
+}
