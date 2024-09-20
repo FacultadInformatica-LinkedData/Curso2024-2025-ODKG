@@ -1,17 +1,19 @@
-@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix data : <http://www.data.com/ontology/data> .
 
-<info:ark/67531/metadc1803091>
-  dc11:title "Skill-Building in Online Metadata Instruction: Quality Evaluation of Student-Created Metadata" ;
-  dc11:creator "Zavalina, Oksana", "Burke, Mary" ;
-  dc11:contributor "Association for Library and Information Science Education" ;
-  dc11:publisher "University of Illinois at Urbana-Champaign" ;
-  dc11:date "2020-10-09" ;
-  dc11:language <https://digital2.library.unt.edu/vocabularies/languages/#eng> ;
-  dc11:description "Paper addressing the need for effective training in metadata creation for library and information science students through an overview of the metadata creation skill-building content of the online introductory graduate metadata course at the University of North Texas, results of the analysis of quality in student-created metadata records, and discussion of how the observed common metadata quality issues might inform curriculum development." ;
-  dc11:subject "metadata", "metadata education", "skill-building instruction", "online pedagogy", "quality evaluation" ;
-  dc11:source "Association for Library and Information Science Education (ALISE) Annual Conference, October 13-23, 2020." ;
-  dc11:relation "Skill-Building in Online Graduate-Level Metadata Instruction through the Prism of Quality Evaluation of Student-Created Metadata, ark:/67531/metadc1803092" ;
-  dc11:rights <https://digital2.library.unt.edu/vocabularies/rights-access/#public>, <https://digital2.library.unt.edu/vocabularies/rights-licenses/#by-sa> ;
-  dc11:type <https://digital2.library.unt.edu/vocabularies/resource-types/#text_article> ;
-  dc11:format "7 p.", <https://digital2.library.unt.edu/vocabularies/formats/#text> ;
-  dc11:identifier <https://digital.library.unt.edu/ark:/67531/metadc1803091/>, "ark: ark:/67531/metadc1803091" .
+:Class01 data:includes Computer101 ;
+         data:includes Sensor029 .  
+
+
+:Computer101 a Class01;
+    data:hasOwner User10A .
+
+:User10A 
+    data:hasName "Pedro".
+
+:Sensor029 a Class01;
+    data:hasMeasurement :Measurement8401
+    
+
+:Measurement8401 
+    data:hasTemperature 29;
+    data:atTime: 2010-06-12T12:00:12
