@@ -1,0 +1,21 @@
+{
+  "@context": "http://schema.org/",
+  "id": "http://example.com/ontologies/classes/Class01",
+  "http://www.ontologies.org/ontologies/classes#includes": [
+    {
+      "id": "http://example.com/ontologies/classes/Sensor029",
+      "http://www.ontologies.org/ontologies/classes#hasMeasurement": {
+        "id": "http://example.com/ontologies/classes/Measurement8401",
+        "http://www.ontologies.org/ontologies/classes#atTime": "2010-06-12T12:00:12",
+        "http://www.ontologies.org/ontologies/classes#hasTemperature": "29"
+      }
+    },
+    {
+      "id": "http://example.com/ontologies/classes/Computer101",
+      "http://www.ontologies.org/ontologies/classes#hasOwner": {
+        "id": "http://example.com/ontologies/classes/User10A",
+        "http://www.ontologies.org/ontologies/classes#hasName": "Pedro"
+      }
+    }
+  ]
+}
