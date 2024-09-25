@@ -1,13 +1,16 @@
 {
     "@context": {
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "data": "http://DakotaMellish.com/ontology#",
       "age": "rdfs:label",
       "name":"rdfs:label",
       "teachers":"rdfs:label",
       "description":"rdfs:label",
       "almaMater": "rdfs:label",
       "parents": "rdf:label",
-      "schoolSubjects": "rdfs:label"
+      "schoolSubjects": "rdfs:label",
+      "Course":"data:Course",
+      "Person":"data:Person"
     },
     "@id": "Dakota Mellish",
     "@type": "Person",
