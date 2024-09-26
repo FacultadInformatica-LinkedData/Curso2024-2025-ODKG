@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "ex": "http://example.org#",
+    "vby": "http://vocabulary.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "ex:Class01",
+  "vby:includes": [
+    {
+      "@id": "ex:Sensor029",
+      "vby:hasMeasurement": {
+        "@id": "ex:Measurement8401",
+        "vby:hasTemperature": {
+          "@value": 29,
+          "@type": "xsd:integer"
+        },
+        "vby:atTime": {
+          "@value": "2010-06-12T12:00:12",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+    {
+      "@id": "ex:Computer101",
+      "vby:hasOwner": {
+        "@id": "ex:User10A",
+        "vby:hasName": "Pedro"
+      }
+    }
+  ]
+}
