@@ -120,9 +120,6 @@ q1 = prepareQuery('''
 for r in g.query(q1):
   print(r.Name)
 
-
-#---------------QUITAR
-
 """**Task 7.6: List the age of all living things in descending order (in SPARQL only)**"""
 
 # TO DO
