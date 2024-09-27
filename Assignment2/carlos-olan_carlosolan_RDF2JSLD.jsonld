@@ -1,0 +1,46 @@
+{
+	"@context": { 
+	  "ex": "http://www.example.org#",
+	  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	  "xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+  
+	"@graph": [
+	  {	
+		"@id": "ex:class01",
+		"@type": "ex:Class",
+		"ex:includes": [
+		  {"@id": "ex:Sensor029"},
+		  {"@id": "ex:computer229"}
+		]
+	  },
+	  {
+		"@id": "ex:Sensor029",
+		"@type": "ex:Sensor",
+		"ex:includes": {"@id": "ex:Measurement8401"}
+	  },
+	  {
+		"@id": "ex:Measurement8401",
+		"@type": "ex:Measurement",
+		"ex:hasTemperature": {
+		  "@value": "29",
+		  "@type": "xsd:integer"
+		},
+		"ex:atTime": {
+		  "@value": "2010-06-12T12:01:12",
+		  "@type": "xsd:dateTime"
+		}
+	  },
+	  { 
+		"@id": "ex:computer229", 
+		"@type": "ex:Computer", 
+		"ex:hasOwner": {"@id": "ex:User10A"}
+	  },
+	  { 
+		"@id": "ex:User10A", 
+		"@type": "ex:Person", 
+		"ex:hasName": "Pedro" 
+	  }
+	]
+  }
+  
