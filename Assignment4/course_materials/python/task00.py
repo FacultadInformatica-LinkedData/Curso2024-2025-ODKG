@@ -11,8 +11,6 @@ Original file is located at
 Instalamos las dependencias necesarias en nuestro entorno. `pip` es el gestor de paquetes de Python.
 """
 
-!pip install rdflib
-
 """Del paquete rdflib importamos las clases necesarias para la tarea"""
 
 from rdflib import Graph, Namespace, Literal
@@ -49,4 +47,4 @@ for subj, pred, obj in search:
 """Adicionalmenta también podemos mostrar todas las tripletas serializando nuestro grafo en alguno de los formato soportados."""
 
 #@title
-print(g.serialize(format="xml").decode("UTF-8"))
+print(g.serialize(format="xml"))
