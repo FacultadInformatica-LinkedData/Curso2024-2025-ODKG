@@ -1,1 +1,3 @@
 Your name; Your GitHub user; Dataset name; Dataset URL; Dataset brief description
+Sergio Sánchez-Carvajales Francoy;sergiosanchezcarvajales;All NUFORC Report;https://data.world/timothyrenner/ufo-sightings;The National UFO Research Center (NUFORC) collects and serves over 100,000 reports of UFO sightings.
+This dataset contains the report content itself including the time, location duration, and other attributes in both the raw form as it is recorded on the NUFORC site as well as a refined, standardized form that also contains lat/lon coordinates.
