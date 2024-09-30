@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ex": "http://example.org/#",
+    "fullName": "ex:fullName",
+    "hometown": "ex:hometown",
+    "age": "ex:age",
+    "almaMater": "ex:almaMater",
+    "parents": {
+      "@id": "ex:parents",
+      "father": "ex:father",
+      "mother": "ex:mother"
+    },
+    "subjects": {
+      "@id": "ex:subjects",
+      "name": "ex:name",
+      "teachers": "ex:teachers",
+      "description": "ex:description"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "ex:Person",
+      "fullName": "Julia Montoya Jim\u00e9nez",
+      "hometown": "Madrid",
+      "age": {
+        "@value": 23,
+        "@type": "xsd:integer"
+      },
+      "almaMater": "Universidad Rey Juan Carlos",
+      "parents": {
+        "father": "Carlos Montoya Rejas",
+        "mother": "Elisa Jim\u00e9nez Casado"
+      },
+      "subjects": [
+        {
+          "name": "Data Processes",
+          "teachers": [
+            "Ernestina Menasalvas",
+            "Alejandro Rodr\u00edguez",
+            "Antonio Jes\u00fas D\u00edaz Honrubia"
+          ],
+          "description": "Exploration of techniques and tools for managing, transforming, and processing large datasets efficiently."
+        },
+        {
+          "name": "Data Visualization",
+          "teachers": [
+            "Pablo Toharia"
+          ],
+          "description": "Techniques for visually representing data to communicate insights and patterns effectively."
+        },
+        {
+          "name": "Intelligent Systems",
+          "teachers": [
+            "Mart\u00edn Molina",
+            "Mari Carmen Su\u00e1rez de Figueroa",
+            "Mariano Rico",
+            "V\u00edctor Rodr\u00edguez Doncel"
+          ],
+          "description": "Study of systems that simulate human intelligence using machine learning, reasoning, and decision-making."
+        },
+        {
+          "name": "Machine Learning",
+          "teachers": [
+            "Pedro Larra\u00f1aga M\u00fagica",
+            "Concha Bielza Lozoya"
+          ],
+          "description": "Study of algorithms and models that allow computers to learn from data and make predictions or decisions."
+        },
+        {
+          "name": "Open Data and Knowledge Graphs",
+          "teachers": [
+            "Oscar Corcho",
+            "Ra\u00fal Garc\u00eda-Castro"
+          ],
+          "description": "Exploration of the use of open datasets and knowledge graphs for enhanced data connectivity and semantic understanding."
+        },
+        {
+          "name": "Statistical Data Analysis",
+          "teachers": [
+            "Arminda Moreno D\u00edaz"
+          ],
+          "description": "Introduction to statistical methods for analyzing and interpreting complex datasets."
+        },
+        {
+          "name": "Introduction to Innovation and Entrepreneurship",
+          "teachers": [
+            "Roberto Martinez Gamero",
+            "Alberto Tejero Lopez"
+          ],
+          "description": "An exploration of the fundamental principles and practices of innovation and entrepreneurship, focusing on the process of developing new ideas, creating value, and launching startups or innovative projects in various industries."
+        },
+        {
+          "name": "Big Data",
+          "teachers": [
+            "Antonio LaTorre",
+            "Juli\u00e1n Arenas",
+            "Jorge Acosta"
+          ],
+          "description": "Understanding the architecture, technologies, and challenges associated with handling extremely large and complex datasets."
+        }
+      ]
+    }
+  ]
+}
