@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "parents": {
+      "@id": "https://schema.org/Person",
+      "@container": "@set"
+    }
+  },
+  "@type": "Person",
+  "name": "Jaime Garcia",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Madrid"
+  },
+  "age": 22,
+  "alumniOf": {
+    "@type": "University",
+    "name": "UPM"
+  },
+  "parents": [
+    {
+      "@type": "Person",
+      "name": "Miguel"
+    },
+    {
+      "@type": "Person",
+      "name": "Belen"
+    }
+  ],
+  "subjectOf": {
+    "@type": "Course",
+    "name": "Open Data",
+    "professor": {
+      "@type": "Person",
+      "name": "Oscar Corcho"
+    },
+    "description": "Open Data promotes the publication of data in an accessible and reusable format. Knowledge graphs structure data into semantic networks, enhancing understanding and connections between information."
+  }
+}
