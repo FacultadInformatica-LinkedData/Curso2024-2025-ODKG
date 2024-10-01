@@ -1,0 +1,83 @@
+{
+	"@context": {
+	  "ex": "http://example.org/",
+	  "people": "http://xmlns.com/foaf/0.1/"
+	},
+	"@id": "ex:JavierArteaga",
+	"@type": "people:Person",
+	"fullName": "Javier Arteaga",
+	"homeTown": "Pozuelo",
+	"age": 21,
+	"almaMater": ["Universidad Politécnica de Madrid"],
+	"parentsName": {
+	  "fatherName": "F. Javier Arteaga",
+	  "motherName": "Monica Puell"
+	},
+	"subjects": [
+	  {
+		"subjectName": "Introduction to Research Methodology",
+		"courseTeachers": [
+		  {
+			"@id": "ex:OscarCorchoGarcía",
+			"@type": "people:teacher",
+			"fullName": "Oscar Corcho García"
+		  }
+		],
+		"briefDescription": "This seminar aims to inform and orient students about the most common techniques, standards and systems for the practice of scientific research and its methodological and documentary bases."
+	  },
+	  {
+		"subjectName": "BigData",
+		"courseTeachers": [
+		  {
+			"@id": "ex:AntonioLatorreFuente",
+			"@type": "people:teacher",
+			"fullName": "Antonio Latorre De La Fuente"
+		  },
+		  {
+			"@id": "ex:JesusMontesSanchez",
+			"@type": "people:teacher",
+			"fullName": "Jesus Montes Sanchez"
+		  }
+		],
+		"briefDescription": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+	  },
+	  {
+		"subjectName": "Cloud computing and big data ecosystems design",
+		"courseTeachers": [
+		  {
+			"@id": "ex:MartaPatiñoMartinez",
+			"@type": "people:teacher",
+			"fullName": "Marta Patiño Martinez"
+		  },
+		  {
+			"@id": "ex:TonghongLi",
+			"@type": "people:teacher",
+			"fullName": "Tonghong Li"
+		  },
+		  {
+			"@id": "ex:AinhoaAzquetaAlzuaz",
+			"@type": "people:teacher",
+			"fullName": "Ainhoa Azqueta Alzuaz"
+		  }
+		],
+		"briefDescription": "This course presents traditional data management systems and architectures for scalable distributed systems and data management systems: bigtable, data streaming, persistent queues."
+	  },
+	  {
+		"subjectName": "DataProcesses",
+		"courseTeachers": [
+		  {
+			"@id": "ex:AlejandroRodríguezGonzález",
+			"@type": "people:teacher",
+			"fullName": "Alejandro Rodríguez González"
+		  },
+		  {
+			"@id": "ex:ErnestinaMenasalvas",
+			"@type": "people:teacher",
+			"fullName": "Ernestina Menasalvas"
+		  }
+		],
+		"briefDescription": "This course focuses on data processing techniques, emphasizing the transformation, analysis, and interpretation of large datasets."
+	  }
+	]
+  }
+  

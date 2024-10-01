@@ -1,0 +1,42 @@
+from JSON to JSON-LD
+
+{
+  "@context": {
+    "ex": "http://upm/ontologies.com/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Class01",
+      "ex:includes": [
+        {
+          "@id": "ex:Sensor029"
+        },
+        {
+          "@id": "ex:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "ex:Sensor029",
+      "ex:hasMeasurement": {
+        "@id": "ex:Measurement8401"
+      }
+    },
+    {
+      "@id": "ex:Measurement8401",
+      "ex:hasTemperature": "29",
+      "ex:atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "ex:Computer101",
+      "ex:hasOwner": {
+        "@id": "ex:User10A"
+      }
+    },
+    {
+      "@id": "ex:User10A",
+      "ex:hasOwner": "Pedro"
+    }
+  ]
+}
