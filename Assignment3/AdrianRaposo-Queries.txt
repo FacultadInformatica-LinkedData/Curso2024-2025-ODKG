@@ -1,0 +1,165 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>) 
+
+#Query url: https://dbpedia.org/snorql/?query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp%0D%0AWHERE+%7B%0D%0A++%3Fs+rdf%3Atype+dbo%3APolitician+.%0D%0A++%3Fs+%3Fp+%3Fo+.%0D%0A%7D
+
+#Query:
+
+```
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p
+WHERE {
+  ?s rdf:type dbo:Politician .
+  ?s ?p ?o .
+}
+```
+
+#SPARQL results:
+
+rdf:type [http]
+rdfs:label [http]
+rdfs:comment [http]
+rdfs:seeAlso [http]
+foaf:name [http]
+foaf:homepage [http]
+dbpedia2:name [http]
+foaf:depiction [http]
+dbpedia:ontology/birthPlace [http]
+dbpedia:ontology/deathPlace [http]
+dbpedia2:deathPlace [http]
+dbpedia:ontology/deathDate [http]
+dbpedia2:birthPlace [http]
+[...]
+------------------------------------------------------------------
+
+2.Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+#Query url: https://dbpedia.org/snorql/?query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fp%0D%0AWHERE+%7B%0D%0A++%3Fs+rdf%3Atype+dbo%3APolitician+.%0D%0A++%3Fs+%3Fp+%3Fo+.%0D%0A++FILTER%28%3Fp%21%3D+rdf%3Atype%29%0D%0A%0D%0A%7D
+
+#Query: 
+
+```
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p
+WHERE {
+  ?s rdf:type dbo:Politician .
+  ?s ?p ?o .
+  FILTER(?p!= rdf:type)
+
+}
+
+```
+#SPARQL results:
+rdfs:label [http]
+rdfs:comment [http]
+rdfs:seeAlso [http]
+foaf:name [http]
+foaf:nick [http]
+foaf:homepage [http]
+skos:exactMatch [http]
+dbpedia2:name [http]
+foaf:depiction [http]
+dbpedia:ontology/birthPlace [http]
+dbpedia:ontology/deathPlace [http]
+dbpedia2:deathPlace [http]
+[...]
+
+------------------------------------------------------------------
+
+3.Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
+
+#Query url: https://dbpedia.org/snorql/?query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Fo%0D%0AWHERE+%7B%0D%0A++%3Fs+rdf%3Atype+dbo%3APolitician+.%0D%0A++%3Fs+%3Fp+%3Fo+.%0D%0A%0D%0A++FILTER%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%0D%0A%7D
+
+#Query:
+
+```
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT  ?o
+WHERE {
+  ?s rdf:type dbo:Politician .
+  ?s ?p ?o .
+
+  FILTER(?p != rdf:type)
+
+}
+```
+#SPARQL results:
+
+"CaMia Hopson"@en
+"كابل بريكينريدغ"@ar
+"Cabell Breckinridge"@en
+"Cabo Almi"@en
+"كابو ألمي"@ar
+"Cabo Almi"@es
+"Cabo Almi"@fr
+"Cabo Almi"@pt
+"Cabo Daciolo"@en
+"Cabo Daciolo"@de
+"Cabo Daciolo"@es
+"Cabo Daciolo"@pt
+[...]
+------------------------------------------------------------------
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+#Query url: https://dbpedia.org/snorql/?query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Fp+%28GROUP_CONCAT%28DISTINCT+%3Fo%3B+SEPARATOR%3D%22%2C+%22%29+AS+%3Fo%29%0D%0AWHERE+%7B%0D%0A++%3Fs+rdf%3Atype+dbo%3APolitician+.%0D%0A++%3Fs+%3Fp+%3Fo+.%0D%0A++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0AGROUP+BY+%3Fp%0D%0A
+
+#Query: 
+
+
+```
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?p (GROUP_CONCAT(DISTINCT ?o; SEPARATOR=", ") AS ?o)
+WHERE {
+  ?s rdf:type dbo:Politician .
+  ?s ?p ?o .
+  FILTER (?p != rdf:type)
+}
+GROUP BY ?p
+
+```
+#SPARQL results:
+
+dbpedia:ontology/birthDate [http]	"1665-03-06, 1688-02-07, ...
+owl:sameAs [http]	"http://af.dbpedia.org/resource/Calle_Schlettwein, http://af.dbpedia.org/resource/Calvin_Coolidge, ...
+dbpedia2:after [http]	"N/A, Patrick Boies, Philos B. Tyler, Thomas Robins, ...
+dbpedia2:battles [http]	"*American Revolutionary War **1780 Black Camp Rebellion, American Civil War * Battle o ...
+[...]
+
+
+
+------------------------------------------------------------------
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+#Query url: https://dbpedia.org/snorql/?query=SELECT+%3Fp+%28COUNT%28DISTINCT+%3Fo+%29+AS+%3FdistinctValuesCount%29%0D%0AWHERE+%7B%0D%0A++%3Fs+rdf%3Atype+dbo%3APolitician+.%0D%0A++%3Fs+%3Fp+%3Fo.%0D%0A++FILTER+%28%3Fp+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0AGROUP+BY+%3Fp
+
+#Query:
+
+
+```
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?p (COUNT(DISTINCT ?o ) AS ?distinctValuesCount)
+WHERE {
+  ?s rdf:type dbo:Politician .
+  ?s ?p ?o.
+  FILTER (?p != rdf:type)
+}
+GROUP BY ?p
+
+```
+#SPARQL results:
+dbpedia:ontology/birthDate [http]	46880
+owl:sameAs [http]	919627
+dbpedia2:after [http]	35969
+dbpedia2:battles [http]	3815
+dbpedia2:before [http]	35715
+dbpedia2:education [http]	7988
+dbpedia2:honorificSuffix [http]	1624
+dbpedia2:s [http]	1209
+[...]
+------------------------------------------------------------------
