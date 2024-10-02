@@ -6,7 +6,7 @@ Members
 
 2. Carlos David Olan Olvera - Carlos-Olan
 
-3. Juan Andrés Guevara Ángel - guevaraangel
+3. Juan Andrés Guevara Ángel - jguevaraangel
 
 3. Aron Lausch - Ar0n01
 
