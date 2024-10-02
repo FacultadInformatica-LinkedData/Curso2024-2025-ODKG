@@ -1,0 +1,140 @@
+QUERY 1:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property
+WHERE {
+    ?x rdf:type dbo:Politician .
+    ?x ?property ?value .
+}
+
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE+%7B%0D%0A++++%3Fx+rdf%3Atype+dbo%3APolitician+.%0D%0A++++%3Fx+%3Fproperty+%3Fvalue+.%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+RESULTADO QUERY:
+
+property
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.w3.org/2000/01/rdf-schema#seeAlso
+
+
+QUERY 2:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property
+WHERE {
+    ?x rdf:type dbo:Politician .
+    ?x ?property ?value .
+    FILTER NOT EXISTS {
+        ?x rdf:type ?value.
+    }
+}
+
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE+%7B%0D%0A++++%3Fx+rdf%3Atype+dbo%3APolitician+.%0D%0A++++%3Fx+%3Fproperty+%3Fvalue+.%0D%0A++++FILTER+NOT+EXISTS+%7B%0D%0A++++++++%3Fx+rdf%3Atype+%3Fvalue.%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+RESULTADO QUERY:
+
+property
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.w3.org/2000/01/rdf-schema#seeAlso
+http://xmlns.com/foaf/0.1/name
+
+
+QUERY 3:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?value
+WHERE {
+    ?x rdf:type dbo:Politician .
+    ?x ?property ?value .
+    FILTER NOT EXISTS {
+        ?x rdf:type ?value.
+    }
+}
+
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fvalue%0D%0AWHERE+%7B%0D%0A++++%3Fx+rdf%3Atype+dbo%3APolitician+.%0D%0A++++%3Fx+%3Fproperty+%3Fvalue+.%0D%0A++++FILTER+NOT+EXISTS+%7B%0D%0A++++++++%3Fx+rdf%3Atype+%3Fvalue.%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+RESULTADO QUERY:
+
+value
+"CaMia Hopson"@en
+"كابل بريكينريدغ"@ar
+"Cabell Breckinridge"@en
+"Cabo Almi"@en
+
+
+QUERY 4:
+
+#output-format:text/html
+define sql:signal-unconnected-variables 1
+define sql:signal-void-variables 1
+define input:default-graph-uri <http://dbpedia.org>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?property (GROUP_CONCAT(DISTINCT ?value; SEPARATOR=", ") AS ?differentValues)
+WHERE
+  { ?x rdf:type <http://dbpedia.org/ontology/Politician> ;
+                ?property  ?value
+        FILTER NOT EXISTS {
+        ?x rdf:type ?value.
+    }
+  }
+GROUP BY ?property
+
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=%23output-format%3Atext%2Fhtml%0D%0Adefine+sql%3Asignal-unconnected-variables+1%0D%0Adefine+sql%3Asignal-void-variables+1%0D%0Adefine+input%3Adefault-graph-uri+%3Chttp%3A%2F%2Fdbpedia.org%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fproperty+%28GROUP_CONCAT%28DISTINCT+%3Fvalue%3B+SEPARATOR%3D%22%2C+%22%29+AS+%3FdifferentValues%29%0D%0AWHERE%0D%0A++%7B+%3Fx+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty++%3Fvalue%0D%0A++++++++FILTER+NOT+EXISTS+%7B%0D%0A++++++++%3Fx+rdf%3Atype+%3Fvalue.%0D%0A++++%7D%0D%0A++%7D%0D%0AGROUP+BY+%3Fproperty%0D%0A%0D%0A%0D%0A&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+RESULTADO QUERY:
+
+property	differentValues
+http://dbpedia.org/ontology/birthDate	
+0223-05-06, 1340-03-05, 1585-09-09, 1602-07-14
+http://www.w3.org/2002/07/owl#sameAs	
+http://af.dbpedia.org/resource/Calle_Schlettwein, http://af.dbpedia.org/resource/Calvin_Coolidge, http://af.dbpedia.org/resource/Cameron_Dugmore
+http://dbpedia.org/property/after	
+Andrew M. Perlman, At-large members:, Carl Fredrik Riben
+
+
+QUERY 5:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?property (COUNT(DISTINCT ?value) AS ?distinctValueCount)
+WHERE {
+    ?politician rdf:type dbo:Politician;
+    ?property ?value .
+    FILTER(?property != rdf:type)
+}
+GROUP BY ?property
+ORDER BY DESC(?distinctValueCount)
+
+
+https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fproperty+%28COUNT%28DISTINCT+%3Fvalue%29+AS+%3FdistinctValueCount%29%0D%0AWHERE+%7B%0D%0A++++%3Fpolitician+rdf%3Atype+dbo%3APolitician%3B%0D%0A++++%3Fproperty+%3Fvalue+.%0D%0A++++FILTER%28%3Fproperty+%21%3D+rdf%3Atype%29%0D%0A%7D%0D%0AGROUP+BY+%3Fproperty%0D%0AORDER+BY+DESC%28%3FdistinctValueCount%29%0D%0A&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+RESULTADO QUERY:
+
+property	distinctValueCount
+http://www.w3.org/2002/07/owl#sameAs	
+1462218
+http://dbpedia.org/ontology/wikiPageWikiLink	
+1296629
+http://www.w3.org/2000/01/rdf-schema#label	
+566810
+http://dbpedia.org/ontology/abstract	
+562882
