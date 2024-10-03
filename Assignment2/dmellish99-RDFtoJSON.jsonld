@@ -1,0 +1,42 @@
+{
+    "@context": {
+      "data": "http://www.data.com/ontology/data",
+      "xsd":"https://www.w3.org/2001/XMLSchema#",
+      "hasTemperature":"xsd:float",
+      "atTime":"xsd:dateTime",
+      "User":"http://www.data.com/ontology/user",
+      "Measurement":"http://www.data.com/ontology/Measurement",
+      "hasOwner":"http://www.data.com/ontology/hasOwner",
+      "hasName":"http://www.data.com/ontology/hasName",
+      "Class01":"data:Class01"
+
+
+    },
+    "@type": "Class",
+    "@id": "Class01",
+    "includes": [
+      {
+        "@type": "Class01",
+        "@id": "Sensor029",
+        "hasMeasurement": [
+          {
+            "@type": "Measurement",
+            "@id": "Measurement8401",
+            "hasTemperature": 29,
+            "atTime": "2010-06-12T12:00:12"
+          }
+        ]
+      },
+      {
+        "@type": "Class01",
+        "@id": "Computer101",
+        "hasOwner": [
+          {
+            "@type": "User",
+            "@id": "User10A",
+            "hasName": "Pedro"
+          }
+        ]
+      }
+    ]
+  }
