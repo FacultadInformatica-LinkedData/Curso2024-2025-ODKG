@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://data.three.org#JohnDoe">
+    <owl:sameAs rdf:resource="http://data.four.org#0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.three.org#SaraJones">
+    <owl:sameAs rdf:resource="http://data.four.org#0001"/>
+  </rdf:Description>
+</rdf:RDF>
