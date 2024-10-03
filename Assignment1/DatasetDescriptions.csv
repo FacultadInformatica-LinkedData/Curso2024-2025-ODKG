@@ -1,1 +1,2 @@
 Your name; Your GitHub user; Dataset name; Dataset URL; Dataset brief description
+Juan Andres Guevara Angel; jguevaraangel; GEM/web_nlg; https://huggingface.co/datasets/GEM/web_nlg; bilingual dataset (English, Russian) of parallel DBpedia triple sets and short texts that cover about 450 different DBpedia properties.
