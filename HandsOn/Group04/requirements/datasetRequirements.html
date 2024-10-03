@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8" />
+        <link rel = "icon" href = "https://svgur.com/i/1B63.svg" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+        <meta
+            name = "description"
+            content = "UPM - Open Data and Knowledge Graphs course - Hands-On Assignment #1 - Dataset Requirements"
+        />
+        <meta name = "author" content = "Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala" />
+        <meta name = "keywords" content = "ODKG, Hands-On, Assignment 1, datasets, Open Data, Linked Data, Smart Cities" />
+        <title>Dataset Requirements - ODKG Hands-On Assignment 1</title>
+        <style>
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+            }
+            span {
+                font-weight: bold;
+                color: #009900;
+            }
+            header {
+                text-align: center;
+                color: #333333;
+            }
+            footer {
+                text-align: center;
+                color: #777777;
+            }
+            article {
+                margin-left: 1vw;
+                margin-right: 1vw;
+            }
+            section {
+                margin-left: 1vw;
+            }
+            p {
+                margin-left: 1vw;
+            }
+            ul {
+                margin-left: 1vw;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Group Hands-On - Assignment 1 - Dataset Requirements
+            </h1>
+            <h2>
+                by Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala
+            </h2>
+            <h3>
+                Universidad Politécnica de Madrid - Open Data & Knowledge Graphs course
+            </h3>
+        </header>
+        <main>
+            <article>
+                <h4>
+                    R1. Data are in the smart cities domain.
+                </h4>
+                <section>
+                    <p>
+                        According to the <a href = "https://datos.gob.es/en/documentacion/femp-2019-open-data-40-datasets-be-published-local-entities">2019 FEMP recommendation on datasets to be published on every local entity</a>,
+                        bringing up air quality is a key factor for measurement of quality of life standards. Therefore, measuring and keeping public record of air quality it is a must for every local government aiming to turn or maintain their city within the smart city domain ⇨ <span>CHECK ✔</span>
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    R2. Data are available as a CSV file.
+                </h4>
+                <section>
+                    <ul>
+                        <li>
+                            For daily results: 
+                            <ul>
+                                <li>
+                                    <a href = "https://datos.madrid.es/egob/catalogo/201410-10306621-calidad-aire-diario.csv">LINK to 2024 CSV</a>
+                                </li>
+                                <li>
+                                    <a href = "https://datos.madrid.es/egob/catalogo/201410-10306618-calidad-aire-diario.csv">LINK to 2023 CSV</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            For stations: <a href = "https://datos.madrid.es/egob/catalogo/212629-1-estaciones-control-aire.csv">LINK to CSV</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p>
+                        For each dataset, Madrid City Hall offers several different formats for download: TXT, XLS, CSV and/or GEO, depending on the dataset, but for both datasets CSV is available ⇨ <span>CHECK ✔</span>
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    R3. Data have an open license so it can be published.
+                </h4>
+                <section>
+                    <p>
+                        Madrid City Hall <a href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">licensed both datasets with a open licence</a>
+                        that allows both commercial and non commercial uses, provided that Madrid City Hall ownership of these datasets is acknowledged and certain constraints,
+                        such as not attempting to revert their anonymization ⇨ <span>CHECK ✔</span>
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    R4. Data can be easily linked with generic real-world entities (e.g., locations).
+                </h4>
+                <section>
+                    <p>
+                        Thanks to the stations datasets, daily air quality metrics can be bound to exact locations (those of measurement stations) through their latitude and longitude coordinates  ⇨ <span>CHECK ✔</span>
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    R5. Documentation exists for the data (optional).
+                </h4>
+                <section>
+                    <ul>
+                        <li>
+                            For daily results: <a href = "https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/Aire/Ficheros/Interprete_ficheros_%20calidad_%20del_%20aire_global.pdf">LINK</a>
+                        </li>
+                        <li>
+                            For stations: <a href = "https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/Aire/Ficheros/Estructura_C.A.Estaciones.pdf">LINK</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p>
+                        For each dataset, Madrid City Hall offers a PDF (in Spanish) offering details on how the dataset is structured, as well as the meaning of its columns  ⇨ <span>CHECK ✔</span>
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    R6. Data can come from multiple data sources (optional).
+                </h4>
+                <section>
+                    <p>
+                        The selected data sources comply, to our understanding, with this optional requirement, because the spatial nature of the latitude and longitude coordinates allows these data sources to be linked with datasets from DBpedia, Google and many others in order to deliver enriched applications that would not just show the air quality data but also to show it bound to the exact location of the measurement stations.
+                    </p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            🄯 2024 - Rafael Orihuela Brindis, Pedro Pedregal Pérez, Elías Herrero Lázaro, Carlos de la Cruz Ayala Vargas
+        </footer>
+    </body>
+</html>
