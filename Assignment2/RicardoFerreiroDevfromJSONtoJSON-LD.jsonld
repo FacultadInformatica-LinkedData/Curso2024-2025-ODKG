@@ -1,0 +1,29 @@
+{
+  "@context":{
+    "ex": "http://www.example.es/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+  },
+  "ex:fullname": "Ricardo Alberto Ferreiro de Aguiar",
+  "ex:hometown": "Düsseldorf",
+  "ex:age": {
+    "@value": 21,
+    "@type": "xsd:integer"
+  },
+  "ex:almaMater": "Universidad Politécnica de Madrid",
+  "ex:parents": {
+    "ex:father": "Carlos",
+    "ex:mother": "Isabel"
+  },
+  "ex:subjects": [
+    {
+      "ex:name": "Open Data and Knowledge Graphs",
+      "ex:teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "ex:description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "ex:name": "Data processes",
+      "ex:teachers": ["Ernestina Menasalvas"],
+      "ex:description": "This subject introduces the processes used on data."
+    }
+  ]
+}
