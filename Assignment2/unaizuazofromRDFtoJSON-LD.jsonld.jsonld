@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "sn": "http://www.ontogrid.net/StickyNote#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "sn:Class01",
+  "sn:includes": [
+    {
+      "@id": "sn:Sensor029","sn:hasMeasurement":{"@id":"sn:Measurement8401","sn:hasTemperature":"27","sn:atTime":"2010-06-12T12:00:12"}
+    },
+    {
+      "@id": "sn:Computer101","hasOwner":{"@id":"sn:User10A","hasName":"Pedro"}
+    }
+  ]
+}
