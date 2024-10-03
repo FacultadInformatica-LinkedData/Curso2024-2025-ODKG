@@ -1,0 +1,69 @@
+{
+	"@context": 
+	{
+		"task": "http://www.example.org/",
+		"person": "task:person",
+		"fullName": "task:fullName",
+		"hometown": "task:hometown",
+		"age": "task:age",
+		"almaMater": "task:almaMater",
+		"parents": "task:parents",
+		"subjects": "task:subjects",
+		"subjectName": "subjects:subjectName",
+		"subjectTeachers": "subjects:subjectTeachers",
+		"subjectDescription": "subjects:subjectDescription"
+	},
+	"@id": "task:RodrigoCastañón",
+	"@type": "person",
+	"fullName": "Rodrigo Castañón Martínez",
+	"hometown": "Madrid",
+	"age": 23,
+	"almaMater": "Universidad Politecnica de Madrid",
+	"parents": 
+	[
+		"Enrique",
+		"Balbina"
+	],
+	"subjects": 
+	[
+		{
+			"subjectName": "Open Data and Knowledge Graphs",
+			"subjectTeachers": 
+			[
+				"Oscar Corcho Garcia", 
+				"Raul Garcia Castro"
+			],
+			"subjectDescription": "During this course you will learn about the main foundations for Open Data and Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, SHACL) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies"
+		},
+		{
+			"subjectName": "Big Data",
+			"subjectTeachers": 
+			[
+				"Antonio LaTorre", 
+				"Julián Arenas",
+				"Jorge Acosta"
+			],
+			"subjectDescription": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data."
+		},
+		{
+			"subjectName": "Data Processes",
+			"subjectTeachers": 
+			[
+			"Ernestina Menasalvas Ruiz",
+			"Alejandro Rodriguez Gonzalez",
+			"Antonio Jesús Díaz Honrubia"
+			], 
+			"subjectDescription": "In this course we will deepen on the importance of data for an organization. In fact, the course is centered on the process of extraction of knowledge from databases as a support for decision making."
+		},
+		{
+			"subjectName": "Data Visualization",
+			"subjectTeachers": 
+			[
+			"Pablo Toharia Rabasco",
+			"Jorge Acosta Hernandez",
+			"Antonio Latorre De La Fuente"
+			], 
+			"subjectDescription": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented."
+		}
+	]
+}
