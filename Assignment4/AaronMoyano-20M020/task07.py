@@ -62,12 +62,17 @@ for r in g.query(q2_sparql):
 
 # Task 7.2: RDFLib
 print("\nResults for TASK 7.2 (RDFLib):")
+arr = [] 
+for individual in g.subjects(RDF.type, ns.Person): 
+    arr.append(individual)
+
 for person_type in g.subjects(RDFS.subClassOf, ns.Person):
     for individual in g.subjects(RDF.type, person_type):
-        print(individual)
-    for individual in g.subjects(RDF.type, ns.Person): 
-        print(individual)
+        arr.append(individual)
 
+for individual in arr:
+  print(individual)
+  
 """**TASK 7.3: List all individuals of just "Person" or "Animal". You do not need to list the individuals of the subclasses of person (in SPARQL only)**
 """
 
