@@ -1,0 +1,107 @@
+Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property
+WHERE {
+  ?politician rdf:type dbo:Politician .
+  ?politician ?property ?value .
+}
+
+SPARQL results:
+
+rdf:type [http]
+rdfs:label [http]
+rdfs:comment [http]
+rdfs:seeAlso [http]
+foaf:name [http]
+foaf:homepage [http]
+dbpedia2:name [http]
+foaf:depiction [http]
+dbpedia:ontology/birthPlace [http]
+dbpedia:ontology/deathPlace [http]
+...
+
+Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?property
+WHERE {
+  ?politician rdf:type dbo:Politician .
+  ?politician ?property ?value .
+  FILTER (?property != rdf:type)
+}
+
+SPARQL results:
+
+rdfs:label [http]
+rdfs:comment [http]
+rdfs:seeAlso [http]
+foaf:name [http]
+foaf:homepage [http]
+dbpedia2:name [http]
+foaf:depiction [http]
+dbpedia:ontology/birthPlace [http]
+dbpedia:ontology/deathPlace [http]
+...
+
+Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+SELECT DISTINCT ?property ?value
+WHERE {
+  ?politician rdf:type dbo:Politician .
+  ?politician ?property ?value .
+  FILTER (?property != rdf:type)
+}
+
+SPARQL results:
+property	value
+rdfs:label [http]	"CaMia Hopson"@en
+rdfs:label [http]	"كابل بريكينريدغ"@ar
+rdfs:label [http]	"Cabell Breckinridge"@en
+rdfs:label [http]	"Cabo Almi"@en
+rdfs:label [http]	"كابو ألمي"@ar
+rdfs:label [http]	"Cabo Almi"@es
+rdfs:label [http]	"Cabo Almi"@fr
+rdfs:label [http]	"Cabo Almi"@pt
+rdfs:label [http]	"Cabo Daciolo"@en
+rdfs:label [http]	"Cabo Daciolo"@de
+rdfs:label [http]	"Cabo Daciolo"@es
+...
+
+For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+SELECT ?property (GROUP_CONCAT(DISTINCT ?value; SEPARATOR=", ") AS ?values)
+WHERE {
+  ?politician rdf:type dbo:Politician .
+  ?politician ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property
+
+SPARQL results:
+property	values
+dbpedia:ontology/birthDate [http]	"1665-03-06, 1688-02-07, 1728-10-07, 1745-01-09, 1758-11-11, 1759-12-22, 1767-04-16, 1767-04-29, 1769-04-04, 1772-01-04, 1776-09-09, 1776-09-15, 1783-02-15, 1786-06-10, 1788-07-14, 1792-02-26, 1792-04-04, 1798-01-15, 1798-04-12, 1800-01-17, 1800-12-31, 1808-04-16, 1809-06-05, 1811-08-28, 1812-01-12, 1813-05-22, 1813-07-27, 1814-09-19, 1815-09-22, 1818-04-22, 1819-02-03, 1822-12-07, 1825-06-20, 1827-04-07, 1827-10-18, 1828-02-18, 1832-02-20, 1834-04-06, 1840-12-12, 1842-08-19, 1842-12-26, 1844-05-25, 1845-09-17, 1846-02-01, 1851-09-08, 1856-05-13, 1857-12-28, 1860-01-06, 1868-01-11, 1869-02-01, 1869-10-05, 1872-07-04, 1874-05-16, 1879-12-11, 1882-12-19, 1885-02-04, 1889-09-01, 1893-12-26, 1894-08-15, 1895-08-23, 1898-11-22, 1899-02-03, 1903-12-24, 1904-09-13, 1904-09-14, 1905-02-08, 1907-07-04, 1907-12-02, 1908-10-07, 1909-01-12, 1909-01-29, 1912-04-05, 1913-11-06, 1917-06-22, 1918-10-07, 1919-08-24, 1923-05-23, 1925-09-25, 1926-05-11, 1927-07-15, 1930-08-10, 1931-03-30, 1934-02-18, 1935-07-29, 1937-12-20, 1939-08-19, 1941-05-24, 1942-06-11, 1945-03-30, 1945-11-03, 1947-01-25, 1947-05-17, 1948-05-02, 1948-10-03, 1949-07-19, 1950-03-07, 1950-09-06, 1951-01-22, 1951-02-27, 1952-02-01, 1954-01-11, 1954-06-13, 1955-06-16, 1955-12-05, 1956-05-07, 1956-05-10, 1957-12-16, 1958-06-02, 1958-08-09, 1959-05-24, 1960-03-28, 1960-08-12, 1962-07-17, 1962-07-19, 1962-12-17, 1963-09-16, 1963-12-04, 1964-12-31, 1966-03-04, 1966-09-15, 1966-12-14, 1967-01-01, 1969-06-19, 1971-03-24, 1971-09-20, 1972-04-05, 1973-03-30, 1973-04-03, 1973-08-06, 1975-09-02, 1975-09-24, 1975-10-18, 1976-03-30, 1976-07-10, 1977-05-22, 1978-04-29, 1980-01-09, 1982-10-22, 1984-11-22, 1985-01-06, 1986-08-21, 1987-06-30, 1988-07-22, 1996-05-05, 1999-03-02, 1999-10-29"
+owl:sameAs [http]	"http://af.dbpedia.org/resource/Calle_Schlettwein, http://af.dbpedia.org/resource/Calvin_Coolidge, http://am.dbpedia.org/resource/ካልቪን_ኩሊጅ, http://an.dbpedia.org/resource/Calvin_Coolidge, http://api.nytimes.com/svc/semantic/v2/concept/name/nytd_per/Butts,%20Calvin%20O%20III, http://api.nytimes.com/svc/semantic/v2/concept/name/nytd_per/Coolidge,%20Calvin, http://ar.dbpedia.org/resource/أوغسطس_قيصر_رودني, http://ar.dbpedia.org/resource/تساي_وو, http://ar.dbpedia.org/resource/سيزر_أنطوان, http://ar.dbpedia.org/resource/سيزر_رودني, http://ar.dbpedia.org/resource/كابل_بريكينريدغ, http://ar.dbpedia.org/resource/كابو_ألمي, http://ar.dbpedia.org/resource/كابو_جونيو_أمارال, http://ar.dbpedia.org/resource/كاتلين_هاليغان, http://ar.dbpedia.org/resource/كافيه_فيلهو, http://ar.dbpedia.org/resource/كال_أندرسون, http://ar.dbpedia.org/resource/كال_دالاس, http://ar.dbpedia.org/resource/كال_دوولي, http://ar.dbpedia.org/resource/كال_فرنسيس, http://ar.dbpedia.org/resource/كال_كونينغهام, http://ar.dbpedia.org/resource/كال_لارسون
+...
+
+For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+SELECT ?property (COUNT(DISTINCT ?value) AS ?numDistinctValues)
+WHERE {
+  ?politician rdf:type dbo:Politician .
+  ?politician ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property
+ORDER BY DESC(?numDistinctValues)
+
+SPARQL results:
+property	numDistinctValues
+dbpedia:ontology/wikiPageWikiLink [http]	684718
+owl:sameAs [http]	487041
+rdfs:label [http]	186656
+rdfs:comment [http]	185357
+dbpedia:ontology/abstract [http]	184712
+dbpedia:ontology/termPeriod [http]	114057
+<http://purl.org/dc/terms/subject> [http]	99881
+...
