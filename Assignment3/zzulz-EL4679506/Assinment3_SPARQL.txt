@@ -1,0 +1,150 @@
+
+1. Get all the properties that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?property {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+}
+
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?property {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+
+3. Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
+
+SELECT DISTINCT ?property ?value {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+
+4. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, which different values do they take in those instances?
+
+SELECT DISTINCT ?property COUNT(?value) {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)
+}
+
+
+5. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
+
+SELECT DISTINCT ?property COUNT(DISTINCT(?value)) {
+<http://dbpedia.org/ontology/Politician> ?property ?value
+filter (?property != rdf:type)}
+
+
+
+------------------------------------------------------------------
+
+
+Results
+
+
+1. 
+
+property
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2002/07/owl#equivalentClass
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+http://www.w3.org/2002/07/owl#sameAs
+http://www.w3.org/2000/01/rdf-schema#subClassOf
+http://xmlns.com/foaf/0.1/topic
+http://www.w3.org/2007/05/powder-s#describedby
+http://www.w3.org/ns/prov#wasDerivedFrom
+
+
+
+2.
+
+property
+http://www.w3.org/2002/07/owl#equivalentClass
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+http://www.w3.org/2002/07/owl#sameAs
+http://www.w3.org/2000/01/rdf-schema#subClassOf
+http://xmlns.com/foaf/0.1/topic
+http://www.w3.org/2007/05/powder-s#describedby
+http://www.w3.org/ns/prov#wasDerivedFrom
+
+
+
+3.
+
+property	                                        value
+http://www.w3.org/2002/07/owl#equivalentClass	    http://www.wikidata.org/entity/Q82955
+http://www.w3.org/2000/01/rdf-schema#label	        "Politiker"@de
+http://www.w3.org/2000/01/rdf-schema#label	        "polaiteoir"@ga
+http://www.w3.org/2000/01/rdf-schema#label	        "politician"@en
+http://www.w3.org/2000/01/rdf-schema#label	        "politicien"@fr
+http://www.w3.org/2000/01/rdf-schema#label	        "politicus"@nl
+http://www.w3.org/2000/01/rdf-schema#label	        "politik"@sl
+http://www.w3.org/2000/01/rdf-schema#label	        "político"@pt
+http://www.w3.org/2000/01/rdf-schema#label	        "πολιτικός"@el
+http://www.w3.org/2000/01/rdf-schema#label	        "政治家"@ja
+http://www.w3.org/2000/01/rdf-schema#label	        "정치인"@ko
+http://www.w3.org/2000/01/rdf-schema#label	        "سیاستدان"@ur
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	http://dbpedia.org/ontology/
+http://www.w3.org/2002/07/owl#sameAs	            http://dbpedia.org/ontology/Politician
+http://www.w3.org/2000/01/rdf-schema#subClassOf	    http://dbpedia.org/ontology/Person
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/President
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Ambassador
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Chancellor
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Congressman
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Deputy
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Governor
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Lieutenant
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/Mayor
+http://xmlns.com/foaf/0.1/topic	                    http://dbpedia.org/ontology/MemberOfParliament
+
+
+
+
+4.
+
+property	callret-1
+http://www.w3.org/2002/07/owl#sameAs	
+5
+http://www.w3.org/2007/05/powder-s#describedby	
+13
+http://www.w3.org/ns/prov#wasDerivedFrom	
+6
+http://www.w3.org/2000/01/rdf-schema#label	
+65
+http://www.w3.org/2000/01/rdf-schema#subClassOf	
+7
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	
+6
+http://xmlns.com/foaf/0.1/topic	
+20
+http://www.w3.org/2002/07/owl#equivalentClass	
+6
+
+
+
+5.
+
+property	callret-1
+http://www.w3.org/2002/07/owl#sameAs	
+1
+http://www.w3.org/ns/prov#wasDerivedFrom	
+1
+http://www.w3.org/2000/01/rdf-schema#label	
+11
+http://www.w3.org/2000/01/rdf-schema#subClassOf	
+1
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy	
+1
+http://www.w3.org/2002/07/owl#equivalentClass	
+1
+http://xmlns.com/foaf/0.1/topic	
+20
+http://www.w3.org/2007/05/powder-s#describedby	
+6
+
+
