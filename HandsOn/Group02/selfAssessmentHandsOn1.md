@@ -17,6 +17,3 @@
 - [X] Identifies those entities in the selected datasets that can be linked with entities in other datasets
 - [X] Identifies those entities in other datasets that can be linked with entities in the selected datasets 
 - [X] Includes a description of the application user interface
-
-## Comments on the self-assessment
-_We have used CSS to improve the visualization of the requirements. For future cases, let us know if you prefer it with or without styling._
