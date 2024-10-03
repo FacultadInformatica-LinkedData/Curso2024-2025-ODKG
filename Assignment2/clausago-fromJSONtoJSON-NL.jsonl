@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "Person",
+  "foaf:fullName": "Claudia Sanchez Gomez",
+  "schema:homeLocation": "Barcelona",
+  "age": { "@value": "24", "@type": "xsd:integer" },
+  "schema:alumniOf": "Universitat de Barcelona",
+  "ex:parents": {
+    "ex:father": "Ricardo",
+    "ex:mother": "Carmen"
+  },
+  "ex:subjects": [
+    {
+      "schema:name": "Open Data and Knowledge Graphs",
+      "ex:teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "schema:description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "schema:name": "Cloud Computing",
+      "ex:teachers": ["Marta Patiño"],
+      "schema:description": "This subject introduces cloud computing and big data ecosystems."
+    }
+  ]
+}
+
