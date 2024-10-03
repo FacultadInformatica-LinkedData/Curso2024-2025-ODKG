@@ -1,0 +1,22 @@
+{
+  "fullName": "Claudia Sanchez Gomez",
+  "hometown": "Barcelona",
+  "age": 24,
+  "almaMater": "Universitat de Barcelona",
+  "parents": {
+    "father": "Ricardo",
+    "mother": "Carmen"
+  },
+  "subjects": [
+    {
+      "name": "Open Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "name": "Cloud Computing",
+      "teachers": ["Marta Patiño"],
+      "description": "This subject introduces cloud computing and big data ecosystems."
+    }
+  ]
+}
