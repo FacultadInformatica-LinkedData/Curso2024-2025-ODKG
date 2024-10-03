@@ -1,0 +1,114 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "data": "http://DakotaMellish.com/ontology#",
+      "age": "rdfs:label",
+      "name":"rdfs:label",
+      "teachers":"rdfs:label",
+      "description":"rdfs:label",
+      "almaMater": "rdfs:label",
+      "parents": "rdf:label",
+      "schoolSubjects": "rdfs:label",
+      "Course":"data:Course",
+      "Person":"data:Person"
+    },
+    "@id": "Dakota Mellish",
+    "@type": "Person",
+    "age": 25,
+    "almaMater": "Olivet Nazarene University",
+    "parents": [
+      {
+        "@id": "Mother",
+        "@type": "Person",
+        "name": "Jeanine Mellish"
+      },
+      {
+        "@id": "Father",
+        "@type": "Person",
+        "name": "Kevin Mellish"
+      }
+    ],
+    "schoolSubjects": [
+      {
+        "@id": "OKG",
+        "@type": "Course",
+        "name": "Open Data and Knowledge Graphs",
+        "teachers": [
+          "Oscar Corcho",
+          "Daniel Garijo"
+        ],
+        "description": "Learn about open data, rdf, sparql"
+      },
+      {
+        "@id": "ML",
+        "@type": "Course",
+        "name": "Machine Learning",
+        "teachers": [
+          "Concha Bielza",
+          "Pedro Larranaga",
+          "Victor Alejandre"
+        ],
+        "description": "Learn about supervised/unsupervised learning techniques"
+      },
+      {
+        "@id": "DP",
+        "@type": "Course",
+        "name": "Data Processes",
+        "teachers": [
+          "Ernestina Menasalvas",
+          "Antonio Jesús Díaz Honrubia",
+          "Alejandro Rodríguez"
+        ],
+        "description": "Learn about transforming data science problems to a business context"
+      },
+      {
+        "@id": "IS",
+        "@type": "Course",
+        "name": "Intelligent Systems",
+        "teachers": [
+          "Martin Molina",
+          "Mari Carmen Suárez de Figueroa",
+          "Víctor Rodríguez Doncel"
+        ],
+        "description": "Use AI to build neural networks, ontology engineering and natural language processing"
+      },
+      {
+        "@id": "SDA",
+        "@type": "Class",
+        "name": "Statistical Data Analysis",
+        "teachers": [
+          "Arminda Moreno Díaz"
+        ],
+        "description": "Survey of statistical methods in R"
+      },
+      {
+        "@id": "CCBDE",
+        "@type": "Course",
+        "name": "Cloud computing and big data ecosystems design",
+        "teachers": [
+          "Marta Patiño"
+        ],
+        "description": "Understand how to construct and design large databases"
+      },
+      {
+        "@id": "DVBD",
+        "@type": "Course",
+        "name": "Data Visualization",
+        "teachers": [
+          "Pablo Toharia"
+        ],
+        "description": "Understand how to visualize data effectively in Shiny"
+      },
+      {
+        "@id": "BD",
+        "@type": "Course",
+        "name": "Big Data",
+        "teachers": [
+          "Antonio LaTorre",
+          "Julián Arenas",
+          "Jorge Acosta"
+        ],
+        "description": "Understand how to work with big data in Apache Spark"
+      }
+    ]
+  }
