@@ -9,51 +9,156 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib
+# !pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
 
 """First let's read the RDF file"""
 
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS
+
 g = Graph()
-g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
-g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
-g.parse(github_storage+"/rdf/example6.rdf", format="xml")
+g.namespace_manager.bind("ns", Namespace("http://somewhere#"), override=False)
+g.namespace_manager.bind(
+    "vcard", Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False
+)
+g.parse(github_storage + "/rdf/example6.rdf", format="xml")
 
 """**TASK 7.1: List all subclasses of "LivingThing" with RDFLib and SPARQL**"""
 
-# TO DO
-# Visualize the results
+# Define the query to list all subclasses of "LivingThing"
+q1 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
 
-#for r in g.query(q1):
-#  print(r)
+SELECT ?subclass WHERE {
+    ?subclass rdfs:subClassOf ns:LivingThing .
+}
+"""
+
+# Execute the query
+subclasses = g.query(q1)
+
+# Visualize the results
+for subclass in subclasses:
+    print(subclass)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**
 
 """
+# Define the query to list all individuals of "Person" and its subclasses
+q2 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
 
-# TO DO
+SELECT ?individual WHERE {
+    ?individual rdf:type/rdfs:subClassOf* ns:Person .
+}
+"""
+
+# Execute the query
+individuals = g.query(q2)
+
 # Visualize the results
+for individual in individuals:
+    print(individual)
 
 """**TASK 7.3: List all individuals of just "Person" or "Animal". You do not need to list the individuals of the subclasses of person (in SPARQL only)**
 
 """
 
-# TO DO
+# Define the query to list all individuals of just "Person" or "Animal"
+q3 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
+
+SELECT ?individual WHERE {
+    {
+        ?individual rdf:type ns:Person .
+    }
+    UNION
+    {
+        ?individual rdf:type ns:Animal .
+    }
+}
+"""
+
+# Execute the query
+individuals_person_or_animal = g.query(q3)
+
 # Visualize the results
+for individual in individuals_person_or_animal:
+    print(individual)
 
 """**TASK 7.4:  List the name of the persons who know Rocky (in SPARQL only)**"""
 
-# TO DO
+# Define the query to list the name of the persons who know Rocky
+q4 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
+PREFIX vcard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?person WHERE {
+    ?person rdf:type ns:Person .
+    ?person foaf:knows ns:RockySmith .
+}
+"""
+
+# Execute the query
+persons_who_know_rocky = g.query(q4)
+
 # Visualize the results
+for person in persons_who_know_rocky:
+    print(person)
 
 """**Task 7.5: List the name of those animals who know at least another animal in the graph (in SPARQL only)**"""
 
-# TO DO
+# Define the query to list the name of those animals who know at least another animal in the graph
+q5 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
+PREFIX vcard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?animal WHERE {
+    ?animal rdf:type ns:Animal .
+    ?animal foaf:knows ?otherAnimal .
+    ?otherAnimal rdf:type ns:Animal .
+}
+"""
+
+# Execute the query
+animals_who_know_other_animals = g.query(q5)
+
 # Visualize the results
+for animal in animals_who_know_other_animals:
+    print(animal)
 
 """**Task 7.6: List the age of all living things in descending order (in SPARQL only)**"""
 
-# TO DO
+# Define the query to list the age of all living things in descending order
+q6 = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <http://somewhere#>
+Prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?individual ?age WHERE {
+    ?individual rdf:type/rdfs:subClassOf* ns:LivingThing . 
+    ?individual foaf:age ?age .
+}
+ORDER BY DESC(?age)
+"""
+
+# Execute the query
+ages_of_living_things = g.query(q6)
+
 # Visualize the results
+for living_thing in ages_of_living_things:
+    print(living_thing)
