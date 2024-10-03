@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Placeholder to generate the folder
-=======
 Hands-on directory
 ==================
 
