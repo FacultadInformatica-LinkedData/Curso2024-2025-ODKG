@@ -4,12 +4,12 @@
 
 **The “README.md” file:**
 
-- [] Includes the names and GitHub users of all the members of the group
+- [x] Includes the names and GitHub users of all the members of the group
 
 **The "csv" directory:**
 
-- [] Contains at least one CSV file 
-- [] The CSV files belong to one of the selected domains
+- [x] Contains at least one CSV file 
+- [x] The CSV files belong to one of the selected domains
 
 **The "datasetRequirements.html" file:**
 
@@ -19,7 +19,7 @@
 
 **The "applicationRequirements.html” file:**
 
-- [] Includes a description of the application user interface
+- [x] Includes a description of the application user interface
 
 ## Comments on the self-assessment
-_(If required)_
+We have data from June 2021 to February 2023. Due to space limitations, we couldn't include more information. The main idea is this, although it is subject to small changes, such as adding more data—for example, stations in Madrid—or adjusting how we analyze the information.
