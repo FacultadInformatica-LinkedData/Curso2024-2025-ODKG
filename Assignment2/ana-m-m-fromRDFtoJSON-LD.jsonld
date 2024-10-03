@@ -1,0 +1,135 @@
+{
+    "@context": {
+      "Person": "http://schema.org/Person",
+      "Subject": "http://schema.org/Course",
+      "name": "http://schema.org/name",
+      "description": "http://schema.org/description",
+      "teachers": {
+        "@id": "http://schema.org/teacher",
+        "@type": "@id"
+      },
+      "fullName": "http://schema.org/name",
+      "hometown": "http://schema.org/addressLocality",
+      "age": "http://schema.org/age",
+      "almaMater": "http://schema.org/alumniOf",
+      "mother": "http://schema.org/parent",
+      "father": "http://schema.org/parent"
+    },
+    "@type": "Person",
+    "fullName": "Ana Mateos Mata",
+    "hometown": "Alcobendas",
+    "age": 22,
+    "almaMater": "Your Alma Mater Name",
+    "mother": {
+      "@type": "Person",
+      "fullName": "Guadalupe Mata Garcia"
+    },
+    "father": {
+      "@type": "Person",
+      "fullName": "Victor Mateos Clemente"
+    },
+    "subjects": [
+      {
+        "@type": "Subject",
+        "name": "Statistical Data Analysis",
+        "description": "Learn methods for analyzing complex data sets to extract meaningful insights.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Arminda Moreno Díaz"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Programming for Data Processing",
+        "description": "Master Python programming to efficiently handle and process data.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Guillermo Antonio Vigueras González"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Machine Learning",
+        "description": "Study algorithms that enable computers to learn from data and make predictions.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Pedro Maria Larrañaga Mugica"
+          },
+          {
+            "@type": "Person",
+            "fullName": "María Concepción Bielza González"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Data Processes",
+        "description": "Understand project management principles specific to data science initiatives.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Ernestina Menasalvas Ruiz"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Ethics And Law For Data Science",
+        "description": "Explore the ethical implications and legal frameworks surrounding data usage and AI.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Victor Rodriguez Doncel"
+          },
+          {
+            "@type": "Person",
+            "fullName": "Asuncion De Maria Gomez Perez"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Intelligent Systems",
+        "description": "Delve into AI techniques for creating systems that mimic human intelligence.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Martin Molina Gonzalez"
+          },
+          {
+            "@type": "Person",
+            "fullName": "M. Carmen Suarez De Figueroa Baonza"
+          },
+          {
+            "@type": "Person",
+            "fullName": "Asuncion De Maria Gomez Perez"
+          }
+        ]
+      },
+      {
+        "@type": "Subject",
+        "name": "Graph Analysis And Social Networks",
+        "description": "Analyze social media data to understand network dynamics and user behavior.",
+        "teachers": [
+          {
+            "@type": "Person",
+            "fullName": "Emilio Serrano Fernandez"
+          },
+          {
+            "@type": "Person",
+            "fullName": "Javier Bajo Perez"
+          },
+          {
+            "@type": "Person",
+            "fullName": "Laura Melgar Garcia"
+          }
+        ]
+      }
+    ]
+  }
+  
