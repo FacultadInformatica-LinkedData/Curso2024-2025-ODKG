@@ -32,7 +32,7 @@ for s, p, o in g:
 
 """
 
-# TO DO
+
 g.add((ns.University, RDF.type, RDFS.Class))
 # Visualize the results
 for s, p, o in g:
@@ -40,7 +40,7 @@ for s, p, o in g:
 
 """**TASK 6.2: Add "Researcher" as a subclass of "Person"**"""
 
-# TO DO
+
 g.add((ns.Researcher, RDFS.subClassOf, ns.Person))
 # Visualize the results
 for s, p, o in g:
@@ -48,7 +48,7 @@ for s, p, o in g:
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smithers"**"""
 
-# TO DO
+
 
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
@@ -84,7 +84,7 @@ EX = Namespace("https://example.org/")
 g.add((EX.UPM, RDF.type, ns.University))
 g.add((EX.UPM, RDFS.label, Literal("Universidad Politécnica de Madrid")))
 
-# Add the relationship specifying that John Smith works at UPM
+# Add the relationship
 g.add((ns.JohnSmith, EX.works, EX.UPM))
 
 # Visualize the results
