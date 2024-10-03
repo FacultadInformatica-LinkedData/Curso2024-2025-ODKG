@@ -4,6 +4,6 @@
 
 - Alonso Gago Suárez - alonsogago
 - Raúl Serrano Campillo - raulsc4
-- Claudia 
+- Claudia Sánchez Gómez - clausago
 
 
