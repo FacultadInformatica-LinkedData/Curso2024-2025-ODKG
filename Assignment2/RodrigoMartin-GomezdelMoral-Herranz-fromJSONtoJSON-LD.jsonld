@@ -1,0 +1,76 @@
+{
+    "@context": {
+        "ex": "http://example.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "fullName": "ex:fullName",
+        "hometown": "ex:hometown",
+        "age": "ex:age",
+        "almaMater": "ex:almaMater",
+        "parents": "ex:parents",
+        "father": "ex:father",
+        "mother": "ex:mother",
+        "subjects": "ex:subjects",
+        "name": "ex:name",
+        "teachers": "ex:teachers",
+        "description": "ex:description"
+    },
+    "@graph": [
+        {
+            "@id": "ex:Person",
+            "@type": "ex:Person",
+            "fullName": "Rodrigo Martín Gómez del Moral Herranz",
+            "hometown": "Madrid",
+            "age": {
+                "@value": 22,
+                "@type": "xsd:integer"
+            },
+            "almaMater": "Universidad Politécnica de Madrid",
+            "parents": {
+                "father": "Alberto Gómez del Moral",
+                "mother": "María del Pino Herranz"
+            },
+            "subjects": [
+                {
+                    "name": "Big Data",
+                    "teachers": ["Antonio LaTorre", "Julián Arenas", "Jorge Acosta"],
+                    "description": "Comprehensive understanding of big data systems, from architecture to technological implementation."
+                },
+                {
+                    "name": "Data Processes",
+                    "teachers": ["Ernestina Menasalvas", "Alejandro Rodríguez", "Antonio Jesús Díaz Honrubia"],
+                    "description": "Exploration of methods and tools for processing large datasets and improving data pipeline management."
+                },
+                {
+                    "name": "Data Visualization",
+                    "teachers": ["Pablo Toharia"],
+                    "description": "Techniques for visually presenting data to provide clear insights and promote effective decision-making."
+                },
+                {
+                    "name": "Intelligent Systems",
+                    "teachers": ["Martín Molina", "Mari Carmen Suárez de Figueroa", "Mariano Rico", "Víctor Rodríguez Doncel"],
+                    "description": "Study of AI systems capable of autonomous reasoning and decision-making using machine learning techniques."
+                },
+                {
+                    "name": "Introduction to Innovation and Entrepreneurship",
+                    "teachers": ["Roberto Martinez Gamero", "Alberto Tejero Lopez"],
+                    "description": "Overview of innovation processes and entrepreneurship principles, with a focus on real-world applications."
+                },
+                {
+                    "name": "Machine Learning",
+                    "teachers": ["Pedro Larrañaga Múgica", "Concha Bielza Lozoya"],
+                    "description": "Introduction to algorithms and techniques that enable machines to learn patterns from data."
+                },
+                {
+                    "name": "Open Data and Knowledge Graphs",
+                    "teachers": ["Oscar Corcho", "Raúl García-Castro"],
+                    "description": "Study of open data resources and their use in building knowledge graphs for better data integration."
+                },
+                {
+                    "name": "Statistical Data Analysis",
+                    "teachers": ["Arminda Moreno Díaz"],
+                    "description": "Fundamentals of statistical techniques used for analyzing and interpreting data."
+                }
+            ]
+        }
+    ]
+}  
