@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name": "foaf:name",
+    "hometown": "schema:homeLocation",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "schema:Course",
+    "teachers": "schema:instructor",
+    "description": "schema:description"
+  },
+  "@id": "http://example.org/person/UnaiZuazo",
+  "@type": "foaf:Person",
+  "name": "Unai Zuazo",
+  "hometown": {
+    "@type": "schema:Town",
+    "name": "Bilbao"
+  },
+  "age": 21,
+  "almaMater": {
+    "@type": "schema:CollegeOrUniversity",
+    "name": "Universidad del País Vasco UPV/EHU"
+  },
+  "parents": [
+    {
+      "@type": "foaf:Person",
+      "name": "Carlos Zuazo"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "Asun Angulo"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Cloud computing and big data ecosystems design",
+      "teachers": [
+        {
+          "@type": "foaf:Person",
+          "name": "Marta Patiño Martinez"
+        },
+        {
+          "@type": "foaf:Person",
+          "name": "Ainhoa Azqueta Alzuaz"
+        }
+      ],
+      "description": "Introduction to cloud computing."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Data Processes",
+      "teachers": [
+        {
+          "@type": "foaf:Person",
+          "name": "Ernestina Menasalvas"
+        }
+      ],
+      "description": "Introduction to processes like data-mining and data analysis."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Data Visualization",
+      "teachers": [
+        {
+          "@type": "foaf:Person",
+          "name": "Pablo Toharia"
+        }
+      ],
+      "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Machine Learning",
+      "teachers": [
+        {
+          "@type": "foaf:Person",
+          "name": "Pedro Larrañaga Múgica"
+        }
+      ],
+      "description": "Machine Learning transforms data into knowledge and provides general purpose systems that adapt to the circumstances. This course exposes several methods to solve problems of supervised and unsupervised classification, and relationships between system variables."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Open Data and Knowledge Graphs",
+      "teachers": [
+        {
+          "@type": "foaf:Person",
+          "name": "Oscar Corcho"
+        }
+      ],
+      "description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies. You will also learn about how to create shared agreed vocabularies and ontologies that can give support to Knowledge Graph generation and publication, and will understand how these principles and approaches have been applied to several domains. You will work on a practical hands-on exercise that will be the basis for your participation in hackatons and other similar events."
+    }
+  ]
+}
