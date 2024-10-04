@@ -32,36 +32,54 @@ for s, p, o in g:
 
 """
 
-# TO DO
+g.add((ns.University, RDF.type, RDFS.Class))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
 
+
 """**TASK 6.2: Add "Researcher" as a subclass of "Person"**"""
 
-# TO DO
+g.add((ns.Researcher, RDFS.subClassOf, ns.Person))
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smithers"**"""
 
-# TO DO
+janeSmithers = ns.JaneSmithers
+g.add((janeSmithers, RDF.type, ns.Researcher))
+
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.4: Add to the individual JaneSmithers the email address, fullName, given and family names. Use the https://schema.org vocabulary**"""
 
-# TO DO
+schema = Namespace("https://schema.org/")
+g.add((janeSmithers, schema.email, Literal("janesmithers@example.com")))
+g.add((janeSmithers, schema.fullName, Literal("Jane Smithers")))
+g.add((janeSmithers, schema.givenName, Literal("Jane")))
+g.add((janeSmithers, schema.familyName, Literal("Smithers")))
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
 
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
 
-# TO DO
+ex = Namespace("https://example.org/")
+g.add((ex.UPM, RDF.type, ns.University))
+g.add((ns.JohnSmith, ex.worksAt, ex.UPM))
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
 
 """**Task 6.6: Add that Jown knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
 
-# TO DO
+from rdflib import FOAF
+
+g.add((ns.JohnSmith, FOAF.knows, janeSmithers))
+
 # Visualize the results
+for s, p, o in g:
+  print(s,p,o)
