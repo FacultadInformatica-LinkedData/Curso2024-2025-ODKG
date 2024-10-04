@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "base": "http://schema.org/base#",
+    "fullName": "base:fullName",
+    "hometown": "base:hometown",
+    "age": "base:age",
+    "almaMater": "base:almaMater",
+    "parent": "base:parent",
+    "subject": "base:Course",
+    "description": "base:description",
+    "teacher": "base:teacher"
+  },
+  "@type": "Person",
+  "@id": "http://schema.org/person/VictorGiovannyMondragonRuiz",
+  "name": "Victor Giovanny Mondragon Ruiz",
+  "hometown": "Lima, Peru",
+  "age": 31,
+  "almaMater": "Universidad Nacional de Ingeniera",
+  "parent": [
+    {
+      "@id": "http://schema.org/person/victor",
+      "@type": "Person",
+      "fullName": "Victor Mondragon"
+    },
+    {
+      "@id": "http://schema.org/person/fidelia",
+      "@type": "Person",
+      "fullName": "Fidelia Ruiz"
+    }
+  ],
+  "subject": [
+    {
+      "name": "Open Data and Knowledge Graphs",
+      "teacher": [
+        { "fullName": "Oscar Corcho Garcia" },
+        { "fullName": "Raul Garcia Castro" },
+        { "fullName": "Daniel Garijo" }
+      ],
+      "description": "During this course you will learn about the main foundations for Knowledge Graphs..."
+    },
+    {
+      "name": "BIG DATA",
+      "teacher": [
+        { "fullName": "Antonio LaTorre" },
+        { "fullName": "Julián Arenas" },
+        { "fullName": "Jorge Acosta" }
+      ],
+      "description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data..."
+    },
+    {
+      "name": "Data Processes",
+      "teacher": [
+        { "fullName": "Andrea Alvarez Perez" },
+        { "fullName": "David Gomez Ortiz" },
+        { "fullName": "Lucia Prieto Santamaria" }
+      ],
+      "description": "In this course we will deepen on the importance of data for an organization..."
+    },
+    {
+      "name": "Data Visualization",
+      "teacher": [
+        { "fullName": "Jorge Acosta Hernandez" },
+        { "fullName": "Pablo Toharia Rabasco" },
+        { "fullName": "Antonio Latorre De La Fuente" }
+      ],
+      "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information..."
+    },
+    {
+      "name": "Statistical Data Analysis",
+      "teacher": [
+        { "fullName": "Maria Isabel Rodriguez Galiano" },
+        { "fullName": "Juan Antonio Fdez Del Pozo De Salamanca" },
+        { "fullName": "Antonio Jimenez Martin" },
+        { "fullName": "Jacinto Gonzalez Pachon" },
+        { "fullName": "Arminda Moreno Diaz" }
+      ],
+      "description": "The course is intended to be a non-exhaustive survey of techniques to convert multivariate data into useful information..."
+    },
+    {
+      "name": "Cloud Computing and Big Data Ecosystems",
+      "teacher": [
+        { "fullName": "AZQUETA ALZUAZ AINHOA" },
+        { "fullName": "PATIÑO MARTINEZ MARTA" }
+      ],
+      "description": "This course presents traditional data management systems and architectures for scalable distributed systems..."
+    },
+    {
+      "name": "Machine Learning",
+      "teacher": [
+        { "fullName": "Pedro Maria Larrañaga Mugica" },
+        { "fullName": "Maria Concepcion Bielza Lozoya" }
+      ],
+      "description": "Machine Learning transforms data into knowledge and provides general purpose systems that adapt to circumstances..."
+    }
+  ]
+}
