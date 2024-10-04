@@ -13,40 +13,9 @@ Original file is located at
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/"
 
 from rdflib import Graph, Namespace, Literal, URIRef
-
 g1 = Graph()
 g2 = Graph()
 g1.parse(github_storage+"resources/data01.rdf", format="xml")
 g2.parse(github_storage+"resources/data02.rdf", format="xml")
 
 """Tarea: lista todos los elementos de la clase Person en el primer grafo (data01.rdf) y completa los campos (given name, family name y email) que puedan faltar con los datos del segundo grafo (data02.rdf). Puedes usar consultas SPARQL o iterar el grafo, o ambas cosas."""
-from rdflib.namespace import RDF, RDFS
-
-ns = Namespace("http://data.org#")
-VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-
-
-def print_person_info(graph):
-    for s,p,o in graph.triples((None, RDF.type, ns.Person)):
-        print(s)
-        print(f"Given {graph.value(subject=s, predicate=VCARD.Give, object=None)}")
-        print(f"Family {graph.value(subject=s, predicate=VCARD.Family, object=None)}")
-        print(f"EMAIL {graph.value(subject=s, predicate=VCARD.EMAIL, object=None)}")
-    print("-----------------------------------------")
-
-
-def check_and_add_value(s, c_predicate):
-    if not g1.value(s, c_predicate, None) and g2.value(s, c_predicate, None):
-        value = g2.value(s, c_predicate, None)
-        g1.add((s, c_predicate, value))
-
-
-print_person_info(g1)
-print_person_info(g2)
-
-for s,p,o in g1.triples((None, RDF.type, ns.Person)):
-    check_and_add_value(s, VCARD.Given)
-    check_and_add_value(s, VCARD.Family)
-    check_and_add_value(s, VCARD.EMAIL)
-
-print_person_info(g1)
