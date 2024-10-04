@@ -34,3 +34,17 @@ WHERE {
 }
 GROUP BY ?property
 LIMIT 100  # Limiting the number of values to retrieve. Remove this at your peril.
+
+
+
+As with 4, a different interpetation would be different values for each property, not paired with politicians, but restricted to triples with them. In this case, the query would be:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property (COUNT(DISTINCT ?value) AS ?uniqueValues)
+WHERE {
+  ?instance a dbo:Politician .
+  ?instance ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property

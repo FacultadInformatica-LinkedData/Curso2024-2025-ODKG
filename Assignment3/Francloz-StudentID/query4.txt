@@ -36,3 +36,15 @@ ORDER BY DESC(?property)
 LIMIT 100  # Limiting the number of values to retrieve.
 
 This seems to proc the automatic estimator for query estimated time to completion > time-out, which leads to not even trying to query it. After some attempts and other services used, I managed to get the provided results.
+
+
+
+However, a different interpretation is just the different values that are taken for each property in all politicians, not paired with them. In that case, we would have something like this:
+
+SELECT ?property (GROUP_CONCAT(DISTINCT ?value ; separator=", ") AS ?distinctValues)
+WHERE {
+  ?instance a dbo:Politician .
+  ?instance ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property
