@@ -1,0 +1,23 @@
+{
+    "fullname": "Luis Alvarez Conde",
+    "hometown": "Santander",
+    "age": 22,
+    "almaMater": "Universidad Politécnica de Madrid",
+    "parents": {
+        "mother": "María",
+        "father": "Luis"
+    },
+    "subjects": [
+        {
+            "name": "Data Visualization",
+            "teachers": ["Pablo Toharia"],
+            "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented"
+        },
+        {
+            "name": "Big Data",
+            "teachers": ["Antonio LaTorre", "Julián Arenas", "Jorge Acosta"],
+            "description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+        }
+       
+    ]
+}
