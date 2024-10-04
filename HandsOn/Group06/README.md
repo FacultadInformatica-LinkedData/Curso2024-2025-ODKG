@@ -1,4 +1,4 @@
-Group01
+Group06
 =====================
 Members
 
@@ -8,6 +8,6 @@ Members
 
 3. Juan Andrés Guevara Ángel - jguevaraangel
 
-3. Aron Lausch - Ar0n01
+4. Aron Lausch - Ar0n01
 
-4. Ling Zhang - zzulz
+5. Ling Zhang - zzulz
