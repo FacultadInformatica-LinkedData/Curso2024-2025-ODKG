@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Requirements</title>
+</head>
+<body>
+    <h1>Dataset Requirements</h1>
+
+    <h2>Dublinbikes DCC</h2>
+    <ul>
+        <li><b>R1. Smart City Domain:</b> Transportation and mobility</li>
+        <li><b>R2. Available as CSV:</b> Yes</li>
+        <li><b>R3. License:</b> Creative Commons Attribution 4.0 International (CC BY 4.0) license, which allows for redistribution and reuse of the data as long as proper credit is given and changes are indicated.</li>  
+        <li><b>Source:</b> <a href="https://data.europa.eu/data/datasets/33ec9fe2-4957-4e9a-ab55-c5e917c7a9ab?locale=en">Dublinbikes DCC Dataset</a></li>
+        <li><b>R4. Linkable Entities:</b></li>
+        <p>The dataset contains several entities that can be linked to external data sources:</p>
+        <li><b>Geographical Locations:</b> Each bike station is associated with a specific latitude and longitude. These coordinates can be linked to:</li>
+        <ul>
+            <li><b>Wikidata:</b> Coordinates can be linked to specific locations in Dublin, such as streets, neighborhoods, or landmarks.</li>
+            <li><b>OpenStreetMap:</b> These coordinates can be visualized on detailed maps to provide a richer contextual understanding of the locations of bike-sharing stations in Dublin.</li>
+            <li><b>DBpedia/EsDBpedia:</b> Links to city-specific locations or regions in Dublin to provide a more semantic understanding of the station's context.</li>
+        </ul>
+        <li><strong>Bike Availability Data:</strong> The number of available bikes and empty docks at each station can be combined with datasets that track the flow of transportation services or monitor public mobility in Dublin.</li>
+         <li><strong>Timestamps:</strong> The dataset includes real-time data on bike availability, which can be linked with time-specific events or other datasets to study usage patterns. For example:
+        <ul>
+            <li><strong>Weather Data:</strong> By combining timestamps with weather datasets, you could analyze how weather conditions (rain, temperature) affect bike usage.</li>
+            <li><strong>Public Transportation Schedules:</strong> The data can be linked to public transportation datasets to understand how bike availability aligns with bus or train schedules, or even as an alternative when public transport is crowded or unavailable.</li>
+        </ul>
+    </li>
+        <p>Other datasets that contain compatible entities:</p>
+        <ul>
+            <li><b>Weather Data:</b> External weather datasets can be linked using the timestamp and location from the Dublinbikes DCC dataset. For example, one can analyze how weather conditions (rain, temperature) impact bike usage.</li>
+            <li><b>Public Transportation Data:</b> Datasets with information about public transport routes and schedules in Dublin (e.g., bus or tram schedules) can be linked via location and date to understand how bike availability interacts with public transportation options.</li>
+            <li><b>Traffic Data:</b> Traffic flow datasets can be linked using location and timestamp to study how traffic conditions affect bike usage in Dublin.</li>
+            <li><b>City Event Data:</b> Datasets containing information about public events, festivals, or large gatherings can be linked with bike station data to analyze how events influence bike-sharing demand.</li>
+        </ul>
+    </ul>
+</body>
+</html>
