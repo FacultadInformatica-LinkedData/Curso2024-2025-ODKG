@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "age": "http://schema.org/Person/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "hometown": "http://schema.org/address",
+    "parents": "http://schema.org/parent",
+    "subject": "http://schema.org/subjectOfStudy",
+    "teacher": "http://schema.org/knows",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "name": "Javier Rodríguez García",
+  "hometown": "Lugo",
+  "age": 22,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": ["María del Carmen", "Manuel"],
+  "subject": [
+    {
+      "name": "Open Data and Knowledge Graphs",
+      "teacher": "Pablo Calleja Ibañez",
+      "description": "Possess and understand knowledge that provides a basis or opportunity for originality in the development and/or application of ideas, often in a research context."
+    },
+    { "name": "Data Processes" },
+    { "name": "Intelligent Systems" }
+  ]
+}
