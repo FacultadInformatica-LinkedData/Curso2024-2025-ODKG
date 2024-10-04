@@ -11,22 +11,23 @@ Original file is located at
 Leer y escribir ficheros que contienen tripletas es muy sencillo en RDFlib, para ello vamos a emplear dos métodos de la librería: parse y serialize.
 """
 
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
+!pip install rdflib
+github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4"
 
 from rdflib import Graph, Namespace, Literal
 g = Graph()
 
 """Podemos añadir tripletas a nuestro grafo empleando *parse*, que leerá el recurso proporcionado. Debemos además indicarle el formato si este no puede ser inferido."""
 
-g.parse(github_storage+"/rdf/example1.rdf", format="xml")
+g.parse(github_storage+"/resources/example1.rdf", format="xml")
 
 """Para visualizar el grafo en un formato específico podemos utilizar *serialize*. Por ejemplo aquí mostramos la salida del grafo en turtle"""
 
-print(g.serialize(format="ttl"))
+print(g.serialize(format="ttl").decode("UTF-8"))
 
 """El recurso puede ser local o remoto, como en nuestro caso. El resultado es el mismo. Podemos añadir todos los datos que queramos a nuestro grafo, los datos simplemente se irán fusionando."""
 
-g.parse(github_storage+"/rdf/example2.rdf", format="xml")
+g.parse(github_storage+"/resources/example2.rdf", format="xml")
 
 """Ahora podemos comprobar el resultado volcando las tripletas de forma sencilla."""
 
@@ -35,7 +36,7 @@ for subj, pred, obj in g:
 
 """Ahora podemos ver la operación inversa, serializando estos datos a algún formato que nos lo permita. Este proceso también nos permite una conversión sencilla entre formatos."""
 
-print(g.serialize(format="xml"))
+print(g.serialize(format="xml").decode("UTF-8"))
 
 """También podemos guardar el resultado serializado en un fichero, puedes ver este fichero resultante en el panel izquierdo."""
 

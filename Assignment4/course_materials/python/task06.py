@@ -9,17 +9,13 @@ Original file is located at
 **Task 06: Modifying RDF(s)**
 """
 
+!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
 
 """Read the RDF file as shown in class"""
 
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS
-from rdflib import FOAF
-
-vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
-schema = Namespace("http://schema.org/")
-
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
@@ -36,28 +32,12 @@ for s, p, o in g:
 
 """
 
-new_triples = [
-  (ns.School, RDF.type, RDFS.Class), # (namespace.School, rdfs.isType, rdfs.Class)
-  (ns.University, RDF.type, RDFS.Class), # (namespace.School, rdfs.isType, rdfs.Class)
-  (ns.School, RDFS.label, Literal("Escuela")), # (namespace.University, rdfs.label, "Escuela")
-  (ns.University, RDFS.label, Literal("Universidad")) # (namespace.University, rdfs.label, "Universidad")
-]
-
-for triple in new_triples:
-  g.add(triple)
-
+# TO DO
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.2: Add "Researcher" as a subclass of "Person"**"""
-
-new_triples = [
-  (ns.Researcher, RDFS.subClassOf, schema.Person),
-]
-
-for triple in new_triples:
-  g.add(triple)
 
 # TO DO
 # Visualize the results
@@ -66,55 +46,22 @@ for s, p, o in g:
 
 """**TASK 6.3: Create a new individual of Researcher named "Jane Smithers"**"""
 
-new_triples = [
-  (ns.JaneSmithers, RDF.type, ns.Researcher),
-  (ns.JaneSmithers, RDFS.label, Literal("Jane Smithers")),
-]
-
-for triple in new_triples:
-  g.add(triple)
-
+# TO DO
 # Visualize the results
 for s, p, o in g:
   print(s,p,o)
 
 """**TASK 6.4: Add to the individual JaneSmithers the email address, fullName, given and family names. Use the https://schema.org vocabulary**"""
 
-new_triples = [
-  (ns.JaneSmithers, schema.name, Literal("Jane Smithers")),
-  (ns.JaneSmithers, schema.email, Literal("jane.smithers@upm.es")),
-  (ns.JaneSmithers, schema.givenName, Literal("Jane")),
-  (ns.JaneSmithers, schema.familyName, Literal("Smithers")),
-]
-
-for triple in new_triples:
-  g.add(triple)
-
+# TO DO
 # Visualize the results
-for s, p, o in g:
-  print(s,p,o)
 
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
 
-new_triples = [
-  (ns.JohnSmith, vcard.organization_name, ns.UPM),
-]
-
-for triple in new_triples:
-  g.add(triple)
-
-for s, p, o in g:
-  print(s,p,o)
+# TO DO
+# Visualize the results
 
 """**Task 6.6: Add that Jown knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
 
-new_triples = [
-  (ns.JohnSmith, FOAF.knows, ns.JaneSmithers),
-]
-
-for triple in new_triples:
-  g.add(triple)
-
+# TO DO
 # Visualize the results
-for s, p, o in g:
-  print(s,p,o)

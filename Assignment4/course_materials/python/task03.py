@@ -9,13 +9,14 @@ Original file is located at
 **TASK 3: Statement-based query**
 """
 
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
+!pip install rdflib
+github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4"
 
 """Importamos example3.rdf en nuestro grafo"""
 
 from rdflib import Graph, Namespace, Literal
 g = Graph()
-g.parse(github_storage+"/rdf/example3.rdf", format="xml")
+g.parse(github_storage+"/resources/example3.rdf", format="xml")
 
 """Listamos todos los recursos con la propiedad VCARD:FN"""
 
