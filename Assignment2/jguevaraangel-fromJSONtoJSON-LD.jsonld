@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "ex": "http://example.org/#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:jguevaraangel",
+      "@type": "ex:Person",
+      "ex:fullName": [
+        {
+          "@value": "Juan Andres Guevara Angel",
+          "@type": "xsd:string"
+        }
+      ],
+      "ex:homeTown": [
+        {
+          "@value": "Bogotá D.C.",
+          "@type": "xsd:string"
+        }
+      ],
+      "ex:age": [
+        {
+          "@value": "23",
+          "@type": "xsd:string"
+        }
+      ],
+      "ex:almaMater": [
+        {
+          "@value": "Universidad del Rosario",
+          "@type": "xsd:string"
+        }
+      ],
+      "ex:parentsNames": [
+        {
+          "ex:father": {
+            "@value": "Freddy",
+            "@type": "xsd:string"
+          },
+          "ex:mother": {
+            "@value": "Ofelia",
+            "@type": "xsd:string"
+          }
+        }
+      ],
+      "ex:subjects": [
+        {
+          "@id": "ex:BigData",
+          "@type": "ex:Subject",
+          "ex:name": "Big Data",
+          "ex:teacher": "Antonio LaTorre",
+          "ex:description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data."
+        },
+        {
+          "@id": "ex:CloudComputing",
+          "@type": "ex:Subject",
+          "ex:name": "Cloud computing and big data ecosystems design",
+          "ex:teacher": "Marta Patiño",
+          "ex:description": "This course that focuses on the principles and best practices for designing, deploying, and managing cloud-based infrastructures to handle large-scale data."
+        },
+        {
+          "@id": "ex:DataProcesses",
+          "@type": "ex:Subject",
+          "ex:name": "Data Processes",
+          "ex:teacher": "Ernestina Menasalvas",
+          "ex:description": "This course designed to provide students with a comprehensive understanding of how data is collected, cleaned, transformed, and analyzed."
+        },
+        {
+          "@id": "ex:DataScienceSeminars",
+          "@type": "ex:Subject",
+          "ex:name": "Data Science Seminars",
+          "ex:teacher": "Raul Alonso",
+          "ex:description": "This course is configured around a series of seminars that address the challenges and opportunities emerging from
+large quantities of heterogeneous, complex, networked and dynamic data influencing virtually all socio-economic
+domains."
+        },
+        {
+          "@id": "ex:DataVisualization",
+          "@type": "ex:Subject",
+          "ex:name": "Data Visualization",
+          "ex:teacher": "Pablo Toharia",
+          "ex:description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information."
+        },
+        {
+          "@id": "ex:DeepLearning",
+          "@type": "ex:Subject",
+          "ex:name": "Deep Learning",
+          "ex:teacher": "Luis Baumela",
+          "ex:description": "This course provides an in-depth introduction to deep learning, a subset of machine learning that uses artificial neural networks to model complex patterns in data."
+        },
+        {
+          "@id": "ex:EthicalLegalSocialAspects",
+          "@type": "ex:Subject",
+          "ex:name": "Ethical, legal and social aspects",
+          "ex:teacher": "Víctor Rodríguez",
+          "ex:description": "This course is designed to explore the complex relationship between emerging technologies and society."
+        },
+        {
+          "@id": "ex:MachineLearning",
+          "@type": "ex:Subject",
+          "ex:name": "Machine Learning",
+          "ex:teacher": "Pedro Larrañaga",
+          "ex:description": "This course exposes several methods to solve problems of supervised and unsupervised
+classification, and relationships between system variables."
+        },
+        {
+          "@id": "ex:ODKG",
+          "@type": "ex:Subject",
+          "ex:name": "Open Data and Knowledge Graphs",
+          "ex:teacher": "Oscar Corcho",
+          "ex:description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C
+recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and
+methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources
+and formats, using Linked Data technologies."
+        },
+        {
+          "@id": "ex:PDP",
+          "@type": "ex:Subject",
+          "ex:name": "Programming For Data Processing",
+          "ex:teacher": "Guillermo Antonio Vigueras",
+          "ex:description": "This course is related with data manipulation and programming using the Python language."
+        },
+        {
+          "@id": "ex:TSDM",
+          "@type": "ex:Subject",
+          "ex:name": "Time Series Data Mining",
+          "ex:teacher": "Aurora Perez",
+          "ex:description": "In this course all the stages of the Knowledge Discovery process will be reviewed, focusing on time series, and the
+most important techniques for each stage will be listed."
+        }
+      ]
+    }
+  ]
+}
+
