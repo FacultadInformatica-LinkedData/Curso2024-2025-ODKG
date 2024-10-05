@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Instancia de la clase ns:Estacion
-ns:04 a ns:Estacion ;
+ns:04 a ns:Station ;
     rdfs:label "Plaza de España" .
 
 # Instancia de la clase ns:Magnitud
@@ -34,5 +34,6 @@ ns:Medicion1 a ns:Measurement ;
     ns:hasMes ns:01 ;
     ns:hasDia "18"^^xsd:integer ;  
     ns:hasMunicipio ns:79 ;
-    ns:hasProvincia ns:28 ;  
+    ns:hasProvincia ns:28 ;
+    ns:hasStation ns:04 ;
     ns:hasMagnitud ns:06 .
