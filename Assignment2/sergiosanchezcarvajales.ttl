@@ -1,0 +1,26 @@
+@prefix ex: <http://www.example.org#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Class01 a schema:Class ;
+    schema:name "Class 01" ;
+    schema:includes ex:Sensor029, ex:Computer101 .
+
+ex:Sensor029 a schema:Sensor ;
+    schema:name "Sensor 029" ;
+    schema:hasMeasurement ex:Measurement8401 .
+
+ex:Measurement8401 a schema:Measurement ;
+    schema:name "Measurement 8401" ;
+    schema:temperature 29^^xsd:integer ;
+    schema:lastUpdated "2010-06-12T12:00:12"^^xsd:dateTime .
+
+ex:Computer101 a schema:Computer ;
+    schema:name "Computer 101" ;
+    schema:hasOwner ex:User10A .
+
+ex:User10A a foaf:Person ;
+    schema:name "User 10A" ;
+    foaf:name "Pedro" .
+

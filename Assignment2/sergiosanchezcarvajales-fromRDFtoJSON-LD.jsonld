@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "ex": "http://www.example.org#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "title": "rdfs:label",
+    "tipo": "rdfs:label",
+    "estado": "rdfs:comment",
+    "lastUpdated": "vcard:rev",
+    "geometry": "geo:geometry",
+    "lat": "geo:lat",
+    "long": "geo:long"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.example.org/Class01",
+      "@type": "ex:Class",
+      "title": "Class 01",
+      "ex:includes": [
+        {"@id": "http://www.example.org/Sensor029"},
+        {"@id": "http://www.example.org/Computer101"}
+      ]
+    },
+    {
+      "@id": "http://www.example.org/Sensor029",
+      "@type": "ex:Sensor",
+      "title": "Sensor 029",
+      "ex:hasMeasurement": {
+        "@id": "http://www.example.org/Measurement8401"
+      }
+    },
+    {
+      "@id": "http://www.example.org/Measurement8401",
+      "@type": "ex:Measurement",
+      "title": "Measurement 8401",
+      "ex:hasTemperature": {
+        "@value": "29",
+        "@type": "xsd:integer"
+      },
+      "lastUpdated": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "http://www.example.org/Computer101",
+      "@type": "ex:Computer",
+      "title": "Computer 101",
+      "ex:hasOwner": {
+        "@id": "http://www.example.org/User10A"
+      }
+    },
+    {
+      "@id": "http://www.example.org/User10A",
+      "@type": "ex:Person",
+      "title": "User 10A",
+      "vcard:fn": "Pedro"
+    }
+  ]
+}
+
