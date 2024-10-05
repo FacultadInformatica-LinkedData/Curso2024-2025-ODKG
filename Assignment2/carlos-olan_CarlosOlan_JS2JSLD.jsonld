@@ -1,0 +1,68 @@
+{
+    "@context": {
+      "ex": "http://example.org#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "ex:CarlosDavidOlanOlvera",
+        "@type": "ex:Person",
+        "ex:fullName": "Carlos David Olan Olvera",
+        "ex:hometown": "Monterrey, Nuevo León",
+        "ex:age": {
+          "@value": 22,
+          "@type": "xsd:integer"
+        },
+        "ex:almaMater": "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+        "ex:parents": {
+          "ex:father": {
+            "@id": "ex:CarlosOlanUscanga",
+            "@type": "ex:Person",
+            "ex:fullName": "Carlos Olan Uscanga"
+          },
+          "ex:mother": {
+            "@id": "ex:AlmaRosaOlveraMendoza",
+            "@type": "ex:Person",
+            "ex:fullName": "Alma Rosa Olvera Mendoza"
+          }
+        },
+        "ex:subjectsThisYear": [
+          {
+            "@id": "ex:EthicsInAI",
+            "@type": "ex:Subject",
+            "ex:name": "Ética en la Inteligencia Artificial",
+            "ex:teachers": {
+              "@id": "ex:BrendaVerdugo",
+              "@type": "ex:Person",
+              "ex:fullName": "Brenda Verdugo"
+            },
+            "ex:description": "Un curso enfocado en las implicaciones éticas de la IA, el aprendizaje automático y la automatización en diversos sectores."
+          },
+          {
+            "@id": "ex:NaturalLanguageProcessing",
+            "@type": "ex:Subject",
+            "ex:name": "Procesamiento de Lenguaje Natural",
+            "ex:teachers": {
+              "@id": "ex:RamonCarmona",
+              "@type": "ex:Person",
+              "ex:fullName": "Ramon Carmona"
+            },
+            "ex:description": "Este curso explora las técnicas computacionales para entender y generar lenguaje humano."
+          },
+          {
+            "@id": "ex:MachineLearningAlgorithms",
+            "@type": "ex:Subject",
+            "ex:name": "Algoritmos de Aprendizaje Automático",
+            "ex:teachers": {
+              "@id": "ex:NadiaVidales",
+              "@type": "ex:Person",
+              "ex:fullName": "Nadia Vidales"
+            },
+            "ex:description": "El estudio de algoritmos y modelos estadísticos que permiten a las computadoras realizar tareas específicas sin instrucciones explícitas."
+          }
+        ]
+      }
+    ]
+  }
+  
+  
