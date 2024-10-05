@@ -1,11 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Adjust table appearance */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #333333;
+      text-align: left;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset Analysis</title>
+  </head>
+
+  <body>
+    <h2>Data analysus and schema</h2>
+    <h3>intensidad_media_dias_laborables.csv</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Representation</th>
+          <th>Type</th>
+          <th>Values</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Año</td>
+          <td>Year when measurement was taken</td>
+          <td>Date(Y)</td>
+          <td>2021 - 2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mes</td>
+          <td>Month when measurement was taken</td>
+          <td>String</td>
+          <td>Enero - Diciembre</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Conjunto</td>
+          <td>Sum of Air Quality</td>
+          <td>Integer</td>
+          <td>1.256.393 - 2.045.884</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Interior 1er cinturon</td>
+          <td>Air Quality inside first belt</td>
+          <td>Integer</td>
+          <td>74730 - 119160</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>En el 1er cinturón</td>
+          <td>Air Quality at the first belt</td>
+          <td>Integer</td>
+          <td>156336 - 266690</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre 1er y 2º cinturón</td>
+          <td>Air Quality between the first and second belt</td>
+          <td>Integer</td>
+          <td>245694 - 413139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>En el 2nd cinturón</td>
+          <td>Air Quality at the second Belt</td>
+          <td>Integer</td>
+          <td>124815 - 225869</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre 2º cinturón y M-30</td>
+          <td>Air Quality between the second belt and M-30</td>
+          <td>Integer</td>
+          <td>275280 - 460850</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M-30</td>
+          <td>Air Quality at the M-30</td>
+          <td>Integer</td>
+          <td>121532 - 221280</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre M-30 y M-40</td>
+          <td>Air Quality between the M-30 and M-40</td>
+          <td>Integer</td>
+          <td>229084 - 353684</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M-40</td>
+          <td>Air Quality at the M-40</td>
+          <td>Integer</td>
+          <td></td>
+          <td>No values provided for this</td>
+        </tr>
+        <tr>
+          <td>Exterior M-40</td>
+          <td>Air Quality outside the M-40</td>
+          <td>Integer</td>
+          <td>19393 - 28190</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>meteo.csv</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Representation</th>
+          <th>Type</th>
+          <th>Values</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbod>
+        <tr>
+          <td>PROVINCIA</td>
+          <td>Province where the data has been measured</td>
+          <td>ID_provincia</td>
+          <td>28</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MUNICIPIO</td>
+          <td>Municipaloty where the data has been measured</td>
+          <td>ID_Municipality</td>
+          <td>079</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ESTACION</td>
+          <td>Weather station where the data has been measured</td>
+          <td>ID_WeatherStation</td>
+          <td>4 - 115</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MAGNITUD</td>
+          <td></td>
+          <td></td>
+          <td>81 - 89</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>PUNTO_MUESTREO</td>
+          <td>Specific sampling location</td>
+          <td>ID_samplingLocation</td>
+          <td>28079004_83_98 - 28079115_86_98</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ANO</td>
+          <td>Year when the data was collected</td>
+          <td>Date(Y)</td>
+          <td>2024</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MES</td>
+          <td>Month when the data was collected</td>
+          <td>Date(M)</td>
+          <td>1 - 9</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D01 - D31</td>
+          <td>AQI Value</td>
+          <td></td>
+          <td>0 - 962</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V01 - V31</td>
+          <td>Verified value or not</td>
+          <td>Boolean</td>
+          <td>V/N</td>
+          <td>Non verified values may not be able to be used</td>
+        </tr>
+      </tbod>
+    </table>
+
+    <h2>datos2024080.csv</h2>
+    <!-- Is this the same csv?? -->
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <th>Column</th>
+          <th>Representation</th>
+          <th>Type</th>
+          <th>Values</th>
+          <th>Problems</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>
+      <a
+        href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default"
+        >Liscensing</a
+      >
+    </h2>
+    <p>
+      The dataset from the Madrid City Council's open data portal is provided
+      under the terms of reuse for both commercial and non-commercial purposes.
+      Users are required to cite the source, stating it as: "Origen de los
+      datos: Ayuntamiento de Madrid". The information should not be distorted,
+      and any metadata must remain intact. The license aligns with Spain's
+      Public Sector Information Law, which allows free reuse of public data,
+      meaning a similar license, like Creative
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+        >Commons Attribution 4.0 (CC BY 4.0)</a
+      >, could be appropriate for datasets you generate.
+    </p>
+
+    <h2>Resource name strategy</h2>
+    <p><b>Domain Identifier:</b>MadridAirQuality</p>
+    <p><b>Path:</b>/ontology/</p>
+    <p><b>Data:</b>/resource/</p>
+    <p><b>Full ontology URL:</b>http://www.MadridAirQuality.es/ontology/</p>
+    <p><b>Clases:</b>http://www.MadridAirQuality.es/ontology/className</p>
+    <p>
+      <b>Properties:</b>http://www.MadridAirQuality.es/ontology/propertyName
+    </p>
+    <p>
+      <b>Individual:</b
+      >http://www.MadridAirQuality.es/ontology/resource/className#identifier
+    </p>
+  </body>
 </html>
