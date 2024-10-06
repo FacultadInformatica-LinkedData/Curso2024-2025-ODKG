@@ -1,0 +1,44 @@
+{
+    "@context": {
+      "ex": "http://example.org#",
+      "schema": "http://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id": "ex:ClaudiaMartinez",
+    "@type": "ex:Person",
+    "schema:name": "Claudia Milagros Martínez Rojas",
+    "schema:birthPlace": "Cuba",
+    "schema:age": 23,
+    "schema:alumniOf": {
+      "@id": "ex:UniversidadComplutenseMadrid",
+      "schema:name": "Universidad Complutense de Madrid"
+    },
+    "schema:parent": [
+      {
+        "@id": "ex:IdalmisRojas",
+        "@type": "ex:Person",
+        "schema:name": "Idalmis Rojas Pardo"
+      },
+      {
+        "@id": "ex:HumbertoMartinez",
+        "@type": "ex:Person",
+        "schema:name": "Humberto Martínez Silva"
+      }
+    ],
+    "schema:subjectOf": [
+      {
+        "@id": "ex:OpenDataKnowledgeGraphs",
+        "@type": "ex:Subject",
+        "schema:name": "Open Data and Knowledge Graphs",
+        "schema:teacher": [
+          {
+            "@id": "ex:OscarCorcho",
+            "schema:name": "Oscar corcho"
+          }
+        ],
+        "schema:description": "Open Data and Knowledge Graphs offers comprehensive insights into open data strategies and the tools used for creating and managing knowledge graphs."
+      }
+      
+    ]
+  }
+  
