@@ -8,38 +8,48 @@
 mair:Station_001 a mair:MonitoringStation ;
     rdfs:label "Station 001" ;
     mair:locatedInRegion mair:MadridCentro ;
-    mair:hasAirQualityMeasurement _:air_quality_measurements_202402 ;
-    mair:hasTrafficIntensity _:traffic_intensity_202402 .
+    mair:hasAirQualityMeasurement _:air_quality_measurements_202408 ;
+    mair:hasTrafficIntensity _:traffic_intensity_202408 .
 
 # AQI Measurements for August 2024
-_:air_quality_measurements_202402 a mair:AirQualityMeasurementGroup ;
-    mair:measurementMonth "2024-02"^^xsd:date ;
-    mair:hasMeasurement _:air_quality_1, _:air_quality_2, _:air_quality_3, _:air_quality_4, _:air_quality_5, _:air_quality_30, _:air_quality_31 .
+_:air_quality_measurements_202408 a mair:AirQualityMeasurementGroup ;
+    mair:measurementMonth "2024-08"^^xsd:date ;
+    mair:hasMeasurement _:air_quality_1, _:air_quality_2, _:air_quality_3, _:air_quality_4, _:air_quality_5 .
 
 _:air_quality_1 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-01"^^xsd:date ;
+    mair:measurementDate "2024-08-01"^^xsd:date ;
     mair:aqiValue 85 ;
-    mair:validity "V" .
+    mair:validity "V" ;
+    mair:magnitude "10" ;  # Example pollutant
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 _:air_quality_2 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-02"^^xsd:date ;
+    mair:measurementDate "2024-08-02"^^xsd:date ;
     mair:aqiValue 90 ;
-    mair:validity "V" .
+    mair:validity "V" ;
+    mair:magnitude "10" ;
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 _:air_quality_3 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-03"^^xsd:date ;
+    mair:measurementDate "2024-08-03"^^xsd:date ;
     mair:aqiValue 75 ;
-    mair:validity "V" .
+    mair:validity "N" ;
+    mair:magnitude "10" ;
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 _:air_quality_4 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-04"^^xsd:date ;
+    mair:measurementDate "2024-08-04"^^xsd:date ;
     mair:aqiValue 92 ;
-    mair:validity "V" .
+    mair:validity "V" ;
+    mair:magnitude "10" ;
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 _:air_quality_5 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-05"^^xsd:date ;
+    mair:measurementDate "2024-08-05"^^xsd:date ;
     mair:aqiValue 80 ;
-    mair:validity "V" .
+    mair:validity "N" ;
+    mair:magnitude "10" ;
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 _:air_quality_30 a mair:AirQualityMeasurement ;
     mair:measurementDate "2024-02-30"^^xsd:date ;
@@ -50,6 +60,8 @@ _:air_quality_31 a mair:AirQualityMeasurement ;
     mair:measurementDate "2024-02-31"^^xsd:date ;
     mair:aqiValue 0 ;
     mair:validity "N" .
+    mair:magnitude "10" ;
+    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
 
 # Traffic Intensity for August 2024
 _:traffic_intensity_202402 a mair:TrafficIntensity ;
