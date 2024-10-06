@@ -1,0 +1,30 @@
+{
+    "@context": {
+      "ex": "http://example.org/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema": "http://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@type": "Person",
+    "foaf:fullName": "Aaron Moyano Alcacer",
+    "schema:homeLocation": "Alcorcon",
+    "age": { "@value": "22", "@type": "xsd:integer" },
+    "schema:alumniOf": "Universidad Politécnica de Madrid",
+    "ex:parents": {
+      "ex:father": "Antonio",
+      "ex:mother": "Silvia"
+    },
+    "ex:subjects": [
+      {
+        "schema:name": "Open Data and Knowledge Graphs",
+        "ex:teachers": ["Oscar Corcho", "Daniel Garijo"],
+        "schema:description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+      },
+      {
+        "schema:name": "Data processes",
+        "ex:teachers": ["Ernestina Menasalvas"],
+        "schema:description": "This subject introduces the processes used on data."
+      }
+    ]
+}
+  
