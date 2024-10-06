@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ex": "http://example.org/",
+    "Person": "ex:Person",
+    "fullName": "rdfs:label",
+    "hometown": "ex:hometown",
+    "age": "ex:age",
+    "almaMater": "ex:almaMater",
+    "parent": "ex:parent",
+    "father": "ex:father",
+    "mother": "ex:mother",
+    "subjects": "ex:subjects",
+    "subject": "ex:subject",
+    "subjectName":"rdfs:label",
+    "description":"rdfs:description",
+    "teacher":"ex:teacher"
+    
+  },
+  
+  "@id": "FedeCastejon", 
+  "@type": "ex:Person",
+  "fullName": "Federico Castejón Lozano",
+  "hometown": "Ciudad Real",
+  "age": 23,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": [{"@id":"ex:Luis", "@type": "ex:father", "fullName":"Luis Castejón"}, 
+              {"@id":"ex:Beatriz", "@type": "ex:mother", "fullName":"Beatriz Lozano"}
+             ],
+  "subjects": [{"@id": "ex:dataVisualization",
+                "@type": "subject",
+                "subjectName":"Data Visualization",
+                "teacher": ["Pablo Toharia Rabasco", "Jorge Acosta Hernandez", "Antonio Latorre De La Fuente"],
+                "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented"
+               },
+               {"@id": "ex:openData", 
+               "@type": "ex:subject",
+                "subjectName":"Open Data and Knowledge Graphs",
+                "teacher": ["Oscar Corcho Garcia", "Raul Garcia Castro"],
+                "description": "Deep learning has emerged from the connectionist branch of machine learning, aided by the arrival of big data and increased computational power (e. g., parallelization using graphics processing units – GPUs). Deep learning has shown better performance than other approaches to solve problems that cope with large amounts of data as it is required, for example, in computer vision (image or video processing) or speech understanding. This course presents a theoretical and practical view of deep learning. It begins with the introduction of the foundations of artificial neural networks and different types of architectures (both shallow and deep networks). Then, the course presents learning techniques to train neural networks, with special attention to deep learning methods. The course also presents neural models for problem classes and application domains (e.g., computer vision and natural language processing). To complement the practical view, the student will use specialized software tools to train neural networks in practical problems."
+               }
+              ]
+}
+
+
+
+  
