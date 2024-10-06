@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "names": "http://www.namespace.es/names/",
+    "person": "names:person",
+    "fullName": "names:fullName",
+    "homeTown": "names:homeTown",
+    "age": "names:age",
+    "almaMater": "names:almaMater",
+    "parents": "names:parents",
+    "subjects": "names:subjects",
+    "subjectName": "names:subjectName",
+    "teachers": "names:teachers",
+    "description": "names:description"
+  },
+  "@id": "http://www.namespace.es/names/EduardoSebastian",
+  "@type": "person",
+  "fullName": "Eduardo Sebastian de Erice Hünerberg",
+  "homeTown": "Madrid, España",
+  "age": 24,
+  "almaMater": "Universidad Politecnica de Madrid",
+  "parents": [
+    "Eduardo",
+    "Giovanna"
+  ],
+  "subjects": [
+    {
+      "subjectName": "Open Data and Knowledge Graphs",
+      "teachers": [
+        "Oscar Corcho Garcia",
+        "Raul Garcia Castro"
+      ],
+      "description": "During this course you will learn about the main foundations for Knowledge Graphs and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies."
+    },
+    {
+      "subjectName": "Data Visualization",
+      "teachers": [
+        "Pablo Toharia"
+      ],
+      "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented."
+    },
+    {
+      "subjectName": "Big Data",
+      "teachers": [
+        "Antonio LaTorre",
+        "Julián Arenas",
+        "Jorge Acosta"
+      ],
+      "description": "This course will allow the student to gain the fundamentals for the analysis of large volumes of data. With an eminently practical approach, the technologies and fundamentals necessary to successfully accomplish the whole data analysis process will be presented in the context of Big Data, from the raw data to the models derived from them."
+    }
+  ]
+}

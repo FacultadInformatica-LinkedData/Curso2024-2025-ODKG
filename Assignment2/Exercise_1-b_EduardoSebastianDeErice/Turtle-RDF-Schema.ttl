@@ -1,0 +1,17 @@
+@prefix : <http://example.org#> .
+
+:Class01 a :Class ;
+    :includes :Sensor029, :Computer101 .
+
+:Sensor029 a :Sensor ;
+    :hasMeasurement :Measurement8401 .
+
+:Measurement8401 a :Measurement ;
+    :hasTemperature 29 ;
+    :atTime "2010-06-12T12:00:12".
+
+:Computer101 a :Computer ;
+    :hasOwner :User10A .
+
+:User10A a :User ;
+    :hasName "Pedro" .
