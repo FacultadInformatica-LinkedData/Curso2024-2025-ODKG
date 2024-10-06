@@ -1,0 +1,42 @@
+@prefix base: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+
+
+ns:ChargingPoint_0001 rdf:type ns:ChargingPoint ;
+    ns:status "Ejecutado" ;
+    ns:numberOfEquipments 1 ;
+    ns:characteristics "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:openingDate "2019-09-05T22:00:00Z"^^xsd:dateTime ;
+    ns:dischargeDate "2022-03-02-05T15:21:24Z"^^xsd:dateTime ;
+    ns:editionDate "2022-04-27T10:43:52Z"^^xsd:dateTime;
+    ns:openingHours "24".
+
+ns:Street0001 rdf:type ns:Street ;
+    rdf:label "Ronda de Valencia 1".
+
+ns:Neighborhood0001 rdf:type ns:Neighborhood ;
+    rdf:label "Palos de Moguer".
+
+ns:Arganzuela rdf:type ns:Neighborhood ;
+    rdf:label "Arganzuela".
+
+ns:GIC rdf:type ns:Operator ;
+    rdf:label "GIC".
+
+ns:ChargingPoint_0001 ns:locatedIn ns:Street0001.
+
+ns:Street0001 ns:locatedIn ns:Neighborhood0001.
+
+ns:Neighborhood0001 ns:isPartOf ns:Arganzuela.
+
+ns:ChargingPoint_0001 ns:managedBy ns:GIC.
+
+
+
+
+

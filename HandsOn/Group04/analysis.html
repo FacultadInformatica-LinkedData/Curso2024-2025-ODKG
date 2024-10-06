@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data and Licensing Analysis</title>
+</head>
+
+<body>
+    <h1>Dataset Analysis: Electric Vehicle Charging Stations in Madrid</h1>
+    <h2>1. Data Analysis</h2>
+    <p>This dataset includes information about charging points for electric vehicles such us the Location, the type of
+        connector or the number of units. This dataset can be found in <a
+            href="https://datos.gob.es/en/catalogo/l01280796-estaciones-de-recarga-rapida-de-acceso-publico-para-vehiculos-electricos">
+            Dataset Link</a>. There are 125 instance with 19 variables each one.</p>
+    <h3>Variables</h3>
+    <ul>
+        <li><strong>OID_</strong> (integer): Unique identifier for each charging station, useful for internal reference
+            or linking records across systems.</li>
+        <li><strong>ID_Punto</strong> (string): Identifier code for each charging station, which could be used to link
+            with other datasets about infrastructure.</li>
+        <li><strong>DISTRITO</strong> (string): The district where the charging station is located, useful for
+            administrative and geographical linking.</li>
+        <li><strong>BARRIO</strong> (string): The neighborhood where the charging station is located, useful for
+            neighborhood-specific urban analysis.</li>
+        <li><strong>ESTADO</strong> (string): The operational status of the station, which could be linked with other
+            real-time status systems.</li>
+        <li><strong>UBICACIÓN</strong> (string): The street address of the charging station, essential for geographical
+            and navigation-based applications.</li>
+        <li><strong>EMPLAZAMIENTO</strong> (string): The type of placement (e.g., public or private), useful for
+            understanding accessibility and categorization of stations.</li>
+        <li><strong>INFO_ADICIONAL</strong> (string, may contain nulls): Additional information about the station that
+            may provide further context for urban services.</li>
+        <li><strong>Nº_EQUIPOS</strong> (integer): The number of charging units at the station, essential for
+            understanding capacity and potential usage analysis.</li>
+        <li><strong>CARACTERÍSTICAS_EQUIPO</strong> (string): Details about the equipment, including the power and type
+            of connectors, useful for linking with electric vehicle compatibility data.</li>
+        <li><strong>OPERADOR</strong> (string, may contain nulls): The operator of the charging station, which could be
+            linked to service providers and market data.</li>
+        <li><strong>GESTIÓN</strong> (string): Management details, such as whether the station is operated via a public
+            or private agreement, useful for administrative purposes.</li>
+        <li><strong>INFO_FECHA_APERTURA</strong> (string): Informational field indicating the planned opening date,
+            which can be linked to project management systems.</li>
+        <li><strong>FECHA_APERTURA</strong> (date): The actual opening date, useful for tracking operational history
+            and linking with service reports.</li>
+        <li><strong>FECHA_ALTA</strong> (date): The date the station was officially registered, which can be linked to
+            administrative processes.</li>
+        <li><strong>FECHA_EDICION</strong> (date): The date when the information was last updated, useful for ensuring
+            data accuracy and linking with auditing systems.</li>
+        <li><strong>COD_DIS</strong> (integer): Numeric code for the district, which can be linked with other datasets
+            using standard district codes for geographical analysis.</li>
+        <li><strong>COD_BAR</strong> (integer): Numeric code for the neighborhood, similar to COD_DIS, but for more
+            localized urban analysis.</li>
+        <li><strong>HORARIO</strong> (string, may contain nulls): Opening hours of the charging station, which can be
+            linked to user accessibility data or real-time applications for finding available charging points.</li>
+    </ul>
+    <h3>Data Summary</h3>
+    <ul>
+        <li>Number of charging units per station (Nº_EQUIPOS): Range from 1 to 12.</li>
+        <li>District code (COD_DIS): Range from 1 to 21.</li>
+        <li>Neighborhood code (COD_BAR): Range from 1 to 21.</li>
+    </ul>
+    <h2>2. Licensing Analysis</h2>
+    <h3>Publisher and Rights Holder</h3>
+    <p>The dataset is published and owned by the <b>Ayuntamiento de Madrid</b>.</p>
+    <h3>License</h3>
+    <p>The dataset is available under the <a
+            href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">Open
+            Data License of the City of Madrid</a>, which allows reuse and redistribution with attribution.</p>
+    <h3>Proposed License for the Generated Dataset</h3>
+    <p>The transformed dataset could be licensed under <b>Creative Commons Attribution 4.0 (CC BY 4.0)</b>, which
+        permits reuse as long as proper attribution is given.</p>
+    <h2>Resource Naming Strategy</h2>
+    <h3>Base URI</h3>
+    <p> We have define that our base URI will be <code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/</code></p>
+    <h3>URI for Classes and Properties</h3>
+    <p>For classes and properties in our ontology, we use a <strong>hash (#)</strong> to indicate that they are part of
+        the ontology schema:</p>
+    <p><strong>Classes and Properties URI:</strong>
+        <code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#</code></p>
+
+    <h4>Example:</h4>
+    <ul>
+        <li><code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#ChargingStation</code>
+        </li>
+        <li><code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#hasOperator</code>
+        </li>
+    </ul>
+
+    <h3>URI for Instances (Resources)</h3>
+    <p>For resources or instances in our dataset, we use a <strong>slash (/)</strong> to define them as unique
+        real-world entities:</p>
+    <p><strong>Instances URI:</strong> <code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/resource/</code>
+    </p>
+
+    <h4>Example:</h4>
+    <ul>
+        <li><code>http://www.chargingStationMadrid.org/opendata/handsOn/group04/resource/Station123</code></li>
+    </ul>
+</body>
+
+</html>
