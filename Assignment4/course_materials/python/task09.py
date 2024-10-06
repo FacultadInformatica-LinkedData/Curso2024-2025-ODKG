@@ -9,14 +9,44 @@ Original file is located at
 **Task 09: Data linking**
 """
 
-!pip install rdflib
+# !pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/"
 
 from rdflib import Graph, Namespace, Literal, URIRef
+
 g1 = Graph()
 g2 = Graph()
 g3 = Graph()
-g1.parse(github_storage+"resources/data03.rdf", format="xml")
-g2.parse(github_storage+"resources/data04.rdf", format="xml")
+g1.parse(github_storage + "resources/data03.rdf", format="xml")
+g2.parse(github_storage + "resources/data04.rdf", format="xml")
 
 """Busca individuos en los dos grafos y enlázalos mediante la propiedad OWL:sameAs, inserta estas coincidencias en g3. Consideramos dos individuos iguales si tienen el mismo apodo y nombre de familia. Ten en cuenta que las URI no tienen por qué ser iguales para un mismo individuo en los dos grafos."""
+
+
+from rdflib.namespace import OWL, RDF
+
+# Define the namespaces
+ns1 = Namespace("http://example.org/ns1#")
+ns2 = Namespace("http://example.org/ns2#")
+
+
+# Function to find individuals with the same nickname and family name
+def find_and_link_individuals(g1, g2, g3):
+    for s1, p1, o1 in g1.triples((None, RDF.type, None)):
+        nickname1 = g1.value(s1, ns1.nickname)
+        family_name1 = g1.value(s1, ns1.familyName)
+
+        for s2, p2, o2 in g2.triples((None, RDF.type, None)):
+            nickname2 = g2.value(s2, ns2.nickname)
+            family_name2 = g2.value(s2, ns2.familyName)
+
+            if nickname1 == nickname2 and family_name1 == family_name2:
+                g3.add((s1, OWL.sameAs, s2))
+
+
+# Call the function to link individuals
+find_and_link_individuals(g1, g2, g3)
+
+# Print the resulting graph
+for s, p, o in g3:
+    print(s, p, o)
