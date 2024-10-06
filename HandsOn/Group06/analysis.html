@@ -197,7 +197,7 @@
         </tr>
         <tr>
           <td>D01 - D31</td>
-          <td>AQI Value</td>
+          <td>AQI Value for that day of the month</td>
           <td></td>
           <td>0 - 962</td>
           <td></td>
@@ -215,14 +215,76 @@
     <h2>datos2024080.csv</h2>
     <!-- Is this the same csv?? -->
     <table>
-      <thead></thead>
+      <thead>
+        <th>Column</th>
+        <th>Representation</th>
+        <th>Type</th>
+        <th>Values</th>
+        <th>Problems</th>
+      </thead>
       <tbody>
         <tr>
-          <th>Column</th>
-          <th>Representation</th>
-          <th>Type</th>
-          <th>Values</th>
-          <th>Problems</th>
+          <td>PROVINCIA</td>
+          <td>Province where the data has been measured</td>
+          <td>ID_provincia</td>
+          <td>28</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MUNICIPIO</td>
+          <td>Municipaloty where the data has been measured</td>
+          <td>ID_Municipality</td>
+          <td>079</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ESTACION</td>
+          <td>Weather station where the data has been measured</td>
+          <td>ID_WeatherStation</td>
+          <td>4 - 60</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MAGNITUD</td>
+          <td></td>
+          <td></td>
+          <td>1 - 35</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>PUNTO_MUESTREO</td>
+          <td>Specific sampling location</td>
+          <td>ID_samplingLocation</td>
+          <td>28079004_1_38 - 28079060_8_8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ANO</td>
+          <td>Year when the data was collected</td>
+          <td>Date(Y)</td>
+          <td>2024</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MES</td>
+          <td>Month when the data was collected</td>
+          <td>Date(M)</td>
+          <td>1 - 8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D01 - D31</td>
+          <td>AQI Value for that day of the month</td>
+          <td></td>
+          <td>0.1 - 246</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V01 - V31</td>
+          <td>Verified value or not</td>
+          <td>Boolean</td>
+          <td>V/N</td>
+          <td>Non verified values may not be able to be used</td>
         </tr>
       </tbody>
     </table>
@@ -247,17 +309,17 @@
     </p>
 
     <h2>Resource name strategy</h2>
-    <p><b>Domain Identifier:</b>MadridAirQuality</p>
-    <p><b>Path:</b>/ontology/</p>
-    <p><b>Data:</b>/resource/</p>
-    <p><b>Full ontology URL:</b>http://www.MadridAirQuality.es/ontology/</p>
-    <p><b>Clases:</b>http://www.MadridAirQuality.es/ontology/className</p>
+    <p><b>Domain Identifier:</b> MadridAirQuality</p>
+    <p><b>Path:</b> /ontology/</p>
+    <p><b>Data:</b> /resource/</p>
+    <p><b>Full ontology URL:</b> http://www.MadridAirQuality.es/ontology/</p>
+    <p><b>Clases:</b> http://www.MadridAirQuality.es/ontology/className</p>
     <p>
-      <b>Properties:</b>http://www.MadridAirQuality.es/ontology/propertyName
+      <b>Properties:</b> http://www.MadridAirQuality.es/ontology/propertyName
     </p>
     <p>
-      <b>Individual:</b
-      >http://www.MadridAirQuality.es/ontology/resource/className#identifier
+      <b>Individual:</b>
+      http://www.MadridAirQuality.es/ontology/resource/className#identifier
     </p>
   </body>
 </html>
