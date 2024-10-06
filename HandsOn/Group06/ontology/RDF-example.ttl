@@ -1,69 +1,86 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix mair: <http://www.MadridAirQuality.es/ontology/> .
 
-# Monitoring Station
-mair:Station_001 a mair:MonitoringStation ;
-    rdfs:label "Station 001" ;
-    mair:locatedInRegion mair:MadridCentro ;
-    mair:hasAirQualityMeasurement _:air_quality_measurements_202408 ;
-    mair:hasTrafficIntensity _:traffic_intensity_202408 .
+# Classes
+mair:TrafficIntensity a owl:Class .
+mair:MeteorologicalData a owl:Class .
+mair:PollutionData a owl:Class .
+mair:SamplingLocation a owl:Class .
+mair:WeatherStation a owl:Class .
+mair:Pollutant a owl:Class .
+mair:WeatherParameter a owl:Class .
 
-# AQI Measurements for August 2024
-_:air_quality_measurements_202408 a mair:AirQualityMeasurementGroup ;
-    mair:measurementMonth "2024-08"^^xsd:date ;
-    mair:hasMeasurement _:air_quality_1, _:air_quality_2, _:air_quality_3, _:air_quality_4, _:air_quality_5 .
+# Properties for Traffic Intensity
+mair:hasTrafficIntensity a rdf:Property ;
+    rdfs:domain mair:TrafficIntensity ;
+    rdfs:range xsd:integer .
 
-_:air_quality_1 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-08-01"^^xsd:date ;
-    mair:aqiValue 85 ;
-    mair:validity "V" ;
-    mair:magnitude "10" ;  # Example pollutant
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+mair:hasLocation a rdf:Property ;
+    rdfs:domain mair:TrafficIntensity ;
+    rdfs:range mair:SamplingLocation .
 
-_:air_quality_2 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-08-02"^^xsd:date ;
-    mair:aqiValue 90 ;
-    mair:validity "V" ;
-    mair:magnitude "10" ;
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+# Properties for Meteorological Data
+mair:hasWeatherData a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range xsd:integer .
 
-_:air_quality_3 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-08-03"^^xsd:date ;
-    mair:aqiValue 75 ;
-    mair:validity "N" ;
-    mair:magnitude "10" ;
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+mair:hasWeatherStation a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range mair:WeatherStation .
 
-_:air_quality_4 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-08-04"^^xsd:date ;
-    mair:aqiValue 92 ;
-    mair:validity "V" ;
-    mair:magnitude "10" ;
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+mair:hasWeatherParameter a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range mair:WeatherParameter .
 
-_:air_quality_5 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-08-05"^^xsd:date ;
-    mair:aqiValue 80 ;
-    mair:validity "N" ;
-    mair:magnitude "10" ;
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+# Properties for Pollution Data
+mair:hasPollutionData a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range xsd:integer .
 
-_:air_quality_30 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-30"^^xsd:date ;
-    mair:aqiValue 0 ;
-    mair:validity "N" .
+mair:hasPollutant a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range mair:Pollutant .
 
-_:air_quality_31 a mair:AirQualityMeasurement ;
-    mair:measurementDate "2024-02-31"^^xsd:date ;
-    mair:aqiValue 0 ;
-    mair:validity "N" .
-    mair:magnitude "10" ;
-    mair:samplingPoint mair:SamplingPoint_28079004_1_38 .
+mair:hasSamplingLocation a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range mair:SamplingLocation .
 
-# Traffic Intensity for August 2024
-_:traffic_intensity_202402 a mair:TrafficIntensity ;
-    mair:measurementMonth "2024-02"^^xsd:date ;
-    mair:trafficCount 1256393 .
+# Instances for February 2024
+
+# Traffic Intensity Data
+mair:TrafficIntensity_Feb2024 a mair:TrafficIntensity ;
+    mair:hasTrafficIntensity 1200000 ;
+    mair:hasLocation mair:SamplingLocation_001 ;
+    rdfs:label "Traffic Intensity for February 2024" .
+
+# Meteorological Data
+mair:MeteorologicalData_Feb2024 a mair:MeteorologicalData ;
+    mair:hasWeatherData 15 ; # Example temperature value
+    mair:hasWeatherStation mair:WeatherStation_001 ;
+    mair:hasWeatherParameter mair:WeatherParameter_Temperature ;
+    rdfs:label "Meteorological Data for February 2024" .
+
+# Pollution Data
+mair:PollutionData_Feb2024 a mair:PollutionData ;
+    mair:hasPollutionData 50 ; # Example pollution level
+    mair:hasPollutant mair:Pollutant_NO2 ;
+    mair:hasSamplingLocation mair:SamplingLocation_001 ;
+    rdfs:label "Pollution Data for February 2024" .
+
+# Sampling Location
+mair:SamplingLocation_001 a mair:SamplingLocation ;
+    rdfs:label "Location Code 001" .
+
+# Weather Station
+mair:WeatherStation_001 a mair:WeatherStation ;
+    rdfs:label "Weather Station 001" .
+
+# Weather Parameters
+mair:WeatherParameter_Temperature a mair:WeatherParameter ;
+    rdfs:label "Temperature" .
+
+mair:Pollutant_NO2 a mair:Pollutant ;
+    rdfs:label "Nitrogen Dioxide (NO2)" .

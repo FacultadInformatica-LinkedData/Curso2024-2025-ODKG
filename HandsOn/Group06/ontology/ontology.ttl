@@ -1,78 +1,49 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix mair: <http://www.MadridAirQuality.es/ontology/> .
 
-# Ontology definition
-<http://www.MadridAirQuality.es/ontology/> a owl:Ontology ;
-    rdfs:label "Madrid Air Quality and Traffic Ontology" ;
-    rdfs:comment "Ontology describing air quality and traffic data in Madrid." ;
-    owl:versionInfo "1.0" .
+# Classes
+owl:Class mair:TrafficIntensity .
+owl:Class mair:MeteorologicalData .
+owl:Class mair:PollutionData .
+owl:Class mair:SamplingLocation .
+owl:Class mair:WeatherStation .
+owl:Class mair:Pollutant .
+owl:Class mair:WeatherParameter .
 
-###########################
-# Classes for all datasets #
-###########################
-
-# Traffic Data Class
-mair:TrafficIntensity a owl:Class ;
-    rdfs:label "Traffic Intensity" ;
-    rdfs:comment "Traffic intensity data for various regions in Madrid." .
-
-# Air Quality Data Class
-mair:AirQualityMeasurement a owl:Class ;
-    rdfs:label "Air Quality Measurement" ;
-    rdfs:comment "Air quality index (AQI) measured at various stations in Madrid." .
-
-# Geographical Regions Class
-mair:GeographicalRegion a owl:Class ;
-    rdfs:label "Geographical Region" ;
-    rdfs:comment "A geographical region within Madrid." .
-
-# Meteorological Station Class
-mair:MonitoringStation a owl:Class ;
-    rdfs:label "Monitoring Station" ;
-    rdfs:comment "Meteorological or air quality monitoring stations in Madrid." .
-
-###########################
-# Object Properties        #
-###########################
-
-# Linking Traffic Data
-mair:hasTrafficIntensity a owl:ObjectProperty ;
-    rdfs:domain mair:GeographicalRegion ;
-    rdfs:range mair:TrafficIntensity ;
-    rdfs:label "has Traffic Intensity" ;
-    rdfs:comment "Links a geographical region to traffic intensity data." .
-
-# Linking AQI Data
-mair:hasAirQualityMeasurement a owl:ObjectProperty ;
-    rdfs:domain mair:MonitoringStation ;
-    rdfs:range mair:AirQualityMeasurement ;
-    rdfs:label "has Air Quality Measurement" ;
-    rdfs:comment "Links a monitoring station to AQI measurements." .
-
-# Linking Region to Monitoring Station
-mair:locatedInRegion a owl:ObjectProperty ;
-    rdfs:domain mair:MonitoringStation ;
-    rdfs:range mair:GeographicalRegion ;
-    rdfs:label "located In Region" ;
-    rdfs:comment "Links a monitoring station to its geographical region." .
-
-###########################
-# Data Properties          #
-###########################
-
-# Date Property (applicable for traffic or AQI data)
-mair:measurementDate a owl:DatatypeProperty ;
-    rdfs:domain [ owl:unionOf (mair:TrafficIntensity mair:AirQualityMeasurement) ] ;
-    rdfs:range xsd:date ;
-    rdfs:label "Measurement Date" ;
-    rdfs:comment "The date on which the data was measured." .
-
-# Traffic Count Property
-mair:trafficCount a owl:DatatypeProperty ;
+# Properties for Traffic Intensity
+mair:hasTrafficIntensity a rdf:Property ;
     rdfs:domain mair:TrafficIntensity ;
-    rdfs:range xsd:integer ;
-    rdfs:label "Traffic Count" ;
-    rdfs:comment "The number of vehicles in a specific area." .
+    rdfs:range xsd:integer .
+
+mair:hasLocation a rdf:Property ;
+    rdfs:domain mair:TrafficIntensity ;
+    rdfs:range mair:SamplingLocation .
+
+# Properties for Meteorological Data
+mair:hasWeatherData a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range xsd:integer .
+
+mair:hasWeatherStation a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range mair:WeatherStation .
+
+mair:hasWeatherParameter a rdf:Property ;
+    rdfs:domain mair:MeteorologicalData ;
+    rdfs:range mair:WeatherParameter .
+
+# Properties for Pollution Data
+mair:hasPollutionData a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range xsd:integer .
+
+mair:hasPollutant a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range mair:Pollutant .
+
+mair:hasSamplingLocation a rdf:Property ;
+    rdfs:domain mair:PollutionData ;
+    rdfs:range mair:SamplingLocation .
