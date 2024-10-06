@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Rediseñada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            background-color: #ffffff;
+            padding: 12px;
+            border-bottom: 1px solid #dddddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+        }
+        th:first-child, td:first-child {
+            width: 20%;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 25%;
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 15%;
+        }
+        th:nth-child(4), td:nth-child(4) {
+            width: 15%;
+        }
+        th:nth-child(5), td:nth-child(5) {
+            width: 25%;
+        }
+        h2 {
+            color: #007BFF;
+            margin-top: 40px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        .resource-container, .license-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .resource-list, .license-text {
+            list-style-type: none;
+            padding: 0;
+        }
+        .resource-list li, .license-text p {
+            margin: 5px 0;
+        }
+        .resource-list a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+        .path-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Column Name</th>
+        <th>Range or Values</th>
+        <th>Distinct Values</th>
+        <th>Missing Values</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>60405 - 9602776</td>
+        <td>7181</td>
+        <td>0</td>
+        <td>Unique identifier for each bicycle parking spot</td>
+    </tr>
+    <tr>
+        <td>DESC_CLASIFICACION</td>
+        <td>Aparcabicicletas</td>
+        <td>1</td>
+        <td>0</td>
+        <td>Description of the classification</td>
+    </tr>
+    <tr>
+        <td>COD_BARRIO</td>
+        <td>11 - 215</td>
+        <td>127</td>
+        <td>0</td>
+        <td>Code of the neighborhood</td>
+    </tr>
+    <tr>
+        <td>BARRIO</td>
+        <td>PINAR DEL REY, CANILLEJAS, VALDEFUENTES, VENTAS, SAN PASCUAL, CANILLAS, ALAMEDA DE OSUNA, ROSAS, SAN JUAN BAUTISTA, APOSTOL SANTIAGO, ... (127 total)</td>
+        <td>127</td>
+        <td>0</td>
+        <td>Name of the neighborhood</td>
+    </tr>
+    <tr>
+        <td>COD_DISTRITO</td>
+        <td>1 - 21</td>
+        <td>21</td>
+        <td>0</td>
+        <td>Code of the district</td>
+    </tr>
+    <tr>
+        <td>DISTRITO</td>
+        <td>HORTALEZA, SAN BLAS - CANILLEJAS, CIUDAD LINEAL, BARAJAS, ARGANZUELA, FUENCARRAL - EL PARDO, PUENTE DE VALLECAS, VICALVARO, MORATALAZ, VILLA DE VALLECAS, ... (21 total)</td>
+        <td>21</td>
+        <td>0</td>
+        <td>Name of the district</td>
+    </tr>
+    <tr>
+        <td>ESTADO</td>
+        <td>OPERATIVO</td>
+        <td>1</td>
+        <td>0</td>
+        <td>Operational status of the parking spot</td>
+    </tr>
+    <tr>
+        <td>COORD_GIS_X</td>
+        <td>431500.813 - 451099.95</td>
+        <td>6952</td>
+        <td>28</td>
+        <td>X coordinate in the GIS system</td>
+    </tr>
+    <tr>
+        <td>COORD_GIS_Y</td>
+        <td>4464892.35 - 4488218.71</td>
+        <td>6909</td>
+        <td>28</td>
+        <td>Y coordinate in the GIS system</td>
+    </tr>
+    <tr>
+        <td>SISTEMA_COORD</td>
+        <td>ETRS89</td>
+        <td>1</td>
+        <td>0</td>
+        <td>Coordinate system used</td>
+    </tr>
+    <tr>
+        <td>LATITUD</td>
+        <td>0.0 - 40.54262113</td>
+        <td>7075</td>
+        <td>0</td>
+        <td>Latitude of the parking spot</td>
+    </tr>
+    <tr>
+        <td>LONGITUD</td>
+        <td>-3.80798029 - 0.0</td>
+        <td>7072</td>
+        <td>0</td>
+        <td>Longitude of the parking spot</td>
+    </tr>
+    <tr>
+        <td>TIPO_VIA</td>
+        <td>CALLE, AVENIDA, CARRETERA, PASEO, CAMINO, PLAZA, GLORIETA, BULEVAR, AUTOVIA, PASAJE, ... (25 total)</td>
+        <td>25</td>
+        <td>0</td>
+        <td>Type of street</td>
+    </tr>
+    <tr>
+        <td>NOM_VIA</td>
+        <td>ANGEL LUIS DE LA HERRAN, ALCALA, OÑA, MARQUES DE CORBERA, CANAL DE PANAMA, ABIZANDA, LOPEZ DE HOYOS, BERGANTIN, GALEON, ROSA DE CASTRO, ... (1061 total)</td>
+        <td>1061</td>
+        <td>0</td>
+        <td>Name of the street</td>
+    </tr>
+    <tr>
+        <td>NUM_VIA</td>
+        <td>42, 629, 183, 54, 8, 6, 68, 327, 11, 16, ... (320 total)</td>
+        <td>320</td>
+        <td>0</td>
+        <td>Street number</td>
+    </tr>
+    <tr>
+        <td>COD_POSTAL</td>
+        <td>28001.0 - 28055.0</td>
+        <td>54</td>
+        <td>1</td>
+        <td>Postal code</td>
+    </tr>
+    <tr>
+        <td>DIRECCION_AUX</td>
+        <td>JARDIN, GARAJE, PORTAL, FRENTE FACHADA, PARCELA, 28045, nan, ANDALUCES, 000020, AVDA MIGUEL HERNÁNDEZ, 000048, CARLOS SOLÉ, 000013, ... (392 total)</td>
+        <td>391</td>
+        <td>4304</td>
+        <td>Additional address information</td>
+    </tr>
+    <tr>
+        <td>NDP</td>
+        <td>11000040.0 - 59999.0</td>
+        <td>44</td>
+        <td>0</td>
+        <td>Reference number for additional information</td>
+    </tr>
+    <tr>
+        <td>FECHA_INSTALACION</td>
+        <td>2012-01-20 - 2023-09-26</td>
+        <td>4245</td>
+        <td>0</td>
+        <td>Installation date of the bicycle parking spot</td>
+    </tr>
+</table>
+
+<h2>Licenses</h2>
+<div class="license-container">
+    <h3>General Conditions Obligation</h3>
+    <p>The following general conditions obligate any person and/or company that reuses data simply by using the documents submitted to them.</p>
+    
+    <h3>Authorization for Reuse and Non-Exclusive Assignment of Intellectual Property Rights</h3>
+    <p>The following general conditions allow for the reuse of the documents and data submitted to them for commercial and non-commercial purposes. Reuse is understood as the use of documents held by the City of Madrid and other affiliated organizations and entities, by individuals or legal entities, for commercial or non-commercial purposes, provided that such use does not constitute a public administrative activity. For example, authorized reuse includes activities such as copying, dissemination, modification, adaptation, extraction, reordering, and combination of information.</p>
+    
+    <p>The concept of document is established in section 2 of Article 3 of Law 37/2007, of November 16, on Reuse of Public Sector Information, and therefore includes all information regardless of its material or electronic support, as well as its graphic, sound, or image expression used, including, consequently, data in its most disaggregated or "raw" levels.</p>
+    
+    <p>This authorization also involves the free and non-exclusive assignment of the corresponding intellectual property rights to such documents, allowing the reproduction, distribution, public communication, or transformation activities necessary to carry out the authorized reuse activity in any modality and under any format, worldwide and for the maximum period allowed by law.</p>
+    
+    <p>The footer message "City of Madrid. 2014 All rights reserved" does not affect the data catalog and downloadable files, to which commercial and non-commercial reuse rights are granted, as indicated above.</p>
+
+    <h3>General Conditions for Reuse</h3>
+    <p>The following general conditions apply to the reuse of documents submitted to them:</p>
+    <ul class="license-text">
+        <li>It is prohibited to distort the meaning of the information.</li>
+        <li>The source of the documents subject to reuse must be cited. This citation may be made as follows: "Source of data: City of Madrid (or, if applicable, the administrative body, organization, or entity in question)"</li>
+        <li>The date of the last update of the documents subject to reuse must be mentioned, as long as it is included in the original document.</li>
+        <li>It is not allowed to indicate, imply, or suggest that the City of Madrid participates in, sponsors, or supports the reuse carried out with the information.</li>
+        <li>Metadata about the date of update and the applicable reuse conditions included in the document made available for reuse must be preserved, not altered or removed.</li>
+        <li>In the case of anonymized information for the protection of personal data or other reasons, it is expressly prohibited to carry out re-identification of individuals from these data and other possible data and information sources, past, present, or future.</li>
+    </ul>
+
+    <h3>Exclusion of Liability</h3>
+    <p>The use of data sets will be carried out by individuals and/or companies that reuse data at their own risk, being solely responsible for any damage that may arise from it.</p>
+    <p>The City of Madrid will not be responsible for the use that individuals and/or companies that reuse data make of its information, nor for the damages suffered or economic losses that, directly or indirectly, may produce or may produce economic, material, or data-related harm caused by the reuse of the information.</p>
+    <p>The City of Madrid does not guarantee the continuity of the availability of reusable documents, either in content or form, nor assumes any responsibility for any errors or omissions contained therein.</p>
+
+    <h3>Responsibility of Individuals and/or Companies that Reuse Data</h3>
+    <p>The reuser is subject to the applicable regulations regarding the reuse of public sector information, including the sanctioning regime provided for in Article 11 of Law 37/2007, of November 16, on Reuse of Public Sector Information.</p>
+</div>
+
+<h2>Resource Naming</h2>
+<div class="resource-container">
+    <h3>Domain</h3>
+    <p>http://www.bikeradar.es</p>
+
+    <h3>Path</h3>
+    <div class="path-container">
+        <div>
+            <strong>Ontology:</strong> <a href="http://www.bikeradar.es/ontology">http://www.bikeradar.es/ontology</a>
+        </div>
+        <div>
+            <strong>Resources:</strong> <a href="http://www.bikeradar.es/resources">http://www.bikeradar.es/resources</a>
+        </div>
+    </div>
+
+    <h3>URIs</h3>
+    <ul class="resource-list">
+        <li>BicycleParkingSpot: <a href="http://www.bikeradar.es/ontology/BicycleParkingSpot#">http://www.bikeradar.es/ontology/BicycleParkingSpot#</a></li>
+        <li>Barrio: <a href="http://www.bikeradar.es/ontology/Barrio#">http://www.bikeradar.es/ontology/Barrio#</a></li>
+        <li>Distrito: <a href="http://www.bikeradar.es/ontology/Distrito#">http://www.bikeradar.es/ontology/Distrito#</a></li>
+        <li>Estado: <a href="http://www.bikeradar.es/ontology/Estado#">http://www.bikeradar.es/ontology/Estado#</a></li>
+        <li>Via: <a href="http://www.bikeradar.es/ontology/Via#">http://www.bikeradar.es/ontology/Via#</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
+
