@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "fullName": "ex:fullName",
+    "hometown": "ex:hometown",
+    "age": "ex:age",
+    "almaMater": "ex:almaMater",
+    "parents": {
+      "@id": "ex:parents",
+      "@type": "ex:Parents"
+    },
+    "father": "ex:father",
+    "mother": "ex:mother",
+    "subjects": "ex:subjects",
+    "subject": {
+      "@id": "ex:subject",
+      "@type": "ex:Subject"
+    },
+    "name": "ex:name",
+    "teachers": "ex:teachers",
+    "description": "ex:description"
+  },
+  "@type": "ex:Student",
+  "fullName": "Adrián Barba Beltrán",
+  "hometown": "Alicante",
+  "age": 22,
+  "almaMater": "Universidad de Alicante",
+  "parents": {
+    "father": "Josué",
+    "mother": "Isabel"
+  },
+  "subjects": [
+    {
+      "@type": "ex:Subject",
+      "name": "Open Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "description": "This topic covers the fundamentals of open data, as well as the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "@type": "ex:Subject",
+      "name": "Intelligent systems",
+      "teachers": [
+        "Daniel Manrique",
+        "Martin Molina",
+        "Mari Carmen Suárez de Figueroa",
+        "Mariano Rico",
+        "Víctor Rodríguez Doncel"
+      ],
+      "description": "This subject prepares the students to be able to use AI methods for building intelligent systems and describe issues related to the use of intelligent systems."
+    }
+  ]
+}
