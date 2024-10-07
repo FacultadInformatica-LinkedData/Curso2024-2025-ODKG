@@ -1,86 +1,44 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix mair: <http://www.MadridAirQuality.es/ontology/> .
 
-# Classes
-mair:TrafficIntensity a owl:Class .
-mair:MeteorologicalData a owl:Class .
-mair:PollutionData a owl:Class .
-mair:SamplingLocation a owl:Class .
-mair:WeatherStation a owl:Class .
-mair:Pollutant a owl:Class .
-mair:WeatherParameter a owl:Class .
 
-# Properties for Traffic Intensity
-mair:hasTrafficIntensity a rdf:Property ;
-    rdfs:domain mair:TrafficIntensity ;
-    rdfs:range xsd:integer .
+# mairamples
 
-mair:hasLocation a rdf:Property ;
-    rdfs:domain mair:TrafficIntensity ;
-    rdfs:range mair:SamplingLocation .
+mair:provincia/Madrid a mair:Provincia ;
+    rdfs:label "Madrid" .
 
-# Properties for Meteorological Data
-mair:hasWeatherData a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range xsd:integer .
+mair:municipio/Madrid a mair:Municipio ;
+    rdfs:label "Madrid" ;
+    mair:hasProvincia mair:provincia/Madrid ;
+    mair:hasEstacion mair:estacion/PlazaDeEspana, mair:estacion/EscuelasAguirre .
 
-mair:hasWeatherStation a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range mair:WeatherStation .
+mair:estacion/PlazaDeEspana a mair:Estacion ;
+    rdfs:label "Plaza de España" ;
+    mair:monitors mair:contaminante/Ozono ;
+    mair:recordsObservation mair:observacion/2024-01-01 .
 
-mair:hasWeatherParameter a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range mair:WeatherParameter .
+mair:estacion/EscuelasAguirre a mair:Estacion ;
+    rdfs:label "Escuelas Aguirre" ;
+    mair:monitors mair:contaminante/PM2.5 ;
+    mair:recordsObservation mair:observacion/2024-02-05 .
 
-# Properties for Pollution Data
-mair:hasPollutionData a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range xsd:integer .
+mair:contaminante/Ozono a mair:Contaminante ;
+    mair:hasMagnitud "Ozono" .
 
-mair:hasPollutant a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range mair:Pollutant .
+mair:contaminante/PM2.5 a mair:Contaminante ;
+    mair:hasMagnitud "PM2.5" .
 
-mair:hasSamplingLocation a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range mair:SamplingLocation .
+mair:observacion/2024-01-01 a mair:Observacion ;
+    mair:hasFecha "2024-01-01"^^xsd:date ;
+    mair:hasValor 2 ;
+    mair:monitors mair:contaminante/Ozono ;
+    mair:recordsObservation mair:estacion/PlazaDeEspana .
 
-# Instances for February 2024
-
-# Traffic Intensity Data
-mair:TrafficIntensity_Feb2024 a mair:TrafficIntensity ;
-    mair:hasTrafficIntensity 1200000 ;
-    mair:hasLocation mair:SamplingLocation_001 ;
-    rdfs:label "Traffic Intensity for February 2024" .
-
-# Meteorological Data
-mair:MeteorologicalData_Feb2024 a mair:MeteorologicalData ;
-    mair:hasWeatherData 15 ; # Example temperature value
-    mair:hasWeatherStation mair:WeatherStation_001 ;
-    mair:hasWeatherParameter mair:WeatherParameter_Temperature ;
-    rdfs:label "Meteorological Data for February 2024" .
-
-# Pollution Data
-mair:PollutionData_Feb2024 a mair:PollutionData ;
-    mair:hasPollutionData 50 ; # Example pollution level
-    mair:hasPollutant mair:Pollutant_NO2 ;
-    mair:hasSamplingLocation mair:SamplingLocation_001 ;
-    rdfs:label "Pollution Data for February 2024" .
-
-# Sampling Location
-mair:SamplingLocation_001 a mair:SamplingLocation ;
-    rdfs:label "Location Code 001" .
-
-# Weather Station
-mair:WeatherStation_001 a mair:WeatherStation ;
-    rdfs:label "Weather Station 001" .
-
-# Weather Parameters
-mair:WeatherParameter_Temperature a mair:WeatherParameter ;
-    rdfs:label "Temperature" .
-
-mair:Pollutant_NO2 a mair:Pollutant ;
-    rdfs:label "Nitrogen Dioxide (NO2)" .
+mair:observacion/2024-02-05 a mair:Observacion ;
+    mair:hasFecha "2024-02-05"^^xsd:date ;
+    mair:hasValor 19 ;
+    mair:monitors mair:contaminante/PM2.5 ;
+    mair:recordsObservation mair:estacion/EscuelasAguirre .
