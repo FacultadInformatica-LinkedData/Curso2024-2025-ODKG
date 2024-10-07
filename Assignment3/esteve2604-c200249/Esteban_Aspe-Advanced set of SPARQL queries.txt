@@ -1,0 +1,45 @@
+In all queries LIMIT as been introduced to reduce the answers of the query. If you want all results, please delete the LIMIT.
+
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+select ?property
+where {
+ ?x a <http://dbpedia.org/ontology/Politician> .
+ ?x ?property []
+} LIMIT 1000
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+select distinct ?property
+where {
+ ?x a <http://dbpedia.org/ontology/Politician> .
+ ?x ?property [].
+ FILTER (?property != rdf:type)
+} LIMIT 1000
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+select distinct ?property ?value
+where {
+ ?x a <http://dbpedia.org/ontology/Politician> .
+ ?x ?property ?value.
+ FILTER (?property != rdf:type)
+} LIMIT 1000
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+select distinct ?property ?valuesForAll
+where {
+ ?x a <http://dbpedia.org/ontology/Politician> .
+ ?x ?property ?valuesForPoliticians.
+ ?y ?property ?valuesForAll.
+ FILTER (?property != rdf:type)
+} LIMIT 1000
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+select distinct ?valuesForAll
+where {
+ ?x a <http://dbpedia.org/ontology/Politician> .
+ ?x ?property ?valuesForPoliticians.
+ ?y ?property ?valuesForAll.
+ FILTER (?property != rdf:type)
+} LIMIT 1000
+NOTE: To obtain the Distinct values for each property, I considered using group by to group each property with their different values, but
+DBpedia informed that query would take too long.
