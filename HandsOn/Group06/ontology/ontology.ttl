@@ -7,59 +7,59 @@
 
 # Define Classes
 
-ex:Provincia a owl:Class ;
+mair:Provincia a owl:Class ;
     rdfs:label "Provincia" .
 
-ex:Municipio a owl:Class ;
+mair:Municipio a owl:Class ;
     rdfs:label "Municipio" .
 
-ex:Estacion a owl:Class ;
+mair:Estacion a owl:Class ;
     rdfs:label "Estacion" .
 
-ex:Parametro a owl:Class ;
+mair:Parametro a owl:Class ;
     rdfs:label "Parametro" .
 
-ex:Observacion a owl:Class ;
+mair:Observacion a owl:Class ;
     rdfs:label "Observacion" .
 
 
 # Define Object Properties
 
-ex:hasProvincia a owl:ObjectProperty ;
+mair:hasProvincia a owl:ObjectProperty ;
     rdfs:label "has provincia" ; 
-    rdfs:domain ex:Municipio ; 
-    rdfs:range ex:Provincia . 
+    rdfs:domain mair:Municipio ; 
+    rdfs:range mair:Provincia . 
 
-ex:hasMunicipio a owl:ObjectProperty ;
+mair:hasMunicipio a owl:ObjectProperty ;
     rdfs:label "has municipio" ; 
-    rdfs:domain ex:Provincia ; 
-    rdfs:range ex:Municipio . 
+    rdfs:domain mair:Provincia ; 
+    rdfs:range mair:Municipio . 
 
-ex:hasEstacion a owl:ObjectProperty ;
+mair:hasEstacion a owl:ObjectProperty ;
     rdfs:label "has estacion" ; 
-    rdfs:domain ex:Municipio ; 
-    rdfs:range ex:Estacion . 
+    rdfs:domain mair:Municipio ; 
+    rdfs:range mair:Estacion . 
 
-ex:monitors a owl:ObjectProperty ;
+mair:monitors a owl:ObjectProperty ;
     rdfs:label "monitors" ; 
-    rdfs:domain ex:Estacion ; 
-    rdfs:range ex:Parametro . 
+    rdfs:domain mair:Estacion ; 
+    rdfs:range mair:Parametro . 
 
-ex:recordsObservation a owl:ObjectProperty ;
+mair:recordsObservation a owl:ObjectProperty ;
     rdfs:label "records observation" ; 
-    rdfs:domain ex:Estacion ; 
-    rdfs:range ex:Observacion . 
+    rdfs:domain mair:Estacion ; 
+    rdfs:range mair:Observacion . 
 
 
 # Define Datatype Properties
 
-ex:hasFecha a owl:DatatypeProperty ;
+mair:hasFecha a owl:DatatypeProperty ;
     rdfs:label "has fecha" ; 
-    rdfs:domain ex:Observacion ; 
+    rdfs:domain mair:Observacion ; 
     rdfs:range xsd:date .
 
-ex:hasMagnitud a owl:DatatypeProperty ;
+mair:hasMagnitud a owl:DatatypeProperty ;
     rdfs:label "has magnitud" ; 
-    rdfs:domain ex:Contaminante ; 
+    rdfs:domain mair:Contaminante ; 
     rdfs:range xsd:string .
 
