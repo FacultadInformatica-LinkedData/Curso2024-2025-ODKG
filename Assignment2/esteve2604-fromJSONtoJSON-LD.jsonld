@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "prop": "http://example.org/properties/#",
+    "subjects": "http://example.org/subjects/#",
+    "person": "http://example.org/person/#"
+  },
+    "@graph": [
+      {
+        "@id": "person:Esteban_Aspe_Ruiz",
+		"prop:fullName": "Esteban Aspe Ruiz",
+		"prop:hometown": "Móstoles",
+		"prop:age": 22,
+		"prop:almaMater": "Universidad Politécnica de Madrid",
+		"prop:parentsName": ["Fernando Aspe Fernandez", "Gema Ruiz Pino"],
+		"subjects": [
+			{
+				"@id": "subjects:Open_Data_and_Knowledge graphs",
+				"prop:name": "Open Data and Knowledge graphs",
+				"prop:teachers": ["Oscar Corcho", "Daniel Garijo"],
+				"prop:description": "Subject held in first semester of the master in data science"
+			},
+			{
+				"@id": "subjects:Machine_Learning",
+				"prop:name": "Machine Learning",
+				"prop:teachers": ["Concha Bielza"],
+				"prop:description": "Learning different AI algorithms"
+			}
+		]
+      }
+    ]
+}
