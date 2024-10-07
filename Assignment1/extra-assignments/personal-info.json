@@ -1,0 +1,23 @@
+
+{
+  "fullName": "Sheyla Leyva Sánchez",
+  "hometown": "Havana",
+  "age": 23,
+  "almaMater": "Universidad de La Habana",
+  "parents": {
+    "father": "Ronaldo",
+    "mother": "Mercedes"
+  },
+"subjects": [
+    {
+      "name": "Open Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs. It focuses on RDF, SPARQL, and the semantic web."
+    },
+    {
+      "name": "Machine Learning",
+      "teachers": ["Pedro Larrañaga Múgica"],
+      "description": "This subject introduces the fundamentals of machine learning, covering supervised and unsupervised learning."
+    }
+  ]
+}
