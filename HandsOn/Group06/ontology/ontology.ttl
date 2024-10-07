@@ -26,27 +26,27 @@ mair:Observacion a owl:Class ;
 # Define Object Properties
 
 mair:hasProvincia a owl:ObjectProperty ;
-    rdfs:label "has provincia" ; 
+    rdfs:label "Has provincia" ; 
     rdfs:domain mair:Municipio ; 
     rdfs:range mair:Provincia . 
 
 mair:hasMunicipio a owl:ObjectProperty ;
-    rdfs:label "has municipio" ; 
+    rdfs:label "Has municipio" ; 
     rdfs:domain mair:Provincia ; 
     rdfs:range mair:Municipio . 
 
 mair:hasEstacion a owl:ObjectProperty ;
-    rdfs:label "has estacion" ; 
+    rdfs:label "Has estacion" ; 
     rdfs:domain mair:Municipio ; 
     rdfs:range mair:Estacion . 
 
 mair:monitors a owl:ObjectProperty ;
-    rdfs:label "monitors" ; 
+    rdfs:label "Monitors" ; 
     rdfs:domain mair:Estacion ; 
     rdfs:range mair:Parametro . 
 
 mair:recordsObservation a owl:ObjectProperty ;
-    rdfs:label "records observation" ; 
+    rdfs:label "Records Observation" ; 
     rdfs:domain mair:Estacion ; 
     rdfs:range mair:Observacion . 
 
@@ -54,12 +54,12 @@ mair:recordsObservation a owl:ObjectProperty ;
 # Define Datatype Properties
 
 mair:hasFecha a owl:DatatypeProperty ;
-    rdfs:label "has fecha" ; 
+    rdfs:label "Has Fecha" ; 
     rdfs:domain mair:Observacion ; 
     rdfs:range xsd:date .
 
 mair:hasMagnitud a owl:DatatypeProperty ;
-    rdfs:label "has magnitud" ; 
+    rdfs:label "Has Magnitud" ; 
     rdfs:domain mair:Contaminante ; 
     rdfs:range xsd:string .
 
