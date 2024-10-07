@@ -1,0 +1,36 @@
+{
+	"@context": 
+	{
+    		"@vocab": "https://w3id.org/aiarakoa/upm/mucd/subjects/opendata/assignment1/vocab#"
+ 	},
+ 	"@type": "Class",
+	"id": "Class01",
+	"includes":
+	[
+		{
+		 	"@type": "Sensor",
+			"id": "Sensor029",
+			"hasMeasurement":
+			[
+				{
+					"@type": "Measurement",
+					"id": "Measurement8401",
+					"hasTemperature": 29,
+					"atTime": "2010-06-12T12:00:12"
+				}
+			]
+		},
+		{
+			"@type": "Computer",
+			"id": "Computer101",
+			"hasOwner":
+			[
+				{
+					"@type": "User",
+					"id": "User10A",
+					"hasName": "Pedro"
+				}
+			]
+		}
+	]
+}
