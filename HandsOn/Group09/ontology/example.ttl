@@ -1,0 +1,57 @@
+@prefix mAIRres: <http://mAIRdrid.org/resources/>
+@prefix ns: <http://mAIRdrid.org/ontology/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qudt-1-1: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudt-unit-1-1: <http://qudt.org/1.1/vocab/unit#> .
+
+mAIRres:Station/28079004 a ns:Station ;
+        rdfs:label "Plaza de España, Madrid"@es , "Plaza de España, Madrid"@en ;
+        ns:nationalStationID "28079004"^^xsd:integer ;
+        ssn:hasSubSystem mAIRres:Station/28079004#COSensor , mAIRres:Station/28079004#SO2Sensor , mAIRres:Station/28079004#NO2Sensor .
+
+mAIRres:Station/28079004#Location a ns:Location ;
+	rdfs:label "Ubicación de la estación 28079004"@es , "Location of station 28079004"@en ;
+        ns:inPublicSpace wd:Q1326261 ;
+        geo:lat 40.423883 ;
+        geo:long -3.712197 ;
+        geo:alt 637 ;
+        ssn:hasProperty mAIRres:Station/28079004#CO , mAIRres:Station/28079004#NO2 , mAIRres:Station/28079004#SO2 .
+
+mAIRres:Station/28079004#COSensor a sosa:Sensor, ssn:System ;
+        rdfs:label "Estación 28079004 - Sensor CO"@es , "Station 28079004 - CO Sensor"@en ;
+        sosa:observes mAIRres:Station/28079004#CO .
+
+mAIRres:Station/28079004#SO2Sensor a sosa:Sensor, ssn:System ;
+        rdfs:label "Estación 28079004 - Sensor SO2"@es , "Station 28079004 - SO2 Sensor"@en ;
+        sosa:observes mAIRres:Station/28079004#SO2 .
+
+mAIRres:Station/28079004#NO2Sensor a sosa:Sensor, ssn:System ;
+        rdfs:label "Estación 28079004 - Sensor NO2"@es , "Station 28079004 - NO2 Sensor"@en ;
+        sosa:observes mAIRres:Station/28079004#NO2 .
+
+mAIRres:Station/28079004#CO a ns:AirQualityMetric , ssn:Property ;
+        rdfs:label "CO concentration at station 28079004"@en , "Concentración de CO en la estación 28079004"@es ;
+        sosa:isObservedBy mAIRres:Station/28079004#COSensor .
+
+mAIRres:Station/28079004#SO2 a ns:AirQualityMetric , ssn:Property ;
+        rdfs:label "SO2 concentration at station 28079004"@en , "Concentración de SO2 en la estación 28079004"@es ;
+        sosa:isObservedBy mAIRres:Station/28079004#SO2Sensor .
+
+mAIRres:Station/28079004#NO2 a ns:AirQualityMetric , ssn:Property ;
+        rdfs:label "NO2 concentration at station 28079004"@en , "Concentración de NO2 en la estación 28079004"@es ;
+        sosa:isObservedBy mAIRres:Station/28079004#NO2Sensor .
+
+mAIRres:Station/28079004/20240402#CO a sosa:Observation ;
+        sosa:madeBySensor mAIRres:Station/28079004#COSensor ;
+        sosa:hasFeatureOfInterest mAIRres:Station/28079004#Location ;
+        sosa:observedProperty mAIRres:Station/28079004#CO ;
+        sosa:hasResult [
+            rdf:type qudt-1-1:QuantityValue ;
+            qudt-1-1:numericValue "4e-1"^^xsd:double ;
+            qudt-1-1:unit qudt-unit-1-1:MilliGM-PER-M3 ] ;
+        sosa:resultTime "2024-04-02"^^xsd:date .
+

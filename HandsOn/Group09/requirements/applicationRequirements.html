@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="https://svgur.com/i/1B63.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name = "description"
+            content = "UPM - Open Data and Knowledge Graphs course - Hands-On Assignment #1 - Application Requirements"
+        />
+        <meta name = "author" content = "Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala" />
+        <meta name = "keywords" content = "ODKG, Hands-On, Assignment 1, app, Open Data, Linked Data, Smart Cities" />
+        <title>Application Requirements - ODKG Hands-On Assignment 1</title>
+        <style>
+            span.subindex {
+                vertical-align: sub;
+                font-size: .8vw;
+            }
+            body {
+                font-family: 'Trebuchet MS', sans-serif;
+            }
+            header {
+                text-align: center;
+                color: #333333;
+            }
+            footer {
+                text-align: center;
+                color: #777777;
+            }
+            article {
+                margin-left: 1vw;
+                margin-right: 1vw;
+            }
+            section {
+                margin-left: 1vw;
+            }
+            p {
+                margin-left: 1vw;
+            }
+            ul {
+                margin-left: 1vw;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Group Hands-On - Assignment 1 - Application Requirements
+            </h1>
+            <h2>
+                by Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala
+            </h2>
+            <h3>
+                Universidad Politécnica de Madrid - Open Data & Knowledge Graphs course
+            </h3>
+        </header>
+        <main>
+            <article>
+                <h4>
+                    Main goal
+                </h4>
+                <section>
+                    <p>
+                        We aim to show the measurements of air quality within a spatial context, using a Madrid City map and taking advantage of the information that the selected datasets offer:
+                    </p>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            Air quality metrics: SO<span class = "subindex">X</span>, NO<span class = "subindex">X</span>, CO<span class = "subindex">X</span>, O<span class = "subindex">3</span>, BTX, PM10, PM2.5
+                        </li>
+                        <li>
+                            Location of measurement stations
+                        </li>
+                        <li>
+                            Date of data collection
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <article>
+                <h4>
+                    Interface requirements
+                </h4>
+                <section>
+                    <h5>
+                        In terms of location
+                    </h5>
+                    <article>
+                        <h6>
+                            As a user's choice
+                        </h6>
+                        <p>
+                            A user should be able to select to see data from all stations or from only one station.
+                        </p>    
+                    </article>
+                    <article>
+                        <h6>
+                            As a dataset constraint
+                        </h6>
+                        <p>
+                            Not all stations gather data about all parameters. Therefore, if a user selects a parameter whose data is not collected by a given station, that station should not show up on the map.
+                        </p>    
+                    </article>
+                </section>
+                <section>
+                    <h5>
+                        In terms of time
+                    </h5>
+                    <article>
+                        <h6>
+                            As a user's choice
+                        </h6>
+                        <p>
+                            A user should be able to select whether data should belong to a specific day (showing that day's value) or to a time window (showing the average value for that period)
+                        </p>    
+                    </article>
+                </section>
+                <section>
+                    <h5>
+                        In terms of air quality parameters
+                    </h5>
+                    <article>
+                        <h6>
+                            As a user's choice
+                        </h6>
+                        <p>
+                            A user should be able to select to see data pertaining to a specific parameter, but only one parameter at a time.
+                        </p>    
+                    </article>
+                </section>
+            </article>    
+        </main>
+        <footer>
+            🄯 2024 - Rafael Orihuela Brindis, Pedro Pedregal Pérez, Elías Herrero Lázaro, Carlos de la Cruz Ayala Vargas
+        </footer>
+    </body>
+</html>
