@@ -8,12 +8,12 @@ Original file is located at
 
 **Task 06: Modifying RDF(s)**
 """
-!pip install rdflib
+#!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
 
 """Read the RDF file as shown in class"""
 
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, FOAF
 from rdflib.namespace import RDF, RDFS
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
@@ -81,8 +81,7 @@ for s, p, o in g:
 """**Task 6.6: Add that Jown knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
 
 # TO DO
-foaf = Namespace("http://xmlns.com/foaf/0.1/")
-g.add((ns.JohnSmith, foaf.knows, ns.JaneSmithers))
+g.add((ns.JohnSmith, FOAF.knows, ns.JaneSmithers))
 # Visualize the results
 for s, p, o in g:
     print(s, p, o)

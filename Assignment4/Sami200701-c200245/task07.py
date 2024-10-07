@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-!pip install rdflib
+#!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
 
 """First let's read the RDF file"""
@@ -77,9 +77,13 @@ for r in g.query(q3):
 
 # TO DO
 q4 = """
-    SELECT ?personName WHERE {
-        ?person ns:knows ns:Rocky .
-        ?person ns:name ?personName .
+    SELECT ?person ?name WHERE {
+        {
+            {?person foaf:knows ns:RockySmith .}
+            UNION
+            {ns:RockySmith foaf:knows ?person .}
+        }
+        ?person <http://www.w3.org/2001/vcard-rdf/3.0/FN> ?name .  
     }
 """
 # Visualize the results
@@ -92,9 +96,9 @@ for r in g.query(q4):
 q5 = """
     SELECT ?animalName WHERE {
         ?animal rdf:type ns:Animal .
-        ?animal ns:knows ?otherAnimal .
+        ?animal foaf:knows ?otherAnimal .
         ?otherAnimal rdf:type ns:Animal .
-        ?animal ns:name ?animalName .
+        ?animal <http://www.w3.org/2001/vcard-rdf/3.0/FN> ?animalName .
     }
 """
 # Visualize the results
@@ -107,7 +111,7 @@ for r in g.query(q5):
 q6 = """
     SELECT ?livingThing ?age WHERE {
         ?livingThing rdf:type/rdfs:subClassOf* ns:LivingThing .
-        ?livingThing ns:age ?age .
+        ?livingThing <http://xmlns.com/foaf/0.1/age> ?age .
     }
     ORDER BY DESC(?age)
 """
