@@ -1,0 +1,60 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property
+WHERE {
+  ?politician rdf:type <http://dbpedia.org/ontology/Politician> ;
+                ?property ?value
+}
+
+Result Query 1: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE+%7B%0D%0A++%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty+%3Fvalue%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=10000&signal_void=on&signal_unconnected=on
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property
+WHERE
+  { ?politician rdf:type <http://dbpedia.org/ontology/Politician> ;
+                ?property  ?value
+    FILTER ( ?property != rdf:type )
+  }
+
+Result Query 2: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fproperty%0D%0AWHERE%0D%0A++%7B+%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty++%3Fvalue%0D%0A++++FILTER+%28+%3Fproperty+%21%3D+rdf%3Atype+%29%0D%0A++%7D&format=text%2Fhtml&timeout=10000&signal_void=on&signal_unconnected=on#
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+SELECT DISTINCT ?property ?value
+WHERE
+  { ?politician rdf:type <http://dbpedia.org/ontology/Politician> ;
+                ?property  ?value
+    FILTER ( ?property != rdf:type )
+  }
+
+Result Query 3: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A+%0D%0ASELECT+DISTINCT+%3Fproperty+%3Fvalue%0D%0AWHERE%0D%0A++%7B+%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty++%3Fvalue%0D%0A++++FILTER+%28+%3Fproperty+%21%3D+rdf%3Atype+%29%0D%0A++%7D&format=text%2Fhtml&timeout=10000&signal_void=on&signal_unconnected=on#
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?property (GROUP_CONCAT(DISTINCT ?value; SEPARATOR=", ") AS ?differentValues)
+WHERE
+  { ?politician rdf:type <http://dbpedia.org/ontology/Politician> ;
+                ?property  ?value
+    FILTER ( ?property != rdf:type )
+  }
+GROUP BY ?property 
+
+Result Query 4: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+%3Fproperty+%28GROUP_CONCAT%28DISTINCT+%3Fvalue%3B+SEPARATOR%3D%22%2C+%22%29+AS+%3FdifferentValues%29%0D%0AWHERE%0D%0A++%7B+%3Fpolitician+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty++%3Fvalue%0D%0A++++FILTER+%28+%3Fproperty+%21%3D+rdf%3Atype+%29%0D%0A++%7D%0D%0AGROUP+BY+%3Fproperty+&format=text%2Fhtml&timeout=100000&signal_void=on&signal_unconnected=on#
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+SELECT ?property (COUNT(DISTINCT ?value) AS ?distinctValueCount)
+WHERE
+  { ?politician  rdf:type  <http://dbpedia.org/ontology/Politician> ;
+                ?property  ?value
+    FILTER ( ?property != rdf:type )
+  }
+GROUP BY ?property
+ORDER BY ?distinctValueCount
+
+Result Query 5: https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A+%0D%0ASELECT+%3Fproperty+%28COUNT%28DISTINCT+%3Fvalue%29+AS+%3FdistinctValueCount%29%0D%0AWHERE%0D%0A++%7B+%3Fpolitician++rdf%3Atype++%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPolitician%3E+%3B%0D%0A++++++++++++++++%3Fproperty++%3Fvalue%0D%0A++++FILTER+%28+%3Fproperty+%21%3D+rdf%3Atype+%29%0D%0A++%7D%0D%0AGROUP+BY+%3Fproperty%0D%0AORDER+BY+%3FdistinctValueCount&format=text%2Fhtml&timeout=10000&signal_void=on&signal_unconnected=on#
