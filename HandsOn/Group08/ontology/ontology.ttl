@@ -1,135 +1,198 @@
- @prefix : <http://madridcityheatmap.org/group08/accidentalidad/> .
-@prefix accidente: <http://www.owl-ontologies.com/accidente#> .
-@prefix accidentalidad: <http://madridcityheatmap.org/group08/accidentalidad#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix distrito: <http://www.owl-ontologies.com/distrito#> .
-@prefix distritos: <http://madridcityheatmap.org/group08/distritos#> .
+@prefix : <http://madridcityheatmap.org/group08/accidentalidad#> ./> .
+@prefix clase: <http://madridcityheatmap.org/group08/accidentalidad#> .#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://madridcityheatmap.org/group08/accidentalidad#> ./> .
 
-accidentalidad:Accidente a owl:Class ;
-    rdfs:label "Accidente" .
+<http://madridcityheatmap.org/group08/accidentalidad#> ./> rdf:type owl:Ontology ;
+			dc:creator "Group08" ;
+			owl:versionInfo "0.0.1" ;
+			dc:title "HandsOn2" ;
+			mod:createdWith <https://chowlk.linkeddata.es/> .
 
-: a owl:Ontology ;
-    dc:creator "Group08" ;
-    dc:description "Ontology code created by Chowlk" ;
-    dc:title "Madrid city heatmap Ontology" ;
-    owl:versionInfo "0.0.1" .
+dc:creator a owl:AnnotationProperty .
 
-distritos:Distrito a owl:Class ;
-    rdfs:label "Distrito" .
+owl:versionInfo a owl:AnnotationProperty .
 
-accidente:Accidente a owl:Class ;
-    rdfs:label "Accidente" .
+dc:title a owl:AnnotationProperty .
 
-accidente:num_expediente a owl:DatatypeProperty ;
-    rdfs:label "n u m_ e x p e d i e n t e" ;
-    rdfs:range xsd:String .
+#################################
+#    Object Properties
+#################################
 
-accidente:fecha a owl:DatatypeProperty ;
-    rdfs:label "f e c h a" ;
-    rdfs:range xsd:DateTime .
+## clase:perteneceADistrito
+clase:perteneceADistrito rdf:type owl:ObjectProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range clase:Distrito ;
+		rdfs:label "pertenece a distrito" .
 
-accidente:hora a owl:DatatypeProperty ;
-    rdfs:label "h o r a" ;
-    rdfs:range xsd:DateTime .
+#################################
+#    Data Properties
+#################################
 
-accidente:localización a owl:DatatypeProperty ;
-    rdfs:label "l o c a l i z a c i o n" ;
-    rdfs:range xsd:String .
+## clase:COD_DIS_TX
+clase:COD_DIS_TX rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "c o d_ d i s_ t x" .
 
-accidente:numero a owl:DatatypeProperty ;
-    rdfs:label "n u m e r o" ;
-    rdfs:range xsd:String .
+## clase:DISTRI_MAY
+clase:DISTRI_MAY rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:string ;
+		rdfs:label "d i s t r i_ m a y" .
 
-accidente:cod_distrito a owl:DatatypeProperty ;
-    rdfs:label "c o d_ d i s t r i t o" ;
-    rdfs:range xsd:Integer .
+## clase:DISTRI_MT
+clase:DISTRI_MT rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "d i s t r i_ m t" .
 
-accidente:distrito a owl:DatatypeProperty ;
-    rdfs:label "d i s t r i t o" ;
-    rdfs:range xsd:String .
+## clase:num_expediente
+clase:num_expediente rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "num_expediente" .
 
-accidente:tipo_accidente a owl:DatatypeProperty ;
-    rdfs:label "t i p o_ a c c i d e n t e" ;
-    rdfs:range xsd:String .
+## clase:NOMBRE
+clase:NOMBRE rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:string ;
+		rdfs:label "n o m b r e" .
 
-accidente:estado_meteorologico a owl:DatatypeProperty ;
-    rdfs:label "e s t a d o_ m e t e o r o l o g i c o" ;
-    rdfs:range xsd:String . 
+## clase:fecha
+clase:fecha rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:DateTime ;
+		rdfs:label "fecha" .
 
-accidente:tipo_vehiculo a owl:DatatypeProperty ;
-    rdfs:label "t i p o_ v e h i c u l o" ;
-    rdfs:range xsd:String .
+## clase:hora
+clase:hora rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:DateTime ;
+		rdfs:label "hora" .
 
-accidente:tipo_persona a owl:DatatypeProperty ;
-    rdfs:label "t i p o_ p e r s o n a" ;
-    rdfs:range xsd:String .
-    
-accidente:rango_edad a owl:DatatypeProperty ;
-    rdfs:label "r a n g o_ e d a d" ;
-    rdfs:range xsd:String .
+## clase:OBJECTID
+clase:OBJECTID rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "o b j e c t i d" .
 
-accidente:sexo a owl:DatatypeProperty ;
-    rdfs:label "s e x o" ;
-    rdfs:range xsd:String .
+## clase:localización
+clase:localización rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "localización" .
 
-accidente:cod_lesividad a owl:DatatypeProperty ;
-    rdfs:label "c o d_ l e s i v i d a d" ;
-    rdfs:range xsd:Integer .
-    
-accidente:lesividad a owl:DatatypeProperty ;
-    rdfs:label "l e s i v i d a d" ;
-    rdfs:range xsd:String .
+## clase:numero
+clase:numero rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "numero" .
 
-accidente:coordenada_x_utm a owl:DatatypeProperty ;
-    rdfs:label "c o o r d e n a d a_ x_ u t m" ;
-    rdfs:range xsd:Float .                  
+## clase:COD_DIS
+clase:COD_DIS rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "c o d_ d i s" .
 
-accidente:coordenada_y_utm a owl:DatatypeProperty ;
-    rdfs:label "c o o r d e n a d a_ y_ u t m" ;
-    rdfs:range xsd:Float .
+## clase:cod_distrito
+clase:cod_distrito rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:integer ;
+		rdfs:label "cod_distrito" .
 
-accidente:positiva_alcohol a owl:DatatypeProperty ;
-    rdfs:label "p o s i t i v a_ a l c o h o l" ;
-    rdfs:range xsd:String .                                                         
+## clase:distrito
+clase:distrito rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "distrito" .
 
-accidente:positiva_droga a owl:DatatypeProperty ;
-    rdfs:label "p o s i t i v a_ d r o g a" ;
-    rdfs:range xsd:String . 
+## clase:distrito
+clase:distrito rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "distrito" .
 
-distrito:Distrito a owl:Class ;
-    rdfs:label "Distrito" .
+## clase:tipo_accidente
+clase:tipo_accidente rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "tipo_accidente" .
 
-distrito:OBJECTID a owl:DatatypeProperty ;
-    rdfs:label "o b j e c t i d" ;
-    rdfs:range xsd:Integer .
+## clase:estado_meteorologico
+clase:estado_meteorologico rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "estado_meteorologico" .
 
-distrito:Shape_Area a owl:DatatypeProperty ;
-    rdfs:label "shape_ area" ;
-    rdfs:range xsd:Integer .
+## clase:tipo_vehiculo
+clase:tipo_vehiculo rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "tipo_vehiculo" .
 
-distrito:Shape_leng a owl:DatatypeProperty ;
-    rdfs:label "shape_leng" ;
-    rdfs:range xsd:Integer .
+## clase:tipo_persona
+clase:tipo_persona rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "tipo_persona" .
 
-distrito:COD_DIS a owl:DatatypeProperty ;
-    rdfs:label "c o d_ d i s" ;
-    rdfs:range xsd:Integer .
+## clase:rango_edad
+clase:rango_edad rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "rango_edad" .
 
-distrito:COD_DIS_TX a owl:DatatypeProperty ;
-    rdfs:label "c o d_ d i s_ t x" ;
-    rdfs:range xsd:Integer .
+## clase:sexo
+clase:sexo rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "sexo" .
 
-distrito:DISTRI_MAY a owl:DatatypeProperty ;
-    rdfs:label "d i s t r i_ m a y" ;
-    rdfs:range xsd:String .
+## clase:cod_lesividad
+clase:cod_lesividad rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "cod_lesividad" .
 
-distrito:NOMBRE a owl:DatatypeProperty ;
-    rdfs:label "n o m b r e" ;
-    rdfs:range xsd:String .
+## clase:lesividad
+clase:lesividad rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:accidente ;
+		rdfs:range xsd:string ;
+		rdfs:label "lesividad" .
 
-distrito:DISTRI_MT a owl:DatatypeProperty ;
-    rdfs:label "d i s t r i_ m t" ;
-    rdfs:range xsd:String .
+## clase:Shape_Area
+clase:Shape_Area rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "shape_ area" .
+
+## clase:Shape_leng
+clase:Shape_leng rdf:type owl:DatatypeProperty ;
+		rdfs:domain clase:Distrito ;
+		rdfs:range xsd:integer ;
+		rdfs:label "shape_leng" .
+
+#################################
+#    Classes
+#################################
+
+## owl:Class
+owl:Class rdf:type owl:Class ;
+	rdfs:label "Class" .
+
+## clase:accidente
+clase:accidente rdf:type owl:Class ;
+	rdfs:label "accidente" .
+
+## clase:Distrito
+clase:Distrito rdf:type owl:Class ;
+	rdfs:label "Distrito" .
