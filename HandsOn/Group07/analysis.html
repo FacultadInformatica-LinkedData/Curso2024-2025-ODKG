@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublin Bikes Data Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .container {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dublin Bikes Data Analysis</h1>
+    
+    <div class="container">
+        <h2>1. Dataset Overview</h2>
+        <p>The dataset analysed comes from the Dublin Bikes system, which provides real-time information on bike availability and station status.</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>system_id</td>
+      <td>object</td>
+      <td>Identifier for the bike system</td>
+    </tr>
+    <tr>
+      <td>last_reported</td>
+      <td>object</td>
+      <td>Timestamp of the latest station report</td>
+    </tr>
+    <tr>
+      <td>station_id</td>
+      <td>int64</td>
+      <td>Unique identifier for each station</td>
+    </tr>
+    <tr>
+      <td>num_bikes_available</td>
+      <td>int64</td>
+      <td>Number of available bikes at each station</td>
+    </tr>
+    <tr>
+      <td>num_docks_available</td>
+      <td>int64</td>
+      <td>Number of available docks at each station</td>
+    </tr>
+    <tr>
+      <td>is_installed</td>
+      <td>bool</td>
+      <td>Station installation status</td>
+    </tr>
+    <tr>
+      <td>is_renting</td>
+      <td>bool</td>
+      <td>Station renting status</td>
+    </tr>
+    <tr>
+      <td>is_returning</td>
+      <td>bool</td>
+      <td>Station returning status</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>object</td>
+      <td>Station name</td>
+    </tr>
+    <tr>
+      <td>short_name</td>
+      <td>float64</td>
+      <td>Short name (missing data)</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>object</td>
+      <td>Station address</td>
+    </tr>
+    <tr>
+      <td>lat</td>
+      <td>float64</td>
+      <td>Latitude</td>
+    </tr>
+    <tr>
+      <td>lon</td>
+      <td>float64</td>
+      <td>Longitude</td>
+    </tr>
+    <tr>
+      <td>region_id</td>
+      <td>float64</td>
+      <td>Region identifier (missing data)</td>
+    </tr>
+    <tr>
+      <td>capacity</td>
+      <td>int64</td>
+      <td>Total capacity of each station</td>
+    </tr>
+  </tbody>
+</table>
+        <p> The key metrics are <code>num_bikes_available</code> and <code>num_docks_available</code>, which provide real-time information about the bike-sharing system’s availability.</li>
+    </div>
+
+    <div class="container">
+        <h3>1.1 Summary Statistics</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th style="text-align:left;"></th style="text-align:left;">
+      <th style="text-align:left;">station_id</th style="text-align:left;">
+      <th style="text-align:left;">num_bikes_available</th style="text-align:left;">
+      <th style="text-align:left;">num_docks_available</th style="text-align:left;">
+      <th style="text-align:left;">lat</th style="text-align:left;">
+      <th style="text-align:left;">lon</th style="text-align:left;">
+      <th style="text-align:left;">capacity</th style="text-align:left;">
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="text-align:left;">count</th style="text-align:left;">
+      <td>53996.00</td>
+      <td>53996.00</td>
+      <td>53996.00</td>
+      <td>53996.00</td>
+      <td>53996.00</td>
+      <td>53996.00</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">mean</th style="text-align:left;">
+      <td>57.82</td>
+      <td>12.33</td>
+      <td>19.28</td>
+      <td>53.35</td>
+      <td>-6.26</td>
+      <td>31.97</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">std</th style="text-align:left;">
+      <td>34.02</td>
+      <td>10.18</td>
+      <td>11.30</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>7.45</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">min</th style="text-align:left;">
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>53.33</td>
+      <td>-6.31</td>
+      <td>16.00</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">25%</th style="text-align:left;">
+      <td>28.00</td>
+      <td>3.00</td>
+      <td>10.00</td>
+      <td>53.34</td>
+      <td>-6.27</td>
+      <td>29.00</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">50%</th style="text-align:left;">
+      <td>57.00</td>
+      <td>11.00</td>
+      <td>19.00</td>
+      <td>53.34</td>
+      <td>-6.26</td>
+      <td>30.00</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">75%</th style="text-align:left;">
+      <td>88.00</td>
+      <td>19.00</td>
+      <td>28.00</td>
+      <td>53.35</td>
+      <td>-6.25</td>
+      <td>40.00</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;">max</th style="text-align:left;">
+      <td>117.00</td>
+      <td>40.00</td>
+      <td>40.00</td>
+      <td>53.36</td>
+      <td>-6.23</td>
+      <td>40.00</td>
+    </tr>
+  </tbody>
+</table>
+        <p>The fields <code>short_name</code> and <code>region_id</code> contain only missing (NaN) data.</p>
+        <p>The number of bikes available at any station ranges from 0 to 40, with an average of ~12.30, showing variability in availability.</p>
+        <p>Dock availability varies from 0 to 40, with a mean of ~19.30, indicating that stations are not always fully stocked or empty.</p>
+        <p>The station capacities range from 16 to 40, with an average of ~32.00, which suggests moderate capacity for most stations.</p>
+    </div>
+
+    <div class="container">
+        <h2>2. Licensing of Data Source</h2>
+        <p>The dataset is sourced from <a href="https://data.europa.eu/data/datasets/33ec9fe2-4957-4e9a-ab55-c5e917c7a9ab?locale=en">data.europa.eu</a> and is licensed under the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.</p>
+        <p>Under this license, you are free to share, adapt, and use the dataset for any purpose, including commercial use, as long as appropriate credit is given to the publisher.</p>
+    </div>
+
+    <div class="container">
+        <h2>3. Resource Naming Strategy</h2>
+        <p>The following resource naming strategy was applied to the dataset for consistency and clarity in Linked Data and RDF representations:</p>
+        <ul>
+            <li><strong>Station URIs:</strong> Each bike station is identified using the pattern: <code>http://dublinbikesharing.org#Station_[station_id]</code></li>
+            <li><strong>Bike Availability URIs:</strong> Each station's bike availability is captured using the pattern: <code>http://dublinbikesharing.org#Station_[station_id]_BikesAvailable</code></li>
+            <li><strong>Dock Availability URIs:</strong> Each station's dock availability is captured using the pattern: <code>http://dublinbikesharing.org#Station_[station_id]_DocksAvailable</code></li>
+        </ul>
+        <p>This strategy ensures that each resource is uniquely identified and can be referenced easily in a semantic web context.</p>
+    </div>
+</body>
+</html>
