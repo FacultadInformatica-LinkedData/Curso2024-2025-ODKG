@@ -164,6 +164,40 @@
             </ul>
         </p>
     </div>
-
+    <section id="resource-naming-strategy">
+        <h2>Resource Naming Strategy</h2>
+        <p><strong>NOTE:</strong> The domain for this ontology will be changed in the future to reflect its final hosting location.</p>
+        
+        <h3>Ontology IRI</h3>
+        <p>The current IRI for the ontology is:</p>
+        <pre>
+    http://www.semanticweb.org/ontology/SmartBarrioMadrid
+        </pre>
+        <p>A version number can be added if needed in the future.</p>
+    
+        <h3>Class IRIs</h3>
+        <p>The IRI pattern for classes follows this structure:</p>
+        <pre>
+    http://www.semanticweb.org/ontology/SmartBarrioMadrid/{Classname}
+        </pre>
+        <p>For example:</p>
+        <ul>
+            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/Student</code></li>
+            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/University</code></li>
+        </ul>
+    
+        <h3>Individual IRIs</h3>
+        <p>The IRI pattern for individuals (instances) follows this structure:</p>
+        <pre>
+    http://www.semanticweb.org/resource/{Classname}/{id}
+        </pre>
+        <p>For example:</p>
+        <ul>
+            <li>Individual: <code>http://www.semanticweb.org/resource/Student/johnDoe</code></li>
+            <li>Individual: <code>http://www.semanticweb.org/resource/University/madridUniversity</code></li>
+        </ul>
+    
+        <p>Once the domain is changed, the new IRI structure will follow the same resource naming pattern but under the new domain. This ensures that resources are easy to identify and the resource types are clear from their IRIs.</p>
+    </section>
 </body>
 </html>
