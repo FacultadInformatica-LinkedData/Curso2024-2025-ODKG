@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,95 +8,106 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        h1, h2, h3 {
+            background-color: #f5f5f5;
             color: #333;
         }
-        .container {
-            background-color: #fff;
+        h1 {
+            text-align: center;
+            color: #005dab; 
+            font-weight: normal;
+        }
+        .content {
+            max-width: 700px;
+            margin: auto;
+            background-color: #ffffff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            color: #005dab;
+            font-weight: normal;
         }
         ul {
-            margin: 20px 0;
-            padding: 0;
             list-style-type: none;
+            padding-left: 0;
         }
-        ul li {
-            background: #eee;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+        li {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-left: 4px solid #ffcc00;
+            background-color: #e0ecf8;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Dataset Analysis</h1>
-        <p>This dataset contains 6.744.091 rows of data ready to be used for analysis. It also contains 18 columns divided into categorical, numerical, datetime, text, and geolocation values that are distributed in the following way:</p>
 
-        <h2>Datetime Columns:</h2>
+    <h1>License Analysis Report</h1>
+
+    <div class="content">
+        <h2>Dataset Analysis</h2>
+        <p>This dataset contains 6,744,091 rows of data ready to be used for analysis. It also contains 18 columns divided into categorical, numerical, datetime, text, and geolocation values that are distributed as follows:</p>
+
+        <h2>1. Datetime Columns</h2>
         <ul>
-            <li><strong>fecha, unlock_date, lock_date:</strong> These columns track the date and time of bike usage. Useful for time-based analysis. These columns do not allow null values and the dates can take values between June 01 of 2021 to February 18 of 2023.</li>
+            <li><strong>fecha, unlock_date, lock_date:</strong> Track the date and time of bike usage. Useful for time-based analysis. These columns do not allow null values and range between June 1, 2021, to February 18, 2023.</li>
         </ul>
 
-        <h2>Numerical Columns:</h2>
+        <h2>2. Numerical Columns</h2>
         <ul>
-            <li><strong>idBike:</strong> Unique identifier for each bike, useful for aggregating trips by bike. It does not allow null values. These IDs range is from 0 to 8.090, but the number of unique bikes in operation in this dataset is 4.932.</li>
-            <li><strong>trip_minutes:</strong> Duration of each trip, a critical metric to analyze ride times. It does not allow null or negative values, but a trip can last 0 minutes.</li>
-            <li><strong>station_unlock, station_lock, dock_unlock, dock_lock:</strong> These represent the IDs of the docking stations and individual docks, allowing analysis of station usage. These columns can be null when the bike was not taken or left at a station. The station IDs range is from 1 to 889, and the dock IDs range is from 1 to 30.</li>
+            <li><strong>idBike:</strong> Unique identifier for each bike. It does not allow null values. The range is from 0 to 8,090, with 4,932 unique bikes in operation.</li>
+            <li><strong>trip_minutes:</strong> Duration of each trip. It does not allow null or negative values, though trips can last 0 minutes.</li>
+            <li><strong>station_unlock, station_lock, dock_unlock, dock_lock:</strong> IDs of docking stations and docks. These columns can be null when a bike is not taken or left at a station. Station IDs range from 1 to 889, and dock IDs range from 1 to 30.</li>
         </ul>
 
-        <h2>Geolocation Columns:</h2>
-            <ul>
-            <li><strong>geolocation_unlock, geolocation_lock:</strong> Contains a dictionary with location data for the unlock and lock events, considering the latitude and longitude of the geolocation point. It does not allow null values.</li>
-        </ul>
-
-        <h2>Text Columns:</h2>
+        <h2>3. Geolocation Columns</h2>
         <ul>
-            <li><strong>address_unlock, address_lock:</strong> Provides the address where the bike trip started and ended. It allows null values.</li>
-            <li><strong>unlock_station_name, lock_station_name:</strong> Contains the names of the stations for the unlock and lock events, useful for station popularity analysis. These columns allow null values when the bike was not taken or left at a station.</li>
+            <li><strong>geolocation_unlock, geolocation_lock:</strong> Contains location data for unlock and lock events, based on latitude and longitude. Null values are not allowed.</li>
         </ul>
 
-        <h2>Categorical Columns:</h2>
+        <h2>4. Text Columns</h2>
         <ul>
-            <li><strong>fleet:</strong> Could be used to group or filter bikes based on their fleet. It does not allow null values and can take the values 1 or 2.</li>
-            <li><strong>locktype, unlocktype:</strong> Can take the value "STATION" if the bike was taken or left at a station, or "FREE" if the bike was taken or left elsewhere. These columns do not allow null values.</li>
+            <li><strong>address_unlock, address_lock:</strong> Address where trips start and end. These columns allow null values.</li>
+            <li><strong>unlock_station_name, lock_station_name:</strong> Names of the stations for unlock and lock events. These columns allow null values when bikes are not taken or left at a station.</li>
         </ul>
-        <h1>Licensing Analysis of the Data Source</h1>
+
+        <h2>5. Categorical Columns</h2>
+        <ul>
+            <li><strong>fleet:</strong> Groups bikes based on their fleet. Null values are not allowed, and it can take values of 1 or 2.</li>
+            <li><strong>locktype, unlocktype:</strong> Indicates whether the bike was taken or left at a station ("STATION") or elsewhere ("FREE"). Null values are not allowed.</li>
+        </ul>
+
+        <h2>License Information</h2>
         
-        <h2>Publisher and Rightsholder of the Dataset</h2>
-        <p>The dataset is published and owned by the <strong>Empresa Municipal de Transportes de Madrid (EMT)</strong>.</p>
+        <h2>1. Publisher and Rightsholder</h2>
+        <p>The dataset is published and owned by <strong>Empresa Municipal de Transportes de Madrid (EMT)</strong>.</p>
 
-        <h2>License of the Dataset</h5>
-        <p>The dataset falls under EMT’s Open Data License. The following rights and restrictions apply:</p>
+        <h2>2. License Overview</h2>
         <ul>
-            <li>The dataset can be reused for both <strong>commercial and non-commercial</strong> purposes.</li>
-            <li>It allows extraction, sharing, and distribution of the data as well as creating derivative works.</li>
+            <li>The dataset is licensed under EMT’s Open Data License, allowing reuse for <strong>commercial and non-commercial</strong> purposes.</li>
+            <li>It permits extraction, sharing, and distribution, as well as the creation of derivative works.</li>
             <li>Derived works must be shared under the <strong>same license</strong>.</li>
             <li>Attribution to EMT de Madrid is required, with a visible link to their website where applicable.</li>
-            <li>Access to dynamic data requires a unique identifier which must be requested from EMT.</li>
+            <li>Access to dynamic data requires a unique identifier, requested from EMT.</li>
         </ul>
 
-        <h2>Restrictions on Reuse</h2>
-        <p>Key restrictions include:</p>
+        <h2>3. Restrictions on Reuse</h2>
         <ul>
             <li>No falsifying or manipulating the data.</li>
             <li>Data must be kept <strong>up-to-date</strong>.</li>
             <li>The data must not be used to harm EMT’s reputation or in illegal contexts.</li>
         </ul>
 
-        <h2>Suggested License for the Generated Dataset</h2>
-        <p>Given the requirements of the original license, it is recommended to release the generated dataset under the <strong>Creative Commons Attribution-ShareAlike (CC BY-SA)</strong> license.</p>
+        <h2>4. Suggested License for Generated Dataset</h2>
         <ul>
-            <li>This license allows others to remix, adapt, and build upon the work, even for commercial purposes, as long as they credit the original source and license their new creations under the same terms.</li>
+            <li>It is recommended to release the generated dataset under the <strong>Creative Commons Attribution-ShareAlike (CC BY-SA)</strong> license. This allows others to remix, adapt, and build upon the work for commercial purposes, as long as they credit the original source and share under the same terms.</li>
         </ul>
 
-        <h2>Attribution Requirements</h2>
-        <p>Any use of the dataset, or derived datasets, must include the attribution "Powered by EMT de Madrid" with a link to <a href="http://www.emtmadrid.es">EMT's website</a>.</p>
+        <h2>5. Attribution Requirements</h2>
+        <ul>
+            <li>Any use of the dataset must include the attribution "Powered by EMT de Madrid" with a link to <a href="http://www.emtmadrid.es">EMT's website</a>.</li>
+        </ul>
     </div>
+
 </body>
 </html>
