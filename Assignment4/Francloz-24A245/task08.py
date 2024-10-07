@@ -40,7 +40,7 @@ WHERE {
     ?person a ?type .
     ?type rdfs:subClassOf* data:Person .
     OPTIONAL { ?person vcard:givenName ?givenName } .
-    OPTIONAL { ?person vcard:familyName ?familyName } .
+    OPTIONAL { ?person vcard:Family ?familyName } .
     OPTIONAL { ?person vcard:email ?email }
 }
 """
@@ -77,5 +77,5 @@ for t1 in to_fill:
     for t2 in filled:
         if t1[0] == t2[0]:
             if t1[1] is not None: g1.add((t1[0], vcard.Given, t1[1]))
-            if t1[2] is not None: g1.add((t1[0], vcard.FN, t1[2]))
+            if t1[2] is not None: g1.add((t1[0], vcard.Family, t1[2]))
             if t1[3] is not None: g1.add((t1[0], vcard.EMAIL, t1[3]))
