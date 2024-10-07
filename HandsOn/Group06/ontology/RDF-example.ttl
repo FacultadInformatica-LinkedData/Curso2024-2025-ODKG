@@ -17,28 +17,28 @@ mair:municipio/Madrid a mair:Municipio ;
 
 mair:estacion/PlazaDeEspana a mair:Estacion ;
     rdfs:label "Plaza de España" ;
-    mair:monitors mair:contaminante/Ozono ;
+    mair:monitors mair:parametro/Ozono ;
     mair:recordsObservation mair:observacion/2024-01-01 .
 
 mair:estacion/EscuelasAguirre a mair:Estacion ;
     rdfs:label "Escuelas Aguirre" ;
-    mair:monitors mair:contaminante/PM2.5 ;
+    mair:monitors mair:parametro/PM2.5 ;
     mair:recordsObservation mair:observacion/2024-02-05 .
 
-mair:contaminante/Ozono a mair:Contaminante ;
+mair:parametro/Ozono a mair:Parametro ;
     mair:hasMagnitud "Ozono" .
 
-mair:contaminante/PM2.5 a mair:Contaminante ;
+mair:parametro/PM2.5 a mair:Parametro ;
     mair:hasMagnitud "PM2.5" .
 
 mair:observacion/2024-01-01 a mair:Observacion ;
     mair:hasFecha "2024-01-01"^^xsd:date ;
     mair:hasValor 2 ;
-    mair:monitors mair:contaminante/Ozono ;
+    mair:monitors mair:Parametro/Ozono ;
     mair:recordsObservation mair:estacion/PlazaDeEspana .
 
 mair:observacion/2024-02-05 a mair:Observacion ;
     mair:hasFecha "2024-02-05"^^xsd:date ;
     mair:hasValor 19 ;
-    mair:monitors mair:contaminante/PM2.5 ;
+    mair:monitors mair:parametro/PM2.5 ;
     mair:recordsObservation mair:estacion/EscuelasAguirre .
