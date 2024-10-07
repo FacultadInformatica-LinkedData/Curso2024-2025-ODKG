@@ -9,6 +9,7 @@ Original file is located at
 **TASK 3: Statement-based query**
 """
 
+!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4"
 
 """Importamos example3.rdf en nuestro grafo"""
