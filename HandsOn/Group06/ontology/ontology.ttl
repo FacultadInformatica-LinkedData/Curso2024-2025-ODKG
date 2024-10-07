@@ -1,49 +1,65 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix mair: <http://www.MadridAirQuality.es/ontology/> .
 
-# Classes
-owl:Class mair:TrafficIntensity .
-owl:Class mair:MeteorologicalData .
-owl:Class mair:PollutionData .
-owl:Class mair:SamplingLocation .
-owl:Class mair:WeatherStation .
-owl:Class mair:Pollutant .
-owl:Class mair:WeatherParameter .
 
-# Properties for Traffic Intensity
-mair:hasTrafficIntensity a rdf:Property ;
-    rdfs:domain mair:TrafficIntensity ;
-    rdfs:range xsd:integer .
+# Define Classes
 
-mair:hasLocation a rdf:Property ;
-    rdfs:domain mair:TrafficIntensity ;
-    rdfs:range mair:SamplingLocation .
+ex:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
 
-# Properties for Meteorological Data
-mair:hasWeatherData a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range xsd:integer .
+ex:Municipio a owl:Class ;
+    rdfs:label "Municipio" .
 
-mair:hasWeatherStation a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range mair:WeatherStation .
+ex:Estacion a owl:Class ;
+    rdfs:label "Estacion" .
 
-mair:hasWeatherParameter a rdf:Property ;
-    rdfs:domain mair:MeteorologicalData ;
-    rdfs:range mair:WeatherParameter .
+ex:Parametro a owl:Class ;
+    rdfs:label "Parametro" .
 
-# Properties for Pollution Data
-mair:hasPollutionData a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range xsd:integer .
+ex:Observacion a owl:Class ;
+    rdfs:label "Observacion" .
 
-mair:hasPollutant a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range mair:Pollutant .
 
-mair:hasSamplingLocation a rdf:Property ;
-    rdfs:domain mair:PollutionData ;
-    rdfs:range mair:SamplingLocation .
+# Define Object Properties
+
+ex:hasProvincia a owl:ObjectProperty ;
+    rdfs:label "has provincia" ; 
+    rdfs:domain ex:Municipio ; 
+    rdfs:range ex:Provincia . 
+
+ex:hasMunicipio a owl:ObjectProperty ;
+    rdfs:label "has municipio" ; 
+    rdfs:domain ex:Provincia ; 
+    rdfs:range ex:Municipio . 
+
+ex:hasEstacion a owl:ObjectProperty ;
+    rdfs:label "has estacion" ; 
+    rdfs:domain ex:Municipio ; 
+    rdfs:range ex:Estacion . 
+
+ex:monitors a owl:ObjectProperty ;
+    rdfs:label "monitors" ; 
+    rdfs:domain ex:Estacion ; 
+    rdfs:range ex:Parametro . 
+
+ex:recordsObservation a owl:ObjectProperty ;
+    rdfs:label "records observation" ; 
+    rdfs:domain ex:Estacion ; 
+    rdfs:range ex:Observacion . 
+
+
+# Define Datatype Properties
+
+ex:hasFecha a owl:DatatypeProperty ;
+    rdfs:label "has fecha" ; 
+    rdfs:domain ex:Observacion ; 
+    rdfs:range xsd:date .
+
+ex:hasMagnitud a owl:DatatypeProperty ;
+    rdfs:label "has magnitud" ; 
+    rdfs:domain ex:Contaminante ; 
+    rdfs:range xsd:string .
+
