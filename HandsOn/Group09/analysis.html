@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="https://svgur.com/i/1B63.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name = "description"
+			content = "UPM - Open Data and Knowledge Graphs course - Hands-On Assignment #2 - Licensing and Data Analyusing"
+		/>
+		<meta name = "author" content = "Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala" />
+		<meta name = "keywords" content = "ODKG, Hands-On, Assignment 2, app, Open Data, Linked Data, Smart Cities" />
+		<title>License and Dataset Analysis - ODKG Hands-On Assignment 2</title>
+		<style>
+		span.subindex {
+			vertical-align: sub;
+			font-size: .8vw;
+		}
+		body {
+			font-family: 'Trebuchet MS', sans-serif;
+		}
+		header {
+			text-align: center;
+			color: #333333;
+		}
+		footer {
+			text-align: center;
+			color: #777777;
+		}
+		article {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		}
+		section {
+			margin-left: 1vw;
+		}
+		p {
+			margin-left: 1vw;
+		}
+		ul {
+			margin-left: 1vw;
+		}
+		a {
+			text-decoration: none;
+		}
+		.highlight {
+			font-weight: bold;
+		}
+		h6 {
+			font-size: 0.82em;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>
+				Group Hands-On - Assignment 2 - Data and Licensing Analysis
+			</h1>
+			<h2>
+				by Rafael Orihuela, Pedro Pedregal, Elías Herrero & Carlos Ayala
+			</h2>
+			<h3>
+				Universidad Politécnica de Madrid - Open Data & Knowledge Graphs course
+			</h3>
+		</header>
+		<main>
+			<article>
+				<h4>
+					Main goal
+				</h4>
+				<section>
+					<p>
+						We aim to show the analyses performed over the data source and the licensing of the data source, as well as the resource naming strategy defined.
+					</p>
+				</section>
+			</article>
+			<article>
+				<h4>
+					Dataset licensing
+				</h4>
+				<p>
+					All datasets have been extracted from the Madrid City Council Open Data Portal.
+				</p>
+				<section>
+					<article>
+						<h5>
+							Publisher
+						</h5>
+						<p>
+							The publisher of the diferent datasets is the <span class="highlight">Madrid City Council</span>.
+						</p>    
+					</article>
+					<article>
+						<h5>
+							Dataset owner
+						</h5>
+						<p>
+							The ownership of the data belongs to the <span class="highlight">Madrid City Council</span>.
+						</p>    
+					</article>
+					<article>
+						<h5>
+							License
+						</h5>
+						<p>
+							The data from the Madrid City Council do not have a clear license, such as Creative Commons, that simplifies use and redistribution. However, they do have well-defined terms of use that regulate how the data can be reused.
+
+							While there isn’t a standard license mentioned, the data can still be reused under certain guidelines that include citing the source, not distorting the information, and prohibiting the re-identification of personal data.
+						</p>
+						<section>
+							<h6>
+								1. Authorization for Reuse and Non-Exclusive Intellectual Property Rights Assignment
+							</h6>
+							<ul>
+								<li>The reuse of data and documents is allowed for both <span class="highlight">commercial</span> and <span class="highlight">non-commercial</span> purposes.</li>
+								<li>Reuse includes activities such as <span class="highlight">copying, distributing, modifying, adapting, extracting, reorganizing, and combining</span> the information, provided it is not used for public administrative purposes.</li>
+								<li>Documents refer to any data, in any format (material or electronic), including raw data at its most disaggregated levels.</li>
+								<li>A <span class="highlight">free, non-exclusive transfer of intellectual property rights</span> is granted, allowing reproduction, distribution, public communication, or transformation of the information in any format and modality.</li>
+								<li>This license applies <span class="highlight">worldwide</span> and for the <span class="highlight">maximum term allowed by law</span>.</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								2. General Conditions for Reuse
+							</h6>
+							<ul>
+								<li>The meaning of the information must not be distorted.</li>
+								<li>The source of the reused information must be cited: <em>"Data source: Madrid City Council"</em> or the relevant administrative body.</li>
+								<li>The <span class="highlight">date of the last update</span> of the documents must be mentioned, if available.</li>
+								<li>It must not be suggested or implied that the Madrid City Council <span class="highlight">endorses</span> or <span class="highlight">supports</span> the reuse of the information.</li>
+								<li>Metadata regarding the update date and reuse conditions included in the original document must be preserved and not altered.</li>
+								<li><span class="highlight">Re-identification</span> of anonymized data is strictly prohibited for privacy protection.</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								Potential license: Creative Commons Attribution
+							</h6>
+							<p>
+								Based on the conditions outlined by the Ayuntamiento de Madrid regarding data reuse, it’s clear that the municipality encourages the open use of its data while imposing specific requirements and restrictions to ensure responsible and ethical usage.
+
+								For that reason, the most suitable license will be <span class="highlight">Creative Commons Attribution (CC BY)</span>, especially given the conditions set by the Ayuntamiento de Madrid. This license allows users to distribute, remix, adapt, and build upon the work, even commercially, provided they credit the original creation. aligning perfectly with the Ayuntamiento's citation requirement.
+							</p>
+						</section>
+					</article>
+				</section>
+			</article>
+
+			<article>
+				<h4>
+					Dataset Analysis
+				</h4>
+				<section>
+					<article>
+						<h5>
+							datos_diarios_2023.csv
+						</h5>
+						<p>
+							The air quality dataset from the Madrid City Council contains daily measurements of various pollutants at several stations distributed throughout the city, including data on contaminants and their validity. This dataset allows for the analysis of air quality trends in Madrid over time.
+						</p>
+						<section>
+							<h6>
+								Key Columns:
+							</h6>
+							<ul>
+								<li><span class="highlight">PROVINCIA, MUNICIPIO, ESTACION</span>: Identifiers for location and station.</li>
+								<li><span class="highlight">MAGNITUD</span>: Likely represents the type of measurement.</li>
+								<li><span class="highlight">PUNTO_MUESTREO</span>: The sampling point identifier.</li>
+								<li><span class="highlight">ANO</span> and <span class="highlight">MES</span>: Year and month.</li>
+								<li><span class="highlight">D01 to D31</span>: Daily data for up to 31 days of the month.</li>
+								<li><span class="highlight">V01 to V31</span>: Validation flags for the corresponding day (D01 to D31), likely indicating whether the data is valid (V) or not (N).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								Data Types:
+							</h6>
+							<ul>
+								<li><span class="highlight">Numeric columns</span>: Most daily values (D01, D02, etc.) are floats, representing some continuous measurement.</li>
+								<li><span class="highlight">Categorical columns</span>: Columns like V01, V02, etc., contain validation flags (V for valid, N for invalid).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								Further Analysis:
+							</h6>
+							<ul>
+								<li><span class="highlight">Count</span>: Each daily measurement column has 1,566 entries, which means that the dataset is complete in terms of the daily values recorded.</li>
+								<li><span class="highlight">Mean</span>: The mean values range from 14.77 to 25.60 across different days. The values are relatively consistent, with some fluctuation depending on the day.</li>
+								<li><span class="highlight">Min/max values</span>: The minimum value for all days is 0. Maximum values reach as high as 354, indicating some outliers or high peaks in the data.</li>
+							</ul>
+						</section>
+					</article>
+					<article>
+						<h5>datos_diarios_2024.csv</h5>
+						<p></p>
+						<section>
+							<h6>Key Columns:</h6>
+							<ul>
+								<li><span class="highlight">PROVINCIA, MUNICIPIO, ESTACION</span>: Identifiers for location and station.</li>
+								<li><span class="highlight">MAGNITUD</span>: Represents the type of measurement.</li>
+								<li><span class="highlight">PUNTO_MUESTREO</span>: The sampling point identifier.</li>
+								<li><span class="highlight">ANO</span> and <span class="highlight">MES</span>: Year and month.</li>
+								<li><span class="highlight">D01 to D31</span>: Daily data for up to 31 days of the month.</li>
+								<li><span class="highlight">V01 to V31</span>: Validation flags for the corresponding day (D01 to D31), indicating whether the data is valid (V) or not (N).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>Data Types:</h6>
+							<ul>
+								<li><span class="highlight">Numeric columns</span>: Daily values (D01, D02, etc.) are floats, representing some continuous measurement.</li>
+								<li><span class="highlight">Categorical columns</span>: Columns like V01, V02, etc., contain validation flags (V for valid, N for invalid).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>Further Analysis:</h6>
+							<ul>
+								<li><span class="highlight">Count</span>: Each daily measurement column has 1,035 entries, meaning that the dataset is complete in terms of the recorded daily values.</li>
+								<li><span class="highlight">Mean</span>: The mean values range from 13.09 to 23.21, showing some variability depending on the day.</li>
+								<li><span class="highlight">Min/max values</span>: The minimum value for all days is 0. Maximum values reach as high as 358, indicating the presence of high peaks or outliers in the data.</li>
+							</ul>
+						</section>
+					</article>
+				</section>
+			</article>
+			<article>
+				<h4>
+					Resource Name Strategy
+				</h4>
+				<ul>
+					<li>URI form (resources): <code>http://mAIRdrid.org/{vX}/ontology/{ontologyName}#{className}</code></li>
+					<li>URI form (individuals): <code> http://mAIRdrid.org/{vX}/resource/{className}/{identifier}</code></li>
+					<li> Identifiers: Identifiers are unique across both paths to avoid confusion.</li>
+					<li>URIs domain: mAIRdrid.org</li>
+					<li>Content negotiation: The ontology will support content negotiation to serve different formats such as RDF/XML, Turtle, and JSON-LD based on the client's request.</li>
+					<li>Pattern: <code>{resourceType}</code> should represent categories such as "AirQualityMetric", "Measurement", or "Station", while <code>{identifier}</code> will be a unique identifier (e.g., a UUID or a sequential number).</li>
+				</ul>
+			</article>
+		</main>
+		<footer>
+			🄯 2024 - Rafael Orihuela Brindis, Pedro Pedregal Pérez, Elías Herrero Lázaro, Carlos de la Cruz Ayala Vargas
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+@prefix : <http://fuelpricespain.org/> .
+@prefix ns: <http://fuelpricespain.org/ontology> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://gasolineras.org/ontology> .
+
+# Definición de la Ontología
+ns:GasolinerasOntology a owl:Ontology ;
+    dc:creator "Grupo de Desarrollo" ;
+    dc:description "Ontología para representar gasolineras y sus ubicaciones" ;
+    dc:title "Ontología de Gasolineras" ;
+    owl:versionInfo "0.1" .
+
+# Clases
+ns:Gasolinera a owl:Class ;
+    rdfs:label "Gasolinera" .
+
+ns:Ubicacion a owl:Class ;
+    rdfs:label "Ubicación" .
+
+# Propiedades de Datos
+ns:direccion a owl:DatatypeProperty ;
+    rdfs:label "dirección" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:provincia a owl:DatatypeProperty ;
+    rdfs:label "provincia" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:municipio a owl:DatatypeProperty ;
+    rdfs:label "municipio" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:codigoPostal a owl:DatatypeProperty ;
+    rdfs:label "código postal" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
+ns:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
+ns:precioGasolina95E5 a owl:DatatypeProperty ;
+    rdfs:label "precio gasolina 95 E5" ;
+    rdfs:domain ns:Gasolinera ;
+    rdfs:range xsd:float .
+
+ns:precioGasoleoA a owl:DatatypeProperty ;
+    rdfs:label "precio gasóleo A" ;
+    rdfs:domain ns:Gasolinera ;
+    rdfs:range xsd:float .
+
+ns:horario a owl:DatatypeProperty ;
+    rdfs:label "horario" ;
+    rdfs:domain ns:Gasolinera ;
+    rdfs:range xsd:string .
+
+ns:rotulo a owl:DatatypeProperty ;
+    rdfs:label "rótulo" ;
+    rdfs:domain ns:Gasolinera ;
+    rdfs:range xsd:string .
+
+# Propiedades de Objetos
+ns:tieneUbicacion a owl:ObjectProperty ;
+    rdfs:label "tiene ubicación" ;
+    rdfs:domain ns:Gasolinera ;
+    rdfs:range ns:Ubicacion .

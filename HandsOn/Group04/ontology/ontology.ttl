@@ -1,0 +1,79 @@
+@prefix base: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:characteristics a owl:DatatypeProperty ;
+    rdfs:label "characteristics" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:dischargeDate a owl:DatatypeProperty ;
+    rdfs:label "discharge date" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:editionDate a owl:DatatypeProperty ;
+    rdfs:label "edition date" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of" ;
+    rdfs:domain ns:Neighborhood ;
+    rdfs:range ns:District .
+
+ns:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in" ;
+    rdfs:domain ns:ChargePoint,
+        ns:Street ;
+    rdfs:range ns:Neighborhood,
+        ns:Street .
+
+ns:managedBy a owl:ObjectProperty ;
+    rdfs:label "managed by" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range base:Operator .
+
+ns:numberOfEquipments a owl:DatatypeProperty ;
+    rdfs:label "number of equipments" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:openingDate a owl:DatatypeProperty ;
+    rdfs:label "opening date" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Date .
+
+ns:openingHours a owl:DatatypeProperty ;
+    rdfs:label "opening hours" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:status a owl:DatatypeProperty ;
+    rdfs:label "status" ;
+    rdfs:domain ns:ChargePoint .
+
+rdf:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:domain base:Operator,
+        ns:District,
+        ns:Neighborhood,
+        ns:Street .
+
+base:Operator a owl:Class ;
+    rdfs:label "Operator" .
+
+ns:District a owl:Class ;
+    rdfs:label "District" .
+
+ns:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" .
+
+ns:Street a owl:Class ;
+    rdfs:label "Street" .
+
+ns:ChargePoint a owl:Class ;
+    rdfs:label "Charge Point" .
+
