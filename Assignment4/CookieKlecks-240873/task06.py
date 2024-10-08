@@ -15,7 +15,7 @@ github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedDa
 """Read the RDF file as shown in class"""
 
 from rdflib import Graph, Namespace, Literal, XSD
-from rdflib.namespace import RDF, RDFS, SDO
+from rdflib.namespace import RDF, RDFS, SDO, FOAF
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
@@ -63,9 +63,16 @@ for s, p, o in g:
 """**TASK 6.4: Add to the individual JaneSmithers the email address, fullName, given and family names. Use the https://schema.org vocabulary**"""
 
 # TO DO
+g.add((ns.JaneSmithers, SDO.email, Literal("jane.smithers@gmail.com", datatype=XSD.string)))
+g.add((ns.JaneSmithers, SDO.fullName, Literal("Jane Smithers", datatype=XSD.string)))
+g.add((ns.JaneSmithers, SDO.givenName, Literal("Jane", datatype=XSD.string)))
+g.add((ns.JaneSmithers, SDO.givenName, Literal("Smithers", datatype=XSD.string)))
 # Visualize the results
 
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
+exampleNS = Namespace("http://example.org/")
+# assuming that we have a property worksAt at the example.org namespace that represents this relation
+g.add((ns.JaneSmithers, exampleNS.worksAt, ns.UPM))
 
 # TO DO
 # Visualize the results
@@ -73,4 +80,5 @@ for s, p, o in g:
 """**Task 6.6: Add that Jown knows Jane using the FOAF vocabulary. Make sure the relationship exists.**"""
 
 # TO DO
+g.add((ns.JohnSmith, FOAF.knows, ns.JaneSmithers))
 # Visualize the results
