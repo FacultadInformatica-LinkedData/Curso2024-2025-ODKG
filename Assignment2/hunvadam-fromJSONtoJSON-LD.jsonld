@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "ex": "http://www.example.es/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "ex:fullname": "Ádám Váradi",
+  "ex:hometown": "Kecskemét",
+  "ex:age": {
+    "@value": 30,
+    "@type": "xsd:integer"
+  },
+  "ex:almaMater": "Universidad Politécnica de Madrid",
+  "ex:parents": {
+    "ex:father": "Zoltán Váradi",
+    "ex:mother": "Judit Váczi"
+  },
+  "ex:subjects": [
+    {
+      "ex:name": "Open Data and Knowledge Graphs",
+      "ex:teachers": ["CORCHO GARCIA OSCAR", "CASTRO GARCIA RAUL"],
+      "ex:description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "ex:name": "Data Analysis",
+      "ex:teachers": ["MENASALVAS RUIZ ERNESTINA"],
+      "ex:description": "This subject teaches how to do a Data Analysis project plan from top to bottom."
+    },
+    {
+      "ex:name": "Data Mining and Time Series",
+      "ex:teachers": ["PEREZ AURORA"],
+      "ex:description": "This subject introduces basic data analysis methods."
+    },
+    {
+      "ex:name": "I&E study",
+      "ex:teachers": ["Jorge Díaz", "Federico G. Linares", "Sergio Ríos", "Raúl G. Sanchis"],
+      "ex:description": "This subject is about doing a business case with a partner company."
+    },
+    {
+      "ex:name": "Complex Data in Health",
+      "ex:teachers": ["OTERO CARRASCO BELEN", "PRIETO SANTAMARIA LUCIA", "RODRIGUEZ GONZALEZ ALEJANDRO", "TEJERA NEVADO PALOMA"],
+      "ex:description": "This subject introduces what medical data is, how it is stored and used."
+    },
+    {
+      "ex:name": "Cloud computing and big data",
+      "ex:teachers": ["PATIÑO MARTINEZ MARTA"],
+      "ex:description": "This subject introduces how big cloud infrastructure-based databases work."
+    },
+    {
+      "ex:name": "Massively Parallel Machine Learning",
+      "ex:teachers": ["MOZO VELASCO BONIFACIO ALBERTO"],
+      "ex:description": "This subject gives an under-the-hood view on how basic ML algorithms are coded."
+    }
+  ]
+}
