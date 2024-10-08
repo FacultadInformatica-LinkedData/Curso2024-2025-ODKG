@@ -1,0 +1,45 @@
+@prefix : <http://group12.namespace.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Sample Instances
+
+# Example of an Accident
+:Accidente1 a ns:Accidente ;
+    ns:fecha "2024-01-15"^^xsd:date ;
+    ns:hora "12:30:00"^^xsd:time ;
+    ns:estado_meteorologico "Clear"^^xsd:string ;
+    ns:num_expediente "EXP12345"^^xsd:string ;
+    ns:tipo_accidente "Collision"^^xsd:string ;
+    ns:tieneLocalizacion :Localizacion1 ;
+    ns:tieneParticipante :Participante1 .
+
+# Example of a Participant
+:Participante1 a ns:Participante ;
+    ns:tipo_persona "Driver"^^xsd:string ;
+    ns:sexo "Male"^^xsd:string ;
+    ns:rango_edad "25-34"^^xsd:string ;
+    ns:tipo_vehiculo "Car"^^xsd:string ;
+    ns:positiva_alcohol "Negative"^^xsd:string ;
+    ns:positiva_droga "Negative"^^xsd:string .
+
+# Example of Location
+:Localizacion1 a ns:Localizacion ;
+    ns:coordenada_x_utm 432123.45^^xsd:float ;
+    ns:coordenada_y_utm 4489101.23^^xsd:float ;
+    ns:tieneDistrito :Distrito1 .
+
+# Example of a District
+:Distrito1 a ns:Distrito ;
+    ns:code_distrito 10^^xsd:integer ;
+    ns:distrito "Centro"^^xsd:string ;
+    ns:localizacion "Main Square"^^xsd:string .
+
+# Example of Lesividad (Injury Severity)
+:Lesividad1 a ns:Lesividad ;
+    ns:cod_lesividad 2^^xsd:integer ;
+    ns:lesividad "Minor Injuries"^^xsd:string .

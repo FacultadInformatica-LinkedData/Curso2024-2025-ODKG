@@ -1,0 +1,15 @@
+@prefix ex: <http://example.org#> .
+@prefix vby: <http://vocabulary.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Class01 vby:includes ex:Sensor029 ;
+           vby:includes ex:Computer101 .
+
+ex:Sensor029 vby:hasMeasurement ex:Measurement8401 .
+
+ex:Measurement8401 vby:hasTemperature "29"^^xsd:integer ;
+                   vby:atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+
+ex:Computer101 vby:hasOwner ex:User10A .
+
+ex:User10A vby:hasName "Pedro" .
