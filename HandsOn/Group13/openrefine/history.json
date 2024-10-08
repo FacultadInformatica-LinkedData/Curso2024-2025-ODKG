@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID Cámara",
+    "expression": "grel:\"CAM\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID Cámara using expression grel:\"CAM\"+value"
+  }
+]
