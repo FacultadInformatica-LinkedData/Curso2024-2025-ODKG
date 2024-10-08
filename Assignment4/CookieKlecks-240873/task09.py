@@ -8,15 +8,52 @@ Original file is located at
 
 **Task 09: Data linking**
 """
+import rdflib.term
+from rdflib.plugins.sparql import prepareQuery
 
-!pip install rdflib
+# !pip install rdflib
 github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/"
 
-from rdflib import Graph, Namespace, Literal, URIRef
+from rdflib import Graph, Namespace, Literal, URIRef, RDF, OWL, XSD
+
 g1 = Graph()
 g2 = Graph()
 g3 = Graph()
-g1.parse(github_storage+"resources/data03.rdf", format="xml")
-g2.parse(github_storage+"resources/data04.rdf", format="xml")
+g1.parse(github_storage + "course_materials/rdf/data03.rdf", format="xml")
+g2.parse(github_storage + "course_materials/rdf/data04.rdf", format="xml")
 
-"""Busca individuos en los dos grafos y enlázalos mediante la propiedad OWL:sameAs, inserta estas coincidencias en g3. Consideramos dos individuos iguales si tienen el mismo apodo y nombre de familia. Ten en cuenta que las URI no tienen por qué ser iguales para un mismo individuo en los dos grafos."""
+"""Busca individuos en los dos grafos y enlázalos mediante la propiedad OWL:sameAs, 
+inserta estas coincidencias en g3. Consideramos dos individuos iguales si tienen el mismo apodo y nombre de familia. 
+Ten en cuenta que las URI no tienen por qué ser iguales para un mismo individuo en los dos grafos."""
+
+"""Search for individuals in the two graphs and link them using the OWL:sameAs property, insert these matches in g3. 
+We consider two individuals the same if they have the same nickname and family name. 
+Note that the URIs do not have to be the same for the same individual in the two networks."""
+
+vcard_rdf = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
+ns = Namespace("http://data.org#")
+namespaces = {
+    "vcard-rdf": vcard_rdf,
+    "rdf": RDF,
+    "ns": ns
+}
+
+listNamePairsQuery = prepareQuery('''
+    SELECT DISTINCT ?person ?givenName ?familyName WHERE {
+        ?person vcard-rdf:Given ?givenName ;
+                vcard-rdf:Family ?familyName .
+    }
+''', initNs=namespaces)
+
+for pairsG1 in g1.query(listNamePairsQuery):
+    idG1 = pairsG1["person"]
+    givenName = pairsG1["givenName"]
+    familyName = pairsG1["familyName"]
+
+    for matchedResult in g2.query(listNamePairsQuery,
+                                  initBindings={'givenName': Literal(givenName, datatype=XSD.string),
+                                                'familyName': Literal(familyName, datatype=XSD.string)}):
+        idG2 = matchedResult["person"]
+        # note we add both direction such that sameAs is symmetric
+        g3.add((URIRef(idG1), OWL.sameAs, URIRef(idG2)))
+        g3.add((URIRef(idG2), OWL.sameAs, URIRef(idG1)))
