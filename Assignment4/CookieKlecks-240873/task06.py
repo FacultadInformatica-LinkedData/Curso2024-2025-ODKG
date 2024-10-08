@@ -64,9 +64,10 @@ for s, p, o in g:
 
 # TO DO
 g.add((ns.JaneSmithers, SDO.email, Literal("jane.smithers@gmail.com", datatype=XSD.string)))
-g.add((ns.JaneSmithers, SDO.fullName, Literal("Jane Smithers", datatype=XSD.string)))
+# assuming the name property is meant to be used for fullName in schema.org namespace
+g.add((ns.JaneSmithers, SDO.name, Literal("Jane Smithers", datatype=XSD.string)))
 g.add((ns.JaneSmithers, SDO.givenName, Literal("Jane", datatype=XSD.string)))
-g.add((ns.JaneSmithers, SDO.givenName, Literal("Smithers", datatype=XSD.string)))
+g.add((ns.JaneSmithers, SDO.familyName, Literal("Smithers", datatype=XSD.string)))
 # Visualize the results
 
 """**TASK 6.5: Add UPM as the university where John Smith works. Use the "https://example.org/ namespace**"""
