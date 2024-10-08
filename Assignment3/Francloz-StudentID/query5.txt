@@ -1,0 +1,50 @@
+Here we have the same issue as in the 4th problem. Here, we just need to alter the value to instead show count of values grouped by properties. I did the exact same thing. 
+This time, however, the timeout was quite adamant to not show any result. 
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property (COUNT(DISTINCT ?value) AS ?uniqueValues)
+WHERE {
+  ?politician a dbo:Politician .
+  ?politician ?property ?someValue .
+  FILTER(?property != rdf:type) .
+  ?subject ?property ?value .
+}
+GROUP BY ?property
+ORDER BY ?property
+
+With the limited version for faster computing being:
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property (COUNT(DISTINCT ?value) AS ?uniqueValues)
+WHERE {
+  {
+    SELECT DISTINCT ?property
+    WHERE {
+      ?politician a dbo:Politician .
+      ?politician ?property ?someValue .
+      FILTER(?property != rdf:type)
+    }
+    # OFFSET 1 THIS IS FOR TEST PURPOSES
+    LIMIT 1 # Limiting the number of properties to query. Remove this at your peril.
+  }
+  ?subject ?property ?value .
+}
+GROUP BY ?property
+LIMIT 100  # Limiting the number of values to retrieve. Remove this at your peril.
+
+
+
+As with 4, a different interpetation would be different values for each property, not paired with politicians, but restricted to triples with them. In this case, the query would be:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property (COUNT(DISTINCT ?value) AS ?uniqueValues)
+WHERE {
+  ?instance a dbo:Politician .
+  ?instance ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property

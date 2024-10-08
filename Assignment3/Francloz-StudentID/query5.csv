@@ -1,0 +1,21 @@
+Virtuoso S1T00 Error SR171: Transaction timed out
+
+SPARQL query:
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property (COUNT(DISTINCT ?value) AS ?uniqueValues)
+WHERE {
+  {
+    SELECT DISTINCT ?property
+    WHERE {
+      ?politician a dbo:Politician .
+      ?politician ?property ?someValue .
+      FILTER(?property != rdf:type)
+    }
+    # OFFSET 1 THIS IS FOR TEST PURPOSES
+    LIMIT 10  # Limiting the number of properties to query. Remove this at your peril.
+  }
+  ?subject ?property ?value .
+}
+GROUP BY ?property
+LIMIT 100  # Limiting the number of values to retrieve. Remove this at your peril.

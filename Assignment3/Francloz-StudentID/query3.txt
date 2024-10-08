@@ -1,0 +1,10 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property ?value
+WHERE {
+  ?subject a dbo:Politician .
+  ?subject ?property ?value .
+  FILTER(?property != rdf:type)
+}
+# ORDER BY ?property
+LIMIT 1000

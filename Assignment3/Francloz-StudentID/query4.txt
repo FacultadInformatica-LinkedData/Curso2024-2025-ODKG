@@ -1,0 +1,50 @@
+What I understand by this query problem is what are the values these properties take when they are not necessarily associated to politicians in the entire knowledge graph.
+
+A simplified version of this query would be:
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property ?value
+WHERE {
+  ?politician a dbo:Politician .
+  ?politician ?property ?someValue .
+  FILTER(?property != rdf:type) .
+  ?subject ?property ?value .
+}
+ORDER BY ?property
+
+
+However, in the online query executor provided, this time-outs quite badly. For that, I propose a limitting of the properties chosen.
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?property ?value
+WHERE {
+  {
+    SELECT DISTINCT ?property
+    WHERE {
+      ?politician a dbo:Politician .
+      ?politician ?property ?someValue .
+      FILTER(?property != rdf:type)
+    }
+    # OFFSET 1 THIS IS FOR TEST PURPOSES
+    LIMIT 10  # Limiting the number of properties to query. Remove this at your peril.
+  }
+  ?subject ?property ?value .
+}
+ORDER BY DESC(?property) 
+LIMIT 100  # Limiting the number of values to retrieve.
+
+This seems to proc the automatic estimator for query estimated time to completion > time-out, which leads to not even trying to query it. After some attempts and other services used, I managed to get the provided results.
+
+
+
+However, a different interpretation is just the different values that are taken for each property in all politicians, not paired with them. In that case, we would have something like this:
+
+SELECT ?property (GROUP_CONCAT(DISTINCT ?value ; separator=", ") AS ?distinctValues)
+WHERE {
+  ?instance a dbo:Politician .
+  ?instance ?property ?value .
+  FILTER (?property != rdf:type)
+}
+GROUP BY ?property
