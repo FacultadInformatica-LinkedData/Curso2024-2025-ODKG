@@ -1,0 +1,65 @@
+@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Define Classes
+
+mair:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+mair:Municipio a owl:Class ;
+    rdfs:label "Municipio" .
+
+mair:Estacion a owl:Class ;
+    rdfs:label "Estacion" .
+
+mair:Parametro a owl:Class ;
+    rdfs:label "Parametro" .
+
+mair:Observacion a owl:Class ;
+    rdfs:label "Observacion" .
+
+
+# Define Object Properties
+
+mair:hasProvincia a owl:ObjectProperty ;
+    rdfs:label "Has provincia" ; 
+    rdfs:domain mair:Municipio ; 
+    rdfs:range mair:Provincia . 
+
+mair:hasMunicipio a owl:ObjectProperty ;
+    rdfs:label "Has municipio" ; 
+    rdfs:domain mair:Provincia ; 
+    rdfs:range mair:Municipio . 
+
+mair:hasEstacion a owl:ObjectProperty ;
+    rdfs:label "Has estacion" ; 
+    rdfs:domain mair:Municipio ; 
+    rdfs:range mair:Estacion . 
+
+mair:monitors a owl:ObjectProperty ;
+    rdfs:label "Monitors" ; 
+    rdfs:domain mair:Estacion ; 
+    rdfs:range mair:Parametro . 
+
+mair:recordsObservation a owl:ObjectProperty ;
+    rdfs:label "Records Observation" ; 
+    rdfs:domain mair:Estacion ; 
+    rdfs:range mair:Observacion . 
+
+
+# Define Datatype Properties
+
+mair:hasFecha a owl:DatatypeProperty ;
+    rdfs:label "Has Fecha" ; 
+    rdfs:domain mair:Observacion ; 
+    rdfs:range xsd:date .
+
+mair:hasMagnitud a owl:DatatypeProperty ;
+    rdfs:label "Has Magnitud" ; 
+    rdfs:domain mair:Contaminante ; 
+    rdfs:range xsd:string .
+

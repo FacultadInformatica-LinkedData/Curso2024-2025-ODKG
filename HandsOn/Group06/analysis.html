@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Adjust table appearance */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #333333;
+      text-align: left;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset Analysis</title>
+  </head>
+
+  <body>
+    <h2>Data analysis and schema</h2>
+    <h3>intensidad_media_dias_laborables.csv</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Representation</th>
+          <th>Type</th>
+          <th>Values</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Año</td>
+          <td>Year when measurement was taken</td>
+          <td>Date(Y)</td>
+          <td>2021 - 2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mes</td>
+          <td>Month when measurement was taken</td>
+          <td>String</td>
+          <td>Enero - Diciembre</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Conjunto</td>
+          <td>Sum of Air Quality</td>
+          <td>Integer</td>
+          <td>1.256.393 - 2.045.884</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Interior 1er cinturon</td>
+          <td>Air Quality inside first belt</td>
+          <td>Integer</td>
+          <td>74730 - 119160</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>En el 1er cinturón</td>
+          <td>Air Quality at the first belt</td>
+          <td>Integer</td>
+          <td>156336 - 266690</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre 1er y 2º cinturón</td>
+          <td>Air Quality between the first and second belt</td>
+          <td>Integer</td>
+          <td>245694 - 413139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>En el 2nd cinturón</td>
+          <td>Air Quality at the second Belt</td>
+          <td>Integer</td>
+          <td>124815 - 225869</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre 2º cinturón y M-30</td>
+          <td>Air Quality between the second belt and M-30</td>
+          <td>Integer</td>
+          <td>275280 - 460850</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M-30</td>
+          <td>Air Quality at the M-30</td>
+          <td>Integer</td>
+          <td>121532 - 221280</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Entre M-30 y M-40</td>
+          <td>Air Quality between the M-30 and M-40</td>
+          <td>Integer</td>
+          <td>229084 - 353684</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M-40</td>
+          <td>Air Quality at the M-40</td>
+          <td>Integer</td>
+          <td></td>
+          <td>No values provided for this</td>
+        </tr>
+        <tr>
+          <td>Exterior M-40</td>
+          <td>Air Quality outside the M-40</td>
+          <td>Integer</td>
+          <td>19393 - 28190</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>meteo.csv</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Representation</th>
+          <th>Type</th>
+          <th>Values</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbod>
+        <tr>
+          <td>PROVINCIA</td>
+          <td>Province where the data has been measured</td>
+          <td>ID_provincia</td>
+          <td>28</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MUNICIPIO</td>
+          <td>Municipaloty where the data has been measured</td>
+          <td>ID_Municipality</td>
+          <td>079</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ESTACION</td>
+          <td>Weather station where the data has been measured</td>
+          <td>ID_WeatherStation</td>
+          <td>4 - 115</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MAGNITUD</td>
+          <td>Type of parameter measured</td>
+          <td>ID_Parameter</td>
+          <td>81 - 89</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>PUNTO_MUESTREO</td>
+          <td>
+            Specific sampling location with the magnitud and the sampling
+            technique
+          </td>
+          <td>ID_samplingLocation</td>
+          <td>28079004_83_98 - 28079115_86_98</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ANO</td>
+          <td>Year when the data was collected</td>
+          <td>Date(Y)</td>
+          <td>2024</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MES</td>
+          <td>Month when the data was collected</td>
+          <td>Date(M)</td>
+          <td>1 - 9</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D01 - D31</td>
+          <td>AQI Value for that day of the month</td>
+          <td>Integer</td>
+          <td>0 - 962</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V01 - V31</td>
+          <td>Verified value or not</td>
+          <td>Boolean</td>
+          <td>V/N</td>
+          <td>Non verified values may not be able to be used</td>
+        </tr>
+      </tbod>
+    </table>
+    <h3>Magnitude Code for meteo.csv</h3>
+    <table>
+      <thead>
+        <th>Magnitude Code</th>
+        <th>Parameter</th>
+        <th>Unit measurement</th>
+        <th>Technique</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>80</td>
+          <td>UV Radiatoim</td>
+          <td>Mw/m2</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>81</td>
+          <td>Wind Speed</td>
+          <td>m/s</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>82</td>
+          <td>Wind Direction</td>
+          <td>-</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>83</td>
+          <td>Temperature</td>
+          <td>ºC</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>86</td>
+          <td>Relative Humidity</td>
+          <td>%</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>87</td>
+          <td>Barometric Preassure</td>
+          <td>mb</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>88</td>
+          <td>Solar Readiation</td>
+          <td>W/m2</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>89</td>
+          <td>Precipitation</td>
+          <td>l/m2</td>
+          <td>98</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Sampling Location for meteo24.csv</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Sampling Station Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>28079102</td>
+          <td>J.M.D. Moratalaz</td>
+        </tr>
+        <tr>
+          <td>28079103</td>
+          <td>J.M.D. Villaverde</td>
+        </tr>
+        <tr>
+          <td>28079104</td>
+          <td>E.D.A.R. La China</td>
+        </tr>
+        <tr>
+          <td>28079106</td>
+          <td>Centro Mpal. De Acústica</td>
+        </tr>
+        <tr>
+          <td>28079107</td>
+          <td>J.M.D. Hortaleza</td>
+        </tr>
+        <tr>
+          <td>28079108</td>
+          <td>Peñagrande</td>
+        </tr>
+        <tr>
+          <td>28079109</td>
+          <td>J.M.D. Chamberí</td>
+        </tr>
+        <tr>
+          <td>28079110</td>
+          <td>J.M.D. Centro</td>
+        </tr>
+        <tr>
+          <td>28079111</td>
+          <td>J.M.D. Chamartin</td>
+        </tr>
+        <tr>
+          <td>28079112</td>
+          <td>J.M.D. Vallecas 1</td>
+        </tr>
+        <tr>
+          <td>28079113</td>
+          <td>J.M.D. Vallecas 2</td>
+        </tr>
+        <tr>
+          <td>28079114</td>
+          <td>Matadero 01</td>
+        </tr>
+        <tr>
+          <td>28079115</td>
+          <td>Matadero 02</td>
+        </tr>
+        <tr>
+          <td>28079004</td>
+          <td>Plaza España</td>
+        </tr>
+        <tr>
+          <td>28079008</td>
+          <td>Escuelas Aguirre</td>
+        </tr>
+        <tr>
+          <td>28079016</td>
+          <td>Arturo Soria</td>
+        </tr>
+        <tr>
+          <td>28079018</td>
+          <td>Farolillo</td>
+        </tr>
+        <tr>
+          <td>28079024</td>
+          <td>Casa de Campo</td>
+        </tr>
+        <tr>
+          <td>28079035</td>
+          <td>Plaza del Carmen</td>
+        </tr>
+        <tr>
+          <td>28079036</td>
+          <td>Moratalaz</td>
+        </tr>
+        <tr>
+          <td>28079038</td>
+          <td>Cuatro Caminos</td>
+        </tr>
+        <tr>
+          <td>28079039</td>
+          <td>Barrio del Pilar</td>
+        </tr>
+        <tr>
+          <td>28079054</td>
+          <td>Ensanche de Vallecas</td>
+        </tr>
+        <tr>
+          <td>28079056</td>
+          <td>Plaza Elíptica</td>
+        </tr>
+        <tr>
+          <td>28079058</td>
+          <td>El Pardo</td>
+        </tr>
+        <tr>
+          <td>28079059</td>
+          <td>Juan Carlos I</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>datos2024080.csv</h2>
+    <table>
+      <thead>
+        <th>Column</th>
+        <th>Representation</th>
+        <th>Type</th>
+        <th>Values</th>
+        <th>Problems</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PROVINCIA</td>
+          <td>Province where the data has been measured</td>
+          <td>ID_provincia</td>
+          <td>28</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MUNICIPIO</td>
+          <td>Municipaloty where the data has been measured</td>
+          <td>ID_Municipality</td>
+          <td>079</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ESTACION</td>
+          <td>Weather station where the data has been measured</td>
+          <td>ID_WeatherStation</td>
+          <td>4 - 60</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MAGNITUD</td>
+          <td>Type of contaminant in the Air</td>
+          <td>ID_Contaminant</td>
+          <td>1 - 35</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>PUNTO_MUESTREO</td>
+          <td>
+            Specific sampling location with the magnitud and the sampling
+            technique
+          </td>
+          <td>ID_samplingLocation</td>
+          <td>28079004_1_38 - 28079060_8_8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ANO</td>
+          <td>Year when the data was collected</td>
+          <td>Date(Y)</td>
+          <td>2024</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MES</td>
+          <td>Month when the data was collected</td>
+          <td>Date(M)</td>
+          <td>1 - 8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D01 - D31</td>
+          <td>AQI Value for that day of the month</td>
+          <td>Integer</td>
+          <td>0.1 - 246</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V01 - V31</td>
+          <td>Verified value or not</td>
+          <td>Boolean</td>
+          <td>V/N</td>
+          <td>Non verified values may not be able to be used</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Magnitude Code for datos2024080.csv</h3>
+    <table>
+      <thead>
+        <th>Magnitude Code</th>
+        <th>Type of Contaminant</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sulfur Dioxide</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Carbon Monoxide</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Nitrogen Monoxide</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Nitrogen Dioxide</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Particles less than 2.5 micro meters</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Particles less than 10 micro meters</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Nitrogen Oxides</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Ozone</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Tuolene</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Benzene</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Ethylbenzene</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Sampling Location Codes for datos2024080.csv</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Sampling Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>28079001</td>
+          <td>Pº. Recoletos Baja.</td>
+        </tr>
+        <tr>
+          <td>28079002</td>
+          <td>Glta. de Carlos V Baja.</td>
+        </tr>
+        <tr>
+          <td>28079035*</td>
+          <td>Pza. del Carmen Alta.</td>
+        </tr>
+        <tr>
+          <td>28079004</td>
+          <td>Pza. de España Alta.</td>
+        </tr>
+        <tr>
+          <td>28079039*</td>
+          <td>Barrio del Pilar Alta.</td>
+        </tr>
+        <tr>
+          <td>28079006</td>
+          <td>Pza. Dr. Marañón Baja.</td>
+        </tr>
+        <tr>
+          <td>28079007</td>
+          <td>Pza. M. de Salamanca Baja.</td>
+        </tr>
+        <tr>
+          <td>28079008</td>
+          <td>Escuelas Aguirre Alta.</td>
+        </tr>
+        <tr>
+          <td>28079009</td>
+          <td>Pza. Luca de Tena Baja.</td>
+        </tr>
+        <tr>
+          <td>28079038*</td>
+          <td>Cuatro Caminos Alta.</td>
+        </tr>
+        <tr>
+          <td>28079011</td>
+          <td>Av. Ramón y Cajal Alta.</td>
+        </tr>
+        <tr>
+          <td>28079012</td>
+          <td>Pza. Manuel Becerra Baja.</td>
+        </tr>
+        <tr>
+          <td>28079040*</td>
+          <td>Vallecas Alta.</td>
+        </tr>
+        <tr>
+          <td>28079014</td>
+          <td>Pza. Fdez. Ladreda Baja.</td>
+        </tr>
+        <tr>
+          <td>28079015</td>
+          <td>Pza. Castilla Baja.</td>
+        </tr>
+        <tr>
+          <td>28079016</td>
+          <td>Arturo Soria Alta.</td>
+        </tr>
+        <tr>
+          <td>28079017</td>
+          <td>Villaverde Alto Alta.</td>
+        </tr>
+        <tr>
+          <td>28079018</td>
+          <td>C/ Farolillo Alta.</td>
+        </tr>
+        <tr>
+          <td>28079019</td>
+          <td>Huerta Castañeda Baja.</td>
+        </tr>
+        <tr>
+          <td>28079036*</td>
+          <td>Moratalaz Alta.</td>
+        </tr>
+        <tr>
+          <td>28079021</td>
+          <td>Pza. Cristo Rey Baja.</td>
+        </tr>
+        <tr>
+          <td>28079022</td>
+          <td>Pº. Pontones Baja.</td>
+        </tr>
+        <tr>
+          <td>28079023</td>
+          <td>Final C/ Alcalá Baja.</td>
+        </tr>
+        <tr>
+          <td>28079024</td>
+          <td>Casa de Campo Alta.</td>
+        </tr>
+        <tr>
+          <td>28079025</td>
+          <td>Santa Eugenia Baja.</td>
+        </tr>
+        <tr>
+          <td>28079026</td>
+          <td>Urb. Embajada (Barajas) Baja.</td>
+        </tr>
+        <tr>
+          <td>28079027</td>
+          <td>Barajas Alta.</td>
+        </tr>
+        <tr>
+          <td>28079047</td>
+          <td>Méndez Álvaro Alta.</td>
+        </tr>
+        <tr>
+          <td>28079048</td>
+          <td>Pº. Castellana Alta.</td>
+        </tr>
+        <tr>
+          <td>28079049</td>
+          <td>Retiro Alta.</td>
+        </tr>
+        <tr>
+          <td>28079050</td>
+          <td>Pza. Castilla Alta.</td>
+        </tr>
+        <tr>
+          <td>28079054</td>
+          <td>Ensanche Vallecas Alta.</td>
+        </tr>
+        <tr>
+          <td>28079055</td>
+          <td>Urb. Embajada (Barajas) Alta.</td>
+        </tr>
+        <tr>
+          <td>28079056</td>
+          <td>Plaza Elíptica Alta.</td>
+        </tr>
+        <tr>
+          <td>28079057</td>
+          <td>Sanchinarro Alta.</td>
+        </tr>
+        <tr>
+          <td>28079058</td>
+          <td>El Pardo Alta.</td>
+        </tr>
+        <tr>
+          <td>28079059</td>
+          <td>Parque Juan Carlos I Alta.</td>
+        </tr>
+        <tr>
+          <td>28079060</td>
+          <td>Tres Olivos Alta.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>
+      <a
+        href="https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default"
+        >Licensing</a
+      >
+    </h2>
+    <p>
+      The dataset from the Madrid City Council's open data portal is provided
+      under the terms of reuse for both commercial and non-commercial purposes.
+      Users are required to cite the source, stating it as: "Origen de los
+      datos: Ayuntamiento de Madrid". The information should not be distorted,
+      and any metadata must remain intact. The license aligns with Spain's
+      Public Sector Information Law, which allows free reuse of public data,
+      meaning a similar license, like Creative
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+        >Commons Attribution 4.0 (CC BY 4.0)</a
+      >, could be appropriate for datasets you generate.
+    </p>
+
+    <h2>Resource name strategy</h2>
+    <p><b>Domain Identifier:</b> MadridAirQuality</p>
+    <p><b>Path:</b> /ontology/</p>
+    <p><b>Data:</b> /resource/</p>
+    <p><b>Full ontology URL:</b> http://www.MadridAirQuality.es/ontology/</p>
+    <p><b>Clases:</b> http://www.MadridAirQuality.es/ontology/className</p>
+    <p>
+      <b>Properties:</b> http://www.MadridAirQuality.es/ontology/propertyName
+    </p>
+    <p>
+      <b>Individual:</b>
+      http://www.MadridAirQuality.es/ontology/resource/className#identifier
+    </p>
+  </body>
+</html>
