@@ -8,14 +8,56 @@ Original file is located at
 
 **Task 08: Completing missing data**
 """
+import rdflib.term
+from rdflib.plugins.sparql import prepareQuery
 
-!pip install rdflib
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/"
+# !pip install rdflib
+github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2024-2025/master/Assignment4/course_materials"
 
-from rdflib import Graph, Namespace, Literal, URIRef
+from rdflib import Graph, Namespace, Literal, URIRef, RDF
+
 g1 = Graph()
 g2 = Graph()
-g1.parse(github_storage+"resources/data01.rdf", format="xml")
-g2.parse(github_storage+"resources/data02.rdf", format="xml")
+g1.parse(github_storage + "/rdf/data01.rdf", format="xml")
+g2.parse(github_storage + "/rdf/data02.rdf", format="xml")
 
-"""Tarea: lista todos los elementos de la clase Person en el primer grafo (data01.rdf) y completa los campos (given name, family name y email) que puedan faltar con los datos del segundo grafo (data02.rdf). Puedes usar consultas SPARQL o iterar el grafo, o ambas cosas."""
+"""Tarea: lista todos los elementos de la clase Person en el primer grafo (data01.rdf) y completa los campos 
+(given name, family name y email) que puedan faltar con los datos del segundo grafo (data02.rdf). 
+Puedes usar consultas SPARQL o iterar el grafo, o ambas cosas."""
+
+vcard_rdf = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
+ns = Namespace("http://data.org#")
+namespaces = {
+    "vcard-rdf": vcard_rdf,
+    "rdf": RDF,
+    "ns": ns
+}
+
+personsQuery = prepareQuery('''
+    SELECT ?person WHERE {
+        ?person rdf:type ns:Person
+    }
+''', initNs=namespaces)
+
+propertyQuery = prepareQuery('''
+    SELECT ?givenName ?familyName ?email WHERE {
+        OPTIONAL {?person vcard-rdf:Given ?givenName .}
+        OPTIONAL {?person vcard-rdf:Family ?familyName .}
+        OPTIONAL {?person vcard-rdf:EMAIL ?email .}
+    }
+''', initNs=namespaces)
+
+for r in g1.query(personsQuery):
+    personId = r[0]
+    personURI = rdflib.term.URIRef(personId)
+    for propertyQueryResult in g2.query(propertyQuery, initBindings={'?person': personURI}):
+        givenName = propertyQueryResult["givenName"]
+        familyName = propertyQueryResult["familyName"]
+        email = propertyQueryResult["email"]
+
+        if givenName is not None:
+            g1.add((personURI, vcard_rdf.Given, Literal(givenName)))
+        if familyName is not None:
+            g1.add((personURI, vcard_rdf.Family, Literal(familyName)))
+        if email is not None:
+            g1.add((personURI, vcard_rdf.EMAIL, Literal(email)))
