@@ -14,8 +14,9 @@ github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedDa
 
 """Read the RDF file as shown in class"""
 
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Literal, Namespace
 from rdflib.namespace import RDF, RDFS
+
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
@@ -57,7 +58,8 @@ for s, p, o in g:
 """**TASK 6.4: Add to the individual JaneSmithers the email address, fullName, given and family names. Use the https://schema.org vocabulary**"""
 
 # TO DO
-schema = Namespace("https://schema.org/#")
+schema = Namespace("https://schema.org/Person")
+g.add((ns.JaneSmithers, schema.fullName, Literal("Jane Smithers")))
 g.add((ns.JaneSmithers, schema.email, Literal("janesmithers@gmail.com")))
 g.add((ns.JaneSmithers, schema.givenName, Literal("Jane")))
 g.add((ns.JaneSmithers, schema.familyName, Literal("Smithers")))
@@ -79,7 +81,7 @@ for s, p, o in g:
 
 # TO DO
 from rdflib import FOAF
+
 g.add((ns.JohnSmith, FOAF.knows, ns.JaneSmith))
 # Visualize the results
-for s, p, o in g:
-  print(s,p,o)
+for s, pJane Smithers)
