@@ -88,7 +88,7 @@ knowRockyQuery = prepareQuery('''
     WHERE {
         ?friend foaf:knows ns:RockySmith .
         ?class rdfs:subClassOf* ns:Person . 
-        ?individual rdf:type ?class .
+        ?friend rdf:type ?class .
         ?friend vcard-rdf:FN ?name .
     }
 ''', initNs={"rdfs": RDFS, "ns": ns, "rdf": RDF, "foaf": FOAF, "vcard-rdf": vcard_rdf})
