@@ -1,0 +1,264 @@
+{
+  "@context": {
+    "ex": "http://exampleUrl.com/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fullName": "ex:fullName",
+    "hometown": "ex:hometown",
+    "age": {
+      "@id": "ex:age",
+      "@type": "xsd:integer"
+    },
+    "almaMater": "ex:almaMater",
+    "father": "ex:father",
+    "mother": "ex:mother",
+    "subject": "ex:subject",
+    "description": "ex:description",
+    "name": "ex:name",
+    "Person": "ex:Person",
+    "Subject": "ex:Subject",
+    "Place": "ex:Place",
+    "University": "ex:University",
+    "subjects": "ex:subjects",
+    "teachers": "ex:teachers"
+  },
+  "@id": "http://exampleUrl.com/person/adrian-raposo-pozuelo",
+  "@type": "Person",
+  "fullName": "Adrián Raposo Pozuelo",
+  "hometown": {
+    "@id": "http://exampleUrl.com/places/madrid",
+    "@type": "Place",
+    "name": "Madrid"
+  },
+  "age": 22,
+  "almaMater": {
+    "@id": "http://exampleUrl.com/universities/upm",
+    "@type": "University",
+    "fullName": "University Politécnica de Madrid"
+  },
+  "father": {
+    "@id": "http://exampleUrl.com/person/bonifacio",
+    "@type": "Person",
+    "fullName": "Bonifacio Raposo"
+  },
+  "mother": {
+    "@id": "http://exampleUrl.com/person/maria-reyes",
+    "@type": "Person",
+    "fullName": "Maria Reyes Pozuelo"
+  },
+  "subjects": [
+    {
+      "@id": "http://exampleUrl.com/subjects/data-visualization",
+      "@type": "Subject",
+      "name": "Data Visualization",
+      "description": "Covers the fundamentals for visualizing different types of information.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/pablo-toharia",
+          "@type": "Person",
+          "fullName": "Pablo Toharia Rabasco"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/deep-learning",
+      "@type": "Subject",
+      "name": "Deep Learning",
+      "description": "Provides both theoretical and practical insights into deep learning.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/martin-molina",
+          "@type": "Person",
+          "fullName": "Martín Molina González"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/cloud-computing",
+      "@type": "Subject",
+      "name": "Cloud Computing and Big Data Ecosystems",
+      "description": "Focuses on traditional data management systems and scalable architectures for distributed systems and data management.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/marta-patino",
+          "@type": "Person",
+          "fullName": "Marta Patiño Martínez"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/big-data",
+      "@type": "Subject",
+      "name": "Big Data",
+      "description": "This course covers the fundamental concepts of analyzing large volumes of data.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/antonio-latorre",
+          "@type": "Person",
+          "fullName": "Antonio Latorre de la Fuente"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/open-data",
+      "@type": "Subject",
+      "name": "Open Data and Knowledge Graphs",
+      "description": "This course teaches the essential foundations of open data and knowledge graphs, working with technologies like RDF, RDF Schema, SPARQL, OWL, and SHACL.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/oscar-corcho",
+          "@type": "Person",
+          "fullName": "Óscar Corcho García"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/raul-garcia",
+          "@type": "Person",
+          "fullName": "Raul Garcia Castro"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/daniel-garijo",
+          "@type": "Person",
+          "fullName": "Daniel Garijo"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/research-methodology",
+      "@type": "Subject",
+      "name": "Research Methodology",
+      "description": "An introduction to the methods, techniques, and systems used in scientific research.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/oscar-corcho",
+          "@type": "Person",
+          "fullName": "Óscar Corcho García"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/daniel-garijo",
+          "@type": "Person",
+          "fullName": "Daniel Garijo"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/statistical-analysis",
+      "@type": "Subject",
+      "name": "Statistical Data Analysis",
+      "description": "The course teaches techniques to transform multivariate data into useful information.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/arminda-moreno",
+          "@type": "Person",
+          "fullName": "Arminda Moreno Díaz"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/programming-data-processing",
+      "@type": "Subject",
+      "name": "Programming for Data Processing",
+      "description": "The course teaches Python as a programming tool for data manipulation.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/guillermo-vigueras",
+          "@type": "Person",
+          "fullName": "Guillermo Antonio Vigueras González"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/machine-learning",
+      "@type": "Subject",
+      "name": "Machine Learning",
+      "description": "Explores solving supervised and unsupervised classification problems, transforming data into knowledge.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/pedro-larranaga",
+          "@type": "Person",
+          "fullName": "Pedro Maria Larrañaga Mugica"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/concepcion-bielza",
+          "@type": "Person",
+          "fullName": "María Concepción Bielza González"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/data-processes",
+      "@type": "Subject",
+      "name": "Data Processes",
+      "description": "Teaches how to plan and manage data science projects.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/ernestina-menasalvas",
+          "@type": "Person",
+          "fullName": "Ernestina Menasalvas Ruiz"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/ethics-law",
+      "@type": "Subject",
+      "name": "Ethics And Law For Data Science",
+      "description": "Covers the legal and ethical issues AI professionals face, focusing on European regulations such as GDPR and AI directives.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/victor-rodriguez",
+          "@type": "Person",
+          "fullName": "Victor Rodriguez Doncel"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/asuncion-gomez",
+          "@type": "Person",
+          "fullName": "Asuncion De Maria Gomez Perez"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/intelligent-systems",
+      "@type": "Subject",
+      "name": "Intelligent Systems",
+      "description": "Introduces AI methods for building intelligent systems, including neural networks, ontologies, and NLP.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/martin-molina",
+          "@type": "Person",
+          "fullName": "Martin Molina Gonzalez"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/carmen-suarez",
+          "@type": "Person",
+          "fullName": "M. Carmen Suarez De Figueroa Baonza"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/asuncion-gomez",
+          "@type": "Person",
+          "fullName": "Asuncion De Maria Gomez Perez"
+        }
+      ]
+    },
+    {
+      "@id": "http://exampleUrl.com/subjects/graph-analysis",
+      "@type": "Subject",
+      "name": "Graph Analysis And Social Networks",
+      "description": "Focuses on social computing and the analysis of social networks, covering graph mining, sentiment analysis, and trust in networks.",
+      "teachers": [
+        {
+          "@id": "http://exampleUrl.com/person/emilio-serrano",
+          "@type": "Person",
+          "fullName": "Emilio Serrano Fernandez"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/javier-bajo",
+          "@type": "Person",
+          "fullName": "Javier Bajo Perez"
+        },
+        {
+          "@id": "http://exampleUrl.com/person/laura-melgar",
+          "@type": "Person",
+          "fullName": "Laura Melgar Garcia"
+        }
+      ]
+    }
+  ]
+}
