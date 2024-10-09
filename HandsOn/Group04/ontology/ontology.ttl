@@ -48,12 +48,12 @@ ns:managedBy a owl:ObjectProperty ;
     rdfs:domain ns:ChargePoint ;
     rdfs:range ns:Operator .
 
-ns:numberOfACconnectors a owl:DatatypeProperty ;
-    rdfs:label "number of a cconnectors" ;
+ns:numberOfACConnectors a owl:DatatypeProperty ;
+    rdfs:label "number of a c connectors" ;
     rdfs:domain ns:ChargePoint .
 
-ns:numberOfCCconnectors a owl:DatatypeProperty ;
-    rdfs:label "number of c cconnectors" ;
+ns:numberOfCCConnectors a owl:DatatypeProperty ;
+    rdfs:label "number of c c connectors" ;
     rdfs:domain ns:ChargePoint .
 
 ns:numberOfEquipments a owl:DatatypeProperty ;
