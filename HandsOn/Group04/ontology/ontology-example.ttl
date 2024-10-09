@@ -8,13 +8,12 @@
 
 
 ns:ChargingPoint_0001 rdf:type ns:ChargingPoint ;
-    ns:status "Ejecutado" ;
-    ns:numberOfEquipments 1 ;
-    ns:characteristics "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
-    ns:openingDate "2019-09-05T22:00:00Z"^^xsd:dateTime ;
     ns:dischargeDate "2022-03-02-05T15:21:24Z"^^xsd:dateTime ;
-    ns:editionDate "2022-04-27T10:43:52Z"^^xsd:dateTime;
-    ns:openingHours "24".
+    ns:openingHours "24" ;
+    ns:numberOfEquipments 1 ;
+    ns:numberOfCCconnectors: 2;
+    ns:numberOfACconnectors: 1;
+    ns:kilovolts 50.
 
 ns:Street0001 rdf:type ns:Street ;
     rdf:label "Ronda de Valencia 1".
