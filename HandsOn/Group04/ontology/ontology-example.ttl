@@ -10,10 +10,10 @@
 ns:ChargingPoint_0001 rdf:type ns:ChargingPoint ;
     ns:dischargeDate "2022-03-02-05T15:21:24Z"^^xsd:dateTime ;
     ns:openingHours "24" ;
-    ns:numberOfEquipments 1 ;
-    ns:numberOfCCconnectors: 2;
-    ns:numberOfACconnectors: 1;
-    ns:kilovolts 50.
+    ns:numberOfEquipments 1:integer ;
+    ns:numberOfCCconnectors 2:integer ;
+    ns:numberOfACconnectors 1:integer ;
+    ns:kilovolts 50:integer.
 
 ns:Street0001 rdf:type ns:Street ;
     rdf:label "Ronda de Valencia 1".
@@ -27,6 +27,19 @@ ns:Arganzuela rdf:type ns:Neighborhood ;
 ns:GIC rdf:type ns:Operator ;
     rdf:label "GIC".
 
+ns:Parking0001 rdf:type ns:Parking ;
+    ns:label "Aparcamiento disuasorio Aviación Española" ;
+    ns:openingHours  "24" ;
+    ns:accessibility "1" ;
+    ns:telephone: "" ;
+    ns:numberOfPublicPlaces: :integer ;
+    ns:numberOfResidentPlaces :integer ;
+    ns:numberOfTotalPlaces 344:integer.
+
+ns:Coordinates0001 rdf:type ns:Coordinates ;
+    ns:coordinateX "433485" ;
+    ns:coordinateY "4470588" ; 
+
 ns:ChargingPoint_0001 ns:locatedIn ns:Street0001.
 
 ns:Street0001 ns:locatedIn ns:Neighborhood0001.
@@ -34,6 +47,13 @@ ns:Street0001 ns:locatedIn ns:Neighborhood0001.
 ns:Neighborhood0001 ns:isPartOf ns:Arganzuela.
 
 ns:ChargingPoint_0001 ns:managedBy ns:GIC.
+
+ns:Parking0001 ns:locatedIn ns:Coordinates0001
+
+ns:Coordinates0001 ns:locatedIn ns:Street0001
+
+
+
 
 
 
