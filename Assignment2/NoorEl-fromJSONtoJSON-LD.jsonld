@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "ex": "http://example.org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:ElHaddadNoor",
+      "@type": "ex:Person",
+      "ex:fullName": "El Haddad Noor",
+      "ex:hometown": "Casablanca",
+      "ex:age": {
+        "@value": 22,
+        "@type": "xsd:integer"
+      },
+      "ex:almaMater": "UTBM",
+      "ex:parents": {
+        "ex:mother": "Sana",
+        "ex:father": "Simo"
+      },
+      "ex:subjects": [
+        {
+          "@id": "ex:DataProcesses",
+          "@type": "ex:Subject",
+          "ex:name": "Data Processes",
+          "ex:teacher": "Ernestina Menasalvas",
+          "ex:description": "Focuses on data handling techniques, from collection to processing, aimed at optimizing data workflows."
+        },
+        {
+          "@id": "ex:DataVisualization",
+          "@type": "ex:Subject",
+          "ex:name": "Data Visualization",
+          "ex:teacher": "Pablo Toharia",
+          "ex:description": "Covers methods to represent data graphically, making complex datasets more understandable."
+        },
+        {
+          "@id": "ex:CloudComputing",
+          "@type": "ex:Subject",
+          "ex:name": "Cloud Computing",
+          "ex:teacher": "Marta Patiño",
+          "ex:description": "Introduces cloud infrastructure and services, with emphasis on scalability and cloud-based solutions."
+        }
+      ]
+    }
+  ]
+}
