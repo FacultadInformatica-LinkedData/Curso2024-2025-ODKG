@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "ex": "http://example.org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+  "full_name": "Mariajose Franco Orozco",
+  "hometown": "Medellin, Colombia",
+  "age": 25,
+  "alma_mater": "Universidad EAFIT",
+  "parents": {
+    "mother": "Dora Orozco",
+    "father": "Jorge Franco"
+  },
+  "subjects": [
+    {
+      "name": "Data Processes",
+      "teachers": [
+        "Ernestina Menasalvas Ruiz",
+        "Lucia Prieto Santamaria"
+      ],
+      "description": "The Data Science Process is a systematic approach to solving data-related problems"
+    },
+    {
+      "name": "Data Visualization",
+      "teachers": [
+        "Pablo Toharia Rabasco"
+      ],
+      "description": "Visual analytics combines automated analysis techniques with interactive visualizations for an effective understanding, reasoning and decision making on the basis of very large and complex datasets"
+    },
+    {
+      "name": "Statistical Data Analysis",
+      "teachers": [
+        "Arminda Moreno Diaz"
+      ],
+      "description": "Statistical methods help us investigate questions in an objective manner. Statistical problem solving is an investigative process"
+    },
+    {
+      "name": "Open Data and Knowledge Graphs",
+      "teachers": [
+        "Oscar Corcho Garcia",
+        "Raul Garcia Castro",
+        "Daniel Garijo"
+      ],
+      "description": "Main foundations for Open Data and Knowledge Graphs, including the W3C recommendations that are applicable in this area"
+    },
+    {
+      "name": "Cloud Computing",
+      "teachers": [
+        "Marta Patiño Martinez"
+      ],
+      "description": "Cloud Computing consists of hardware and software resources made available on the internet as they are managed by the third party services."
+    },
+    {
+      "name": "Machine Learning",
+      "teachers": [
+        "Pedro Larrañaga Múgica",
+        "Maria Concepcion Bielza Lozoya"
+      ],
+      "description": "Machine Learning transforms data into knowledge and provides general purpose systems that adapt to the circumstances"
+    }
+  ]
+}

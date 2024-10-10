@@ -1,0 +1,41 @@
+PUNTO 1:
+SELECT DISTINCT ?property
+WHERE {
+  ?politician a <http://dbpedia.org/ontology/Politician> ;
+              ?property ?value .
+}
+
+PUNTO 2:
+SELECT DISTINCT ?property
+WHERE {
+  ?politician a <http://dbpedia.org/ontology/Politician> ;
+              ?property ?value .
+  FILTER (?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+}
+
+PUNTO 3:
+SELECT DISTINCT ?property ?value
+WHERE {
+  ?politician a <http://dbpedia.org/ontology/Politician> ;
+              ?property ?value .
+  FILTER (?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+}
+
+PUNTO 4:
+SELECT DISTINCT ?property ?value
+WHERE {
+  ?politician a <http://dbpedia.org/ontology/Politician> ;
+              ?property ?value .
+  FILTER (?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+}
+ORDER BY ?property
+
+PUNTO 5:
+SELECT ?property (COUNT(DISTINCT ?value) AS ?valueCount)
+WHERE {
+  ?politician a <http://dbpedia.org/ontology/Politician> ;
+              ?property ?value .
+  FILTER (?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+}
+GROUP BY ?property
+ORDER BY ?property
