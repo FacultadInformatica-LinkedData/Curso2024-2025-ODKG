@@ -12,6 +12,22 @@ ns:accessibility a owl:DatatypeProperty ;
     rdfs:label "accessibility" ;
     rdfs:domain ns:Parking .
 
+ns:ccsConnectors a owl:DatatypeProperty ;
+    rdfs:label "ccs connectors" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:ccsKw a owl:DatatypeProperty ;
+    rdfs:label "ccs kw" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:chademoConnectors a owl:DatatypeProperty ;
+    rdfs:label "chademo connectors" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:chademoKw a owl:DatatypeProperty ;
+    rdfs:label "chademo kw" ;
+    rdfs:domain ns:ChargePoint .
+
 ns:coordinateX a owl:DatatypeProperty ;
     rdfs:label "coordinate x" ;
     rdfs:domain ns:Coordinates .
@@ -29,10 +45,6 @@ ns:isPartOf a owl:ObjectProperty ;
     rdfs:domain ns:Neighborhood ;
     rdfs:range ns:District .
 
-ns:kilovolts a owl:DatatypeProperty ;
-    rdfs:label "kilovolts" ;
-    rdfs:domain ns:ChargePoint .
-
 ns:locatedIn a owl:ObjectProperty ;
     rdfs:label "located in" ;
     rdfs:domain ns:ChargePoint,
@@ -48,25 +60,17 @@ ns:managedBy a owl:ObjectProperty ;
     rdfs:domain ns:ChargePoint ;
     rdfs:range ns:Operator .
 
-ns:numberOfACConnectors a owl:DatatypeProperty ;
-    rdfs:label "number of a c connectors" ;
+ns:mennekesConnectors a owl:DatatypeProperty ;
+    rdfs:label "mennekes connectors" ;
     rdfs:domain ns:ChargePoint .
 
-ns:numberOfCCConnectors a owl:DatatypeProperty ;
-    rdfs:label "number of c c connectors" ;
+ns:mennekesKw a owl:DatatypeProperty ;
+    rdfs:label "mennekes kw" ;
     rdfs:domain ns:ChargePoint .
 
 ns:numberOfEquipments a owl:DatatypeProperty ;
     rdfs:label "number of equipments" ;
     rdfs:domain ns:ChargePoint .
-
-ns:numberOfPublicPlaces a owl:DatatypeProperty ;
-    rdfs:label "number of public places" ;
-    rdfs:domain ns:Parking .
-
-ns:numberOfResidentPlaces a owl:DatatypeProperty ;
-    rdfs:label "number of resident places" ;
-    rdfs:domain ns:Parking .
 
 ns:numberOfTotalPlaces a owl:DatatypeProperty ;
     rdfs:label "number of total places" ;
@@ -80,10 +84,6 @@ ns:openingHours a owl:DatatypeProperty ;
 ns:postalCode a owl:DatatypeProperty ;
     rdfs:label "postal code" ;
     rdfs:domain ns:District .
-
-ns:telephone a owl:DatatypeProperty ;
-    rdfs:label "telephone" ;
-    rdfs:domain ns:Parking .
 
 rdf:label a owl:DatatypeProperty ;
     rdfs:label "label" ;
@@ -108,9 +108,9 @@ ns:Street a owl:Class ;
 ns:Coordinates a owl:Class ;
     rdfs:label "Coordinates" .
 
-ns:ChargePoint a owl:Class ;
-    rdfs:label "Charge Point" .
-
 ns:Parking a owl:Class ;
     rdfs:label "Parking" .
+
+ns:ChargePoint a owl:Class ;
+    rdfs:label "Charge Point" .
 
