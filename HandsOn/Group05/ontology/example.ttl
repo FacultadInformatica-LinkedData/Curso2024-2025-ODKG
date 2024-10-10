@@ -1,0 +1,111 @@
+
+@prefix ns: <https://riversidepollutionstudy.org/ontology/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+
+
+#  Begin with Research Study information
+ns:RiversideStudy rdf:type ns:ResearchStudy ;
+    ns:name 'Hyperlocal monitoring of traffic-related air pollution to assess near-term impacts of sustainable transportation interventions' ;
+    ns:authors 'Ivey, Cesunica, Nguyen, Alexander, Xu, Ruoming1 Do, Khanh1 Hao, Peng Barth, Matthew1' ;
+    ns:date '2023-02-06' ;
+    ns:hasResearchData 1 .
+
+
+# Use a data file 
+ns:DataFile_NO2 rdf:type ns:measurementDataFile ;
+    ns:filename: '20220408_NO2_Traffic'
+    ns:filetype: 'csv'
+    ns:filesize: '439KB'
+
+# Measurement Instance
+ns:Measurement1 rdf:type ns:Measurement ;
+    ns:subject "NO2" ;
+    ns:units "ppb" ;
+    ns:hasLocation ns:StreetIowa .
+
+
+# Define a Time
+ns:Timestamp01 rdf:type ns:measurementTimeStamp ;
+    ns:timestamp: 2021-05-21 12:30:00-07:00 ;
+    ns:month: 5 ;
+    ns:day: 21 ;
+    ns:hour: 12 ;
+    ns:minute: 30 ;
+    ns:dayofweekmonday: 0 ;
+    ns:dayofweektuesday: 0 ;
+    ns:dayofweekwednesday: 0 ;
+    ns:dayofweekthursday: 0 ;
+    ns:dayofweekfriday: 1 ;
+    ns:dayofweeksaturday: 0 ;
+    ns:dayofweeksunday: 0 .
+
+## Define measurement 
+ns:MeasurementBackground2 rdf:type ns:Measurement ;
+    ns:subject "Temperature" ;
+    ns:units "celsius" ;
+    ns:value 3.6 ;
+    ns:hasTimestamp: Timestamp01 .
+## Define measurement for background NO2 
+ns:MeasurementBackground3 rdf:type ns:Measurement ;
+    ns:subject "Pressure" ;
+    ns:units "mbar" ;
+    ns:value 19.91 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement for background NO2 
+ns:MeasurementBackground4 rdf:type ns:Measurement ;
+    ns:subject "humidity" ;
+    ns:units "percentage" ;
+    ns:value 1015 ;
+    ns:hasTimestamp: Timestamp01 .
+
+
+## Define measurement for background NO2 
+ns:MeasurementBackground5 rdf:type ns:Measurement ;
+    ns:subject "windspeed" ;
+    ns:units "mph" ;
+    ns:value 30 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement for background NO2 
+ns:MeasurementBackground6 rdf:type ns:Measurement ;
+    ns:subject "winddirection" ;
+    ns:units "degrees" ;
+    ns:value 2.68 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement 
+ns:MeasurementBackground7 rdf:type ns:Measurement ;
+    ns:subject "Far-bound Local Roadway" ;
+    ns:units "#vehicles/mile" ;
+    ns:value 32.16885823 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement 
+ns:MeasurementBackground8 rdf:type ns:Measurement ;
+    ns:subject "Near-bound Local Roadway" ;
+    ns:units "#vehicles/mile" ;
+    ns:value 50.99567407 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement
+ns:MeasurementBackground9 rdf:type ns:Measurement ;
+    ns:subject "Far-bound Local Highway" ;
+    ns:units "#vehicles/mile" ;
+    ns:value 89.94044967 ;
+    ns:hasTimestamp: Timestamp01 .
+
+## Define measurement
+ns:MeasurementBackground10 rdf:type ns:Measurement ;
+    ns:subject "Near-bound Local Highway" ;
+    ns:units "#vehicles/mile" ;
+    ns:value: 89.2582898 ;
+    ns:hasTimestamp: Timestamp01 .
+
+# Sample Street
+ns:StreetIowa rdf:type ns:Street ;
+    ns:name 'Iowa' .
