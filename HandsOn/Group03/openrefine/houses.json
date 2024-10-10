@@ -1,0 +1,1558 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood_id",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "District",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column neighborhood_id by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood_id 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column neighborhood_id 2 using expression value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood_id 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column neighborhood_id 2 by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighborhood_id 2 1",
+    "newColumnName": "DISTRICT CODE",
+    "description": "Rename column neighborhood_id 2 1 to DISTRICT CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighborhood_id 2 2",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column neighborhood_id 2 2 to DISTRICT"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rent_price",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rent_price using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rent_price",
+    "expression": "grel:if(value < 0, -1*value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column rent_price using expression grel:if(value < 0, -1*value, value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "ID",
+    "description": "Rename column id to ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "title",
+    "newColumnName": "TITLE",
+    "description": "Rename column title to TITLE"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subtitle",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column subtitle by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subtitle 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subtitle 2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subtitle 1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subtitle 1 using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "subtitle 1",
+    "newColumnName": "NEIGHBORHOOD",
+    "description": "Rename column subtitle 1 to NEIGHBORHOOD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "subtitle 2",
+    "newColumnName": "CITY",
+    "description": "Rename column subtitle 2 to CITY"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sq_mt_built",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sq_mt_built using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "sq_mt_built",
+    "newColumnName": "SQUARE METERS",
+    "description": "Rename column sq_mt_built to SQUARE METERS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "sq_mt_useful",
+    "description": "Remove column sq_mt_useful"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "n_rooms",
+    "newColumnName": "NUM OF ROOMS",
+    "description": "Rename column n_rooms to NUM OF ROOMS"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM OF ROOMS",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM OF ROOMS using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "n_bathrooms",
+    "newColumnName": "NUM OF BATHROOMS",
+    "description": "Rename column n_bathrooms to NUM OF BATHROOMS"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM OF BATHROOMS",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM OF BATHROOMS using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "n_floors",
+    "description": "Remove column n_floors"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "sq_mt_allotment",
+    "description": "Remove column sq_mt_allotment"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "latitude",
+    "description": "Remove column latitude"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "longitude",
+    "description": "Remove column longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "raw_address",
+    "newColumnName": "ADDRESS",
+    "description": "Rename column raw_address to ADDRESS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_exact_address_hidden",
+    "description": "Remove column is_exact_address_hidden"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ADDRESS",
+    "description": "Remove column ADDRESS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street_name",
+    "newColumnName": "STREET NAME",
+    "description": "Rename column street_name to STREET NAME"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street_number",
+    "newColumnName": "STREET NUM",
+    "description": "Rename column street_number to STREET NUM"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUM",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUM using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "portal",
+    "description": "Remove column portal"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "floor",
+    "description": "Remove column floor"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_floor_under",
+    "description": "Remove column is_floor_under"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "door",
+    "description": "Remove column door"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood_id 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column neighborhood_id 1 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "neighborhood_id 1 1",
+    "description": "Remove column neighborhood_id 1 1"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighborhood_id 1 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column neighborhood_id 1 2 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "neighborhood_id 1 2 2",
+    "description": "Remove column neighborhood_id 1 2 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "neighborhood_id 1 2 3",
+    "description": "Remove column neighborhood_id 1 2 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "neighborhood_id 1 2 4",
+    "description": "Remove column neighborhood_id 1 2 4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "neighborhood_id 1 2 1",
+    "newColumnName": "PRICE FOR SQ METER",
+    "description": "Rename column neighborhood_id 1 2 1 to PRICE FOR SQ METER"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "operation",
+    "description": "Remove column operation"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "rent_price_by_area",
+    "description": "Remove column rent_price_by_area"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rent_price",
+    "newColumnName": "RENT PRICE",
+    "description": "Rename column rent_price to RENT PRICE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_rent_price_known",
+    "description": "Remove column is_rent_price_known"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "buy_price",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column buy_price using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "buy_price",
+          "expression": "grel:if(value < cells[\"RENT PRICE\"].value, 1, 0)",
+          "columnName": "buy_price",
+          "from": 0.19,
+          "to": 1.01,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "buy_price_by_area",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column buy_price_by_area using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_buy_price_known",
+    "description": "Remove column is_buy_price_known"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "house_type_id",
+    "description": "Remove column house_type_id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_renewal_needed",
+    "description": "Remove column is_renewal_needed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_new_development",
+    "description": "Remove column is_new_development"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "built_year",
+    "description": "Remove column built_year"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_central_heating",
+    "description": "Remove column has_central_heating"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_individual_heating",
+    "description": "Remove column has_individual_heating"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "are_pets_allowed",
+    "description": "Remove column are_pets_allowed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_ac",
+    "description": "Remove column has_ac"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_fitted_wardrobes",
+    "description": "Remove column has_fitted_wardrobes"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_lift",
+    "description": "Remove column has_lift"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_exterior",
+    "description": "Remove column is_exterior"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_garden",
+    "description": "Remove column has_garden"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_pool",
+    "description": "Remove column has_pool"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_terrace",
+    "description": "Remove column has_terrace"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_balcony",
+    "description": "Remove column has_balcony"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_storage_room",
+    "description": "Remove column has_storage_room"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_furnished",
+    "description": "Remove column is_furnished"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_kitchen_equipped",
+    "description": "Remove column is_kitchen_equipped"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_accessible",
+    "description": "Remove column is_accessible"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_green_zones",
+    "description": "Remove column has_green_zones"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_parking",
+    "description": "Remove column has_parking"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_private_parking",
+    "description": "Remove column has_private_parking"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "has_public_parking",
+    "description": "Remove column has_public_parking"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_parking_included_in_price",
+    "description": "Remove column is_parking_included_in_price"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "parking_price",
+    "description": "Remove column parking_price"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_orientation_north",
+    "description": "Remove column is_orientation_north"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_orientation_west",
+    "description": "Remove column is_orientation_west"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_orientation_south",
+    "description": "Remove column is_orientation_south"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "is_orientation_east",
+    "description": "Remove column is_orientation_east"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "buy_price",
+    "newColumnName": "BUY PRICE",
+    "description": "Rename column buy_price to BUY PRICE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "buy_price_by_area",
+    "newColumnName": "BUY PRICE BY AREA",
+    "description": "Rename column buy_price_by_area to BUY PRICE BY AREA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "energy_certificate",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "en trámite"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column energy_certificate"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "energy_certificate",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "no indicado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column energy_certificate"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "energy_certificate",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "inmueble exento"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column energy_certificate"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "energy_certificate",
+    "newColumnName": "ENERGY CERTIFICATE",
+    "description": "Rename column energy_certificate to ENERGY CERTIFICATE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID",
+    "description": "Remove column ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column",
+    "expression": "grel:value+1",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column using expression grel:value+1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column",
+    "newColumnName": "ID",
+    "description": "Rename column Column to ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PRICE FOR SQ METER",
+    "description": "Remove column PRICE FOR SQ METER"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUY PRICE BY AREA",
+    "description": "Remove column BUY PRICE BY AREA"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NUM OF ROOMS",
+          "expression": "value",
+          "columnName": "NUM OF ROOMS",
+          "from": 0,
+          "to": 1,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RENT PRICE",
+    "expression": "grel:value/cells[\"NUM OF ROOMS\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "RENT BY ROOM",
+    "columnInsertIndex": 12,
+    "description": "Create column RENT BY ROOM at index 12 based on column RENT PRICE using expression grel:value/cells[\"NUM OF ROOMS\"].value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT BY ROOM",
+          "expression": "value",
+          "columnName": "RENT BY ROOM",
+          "from": 100000,
+          "to": 1200000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT BY ROOM",
+          "expression": "value",
+          "columnName": "RENT BY ROOM",
+          "from": 9000,
+          "to": 99000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRICT",
+          "expression": "value",
+          "columnName": "DISTRICT",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " Hortaleza",
+                "l": " Hortaleza"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 9,
+          "to": 10,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value.replace(\"Hortaleza\",\"Moncloa-Aravaca\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression value.replace(\"Hortaleza\",\"Moncloa-Aravaca\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRICT",
+          "expression": "value",
+          "columnName": "DISTRICT",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": " Arganzuela",
+                "l": " Arganzuela"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 1,
+          "to": 2,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Arganzuela"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 2,
+          "to": 3,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Barajas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 3,
+          "to": 4,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Carabanchel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Retiro"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 4,
+          "to": 5,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Centro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salamanca"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 6,
+          "to": 7,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuan"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 7,
+          "to": 8,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Ciudad Lineal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 8,
+          "to": 9,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Fuencarral"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 11,
+          "to": 12,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Moncloa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carabanchel"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 12,
+          "to": 13,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Moratalaz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Usera"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 14,
+          "to": 15,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Retiro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moratalaz"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 15,
+          "to": 16,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Salamanca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ciudad Lineal"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 17,
+          "to": 18,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villaverde"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 18,
+          "to": 19,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Usera"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villa de Vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 20,
+          "to": 21,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Villa de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DISTRICT CODE",
+          "expression": "value",
+          "columnName": "DISTRICT CODE",
+          "from": 21,
+          "to": 22,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Villaverde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barajas"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRICT"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TITLE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TITLE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CITY",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CITY using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SQUARE METERS",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SQUARE METERS using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM OF ROOMS",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM OF ROOMS using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM OF BATHROOMS",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM OF BATHROOMS using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUM",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUM using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENERGY CERTIFICATE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ENERGY CERTIFICATE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT CODE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT CODE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RENT PRICE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RENT PRICE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RENT BY ROOM",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RENT BY ROOM using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BUY PRICE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BUY PRICE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NAME",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NAME using expression value.trim()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT PRICE",
+          "expression": "value",
+          "columnName": "RENT PRICE",
+          "from": 0,
+          "to": 3000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "RENT BY ROOM",
+          "expression": "value",
+          "columnName": "RENT BY ROOM",
+          "from": 0,
+          "to": 100,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID",
+    "description": "Remove column ID"
+  }
+]
