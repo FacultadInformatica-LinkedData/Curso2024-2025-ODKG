@@ -1,0 +1,136 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Nicoleta Roman",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Chisinau"
+  },
+  "age": 22,
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Technical University of Moldova"
+  },
+  "parents": [
+    {
+      "@type": "Person",
+      "name": "Aurel Roman",
+      "parent": "father"
+    },
+    {
+      "@type": "Person",
+      "name": "Oxana Roman",
+      "parent": "mother"
+    }
+  ],
+  "hasCourse": [
+    {
+      "@type": "Course",
+      "name": "Data Processes",
+      "description": "Learn concepts, techniques and tools needed to deal with various facets of data science practice, including data collection and integration, exploratory data analysis, predictive modeling, descriptive modeling, data product creation, evaluation, and effective communication.",
+      "hasProfessor": [
+        {
+          "@type": "Person",
+          "name": "Alejandro Rodríguez"
+        },
+        {
+          "@type": "Person",
+          "name": "Ernestina Menasalvas"
+        },
+        {
+          "@type": "Person",
+          "name": "Antonio Jesús Díaz Honrubia"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Data Visualization",
+      "description": "Gaining the fundamentals for the visualization of all kinds of information.",
+      "hasProfessor": {
+        "@type": "Person",
+        "name": "Pablo Toharia Rabasco"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Statistical Data Analysis",
+      "description": "Understanding types of statistical studies, data exploration and dimensionality.",
+      "hasProfessor": {
+        "@type": "Person",
+        "name": "Arminda Moreno Diaz"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Intelligent Systems",
+      "description": "Learning to use AI methods for building intelligent systems and describing issues related to the use of intelligent systems.",
+      "hasProfessor": {
+        "@type": "Person",
+        "name": "Martin Molina Gonzalez"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Open Data and Knowledge Graphs",
+      "description": "Learning about the main foundations for Knowledge Graphs.",
+      "hasProfessor": [
+        {
+          "@type": "Person",
+          "name": "Oscar Corcho"
+        },
+        {
+          "@type": "Person",
+          "name": "Raúl García"
+        },
+        {
+          "@type": "Person",
+          "name": "Daniel Garijo"
+        },
+        {
+          "@type": "Person",
+          "name": "Pablo Calleja"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Cloud Computing and Big Data Ecosystems",
+      "description": "Presents traditional data management systems and architectures for scalable distributed systems and data management systems.",
+      "hasProfessor": {
+        "@type": "Person",
+        "name": "Marta Patiño Martinez"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Machine Learning",
+      "description": "Presents several methods to solve classification problems, both supervised and unsupervised, methods to find probabilistic relationships between system variables and models of spatial statistics.",
+      "hasProfessor": [
+        {
+          "@type": "Person",
+          "name": "Concha Bielza Lozoya"
+        },
+        {
+          "@type": "Person",
+          "name": "Pedro Maria Larrañaga Mugica"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Introduction to Research Methodology",
+      "description": "Discusses about the most usual methods, techniques and systems used in scientific research.",
+      "hasProfessor": [
+        {
+          "@type": "Person",
+          "name": "Oscar Corcho Garcia"
+        },
+        {
+          "@type": "Person",
+          "name": "Daniel Carijo"
+        }
+      ]
+    }
+  ]
+}
