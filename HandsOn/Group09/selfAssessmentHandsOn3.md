@@ -22,4 +22,9 @@
 - [ ] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-_(If required)_
+
+Daily data has been merged from 2 files in 1 with the following command:
+
+```
+(cat <file1.csv>; tail -n +2 <file2.csv>) > <joined.csv>
+```
