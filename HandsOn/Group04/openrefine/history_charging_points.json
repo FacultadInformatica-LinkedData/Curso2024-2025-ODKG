@@ -1,0 +1,1145 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_ADICIONAL",
+    "description": "Remove column INFO_ADICIONAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OID_",
+    "description": "Remove column OID_"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESTADO",
+    "description": "Remove column ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INFO_FECHA_APERTURA",
+    "description": "Remove column INFO_FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_APERTURA",
+    "description": "Remove column FECHA_APERTURA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA_EDICION",
+    "description": "Remove column FECHA_EDICION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)",
+          "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) - AC- Tipo 2 (22kW)",
+          "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)"
+      },
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes",
+          "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (50kW)\n"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo 2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 equipos 100 kW CCS Combo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS_Combo (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2."
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2.\n\n2 CCS (100kW) 2 CHAdeMO (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo 2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2.\n\n2 CCS (100kW) 2 CHAdeMO (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (100kW) 2 CHAdeMO (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1 equipo de 150 kW (DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)) y 1 equipo de 50 kW (DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW))"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 equipo de 150 kW (DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)) y 1 equipo de 50 kW (DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW))"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1 equipo de 150 kW (DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)) y 1 equipo de 50 kW (DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW))"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 CCS (150kW) 1 CHAdeMO (150kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2(22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1 CCS (150kW) 1 CHAdeMO (150kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2(22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 CCS (150kW) 1 CHAdeMO (150kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo_2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "150 kW DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 CCS (150kW) 1 CHAdeMO (150kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CCS_Combo (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (100kW) 1 CCS (50kW) 1 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "180 kW 2 conectores CC (CCS)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CSS (180kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "350 kW conector CC (CCS)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "350 kW conector CC (CCS)\n1 CCS (350kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "350 kW conector CC (CCS)\n1 CCS (350kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 CCS (350kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CSS (180kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (180kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4 equipos 400 kW, 4 equipos 200 kW, 4 equipos 50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4 equipos 400 kW, 4 equipos 200 kW, 4 equipos 50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes\n\n8 CCS (400kW) 8 CHAdeMO (400kW) 1 Mennekes (400kW) 8 CCS (200kW) 8 CHAdeMO (200kW) 1 Mennekes (200kW) 8 CCS (50kW) 8 CHAdeMO (50kW) 1 Mennekes (50kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4 equipos 400 kW, 4 equipos 200 kW, 4 equipos 50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes\n\n8 CCS (400kW) 8 CHAdeMO (400kW) 1 Mennekes (400kW) 8 CCS (200kW) 8 CHAdeMO (200kW) 1 Mennekes (200kW) 8 CCS (50kW) 8 CHAdeMO (50kW) 1 Mennekes (50kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8 CCS (400kW) 8 CHAdeMO (400kW) 1 Mennekes (400kW) 8 CCS (200kW) 8 CHAdeMO (200kW) 1 Mennekes (200kW) 8 CCS (50kW) 8 CHAdeMO (50kW) 1 Mennekes (50kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes. Equipo 150 kW: DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 CCS (150kW) 1 CHAdeMO (150kW) 2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (50kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CCS (50kW) 2 CHAdeMO (50kW) 1 AC_modo_2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CARACTERÍSTICAS_EQUIPO",
+          "expression": "value",
+          "columnName": "CARACTERÍSTICAS_EQUIPO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "1 CCS (150kW) 1 CHAdeMO (150kW) 2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (50kW)",
+                "l": "1 CCS (150kW) 1 CHAdeMO (150kW) 2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (50kW)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value.replace(\"AC_modo_2\",\"Mennekes\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CARACTERÍSTICAS_EQUIPO using expression value.replace(\"AC_modo_2\",\"Mennekes\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value.replace(\"AC_modo_2\",\"Mennekes\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CARACTERÍSTICAS_EQUIPO using expression value.replace(\"AC_modo_2\",\"Mennekes\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Conectores: DC- CCS Combo 2, 50 kW y CHAdeMO 50 kW.  Toma: AC- Tipo 2, 22 kW"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo 2 (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Tipo 2 (22kW)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 CCS (50kW) 2 CHAdeMO (50kW) 1 Mennekes (22kW)"
+      }
+    ],
+    "description": "Mass edit cells in column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA_ALTA",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA_ALTA using expression value.toDate()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "24\r",
+          "24"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24\r"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De lunes a sábados, de 9:00h – 21:30h\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de 9:00h a 21:30h\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "de 6:00 a 1:00 a.m.\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de 6:00h a 1:00h a.m.\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "de 6:00h a 1:00h a.m.\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de 6:00h a 1:00h\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "de 6 a 24 h\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "de 6:00 a 00:00 h\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "e\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "e\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "24\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "24\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24\n"
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS",
+    "description": "Remove column COD_DIS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BAR",
+    "description": "Remove column COD_BAR"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GESTIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Convenio cesión",
+          "Convenio Cesión"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Convenio cesión"
+      }
+    ],
+    "description": "Mass edit cells in column GESTIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMPLAZAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Estación de servicio",
+          "Estación de Servicio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Estación de servicio"
+      }
+    ],
+    "description": "Mass edit cells in column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ENDESA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENDESA X SERVICIOS S.L."
+      }
+    ],
+    "description": "Mass edit cells in column OPERADOR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*CCS', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)",
+    "onError": "set-to-blank",
+    "newColumnName": "CCS_Conectores",
+    "columnInsertIndex": 7,
+    "description": "Create column CCS_Conectores at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*CCS', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*CHAdeMO', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)",
+    "onError": "set-to-blank",
+    "newColumnName": "CHAdeMO_Conectores",
+    "columnInsertIndex": 7,
+    "description": "Create column CHAdeMO_Conectores at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*CHAdeMO', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*Mennekes', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)",
+    "onError": "set-to-blank",
+    "newColumnName": "Mennekes_Conectores",
+    "columnInsertIndex": 7,
+    "description": "Create column Mennekes_Conectores at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'(\\d+)\\s*Mennekes', value)\nnumbers = [int(n) for n in matches]\nreturn sum(numbers)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'\\bCCS\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [float(n) for n in matches]\nreturn voltages",
+    "onError": "set-to-blank",
+    "newColumnName": "CCS_KW",
+    "columnInsertIndex": 7,
+    "description": "Create column CCS_KW at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'\\bCCS\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [float(n) for n in matches]\nreturn voltages"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CCS_KW",
+    "description": "Remove column CCS_KW"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'\\bCCS\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))",
+    "onError": "set-to-blank",
+    "newColumnName": "CCS_KW",
+    "columnInsertIndex": 7,
+    "description": "Create column CCS_KW at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'\\bCCS\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'\\bCHAdeMO\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))",
+    "onError": "set-to-blank",
+    "newColumnName": "CHAdeMO_KW",
+    "columnInsertIndex": 7,
+    "description": "Create column CHAdeMO_KW at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'\\bCHAdeMO\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CARACTERÍSTICAS_EQUIPO",
+    "expression": "jython:import re\n\nmatches = re.findall(r'\\bMennekes\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))",
+    "onError": "set-to-blank",
+    "newColumnName": "Mennekes_KW",
+    "columnInsertIndex": 7,
+    "description": "Create column Mennekes_KW at index 7 based on column CARACTERÍSTICAS_EQUIPO using expression jython:import re\n\nmatches = re.findall(r'\\bMennekes\\s*\\(\\s*(\\d+(?:\\.\\d+)?)\\s*kW\\s*\\)', value, re.IGNORECASE)\nvoltages = [int(n) for n in matches]\nreturn ', '.join(map(str, voltages))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CARACTERÍSTICAS_EQUIPO",
+    "description": "Remove column CARACTERÍSTICAS_EQUIPO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "jython:import re\n\nreturn re.sub(r'\\s*\\(.*?\\)', '', value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression jython:import re\n\nreturn re.sub(r'\\s*\\(.*?\\)', '', value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_Punto",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID_Punto using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column BARRIO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMPLAZAMIENTO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EMPLAZAMIENTO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº_EQUIPOS",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº_EQUIPOS using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Mennekes_KW",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Mennekes_KW using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHAdeMO_KW",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CHAdeMO_KW using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CCS_KW",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CCS_KW using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OPERADOR",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OPERADOR using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GESTIÓN",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column GESTIÓN using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORARIO using expression value.trim()"
+  }
+]
