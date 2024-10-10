@@ -1,0 +1,831 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PUNTO_MUESTREO",
+    "expression": "grel:value.substring(0,10)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PUNTO_MUESTREO using expression grel:value.substring(0,10)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANO",
+    "expression": "grel:substring(value,2)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ANO using expression grel:substring(value,2)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PUNTO_MUESTREO",
+    "expression": "grel:value.substring(0,8)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PUNTO_MUESTREO using expression grel:value.substring(0,8)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MAGNITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MAGNITUD using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTACION using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MUNICIPIO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MAGNITUD",
+    "expression": "grel:if(value==1,\"SO2\",if(value==6,\"CO\",if(value==7,\"NO\",if(value==8,\"NO2\",if(value==9,\"PM2.5\",if(value==10,\"PM10\",if(value==12,\"NOx\",if(value==14,\"O3\",if(or(or(or(or(or(value==20, value==30), value==35), value==37), value==38), value==39),\"BTX\",\"\")))))))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MAGNITUD using expression grel:if(value==1,\"SO2\",if(value==6,\"CO\",if(value==7,\"NO\",if(value==8,\"NO2\",if(value==9,\"PM2.5\",if(value==10,\"PM10\",if(value==12,\"NOx\",if(value==14,\"O3\",if(or(or(or(or(or(value==20, value==30), value==35), value==37), value==38), value==39),\"BTX\",\"\")))))))))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D01",
+    "expression": "grel:if(cells.V01.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D01 using expression grel:if(cells.V01.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D02",
+    "expression": "grel:if(cells.V02.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D02 using expression grel:if(cells.V02.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D03",
+    "expression": "grel:if(cells.V03.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D03 using expression grel:if(cells.V03.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D04",
+    "expression": "grel:if(cells.V04.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D04 using expression grel:if(cells.V04.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D05",
+    "expression": "grel:if(cells.V05.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D05 using expression grel:if(cells.V05.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D06",
+    "expression": "grel:if(cells.V06.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D06 using expression grel:if(cells.V06.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D06",
+    "expression": "grel:if(cells.V06.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D06 using expression grel:if(cells.V06.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D07",
+    "expression": "grel:if(cells.V07.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D07 using expression grel:if(cells.V07.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D08",
+    "expression": "grel:if(cells.V08.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D08 using expression grel:if(cells.V08.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D09",
+    "expression": "grel:if(cells.V09.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D09 using expression grel:if(cells.V09.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D10",
+    "expression": "grel:if(cells.V10.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D10 using expression grel:if(cells.V10.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D11",
+    "expression": "grel:if(cells.V11.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D11 using expression grel:if(cells.V11.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D12",
+    "expression": "grel:if(cells.V12.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D12 using expression grel:if(cells.V12.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D13",
+    "expression": "grel:if(cells.V13.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D13 using expression grel:if(cells.V13.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D14",
+    "expression": "grel:if(cells.V14.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D14 using expression grel:if(cells.V14.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D15",
+    "expression": "grel:if(cells.V15.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D15 using expression grel:if(cells.V15.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D16",
+    "expression": "grel:if(cells.V16.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D16 using expression grel:if(cells.V16.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D17",
+    "expression": "grel:if(cells.V17.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D17 using expression grel:if(cells.V17.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D18",
+    "expression": "grel:if(cells.V18.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D18 using expression grel:if(cells.V18.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D19",
+    "expression": "grel:if(cells.V19.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D19 using expression grel:if(cells.V19.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D20",
+    "expression": "grel:if(cells.V20.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D20 using expression grel:if(cells.V20.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D21",
+    "expression": "grel:if(cells.V21.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D21 using expression grel:if(cells.V21.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D22",
+    "expression": "grel:if(cells.V22.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D22 using expression grel:if(cells.V22.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D23",
+    "expression": "grel:if(cells.V23.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D23 using expression grel:if(cells.V23.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D24",
+    "expression": "grel:if(cells.V24.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D24 using expression grel:if(cells.V24.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D25",
+    "expression": "grel:if(cells.V25.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D25 using expression grel:if(cells.V25.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D26",
+    "expression": "grel:if(cells.V26.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D26 using expression grel:if(cells.V26.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D27",
+    "expression": "grel:if(cells.V27.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D27 using expression grel:if(cells.V27.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D28",
+    "expression": "grel:if(cells.V28.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D28 using expression grel:if(cells.V28.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D29",
+    "expression": "grel:if(cells.V29.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D29 using expression grel:if(cells.V29.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D30",
+    "expression": "grel:if(cells.V30.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D30 using expression grel:if(cells.V30.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "D31",
+    "expression": "grel:if(cells.V31.value.endsWith(\"N\"),-99,toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column D31 using expression grel:if(cells.V31.value.endsWith(\"N\"),-99,toNumber(value))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V01",
+    "description": "Remove column V01"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V02",
+    "description": "Remove column V02"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V03",
+    "description": "Remove column V03"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V04",
+    "description": "Remove column V04"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V05",
+    "description": "Remove column V05"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V06",
+    "description": "Remove column V06"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V07",
+    "description": "Remove column V07"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V08",
+    "description": "Remove column V08"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V09",
+    "description": "Remove column V09"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V10",
+    "description": "Remove column V20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V11",
+    "description": "Remove column V11"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V12",
+    "description": "Remove column V12"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V13",
+    "description": "Remove column V13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V14",
+    "description": "Remove column V14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V15",
+    "description": "Remove column V15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V16",
+    "description": "Remove column V16"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V17",
+    "description": "Remove column V17"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V18",
+    "description": "Remove column V18"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V19",
+    "description": "Remove column V19"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V20",
+    "description": "Remove column V20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V21",
+    "description": "Remove column V21"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V22",
+    "description": "Remove column V22"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V23",
+    "description": "Remove column V23"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V24",
+    "description": "Remove column V24"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V25",
+    "description": "Remove column V25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V26",
+    "description": "Remove column V26"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V27",
+    "description": "Remove column V27"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V28",
+    "description": "Remove column V28"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V29",
+    "description": "Remove column V29"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V30",
+    "description": "Remove column V30"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "V31",
+    "description": "Remove column V31"
+  },
+  {
+    "op": "core/transpose-columns-into-rows",
+    "startColumnName": "D01",
+    "columnCount": -1,
+    "ignoreBlankCells": false,
+    "fillDown": false,
+    "separator": null,
+    "keyColumnName": "DIA",
+    "valueColumnName": "MEDIDA",
+    "description": "Transpose cells in columns starting with D01 into rows in two new columns named DIA and MEDIDA"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "MEDIDA",
+          "expression": "value",
+          "columnName": "MEDIDA",
+          "from": -100,
+          "to": 0,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIA",
+    "expression": "grel:toNumber(substring(value,1))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DIA using expression grel:toNumber(substring(value,1))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PROVINCIA using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ANO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MES using expression value.toNumber()"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "description": "Fill down cells in column MES"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANO",
+    "description": "Fill down cells in column ANO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANO",
+    "expression": "join ([coalesce(cells['ANO'].value,''),coalesce(cells['MES'].value,''),coalesce(cells['DIA'].value,'')],'_')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ANO using expression join ([coalesce(cells['ANO'].value,''),coalesce(cells['MES'].value,''),coalesce(cells['DIA'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "PROVINCIA",
+      "MUNICIPIO",
+      "ESTACION",
+      "MAGNITUD",
+      "PUNTO_MUESTREO",
+      "ANO",
+      "MEDIDA"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PROVINCIA",
+    "description": "Remove column PROVINCIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MUNICIPIO",
+    "description": "Remove column MUNICIPIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESTACION",
+    "description": "Remove column ESTACION"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MAGNITUD",
+    "description": "Fill down cells in column MAGNITUD"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PUNTO_MUESTREO",
+    "description": "Fill down cells in column PUNTO_MUESTREO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ANO",
+    "newColumnName": "ID_TIEMPO",
+    "description": "Rename column ANO to ID_TIEMPO"
+  }
+]
