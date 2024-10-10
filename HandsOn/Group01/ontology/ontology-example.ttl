@@ -1,0 +1,126 @@
+@prefix : <http://www.owl-ontologies.com/ns#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@base <http://www.owl-ontologies.com/ns#> .
+
+<http://www.owl-ontologies.com/ns#> rdf:type owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> ;
+    dct:title "Bicycle Parking Spot Ontology" ;
+    dct:description "Ontology describing bicycle parking spots, integrating geospatial data such as postal code, coordinates, and administrative divisions (e.g., district, neighborhood) in line with the European Open Data Strategy." ;
+    dct:creator <https://chowlk.linkeddata.es/> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+    dct:issued "2024-05-13"^^xsd:date .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+ns:hasEstado rdf:type owl:ObjectProperty ;
+    rdfs:domain ns:BicycleParkingSpot ;
+    rdfs:range ns:Estado ;
+    rdfs:label "has estado" ;
+    dct:description "Relates a bicycle parking spot to its current status." .
+
+ns:hasTipoVia rdf:type owl:ObjectProperty ;
+    rdfs:domain ns:BicycleParkingSpot ;
+    rdfs:range ns:Via ;
+    rdfs:label "has tipo via" ;
+    dct:description "Indicates the type of road where the bicycle parking spot is located." .
+
+ns:isInBarrio rdf:type owl:ObjectProperty ;
+    rdfs:domain ns:BicycleParkingSpot ;
+    rdfs:range ns:Barrio ;
+    rdfs:label "is in barrio" ;
+    dct:description "Specifies the neighborhood in which the bicycle parking spot is located." .
+
+ns:isInDistrito rdf:type owl:ObjectProperty ;
+    rdfs:domain ns:BicycleParkingSpot ;
+    rdfs:range ns:Distrito ;
+    rdfs:label "is in distrito" ;
+    dct:description "Specifies the district where the bicycle parking spot is located." .
+
+#################################################################
+#    Data properties
+#################################################################
+
+ns:codigoPostal rdf:type owl:DatatypeProperty ;
+    rdfs:label "codigo postal" ;
+    dct:description "Postal code of the location where the bicycle parking spot is located." .
+
+ns:coordenadaX rdf:type owl:DatatypeProperty ;
+    rdfs:label "coordenada x" ;
+    dct:description "X-coordinate for the bicycle parking spot location, based on a Cartesian coordinate system." .
+
+ns:coordenadaY rdf:type owl:DatatypeProperty ;
+    rdfs:label "coordenada y" ;
+    dct:description "Y-coordinate for the bicycle parking spot location, based on a Cartesian coordinate system." .
+
+ns:estado rdf:type owl:DatatypeProperty ;
+    rdfs:label "estado" ;
+    dct:description "Indicates the current operational status of the bicycle parking spot." .
+
+ns:hasFechaInstalacion rdf:type owl:DatatypeProperty ;
+    rdfs:label "has fecha instalacion" ;
+    dct:description "Installation date of the bicycle parking spot." .
+
+ns:id rdf:type owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    dct:description "Unique identifier for the bicycle parking spot." .
+
+ns:latitud rdf:type owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    dct:description "Latitude coordinate for the bicycle parking spot location." .
+
+ns:longitud rdf:type owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    dct:description "Longitude coordinate for the bicycle parking spot location." .
+
+ns:nombre rdf:type owl:DatatypeProperty ;
+    rdfs:label "nombre" ;
+    dct:description "Name of the bicycle parking spot." .
+
+ns:poblacion rdf:type owl:DatatypeProperty ;
+    rdfs:label "poblacion" ;
+    dct:description "Population or locality where the bicycle parking spot is situated." .
+
+ns:tipo rdf:type owl:DatatypeProperty ;
+    rdfs:label "tipo" ;
+    dct:description "Type of bicycle parking spot." .
+
+#################################################################
+#    Classes
+#################################################################
+
+ns:Barrio rdf:type owl:Class ;
+    rdfs:label "Barrio" ;
+    dct:description "Represents a neighborhood." .
+
+ns:BicycleParkingSpot rdf:type owl:Class ;
+    rdfs:label "Bicycle Parking Spot" ;
+    dct:description "Represents a bicycle parking spot in a city." .
+
+ns:Distrito rdf:type owl:Class ;
+    rdfs:label "Distrito" ;
+    dct:description "Represents a district or administrative division in a city." .
+
+ns:Estado rdf:type owl:Class ;
+    rdfs:label "Estado" ;
+    dct:description "Represents the operational status of a bicycle parking spot." .
+
+ns:Via rdf:type owl:Class ;
+    rdfs:label "Via" ;
+    dct:description "Represents a road or street where the bicycle parking spot is located." .

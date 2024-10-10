@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #e1e1d9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003366;
+            text-align: center;
+        }
+        h2 {
+            color: #003366;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Licensing of the Data Source Analysis</h1>
+
+    <div class="container">
+        <h2>Dataset 1: Universities, colleges, university residences and others</h2>
+        <p>
+            <strong>Available here:</strong> 
+            <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=6ad94560b3104410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">link here</a>
+        </p>
+        <p>
+            The publisher and rightsholder of this dataset is the <strong>Madrid City Council</strong>. The reuse of this dataset is permitted for both commercial and non-commercial purposes. It may be copied, modified, adapted, and reordered, but the source must be cited accordingly. Users must comply with <strong>Law 37/2007</strong> on the reuse of public sector information.
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Dataset 2: Energy consumption in municipal buildings. Monthly data</h2>
+        <p>
+            <strong>Available here:</strong> 
+            <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=d6fe4f894ef31710VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">link here</a>
+        </p>
+        <p>
+            This dataset is also published by the <strong>Madrid City Council</strong> and can be reused under the same conditions as Dataset 1. The Council holds the intellectual property rights, and a free, non-exclusive transfer of those rights is permitted.
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Dataset 3: Madrid real estate market</h2>
+        <p>
+            <strong>Available here:</strong> 
+            <a href="https://www.kaggle.com/datasets/mirbektoktogaraev/madrid-real-estate-market">link here</a>
+        </p>
+        <p>
+            The dataset is published on Kaggle by <strong>Mirbek Toktogaraev</strong>, with <strong>Matias Barra</strong> contributing as an editor. The dataset is licensed under "Data files © Original Authors," meaning intellectual property rights belong to the authors. There are no restrictions for non-commercial use with proper citation, but commercial use may require additional permission.
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Potential license for the dataset to be generated</h2>
+        <p>
+            The generated knowledge graph can be licensed under <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> 
+            <a href="https://creativecommons.org/licenses/by/4.0/deed.en">link here</a>. This allows free sharing and adaptation of the data, with attribution to the original source. Users must give appropriate credit, link to the license, and indicate any changes made. No additional restrictions apply.
+        </p>
+    </div>
+    <hr>
+    <h1>Analysis of the datasets</h1>
+    <div class="container">
+        <h2>Dataset 1: Universities and colleges</h2>
+        <p>
+            The dataset contains information about universities and colleges and other educational institutions in Madrid. 
+            <ul>
+                <li><strong>PK</strong> - primary key, government assigned number that identifies every facility, number</li>
+                <li><strong>UNIVERSITY</strong> - String, name of the university if institute is a part of any, if not, then it's the same name like the school itself</li>
+                <li><strong>SCHOOL</strong> - String, name of the school</li>
+                <li><strong>TRANSPORT</strong> - String, what transport can be used to get there</li>
+                <li><strong>ACCESSIBILITY</strong> - Number, from 0 to 3, discrete values</li>
+                <li><strong>WEBSITE</strong> - String, page of the school on the www.madrid.es website</li>
+                <li><strong>STREET NAME</strong> - String</li>
+                <li><strong>STREET TYPE</strong> - String, AVENIDA, CALLE, CARRETERA, GLORIETA, PASEO, PLAZA, RONDA, TRAVESIA</li>
+                <li><strong>NUM</strong> - Number, optional, number of the building on the street</li>
+                <li><strong>FLOOR</strong> - Number, optional</li>
+                <li><strong>ORIENTATION</strong> - String, optional, what bloque is it</li>
+                <li><strong>CITY</strong> - String, Madrid</li>
+                <li><strong>PROVINCE</strong> - String, Madrid</li>
+                <li><strong>POSTAL CODE</strong> - Number, from 28 001 to 28 051</li>
+                <li><strong>NEIGHBORHOOD CODE</strong> - Number</li>
+                <li><strong>NEIGHBORHOOD</strong> - String</li>
+                <li><strong>DISTRICT CODE</strong> - Number, from 1 to 21</li>
+                <li><strong>DISTRICT</strong> - String</li>
+                <li><strong>X COORDINATE</strong> - Number</li>
+                <li><strong>Y COORDINATE</strong> - Number</li>
+                <li><strong>LATITUDE</strong> - Number</li>
+                <li><strong>LONGITUDE</strong> - Number</li>
+                <li><strong>TELEPHONE</strong> - String, optional</li>
+                <li><strong>FAX</strong> - String, optional</li>
+                <li><strong>EMAIL</strong> - String, optional</li>
+            </ul>
+        </p>
+    </div>
+    <div class="container">
+        <h2>Dataset 2: Energy consumption in municipal buildings. Monthly data</h2>
+        <p>
+            <ul>
+                <li><strong>YEAR</strong> - Numeric Value from 2020-2024</li>
+                <li><strong>MONTH</strong> - Numeric</li>
+                <li><strong>TYPE OF BUILDING</strong> - String, values: Centros administrativos, Centros culturales y bibliotecas, centros deportivos, centros escolares, centros mixtos, centros sociales, otras dependencias, salud, seguridad y emergencias</li>
+                <li><strong>BUILDING NAME</strong> - String</li>
+                <li><strong>ADDRESS</strong> - String formed by: Street, Number, Postal Code, town. It includes naming format exceptions</li>
+                <li><strong>DISTRICT</strong> - String in capital letters</li>
+                <li><strong>DISTRICT CODE</strong> - Number</li>
+                <li><strong>NEIGHBORHOOD</strong> - String in capital letters</li>
+                <li><strong>NEIGHBORHOOD CODE</strong> - Number</li>
+                <li><strong>X COORDINATE</strong> - Number</li>
+                <li><strong>Y COORDINATE</strong> - Number</li>
+                <li><strong>LATITUDE</strong> - Number</li>
+                <li><strong>LONGITUDE</strong> - Number</li>
+                <li><strong>SENSOR</strong> - String</li>
+                <li><strong>TYPE</strong> - String</li>
+                <li><strong>CLASS</strong> - String, values: Procesado, externo, telemedida</li>
+                <li><strong>GROUP</strong> - String, values: Active Energy, reactive Energy, Gas</li>
+                <li><strong>UNITS</strong> - String, values: Activa Contador Gral -Bus, Activa Interruptor Gral,  Activa Interruptor Gral - Bus, Gas, Ninguno, Reactiva tarifa 3.0A, Reactiva Tarifa 3.1A</li>
+                <li><strong>CONSUMPTION</strong> - String, values: kvarh (Energía activa), kWh (Energía reactiva), m3 (Gas)</li>
+
+            </ul>
+        </p>
+    </div>
+    <div class="container">
+        <h2>Dataset 3: Madrid housing prices and details</h2>
+        <p>
+            <ul>
+                <li><strong>ID</strong> - primary key, number</li>
+                <li><strong>TITLE</strong> - String, title of the property</li>
+                <li><strong>CITY</strong> - String, Madrid</li>
+                <li><strong>NEIGHBORHOOD</strong> - String</li>
+                <li><strong>DISTRICT CODE</strong> - Number, from 1 to 21</li>
+                <li><strong>DISTRICT</strong> - String</li>
+                <li><strong>SQUARE METERS</strong> - Number, optional, from 10 to 1000</li>
+                <li><strong>NUM OF ROOMS</strong> - Number, from 1 to 25</li>
+                <li><strong>NUM OF BATHROOMS</strong> - Number, optional, from 1 to 17</li>
+                <li><strong>STREET NAME</strong> - String, optional</li>
+                <li><strong>STREET NUM</strong> - Number, optional</li>
+                <li><strong>RENT PRICE</strong> - Number, in euros, from 0 to 5 700 000</li>
+                <li><strong>BUY PRICE</strong> - Number, in euros, from 0 to 5 900 000 </li>
+                <li><strong>ENERGY CERTIFICATE</strong> - String, optional, values: A, B, C, D, E, F</li>
+            </ul>
+        </p>
+    </div>
+    <section id="resource-naming-strategy">
+        <h2>Resource Naming Strategy</h2>
+        <p><strong>NOTE:</strong> The domain for this ontology will be changed in the future to reflect its final hosting location.</p>
+        
+        <h3>Ontology IRI</h3>
+        <p>The current IRI for the ontology is:</p>
+        <pre>
+    http://www.semanticweb.org/ontology/SmartBarrioMadrid
+        </pre>
+        <p>A version number can be added if needed in the future.</p>
+    
+        <h3>Class IRIs</h3>
+        <p>The IRI pattern for classes follows this structure:</p>
+        <pre>
+    http://www.semanticweb.org/ontology/SmartBarrioMadrid/{Classname}
+        </pre>
+        <p>For example:</p>
+        <ul>
+            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/Student</code></li>
+            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/University</code></li>
+        </ul>
+    
+        <h3>Individual IRIs</h3>
+        <p>The IRI pattern for individuals (instances) follows this structure:</p>
+        <pre>
+    http://www.semanticweb.org/resource/{Classname}/{id}
+        </pre>
+        <p>For example:</p>
+        <ul>
+            <li>Individual: <code>http://www.semanticweb.org/resource/Student/johnDoe</code></li>
+            <li>Individual: <code>http://www.semanticweb.org/resource/University/madridUniversity</code></li>
+        </ul>
+    
+        <p>Once the domain is changed, the new IRI structure will follow the same resource naming pattern but under the new domain. This ensures that resources are easy to identify and the resource types are clear from their IRIs.</p>
+    </section>
+</body>
+</html>
