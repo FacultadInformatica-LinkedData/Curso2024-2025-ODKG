@@ -1,7 +1,7 @@
 Group Members
 =====================
 
-* julianlopez-code, Julián López Maciá
+* Julián López Maciá -julianlopez-code
 * Federico Castejón - fedecaslo
 * Aritz Martin - AritzMJ
 * Unai Zuazo - unaizuazo
