@@ -48,9 +48,9 @@ ns:Neighborhood0001 ns:isPartOf ns:Arganzuela.
 
 ns:ChargingPoint_0001 ns:managedBy ns:GIC.
 
-ns:Parking0001 ns:locatedIn ns:Coordinates0001
+ns:Parking0001 ns:locatedIn ns:Coordinates0001.
 
-ns:Coordinates0001 ns:locatedIn ns:Street0001
+ns:Coordinates0001 ns:locatedIn ns:Street0001.
 
 
 
