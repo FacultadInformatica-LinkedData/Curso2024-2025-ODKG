@@ -1,0 +1,42 @@
+/* Analysis.html */
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ead2d2db;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.centered-header {
+    text-align: center;
+}
+
+table td img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}

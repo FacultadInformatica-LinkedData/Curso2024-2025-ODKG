@@ -1,0 +1,447 @@
+@prefix : <http://example.ontology.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://example.ontology.com/ns#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://example.ontology.com#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://example.ontology.com/> .
+
+<http://example.ontology.com/> rdf:type owl:Ontology ;
+                                dc:creator "Dakota Mellish" ;
+                                dc:title "RiversidePollutionStudyOntology" ;
+                                owl:versionInfo "0.0.1" ;
+                                mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.ontology.com/ns#authors
+ns:authors rdf:type owl:ObjectProperty ;
+           rdfs:domain ns:researchStudy ;
+           rdfs:range xsd:String .
+
+
+###  http://example.ontology.com/ns#belongsTo
+ns:belongsTo rdf:type owl:ObjectProperty ;
+             rdfs:domain ns:Measurement ;
+             rdfs:range ns:measurementDataFile ;
+             rdfs:label "belongs to" .
+
+
+###  http://example.ontology.com/ns#date
+ns:date rdf:type owl:ObjectProperty ;
+        rdfs:domain ns:researchStudy ;
+        rdfs:range xsd:Date .
+
+
+###  http://example.ontology.com/ns#day
+ns:day rdf:type owl:ObjectProperty ;
+       rdfs:domain ns:measurementTimestamp ;
+       rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweekfriday
+ns:dayofweekfriday rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:measurementTimestamp ;
+                   rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweekmonday
+ns:dayofweekmonday rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:measurementTimestamp ;
+                   rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweeksaturday
+ns:dayofweeksaturday rdf:type owl:ObjectProperty ;
+                     rdfs:domain ns:measurementTimestamp ;
+                     rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweeksunday
+ns:dayofweeksunday rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:measurementTimestamp ;
+                   rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweekthursday
+ns:dayofweekthursday rdf:type owl:ObjectProperty ;
+                     rdfs:domain ns:measurementTimestamp ;
+                     rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweektuesday
+ns:dayofweektuesday rdf:type owl:ObjectProperty ;
+                    rdfs:domain ns:measurementTimestamp ;
+                    rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#dayofweekwednesday
+ns:dayofweekwednesday rdf:type owl:ObjectProperty ;
+                      rdfs:domain ns:measurementTimestamp ;
+                      rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#filename
+ns:filename rdf:type owl:ObjectProperty ;
+            rdfs:domain ns:measurementDataFile ,
+                        ns:measurementMetaDataFile ;
+            rdfs:range xsd:String .
+
+
+###  http://example.ontology.com/ns#filesize
+ns:filesize rdf:type owl:ObjectProperty ;
+            rdfs:domain ns:measurementDataFile ,
+                        ns:measurementMetaDataFile ;
+            rdfs:range xsd:Float .
+
+
+###  http://example.ontology.com/ns#filetype
+ns:filetype rdf:type owl:ObjectProperty ;
+            rdfs:domain ns:measurementDataFile ,
+                        ns:measurementMetaDataFile ;
+            rdfs:range xsd:String .
+
+
+###  http://example.ontology.com/ns#hasCity
+ns:hasCity rdf:type owl:ObjectProperty ;
+           rdfs:domain ns:Street ;
+           rdfs:range ns:City ;
+           rdfs:label "has city" .
+
+
+###  http://example.ontology.com/ns#hasCountry
+ns:hasCountry rdf:type owl:ObjectProperty ;
+              rdfs:domain ns:State ;
+              rdfs:range ns:Country ;
+              rdfs:label "has country" .
+
+
+###  http://example.ontology.com/ns#hasCounty
+ns:hasCounty rdf:type owl:ObjectProperty ;
+             rdfs:domain ns:City ;
+             rdfs:range ns:County ;
+             rdfs:label "has county" .
+
+
+###  http://example.ontology.com/ns#hasResearchDate
+ns:hasResearchDate rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns:researchStudy ;
+                   rdfs:range ns:measurementDataFile ;
+                   rdfs:label "has research date" .
+
+
+###  http://example.ontology.com/ns#hasState
+ns:hasState rdf:type owl:ObjectProperty ;
+            rdfs:domain ns:County ;
+            rdfs:range ns:State ;
+            rdfs:label "has state" .
+
+
+###  http://example.ontology.com/ns#hasTimestamp
+ns:hasTimestamp rdf:type owl:ObjectProperty ;
+                rdfs:domain ns:Measurement ;
+                rdfs:range ns:measurementTimestamp ;
+                rdfs:label "has timestamp" .
+
+
+###  http://example.ontology.com/ns#hasmetadata
+ns:hasmetadata rdf:type owl:ObjectProperty ;
+               rdfs:domain ns:measurementDataFile ;
+               rdfs:range ns:measurementMetaDataFile ;
+               rdfs:label "hasmetadata" .
+
+
+###  http://example.ontology.com/ns#hour
+ns:hour rdf:type owl:ObjectProperty ;
+        rdfs:domain ns:measurementTimestamp ;
+        rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#location
+ns:location rdf:type owl:ObjectProperty ;
+            rdfs:domain ns:Measurement ;
+            rdfs:range ns:Street ;
+            rdfs:label "location" .
+
+
+###  http://example.ontology.com/ns#minute
+ns:minute rdf:type owl:ObjectProperty ;
+          rdfs:domain ns:measurementTimestamp ;
+          rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#month
+ns:month rdf:type owl:ObjectProperty ;
+         rdfs:domain ns:measurementTimestamp ;
+         rdfs:range xsd:Integer .
+
+
+###  http://example.ontology.com/ns#name
+ns:name rdf:type owl:ObjectProperty ;
+        rdfs:domain ns:researchStudy ;
+        rdfs:range xsd:String .
+
+
+###  http://example.ontology.com/ns#subject
+ns:subject rdf:type owl:ObjectProperty ;
+           rdfs:domain ns:Measurement ;
+           rdfs:range xsd:String .
+
+
+###  http://example.ontology.com/ns#timestamp
+ns:timestamp rdf:type owl:ObjectProperty ;
+             rdfs:domain ns:measurementTimestamp ;
+             rdfs:range xsd:Timestamp .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.ontology.com/ns#authors
+ns:authors rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#date
+ns:date rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#day
+ns:day rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweekfriday
+ns:dayofweekfriday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweekmonday
+ns:dayofweekmonday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweeksaturday
+ns:dayofweeksaturday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweeksunday
+ns:dayofweeksunday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweekthursday
+ns:dayofweekthursday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweektuesday
+ns:dayofweektuesday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#dayofweekwednesday
+ns:dayofweekwednesday rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#filename
+ns:filename rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#filesize
+ns:filesize rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#filetype
+ns:filetype rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#hour
+ns:hour rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#minute
+ns:minute rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#month
+ns:month rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#name
+ns:name rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#subject
+ns:subject rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#timestamp
+ns:timestamp rdf:type owl:DatatypeProperty .
+
+
+###  http://example.ontology.com/ns#units
+ns:units rdf:type owl:DatatypeProperty ;
+         rdfs:domain ns:Measurement ;
+         rdfs:label "units" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.ontology.com/ns#City
+ns:City rdf:type owl:Class ;
+        rdfs:label "City" .
+
+
+###  http://example.ontology.com/ns#Country
+ns:Country rdf:type owl:Class ;
+           rdfs:label "Country" .
+
+
+###  http://example.ontology.com/ns#County
+ns:County rdf:type owl:Class ;
+          rdfs:label "County" .
+
+
+###  http://example.ontology.com/ns#Measurement
+ns:Measurement rdf:type owl:Class ;
+               rdfs:label "Measurement" .
+
+
+###  http://example.ontology.com/ns#State
+ns:State rdf:type owl:Class ;
+         rdfs:label "State" .
+
+
+###  http://example.ontology.com/ns#Street
+ns:Street rdf:type owl:Class ;
+          rdfs:label "Street" .
+
+
+###  http://example.ontology.com/ns#measurementDataFile
+ns:measurementDataFile rdf:type owl:Class ;
+                       rdfs:label "measurement Data File" .
+
+
+###  http://example.ontology.com/ns#measurementMetaDataFile
+ns:measurementMetaDataFile rdf:type owl:Class ;
+                           rdfs:label "measurement Meta Data File" .
+
+
+###  http://example.ontology.com/ns#measurementTimestamp
+ns:measurementTimestamp rdf:type owl:Class ;
+                        rdfs:label "measurement Timestamp" .
+
+
+###  http://example.ontology.com/ns#researchStudy
+ns:researchStudy rdf:type owl:Class ;
+                 rdfs:label "research Study" .
+
+
+###  http://www.w3.org/2001/XMLSchema#Date
+xsd:Date rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Float
+xsd:Float rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Integer
+xsd:Integer rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#String
+xsd:String rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Timestamp
+xsd:Timestamp rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+ns:authors rdfs:label "authors" .
+
+
+ns:date rdfs:label "date" .
+
+
+ns:day rdfs:label "day" .
+
+
+ns:dayofweekfriday rdfs:label "dayofweekfriday" .
+
+
+ns:dayofweekmonday rdfs:label "dayofweekmonday" .
+
+
+ns:dayofweeksaturday rdfs:label "dayofweeksaturday" .
+
+
+ns:dayofweeksunday rdfs:label "dayofweeksunday" .
+
+
+ns:dayofweekthursday rdfs:label "dayofweekthursday" .
+
+
+ns:dayofweektuesday rdfs:label "dayofweektuesday" .
+
+
+ns:dayofweekwednesday rdfs:label "dayofweekwednesday" .
+
+
+ns:filename rdfs:label "filename" .
+
+
+ns:filesize rdfs:label "filesize" .
+
+
+ns:filetype rdfs:label "filetype" .
+
+
+ns:hour rdfs:label "hour" .
+
+
+ns:minute rdfs:label "minute" .
+
+
+ns:month rdfs:label "month" .
+
+
+ns:name rdfs:label "name" .
+
+
+ns:subject rdfs:label "subject" .
+
+
+ns:timestamp rdfs:label "timestamp" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

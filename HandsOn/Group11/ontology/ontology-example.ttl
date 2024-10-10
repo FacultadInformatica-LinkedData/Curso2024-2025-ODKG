@@ -1,0 +1,71 @@
+@prefix dbp: <https://dbpedia.org/page/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix swpo: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+############################
+# Stantiation of examples  #
+############################
+
+# Instance 3730
+ns:ChargePoint_3730 a ns:ChargePoint ;
+    ns:idPunto "3730" ;
+    ns:estado "Ejecutado" ;
+    ns:numeroEquipos 1 ;
+    ns:caracteristicasEquipo "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:equipamiento ns:Charge_Point ;
+    ns:operador ns:Operador_GIC ;
+    ns:dates ns:Fechas_3730 .
+
+ns:Fechas_3730 a ns:Fechas ;
+    ns:hasPublicationDate "27/04/2022 10:43:52" ;
+    ns:Info_Fecha_Apertura "05/09/2019 22:00:00" ;
+    ns:Fecha_Edicion "02/03/2022 15:21:24" ;
+
+ns:Emplazamiento_3730 a ns:Emplazamiento ;
+    ns:infoAdicional "Vía pública" ;
+    ns:emplazamiento "Ronda de Valencia 1" .
+
+ns:Operador_GIC a ns:Operador ;
+    rdfs:label "GIC" .
+
+ns:Barrio_Arganzuela a ns:Barrio ;
+    rdfs:label "Arganzuela" .
+
+ns:Distrito_PalosDeMoguer a ns:Distrito ;
+    rdfs:label "Palos de Moguer" ;
+    ns:codigoDeDistrito "04 VP" ;
+    sc:location ns:Barrio_Arganzuela .
+
+# Instance 3731
+ns:ChargePoint_3731 a ns:ChargePoint ;
+    ns:idPunto "3731" ;
+    ns:estado "Ejecutado" ;
+    ns:numeroEquipos 1 ;
+    ns:caracteristicasEquipo "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:equipamiento ns:Charge_Point ;
+    ns:operador ns:Operador_GIC ;
+    ns:dates ns:Fechas_3731 .
+
+ns:Fechas_3731 a ns:Fechas ;
+    ns:hasPublicationDate "27/04/2022 10:43:52" ;
+    ns:Info_Fecha_Apertura "27/12/2020 23:00:00" ;
+    ns:Fecha_Edicion "02/03/2022 15:21:24" ;
+
+ns:Emplazamiento_3731 a ns:Emplazamiento ;
+    ns:infoAdicional "Vía pública" ;
+    ns:emplazamiento "Calle Cerro de la Plata 4" .
+
+ns:Barrio_Retiro a ns:Barrio ;
+    rdfs:label "Retiro" .
+
+ns:Distrito_Adelfas a ns:Distrito ;
+    rdfs:label "Adelfas" ;
+    ns:codigoDeDistrito "06 VP" ;
+    sc:location ns:Barrio_Retiro .
+
