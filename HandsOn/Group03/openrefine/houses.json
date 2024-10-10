@@ -1549,5 +1549,10 @@
       "mode": "row-based"
     },
     "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID",
+    "description": "Remove column ID"
   }
 ]
