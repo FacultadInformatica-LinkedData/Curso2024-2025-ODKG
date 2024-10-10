@@ -1,0 +1,62 @@
+{
+  "@context":{
+    "upm":"http://www.upm.es/api/catalogo",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "name": "rdfs:label",
+    "hometown": "rdfs:label",
+    "age": "rdfs:label",
+    "alma_mater": "rdfs:label",
+    "subjects": {
+      "@id":"http://www.upm.es/api/subjects",
+      "@container": "@list"
+     },
+     "teachers": {
+       "@id":"http://www.upm.es/api/teachers",
+       "@container": "@list"
+     },
+    "description": "rdfs:label"
+  },
+  "@id":"http://www.upm.es/api/students/muii/1234",
+  "@type":"upm:student",
+  
+    "name": "Elías Herrero Lázaro",
+    "hometown":"Madrid",
+    "age": 23,
+    "alma_mater": "UPM",
+    "father_name":"Pepe Herrero",
+  	"mother_name": "María Lázaro",
+    "subjects": [
+        { 
+          "@id": "http://www.upm.es/api/subjects/muii/5555",
+          "@type":"upm:subject",
+            "name": "Open data and Knowledge Graphs",
+            "teachers": [{
+              "@id":"http://www.upm.es/api/teachers/1231",
+              "name":"Óscar Corcho",
+              "email":"oc@upm.es"
+            },
+            {
+              "@id":"http://www.upm.es/api/teachers/5234",
+              "name":"Raúl García",
+              "email":"rg@upm.es"
+            },
+            {
+              "@id":"http://www.upm.es/api/teachers/8335",
+              "name":"Daniel Garijo",
+              "email":"dg@upm.es"
+            }],
+            "description": "Open Data and Knowledge Graphs explores the principles and practices of open data management, including data sharing and reuse, alongside the creation and use of knowledge graphs to model complex relationships between datasets."
+        },
+        {
+          "@id": "http://www.upm.es/api/subjects/muii/9999",
+          "@type":"upm:subject",
+            "name": "DSSR",
+            "teachers": [{
+              "@id":"http://www.upm.es/api/teachers/1111",
+              "name":"Luis Mengual",
+              "email":"lm@upm.es"
+            }],
+            "description": "Focuses on best practices and methodologies for designing and building applications that protect against security threats. Students learn about risk assessment, secure coding techniques, threat modeling, and compliance with security standards to ensure that applications are resilient against vulnerabilities and attacks."
+        }
+    ]
+}
