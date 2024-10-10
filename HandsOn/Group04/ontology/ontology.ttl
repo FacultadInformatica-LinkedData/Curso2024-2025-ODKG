@@ -4,21 +4,24 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 base: a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-ns:characteristics a owl:DatatypeProperty ;
-    rdfs:label "characteristics" ;
-    rdfs:domain ns:ChargePoint .
+ns:accessibility a owl:DatatypeProperty ;
+    rdfs:label "accessibility" ;
+    rdfs:domain ns:Parking .
+
+ns:coordinateX a owl:DatatypeProperty ;
+    rdfs:label "coordinate x" ;
+    rdfs:domain ns:Coordinates .
+
+ns:coordinateY a owl:DatatypeProperty ;
+    rdfs:label "coordinate y" ;
+    rdfs:domain ns:Coordinates .
 
 ns:dischargeDate a owl:DatatypeProperty ;
     rdfs:label "discharge date" ;
-    rdfs:domain ns:ChargePoint .
-
-ns:editionDate a owl:DatatypeProperty ;
-    rdfs:label "edition date" ;
     rdfs:domain ns:ChargePoint .
 
 ns:isPartOf a owl:ObjectProperty ;
@@ -26,43 +29,71 @@ ns:isPartOf a owl:ObjectProperty ;
     rdfs:domain ns:Neighborhood ;
     rdfs:range ns:District .
 
+ns:kilovolts a owl:DatatypeProperty ;
+    rdfs:label "kilovolts" ;
+    rdfs:domain ns:ChargePoint .
+
 ns:locatedIn a owl:ObjectProperty ;
     rdfs:label "located in" ;
     rdfs:domain ns:ChargePoint,
+        ns:Coordinates,
+        ns:Parking,
         ns:Street ;
-    rdfs:range ns:Neighborhood,
+    rdfs:range ns:Coordinates,
+        ns:Neighborhood,
         ns:Street .
 
 ns:managedBy a owl:ObjectProperty ;
     rdfs:label "managed by" ;
     rdfs:domain ns:ChargePoint ;
-    rdfs:range base:Operator .
+    rdfs:range ns:Operator .
+
+ns:numberOfACConnectors a owl:DatatypeProperty ;
+    rdfs:label "number of a c connectors" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:numberOfCCConnectors a owl:DatatypeProperty ;
+    rdfs:label "number of c c connectors" ;
+    rdfs:domain ns:ChargePoint .
 
 ns:numberOfEquipments a owl:DatatypeProperty ;
     rdfs:label "number of equipments" ;
     rdfs:domain ns:ChargePoint .
 
-ns:openingDate a owl:DatatypeProperty ;
-    rdfs:label "opening date" ;
-    rdfs:domain ns:ChargePoint ;
-    rdfs:range xsd:Date .
+ns:numberOfPublicPlaces a owl:DatatypeProperty ;
+    rdfs:label "number of public places" ;
+    rdfs:domain ns:Parking .
+
+ns:numberOfResidentPlaces a owl:DatatypeProperty ;
+    rdfs:label "number of resident places" ;
+    rdfs:domain ns:Parking .
+
+ns:numberOfTotalPlaces a owl:DatatypeProperty ;
+    rdfs:label "number of total places" ;
+    rdfs:domain ns:Parking .
 
 ns:openingHours a owl:DatatypeProperty ;
     rdfs:label "opening hours" ;
-    rdfs:domain ns:ChargePoint .
+    rdfs:domain ns:ChargePoint,
+        ns:Parking .
 
-ns:status a owl:DatatypeProperty ;
-    rdfs:label "status" ;
-    rdfs:domain ns:ChargePoint .
+ns:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain ns:District .
+
+ns:telephone a owl:DatatypeProperty ;
+    rdfs:label "telephone" ;
+    rdfs:domain ns:Parking .
 
 rdf:label a owl:DatatypeProperty ;
     rdfs:label "label" ;
-    rdfs:domain base:Operator,
-        ns:District,
+    rdfs:domain ns:District,
         ns:Neighborhood,
+        ns:Operator,
+        ns:Parking,
         ns:Street .
 
-base:Operator a owl:Class ;
+ns:Operator a owl:Class ;
     rdfs:label "Operator" .
 
 ns:District a owl:Class ;
@@ -74,6 +105,12 @@ ns:Neighborhood a owl:Class ;
 ns:Street a owl:Class ;
     rdfs:label "Street" .
 
+ns:Coordinates a owl:Class ;
+    rdfs:label "Coordinates" .
+
 ns:ChargePoint a owl:Class ;
     rdfs:label "Charge Point" .
+
+ns:Parking a owl:Class ;
+    rdfs:label "Parking" .
 
