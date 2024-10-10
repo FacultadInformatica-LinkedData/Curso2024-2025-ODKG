@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns: <https://riversidepollutionstudy.org/ontology/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix base: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.example.org/> .
+@prefix time: <https://www.w3.org/TR/owl-time/> .
+@prefix schema: <https://schema.org/> .
+
+# ScholarlyArticle (Riverside Study)
+ns:RiversideStudy rdf:type schema:ScholarlyArticle ;
+    schema:name "Hyperlocal monitoring of traffic-related air pollution to assess near-term impacts of sustainable transportation interventions"^^xsd:string ;
+    schema:author [
+        foaf:name "Cesunica Ivey"^^xsd:string ;
+        foaf:name "Alexander Nguyen"^^xsd:string ;
+        foaf:name "Ruoming Xu"^^xsd:string ;
+        foaf:name "Khanh Hao Do"^^xsd:string ;
+        foaf:name "Matthew Peng Barth"^^xsd:string
+    ] ;
+    schema:datePublished "2023-02-06"^^xsd:date .
+
+# Dataset (May Dataset)
+ns:DatasetMay rdf:type schema:Dataset ;
+    schema:name "Pollution on Riverside California"^^xsd:string ;
+    schema:about "Measurements of PO2 and NO2 on 4 of the main intersections of Riverside California, with climatic measurements"^^xsd:string ;
+    schema:hasPart ns:Observation1 ;
+    schema:hasPart ns:MyArticle .
+
+# Article (My Article)
+ns:MyArticle rdf:type schema:Article ;
+    schema:name "Study on pollution in selected California cities"^^xsd:string ;
+    schema:about "Comparison of effects of latitude on NO2 and PO2 measurements across several cities in California"^^xsd:string .
+
+# Observation 1
+ns:Observation1 rdf:type schema:Observation ;
+    schema:variableMeasured "PO2"^^xsd:string ;
+    schema:unitsText "ppm"^^xsd:string ;
+    schema:value "0.8"^^xsd:float ;
+    schema:observationDate "2023-05-01T12:00:00"^^time:dateTimeStamp ;
+    schema:observationAbout ns:Location1 .
+
+# GeoCoordinates for Location 1 (Intersection Magnolia)
+ns:Location1 rdf:type schema:GeoCoordinates ;
+    schema:latitude 33.9533^^xsd:float ;
+    schema:longitude -117.3962^^xsd:float ;
+    schema:name "Intersection Magnolia"^^xsd:string ;
+    schema:containedInPlace ns:RiversideCity .
+
+# Riverside City contained in Riverside County
+ns:RiversideCity rdf:type schema:City ;
+    schema:name "Riverside"^^xsd:string ;
+    schema:containedInPlace ns:RiversideCounty .
+
+# Riverside County contained in California
+ns:RiversideCounty rdf:type schema:AdministrativeArea ;
+    schema:name "Riverside County"^^xsd:string ;
+    schema:containedInPlace ns:CaliforniaState .
+
+# California contained in the United States
+ns:CaliforniaState rdf:type schema:State ;
+    schema:name "California"^^xsd:string ;
+    schema:containedInPlace ns:UnitedStates .
+
+# California state contained in the United States
+ns:UnitedStates rdf:type schema:Country ;
+    schema:name "United States"^^xsd:string .
