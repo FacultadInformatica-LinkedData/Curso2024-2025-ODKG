@@ -1,0 +1,5619 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ï»¿num_expediente to ¿num_expediente",
+    "oldColumnName": "ï»¿num_expediente",
+    "newColumnName": "¿num_expediente"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fecha using expression value.toDate()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNonTime": true,
+          "expression": "value",
+          "selectBlank": true,
+          "selectError": true,
+          "selectTime": true,
+          "name": "fecha",
+          "from": 1704063600000,
+          "to": 1,
+          "type": "timerange",
+          "columnName": "fecha"
+        }
+      ]
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column localizacion",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "localizacion",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. SAN JUAN DE LA CRUZ / PASEO. CASTELLANA",
+          "PASEO. CASTELLANA / PLAZA. SAN JUAN DE LA CRUZ",
+          "PLAZA. SAN JUAN DE LA CRUZ / Paseo de la Castellana"
+        ],
+        "to": "PLAZA. SAN JUAN DE LA CRUZ / PASEO. CASTELLANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / AVDA. POBLADOS",
+          "AVDA. POBLADOS / AVDA. ANDALUCIA",
+          "AVDA. ANDALUCIA / POBLADOS"
+        ],
+        "to": "AVDA. ANDALUCIA / AVDA. POBLADOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JORGE JUAN / CALL. PRINCIPE DE VERGARA",
+          "CALL. PRINCIPE DE VERGARA / CALL. JORGE JUAN",
+          "CALL. PRINCIPE DE VERGARA / JORGE JUAN"
+        ],
+        "to": "CALL. JORGE JUAN / CALL. PRINCIPE DE VERGARA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REINA VICTORIA / AVDA. PABLO IGLESIAS",
+          "AVDA. PABLO IGLESIAS / AVDA. REINA VICTORIA",
+          "AVDA. PABLO IGLESIAS / REINA VICTORIA"
+        ],
+        "to": "AVDA. REINA VICTORIA / AVDA. PABLO IGLESIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / GTA. EMILIO CASTELAR",
+          "GTA. EMILIO CASTELAR / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / GTA. EMILIO CASTELAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARTINEZ OVIOL / CALL. JOSE DEL PINO",
+          "CALL. JOSE DEL PINO / CALL. MARTINEZ OVIOL"
+        ],
+        "to": "CALL. MARTINEZ OVIOL / CALL. JOSE DEL PINO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. PRADO / PLAZA. CIBELES",
+          "PLAZA. CIBELES / PASEO. PRADO"
+        ],
+        "to": "PASEO. PRADO / PLAZA. CIBELES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. DELICIAS / CALL. TARRAGONA",
+          "CALL. TARRAGONA / PASEO. DELICIAS"
+        ],
+        "to": "PASEO. DELICIAS / CALL. TARRAGONA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CANILLEJAS A VICALVARO / CALL. RUSIA",
+          "CALL. RUSIA / AVDA. CANILLEJAS A VICALVARO"
+        ],
+        "to": "AVDA. CANILLEJAS A VICALVARO / CALL. RUSIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. NAVARROS / CALL. ALISEDA",
+          "CALL. ALISEDA / PLAZA. NAVARROS"
+        ],
+        "to": "PLAZA. NAVARROS / CALL. ALISEDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SIERRA DE CONTRAVIESA / AVDA. ENTREVIAS",
+          "AVDA. ENTREVIAS / CALL. SIERRA DE CONTRAVIESA"
+        ],
+        "to": "CALL. SIERRA DE CONTRAVIESA / AVDA. ENTREVIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EMBAJADORES / CTRA. VILLAVERDE A VALLECAS",
+          "CTRA. VILLAVERDE A VALLECAS / CALL. EMBAJADORES"
+        ],
+        "to": "CALL. EMBAJADORES / CTRA. VILLAVERDE A VALLECAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. SAN VICENTE / PASEO. FLORIDA",
+          "PASEO. FLORIDA / GTA. SAN VICENTE"
+        ],
+        "to": "GTA. SAN VICENTE / PASEO. FLORIDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN CLAUDIO / CALL. ANDALUCES",
+          "CALL. ANDALUCES / CALL. SAN CLAUDIO"
+        ],
+        "to": "CALL. SAN CLAUDIO / CALL. ANDALUCES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. JOSE VILLENA",
+          "CALL. JOSE VILLENA / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. JOSE VILLENA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. ALGODRE",
+          "CALL. ALGODRE / AVDA. NUESTRA SEÃ‘ORA DE VALVANERA"
+        ],
+        "to": "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. ALGODRE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ESTEFANITA / CALL. ZAFIRO",
+          "CALL. ZAFIRO / CALL. ESTEFANITA"
+        ],
+        "to": "CALL. ESTEFANITA / CALL. ZAFIRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. RECOLETOS, 1",
+          "PASEO RECOLETOS 1"
+        ],
+        "to": "PASEO. RECOLETOS, 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AQUITANIA / AVDA. CANILLEJAS A VICALVARO",
+          "AVDA. CANILLEJAS A VICALVARO / CALL. AQUITANIA"
+        ],
+        "to": "CALL. AQUITANIA / AVDA. CANILLEJAS A VICALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AZUCENAS / CALL. GENCIANA",
+          "CALL. GENCIANA / CALL. AZUCENAS"
+        ],
+        "to": "CALL. AZUCENAS / CALL. GENCIANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PABLO IGLESIAS / CALL. NUMANCIA",
+          "CALL. NUMANCIA / AVDA. PABLO IGLESIAS"
+        ],
+        "to": "AVDA. PABLO IGLESIAS / CALL. NUMANCIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARIA DE MOLINA / CALL. PRINCIPE DE VERGARA",
+          "CALL. PRINCIPE DE VERGARA / CALL. MARIA DE MOLINA"
+        ],
+        "to": "CALL. MARIA DE MOLINA / CALL. PRINCIPE DE VERGARA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. ELIPTICA / AUTOV. A-42",
+          "AUTOV. A-42 / PLAZA. ELIPTICA"
+        ],
+        "to": "PLAZA. ELIPTICA / AUTOV. A-42"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. IMAGEN / CALL. PUERTO DE BALBARAN",
+          "CALL. PUERTO DE BALBARAN / CALL. IMAGEN"
+        ],
+        "to": "CALL. IMAGEN / CALL. PUERTO DE BALBARAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SINESIO DELGADO / CALL. CAPITAN BLANCO ARGIBAY",
+          "CALL. CAPITAN BLANCO ARGIBAY / CALL. SINESIO DELGADO"
+        ],
+        "to": "CALL. SINESIO DELGADO / CALL. CAPITAN BLANCO ARGIBAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL DIAZ PORLIER / CALL. PADILLA",
+          "CALL. PADILLA / CALL. GENERAL DIAZ PORLIER"
+        ],
+        "to": "CALL. GENERAL DIAZ PORLIER / CALL. PADILLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. EXTREMADURA / CALL. LOS YEBENES",
+          "CALL. LOS YEBENES / PASEO. EXTREMADURA"
+        ],
+        "to": "PASEO. EXTREMADURA / CALL. LOS YEBENES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MAYORAZGO DE DUARTE / CALL. SUERTES DE LA VILLA",
+          "CALL. SUERTES DE LA VILLA / CALL. MAYORAZGO DE DUARTE"
+        ],
+        "to": "CALL. MAYORAZGO DE DUARTE / CALL. SUERTES DE LA VILLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DAROCA / CALL. JOSE MARIA FERNANDEZ LANSEROS",
+          "CALL. JOSE MARIA FERNANDEZ LANSEROS / AVDA. DAROCA"
+        ],
+        "to": "AVDA. DAROCA / CALL. JOSE MARIA FERNANDEZ LANSEROS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MEMORIA / AVDA. REYES CATOLICOS",
+          "AVDA. REYES CATOLICOS / AVDA. MEMORIA"
+        ],
+        "to": "AVDA. MEMORIA / AVDA. REYES CATOLICOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FRANCISCO DEL PINO / CALL. SANTA PETRONILA",
+          "CALL. SANTA PETRONILA / CALL. FRANCISCO DEL PINO"
+        ],
+        "to": "CALL. FRANCISCO DEL PINO / CALL. SANTA PETRONILA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. AMERICA / CALL. CARTAGENA",
+          "CALL. CARTAGENA / AVDA. AMERICA"
+        ],
+        "to": "AVDA. AMERICA / CALL. CARTAGENA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VILLACARLOS / CALL. VILLARDONDIEGO",
+          "CALL. VILLARDONDIEGO / CALL. VILLACARLOS"
+        ],
+        "to": "CALL. VILLACARLOS / CALL. VILLARDONDIEGO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ABASCAL / CALL. SANTA ENGRACIA",
+          "CALL. SANTA ENGRACIA / CALL. JOSE ABASCAL"
+        ],
+        "to": "CALL. JOSE ABASCAL / CALL. SANTA ENGRACIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GRAN VIA DE HORTALEZA / GTA. LUIS ROSALES",
+          "GTA. LUIS ROSALES / AVDA. GRAN VIA DE HORTALEZA"
+        ],
+        "to": "AVDA. GRAN VIA DE HORTALEZA / GTA. LUIS ROSALES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALONSO CANO / CALL. CRISTOBAL BORDIU",
+          "CALL. CRISTOBAL BORDIU / CALL. ALONSO CANO"
+        ],
+        "to": "CALL. ALONSO CANO / CALL. CRISTOBAL BORDIU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERNANDO EL SANTO / CALL. MONTE ESQUINZA",
+          "CALL. MONTE ESQUINZA / CALL. FERNANDO EL SANTO"
+        ],
+        "to": "CALL. FERNANDO EL SANTO / CALL. MONTE ESQUINZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PODEROSAS / CALL. ZODIACO",
+          "CALL. ZODIACO / CALL. PODEROSAS"
+        ],
+        "to": "CALL. PODEROSAS / CALL. ZODIACO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PICO DE LOS ARTILLEROS / PLAZA. CORREGIDOR CONDE DE MACEDA Y TABOADA",
+          "PLAZA. CORREGIDOR CONDE DE MACEDA Y TABOADA / CALL. PICO DE LOS ARTILLEROS"
+        ],
+        "to": "CALL. PICO DE LOS ARTILLEROS / PLAZA. CORREGIDOR CONDE DE MACEDA Y TABOADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CRISTO REY / CALL. ISAAC PERAL",
+          "CALL. ISAAC PERAL / PLAZA. CRISTO REY"
+        ],
+        "to": "PLAZA. CRISTO REY / CALL. ISAAC PERAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. PIQUER",
+          "CALL. PIQUER / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. PIQUER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BENJAMIN PALENCIA / AUTOV. A-3",
+          "AUTOV. A-3 / CALL. BENJAMIN PALENCIA"
+        ],
+        "to": "CALL. BENJAMIN PALENCIA / AUTOV. A-3"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANOETA / CALL. VIRGEN DE LOS DESAMPARADOS",
+          "CALL. VIRGEN DE LOS DESAMPARADOS / CALL. ANOETA"
+        ],
+        "to": "CALL. ANOETA / CALL. VIRGEN DE LOS DESAMPARADOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. JOSEFA VALCARCEL",
+          "CALL. JOSEFA VALCARCEL / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. JOSEFA VALCARCEL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. RAFAEL ALBERTI / CALL. LUIS BUÃ‘UEL",
+          "CALL. LUIS BUÃ‘UEL / AVDA. RAFAEL ALBERTI"
+        ],
+        "to": "AVDA. RAFAEL ALBERTI / CALL. LUIS BUÃ‘UEL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / CALL. PINOS ALTA",
+          "CALL. PINOS ALTA / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / CALL. PINOS ALTA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PESETA / CALL. VIA LUSITANA",
+          "CALL. VIA LUSITANA / AVDA. PESETA"
+        ],
+        "to": "AVDA. PESETA / CALL. VIA LUSITANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANGEL SANZ BRIZ / CALL. ALHAMBRA",
+          "CALL. ALHAMBRA / AVDA. ANGEL SANZ BRIZ"
+        ],
+        "to": "AVDA. ANGEL SANZ BRIZ / CALL. ALHAMBRA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GRAN VIA DE VILLAVERDE / CALL. SAN JENARO",
+          "CALL. SAN JENARO / AVDA. GRAN VIA DE VILLAVERDE"
+        ],
+        "to": "AVDA. GRAN VIA DE VILLAVERDE / CALL. SAN JENARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. MELILOTO",
+          "CALL. MELILOTO / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. MELILOTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DIEGO DE LEON / CALL. PRINCIPE DE VERGARA",
+          "CALL. PRINCIPE DE VERGARA / CALL. DIEGO DE LEON"
+        ],
+        "to": "CALL. DIEGO DE LEON / CALL. PRINCIPE DE VERGARA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EVARISTO SAN MIGUEL / CALL. JUAN ALVAREZ MENDIZABAL",
+          "CALL. JUAN ALVAREZ MENDIZABAL / CALL. EVARISTO SAN MIGUEL"
+        ],
+        "to": "CALL. EVARISTO SAN MIGUEL / CALL. JUAN ALVAREZ MENDIZABAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ACANTO / CALL. RETAMA",
+          "CALL. RETAMA / CALL. ACANTO"
+        ],
+        "to": "CALL. ACANTO / CALL. RETAMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. ALSACIA / CALL. AQUITANIA",
+          "CALL. AQUITANIA / PLAZA. ALSACIA"
+        ],
+        "to": "PLAZA. ALSACIA / CALL. AQUITANIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FELIPE IV / PASEO. PRADO",
+          "PASEO. PRADO / CALL. FELIPE IV"
+        ],
+        "to": "CALL. FELIPE IV / PASEO. PRADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HALCON / CALL. OCA",
+          "CALL. OCA / CALL. HALCON"
+        ],
+        "to": "CALL. HALCON / CALL. OCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALBERTO AGUILERA / CALL. BLASCO DE GARAY",
+          "CALL. BLASCO DE GARAY / CALL. ALBERTO AGUILERA"
+        ],
+        "to": "CALL. ALBERTO AGUILERA / CALL. BLASCO DE GARAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MAYORAZGO / CTRA. VILLAVERDE A VALLECAS",
+          "CTRA. VILLAVERDE A VALLECAS / AVDA. MAYORAZGO"
+        ],
+        "to": "AVDA. MAYORAZGO / CTRA. VILLAVERDE A VALLECAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. RAFAELA YBARRA / CALL. MARCELO USERA",
+          "CALL. MARCELO USERA / AVDA. RAFAELA YBARRA"
+        ],
+        "to": "AVDA. RAFAELA YBARRA / CALL. MARCELO USERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HIGUERAS / CALL. PALMIPEDO",
+          "CALL. PALMIPEDO / CALL. HIGUERAS"
+        ],
+        "to": "CALL. HIGUERAS / CALL. PALMIPEDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CONDE DE PEÃ‘ALVER / CALL. JUAN BRAVO",
+          "CALL. JUAN BRAVO / CALL. CONDE DE PEÃ‘ALVER"
+        ],
+        "to": "CALL. CONDE DE PEÃ‘ALVER / CALL. JUAN BRAVO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. REYES AIZQUIBEL / CALL. CAPITAN BLANCO ARGIBAY",
+          "CALL. CAPITAN BLANCO ARGIBAY / CALL. REYES AIZQUIBEL"
+        ],
+        "to": "CALL. REYES AIZQUIBEL / CALL. CAPITAN BLANCO ARGIBAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARIEL / CALL. MENDEZ ALVARO",
+          "CALL. MENDEZ ALVARO / CALL. ARIEL"
+        ],
+        "to": "CALL. ARIEL / CALL. MENDEZ ALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ORTEGA Y GASSET / CALL. CONDE DE PEÃ‘ALVER",
+          "CALL. CONDE DE PEÃ‘ALVER / CALL. JOSE ORTEGA Y GASSET"
+        ],
+        "to": "CALL. JOSE ORTEGA Y GASSET / CALL. CONDE DE PEÃ‘ALVER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. EMETERIO CASTAÃ‘OS",
+          "CALL. EMETERIO CASTAÃ‘OS / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. EMETERIO CASTAÃ‘OS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL LOPEZ POZAS / CALL. MATEO INURRIA",
+          "CALL. MATEO INURRIA / CALL. GENERAL LOPEZ POZAS"
+        ],
+        "to": "CALL. GENERAL LOPEZ POZAS / CALL. MATEO INURRIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. RAMON Y CAJAL / CALL. PADRE CLARET",
+          "CALL. PADRE CLARET / AVDA. RAMON Y CAJAL"
+        ],
+        "to": "AVDA. RAMON Y CAJAL / CALL. PADRE CLARET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CUZCO / AVDA. ALBERTO ALCOCER",
+          "AVDA. ALBERTO ALCOCER / PLAZA. CUZCO"
+        ],
+        "to": "PLAZA. CUZCO / AVDA. ALBERTO ALCOCER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. ERICA",
+          "CALL. ERICA / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. ERICA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LUIS ESTEBAN / CALL. MAGNOLIAS",
+          "CALL. MAGNOLIAS / CALL. LUIS ESTEBAN"
+        ],
+        "to": "CALL. LUIS ESTEBAN / CALL. MAGNOLIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARIA DE MOLINA / PASEO. CASTELLANA",
+          "PASEO. CASTELLANA / CALL. MARIA DE MOLINA"
+        ],
+        "to": "CALL. MARIA DE MOLINA / PASEO. CASTELLANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. ARTURO SORIA",
+          "CALL. ARTURO SORIA / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. ARTURO SORIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REAL DE PINTO / CALL. SAN NORBERTO",
+          "CALL. SAN NORBERTO / AVDA. REAL DE PINTO"
+        ],
+        "to": "AVDA. REAL DE PINTO / CALL. SAN NORBERTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAPITAN BLANCO ARGIBAY / CALL. CANTUESO",
+          "CALL. CANTUESO / CALL. CAPITAN BLANCO ARGIBAY"
+        ],
+        "to": "CALL. CAPITAN BLANCO ARGIBAY / CALL. CANTUESO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CRISTO DE LA VEGA / CALL. CRISTO DE LEPANTO",
+          "CALL. CRISTO DE LEPANTO / CALL. CRISTO DE LA VEGA"
+        ],
+        "to": "CALL. CRISTO DE LA VEGA / CALL. CRISTO DE LEPANTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. SUR DEL AEROPUERTO DE BARAJAS / CALL. TRESPADERNE",
+          "CALL. TRESPADERNE / AVDA. SUR DEL AEROPUERTO DE BARAJAS"
+        ],
+        "to": "AVDA. SUR DEL AEROPUERTO DE BARAJAS / CALL. TRESPADERNE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALFONSO XIII / AVDA. RAMON Y CAJAL",
+          "AVDA. RAMON Y CAJAL / AVDA. ALFONSO XIII"
+        ],
+        "to": "AVDA. ALFONSO XIII / AVDA. RAMON Y CAJAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. CUATRO CAMINOS / AVDA. REINA VICTORIA",
+          "AVDA. REINA VICTORIA / GTA. CUATRO CAMINOS"
+        ],
+        "to": "GTA. CUATRO CAMINOS / AVDA. REINA VICTORIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. CARDENAL BELLUGA",
+          "CALL. CARDENAL BELLUGA / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. CARDENAL BELLUGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / PLAZA. CATALUÃ‘A",
+          "PLAZA. CATALUÃ‘A / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / PLAZA. CATALUÃ‘A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / CALL. ASTROS",
+          "CALL. ASTROS / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / CALL. ASTROS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAMINO DE LOS VINATEROS / CALL. ARROYO DE LA MEDIA LEGUA",
+          "CALL. ARROYO DE LA MEDIA LEGUA / CALL. CAMINO DE LOS VINATEROS"
+        ],
+        "to": "CALL. CAMINO DE LOS VINATEROS / CALL. ARROYO DE LA MEDIA LEGUA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-23 / AUTOV. M-30",
+          "AUTOV. M-30 / AUTOV. M-23"
+        ],
+        "to": "AUTOV. M-23 / AUTOV. M-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / CALL. O'DONNELL",
+          "CALL. O'DONNELL / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / CALL. O'DONNELL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FORESTA / CALL. QUINTANAPALLA",
+          "CALL. QUINTANAPALLA / CALL. FORESTA"
+        ],
+        "to": "CALL. FORESTA / CALL. QUINTANAPALLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. JACOMETREZO",
+          "CALL. JACOMETREZO / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. JACOMETREZO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PAYASO FOFO / CALL. ARROYO DEL OLIVAR",
+          "CALL. ARROYO DEL OLIVAR / CALL. PAYASO FOFO"
+        ],
+        "to": "CALL. PAYASO FOFO / CALL. ARROYO DEL OLIVAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. HERNANDEZ DE TEJADA",
+          "CALL. HERNANDEZ DE TEJADA / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. HERNANDEZ DE TEJADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIA LUSITANA / CALL. AGUACATE",
+          "CALL. AGUACATE / CALL. VIA LUSITANA"
+        ],
+        "to": "CALL. VIA LUSITANA / CALL. AGUACATE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. JAIME CAMPMANY / AVDA. GUINDALERA",
+          "AVDA. GUINDALERA / GTA. JAIME CAMPMANY"
+        ],
+        "to": "GTA. JAIME CAMPMANY / AVDA. GUINDALERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SANTIAGO DE COMPOSTELA / CALL. ISLA DE AROSA",
+          "CALL. ISLA DE AROSA / CALL. SANTIAGO DE COMPOSTELA"
+        ],
+        "to": "CALL. SANTIAGO DE COMPOSTELA / CALL. ISLA DE AROSA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DEMOCRACIA / AVDA. COMUNIDADES",
+          "AVDA. COMUNIDADES / AVDA. DEMOCRACIA"
+        ],
+        "to": "AVDA. DEMOCRACIA / AVDA. COMUNIDADES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CARDENAL CISNEROS / AVDA. JUAN DE HERRERA",
+          "AVDA. JUAN DE HERRERA / PLAZA. CARDENAL CISNEROS"
+        ],
+        "to": "PLAZA. CARDENAL CISNEROS / AVDA. JUAN DE HERRERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. EMPERADOR CARLOS V / CALL. ATOCHA",
+          "CALL. ATOCHA / PLAZA. EMPERADOR CARLOS V"
+        ],
+        "to": "PLAZA. EMPERADOR CARLOS V / CALL. ATOCHA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. ABADA",
+          "CALL. ABADA / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. ABADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LOS YEBENES / CALL. VALMOJADO",
+          "CALL. VALMOJADO / CALL. LOS YEBENES"
+        ],
+        "to": "CALL. LOS YEBENES / CALL. VALMOJADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRETON DE LOS HERREROS / CALL. MODESTO LAFUENTE",
+          "CALL. MODESTO LAFUENTE / CALL. BRETON DE LOS HERREROS"
+        ],
+        "to": "CALL. BRETON DE LOS HERREROS / CALL. MODESTO LAFUENTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ABTAO / AVDA. MEDITERRANEO",
+          "AVDA. MEDITERRANEO / CALL. ABTAO"
+        ],
+        "to": "CALL. ABTAO / AVDA. MEDITERRANEO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BURGOS / AVDA. SAN LUIS",
+          "AVDA. SAN LUIS / AVDA. BURGOS"
+        ],
+        "to": "AVDA. BURGOS / AVDA. SAN LUIS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. SAN VICENTE / PASEO. BAJO DE LA VIRGEN DEL PUERTO",
+          "PASEO. BAJO DE LA VIRGEN DEL PUERTO / GTA. SAN VICENTE"
+        ],
+        "to": "GTA. SAN VICENTE / PASEO. BAJO DE LA VIRGEN DEL PUERTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAPITAN BLANCO ARGIBAY / PASEO. DIRECCION",
+          "PASEO. DIRECCION / CALL. CAPITAN BLANCO ARGIBAY"
+        ],
+        "to": "CALL. CAPITAN BLANCO ARGIBAY / PASEO. DIRECCION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. RECOLETOS / CALL. BARBARA DE BRAGANZA",
+          "CALL. BARBARA DE BRAGANZA / PASEO. RECOLETOS"
+        ],
+        "to": "PASEO. RECOLETOS / CALL. BARBARA DE BRAGANZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. ACACIAS / GTA. EMBAJADORES",
+          "GTA. EMBAJADORES / PASEO. ACACIAS"
+        ],
+        "to": "PASEO. ACACIAS / GTA. EMBAJADORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. OSA MAYOR / CALL. PICO OCEJON",
+          "CALL. PICO OCEJON / AVDA. OSA MAYOR"
+        ],
+        "to": "AVDA. OSA MAYOR / CALL. PICO OCEJON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBUFERA / AVDA. RAFAEL ALBERTI",
+          "AVDA. RAFAEL ALBERTI / AVDA. ALBUFERA"
+        ],
+        "to": "AVDA. ALBUFERA / AVDA. RAFAEL ALBERTI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LEIZARAN / CALL. SIL",
+          "CALL. SIL / CALL. LEIZARAN"
+        ],
+        "to": "CALL. LEIZARAN / CALL. SIL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ORENSE / CALL. REINA MERCEDES",
+          "CALL. REINA MERCEDES / CALL. ORENSE"
+        ],
+        "to": "CALL. ORENSE / CALL. REINA MERCEDES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MONASTERIO DE EL PAULAR / CALL. MONASTERIOS DE SUSO Y YUSO",
+          "CALL. MONASTERIOS DE SUSO Y YUSO / CALL. MONASTERIO DE EL PAULAR"
+        ],
+        "to": "CALL. MONASTERIO DE EL PAULAR / CALL. MONASTERIOS DE SUSO Y YUSO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REAL DE PINTO / CALL. DOMINGO PARRAGA",
+          "CALL. DOMINGO PARRAGA / AVDA. REAL DE PINTO"
+        ],
+        "to": "AVDA. REAL DE PINTO / CALL. DOMINGO PARRAGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CUSTA. SAN VICENTE / CALL. BAILEN",
+          "CALL. BAILEN / CUSTA. SAN VICENTE"
+        ],
+        "to": "CUSTA. SAN VICENTE / CALL. BAILEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TRVA. ANTONIO NEBRIJA / CALL. OBISPO TREJO",
+          "CALL. OBISPO TREJO / TRVA. ANTONIO NEBRIJA"
+        ],
+        "to": "TRVA. ANTONIO NEBRIJA / CALL. OBISPO TREJO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FRANCISCO RIOJA / CALL. LUIS RUIZ",
+          "CALL. LUIS RUIZ / CALL. FRANCISCO RIOJA"
+        ],
+        "to": "CALL. FRANCISCO RIOJA / CALL. LUIS RUIZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MIGUEL ANGEL / PASEO. GENERAL MARTINEZ CAMPOS",
+          "PASEO. GENERAL MARTINEZ CAMPOS / CALL. MIGUEL ANGEL"
+        ],
+        "to": "CALL. MIGUEL ANGEL / PASEO. GENERAL MARTINEZ CAMPOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GRAN VIA DE HORTALEZA / GTA. FRANCISCO FERNANDEZ ORDOÃ‘EZ",
+          "GTA. FRANCISCO FERNANDEZ ORDOÃ‘EZ / AVDA. GRAN VIA DE HORTALEZA"
+        ],
+        "to": "AVDA. GRAN VIA DE HORTALEZA / GTA. FRANCISCO FERNANDEZ ORDOÃ‘EZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MENDEZ ALVARO / CALL. TITAN",
+          "CALL. TITAN / CALL. MENDEZ ALVARO"
+        ],
+        "to": "CALL. MENDEZ ALVARO / CALL. TITAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DOCTOR FEDERICO RUBIO Y GALI / CALL. ARANJUEZ",
+          "CALL. ARANJUEZ / AVDA. DOCTOR FEDERICO RUBIO Y GALI"
+        ],
+        "to": "AVDA. DOCTOR FEDERICO RUBIO Y GALI / CALL. ARANJUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LUCHANA / CALL. TRAFALGAR",
+          "CALL. TRAFALGAR / CALL. LUCHANA"
+        ],
+        "to": "CALL. LUCHANA / CALL. TRAFALGAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. ALCALA",
+          "CALL. ALCALA / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. ALCALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. SANTA MARIA DE LA CABEZA / PASEO. SANTA MARIA DE LA CABEZA",
+          "PASEO. SANTA MARIA DE LA CABEZA / GTA. SANTA MARIA DE LA CABEZA"
+        ],
+        "to": "GTA. SANTA MARIA DE LA CABEZA / PASEO. SANTA MARIA DE LA CABEZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. REAL DE ARGANDA / CALL. POZA DE LA SAL",
+          "CALL. POZA DE LA SAL / CALL. REAL DE ARGANDA"
+        ],
+        "to": "CALL. REAL DE ARGANDA / CALL. POZA DE LA SAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-11 / AUTOV. M-30",
+          "AUTOV. M-30 / AUTOV. M-11"
+        ],
+        "to": "AUTOV. M-11 / AUTOV. M-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / CALL. LOPEZ DE HOYOS",
+          "CALL. LOPEZ DE HOYOS / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / CALL. LOPEZ DE HOYOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. PUENTE DE SEGOVIA / CALL. SAAVEDRA FAJARDO",
+          "CALL. SAAVEDRA FAJARDO / GTA. PUENTE DE SEGOVIA"
+        ],
+        "to": "GTA. PUENTE DE SEGOVIA / CALL. SAAVEDRA FAJARDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CONDE DEL VALLE DE SUCHIL / CALL. ARAPILES",
+          "CALL. ARAPILES / PLAZA. CONDE DEL VALLE DE SUCHIL"
+        ],
+        "to": "PLAZA. CONDE DEL VALLE DE SUCHIL / CALL. ARAPILES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / CALL. AVILA",
+          "CALL. AVILA / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / CALL. AVILA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PEDERNAL / CALL. VILLABLANCA",
+          "CALL. VILLABLANCA / CALL. PEDERNAL"
+        ],
+        "to": "CALL. PEDERNAL / CALL. VILLABLANCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BLAS DE LEZO / AUTOV. M-45",
+          "AUTOV. M-45 / AVDA. BLAS DE LEZO"
+        ],
+        "to": "AVDA. BLAS DE LEZO / AUTOV. M-45"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ABASCAL / CALL. PONZANO",
+          "CALL. PONZANO / CALL. JOSE ABASCAL"
+        ],
+        "to": "CALL. JOSE ABASCAL / CALL. PONZANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. RECOLETOS / CALL. ARMADA ESPAÃ‘OLA",
+          "CALL. ARMADA ESPAÃ‘OLA / PASEO. RECOLETOS"
+        ],
+        "to": "PASEO. RECOLETOS / CALL. ARMADA ESPAÃ‘OLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PADRE PIQUER / CALL. TEMBLEQUE",
+          "CALL. TEMBLEQUE / AVDA. PADRE PIQUER"
+        ],
+        "to": "AVDA. PADRE PIQUER / CALL. TEMBLEQUE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MENENDEZ PELAYO / CALL. ALCALDE SAINZ DE BARANDA",
+          "CALL. ALCALDE SAINZ DE BARANDA / AVDA. MENENDEZ PELAYO"
+        ],
+        "to": "AVDA. MENENDEZ PELAYO / CALL. ALCALDE SAINZ DE BARANDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PORTUGAL / AUTOV. A-5",
+          "AUTOV. A-5 / AVDA PORTUGAL"
+        ],
+        "to": "AVDA. PORTUGAL / AUTOV. A-5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BASCUÃ‘UELOS / CALL. VALLE DE TOBALINA",
+          "CALL. VALLE DE TOBALINA / CALL. BASCUÃ‘UELOS"
+        ],
+        "to": "CALL. BASCUÃ‘UELOS / CALL. VALLE DE TOBALINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ZAIDA / CALL. FRAGATA",
+          "CALL. FRAGATA / CALL. ZAIDA"
+        ],
+        "to": "CALL. ZAIDA / CALL. FRAGATA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DIEGO DE LEON / CALL. SERRANO",
+          "CALL. SERRANO / CALL. DIEGO DE LEON"
+        ],
+        "to": "CALL. DIEGO DE LEON / CALL. SERRANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. SANTA MARIA DE LA CABEZA / CALL. EMBAJADORES",
+          "CALL. EMBAJADORES / GTA. SANTA MARIA DE LA CABEZA"
+        ],
+        "to": "GTA. SANTA MARIA DE LA CABEZA / CALL. EMBAJADORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. TUTOR / CALL. LUISA FERNANDA",
+          "CALL. LUISA FERNANDA / CALL. TUTOR"
+        ],
+        "to": "CALL. TUTOR / CALL. LUISA FERNANDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. GRECIA / AVDA. NIZA",
+          "AVDA. NIZA / PLAZA. GRECIA"
+        ],
+        "to": "PLAZA. GRECIA / AVDA. NIZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EL BOSCO / CALL. SIERRA TOLEDANA",
+          "CALL. SIERRA TOLEDANA / CALL. EL BOSCO"
+        ],
+        "to": "CALL. EL BOSCO / CALL. SIERRA TOLEDANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MEMORIA / PLAZA. CARDENAL CISNEROS",
+          "PLAZA. CARDENAL CISNEROS / AVDA. MEMORIA"
+        ],
+        "to": "AVDA. MEMORIA / PLAZA. CARDENAL CISNEROS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. RAIMUNDO FERNANDEZ VILLAVERDE / CALL. EDGAR NEVILLE",
+          "CALL. EDGAR NEVILLE / CALL. RAIMUNDO FERNANDEZ VILLAVERDE"
+        ],
+        "to": "CALL. RAIMUNDO FERNANDEZ VILLAVERDE / CALL. EDGAR NEVILLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANTRACITA / CALL. EMBAJADORES",
+          "CALL. EMBAJADORES / CALL. ANTRACITA"
+        ],
+        "to": "CALL. ANTRACITA / CALL. EMBAJADORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HONDURAS / CALL. VICTOR ANDRES BELAUNDE",
+          "CALL. VICTOR ANDRES BELAUNDE / CALL. HONDURAS"
+        ],
+        "to": "CALL. HONDURAS / CALL. VICTOR ANDRES BELAUNDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN EUSTAQUIO / CALL. SAN CESAREO",
+          "CALL. SAN CESAREO / CALL. SAN EUSTAQUIO"
+        ],
+        "to": "CALL. SAN EUSTAQUIO / CALL. SAN CESAREO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / GTA. MALAGA",
+          "GTA. MALAGA / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / GTA. MALAGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARABIAS / CTRA. BOADILLA DEL MONTE",
+          "CTRA. BOADILLA DEL MONTE / CALL. CARABIAS"
+        ],
+        "to": "CALL. CARABIAS / CTRA. BOADILLA DEL MONTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CANILLEJAS A VICALVARO / CALL. VERSALLES",
+          "CALL. VERSALLES / AVDA. CANILLEJAS A VICALVARO"
+        ],
+        "to": "AVDA. CANILLEJAS A VICALVARO / CALL. VERSALLES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. PRADO / PLAZA. EMPERADOR CARLOS V",
+          "PLAZA. EMPERADOR CARLOS V / PASEO. PRADO"
+        ],
+        "to": "PASEO. PRADO / PLAZA. EMPERADOR CARLOS V"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CEA BERMUDEZ / CALL. GAZTAMBIDE",
+          "CALL. GAZTAMBIDE / CALL. CEA BERMUDEZ"
+        ],
+        "to": "CALL. CEA BERMUDEZ / CALL. GAZTAMBIDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARIA DE MOLINA / CALL. LOPEZ DE HOYOS",
+          "CALL. LOPEZ DE HOYOS / CALL. MARIA DE MOLINA"
+        ],
+        "to": "CALL. MARIA DE MOLINA / CALL. LOPEZ DE HOYOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CAMOENS Y VALERO / PASEO. RUPERTO CHAPI",
+          "PASEO. RUPERTO CHAPI / PASEO. CAMOENS Y VALERO"
+        ],
+        "to": "PASEO. CAMOENS Y VALERO / PASEO. RUPERTO CHAPI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INTER. PLAZA ELIPTICA / CALL. VIA LUSITANA",
+          "CALL. VIA LUSITANA / INTER. PLAZA ELIPTICA"
+        ],
+        "to": "INTER. PLAZA ELIPTICA / CALL. VIA LUSITANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CIDRO / CALL. DUQUESA DE TAMAMES",
+          "CALL. DUQUESA DE TAMAMES / CALL. CIDRO"
+        ],
+        "to": "CALL. CIDRO / CALL. DUQUESA DE TAMAMES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GOYA / CALL. SERRANO",
+          "CALL. SERRANO / CALL. GOYA"
+        ],
+        "to": "CALL. GOYA / CALL. SERRANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. VIRGEN DEL PUERTO / CALL. SEGOVIA",
+          "CALL. SEGOVIA / PASEO. VIRGEN DEL PUERTO"
+        ],
+        "to": "PASEO. VIRGEN DEL PUERTO / CALL. SEGOVIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VILLAMANIN / PASEO. EXTREMADURA",
+          "PASEO. EXTREMADURA / CALL. VILLAMANIN"
+        ],
+        "to": "CALL. VILLAMANIN / PASEO. EXTREMADURA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MAR ADRIATICO / CALL. AYACUCHO",
+          "CALL. AYACUCHO / CALL. MAR ADRIATICO"
+        ],
+        "to": "CALL. MAR ADRIATICO / CALL. AYACUCHO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / CALL. FRANCISCO SILVELA",
+          "CALL. FRANCISCO SILVELA / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / CALL. FRANCISCO SILVELA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOAQUIN TURINA / AVDA. AVIACION",
+          "AVDA. AVIACION / CALL. JOAQUIN TURINA"
+        ],
+        "to": "CALL. JOAQUIN TURINA / AVDA. AVIACION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PIRRA / CALL. ARACNE",
+          "CALL. ARACNE / CALL. PIRRA"
+        ],
+        "to": "CALL. PIRRA / CALL. ARACNE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. MANUEL BECERRA / CALL. ALCALA",
+          "CALL. ALCALA / PLAZA. MANUEL BECERRA"
+        ],
+        "to": "PLAZA. MANUEL BECERRA / CALL. ALCALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BAVIERA / AVDA. BRUSELAS",
+          "AVDA. BRUSELAS / AVDA. BAVIERA"
+        ],
+        "to": "AVDA. BAVIERA / AVDA. BRUSELAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GUADALETE / CALL. ANTONIO DE LEYVA",
+          "CALL. ANTONIO DE LEYVA / CALL. GUADALETE"
+        ],
+        "to": "CALL. GUADALETE / CALL. ANTONIO DE LEYVA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARRANZA / CALL. SAN ANDRES",
+          "CALL. SAN ANDRES / CALL. CARRANZA"
+        ],
+        "to": "CALL. CARRANZA / CALL. SAN ANDRES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CRISTO DE LA VEGA / CALL. DOCTOR TOLOSA LATOUR",
+          "CALL. DOCTOR TOLOSA LATOUR / CALL. CRISTO DE LA VEGA"
+        ],
+        "to": "CALL. CRISTO DE LA VEGA / CALL. DOCTOR TOLOSA LATOUR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALLENDE / CALL. GORDOLOBO",
+          "CALL. GORDOLOBO / CALL. ALLENDE"
+        ],
+        "to": "CALL. ALLENDE / CALL. GORDOLOBO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIA LUSITANA / CALL. FARO",
+          "CALL. FARO / CALL. VIA LUSITANA"
+        ],
+        "to": "CALL. VIA LUSITANA / CALL. FARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ENTREVIAS / CALL. CARDEÃ‘OSA",
+          "CALL. CARDEÃ‘OSA / AVDA. ENTREVIAS"
+        ],
+        "to": "AVDA. ENTREVIAS / CALL. CARDEÃ‘OSA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CALESAS / CALL. MIRASIERRA",
+          "CALL. MIRASIERRA / CALL. CALESAS"
+        ],
+        "to": "CALL. CALESAS / CALL. MIRASIERRA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JUAN MONTALVO / AVDA. PABLO IGLESIAS",
+          "AVDA. PABLO IGLESIAS / CALL. JUAN MONTALVO"
+        ],
+        "to": "CALL. JUAN MONTALVO / AVDA. PABLO IGLESIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIÃ‘A VIRGEN / CALL. SIMANCAS",
+          "CALL. SIMANCAS / CALL. VIÃ‘A VIRGEN"
+        ],
+        "to": "CALL. VIÃ‘A VIRGEN / CALL. SIMANCAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EL ALGABEÃ‘O / RONDA. MANUEL GRANERO",
+          "RONDA. MANUEL GRANERO / CALL. EL ALGABEÃ‘O"
+        ],
+        "to": "CALL. EL ALGABEÃ‘O / RONDA. MANUEL GRANERO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MENDEZ ALVARO / AUTOV. M-30",
+          "AUTOV. M-30 / CALL. MENDEZ ALVARO"
+        ],
+        "to": "CALL. MENDEZ ALVARO / AUTOV. M-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. RABE DE LAS CALZADAS / CALL. VILORIA DE LA RIOJA",
+          "CALL. VILORIA DE LA RIOJA / CALL. RABE DE LAS CALZADAS"
+        ],
+        "to": "CALL. RABE DE LAS CALZADAS / CALL. VILORIA DE LA RIOJA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARDENAL SILICEO / CALL. CORAZON DE MARIA",
+          "CALL. CORAZON DE MARIA / CALL. CARDENAL SILICEO"
+        ],
+        "to": "CALL. CARDENAL SILICEO / CALL. CORAZON DE MARIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / CALL. JUAN BRAVO",
+          "CALL. JUAN BRAVO / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / CALL. JUAN BRAVO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. A-6 / AUTOV. M-30",
+          "AUTOV. M-30 / AUTOV. A-6"
+        ],
+        "to": "AUTOV. A-6 / AUTOV. M-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. RAFAELA YBARRA / CALL. DOLORES BARRANCO",
+          "CALL. DOLORES BARRANCO / AVDA. RAFAELA YBARRA"
+        ],
+        "to": "AVDA. RAFAELA YBARRA / CALL. DOLORES BARRANCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / CALL. ALCOCER",
+          "CALL. ALCOCER / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / CALL. ALCOCER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BUENOS AIRES / CALL. PUERTO DE BALBARAN",
+          "CALL. PUERTO DE BALBARAN / AVDA. BUENOS AIRES"
+        ],
+        "to": "AVDA. BUENOS AIRES / CALL. PUERTO DE BALBARAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PABLO NERUDA / AVDA. PALOMERAS",
+          "AVDA. PALOMERAS / AVDA. PABLO NERUDA"
+        ],
+        "to": "AVDA. PABLO NERUDA / AVDA. PALOMERAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PABLO NERUDA / CALL. LAGO CALAFATE",
+          "CALL. LAGO CALAFATE / AVDA. PABLO NERUDA"
+        ],
+        "to": "AVDA. PABLO NERUDA / CALL. LAGO CALAFATE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / AUTOV. M-607",
+          "AUTOV. M-607 / AUTOV. M-30"
+        ],
+        "to": "AUTOV. M-30 / AUTOV. M-607"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ARCENTALES / AVDA. CANILLEJAS A VICALVARO",
+          "AVDA. CANILLEJAS A VICALVARO / AVDA. ARCENTALES"
+        ],
+        "to": "AVDA. ARCENTALES / AVDA. CANILLEJAS A VICALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EMBAJADORES / AVDA. PLANETARIO",
+          "AVDA. PLANETARIO / CALL. EMBAJADORES"
+        ],
+        "to": "CALL. EMBAJADORES / AVDA. PLANETARIO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CANDIDO MATEOS / CALL. CHANTADA",
+          "CALL. CHANTADA / CALL. CANDIDO MATEOS"
+        ],
+        "to": "CALL. CANDIDO MATEOS / CALL. CHANTADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CIUDAD DE BARCELONA / CALL. CATALINA SUAREZ",
+          "CALL. CATALINA SUAREZ / AVDA. CIUDAD DE BARCELONA"
+        ],
+        "to": "AVDA. CIUDAD DE BARCELONA / CALL. CATALINA SUAREZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LA ACEBEDA / CALL. PIÃ‘UECAR",
+          "CALL. PIÃ‘UECAR / CALL. LA ACEBEDA"
+        ],
+        "to": "CALL. LA ACEBEDA / CALL. PIÃ‘UECAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CIUDAD DE BARCELONA / AVDA. ALBUFERA",
+          "AVDA. ALBUFERA / AVDA. CIUDAD DE BARCELONA"
+        ],
+        "to": "AVDA. CIUDAD DE BARCELONA / AVDA. ALBUFERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CIUDAD DE BARCELONA / CALL. COMERCIO",
+          "CALL. COMERCIO / AVDA. CIUDAD DE BARCELONA"
+        ],
+        "to": "AVDA. CIUDAD DE BARCELONA / CALL. COMERCIO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / PLAZA. MARQUES DE SALAMANCA",
+          "PLAZA. MARQUES DE SALAMANCA / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / PLAZA. MARQUES DE SALAMANCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PABLO IGLESIAS / AVDA. DOCTOR FEDERICO RUBIO Y GALI",
+          "AVDA. DOCTOR FEDERICO RUBIO Y GALI / AVDA. PABLO IGLESIAS"
+        ],
+        "to": "AVDA. PABLO IGLESIAS / AVDA. DOCTOR FEDERICO RUBIO Y GALI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GRAN VIA DEL ESTE / CALL. SAN CIPRIANO",
+          "CALL. SAN CIPRIANO / AVDA. GRAN VIA DEL ESTE"
+        ],
+        "to": "AVDA. GRAN VIA DEL ESTE / CALL. SAN CIPRIANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. JOAQUIN COSTA",
+          "CALL. JOAQUIN COSTA / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. JOAQUIN COSTA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. SAN VICENTE / PASEO. VIRGEN DEL PUERTO",
+          "PASEO. VIRGEN DEL PUERTO / GTA. SAN VICENTE"
+        ],
+        "to": "GTA. SAN VICENTE / PASEO. VIRGEN DEL PUERTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / PLAZA. REPUBLICA DOMINICANA",
+          "PLAZA. REPUBLICA DOMINICANA / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / PLAZA. REPUBLICA DOMINICANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCESA / CALL. QUINTANA",
+          "CALL. QUINTANA / CALL. PRINCESA"
+        ],
+        "to": "CALL. PRINCESA / CALL. QUINTANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. VENTISQUERO DE LA CONDESA / CALL. VALLE DE PINARES LLANOS",
+          "CALL. VALLE DE PINARES LLANOS / AVDA. VENTISQUERO DE LA CONDESA"
+        ],
+        "to": "AVDA. VENTISQUERO DE LA CONDESA / CALL. VALLE DE PINARES LLANOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EUGENIA DE MONTIJO / CALL. MONSEÃ‘OR OSCAR ROMERO",
+          "CALL. MONSEÃ‘OR OSCAR ROMERO / CALL. EUGENIA DE MONTIJO"
+        ],
+        "to": "CALL. EUGENIA DE MONTIJO / CALL. MONSEÃ‘OR OSCAR ROMERO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. PRADO / CALL. ALCALA",
+          "CALL. ALCALA / PASEO. PRADO"
+        ],
+        "to": "PASEO. PRADO / CALL. ALCALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GAZTAMBIDE / CALL. FERNANDO EL CATOLICO",
+          "CALL. FERNANDO EL CATOLICO / CALL. GAZTAMBIDE"
+        ],
+        "to": "CALL. GAZTAMBIDE / CALL. FERNANDO EL CATOLICO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CARDENAL HERRERA ORIA / CALL. ARROYOFRESNO",
+          "CALL. ARROYOFRESNO / AVDA. CARDENAL HERRERA ORIA"
+        ],
+        "to": "AVDA. CARDENAL HERRERA ORIA / CALL. ARROYOFRESNO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BENITA LOPEZ / CALL. ENCARNACION OVIOL",
+          "CALL. ENCARNACION OVIOL / CALL. BENITA LOPEZ"
+        ],
+        "to": "CALL. BENITA LOPEZ / CALL. ENCARNACION OVIOL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SANTA ENGRACIA / CALL. VIRIATO",
+          "CALL. VIRIATO / CALL. SANTA ENGRACIA"
+        ],
+        "to": "CALL. SANTA ENGRACIA / CALL. VIRIATO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. OCA",
+          "CALL. OCA / AVDA. NUESTRA SEÃ‘ORA DE VALVANERA"
+        ],
+        "to": "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. OCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. EJE CENTRAL / CALL. EJE 4",
+          "CALL. EJE 4 / AVDA. EJE CENTRAL"
+        ],
+        "to": "AVDA. EJE CENTRAL / CALL. EJE 4"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCESA / PASEO. MORET",
+          "PASEO. MORET / CALL. PRINCESA"
+        ],
+        "to": "CALL. PRINCESA / PASEO. MORET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JULIA GARCIA BOUTAN / CALL. SUECIA",
+          "CALL. SUECIA / CALL. JULIA GARCIA BOUTAN"
+        ],
+        "to": "CALL. JULIA GARCIA BOUTAN / CALL. SUECIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN CUGAT DEL VALLES / CALL. ANASTASIA LOPEZ",
+          "CALL. ANASTASIA LOPEZ / CALL. SAN CUGAT DEL VALLES"
+        ],
+        "to": "CALL. SAN CUGAT DEL VALLES / CALL. ANASTASIA LOPEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / CALL. COSTA RICA",
+          "CALL. COSTA RICA / AUTOV. M-30"
+        ],
+        "to": "AUTOV. M-30 / CALL. COSTA RICA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. EMBAJADORES / CALL. EMBAJADORES",
+          "CALL. EMBAJADORES / GTA. EMBAJADORES"
+        ],
+        "to": "GTA. EMBAJADORES / CALL. EMBAJADORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL ORAA / CALL. PRINCIPE DE VERGARA",
+          "CALL. PRINCIPE DE VERGARA / CALL. GENERAL ORAA"
+        ],
+        "to": "CALL. GENERAL ORAA / CALL. PRINCIPE DE VERGARA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CTRA. CARABANCHEL A ARAVACA / CALL. SANCHIDRIAN",
+          "CALL. SANCHIDRIAN / CTRA. CARABANCHEL A ARAVACA"
+        ],
+        "to": "CTRA. CARABANCHEL A ARAVACA / CALL. SANCHIDRIAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CAMINO DE SANTIAGO / CALL. PUENTE LA REINA",
+          "CALL. PUENTE LA REINA / AVDA. CAMINO DE SANTIAGO"
+        ],
+        "to": "AVDA. CAMINO DE SANTIAGO / CALL. PUENTE LA REINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MAQUEDA / CALL. QUERO",
+          "CALL. QUERO / CALL. MAQUEDA"
+        ],
+        "to": "CALL. MAQUEDA / CALL. QUERO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-40 / CALL. VIA LUSITANA",
+          "CALL. VIA LUSITANA / AUTOV. M-40"
+        ],
+        "to": "AUTOV. M-40 / CALL. VIA LUSITANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CEA BERMUDEZ / CALL. VALLEHERMOSO",
+          "CALL. VALLEHERMOSO / CALL. CEA BERMUDEZ"
+        ],
+        "to": "CALL. CEA BERMUDEZ / CALL. VALLEHERMOSO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. LEGAZPI MERCAMADRID / AVDA. MADRID MERCAMADRID",
+          "AVDA. MADRID MERCAMADRID / AVDA. LEGAZPI MERCAMADRID"
+        ],
+        "to": "AVDA. LEGAZPI MERCAMADRID / AVDA. MADRID MERCAMADRID"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ABASCAL / PLAZA. DOCTOR MARAÃ‘ON",
+          "PLAZA. DOCTOR MARAÃ‘ON / CALL. JOSE ABASCAL"
+        ],
+        "to": "CALL. JOSE ABASCAL / PLAZA. DOCTOR MARAÃ‘ON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. QUEVEDO / CALL. SAN BERNARDO",
+          "CALL. SAN BERNARDO / GTA. QUEVEDO"
+        ],
+        "to": "GTA. QUEVEDO / CALL. SAN BERNARDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE PAULETE / CALL. BOADA",
+          "CALL. BOADA / CALL. JOSE PAULETE"
+        ],
+        "to": "CALL. JOSE PAULETE / CALL. BOADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CRISTO REY / PASEO. SAN FRANCISCO DE SALES",
+          "PASEO. SAN FRANCISCO DE SALES / PLAZA. CRISTO REY"
+        ],
+        "to": "PLAZA. CRISTO REY / PASEO. SAN FRANCISCO DE SALES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARROYO FONTARRON / AUTOV. A-3",
+          "AUTOV. A-3 / CALL. ARROYO FONTARRON"
+        ],
+        "to": "CALL. ARROYO FONTARRON / AUTOV. A-3"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DEMOCRACIA / PLAZA. ALOSNO",
+          "PLAZA. ALOSNO / AVDA. DEMOCRACIA"
+        ],
+        "to": "AVDA. DEMOCRACIA / PLAZA. ALOSNO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DEMOCRACIA / BULEV. JOSE PRAT",
+          "BULEV. JOSE PRAT / AVDA. DEMOCRACIA"
+        ],
+        "to": "AVDA. DEMOCRACIA / BULEV. JOSE PRAT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARTAGENA / CALL. AZCONA",
+          "CALL. AZCONA / CALL. CARTAGENA"
+        ],
+        "to": "CALL. CARTAGENA / CALL. AZCONA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERROCARRIL / PASEO. DELICIAS",
+          "PASEO. DELICIAS / CALL. FERROCARRIL"
+        ],
+        "to": "CALL. FERROCARRIL / PASEO. DELICIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAMARENA / CALL. ILLESCAS",
+          "CALL. ILLESCAS / CALL. CAMARENA"
+        ],
+        "to": "CALL. CAMARENA / CALL. ILLESCAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ASCAO / CALL. EMILIO FERRARI",
+          "CALL. EMILIO FERRARI / CALL. ASCAO"
+        ],
+        "to": "CALL. ASCAO / CALL. EMILIO FERRARI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GINZO DE LIMIA / CALL. SINESIO DELGADO",
+          "CALL. SINESIO DELGADO / CALL. GINZO DE LIMIA"
+        ],
+        "to": "CALL. GINZO DE LIMIA / CALL. SINESIO DELGADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. JOSE BANUS / CALL. VIRGEN DE LA ALEGRIA",
+          "CALL. VIRGEN DE LA ALEGRIA / PLAZA. JOSE BANUS"
+        ],
+        "to": "PLAZA. JOSE BANUS / CALL. VIRGEN DE LA ALEGRIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIA DE DUBLIN / AUTOV. M-11",
+          "AUTOV. M-11 / CALL. VIA DE DUBLIN"
+        ],
+        "to": "CALL. VIA DE DUBLIN / AUTOV. M-11"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. JUAN ANTONIO SAMARANCH / GTA. ANTONIO PERPIÃ‘A",
+          "GTA. ANTONIO PERPIÃ‘A / AVDA. JUAN ANTONIO SAMARANCH"
+        ],
+        "to": "AVDA. JUAN ANTONIO SAMARANCH / GTA. ANTONIO PERPIÃ‘A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REINA VICTORIA / CALL. GUZMAN EL BUENO",
+          "CALL. GUZMAN EL BUENO / AVDA. REINA VICTORIA"
+        ],
+        "to": "AVDA. REINA VICTORIA / CALL. GUZMAN EL BUENO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. INFANTA ISABEL / CALL. ALFONSO XII",
+          "CALL. ALFONSO XII / PASEO. INFANTA ISABEL"
+        ],
+        "to": "PASEO. INFANTA ISABEL / CALL. ALFONSO XII"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GENERAL PERON / CALL. POETA JOAN MARAGALL",
+          "CALL. POETA JOAN MARAGALL / AVDA. GENERAL PERON"
+        ],
+        "to": "AVDA. GENERAL PERON / CALL. POETA JOAN MARAGALL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / AVDA. LOS ROSALES",
+          "AVDA. LOS ROSALES / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / AVDA. LOS ROSALES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. RAMON PEREZ DE AYALA / CALL. EL BOSCO",
+          "CALL. EL BOSCO / CALL. RAMON PEREZ DE AYALA"
+        ],
+        "to": "CALL. RAMON PEREZ DE AYALA / CALL. EL BOSCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GUETARIA / CALL. CESTONA",
+          "CALL. CESTONA / CALL. GUETARIA"
+        ],
+        "to": "CALL. GUETARIA / CALL. CESTONA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. AVIACION / CALL. FLAUTAS",
+          "CALL. FLAUTAS / AVDA. AVIACION"
+        ],
+        "to": "AVDA. AVIACION / CALL. FLAUTAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PADILLA / CALL. VELAZQUEZ",
+          "CALL. VELAZQUEZ / CALL. PADILLA"
+        ],
+        "to": "CALL. PADILLA / CALL. VELAZQUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. CARMEN SANCHEZ CARRASCOSA",
+          "CALL. CARMEN SANCHEZ CARRASCOSA / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. CARMEN SANCHEZ CARRASCOSA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GENERAL PERON / PLAZA. LIMA",
+          "PLAZA. LIMA / AVDA. GENERAL PERON"
+        ],
+        "to": "AVDA. GENERAL PERON / PLAZA. LIMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / PLAZA. LIMA",
+          "PLAZA. LIMA / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / PLAZA. LIMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. MARQUES DE VADILLO / CALL. GENERAL RICARDOS",
+          "CALL. GENERAL RICARDOS / GTA. MARQUES DE VADILLO"
+        ],
+        "to": "GTA. MARQUES DE VADILLO / CALL. GENERAL RICARDOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CONDE DE SERRALLO / CALL. CUATRO AMIGOS",
+          "CALL. CUATRO AMIGOS / CALL. CONDE DE SERRALLO"
+        ],
+        "to": "CALL. CONDE DE SERRALLO / CALL. CUATRO AMIGOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. TESORO / CALL. MINAS",
+          "CALL. MINAS / CALL. TESORO"
+        ],
+        "to": "CALL. TESORO / CALL. MINAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GUZMAN EL BUENO / CALL. FERNANDO EL CATOLICO",
+          "CALL. FERNANDO EL CATOLICO / CALL. GUZMAN EL BUENO"
+        ],
+        "to": "CALL. GUZMAN EL BUENO / CALL. FERNANDO EL CATOLICO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARRANZA / GTA. RUIZ JIMENEZ",
+          "GTA. RUIZ JIMENEZ / CALL. CARRANZA"
+        ],
+        "to": "CALL. CARRANZA / GTA. RUIZ JIMENEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VELAZQUEZ / CALL. DIEGO DE LEON",
+          "CALL. DIEGO DE LEON / CALL. VELAZQUEZ"
+        ],
+        "to": "CALL. VELAZQUEZ / CALL. DIEGO DE LEON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PROFESOR WAKSMAN / CALL. DOCTOR FLEMING",
+          "CALL. DOCTOR FLEMING / CALL. PROFESOR WAKSMAN"
+        ],
+        "to": "CALL. PROFESOR WAKSMAN / CALL. DOCTOR FLEMING"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. EMPERADOR CARLOS V / PLAZA. EMPERADOR CARLOS V",
+          "PLAZA. EMPERADOR CARLOS V / -----"
+        ],
+        "to": "PLAZA. EMPERADOR CARLOS V / PLAZA. EMPERADOR CARLOS V"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CTRA. VILLAVERDE A VALLECAS / CALL. GONZALEZ DAVILA",
+          "CALL. GONZALEZ DAVILA / CTRA. VILLAVERDE A VALLECAS"
+        ],
+        "to": "CTRA. VILLAVERDE A VALLECAS / CALL. GONZALEZ DAVILA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / AUTOV. M-30",
+          "AUTOV. M-30 / M-30"
+        ],
+        "to": "AUTOV. M-30 / AUTOV. M-30"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ROBLES / AVDA. MONTE IGUELDO",
+          "AVDA. MONTE IGUELDO / CALL. ROBLES"
+        ],
+        "to": "CALL. ROBLES / AVDA. MONTE IGUELDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALBERTO AGUILERA / GTA. RUIZ JIMENEZ",
+          "GTA. RUIZ JIMENEZ / CALL. ALBERTO AGUILERA"
+        ],
+        "to": "CALL. ALBERTO AGUILERA / GTA. RUIZ JIMENEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SERENA / CALL. CAZORLA",
+          "CALL. CAZORLA / CALL. SERENA"
+        ],
+        "to": "CALL. SERENA / CALL. CAZORLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BADAJOZ / CALL. SALVADOR DE MADARIAGA",
+          "CALL. SALVADOR DE MADARIAGA / AVDA. BADAJOZ"
+        ],
+        "to": "AVDA. BADAJOZ / CALL. SALVADOR DE MADARIAGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / AVDA. GRAN VIA DE VILLAVERDE",
+          "AVDA. GRAN VIA DE VILLAVERDE / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / AVDA. GRAN VIA DE VILLAVERDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW",
+          "CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW / AUTOV. M-30"
+        ],
+        "to": "AUTOV. M-30 / CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. OROVILLA / CALL. UNANIMIDAD",
+          "CALL. UNANIMIDAD / AVDA. OROVILLA"
+        ],
+        "to": "AVDA. OROVILLA / CALL. UNANIMIDAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. DELICIAS / CALL. DELICIAS",
+          "CALL. DELICIAS / PASEO. DELICIAS"
+        ],
+        "to": "PASEO. DELICIAS / CALL. DELICIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PUERTO ALTO / CALL. MONTE PERDIDO",
+          "CALL. MONTE PERDIDO / Puerto alto"
+        ],
+        "to": "CALL. PUERTO ALTO / CALL. MONTE PERDIDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CANOVAS DEL CASTILLO / PASEO. PRADO",
+          "PASEO. PRADO / PLAZA. CANOVAS DEL CASTILLO"
+        ],
+        "to": "PLAZA. CANOVAS DEL CASTILLO / PASEO. PRADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. POETA JOAN MARAGALL / CALL. SOR ANGELA DE LA CRUZ",
+          "CALL. SOR ANGELA DE LA CRUZ / CALL. POETA JOAN MARAGALL"
+        ],
+        "to": "CALL. POETA JOAN MARAGALL / CALL. SOR ANGELA DE LA CRUZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. DALIA",
+          "CALL. DALIA / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. DALIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALFONSO XII / CALL. CLAUDIO MOYANO",
+          "CALL. CLAUDIO MOYANO / CALL. ALFONSO XII"
+        ],
+        "to": "CALL. ALFONSO XII / CALL. CLAUDIO MOYANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. JOSE DEL HIERRO",
+          "CALL. JOSE DEL HIERRO / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. JOSE DEL HIERRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ASTURIAS / PASEO. DIRECCION",
+          "PASEO. DIRECCION / AVDA. ASTURIAS"
+        ],
+        "to": "AVDA. ASTURIAS / PASEO. DIRECCION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PIRRA / CTRA. ACCESO A LA ESTACION DE O'DONNELL",
+          "CTRA. ACCESO A LA ESTACION DE O'DONNELL / CALL. PIRRA"
+        ],
+        "to": "CALL. PIRRA / CTRA. ACCESO A LA ESTACION DE O'DONNELL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CORREDERA ALTA DE SAN PABLO / CALL. SAN VICENTE FERRER",
+          "CALL. SAN VICENTE FERRER / CALL. CORREDERA ALTA DE SAN PABLO"
+        ],
+        "to": "CALL. CORREDERA ALTA DE SAN PABLO / CALL. SAN VICENTE FERRER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EJE 7, 1",
+          "CALL. EJE 1 / CALL. EJE 7"
+        ],
+        "to": "CALL. EJE 7, 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAGASTA / CALL. FRANCISCO DE ROJAS",
+          "CALL. FRANCISCO DE ROJAS / CALL. SAGASTA"
+        ],
+        "to": "CALL. SAGASTA / CALL. FRANCISCO DE ROJAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-500 / AVDA. VALLADOLID",
+          "AVDA. VALLADOLID / AUTOV. M-500"
+        ],
+        "to": "AUTOV. M-500 / AVDA. VALLADOLID"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. CLAVEL",
+          "CALL. CLAVEL / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. CLAVEL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ORTEGA Y GASSET / CALL. VELAZQUEZ",
+          "CALL. VELAZQUEZ / CALL. JOSE ORTEGA Y GASSET"
+        ],
+        "to": "CALL. JOSE ORTEGA Y GASSET / CALL. VELAZQUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. MARIANO DE CAVIA / AVDA. MEDITERRANEO",
+          "AVDA. MEDITERRANEO / PLAZA. MARIANO DE CAVIA"
+        ],
+        "to": "PLAZA. MARIANO DE CAVIA / AVDA. MEDITERRANEO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / GTA. QUEVEDO",
+          "GTA. QUEVEDO / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / GTA. QUEVEDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AVIADOR ZORITA / CALL. HERNANI",
+          "CALL. HERNANI / CALL. AVIADOR ZORITA"
+        ],
+        "to": "CALL. AVIADOR ZORITA / CALL. HERNANI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERRAZ / CALL. MARQUES DE URQUIJO",
+          "CALL. MARQUES DE URQUIJO / CALL. FERRAZ"
+        ],
+        "to": "CALL. FERRAZ / CALL. MARQUES DE URQUIJO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CASTILLA / CALL. MATEO INURRIA",
+          "CALL. MATEO INURRIA / PLAZA. CASTILLA"
+        ],
+        "to": "PLAZA. CASTILLA / CALL. MATEO INURRIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL RICARDOS / CALL. CLARA CAMPOAMOR",
+          "CALL. CLARA CAMPOAMOR / CALL. GENERAL RICARDOS"
+        ],
+        "to": "CALL. GENERAL RICARDOS / CALL. CLARA CAMPOAMOR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. INFANTA MERCEDES / CALL. SAN GERMAN",
+          "CALL. SAN GERMAN / CALL. INFANTA MERCEDES"
+        ],
+        "to": "CALL. INFANTA MERCEDES / CALL. SAN GERMAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MONTE ULIA / CALL. ROBLES",
+          "CALL. ROBLES / CALL. MONTE ULIA"
+        ],
+        "to": "CALL. MONTE ULIA / CALL. ROBLES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. CADIZ / CALL. MARCELO USERA",
+          "CALL. MARCELO USERA / GTA. CADIZ"
+        ],
+        "to": "GTA. CADIZ / CALL. MARCELO USERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AUGUSTOBRIGA / CALL. MARIA BARRIENTOS",
+          "CALL. MARIA BARRIENTOS / CALL. AUGUSTOBRIGA"
+        ],
+        "to": "CALL. AUGUSTOBRIGA / CALL. MARIA BARRIENTOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANTONIO LOPEZ / CALL. GONZALEZ FEITO",
+          "CALL. GONZALEZ FEITO / CALL. ANTONIO LOPEZ"
+        ],
+        "to": "CALL. ANTONIO LOPEZ / CALL. GONZALEZ FEITO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DOCTOR GARCIA TAPIA / CALL. MARROQUINA",
+          "CALL. MARROQUINA / AVDA. DOCTOR GARCIA TAPIA"
+        ],
+        "to": "AVDA. DOCTOR GARCIA TAPIA / CALL. MARROQUINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / AVDA. MONFORTE DE LEMOS",
+          "AVDA. MONFORTE DE LEMOS / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / AVDA. MONFORTE DE LEMOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MENDEZ ALVARO / CALL. PEDRO BOSCH",
+          "CALL. PEDRO BOSCH / CALL. MENDEZ ALVARO"
+        ],
+        "to": "CALL. MENDEZ ALVARO / CALL. PEDRO BOSCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARLINA / CALL. VILLAMANIN",
+          "CALL. VILLAMANIN / CALL. CARLINA"
+        ],
+        "to": "CALL. CARLINA / CALL. VILLAMANIN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALFONSO XII / PLAZA. EMPERADOR CARLOS V",
+          "PLAZA. EMPERADOR CARLOS V / CALL. ALFONSO XII"
+        ],
+        "to": "CALL. ALFONSO XII / PLAZA. EMPERADOR CARLOS V"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ORTEGA Y GASSET / PASEO. CASTELLANA",
+          "PASEO. CASTELLANA / CALL. JOSE ORTEGA Y GASSET"
+        ],
+        "to": "CALL. JOSE ORTEGA Y GASSET / PASEO. CASTELLANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / AUTOV. A-42",
+          "AUTOV. A-42 / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / AUTOV. A-42"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BURGOS / AVDA. PIO XII",
+          "AVDA. PIO XII / AVDA. BURGOS"
+        ],
+        "to": "AVDA. BURGOS / AVDA. PIO XII"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. RECOLETOS / PLAZA. CIBELES",
+          "PLAZA. CIBELES / PASEO. RECOLETOS"
+        ],
+        "to": "PASEO. RECOLETOS / PLAZA. CIBELES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GRAN VIA DE VILLAVERDE / AVDA. REAL DE PINTO",
+          "AVDA. REAL DE PINTO / AVDA. GRAN VIA DE VILLAVERDE"
+        ],
+        "to": "AVDA. GRAN VIA DE VILLAVERDE / AVDA. REAL DE PINTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. EMPERADOR CARLOS V / PASEO. SANTA MARIA DE LA CABEZA",
+          "PASEO. SANTA MARIA DE LA CABEZA / PLAZA. EMPERADOR CARLOS V"
+        ],
+        "to": "PLAZA. EMPERADOR CARLOS V / PASEO. SANTA MARIA DE LA CABEZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. YUCATAN / AVDA. ANDES",
+          "AVDA. ANDES / GTA. YUCATAN"
+        ],
+        "to": "GTA. YUCATAN / AVDA. ANDES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. LEGAZPI / PASEO. CHOPERA",
+          "PASEO. CHOPERA / PLAZA. LEGAZPI"
+        ],
+        "to": "PLAZA. LEGAZPI / PASEO. CHOPERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. ZURBARAN",
+          "CALL. ZURBARAN / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. ZURBARAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SINESIO DELGADO / GTA. PIEDRAFITA DEL CEBRERO",
+          "GTA. PIEDRAFITA DEL CEBRERO / CALL. SINESIO DELGADO"
+        ],
+        "to": "CALL. SINESIO DELGADO / GTA. PIEDRAFITA DEL CEBRERO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ENTREVIAS / CALL. TIMOTEO PEREZ RUBIO",
+          "CALL. TIMOTEO PEREZ RUBIO / AVDA. ENTREVIAS"
+        ],
+        "to": "AVDA. ENTREVIAS / CALL. TIMOTEO PEREZ RUBIO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MANUEL FRAGA IRIBARNE / CALL. MARIA REICHE",
+          "CALL. MARIA REICHE / AVDA. MANUEL FRAGA IRIBARNE"
+        ],
+        "to": "AVDA. MANUEL FRAGA IRIBARNE / CALL. MARIA REICHE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANTONIORROBLES / CALL. SAN MODESTO",
+          "CALL. SAN MODESTO / CALL. ANTONIORROBLES"
+        ],
+        "to": "CALL. ANTONIORROBLES / CALL. SAN MODESTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARRIETA / PLAZA. ISABEL II",
+          "PLAZA. ISABEL II / CALL. ARRIETA"
+        ],
+        "to": "CALL. ARRIETA / PLAZA. ISABEL II"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CIBELES / CALL. ALCALA",
+          "CALL. ALCALA / PLAZA. CIBELES"
+        ],
+        "to": "PLAZA. CIBELES / CALL. ALCALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. VELAZQUEZ",
+          "CALL. VELAZQUEZ / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. VELAZQUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FINISTERRE / AVDA. MONFORTE DE LEMOS",
+          "CALL. FINISTERRE / AVDA MONFORTE DE LEMOS"
+        ],
+        "to": "CALL. FINISTERRE / AVDA. MONFORTE DE LEMOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DAROCA / CALL. CASALARREINA",
+          "CALL. CASALARREINA / AVDA. DAROCA"
+        ],
+        "to": "AVDA. DAROCA / CALL. CASALARREINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. OCAÃ‘A / CALL. VALMOJADO",
+          "CALL. VALMOJADO / CALL. OCAÃ‘A"
+        ],
+        "to": "CALL. OCAÃ‘A / CALL. VALMOJADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CANDIDO MATEOS / CALL. LA CABRERA",
+          "CALL. LA CABRERA / CALL. CANDIDO MATEOS"
+        ],
+        "to": "CALL. CANDIDO MATEOS / CALL. LA CABRERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RONDA. ATOCHA / RONDA. VALENCIA",
+          "RONDA. VALENCIA / RONDA. ATOCHA"
+        ],
+        "to": "RONDA. ATOCHA / RONDA. VALENCIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REAL DE PINTO / CALL. VILLALONSO",
+          "CALL. VILLALONSO / AVDA. REAL DE PINTO"
+        ],
+        "to": "AVDA. REAL DE PINTO / CALL. VILLALONSO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. SOR ANGELA DE LA CRUZ",
+          "CALL. SOR ANGELA DE LA CRUZ / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. SOR ANGELA DE LA CRUZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENCARRAL / CALL. MANUELA MALASAÃ‘A",
+          "CALL. MANUELA MALASAÃ‘A / CALL. FUENCARRAL"
+        ],
+        "to": "CALL. FUENCARRAL / CALL. MANUELA MALASAÃ‘A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERELUZ / CALL. AZUCENAS",
+          "CALL. AZUCENAS / CALL. FERELUZ"
+        ],
+        "to": "CALL. FERELUZ / CALL. AZUCENAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIRGEN DEL PORTILLO / CALL. VIRGEN DE LAS NIEVES",
+          "CALL. VIRGEN DE LAS NIEVES / CALL. VIRGEN DEL PORTILLO"
+        ],
+        "to": "CALL. VIRGEN DEL PORTILLO / CALL. VIRGEN DE LAS NIEVES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. VIA CARPETANA",
+          "CALL. VIA CARPETANA / AVDA. NUESTRA SEÃ‘ORA DE VALVANERA"
+        ],
+        "to": "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. VIA CARPETANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. THALER / CALL. CALDERILLA",
+          "CALL. CALDERILLA / CALL. THALER"
+        ],
+        "to": "CALL. THALER / CALL. CALDERILLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / AVDA. NAZARET",
+          "AVDA. NAZARET / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / AVDA. NAZARET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARTURO SORIA / CALL. AÃ‘ASTRO",
+          "CALL. AÃ‘ASTRO / CALL. ARTURO SORIA"
+        ],
+        "to": "CALL. ARTURO SORIA / CALL. AÃ‘ASTRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PEDRO RICO / CALL. ARZOBISPO MORCILLO",
+          "CALL. ARZOBISPO MORCILLO / CALL. PEDRO RICO"
+        ],
+        "to": "CALL. PEDRO RICO / CALL. ARZOBISPO MORCILLO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SANCHEZ PRECIADO / CALL. VILLAAMIL",
+          "CALL. VILLAAMIL / CALL. SANCHEZ PRECIADO"
+        ],
+        "to": "CALL. SANCHEZ PRECIADO / CALL. VILLAAMIL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HIGUERAS / CALL. CEBREROS",
+          "CALL. CEBREROS / CALL. HIGUERAS"
+        ],
+        "to": "CALL. HIGUERAS / CALL. CEBREROS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VELAZQUEZ / CALL. AYALA",
+          "CALL. AYALA / CALL. VELAZQUEZ"
+        ],
+        "to": "CALL. VELAZQUEZ / CALL. AYALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GREGORIO DEL AMO / CALL. JOSE ANTONIO NOVAIS",
+          "CALL. JOSE ANTONIO NOVAIS / AVDA. GREGORIO DEL AMO"
+        ],
+        "to": "AVDA. GREGORIO DEL AMO / CALL. JOSE ANTONIO NOVAIS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANTONIO DE CABEZON / CALL. NUESTRA SEÃ‘ORA DE VALVERDE",
+          "CALL. NUESTRA SEÃ‘ORA DE VALVERDE / CALL. ANTONIO DE CABEZON"
+        ],
+        "to": "CALL. ANTONIO DE CABEZON / CALL. NUESTRA SEÃ‘ORA DE VALVERDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. GUETARIA",
+          "CALL. GUETARIA / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. GUETARIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. IMAGEN / CALL. PUERTO DE LA MORCUERA",
+          "CALL. IMAGEN / puerto de la morcuera"
+        ],
+        "to": "CALL. IMAGEN / CALL. PUERTO DE LA MORCUERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RONDA. SEGOVIA / CALL. SEGOVIA",
+          "CALL. SEGOVIA / RONDA. SEGOVIA"
+        ],
+        "to": "RONDA. SEGOVIA / CALL. SEGOVIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. NARVAEZ / CALL. O'DONNELL",
+          "CALL. O'DONNELL / CALL. NARVAEZ"
+        ],
+        "to": "CALL. NARVAEZ / CALL. O'DONNELL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ASTURIAS / CALL. CAÃ‘AVERAL",
+          "CALL. CAÃ‘AVERAL / AVDA. ASTURIAS"
+        ],
+        "to": "AVDA. ASTURIAS / CALL. CAÃ‘AVERAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MONTEJO / CALL. VALLE DE TOBALINA",
+          "CALL. VALLE DE TOBALINA / CALL. MONTEJO"
+        ],
+        "to": "CALL. MONTEJO / CALL. VALLE DE TOBALINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRUJULA / CALL. GOLONDRINA",
+          "CALL. GOLONDRINA / CALL. BRUJULA"
+        ],
+        "to": "CALL. BRUJULA / CALL. GOLONDRINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BENJAMIN PALENCIA / CALL. PIO FELIPE",
+          "CALL. PIO FELIPE / CALL. BENJAMIN PALENCIA"
+        ],
+        "to": "CALL. BENJAMIN PALENCIA / CALL. PIO FELIPE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. NECTAR / CALL. SAN MARIANO",
+          "CALL. SAN MARIANO / CALL. NECTAR"
+        ],
+        "to": "CALL. NECTAR / CALL. SAN MARIANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. GUAREÃ‘A",
+          "CALL. GUAREÃ‘A / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. GUAREÃ‘A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BATALLA DEL SALADO / CALL. PALOS DE LA FRONTERA",
+          "CALL. PALOS DE LA FRONTERA / CALL. BATALLA DEL SALADO"
+        ],
+        "to": "CALL. BATALLA DEL SALADO / CALL. PALOS DE LA FRONTERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBUFERA / AVDA. BUENOS AIRES",
+          "AVDA. BUENOS AIRES / AVDA. ALBUFERA"
+        ],
+        "to": "AVDA. ALBUFERA / AVDA. BUENOS AIRES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. COLON / PASEO. RECOLETOS",
+          "PASEO. RECOLETOS / PLAZA. COLON"
+        ],
+        "to": "PLAZA. COLON / PASEO. RECOLETOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CONDE DE CASAL / CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW",
+          "CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW / PLAZA. CONDE DE CASAL"
+        ],
+        "to": "PLAZA. CONDE DE CASAL / CALL. CARLOS Y GUILLERMO FERNANDEZ SHAW"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. JOSE MARIA SOLER / AVDA. ALFONSO XIII",
+          "AVDA. ALFONSO XIII / PLAZA. JOSE MARIA SOLER"
+        ],
+        "to": "PLAZA. JOSE MARIA SOLER / AVDA. ALFONSO XIII"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. JUAN ANTONIO SAMARANCH / AVDA. JOSE ANTONIO CORRALES",
+          "AVDA. JOSE ANTONIO CORRALES / AVDA. JUAN ANTONIO SAMARANCH"
+        ],
+        "to": "AVDA. JUAN ANTONIO SAMARANCH / AVDA. JOSE ANTONIO CORRALES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MOLINA / CALL. PINOS BAJA",
+          "CALL. PINOS BAJA / CALL. MOLINA"
+        ],
+        "to": "CALL. MOLINA / CALL. PINOS BAJA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. RAIMUNDO FERNANDEZ VILLAVERDE",
+          "CALL. RAIMUNDO FERNANDEZ VILLAVERDE / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. RAIMUNDO FERNANDEZ VILLAVERDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. AMERICA / CALL. FRANCISCO SILVELA",
+          "CALL. FRANCISCO SILVELA / AVDA. AMERICA"
+        ],
+        "to": "AVDA. AMERICA / CALL. FRANCISCO SILVELA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. UNANIMIDAD / CALL. TERTULIA",
+          "CALL. TERTULIA / CALL. UNANIMIDAD"
+        ],
+        "to": "CALL. UNANIMIDAD / CALL. TERTULIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CALDERILLA / CALL. REAL",
+          "CALL. REAL / CALL. CALDERILLA"
+        ],
+        "to": "CALL. CALDERILLA / CALL. REAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. MARIANO DE CAVIA / AVDA. MENENDEZ PELAYO",
+          "AVDA. MENENDEZ PELAYO / PLAZA. MARIANO DE CAVIA"
+        ],
+        "to": "PLAZA. MARIANO DE CAVIA / AVDA. MENENDEZ PELAYO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. SANTA BARBARA / CALL. SAGASTA",
+          "CALL. SAGASTA / PLAZA. SANTA BARBARA"
+        ],
+        "to": "PLAZA. SANTA BARBARA / CALL. SAGASTA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SALLABERRY / CALL. FERNANDO GONZALEZ",
+          "CALL. FERNANDO GONZALEZ / CALL. SALLABERRY"
+        ],
+        "to": "CALL. SALLABERRY / CALL. FERNANDO GONZALEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. HERMANOS GARCIA NOBLEJAS",
+          "CALL. HERMANOS GARCIA NOBLEJAS / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. HERMANOS GARCIA NOBLEJAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MESON DE PAREDES / CALL. JUANELO",
+          "CALL. JUANELO / CALL. MESON DE PAREDES"
+        ],
+        "to": "CALL. MESON DE PAREDES / CALL. JUANELO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIA CARPETANA / CALL. CASTELLFLORITE",
+          "CALL. CASTELLFLORITE / CALL. VIA CARPETANA"
+        ],
+        "to": "CALL. VIA CARPETANA / CALL. CASTELLFLORITE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. COSTA RICA / CALL. PARAGUAY",
+          "CALL. PARAGUAY / CALL. COSTA RICA"
+        ],
+        "to": "CALL. COSTA RICA / CALL. PARAGUAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VELAZQUEZ / CALL. JOAQUIN COSTA",
+          "CALL. JOAQUIN COSTA / CALL. VELAZQUEZ"
+        ],
+        "to": "CALL. VELAZQUEZ / CALL. JOAQUIN COSTA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. O'DONNELL / AVDA. MENENDEZ PELAYO",
+          "AVDA. MENENDEZ PELAYO / CALL. O'DONNELL"
+        ],
+        "to": "CALL. O'DONNELL / AVDA. MENENDEZ PELAYO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. INGENIERO EMILIO HERRERA / CALL. PRINCIPE CARLOS",
+          "CALL. PRINCIPE CARLOS / AVDA. INGENIERO EMILIO HERRERA"
+        ],
+        "to": "AVDA. INGENIERO EMILIO HERRERA / CALL. PRINCIPE CARLOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AREQUIPA / CALL. LOS EMIGRANTES",
+          "CALL. LOS EMIGRANTES / CALL. AREQUIPA"
+        ],
+        "to": "CALL. AREQUIPA / CALL. LOS EMIGRANTES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DIALOGO / CALL. ALOE VERA",
+          "CALL. ALOE VERA / CALL. DIALOGO"
+        ],
+        "to": "CALL. DIALOGO / CALL. ALOE VERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LUCERO / CALL. SEPULVEDA",
+          "CALL. SEPULVEDA / CALL. LUCERO"
+        ],
+        "to": "CALL. LUCERO / CALL. SEPULVEDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VALLE DE ORO / GTA. VALLE DE ORO",
+          "GTA. VALLE DE ORO / CALL. VALLE DE ORO"
+        ],
+        "to": "CALL. VALLE DE ORO / GTA. VALLE DE ORO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LEONESES / CALL. VILLALOBOS",
+          "CALL. VILLALOBOS / CALL. LEONESES"
+        ],
+        "to": "CALL. LEONESES / CALL. VILLALOBOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CASTILLA / CALL. BRAVO MURILLO",
+          "CALL. BRAVO MURILLO / CALL. CASTILLA"
+        ],
+        "to": "CALL. CASTILLA / CALL. BRAVO MURILLO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GABRIEL USERA / CALL. FELIPE CASTRO",
+          "CALL. FELIPE CASTRO / CALL. GABRIEL USERA"
+        ],
+        "to": "CALL. GABRIEL USERA / CALL. FELIPE CASTRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARAMUEL / PASEO. OLIVOS",
+          "PASEO. OLIVOS / CALL. CARAMUEL"
+        ],
+        "to": "CALL. CARAMUEL / PASEO. OLIVOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. POBLADURA DEL VALLE / CALL. ARCOS DE JALON",
+          "CALL. ARCOS DE JALON / CALL. POBLADURA DEL VALLE"
+        ],
+        "to": "CALL. POBLADURA DEL VALLE / CALL. ARCOS DE JALON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO ACACIAS, 49",
+          "PASEO. ACACIAS, 49"
+        ],
+        "to": "PASEO ACACIAS, 49"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / CALL. SAN BENITO",
+          "CALL. SAN BENITO / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / CALL. SAN BENITO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VILLABLANCA / CALL. VILLAJIMENA",
+          "CALL. VILLAJIMENA / CALL. VILLABLANCA"
+        ],
+        "to": "CALL. VILLABLANCA / CALL. VILLAJIMENA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / AVDA. BETANZOS",
+          "AVDA. BETANZOS / AUTOV. M-30"
+        ],
+        "to": "AUTOV. M-30 / AVDA. BETANZOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. ERMITA DE LA VIRGEN DE LA SOLEDAD / AVDA. LOGROÃ‘O",
+          "AVDA. LOGROÃ‘O / GTA. ERMITA DE LA VIRGEN DE LA SOLEDAD"
+        ],
+        "to": "GTA. ERMITA DE LA VIRGEN DE LA SOLEDAD / AVDA. LOGROÃ‘O"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ENTREVIAS / CALL. MENDEZ ALVARO",
+          "CALL. MENDEZ ALVARO / AVDA. ENTREVIAS"
+        ],
+        "to": "AVDA. ENTREVIAS / CALL. MENDEZ ALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. REAL DE PINTO / CALL. ARROYO BUENO",
+          "CALL. ARROYO BUENO / AVDA. REAL DE PINTO"
+        ],
+        "to": "AVDA. REAL DE PINTO / CALL. ARROYO BUENO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BUENOS AIRES / CALL. PEDRO LABORDE",
+          "CALL. PEDRO LABORDE / AVDA. BUENOS AIRES"
+        ],
+        "to": "AVDA. BUENOS AIRES / CALL. PEDRO LABORDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JUAN ESPAÃ‘OL / CALL. MANUEL NOYA",
+          "CALL. MANUEL NOYA / CALL. JUAN ESPAÃ‘OL"
+        ],
+        "to": "CALL. JUAN ESPAÃ‘OL / CALL. MANUEL NOYA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. BEATA MARIA ANA DE JESUS / CALL. EMBAJADORES",
+          "CALL. EMBAJADORES / PLAZA. BEATA MARIA ANA DE JESUS"
+        ],
+        "to": "PLAZA. BEATA MARIA ANA DE JESUS / CALL. EMBAJADORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GINZO DE LIMIA / CALL. VALENCIA DE DON JUAN",
+          "CALL. VALENCIA DE DON JUAN / CALL. GINZO DE LIMIA"
+        ],
+        "to": "CALL. GINZO DE LIMIA / CALL. VALENCIA DE DON JUAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RONDA. TOLEDO / CALL. RIBERA DE CURTIDORES",
+          "CALL. RIBERA DE CURTIDORES / RONDA. TOLEDO"
+        ],
+        "to": "RONDA. TOLEDO / CALL. RIBERA DE CURTIDORES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BOADA / CALL. BENJAMIN PALENCIA",
+          "CALL. BENJAMIN PALENCIA / CALL. BOADA"
+        ],
+        "to": "CALL. BOADA / CALL. BENJAMIN PALENCIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. VIRGEN DEL PUERTO / PASEO. CIUDAD DE PLASENCIA",
+          "PASEO. CIUDAD DE PLASENCIA / PASEO. VIRGEN DEL PUERTO"
+        ],
+        "to": "PASEO. VIRGEN DEL PUERTO / PASEO. CIUDAD DE PLASENCIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CANILLEJAS A VICALVARO / CALL. JULIA GARCIA BOUTAN",
+          "CALL. JULIA GARCIA BOUTAN / AVDA. CANILLEJAS A VICALVARO"
+        ],
+        "to": "AVDA. CANILLEJAS A VICALVARO / CALL. JULIA GARCIA BOUTAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. GENERAL PERON / CALL. ORENSE",
+          "CALL. ORENSE / AVDA. GENERAL PERON"
+        ],
+        "to": "AVDA. GENERAL PERON / CALL. ORENSE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CONCHA ESPINA / CALL. SERRANO",
+          "CALL. SERRANO / AVDA. CONCHA ESPINA"
+        ],
+        "to": "AVDA. CONCHA ESPINA / CALL. SERRANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. JORGE JUAN",
+          "CALL. JORGE JUAN / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. JORGE JUAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. DAROCA / PLAZA. AGUSTIN GONZALEZ",
+          "PLAZA. AGUSTIN GONZALEZ / AVDA. DAROCA"
+        ],
+        "to": "AVDA. DAROCA / PLAZA. AGUSTIN GONZALEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. VIA LUSITANA",
+          "CALL. VIA LUSITANA / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. VIA LUSITANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / CALL. CONDE DE SERRALLO",
+          "CALL. CONDE DE SERRALLO / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / CALL. CONDE DE SERRALLO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / CALL. FULGENCIO DE MIGUEL",
+          "CALL. FULGENCIO DE MIGUEL / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / CALL. FULGENCIO DE MIGUEL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CONDE DE CASAL / AVDA. MEDITERRANEO",
+          "AVDA. MEDITERRANEO / PLAZA. CONDE DE CASAL"
+        ],
+        "to": "PLAZA. CONDE DE CASAL / AVDA. MEDITERRANEO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. CUZCO / CALL. SOR ANGELA DE LA CRUZ",
+          "CALL. SOR ANGELA DE LA CRUZ / PLAZA. CUZCO"
+        ],
+        "to": "PLAZA. CUZCO / CALL. SOR ANGELA DE LA CRUZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. THALER / CALL. VIA LUSITANA",
+          "CALL. VIA LUSITANA / CALL. THALER"
+        ],
+        "to": "CALL. THALER / CALL. VIA LUSITANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENTE DEL BERRO / CALL. GOYA",
+          "CALL. GOYA / CALL. FUENTE DEL BERRO"
+        ],
+        "to": "CALL. FUENTE DEL BERRO / CALL. GOYA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NUESTRA SEÃ‘ORA DE FATIMA / CALL. EUGENIA DE MONTIJO",
+          "CALL. EUGENIA DE MONTIJO / AVDA. NUESTRA SEÃ‘ORA DE FATIMA"
+        ],
+        "to": "AVDA. NUESTRA SEÃ‘ORA DE FATIMA / CALL. EUGENIA DE MONTIJO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. INFANTA ISABEL / AVDA. CIUDAD DE BARCELONA",
+          "AVDA. CIUDAD DE BARCELONA / PASEO. INFANTA ISABEL"
+        ],
+        "to": "PASEO. INFANTA ISABEL / AVDA. CIUDAD DE BARCELONA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MONTE PERDIDO / CALL. PEÃ‘A UBIÃ‘A",
+          "CALL. PEÃ‘A UBIÃ‘A / CALL. MONTE PERDIDO"
+        ],
+        "to": "CALL. MONTE PERDIDO / CALL. PEÃ‘A UBIÃ‘A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARROYO DE POZUELO / CALL. HUMERA",
+          "CALL. HUMERA / CALL. ARROYO DE POZUELO"
+        ],
+        "to": "CALL. ARROYO DE POZUELO / CALL. HUMERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CANAL DE LA MANCHA / AVDA. CANILLEJAS A VICALVARO",
+          "AVDA. CANILLEJAS A VICALVARO / CALL. CANAL DE LA MANCHA"
+        ],
+        "to": "CALL. CANAL DE LA MANCHA / AVDA. CANILLEJAS A VICALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANTONIO VELASCO ZAZO / CALL. AMOR HERMOSO",
+          "CALL. AMOR HERMOSO / CALL. ANTONIO VELASCO ZAZO"
+        ],
+        "to": "CALL. ANTONIO VELASCO ZAZO / CALL. AMOR HERMOSO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. EDUARDO DATO / PASEO. CASTELLANA",
+          "PASEO. CASTELLANA / PASEO. EDUARDO DATO"
+        ],
+        "to": "PASEO. EDUARDO DATO / PASEO. CASTELLANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. EUGENIA DE MONTIJO",
+          "CALL. EUGENIA DE MONTIJO / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. EUGENIA DE MONTIJO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LEGANES / CALL. MENDEZ ALVARO",
+          "CALL. MENDEZ ALVARO / CALL. LEGANES"
+        ],
+        "to": "CALL. LEGANES / CALL. MENDEZ ALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CTRA. BARRIO DE LA FORTUNA / CALL. PINAR DE SAN JOSE",
+          "CALL. PINAR DE SAN JOSE / CTRA. BARRIO DE LA FORTUNA"
+        ],
+        "to": "CTRA. BARRIO DE LA FORTUNA / CALL. PINAR DE SAN JOSE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ABAD JUAN CATALAN / CTRA. VICALVARO A LA ESTACION DE O'DONNELL",
+          "CTRA. VICALVARO A LA ESTACION DE O'DONNELL / CALL. ABAD JUAN CATALAN"
+        ],
+        "to": "CALL. ABAD JUAN CATALAN / CTRA. VICALVARO A LA ESTACION DE O'DONNELL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAMINO VIEJO DE LEGANES / CALL. GENERAL RICARDOS",
+          "CALL. GENERAL RICARDOS / CALL. CAMINO VIEJO DE LEGANES"
+        ],
+        "to": "CALL. CAMINO VIEJO DE LEGANES / CALL. GENERAL RICARDOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CARDENAL HERRERA ORIA / AUTOV. M-607",
+          "AUTOV. M-607 / AVDA. CARDENAL HERRERA ORIA"
+        ],
+        "to": "AVDA. CARDENAL HERRERA ORIA / AUTOV. M-607"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CONCEJAL FRANCISCO JOSE JIMENEZ MARTIN / CALL. SEPULVEDA",
+          "CALL. SEPULVEDA / CALL. CONCEJAL FRANCISCO JOSE JIMENEZ MARTIN"
+        ],
+        "to": "CALL. CONCEJAL FRANCISCO JOSE JIMENEZ MARTIN / CALL. SEPULVEDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. SAN BERNARDO",
+          "CALL. SAN BERNARDO / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. SAN BERNARDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ENSANCHE DE VALLECAS / CALL. JOSE GUTIERREZ MAROTO",
+          "CALL. JOSE GUTIERREZ MAROTO / AVDA. ENSANCHE DE VALLECAS"
+        ],
+        "to": "AVDA. ENSANCHE DE VALLECAS / CALL. JOSE GUTIERREZ MAROTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERRAZ / CUSTA. SAN VICENTE",
+          "CUSTA. SAN VICENTE / CALL. FERRAZ"
+        ],
+        "to": "CALL. FERRAZ / CUSTA. SAN VICENTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. ERMITA DEL SANTO / CALL. VIA CARPETANA",
+          "CALL. VIA CARPETANA / PASEO. ERMITA DEL SANTO"
+        ],
+        "to": "PASEO. ERMITA DEL SANTO / CALL. VIA CARPETANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. PIRAMIDES / PASEO. ACACIAS",
+          "PASEO. ACACIAS / GTA. PIRAMIDES"
+        ],
+        "to": "GTA. PIRAMIDES / PASEO. ACACIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SEPULVEDA / PASEO. ERMITA DEL SANTO",
+          "PASEO. ERMITA DEL SANTO / CALL. SEPULVEDA"
+        ],
+        "to": "CALL. SEPULVEDA / PASEO. ERMITA DEL SANTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FERRAZ / CALL. VENTURA RODRIGUEZ",
+          "CALL. VENTURA RODRIGUEZ / CALL. FERRAZ"
+        ],
+        "to": "CALL. FERRAZ / CALL. VENTURA RODRIGUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HERMANOS GARCIA NOBLEJAS / CALL. VITAL AZA",
+          "CALL. VITAL AZA / CALL. HERMANOS GARCIA NOBLEJAS"
+        ],
+        "to": "CALL. HERMANOS GARCIA NOBLEJAS / CALL. VITAL AZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. SAN LUIS / CALL. CUEVAS DEL ALMANZORA",
+          "CALL. CUEVAS DEL ALMANZORA / AVDA. SAN LUIS"
+        ],
+        "to": "AVDA. SAN LUIS / CALL. CUEVAS DEL ALMANZORA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBUFERA / AVDA. PABLO NERUDA",
+          "AVDA. PABLO NERUDA / AVDA. ALBUFERA"
+        ],
+        "to": "AVDA. ALBUFERA / AVDA. PABLO NERUDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CARLOS SOLE / CALL. BENJAMIN PALENCIA",
+          "CALL. BENJAMIN PALENCIA / CALL. CARLOS SOLE"
+        ],
+        "to": "CALL. CARLOS SOLE / CALL. BENJAMIN PALENCIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ILUSTRACION / PLAZA. JOSE MOÃ‘INO CONDE DE FLORIDA BLANCA",
+          "PLAZA. JOSE MOÃ‘INO CONDE DE FLORIDA BLANCA / AVDA. ILUSTRACION"
+        ],
+        "to": "AVDA. ILUSTRACION / PLAZA. JOSE MOÃ‘INO CONDE DE FLORIDA BLANCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EMILIO MUÃ‘OZ / CALL. MIGUEL YUSTE",
+          "CALL. MIGUEL YUSTE / CALL. EMILIO MUÃ‘OZ"
+        ],
+        "to": "CALL. EMILIO MUÃ‘OZ / CALL. MIGUEL YUSTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CARABANCHEL ALTO / AVDA. PESETA",
+          "AVDA. PESETA / AVDA. CARABANCHEL ALTO"
+        ],
+        "to": "AVDA. CARABANCHEL ALTO / AVDA. PESETA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VALLE DE TOBALINA / AVDA. REAL DE PINTO",
+          "AVDA. REAL DE PINTO / CALL. VALLE DE TOBALINA"
+        ],
+        "to": "CALL. VALLE DE TOBALINA / AVDA. REAL DE PINTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAZALEGAS / CALL. HALCONERO DEL REY",
+          "CALL. HALCONERO DEL REY / CALL. CAZALEGAS"
+        ],
+        "to": "CALL. CAZALEGAS / CALL. HALCONERO DEL REY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCESA / CALL. ALBERTO AGUILERA",
+          "CALL. ALBERTO AGUILERA / CALL. PRINCESA"
+        ],
+        "to": "CALL. PRINCESA / CALL. ALBERTO AGUILERA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL RICARDOS / CALL. OCA",
+          "CALL. OCA / CALL. GENERAL RICARDOS"
+        ],
+        "to": "CALL. GENERAL RICARDOS / CALL. OCA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / CALL. CIUDADANIA",
+          "CALL. CIUDADANIA / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / CALL. CIUDADANIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MESENA / CALL. MANUEL URIBE",
+          "CALL. MANUEL URIBE / CALL. MESENA"
+        ],
+        "to": "CALL. MESENA / CALL. MANUEL URIBE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GOYA / CALL. VELAZQUEZ",
+          "CALL. VELAZQUEZ / CALL. GOYA"
+        ],
+        "to": "CALL. GOYA / CALL. VELAZQUEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ARCENTALES / CALL. HERMANOS GARCIA NOBLEJAS",
+          "CALL. HERMANOS GARCIA NOBLEJAS / AVDA. ARCENTALES"
+        ],
+        "to": "AVDA. ARCENTALES / CALL. HERMANOS GARCIA NOBLEJAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. JULIO CAMBA",
+          "CALL. JULIO CAMBA / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. JULIO CAMBA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FRANCISCO SILVELA, 62",
+          "CALL FRANCISCO SILVELA, 62"
+        ],
+        "to": "CALL. FRANCISCO SILVELA, 62"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. CASTELLANA / PLAZA. CUZCO",
+          "PLAZA. CUZCO / PASEO. CASTELLANA"
+        ],
+        "to": "PASEO. CASTELLANA / PLAZA. CUZCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ENTREVIAS / CALL. CONCEJO DE TEVERGA",
+          "CALL. CONCEJO DE TEVERGA / AVDA. ENTREVIAS"
+        ],
+        "to": "AVDA. ENTREVIAS / CALL. CONCEJO DE TEVERGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR MARTIN AREVALO / CALL. COBALTO",
+          "CALL. COBALTO / CALL. DOCTOR MARTIN AREVALO"
+        ],
+        "to": "CALL. DOCTOR MARTIN AREVALO / CALL. COBALTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALERCE / CALL. CONIFERAS",
+          "CALL. CONIFERAS / CALL. ALERCE"
+        ],
+        "to": "CALL. ALERCE / CALL. CONIFERAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / PLAZA. CONDE DE CASAL",
+          "PLAZA. CONDE DE CASAL / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / PLAZA. CONDE DE CASAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ARAGON / CALL. CAMPEZO",
+          "CALL. CAMPEZO / AVDA. ARAGON"
+        ],
+        "to": "AVDA. ARAGON / CALL. CAMPEZO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NICETO ALCALA ZAMORA / CALL. MARIA DE PORTUGAL",
+          "CALL. MARIA DE PORTUGAL / AVDA. NICETO ALCALA ZAMORA"
+        ],
+        "to": "AVDA. NICETO ALCALA ZAMORA / CALL. MARIA DE PORTUGAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SOR ANGELA DE LA CRUZ / CALL. ORENSE",
+          "CALL. ORENSE / CALL. SOR ANGELA DE LA CRUZ"
+        ],
+        "to": "CALL. SOR ANGELA DE LA CRUZ / CALL. ORENSE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / CALL. RUFINO BLANCO",
+          "CALL. RUFINO BLANCO / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / CALL. RUFINO BLANCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CIUDAD DE BARCELONA / CALL. DOCTOR ESQUERDO",
+          "CALL. DOCTOR ESQUERDO / AVDA. CIUDAD DE BARCELONA"
+        ],
+        "to": "AVDA. CIUDAD DE BARCELONA / CALL. DOCTOR ESQUERDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LOS EMIGRANTES / GTA. MAR DE CRISTAL",
+          "GTA. MAR DE CRISTAL / CALL. LOS EMIGRANTES"
+        ],
+        "to": "CALL. LOS EMIGRANTES / GTA. MAR DE CRISTAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CTRA. VILLAVERDE A VALLECAS / CALL. EJE 7",
+          "CALL. EJE 7 / CTRA. VILLAVERDE A VALLECAS"
+        ],
+        "to": "CTRA. VILLAVERDE A VALLECAS / CALL. EJE 7"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARMADA ESPAÃ‘OLA / CALL. SERRANO",
+          "CALL. SERRANO / CALL. ARMADA ESPAÃ‘OLA"
+        ],
+        "to": "CALL. ARMADA ESPAÃ‘OLA / CALL. SERRANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. HORTALEZA",
+          "CALL. HORTALEZA / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. HORTALEZA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ENCOMIENDA DE PALACIOS / CALL. ARROYO FONTARRON",
+          "CALL. ARROYO FONTARRON / CALL. ENCOMIENDA DE PALACIOS"
+        ],
+        "to": "CALL. ENCOMIENDA DE PALACIOS / CALL. ARROYO FONTARRON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. LOPEZ DE HOYOS / CALL. LOPEZ DE HOYOS",
+          "CALL. LOPEZ DE HOYOS / GTA. LOPEZ DE HOYOS"
+        ],
+        "to": "GTA. LOPEZ DE HOYOS / CALL. LOPEZ DE HOYOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. O'DONNELL / AUTOV. M-23",
+          "AUTOV. M-23 / CALL. O'DONNELL"
+        ],
+        "to": "CALL. O'DONNELL / AUTOV. M-23"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. TORRELAGUNA / CALL. JOSE SILVA",
+          "CALL. JOSE SILVA / CALL. TORRELAGUNA"
+        ],
+        "to": "CALL. TORRELAGUNA / CALL. JOSE SILVA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MIGUEL HERNANDEZ / CALL. VILLALOBOS",
+          "CALL. VILLALOBOS / AVDA. MIGUEL HERNANDEZ"
+        ],
+        "to": "AVDA. MIGUEL HERNANDEZ / CALL. VILLALOBOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CUSTA. SAN VICENTE",
+          "CUSTA. SAN VICENTE / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CUSTA. SAN VICENTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. COMPLUTENSE / CALL. PROFESOR ARANGUREN",
+          "CALL. PROFESOR ARANGUREN / AVDA. COMPLUTENSE"
+        ],
+        "to": "AVDA. COMPLUTENSE / CALL. PROFESOR ARANGUREN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CANILLEJAS A VICALVARO / AUTOP. R-3",
+          "AUTOP. R-3 / AVDA. CANILLEJAS A VICALVARO"
+        ],
+        "to": "AVDA. CANILLEJAS A VICALVARO / AUTOP. R-3"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. MACHUPICHU / AVDA. ANDES",
+          "AVDA. ANDES / AVDA. MACHUPICHU"
+        ],
+        "to": "AVDA. MACHUPICHU / AVDA. ANDES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENTE CARRANTONA / AVDA. DOCTOR GARCIA TAPIA",
+          "AVDA. DOCTOR GARCIA TAPIA / CALL. FUENTE CARRANTONA"
+        ],
+        "to": "CALL. FUENTE CARRANTONA / AVDA. DOCTOR GARCIA TAPIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENTE CARRANTONA / CALL. ENCOMIENDA DE PALACIOS",
+          "CALL. ENCOMIENDA DE PALACIOS / CALL. FUENTE CARRANTONA"
+        ],
+        "to": "CALL. FUENTE CARRANTONA / CALL. ENCOMIENDA DE PALACIOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL RICARDOS / PASEO. MARCELINO CAMACHO",
+          "PASEO. MARCELINO CAMACHO / CALL. GENERAL RICARDOS"
+        ],
+        "to": "CALL. GENERAL RICARDOS / PASEO. MARCELINO CAMACHO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN MIGUEL / CALL. ARROYO DEL OLIVAR",
+          "CALL. ARROYO DEL OLIVAR / CALL. SAN MIGUEL"
+        ],
+        "to": "CALL. SAN MIGUEL / CALL. ARROYO DEL OLIVAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ULISES / CALL. ARTURO SORIA",
+          "CALL. ARTURO SORIA / CALL. ULISES"
+        ],
+        "to": "CALL. ULISES / CALL. ARTURO SORIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BAILEN / PLAZA. SAN FRANCISCO",
+          "PLAZA. SAN FRANCISCO / CALL. BAILEN"
+        ],
+        "to": "CALL. BAILEN / PLAZA. SAN FRANCISCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LOS MADRAZO / PASEO. PRADO",
+          "PASEO. PRADO / CALL. LOS MADRAZO"
+        ],
+        "to": "CALL. LOS MADRAZO / PASEO. PRADO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBUFERA / AVDA. PEÃ‘A PRIETA",
+          "AVDA. PEÃ‘A PRIETA / AVDA. ALBUFERA"
+        ],
+        "to": "AVDA. ALBUFERA / AVDA. PEÃ‘A PRIETA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SIERRA MOLINA / CALL. SIERRA DE ALQUIFE",
+          "CALL. SIERRA DE ALQUIFE / CALL. SIERRA MOLINA"
+        ],
+        "to": "CALL. SIERRA MOLINA / CALL. SIERRA DE ALQUIFE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENTE CARRANTONA / CALL. ARROYO FONTARRON",
+          "CALL. ARROYO FONTARRON / CALL. FUENTE CARRANTONA"
+        ],
+        "to": "CALL. FUENTE CARRANTONA / CALL. ARROYO FONTARRON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. REPUBLICA ARGENTINA / CALL. SERRANO",
+          "CALL. SERRANO / PLAZA. REPUBLICA ARGENTINA"
+        ],
+        "to": "PLAZA. REPUBLICA ARGENTINA / CALL. SERRANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. FRANCISCO PI Y MARGALL / AVDA. BURGOS",
+          "AVDA. BURGOS / AVDA. FRANCISCO PI Y MARGALL"
+        ],
+        "to": "AVDA. FRANCISCO PI Y MARGALL / AVDA. BURGOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. OPORTO / PLAZA. ELIPTICA",
+          "PLAZA. ELIPTICA / AVDA. OPORTO"
+        ],
+        "to": "AVDA. OPORTO / PLAZA. ELIPTICA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CAMINO DE SANTIAGO / AVDA. SANTO DOMINGO DE LA CALZADA",
+          "AVDA. SANTO DOMINGO DE LA CALZADA / AVDA. CAMINO DE SANTIAGO"
+        ],
+        "to": "AVDA. CAMINO DE SANTIAGO / AVDA. SANTO DOMINGO DE LA CALZADA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PRINCIPE DE VERGARA / CALL. GOYA",
+          "CALL. GOYA / CALL. PRINCIPE DE VERGARA"
+        ],
+        "to": "CALL. PRINCIPE DE VERGARA / CALL. GOYA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. MAR CARIBE / AVDA. ANDES",
+          "AVDA. ANDES / GTA. MAR CARIBE"
+        ],
+        "to": "GTA. MAR CARIBE / AVDA. ANDES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FUENCARRAL / CALL. HARTZENBUSCH",
+          "CALL. HARTZENBUSCH / fuencarral"
+        ],
+        "to": "CALL. FUENCARRAL / CALL. HARTZENBUSCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30 / CALL. GINZO DE LIMIA",
+          "CALL. GINZO DE LIMIA / AUTOV. M-30"
+        ],
+        "to": "AUTOV. M-30 / CALL. GINZO DE LIMIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. COLEGIATA / CALL. TOLEDO",
+          "CALL. TOLEDO / CALL. COLEGIATA"
+        ],
+        "to": "CALL. COLEGIATA / CALL. TOLEDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. TIBERIADES / CTRA. CANILLAS",
+          "CTRA. CANILLAS / CALL. TIBERIADES"
+        ],
+        "to": "CALL. TIBERIADES / CTRA. CANILLAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. COLOMBIA / CALL. PRINCIPE DE VERGARA",
+          "CALL. PRINCIPE DE VERGARA / CALL. COLOMBIA"
+        ],
+        "to": "CALL. COLOMBIA / CALL. PRINCIPE DE VERGARA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. CAMINO DE SANTIAGO / CALL. SAN JUAN DE ORTEGA",
+          "CALL. SAN JUAN DE ORTEGA / AVDA. CAMINO DE SANTIAGO"
+        ],
+        "to": "AVDA. CAMINO DE SANTIAGO / CALL. SAN JUAN DE ORTEGA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARZOBISPO MORCILLO / PASEO. CASTELLANA",
+          "PASEO. CASTELLANA / CALL. ARZOBISPO MORCILLO"
+        ],
+        "to": "CALL. ARZOBISPO MORCILLO / PASEO. CASTELLANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / PASEO. RECOLETOS",
+          "PASEO. RECOLETOS / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / PASEO. RECOLETOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. INFANTA ISABEL / PLAZA. EMPERADOR CARLOS V",
+          "PLAZA. EMPERADOR CARLOS V / PASEO. INFANTA ISABEL"
+        ],
+        "to": "PASEO. INFANTA ISABEL / PLAZA. EMPERADOR CARLOS V"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LOLA FLORES / AVDA. ARAGON",
+          "AVDA. ARAGON / CALL. LOLA FLORES"
+        ],
+        "to": "CALL. LOLA FLORES / AVDA. ARAGON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EL PINGARRON / CALL. NUESTRA SEÃ‘ORA DEL PERPETUO SOCORRO",
+          "CALL. NUESTRA SEÃ‘ORA DEL PERPETUO SOCORRO / CALL. EL PINGARRON"
+        ],
+        "to": "CALL. EL PINGARRON / CALL. NUESTRA SEÃ‘ORA DEL PERPETUO SOCORRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SERRANO / CALL. JUAN BRAVO",
+          "CALL. JUAN BRAVO / CALL. SERRANO"
+        ],
+        "to": "CALL. SERRANO / CALL. JUAN BRAVO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / CALL. BOHEMIOS",
+          "CALL. BOHEMIOS / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / CALL. BOHEMIOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GRAN VIA / CALL. CONCEPCION ARENAL",
+          "CALL. CONCEPCION ARENAL / CALL. GRAN VIA"
+        ],
+        "to": "CALL. GRAN VIA / CALL. CONCEPCION ARENAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. DELICIAS / PLAZA. EMPERADOR CARLOS V",
+          "PLAZA. EMPERADOR CARLOS V / PASEO. DELICIAS"
+        ],
+        "to": "PASEO. DELICIAS / PLAZA. EMPERADOR CARLOS V"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARQUES DE URQUIJO / CALL. PRINCESA",
+          "CALL. PRINCESA / CALL. MARQUES DE URQUIJO"
+        ],
+        "to": "CALL. MARQUES DE URQUIJO / CALL. PRINCESA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOAQUIN COSTA / GTA. LOPEZ DE HOYOS",
+          "GTA. LOPEZ DE HOYOS / CALL. JOAQUIN COSTA"
+        ],
+        "to": "CALL. JOAQUIN COSTA / GTA. LOPEZ DE HOYOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EMBAJADORES / CALL. BOLIVAR",
+          "CALL. BOLIVAR / CALL. EMBAJADORES"
+        ],
+        "to": "CALL. EMBAJADORES / CALL. BOLIVAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. INDEPENDENCIA / CALL. ALFONSO XII",
+          "CALL. ALFONSO XII / PLAZA. INDEPENDENCIA"
+        ],
+        "to": "PLAZA. INDEPENDENCIA / CALL. ALFONSO XII"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DIEGO DE LEON / CALL. FRANCISCO SILVELA",
+          "CALL. FRANCISCO SILVELA / CALL. DIEGO DE LEON"
+        ],
+        "to": "CALL. DIEGO DE LEON / CALL. FRANCISCO SILVELA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / AVDA. LAS AGUILAS",
+          "AVDA. LAS AGUILAS / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / AVDA. LAS AGUILAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. NARVAEZ / CALL. ALCALDE SAINZ DE BARANDA",
+          "CALL. ALCALDE SAINZ DE BARANDA / CALL. NARVAEZ"
+        ],
+        "to": "CALL. NARVAEZ / CALL. ALCALDE SAINZ DE BARANDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MENDEZ ALVARO / CALL. RETAMA",
+          "CALL. RETAMA / CALL. MENDEZ ALVARO"
+        ],
+        "to": "CALL. MENDEZ ALVARO / CALL. RETAMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. RUBEN DARIO / PASEO. EDUARDO DATO",
+          "PASEO. EDUARDO DATO / GTA. RUBEN DARIO"
+        ],
+        "to": "GTA. RUBEN DARIO / PASEO. EDUARDO DATO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / CALL. ALISEDA",
+          "CALL. ALISEDA / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / CALL. ALISEDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ORENSE / CALL. HERNANI",
+          "CALL. HERNANI / CALL. ORENSE"
+        ],
+        "to": "CALL. ORENSE / CALL. HERNANI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VELAZQUEZ / CALL. JUAN BRAVO",
+          "CALL. JUAN BRAVO / CALL. VELAZQUEZ"
+        ],
+        "to": "CALL. VELAZQUEZ / CALL. JUAN BRAVO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DON RAMON MENENDEZ PIDAL / AVDA. GREGORIO DEL AMO",
+          "AVDA. GREGORIO DEL AMO / CALL. DON RAMON MENENDEZ PIDAL"
+        ],
+        "to": "CALL. DON RAMON MENENDEZ PIDAL / AVDA. GREGORIO DEL AMO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARGÃœESO / CALL. PELICANO",
+          "CALL. PELICANO / CALL. ARGÃœESO"
+        ],
+        "to": "CALL. ARGÃœESO / CALL. PELICANO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BUENOS AIRES / CALL. ARROYO DEL OLIVAR",
+          "CALL. ARROYO DEL OLIVAR / AVDA. BUENOS AIRES"
+        ],
+        "to": "AVDA. BUENOS AIRES / CALL. ARROYO DEL OLIVAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBERTO ALCOCER / PASEO. LA HABANA",
+          "PASEO. LA HABANA / AVDA. ALBERTO ALCOCER"
+        ],
+        "to": "AVDA. ALBERTO ALCOCER / PASEO. LA HABANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CTRA. BOADILLA DEL MONTE / PASEO. EXTREMADURA",
+          "PASEO. EXTREMADURA / CTRA. BOADILLA DEL MONTE"
+        ],
+        "to": "CTRA. BOADILLA DEL MONTE / PASEO. EXTREMADURA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ARROYO / CALL. PINOS BAJA",
+          "CALL. PINOS BAJA / CALL. ARROYO"
+        ],
+        "to": "CALL. ARROYO / CALL. PINOS BAJA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBUFERA / CALL. MELQUIADES BIENCINTO",
+          "CALL. MELQUIADES BIENCINTO / AVDA. ALBUFERA"
+        ],
+        "to": "AVDA. ALBUFERA / CALL. MELQUIADES BIENCINTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. FELIPE PINGARRON / CALL. HUERTA DE VILLAVERDE",
+          "CALL. HUERTA DE VILLAVERDE / CALL. FELIPE PINGARRON"
+        ],
+        "to": "CALL. FELIPE PINGARRON / CALL. HUERTA DE VILLAVERDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN BERNARDO / CALL. RODRIGUEZ SAN PEDRO",
+          "CALL. RODRIGUEZ SAN PEDRO / CALL. SAN BERNARDO"
+        ],
+        "to": "CALL. SAN BERNARDO / CALL. RODRIGUEZ SAN PEDRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. M-30, 04XL80",
+          "AUTOV. M-30 / 04XL80"
+        ],
+        "to": "AUTOV. M-30, 04XL80"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANDALUCIA / CALL. ROCAFORT",
+          "CALL. ROCAFORT / AVDA. ANDALUCIA"
+        ],
+        "to": "AVDA. ANDALUCIA / CALL. ROCAFORT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALLARIZ / CALL. ALFONSO FERNANDEZ",
+          "CALL. ALFONSO FERNANDEZ / CALL. ALLARIZ"
+        ],
+        "to": "CALL. ALLARIZ / CALL. ALFONSO FERNANDEZ"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AUTOV. A-5 / CALL. ALLENDE",
+          "CALL. ALLENDE / AUTOV. A-5"
+        ],
+        "to": "AUTOV. A-5 / CALL. ALLENDE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. BURGOS / CALL. PUERTO DE SOMPORT",
+          "CALL. PUERTO DE SOMPORT / AVDA. BURGOS"
+        ],
+        "to": "AVDA. BURGOS / CALL. PUERTO DE SOMPORT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. RAFAEL DE RIEGO / CALL. DELICIAS",
+          "CALL. DELICIAS / CALL. RAFAEL DE RIEGO"
+        ],
+        "to": "CALL. RAFAEL DE RIEGO / CALL. DELICIAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. DOCTOR MARAÃ‘ON / CALL. MARIA DE MOLINA",
+          "CALL. MARIA DE MOLINA / PLAZA. DOCTOR MARAÃ‘ON"
+        ],
+        "to": "PLAZA. DOCTOR MARAÃ‘ON / CALL. MARIA DE MOLINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. SAN EZEQUIEL / CALL. VALLE DE TOBALINA",
+          "CALL. VALLE DE TOBALINA / CALL. SAN EZEQUIEL"
+        ],
+        "to": "CALL. SAN EZEQUIEL / CALL. VALLE DE TOBALINA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MAGNOLIAS / CALL. SAN LEOPOLDO",
+          "CALL. SAN LEOPOLDO / CALL. MAGNOLIAS"
+        ],
+        "to": "CALL. MAGNOLIAS / CALL. SAN LEOPOLDO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALBERTO AGUILERA / CALL. SERRANO JOVER",
+          "CALL. SERRANO JOVER / CALL. ALBERTO AGUILERA"
+        ],
+        "to": "CALL. ALBERTO AGUILERA / CALL. SERRANO JOVER"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ACONCAGUA / GTA. RIO URUBAMBA",
+          "GTA. RIO URUBAMBA / CALL. ACONCAGUA"
+        ],
+        "to": "CALL. ACONCAGUA / GTA. RIO URUBAMBA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. JOSE ANTONIO FERNANDEZ ORDOÃ‘EZ / CALL. GUSTAVO PEREZ PUIG",
+          "CALL. GUSTAVO PEREZ PUIG / CALL. JOSE ANTONIO FERNANDEZ ORDOÃ‘EZ"
+        ],
+        "to": "CALL. JOSE ANTONIO FERNANDEZ ORDOÃ‘EZ / CALL. GUSTAVO PEREZ PUIG"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GOYA / CALL. ALCALA",
+          "CALL. ALCALA / CALL. GOYA"
+        ],
+        "to": "CALL. GOYA / CALL. ALCALA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ANDRES MELLADO / CALL. RODRIGUEZ SAN PEDRO",
+          "CALL. RODRIGUEZ SAN PEDRO / CALL. ANDRES MELLADO"
+        ],
+        "to": "CALL. ANDRES MELLADO / CALL. RODRIGUEZ SAN PEDRO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. INGENIERO EMILIO HERRERA / AVDA. NICETO ALCALA ZAMORA",
+          "AVDA. NICETO ALCALA ZAMORA / AVDA. INGENIERO EMILIO HERRERA"
+        ],
+        "to": "AVDA. INGENIERO EMILIO HERRERA / AVDA. NICETO ALCALA ZAMORA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. MARIA TUBAU / CALL. FEDERICO MOMPOU",
+          "CALL. FEDERICO MOMPOU / CALL. MARIA TUBAU"
+        ],
+        "to": "CALL. MARIA TUBAU / CALL. FEDERICO MOMPOU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. PORTALEGRE / AVDA. ABRANTES",
+          "AVDA. ABRANTES / CALL. PORTALEGRE"
+        ],
+        "to": "CALL. PORTALEGRE / AVDA. ABRANTES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CAÃ‘AVERAL / CALL. MATILDE LANDA",
+          "CALL. MATILDE LANDA / CALL. CAÃ‘AVERAL"
+        ],
+        "to": "CALL. CAÃ‘AVERAL / CALL. MATILDE LANDA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. LOPEZ DE HOYOS / CALL. ARTURO SORIA",
+          "CALL. ARTURO SORIA / CALL. LOPEZ DE HOYOS"
+        ],
+        "to": "CALL. LOPEZ DE HOYOS / CALL. ARTURO SORIA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. AGOSTO / CALL. VIENTO",
+          "CALL. VIENTO / CALL. AGOSTO"
+        ],
+        "to": "CALL. AGOSTO / CALL. VIENTO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. VALLE DE ORO / CALL. GENERAL RICARDOS",
+          "CALL. GENERAL RICARDOS / GTA. VALLE DE ORO"
+        ],
+        "to": "GTA. VALLE DE ORO / CALL. GENERAL RICARDOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / CALL. JORGE JUAN",
+          "CALL. JORGE JUAN / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / CALL. JORGE JUAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. POBLADOS / AVDA. RAFAELA YBARRA",
+          "AVDA. RAFAELA YBARRA / AVDA. POBLADOS"
+        ],
+        "to": "AVDA. POBLADOS / AVDA. RAFAELA YBARRA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ALBERTO ALCOCER / CALL. PADRE DAMIAN",
+          "CALL. PADRE DAMIAN / AVDA. ALBERTO ALCOCER"
+        ],
+        "to": "AVDA. ALBERTO ALCOCER / CALL. PADRE DAMIAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VILLABLANCA / CALL. MINERVA",
+          "CALL. MINERVA / CALL. VILLABLANCA"
+        ],
+        "to": "CALL. VILLABLANCA / CALL. MINERVA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. DOCTOR ESQUERDO / CALL. GOYA",
+          "CALL. GOYA / CALL. DOCTOR ESQUERDO"
+        ],
+        "to": "CALL. DOCTOR ESQUERDO / CALL. GOYA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BELZUNEGUI / AVDA. POBLADOS",
+          "AVDA. POBLADOS / CALL. BELZUNEGUI"
+        ],
+        "to": "CALL. BELZUNEGUI / AVDA. POBLADOS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. EL BOSCO / CALL. MARUJA GARCIA ROMERO",
+          "CALL. MARUJA GARCIA ROMERO / CALL. EL BOSCO"
+        ],
+        "to": "CALL. EL BOSCO / CALL. MARUJA GARCIA ROMERO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLAZA. ALSACIA / CALL. HERMANOS GARCIA NOBLEJAS",
+          "CALL. HERMANOS GARCIA NOBLEJAS / PLAZA. ALSACIA"
+        ],
+        "to": "PLAZA. ALSACIA / CALL. HERMANOS GARCIA NOBLEJAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. VIA LUSITANA / CALL. CARRERO JUAN RAMON",
+          "CALL. CARRERO JUAN RAMON / CALL. VIA LUSITANA"
+        ],
+        "to": "CALL. VIA LUSITANA / CALL. CARRERO JUAN RAMON"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. PLANETARIO / CALL. MENDEZ ALVARO",
+          "CALL. MENDEZ ALVARO / AVDA. PLANETARIO"
+        ],
+        "to": "AVDA. PLANETARIO / CALL. MENDEZ ALVARO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GUZMAN EL BUENO / PASEO. SAN FRANCISCO DE SALES",
+          "PASEO. SAN FRANCISCO DE SALES / CALL. GUZMAN EL BUENO"
+        ],
+        "to": "CALL. GUZMAN EL BUENO / PASEO. SAN FRANCISCO DE SALES"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. GENERAL ORAA / GTA. EMILIO CASTELAR",
+          "GTA. EMILIO CASTELAR / CALL. GENERAL ORAA"
+        ],
+        "to": "CALL. GENERAL ORAA / GTA. EMILIO CASTELAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASEO. RECOLETOS / CALL. VILLANUEVA",
+          "CALL. VILLANUEVA / PASEO. RECOLETOS"
+        ],
+        "to": "PASEO. RECOLETOS / CALL. VILLANUEVA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GTA. LOPEZ DE HOYOS / CALL. FRANCISCO SILVELA",
+          "CALL. FRANCISCO SILVELA / GTA. LOPEZ DE HOYOS"
+        ],
+        "to": "GTA. LOPEZ DE HOYOS / CALL. FRANCISCO SILVELA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. ANGEL SANZ BRIZ / CALL. VIA CARPETANA",
+          "CALL. VIA CARPETANA / AVDA. ANGEL SANZ BRIZ"
+        ],
+        "to": "AVDA. ANGEL SANZ BRIZ / CALL. VIA CARPETANA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. ACEUCHAL",
+          "CALL. ACEUCHAL / AVDA. NUESTRA SEÃ‘ORA DE VALVANERA"
+        ],
+        "to": "AVDA. NUESTRA SEÃ‘ORA DE VALVANERA / CALL. ACEUCHAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. BRAVO MURILLO / INTER. PLAZA DE CASTILLA",
+          "INTER. PLAZA DE CASTILLA / CALL. BRAVO MURILLO"
+        ],
+        "to": "CALL. BRAVO MURILLO / INTER. PLAZA DE CASTILLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. CINE / CALL. SANCHIDRIAN",
+          "CALL. SANCHIDRIAN / CALL. CINE"
+        ],
+        "to": "CALL. CINE / CALL. SANCHIDRIAN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. HERMANOS GARCIA NOBLEJAS / CALL. POBLADURA DEL VALLE",
+          "CALL. POBLADURA DEL VALLE / CALL. HERMANOS GARCIA NOBLEJAS"
+        ],
+        "to": "CALL. HERMANOS GARCIA NOBLEJAS / CALL. POBLADURA DEL VALLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CALL. ALCALA / IDB. PUENTE DE VENTAS",
+          "IDB. PUENTE DE VENTAS / CALL. ALCALA"
+        ],
+        "to": "CALL. ALCALA / IDB. PUENTE DE VENTAS"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cod_distrito using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "cod_distrito",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ColisiÃ³n frontal"
+        ],
+        "to": "Colisión frontal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CaÃ­da"
+        ],
+        "to": "Caída"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Choque contra obstÃ¡culo fijo"
+        ],
+        "to": "Choque contra obstáculo fijo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ColisiÃ³n fronto-lateral"
+        ],
+        "to": "Colisión fronto-lateral"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ColisiÃ³n lateral"
+        ],
+        "to": "Colisión lateral"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ColisiÃ³n mÃºltiple"
+        ],
+        "to": "Colisión múltiple"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_accidente",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_accidente",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Solo salida de la vÃ­a"
+        ],
+        "to": "Solo salida de la ví­a"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column distrito",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHAMARTÃ�N"
+        ],
+        "to": "CHAMARTÍN"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column distrito",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHAMBERÃ�"
+        ],
+        "to": "CHAMBERÍ"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column distrito",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TETUÃ�N"
+        ],
+        "to": "TETUÁN"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column distrito",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VICÃ�LVARO"
+        ],
+        "to": "VICÁLVARO"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column estado_meteorolÃ³gico",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "estado_meteorolÃ³gico",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lluvia dÃ©bil"
+        ],
+        "to": "Lluvia débil"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column estado_meteorolÃ³gico",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "estado_meteorolÃ³gico",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NULL"
+        ],
+        "to": "Se desconoce"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AutobÃºs"
+        ],
+        "to": "Autobús"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AutobÃºs articulado"
+        ],
+        "to": "Autobús articulado"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CamiÃ³n rÃ­gido"
+        ],
+        "to": "Camión rí­gido"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Otros vehÃ­culos con motor"
+        ],
+        "to": "Otros vehí­culos con motor"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Otros vehÃ­culos sin motor"
+        ],
+        "to": "Otros vehí­culos sin motor"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Patinete no elÃ©ctrico"
+        ],
+        "to": "Patinete no eléctrico"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TractocamiÃ³n"
+        ],
+        "to": "Tractocamión"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VehÃ­culo articulado"
+        ],
+        "to": "Vehí­culo articulado"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_vehiculo",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VMU elÃ©ctrico"
+        ],
+        "to": "VMU eléctrico"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column tipo_persona",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tipo_persona",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PeatÃ³n"
+        ],
+        "to": "Peatón"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cod_lesividad using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "cod_lesividad",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column lesividad",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AtenciÃ³n en urgencias sin posterior ingreso"
+        ],
+        "to": "Atención en urgencias sin posterior ingreso"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column lesividad",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "lesividad",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Asistencia sanitaria sÃ³lo en el lugar del accidente"
+        ],
+        "to": "Asistencia sanitaria sólo en el lugar del accidente"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column coordenada_x_utm using expression grel:value.replace(',' , '.')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "grel:value.replace(',' , '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column coordenada_x_utm using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column coordenada_y_utm using expression grel:value.replace(',' , '.')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "grel:value.replace(',' , '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column coordenada_y_utm using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column rango_edad using expression grel:value.replace('aÃ±os', 'años')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "rango_edad",
+    "expression": "grel:value.replace('aÃ±os', 'años')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column rango_edad",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MÃ¡s de 74 años"
+        ],
+        "to": "Más de 74 años"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column numero using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "numero",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fecha using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "fecha",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
