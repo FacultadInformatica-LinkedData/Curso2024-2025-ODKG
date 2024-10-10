@@ -9,17 +9,17 @@
 
 **Every class in the ontology:**
 
-- [ ] Is related to a resource described in the CSV file
+- [X] Is related to a resource described in the CSV file
 
 **Every column in the CSV file:**
 
-- [ ] Is trimmed
-- [ ] Is properly encoded (e.g., dates, booleans)
-- [ ] Is related to a property in the ontology
+- [X] Is trimmed
+- [X] Is properly encoded (e.g., dates, booleans)
+- [X] Is related to a property in the ontology
 
 **Every property in the ontology:**
 
-- [ ] Is related to a column in the CSV file
+- [X] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
 
