@@ -1,0 +1,61 @@
+{
+  "@context": 
+  {
+     //I'm still not sure how to establish the uri
+    "Class01": "http://assigment02.com/Class01",
+    "Sensor029": "http://assigment02.com/Sensor029",
+    "Measurement8401": "http://assigment02.com/Measurement8401",
+    "Computer101": "http://assigment02.com/Computer101",
+    "User10A": "http://assigment02.com/User10A",
+    "hasMeasurement": "http://assigment02.com/hasMeasurement",
+    "hasTemperature": "http://assigment02.com/hasTemperature",
+    "atTime": "http://assigment02.com/atTime",
+    "includes": "http://assigment02.com/includes",
+    "hasOwner": "http://assigment02.com/hasOwner",
+    "hasName": "http://assigment02.com/hasName",
+    "temperatureValue": "http://assigment02.com/temperatureValue",
+    "timestamp": "http://assigment02.com/timestamp",
+    "name": "http://assigment02.com/name"
+  },
+  "@graph": 
+  [
+    {
+      "@id": "Class01",
+      "includes": 
+      [
+        {
+          "@id": "Computer101",
+          "hasOwner": 
+          {
+            "@id": "User10A"
+          }
+        },
+        {
+          "@id": "Sensor029",
+          "hasMeasurement": 
+          {
+            "@id": "Measurement8401"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "User10A",
+      "hasName": 
+      {
+        "name": "Pedro"
+      }
+    },
+    {
+      "@id": "Measurement8401",
+      "hasTemperature": 
+      {
+        "temperatureValue": 29
+      },
+      "atTime": 
+      {
+        "timestamp": "2010-06-12T12:00:12"
+      }
+    }
+  ]
+}
