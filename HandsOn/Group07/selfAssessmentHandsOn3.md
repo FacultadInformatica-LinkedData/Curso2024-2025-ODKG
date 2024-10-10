@@ -4,24 +4,25 @@
 
 **Every resource described in the CSV file:**
 
-- [x] Has a unique identifier in a column (not an auto-increased integer)
-- [x] Is related to a class in the ontology
+In operations history, a new column was added to compare two columns (name and address) contained the same values. 
+Since the values were the same, that column was deleted along with the address column. 
+=======
+- [X]  Has a unique identifier in a column (not an auto-increased integer)
+- [X]  Is related to a class in the ontology
 
 **Every class in the ontology:**
 
-- [x] Is related to a resource described in the CSV file
+- [X]  Is related to a resource described in the CSV file
 
 **Every column in the CSV file:**
 
-- [x] Is trimmed
-- [x] Is properly encoded (e.g., dates, booleans)
-- [x] Is related to a property in the ontology
+- [X]  Is trimmed
+- [X]  Is properly encoded (e.g., dates, booleans)
+- [X]  Is related to a property in the ontology
 
 **Every property in the ontology:**
 
-- [x] Is related to a column in the CSV file
+- [X]  Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-
-In operations history, a new column was added to compare two columns (name and address) contained the same values. 
-Since the values were the same, that column was deleted along with the address column. 
+_(If required)_
