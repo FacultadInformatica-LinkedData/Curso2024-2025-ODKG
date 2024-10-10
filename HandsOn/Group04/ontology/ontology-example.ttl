@@ -11,9 +11,12 @@ ns:ChargingPoint_0001 rdf:type ns:ChargingPoint ;
     ns:dischargeDate "2022-03-02-05T15:21:24Z"^^xsd:dateTime ;
     ns:openingHours "24" ;
     ns:numberOfEquipments 1:integer ;
-    ns:numberOfCCconnectors 2:integer ;
-    ns:numberOfACconnectors 1:integer ;
-    ns:kilovolts 50:integer.
+    ns:mennekesKw "50" ;
+    ns:chademoKw "50" ;
+    ns:ccsKw "50" ;
+    ns:mennekesConnectors 1:integer ;
+    ns:chademoConnectors 2:integer ;
+    ns:ccsConnectors 2:integer.
 
 ns:Street0001 rdf:type ns:Street ;
     rdf:label "Ronda de Valencia 1".
@@ -31,9 +34,6 @@ ns:Parking0001 rdf:type ns:Parking ;
     ns:label "Aparcamiento disuasorio Aviación Española" ;
     ns:openingHours  "24" ;
     ns:accessibility "1" ;
-    ns:telephone: "" ;
-    ns:numberOfPublicPlaces: :integer ;
-    ns:numberOfResidentPlaces :integer ;
     ns:numberOfTotalPlaces 344:integer.
 
 ns:Coordinates0001 rdf:type ns:Coordinates ;
