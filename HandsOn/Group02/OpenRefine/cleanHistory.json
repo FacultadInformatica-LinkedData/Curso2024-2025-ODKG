@@ -1,0 +1,1532 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gasolina 95 E10",
+    "description": "Remove column Precio gasolina 95 E10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gasolina 95 E5 Premium",
+    "description": "Remove column Precio gasolina 95 E5 Premium"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gasóleo C",
+    "description": "Remove column Precio gasóleo C"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio bioetanol",
+    "description": "Remove column Precio bioetanol"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "% bioalcohol",
+    "description": "Remove column % bioalcohol"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio biodiésel",
+    "description": "Remove column Precio biodiésel"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "% éster metílico",
+    "description": "Remove column % éster metílico"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gases licuados del petróleo",
+    "description": "Remove column Precio gases licuados del petróleo"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gas natural comprimido",
+    "description": "Remove column Precio gas natural comprimido"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gas natural licuado",
+    "description": "Remove column Precio gas natural licuado"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio hidrógeno",
+    "description": "Remove column Precio hidrógeno"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gasolina 98 E10",
+    "description": "Remove column Precio gasolina 98 E10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Precio gasóleo B",
+    "description": "Remove column Precio gasóleo B"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Localidad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ZARATAN",
+          "ZARATÁN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ZARATAN"
+      },
+      {
+        "from": [
+          "CAMPANA (LA)",
+          "LA CAMPANA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMPANA (LA)"
+      },
+      {
+        "from": [
+          "MUELA (LA)",
+          "MUELA LA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MUELA (LA)"
+      },
+      {
+        "from": [
+          "SANTA CRUZ",
+          "CRUZ SANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANTA CRUZ"
+      },
+      {
+        "from": [
+          "MORA DE RUBIELOS",
+          "RUBIELOS DE MORA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MORA DE RUBIELOS"
+      },
+      {
+        "from": [
+          "ROSARIO (EL)",
+          "EL ROSARIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROSARIO (EL)"
+      },
+      {
+        "from": [
+          "PUERTO (EL)",
+          "EL PUERTO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUERTO (EL)"
+      }
+    ],
+    "description": "Mass edit cells in column Localidad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MORA DE RUBIELOS",
+          "RUBIELOS DE MORA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MORA DE RUBIELOS"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CUBELLES",
+          "CUBELLS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CUBELLES"
+      }
+    ],
+    "description": "Mass edit cells in column Municipio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Dirección",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA DON JUAN DE BORBON, S/N",
+          "AVENIDA DON JUAN DE BORBON, SN",
+          "AVENIDA DON JUAN DE BORBÓN., S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA DON JUAN DE BORBON, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA ANDALUCIA, S/N",
+          "AVENIDA ANDALUCÍA, S/N",
+          "AVENIDA ANDALUCIA, S,N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA ANDALUCIA, S/N"
+      },
+      {
+        "from": [
+          "AUTOVIA A-35 KM. 11,000",
+          "AUTOVIA A35 KM. 11,000"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOVIA A-35 KM. 11,000"
+      },
+      {
+        "from": [
+          "CRTRA.N-634 km 29,700",
+          "CRTRA.N-634 km 29.700"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CRTRA.N-634 km 29,700"
+      },
+      {
+        "from": [
+          "AVENIDA FUERZAS ARMADAS, S/N",
+          "AVENIDA FUERZAS ARMADAS, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA FUERZAS ARMADAS, S/N"
+      },
+      {
+        "from": [
+          "AUTOPISTA A-68 KM. 246",
+          "AUTOPISTA AUTOPISTA A-68 KM. 246"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOPISTA A-68 KM. 246"
+      },
+      {
+        "from": [
+          "CARRETERA ALMERIA KM. 1",
+          "CARRETERA ALMERÍA KM. 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA ALMERIA KM. 1"
+      },
+      {
+        "from": [
+          "CALLE TOLEDO, 50",
+          "CALLE TOLEDO,, 50"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE TOLEDO, 50"
+      },
+      {
+        "from": [
+          "CALLE RICARDO MARTÍN ESPERANZA, 12",
+          "CALLE RICARDO MARTÍN ESPERANZA, 12, 12"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE RICARDO MARTÍN ESPERANZA, 12"
+      },
+      {
+        "from": [
+          "CAMI DEL PLA, S/N",
+          "CAMI DEL PLA, S/N, "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMI DEL PLA, S/N"
+      },
+      {
+        "from": [
+          "AUTOVIA A-66 KM. 241",
+          "AUTOVIA A66 KM. 241"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOVIA A-66 KM. 241"
+      },
+      {
+        "from": [
+          "CARRETERA N 4 KM. 216,9",
+          "CARRETERA N- 4 KM. 216,9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA N 4 KM. 216,9"
+      },
+      {
+        "from": [
+          "AVENIDA RAMON Y CAJAL, S/N",
+          "AVENIDA RAMON Y CAJAL,, S.N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA RAMON Y CAJAL, S/N"
+      },
+      {
+        "from": [
+          "POLIGONO INDUSTRIAL, S/N",
+          "POLIGONO POLIGONO INDUSTRIAL, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POLIGONO INDUSTRIAL, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA PORTUGAL, S/N",
+          "AVENIDA PORTUGAL, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA PORTUGAL, S/N"
+      },
+      {
+        "from": [
+          "AUTOVIA A-5 KM. 341",
+          "AUTOVIA A5 KM. 341"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOVIA A-5 KM. 341"
+      },
+      {
+        "from": [
+          "AUTOPISTA AP-7 KM 165,5 KM. 165,5",
+          "AUTOPISTA AP-7 KM. 165,5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOPISTA AP-7 KM 165,5 KM. 165,5"
+      },
+      {
+        "from": [
+          "CARRETERA CIRCUNVALACION KM. S/N",
+          "CARRETERA CIRCUNVALACIÓN SN KM. S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA CIRCUNVALACION KM. S/N"
+      },
+      {
+        "from": [
+          "AVENIDA FRANCIA, S/N",
+          "AVENIDA FRANCIA, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA FRANCIA, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA ANDALUCIA, ",
+          "AVENIDA ANDALUCÍA, "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA ANDALUCIA, "
+      },
+      {
+        "from": [
+          "CARRETERA M-601 KM. 10,3",
+          "CARRETERA M601 KM. 10,3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA M-601 KM. 10,3"
+      },
+      {
+        "from": [
+          "AVENIDA JUAN CARLOS I, S/N",
+          "AVENIDA JUAN CARLOS I, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA JUAN CARLOS I, S/N"
+      },
+      {
+        "from": [
+          "CR A-92 km 62,2",
+          "CR A92 km 62,2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CR A-92 km 62,2"
+      },
+      {
+        "from": [
+          "CALLE EBANISTAS, 2",
+          "CALLE EBANISTAS,, 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE EBANISTAS, 2"
+      },
+      {
+        "from": [
+          "AVENIDA BUENOS AIRES, S/N",
+          "AVENIDA BUENOS AIRES, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA BUENOS AIRES, S/N"
+      },
+      {
+        "from": [
+          "CALLE BUENAVISTA, S/N",
+          "CALLE BUENAVISTA, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE BUENAVISTA, S/N"
+      },
+      {
+        "from": [
+          "CALLE LAVADERO, S/N",
+          "CALLE LAVADERO, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE LAVADERO, S/N"
+      },
+      {
+        "from": [
+          "CARRETERA DE PULIANAS KM. S/N",
+          "CARRETERA PULIANAS (DE) KM. S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA DE PULIANAS KM. S/N"
+      },
+      {
+        "from": [
+          "AVENIDA CONSTITUCION, 1",
+          "AVENIDA CONSTITUCIÓN, 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA CONSTITUCION, 1"
+      },
+      {
+        "from": [
+          "AVENIDA MARQUES DE LA VEGA DE ARMIJO, S/N",
+          "AVENIDA MARQUES DE LA VEGA DE ARMIJO, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA MARQUES DE LA VEGA DE ARMIJO, S/N"
+      },
+      {
+        "from": [
+          "BARRIO BRAZOMAR S/N, S/N",
+          "BARRIO BRAZOMAR, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARRIO BRAZOMAR S/N, S/N"
+      },
+      {
+        "from": [
+          "CARRETERA N 4 KM. 668,6",
+          "CARRETERA N- 4 KM. 668,6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA N 4 KM. 668,6"
+      },
+      {
+        "from": [
+          "AVENIDA DE MADRID, 66",
+          "AVENIDA MADRID (DE), 66"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA DE MADRID, 66"
+      },
+      {
+        "from": [
+          "CALLE ARTESANOS (LOS), 7",
+          "CALLE LOS ARTESANOS, 7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE ARTESANOS (LOS), 7"
+      },
+      {
+        "from": [
+          "PASEO COLON, S/N",
+          " PASEO COLÓN, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO COLON, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA ROSA MAZÓN VALERO, S/N",
+          "AVENIDA ROSA MAZÓN VALERO, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA ROSA MAZÓN VALERO, S/N"
+      },
+      {
+        "from": [
+          "AUTOVIA AUTOVIA DEL MEDITERRANEO A-7 KM. 264,5",
+          "AUTOVIA DEL MEDITERRANEO (A-7) KM. 264,5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOVIA AUTOVIA DEL MEDITERRANEO A-7 KM. 264,5"
+      },
+      {
+        "from": [
+          "CAMINO CAMINO DEL CEMENTERIO, S/N",
+          "CAMINO DEL CEMENTERIO, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMINO CAMINO DEL CEMENTERIO, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA DEL MEDITERRANEO, S/N",
+          "AVENIDA DEL MEDITERRÁNEO, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA DEL MEDITERRANEO, S/N"
+      },
+      {
+        "from": [
+          "CALLE CERRAJEROS (DE LOS), 10",
+          "CALLE CERRAJEROS DE LOS, 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE CERRAJEROS (DE LOS), 10"
+      },
+      {
+        "from": [
+          "AVENIDA LAS AMERICAS, S/N",
+          "AVENIDA LAS AMERICAS, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA LAS AMERICAS, S/N"
+      },
+      {
+        "from": [
+          "AVENIDA CORTES VALENCIANAS, S/N",
+          "AVENIDA CORTES VALENCIANAS, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA CORTES VALENCIANAS, S/N"
+      },
+      {
+        "from": [
+          "POLIGONO EL SUTU S/N",
+          "POLIGONO EL SUTU, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POLIGONO EL SUTU S/N"
+      },
+      {
+        "from": [
+          "CALLE BAILEN, 2",
+          "CALLE BAILEN, 2, "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE BAILEN, 2"
+      },
+      {
+        "from": [
+          "AVENIDA \"DIPUTACION\", SN",
+          "AVENIDA DIPUTACION, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA \"DIPUTACION\", SN"
+      },
+      {
+        "from": [
+          "CR A-92 212,7",
+          "CR A-92, 212,7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CR A-92 212,7"
+      },
+      {
+        "from": [
+          "AVENIDA CONSTITUCION, S/N",
+          "AVENIDA CONSTITUCION, SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA CONSTITUCION, S/N"
+      },
+      {
+        "from": [
+          "EXTRAMUROS S/N",
+          "EXTRAMUROS, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EXTRAMUROS S/N"
+      },
+      {
+        "from": [
+          "CALLE EXTRAMUROS, S/N",
+          "CALLE EXTRAMUROS,, S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE EXTRAMUROS, S/N"
+      }
+    ],
+    "description": "Mass edit cells in column Dirección"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Rótulo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BP",
+          "BP ",
+          "\"BP\"",
+          "B.P.",
+          "BP  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BP"
+      },
+      {
+        "from": [
+          "-",
+          "*",
+          "******",
+          "_"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "-"
+      },
+      {
+        "from": [
+          "SCA SAN ISIDRO",
+          "SAN ISIDRO S.C.A",
+          "SAN ISIDRO SCA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SCA SAN ISIDRO"
+      },
+      {
+        "from": [
+          "ALIARA ENERGIA",
+          "ALIARA ENERGÍA",
+          "ALIARA ENERGÍA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALIARA ENERGIA"
+      },
+      {
+        "from": [
+          "AGLA",
+          " AGLA",
+          "AGLA  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AGLA"
+      },
+      {
+        "from": [
+          "REPSOL",
+          "REPSOL ",
+          "REPSOL  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REPSOL"
+      },
+      {
+        "from": [
+          "PETROLIS INDEPENDENTS - PETRO7",
+          "PETRO7 - PETROLIS INDEPENDENTS",
+          "PETROLIS INDEPENDENTS - PETRO7 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PETROLIS INDEPENDENTS - PETRO7"
+      },
+      {
+        "from": [
+          "ESTACION DE SERVICIO",
+          "ESTACION DE SERVICIO ",
+          "ESTACIÓN DE SERVICIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESTACION DE SERVICIO"
+      },
+      {
+        "from": [
+          "SEROIL ENERGY",
+          "SEROIL  ENERGY",
+          "SEROIL ENERGY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEROIL ENERGY"
+      },
+      {
+        "from": [
+          "AVIA",
+          "AVIA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVIA"
+      },
+      {
+        "from": [
+          "BP OIL",
+          "BP OIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BP OIL"
+      },
+      {
+        "from": [
+          "SMART OIL",
+          "SMART OIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SMART OIL"
+      },
+      {
+        "from": [
+          "COMBUSTIBLES  MONEGROS, S.L.",
+          "COMBUSTIBLES MONEGROS S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMBUSTIBLES  MONEGROS, S.L."
+      },
+      {
+        "from": [
+          "MAXPETROL",
+          "MAXPETROL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAXPETROL"
+      },
+      {
+        "from": [
+          "DST",
+          "DST "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DST"
+      },
+      {
+        "from": [
+          "VALCARCE",
+          "VALCARCE "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALCARCE"
+      },
+      {
+        "from": [
+          "MKT OIL",
+          "MKT OIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MKT OIL"
+      },
+      {
+        "from": [
+          "A.N. GLUS",
+          "AN GLUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.N. GLUS"
+      },
+      {
+        "from": [
+          "PLENOIL",
+          "PLENOIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLENOIL"
+      },
+      {
+        "from": [
+          "CAMPOEJIDO",
+          "CAMPOEJIDO  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMPOEJIDO"
+      },
+      {
+        "from": [
+          "PETROSTAR ENERGIA",
+          "PETROSTAR ENERGÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PETROSTAR ENERGIA"
+      },
+      {
+        "from": [
+          "NIEVES",
+          "NIEVES "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIEVES"
+      },
+      {
+        "from": [
+          "ALCAMPO S.A.",
+          "ALCAMPO, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALCAMPO S.A."
+      },
+      {
+        "from": [
+          "GALP",
+          "GALP "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GALP"
+      },
+      {
+        "from": [
+          "RASPA-OIL (SERV. ATENDIDO)",
+          "RASPAOIL (SERV. ATENDIDO)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RASPA-OIL (SERV. ATENDIDO)"
+      },
+      {
+        "from": [
+          "MAZANA",
+          "MAZANA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAZANA"
+      },
+      {
+        "from": [
+          "ESCLATOIL",
+          "ESCLATOIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESCLATOIL"
+      },
+      {
+        "from": [
+          "+B ENERGIAS",
+          "+B ENERGIAS "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "+B ENERGIAS"
+      },
+      {
+        "from": [
+          "DISA",
+          "DISA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISA"
+      },
+      {
+        "from": [
+          "NO",
+          "NO "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NO"
+      },
+      {
+        "from": [
+          "ANEU OIL",
+          "ANEU OIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANEU OIL"
+      },
+      {
+        "from": [
+          "NTRA. SRA. DEL ROSARIO SCA",
+          "SCA NTRA. SRA. DEL ROSARIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NTRA. SRA. DEL ROSARIO SCA"
+      },
+      {
+        "from": [
+          "CEPSA OPER CANARIOS  S,L.",
+          "CEPSA OPER CANARIOS S,L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CEPSA OPER CANARIOS  S,L."
+      },
+      {
+        "from": [
+          "SIS CARBURANTES",
+          "SIS CARBURANTES "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIS CARBURANTES"
+      },
+      {
+        "from": [
+          "CARBURANTS TOSSES",
+          "CARBURANTS TOSSES "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARBURANTS TOSSES"
+      },
+      {
+        "from": [
+          "NUROIL",
+          " NUROIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NUROIL"
+      },
+      {
+        "from": [
+          "MONTES NORTE ENERGETICOS, S.L.",
+          "MONTES NORTE ENERGETICOS S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONTES NORTE ENERGETICOS, S.L."
+      },
+      {
+        "from": [
+          "GALAN DE MEMBRILLA",
+          "GALÁN DE MEMBRILLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GALAN DE MEMBRILLA"
+      },
+      {
+        "from": [
+          "PETROPRIX",
+          "PETROPRIX "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PETROPRIX"
+      },
+      {
+        "from": [
+          "COCOPE S.COOP",
+          "COCOPE S.COOP."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COCOPE S.COOP"
+      },
+      {
+        "from": [
+          "COSTCO",
+          "COSTCO "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COSTCO"
+      },
+      {
+        "from": [
+          "PETROL & GO",
+          "PETROL & GO "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PETROL & GO"
+      },
+      {
+        "from": [
+          "GM OIL",
+          "GM OIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GM OIL"
+      },
+      {
+        "from": [
+          "CEPSA",
+          "CEPSA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CEPSA"
+      },
+      {
+        "from": [
+          "SORLIGO",
+          "SORLIGO "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SORLIGO"
+      },
+      {
+        "from": [
+          "SIN ROTULO",
+          "(SIN RÓTULO)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIN ROTULO"
+      },
+      {
+        "from": [
+          "AUTONETOIL",
+          "AUTONET&OIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTONETOIL"
+      },
+      {
+        "from": [
+          "SEDIMACAR, S.L.",
+          "SEDIMACAR, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEDIMACAR, S.L."
+      },
+      {
+        "from": [
+          "SHELL",
+          "SHELL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SHELL"
+      },
+      {
+        "from": [
+          "RHR",
+          "RHR "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RHR"
+      },
+      {
+        "from": [
+          "ZONA DIESEL",
+          "ZONA DIESEL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ZONA DIESEL"
+      },
+      {
+        "from": [
+          "GASEXPRESS",
+          "GASEXPRESS "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GASEXPRESS"
+      },
+      {
+        "from": [
+          "COFRADIA DE PESCADORES",
+          "COFRADÍA DE PESCADORES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COFRADIA DE PESCADORES"
+      },
+      {
+        "from": [
+          "OCHO AREAS DE SERVICIO",
+          "OCHO ÁREAS DE SERVICIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCHO AREAS DE SERVICIO"
+      },
+      {
+        "from": [
+          "BP OIL ESPAÑA",
+          "BP OIL ESPAÑA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BP OIL ESPAÑA"
+      },
+      {
+        "from": [
+          "SBC",
+          "SBC "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SBC"
+      },
+      {
+        "from": [
+          "PETRONOR",
+          "PETRONOR "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PETRONOR"
+      },
+      {
+        "from": [
+          "E.LECLERC",
+          "E-LECLERC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E.LECLERC"
+      },
+      {
+        "from": [
+          "FEIXAS AULET",
+          "FEIXAS AULET "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FEIXAS AULET"
+      },
+      {
+        "from": [
+          "L'AREA",
+          "L'AREA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "L'AREA"
+      },
+      {
+        "from": [
+          "COOP. SAN JOSE",
+          "COOP SAN JOSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COOP. SAN JOSE"
+      },
+      {
+        "from": [
+          "CEREALES TERUEL",
+          "CEREALES TERUEL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CEREALES TERUEL"
+      },
+      {
+        "from": [
+          "BEROIL",
+          "BEROIL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BEROIL"
+      },
+      {
+        "from": [
+          "MEROIL",
+          "MEROIL  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEROIL"
+      },
+      {
+        "from": [
+          "GLOBAL OIL",
+          "GLOBAL OIL  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GLOBAL OIL"
+      },
+      {
+        "from": [
+          "NATURGY",
+          "NATURGY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NATURGY"
+      }
+    ],
+    "description": "Mass edit cells in column Rótulo"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Precio gasolina 95 E5",
+          "expression": "grel:and(isBlank(cells[\"Precio gasóleo A\"].value), \n    isBlank(cells[\"Precio gasóleo Premium\"].value), \n    isBlank(cells[\"Precio gasolina 98 E5\"].value), \n    isBlank(value))",
+          "columnName": "Precio gasolina 95 E5",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Provincia",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Provincia using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Municipio",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Municipio using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Localidad",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Localidad using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código postal",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código postal using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Dirección",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Dirección using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Margen",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Margen using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Longitud",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Longitud using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Latitud",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Latitud using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Toma de datos",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Toma de datos using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Precio gasolina 95 E5",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Precio gasolina 95 E5 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Precio gasolina 98 E5",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Precio gasolina 98 E5 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Precio gasóleo A",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Precio gasóleo A using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Precio gasóleo Premium",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Precio gasóleo Premium using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Rótulo",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Rótulo using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo venta",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo venta using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Rem.",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Rem. using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Horario",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Horario using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo servicio",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo servicio using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Rótulo",
+    "expression": "grel:\"ID-\" + value + \"-\" + row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 14,
+    "description": "Create column ID at index 14 based on column Rótulo using expression grel:\"ID-\" + value + \"-\" + row.index"
+  }
+]
