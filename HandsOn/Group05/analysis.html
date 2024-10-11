@@ -514,6 +514,31 @@
     </tbody>
   </table><br><br><strong>Value Ranges:</strong><br>Iowa PM2.5 [ug/m^3]: -5.992774492110599 - 31.16762857179928<br>Chicago PM2.5 [ug/m^3]: 2.1989710700419525 - 35.41196803793805<br>Cranford PM2.5 [ug/m^3]: 0.1144985309409123 - 44.42709912<br>Magnolia PM2.5 [ug/m^3]: 3.585125197163987 - 31.429762841651147<br>month: 5 - 6<br>day: 1 - 31<br>hour: 0 - 23<br>minute: 0 - 45<br>dayofweek_Sunday: 0 - 1<br>dayofweek_Monday: 0 - 1<br>dayofweek_Tuesday: 0 - 1<br>dayofweek_Wednesday: 0 - 1<br>dayofweek_Thursday: 0 - 1<br>dayofweek_Friday: 0 - 1<br>dayofweek_Saturday: 0 - 1<br>Background PM2.5 [ug/m^3]: -1.0 - 25.0<br>Temperature [degC]: 9.31 - 40.44<br>Pressure [mbar]: 1006 - 1020<br>Humidity [%]: 14 - 92<br>Wind Speed [mph]: 0.0 - 5.36<br>Wind Direction [degrees]: 0 - 357<br>Far-bound Local Roadway (#vehicles/mile): 0.890365229187411 - 61.84470503919372<br>Near-bound Local Roadway (#vehicles/mile): 0.6700730283224401 - 84.52854379084967<br>Far-bound Highway (#vehicles/mile): 14.166141619429258 - 133.5077999364039<br>Near-bound Highway (#vehicles/mile): 11.987511006237966 - 168.9809091320755<br><br><strong>Unique Values:</strong><br>datetime-America/Los_Angeles: 3108<br><br></body></html>
 
+  <h1> Updated Schema post-data cleaning</h1>
+  <div> When considered the state of the previous datasets, several issues were present.
+      <br>
+     <b>The main challenge was that one row in the file did not correspond to one observation, but rather several. </b>    
+      <br> 
+      In addition, the data spanned over 2 files and the column names changed depending on the unit being measured.
+      <br>
+      We have fixed this issue by creating just a single column for the primary observation, as well as a column for the background observation.
+      <br>
+      Now just one file is present. This process is known as wide-to-long reshaping in data cleaning.
+  
+  <br> 
+  Furthermore, there was no way to link data concretely with just the columns of the street names where the observations were captured.
+  <br> 
+  We added 2 colummns that identify the precise latitude and longitude of where the measurement was captured.
+  <br>
+  This will make it possible to link to other data corresponding to the same city/county for Riverside CA.
+  <br>
+  Lastly, we have eliminated many columns pertaining to date because they are unnecessary for our purposes; everything in those columns can be inferred from the timestamp.
+  
+  <h3> Here is our updated data schema below </h3>
+  <strong>Data Types:</strong><br>datetime_america_los_angeles: timestamp<br>temperature_celsius: float64<br>pressure_mbar: int64<br>humidity_pct: int64<br>wind_speed_mph: float64<br>wind_direction_degrees: int64<br>far_bound_local_roadway_vehicles_per_mile: int64<br>far_bound_highway_vehicles_per_mile: float64<br>near_bound_local_roadway_vehicles_per_mile: int64<br>near_bound_highway_vehicles_per_mile: int64<br>background_observed: float64<br>background_element_measured: string<br>background_units: int64<br>observed: float64<br>street: string<br>element_measured: string<br>units: string<br>latitude: float64<br>longitude: float64<br>
+  
+  
+
 <h1> Description of the application user interface </h1>
 <html> 
 
