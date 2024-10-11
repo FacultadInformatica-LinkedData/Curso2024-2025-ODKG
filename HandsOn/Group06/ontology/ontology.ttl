@@ -67,7 +67,7 @@ mair:hasMagnitude a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 mair:hasContaminant a owl:DatatypeProperty ;
-    rdfs:label "Has Pollutant" ; 
+    rdfs:label "Has Contaminant" ; 
     rdfs:domain mair:Observation ; 
     rdfs:range xsd:string .
 
