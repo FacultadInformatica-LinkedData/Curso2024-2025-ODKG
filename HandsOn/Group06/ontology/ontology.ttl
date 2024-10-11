@@ -4,62 +4,81 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 # Define Classes
-
 mair:Provincia a owl:Class ;
-    rdfs:label "Provincia" .
+    rdfs:label "Province" .
 
 mair:Municipio a owl:Class ;
-    rdfs:label "Municipio" .
+    rdfs:label "Municipality" .
 
 mair:Estacion a owl:Class ;
-    rdfs:label "Estacion" .
+    rdfs:label "Station" .
 
 mair:Parametro a owl:Class ;
-    rdfs:label "Parametro" .
+    rdfs:label "Parameter" .
 
 mair:Observacion a owl:Class ;
-    rdfs:label "Observacion" .
+    rdfs:label "Observation" .
 
+# Define Subclasses
+mair:MeteorologicalParameter a owl:Class ;
+    rdfs:label "Meteorological Parameter" ;
+    rdfs:subClassOf mair:Parameter.
+
+mair:Pollutant a owl:Class ;
+    rdfs:label "Pollutant" ;
+    rdfs:subClassOf mair:Parameter .
 
 # Define Object Properties
-
 mair:hasProvincia a owl:ObjectProperty ;
-    rdfs:label "Has provincia" ; 
-    rdfs:domain mair:Municipio ; 
-    rdfs:range mair:Provincia . 
+    rdfs:label "Has Province" ; 
+    rdfs:domain mair:Municipality ; 
+    rdfs:range mair:Province . 
 
 mair:hasMunicipio a owl:ObjectProperty ;
-    rdfs:label "Has municipio" ; 
-    rdfs:domain mair:Provincia ; 
-    rdfs:range mair:Municipio . 
+    rdfs:label "Has Municipality" ; 
+    rdfs:domain mair:Province ; 
+    rdfs:range mair:Municipality . 
 
 mair:hasEstacion a owl:ObjectProperty ;
-    rdfs:label "Has estacion" ; 
-    rdfs:domain mair:Municipio ; 
-    rdfs:range mair:Estacion . 
+    rdfs:label "Has Station" ; 
+    rdfs:domain mair:Municipality ; 
+    rdfs:range mair:Estation . 
 
 mair:monitors a owl:ObjectProperty ;
     rdfs:label "Monitors" ; 
-    rdfs:domain mair:Estacion ; 
-    rdfs:range mair:Parametro . 
+    rdfs:domain mair:Estatation ; 
+    rdfs:range mair:Parameter . 
 
 mair:recordsObservation a owl:ObjectProperty ;
     rdfs:label "Records Observation" ; 
-    rdfs:domain mair:Estacion ; 
-    rdfs:range mair:Observacion . 
-
+    rdfs:domain mair:Estation ; 
+    rdfs:range mair:Observation . 
 
 # Define Datatype Properties
-
 mair:hasFecha a owl:DatatypeProperty ;
-    rdfs:label "Has Fecha" ; 
-    rdfs:domain mair:Observacion ; 
+    rdfs:label "Has Date" ; 
+    rdfs:domain mair:Observation ; 
     rdfs:range xsd:date .
 
 mair:hasMagnitud a owl:DatatypeProperty ;
-    rdfs:label "Has Magnitud" ; 
-    rdfs:domain mair:Contaminante ; 
+    rdfs:label "Has Magnitude" ; 
+    rdfs:domain mair:Parameter ; 
     rdfs:range xsd:string .
+
+mair:hasContaminante a owl:DatatypeProperty ;
+    rdfs:label "Has Pollutant" ; 
+    rdfs:domain mair:Observation ; 
+    rdfs:range xsd:string .
+
+# Define more properties as needed
+mair:hasLocation a owl:ObjectProperty ;
+    rdfs:label "Has Location" ;
+    rdfs:domain mair:Estation ;
+    rdfs:range xsd:string .
+
+mair:measuresConcentration a owl:ObjectProperty ;
+    rdfs:label "Measures Concentration" ;
+    rdfs:domain mair:Estation ;
+    rdfs:range mair:Parameter .
 
