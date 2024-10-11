@@ -1,0 +1,20 @@
+MAGNITUDE,PARAMETER_NAME,MEASUREMENT_UNIT
+1,Sulfur Dioxide,PPM
+6,Carbon Monoxide,PPM
+7,Nitrogen Monoxide,PPM
+8,Nitrogen Dioxide,PPM
+9,Particles less than 2.5 micrometers,PPM
+10,Particles less than 10 micrometers,PPM
+12,Nitrogen Oxides,PPM
+14,Ozone,PPM
+20,Tuolene,PPM
+30,Benzene,PPM
+35,Ethylbenzene,PPM
+80,UV Radaition,Mw/m2
+81,Wind Speed,m/s
+82,Wind Direction,
+83,Temperatures,ºC
+86,Relative Humidity,%
+87,Barometric Preassure,mb
+88,Solar Radiation,W/m2
+89,Precipitation,l/m2
