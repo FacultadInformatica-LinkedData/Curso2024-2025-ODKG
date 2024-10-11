@@ -71,6 +71,11 @@ mair:hasContaminant a owl:DatatypeProperty ;
     rdfs:domain mair:Observation ; 
     rdfs:range xsd:string .
 
+mair:hasWeatherMeasurement a owl:DatatypeProperty ;
+    rdfs:label "Has Weather Measurement" ; 
+    rdfs:domain mair:Observation ; 
+    rdfs:range xsd:string .
+
 # Define more properties as needed
 mair:hasLocation a owl:ObjectProperty ;
     rdfs:label "Has Location" ;
