@@ -1,0 +1,64 @@
+PK,NOMBRE,HORARIO,NUMERO-PLAZAS,ACCESIBILIDAD,CLASE-VIAL,CODIGO-POSTAL,BARRIO,DISTRITO,COORDENADA-X,COORDENADA-Y
+11483771,Aparcamiento disuasorio Aviación Española,24 h,344,Accesible,Calle Fuente De Lima,28024,Las Aguilas,Latina,433485,4470588
+10489514,Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b,de 6:00 h a 22:00 h,3011,No accesible,Avenida Arcentales,28022,Rosas,San Blas-canillejas,449209,4476118
+11413444,Aparcamiento disuasorio Fuente de la Mora,24 h,368,Accesible,Avenida Manoteras,28050,Valdefuentes,Hortaleza,443680,4481739
+11544464,Aparcamiento disuasorio Islazul,,224,Accesible,Calle Calderilla,28054,Buenavista,Carabanchel,437347,4468555
+11413620,Aparcamiento disuasorio Pitis,24 h,402,Accesible,Calle Gloria Fuertes,28049,Fuentelarreina,Fuencarral-el Pardo,438372,4482864
+11544480,Aparcamiento mixto. Alcántara,,121,No accesible,Calle Alcantara,28006,Goya,Salamanca,442847,4475502
+13470,Aparcamiento mixto. Arquitecto Ribera,,318,No accesible,Calle Barcelo,28004,Justicia,Centro,440589,4475306
+59060,Aparcamiento mixto. Avenida de América (intercambiador),,261,No accesible,Avenida America,28002,Prosperidad,Chamartin,442596,4476612
+5898885,Aparcamiento mixto. Avenida de Portugal,de 6:00 h a 22:00 h,428,No accesible,Avenida Portugal,28011,Puerta Del Angel,Latina,437376,4473663
+13475,Aparcamiento mixto. Brasil,,226,No accesible,Calle San German,28020,Cuatro Caminos,Tetuan,441198,4478611
+183747,Aparcamiento mixto. Casino de la Reina,,135,No accesible,Calle Casino,28005,Embajadores,Centro,440274,4473180
+13477,Aparcamiento mixto. Condesa de Gavia,,146,No accesible,Plaza Condesa De Gavia,28020,Cuatro Caminos,Tetuan,440464,4477836
+81736,Aparcamiento mixto. Corona Boreal,,125,Accesible,Calle Perez De Victoria,28023,Aravaca,Moncloa-aravaca,433515,4478978
+183748,Aparcamiento mixto. Daoíz y Velarde,,235,No accesible,Avenida Ciudad De Barcelona,28007,Pacifico,Retiro,442498,4472658
+44724,Aparcamiento mixto. Díaz Porlier,,203,No accesible,Calle Diego De Leon,28006,Lista,Salamanca,442707,4476204
+36269,Aparcamiento mixto. Encuentro,,104,No accesible,Plaza Encuentro,28030,Media Legua,Moratalaz,444728,4473010
+13464,Aparcamiento mixto. Felipe II,,1175,No accesible,Calle Goya,28001,Recoletos,Salamanca,441502,4475253
+24809,Aparcamiento mixto. Fernández Shaw,,245,No accesible,Calle Carlos Y Guillermo Fernandez Shaw,28007,Adelfas,Retiro,443245,4472913
+13462,Aparcamiento mixto. Fuencarral,,410,No accesible,Calle Fuencarral,28010,Trafalgar,Chamberi,440387,4475680
+36270,Aparcamiento mixto. Hernani,,115,No accesible,Calle Hernani,28020,Cuatro Caminos,Tetuan,440843,4477735
+13459,Aparcamiento mixto. Jacinto Benavente,,285,No accesible,Plaza Jacinto Benavente,28012,Cortes,Centro,440329,4473995
+13479,Aparcamiento mixto. José Castán Tobeñas,,226,No accesible,Calle Poeta Joan Maragall,28020,Castillejos,Tetuan,441369,4479549
+6143690,Aparcamiento mixto. Marqués de Salamanca,,356,No accesible,Plaza Marques De Salamanca,28006,Castellana,Salamanca,442381,4475761
+182188,Aparcamiento mixto. Miguel Yuste,,168,No accesible,Calle Miguel Yuste,28037,Simancas,San Blas-canillejas,447200,4476147
+13465,Aparcamiento mixto. Montalbán,,146,Accesible,Calle Montalban,28014,Los Jeronimos,Retiro,441381,4474402
+5517342,Aparcamiento mixto. Orense,,129,No accesible,Avenida Brasil,28020,Cuatro Caminos,Tetuan,441141,4478277
+52114,Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella',,107,No accesible,Plaza Pedro Zerolo,28004,Justicia,Centro,440675,4474698
+33440,Aparcamiento mixto. Plaza de Oriente,,242,No accesible,Plaza Oriente,28013,Palacio,Centro,439597,4474441
+11544439,Aparcamiento mixto. Plaza de Santo Domingo,,320,No accesible,Plaza Santo Domingo,28013,Palacio,Centro,439915,4474630
+13466,Aparcamiento mixto. Plaza Mayor,,694,No accesible,Plaza Mayor,28012,Sol,Centro,440027,4474155
+36271,Aparcamiento mixto. Presidente Carmona,24 h,127,No accesible,Avenida General Peron,28020,Cuatro Caminos,Tetuan,441010,4478216
+13476,Aparcamiento mixto. Recoletos,,102,No accesible,Paseo Recoletos,28001,Recoletos,Salamanca,441309,4474759
+24193,Aparcamiento mixto. República Dominicana,,209,No accesible,Plaza Republica Dominicana,28016,Nueva España,Chamartin,442641,4478908
+81828,Aparcamiento mixto. Reyes Magos,,356,No accesible,Plaza Reyes Magos,28007,Niño Jesus,Retiro,442614,4473350
+167692,Aparcamiento mixto. San Cayetano,,222,No accesible,Plaza San Cayetano,28028,Guindalera,Salamanca,443161,4476191
+13515,Aparcamiento mixto. San Germán II (antes General Yagüe),,419,No accesible,Calle Orense,28020,Castillejos,Tetuan,441212,4478646
+19053,Aparcamiento mixto. Sánchez Bustillo,,131,No accesible,Calle Sanchez Bustillo,28012,Embajadores,Centro,441130,4473369
+7416748,Aparcamiento mixto. Serrano I,,307,No accesible,Calle Serrano,28006,Castellana,Salamanca,441804,4476037
+7417028,Aparcamiento mixto. Serrano II,,379,No accesible,Calle Serrano,28001,Recoletos,Salamanca,441599,4475750
+7417052,Aparcamiento mixto. Serrano III,,261,No accesible,Calle Serrano,28001,Recoletos,Salamanca,441497,4475094
+13460,Aparcamiento mixto. Sevilla,,649,No accesible,Calle Alcala,28014,Sol,Centro,440589,4474363
+13458,Aparcamiento mixto. Velázquez - Ayala,,443,No accesible,Calle Velazquez,28001,Recoletos,Salamanca,441971,4475406
+13457,Aparcamiento mixto. Velázquez - Jorge Juan,,548,Accesible,Calle Velazquez,28001,Recoletos,Salamanca,441946,4475076
+183607,Aparcamiento mixto. Verdaguer y García,,83,No accesible,Calle Verdaguer Y Garcia,28027,San Pascual,Ciudad Lineal,444305,4476770
+13452,Aparcamiento público. Almagro,,463,No accesible,Calle Almagro,28010,Almagro,Chamberi,441197,4475693
+7393089,Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara),,376,Accesible,Calle Cartagena,28002,Ciudad Jardin,Chamartin,442528,4477292
+13473,Aparcamiento público. Descalzas,,400,Accesible,Plaza Descalzas,28013,Sol,Centro,440016,4474443
+13478,Aparcamiento público. Glorieta Puerta de Toledo,,240,Accesible,Glorieta Puerta De Toledo,28005,Embajadores,Centro,439754,4473216
+13467,Aparcamiento público. Las Cortes,,480,Accesible,Plaza Cortes,28014,Cortes,Centro,441009,4474126
+13449,Aparcamiento público. Luna - Tudescos,,481,Accesible,Plaza Santa Maria Soledad Torres Acosta,28004,Universidad,Centro,440134,4474800
+13469,Aparcamiento público. Marqués de Urquijo,,482,No accesible,Calle Marques De Urquijo,28008,Arguelles,Moncloa-aravaca,439028,4475722
+13451,Aparcamiento público. Mostenses,,361,Accesible,Calle Garcia Molinas,28015,Universidad,Centro,439868,4474918
+88141,Aparcamiento público. Museo de la Ciudad,,147,No accesible,Calle Principe De Vergara,28002,Ciudad Jardin,Chamartin,442531,4477284
+13450,Aparcamiento público. Olavide,,397,No accesible,Plaza Olavide,28010,Trafalgar,Chamberi,440538,4476040
+13454,Aparcamiento público. Plaza de Colón,,611,Accesible,Calle Goya,28001,Recoletos,Salamanca,441598,4475205
+13463,Aparcamiento público. Plaza de España,,800,No accesible,Plaza España,28008,Palacio,Centro,439641,4475037
+13472,Aparcamiento público. Plaza del Carmen (cerrado),,450,No accesible,Plaza Carmen,28013,Sol,Centro,440353,4474470
+13474,Aparcamiento público. Plaza del Rey,,170,No accesible,Plaza Rey,28004,Justicia,Centro,440971,4474630
+11750494,Aparcamiento público. San Epifanio,,501,Accesible,Calle San Epifanio,28005,Imperial,Arganzuela,438957,4472467
+13456,Aparcamiento público. Santa Ana,,325,Accesible,Plaza Santa Ana,28012,Cortes,Centro,440563,4474003
+10737574,Aparcamiento público. Usera,,36,No accesible,Calle Amparo Usera,28026,Moscardo,Usera,440051,4470983
+13468,Aparcamiento público. Velázquez - Juan Bravo,,371,Accesible,Calle Velazquez,28006,Castellana,Salamanca,442029,4475903
+13453,Aparcamiento público. Villa de París,,169,Accesible,Plaza Villa De Paris,28004,Justicia,Centro,441265,4475176
