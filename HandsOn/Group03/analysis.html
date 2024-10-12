@@ -104,45 +104,9 @@
             the license, and indicate any changes made. No additional restrictions apply.
         </p>
     </div>
-    <hr>
-    <h1>Analysis of the datasets</h1>
+    <hr>    
     <div class="container">
-        <h2>Dataset 1: Universities and colleges</h2>
-        <p>
-            The dataset contains information about universities and colleges and other educational institutions in
-            Madrid.
-        <ul>
-            <li><strong>PK</strong> - primary key, government assigned number that identifies every facility, number
-            </li>
-            <li><strong>UNIVERSITY</strong> - String, name of the university if institute is a part of any, if not, then
-                it's the same name like the school itself</li>
-            <li><strong>SCHOOL</strong> - String, name of the school</li>
-            <li><strong>TRANSPORT</strong> - String, what transport can be used to get there</li>
-            <li><strong>ACCESSIBILITY</strong> - Number, from 0 to 3, discrete values</li>
-            <li><strong>WEBSITE</strong> - String, page of the school on the www.madrid.es website</li>
-            <li><strong>STREET NAME</strong> - String</li>
-            <li><strong>STREET TYPE</strong> - String, AVENIDA, CALLE, CARRETERA, GLORIETA, PASEO, PLAZA, RONDA,
-                TRAVESIA</li>
-            <li><strong>NUM</strong> - Number, optional, number of the building on the street</li>
-            <li><strong>FLOOR</strong> - Number, optional</li>
-            <li><strong>ORIENTATION</strong> - String, optional, what bloque is it</li>
-            <li><strong>CITY</strong> - String, Madrid</li>
-            <li><strong>PROVINCE</strong> - String, Madrid</li>
-            <li><strong>POSTAL CODE</strong> - Number, from 28 001 to 28 051</li>
-            <li><strong>NEIGHBORHOOD CODE</strong> - Number, from 1 to 8</li>
-            <li><strong>NEIGHBORHOOD</strong> - String</li>
-            <li><strong>DISTRICT CODE</strong> - Number, from 1 to 21</li>
-            <li><strong>DISTRICT</strong> - String</li>
-            <li><strong>LATITUDE</strong> - Number</li>
-            <li><strong>LONGITUDE</strong> - Number</li>
-            <li><strong>TELEPHONE</strong> - String, optional</li>
-            <li><strong>FAX</strong> - String, optional</li>
-            <li><strong>EMAIL</strong> - String, optional</li>
-        </ul>
-        </p>
-    </div>
-    <div class="container">
-        <h2>Dataset 2: Energy consumption in municipal buildings. Monthly data</h2>
+        <h2>Dataset 1: Energy consumption in municipal buildings. Monthly data</h2>
         <p>
         <ul>
             <li><strong>YEAR</strong> - Numeric Value from 2020-2024</li>
@@ -178,7 +142,7 @@
         </p>
     </div>
     <div class="container">
-        <h2>Dataset 3: Madrid housing prices and details</h2>
+        <h2>Dataset 2: Madrid housing prices and details</h2>
         <p>
         <ul>
             <li><strong>ID</strong> - primary key, number, from 1 to 20113</li>
@@ -207,19 +171,27 @@
         <h3>Ontology IRI</h3>
         <p>The current IRI for the ontology is:</p>
         <pre>
-    http://www.semanticweb.org/ontology/SmartBarrioMadrid
+    http://www.semanticweb.org/ontology/SmartDistrictMadrid
         </pre>
         <p>A version number can be added if needed in the future.</p>
 
         <h3>Class IRIs</h3>
         <p>The IRI pattern for classes follows this structure:</p>
         <pre>
-    http://www.semanticweb.org/ontology/SmartBarrioMadrid/{Classname}
+    http://www.semanticweb.org/ontology/SmartDistrictMadrid#{Classname}
         </pre>
         <p>For example:</p>
         <ul>
-            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/Student</code></li>
-            <li>Class: <code>http://www.semanticweb.org/ontology/SmartBarrioMadrid/University</code></li>
+            <li>Class: <code>http://www.semanticweb.org/ontology/SmartDistrictMadrid#District</code></li>
+        </ul>
+        <h3>Property IRIs</h3>
+        <p>The IRI pattern for properties follows this structure:</p>
+        <pre>
+    http://www.semanticweb.org/ontology/SmartDistrictMadrid#{Propertyname}
+        </pre>
+        <p>For example:</p>
+        <ul>
+            <li>Property: <code>http://www.semanticweb.org/ontology/SmartDistrictMadrid#population</code></li>
         </ul>
 
         <h3>Individual IRIs</h3>
@@ -229,8 +201,7 @@
         </pre>
         <p>For example:</p>
         <ul>
-            <li>Individual: <code>http://www.semanticweb.org/resource/Student/johnDoe</code></li>
-            <li>Individual: <code>http://www.semanticweb.org/resource/University/madridUniversity</code></li>
+            <li>Individual: <code>http://www.semanticweb.org/resource/District/retiro</code></li>
         </ul>
 
         <p>Once the domain is changed, the new IRI structure will follow the same resource naming pattern but under the
