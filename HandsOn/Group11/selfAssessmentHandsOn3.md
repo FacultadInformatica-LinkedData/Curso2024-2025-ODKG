@@ -23,3 +23,5 @@
 
 ## Comments on the self-assessment
 _(If required)_
+<!-- We have to review the property of OPERADOR and to change the ontology file -->
+<!-- We also need to review about the property of "FECHA_ALTA", "FECHA_APERTURA" and the property about hasPublicationsDates -->
