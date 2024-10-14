@@ -1554,5 +1554,79 @@
     "op": "core/column-removal",
     "columnName": "ID",
     "description": "Remove column ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM OF BATHROOMS",
+    "description": "Remove column NUM OF BATHROOMS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUY PRICE",
+    "description": "Remove column BUY PRICE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RENT PRICE",
+    "expression": "grel:value/cells[\"SQUARE METERS\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "RENT PRICE BY SQ METER",
+    "columnInsertIndex": 10,
+    "description": "Create column RENT PRICE BY SQ METER at index 10 based on column RENT PRICE using expression grel:value/cells[\"SQUARE METERS\"].value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT PRICE BY SQ METER",
+          "expression": "value",
+          "columnName": "RENT PRICE BY SQ METER",
+          "from": 0,
+          "to": 210,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT PRICE BY SQ METER",
+          "expression": "value",
+          "columnName": "RENT PRICE BY SQ METER",
+          "from": 0,
+          "to": 10,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "RENT PRICE BY SQ METER",
+          "columnName": "RENT PRICE BY SQ METER",
+          "query": "0",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
   }
 ]
