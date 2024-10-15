@@ -1,0 +1,26 @@
+1. Query to retrieves the ID of each camera and its corresponding type
+
+    PREFIX ex: <http://example.com/videocameras#>
+    
+    SELECT DISTINCT ?camera ?type
+    WHERE {
+      ?camera ?type ?object .
+    }
+
+2. Query retrieves the ID and location of cameras that were acquired in the year 2020
+    PREFIX ex: <http://example.com/videocameras#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    
+    SELECT ?camera ?location
+    WHERE {
+      ?camera ex:location ?location .
+      ?camera ex:acquisitionYear "2020"^^xsd:gYear ;
+    }
+
+3. Query to retrieves all cameras that have a specific optical zoom, e.g., "40x".
+    PREFIX ex: <http://example.com/videocameras#>
+    
+    SELECT ?camera 
+    WHERE {
+      ?camera ex:opticalZoom '40x' .
+    }
