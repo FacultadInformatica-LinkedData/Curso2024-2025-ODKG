@@ -16,7 +16,13 @@
 
     rr:predicateObjectMap [
         rr:predicate mair:hasStreet ;
-        rr:objectMap <#StreetMapping> 
+        rr:objectMap [
+            rr:parentTriplesMap <#StreetMapping> ;
+            rr:joinCondition [
+                rr:child "STATION" ;  # Column in main data CSV
+                rr:parent "CODE"      # Column in street mapping CSV
+            ]
+        ]
     ] ;
 
     rr:predicateObjectMap [
@@ -32,7 +38,9 @@
     rr:predicateObjectMap [
         rr:predicate mair:hasObservation ;
         rr:objectMap [
-            rr:parentTriplesMap <#MeasurementMapping>
+            rr:parentTriplesMap <#MeasurementMapping>;
+            rr:child "MAGNITUDE" ;
+            rr:parent "MAGNITUDE"
         ]
     ] .
 
