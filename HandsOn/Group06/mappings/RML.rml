@@ -1,0 +1,62 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
+@prefix ex: <http://example.org/> .
+
+<#StationMapping>
+    rml:logicalSource [
+        rml:source "/../csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+    
+    rr:subjectMap [
+        rr:template "http://example.org/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:class mair:Station
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasProvincia ;
+        rr:objectMap [ rml:reference "PROVINCE" ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasEstacion ;
+        rr:objectMap [ rml:reference "MUNICIPALITY" ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasObservacion ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MeasurementMapping>
+        ]
+    ] .
+
+<#MeasurementMapping>
+    rr:subjectMap [
+        rr:template "http://example.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{YEAR}-{MONTH}/D{D01}" ;
+        rr:class mair:Observacion
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasParametro ;
+        rr:objectMap [ rml:reference "MAGNITUDE" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasValor ;
+        rr:objectMap [ rml:reference "D01" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasTechnique ;
+        rr:objectMap [ rml:reference "TECHNIQUE" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:observationDate ;
+        rr:objectMap [ 
+            rr:template "{YEAR}-{MONTH}-01" 
+        ]
+    ] .
+
