@@ -46,7 +46,7 @@
 
 <#MeasurementMapping>
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/ontology/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{DAY}" ;
+        rr:template "http://example.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}"
         rr:class mair:Observation
     ] ;
 
@@ -444,6 +444,11 @@
     rml:logicalSource [
         rml:source "/../csv/Magnitude-Relationship.csv" ;
         rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality/ontology/magnitude/{MAGNITUDE}" ;
+        rr:class mair:Magnitude ;
     ] ;
 
     rr:predicateObjectMap [
