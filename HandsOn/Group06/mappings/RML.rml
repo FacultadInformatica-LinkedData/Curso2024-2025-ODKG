@@ -1,7 +1,7 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ql: <http://www.w3.org/ns/ql#> .
-@prefix mair: <http://example.org/ontology#> .
+@prefix mair: <http://MadridAirQuality.org/ontology#> .
 
 <#StationMapping>
     rml:logicalSource [
@@ -10,7 +10,7 @@
     ] ;
     
     rr:subjectMap [
-        rr:template "http://example.org/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
         rr:class mair:Station
     ] ;
 
@@ -46,7 +46,7 @@
 
 <#MeasurementMapping>
     rr:subjectMap [
-        rr:template "http://example.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{DAY}" ;
+        rr:template "http://MadridAirQuality.org/ontology/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{DAY}" ;
         rr:class mair:Observation
     ] ;
 
