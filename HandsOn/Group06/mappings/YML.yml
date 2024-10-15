@@ -1,0 +1,43 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  mair: "http://www.MadridAirQuality.es/air_quality#"
+  ex: "http://example.org/"
+
+mappings:
+  StationMapping:
+    logicalSource:
+      source: "/mnt/data/ODKG-Group06-AirQualityDataset-updated.csv"
+      referenceFormulation: ql:CSV
+    subjectMap:
+      template: "http://example.org/station/{PROVINCE}-{MUNICIPALITY}-{STATION}"
+      class: mair:Station
+    predicateObjectMap:
+      - predicate: mair:hasProvincia
+        objectMap:
+          reference: "PROVINCE"
+      - predicate: mair:hasEstacion
+        objectMap:
+          reference: "MUNICIPALITY"
+      - predicate: mair:hasObservacion
+        objectMap:
+          parentTriplesMap: MeasurementMapping
+
+  MeasurementMapping:
+    subjectMap:
+      template: "http://example.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{YEAR}-{MONTH}/D{D01}"
+      class: mair:Observacion
+    predicateObjectMap:
+      - predicate: mair:hasParametro
+        objectMap:
+          reference: "MAGNITUDE"
+      - predicate: mair:hasValor
+        objectMap:
+          reference: "D01"
+      - predicate: mair:hasTechnique
+        objectMap:
+          reference: "TECHNIQUE"
+      - predicate: mair:observationDate
+        objectMap:
+          template: "{YEAR}-{MONTH}-01"
