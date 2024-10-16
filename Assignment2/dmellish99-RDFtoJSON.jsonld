@@ -9,7 +9,7 @@
       "hasOwner":"http://www.data.com/ontology/hasOwner",
       "hasName":"http://www.data.com/ontology/hasName",
       "Class01":"data:Class01"
-
+     
 
     },
     "@type": "Class",

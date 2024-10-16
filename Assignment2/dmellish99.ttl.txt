@@ -1,0 +1,19 @@
+@prefix data : <http://www.data.com/ontology/data> .
+
+:Class01 data:includes Computer101 ;
+         data:includes Sensor029 .  
+
+
+:Computer101 a Class01;
+    data:hasOwner User10A .
+
+:User10A 
+    data:hasName "Pedro".
+
+:Sensor029 a Class01;
+    data:hasMeasurement :Measurement8401
+    
+
+:Measurement8401 
+    data:hasTemperature 29;
+    data:atTime: 2010-06-12T12:00:12
