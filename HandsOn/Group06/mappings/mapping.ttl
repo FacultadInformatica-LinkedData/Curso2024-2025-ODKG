@@ -1,9 +1,9 @@
-@prefix rml: <http://semweb.mmlab.be/ns/rml#> ;
-@prefix rr: <http://www.w3.org/ns/r2rml#> ;
-@prefix ql: <http://www.w3.org/ns/ql#> ;
-@prefix mair: <http://MadridAirQuality.org/ontology#> ;
-@prefix fno: <https://w3id.org/function/ontology#> ;
-@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> ;
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://www.w3.org/ns/ql#> .
+@prefix mair: <http://MadridAirQuality.org/ontology#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 
 <#StationMapping>
     rml:logicalSource [
