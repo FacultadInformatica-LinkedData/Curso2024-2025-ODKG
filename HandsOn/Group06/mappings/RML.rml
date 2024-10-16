@@ -2,15 +2,17 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ql: <http://www.w3.org/ns/ql#> .
 @prefix mair: <http://MadridAirQuality.org/ontology#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 
 <#StationMapping>
     rml:logicalSource [
-        rml:source "/../csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
+        rml:source "/;;/csv/ODKG-Group06-AirQualityDataset-updated;csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
     
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:template "http://MadridAirQuality;org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
         rr:class mair:Station
     ] ;
 
@@ -26,13 +28,45 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasProvince ;
-        rr:objectMap [ rml:reference "PROVINCE" ] 
-    ] ;
+        rr:predicate mair:hasProvince;
+        rr:objectMap [
+            fnml:functionValue [
+                fno:executes <#ifFunction>;  # Define a specific function execution
+                fno:predicateObjectMap [
+                    rr:predicate fno:arg1;
+                    rr:objectMap [ rml:reference "PROVINCE" ];
+                ];
+                fno:predicateObjectMap [
+                    rr:predicate fno:arg2;
+                    rr:objectMap [ rr:constant "28" ];
+                ];
+                fno:predicateObjectMap [
+                    rr:predicate fno:returns;
+                    rr:objectMap [ rr:constant "Comunidad de Madrid" ];
+                ];
+            ];
+        ];
+    ];
 
     rr:predicateObjectMap [
         rr:predicate mair:hasStation ;
-        rr:objectMap [ rml:reference "MUNICIPALITY" ] 
+        rr:objectMap [
+            fnml:functionValue [
+                fno:executes <#ifFunction>;  # Define a specific function execution
+                fno:predicateObjectMap [
+                    rr:predicate fno:arg1;
+                    rr:objectMap [ rml:reference "MUNICIPALITY" ];
+                ];
+                fno:predicateObjectMap [
+                    rr:predicate fno:arg2;
+                    rr:objectMap [ rr:constant "79" ];
+                ];
+                fno:predicateObjectMap [
+                    rr:predicate fno:returns;
+                    rr:objectMap [ rr:constant "Madrid" ];
+                ];
+            ];
+        ];
     ] ;
 
     rr:predicateObjectMap [
@@ -42,11 +76,11 @@
             rr:child "MAGNITUDE" ;  # Column in main data CSV
             rr:parent "MAGNITUDE"   # Column in magnitude mapping CSV
         ]
-    ] .
+    ];
 
 <#MeasurementMapping>
     rr:subjectMap [
-        rr:template "http://example.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}"
+        rr:template "http://example;org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}"
         rr:class mair:Observation
     ] ;
 
@@ -71,7 +105,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-01"  # Date for D01
         ]
-    ] .
+    ] ;
 
     # D02 Mapping
     rr:predicateObjectMap [
@@ -84,7 +118,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-02"  # Date for D02
         ]
-    ] .
+    ] ;
 
     # D03 Mapping
     rr:predicateObjectMap [
@@ -97,7 +131,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-03"  # Date for D03
         ]
-    ] .
+    ] ;
 
     # Repeat similar mappings for D04 to D31
     # D04
@@ -111,7 +145,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-04"
         ]
-    ] .
+    ] ;
 
     # D05
     rr:predicateObjectMap [
@@ -124,7 +158,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-05"
         ]
-    ] .
+    ] ;
 
     # D06
     rr:predicateObjectMap [
@@ -137,7 +171,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-06"
         ]
-    ] .
+    ] ;
 
     rr:predicateObjectMap [
         rr:predicate mair:hasValue ;
@@ -425,7 +459,7 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-30"
         ]
-    ] .
+    ] ;
 
     # D31
     rr:predicateObjectMap [
@@ -438,11 +472,11 @@
         rr:objectMap [ 
             rr:template "{YEAR}-{MONTH}-31"
         ]
-    ] .
+    ] ;
 
 <#MagnitudeMapping>
     rml:logicalSource [
-        rml:source "/../csv/Magnitude-Relationship.csv" ;
+        rml:source "/;;/csv/Magnitude-Relationship;csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
@@ -468,7 +502,7 @@
 
 <#StreetMapping>
     rml:logicalSource [
-        rml:source "/../csv/LocationCode-Relationship.csv" ;
+        rml:source "/;;/csv/LocationCode-Relationship;csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
@@ -480,4 +514,4 @@
     rr:predicateObjectMap [
         rr:predicate mair:hasSamplingLocation ;
         rr:objectMap [ rml:reference "SAMPLING_LOCATION" ] 
-    ] .
+    ] ;
