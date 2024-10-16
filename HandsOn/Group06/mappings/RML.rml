@@ -30,42 +30,16 @@
     rr:predicateObjectMap [
         rr:predicate mair:hasProvince;
         rr:objectMap [
-            fnml:functionValue [
-                fno:executes <#ifFunction>;  # Define a specific function execution
-                fno:predicateObjectMap [
-                    rr:predicate fno:arg1;
-                    rr:objectMap [ rml:reference "PROVINCE" ];
-                ];
-                fno:predicateObjectMap [
-                    rr:predicate fno:arg2;
-                    rr:objectMap [ rr:constant "28" ];
-                ];
-                fno:predicateObjectMap [
-                    rr:predicate fno:returns;
-                    rr:objectMap [ rr:constant "Comunidad de Madrid" ];
-                ];
-            ];
+            rml:reference "PROVINCE" ;  # Reference the PROVINCE column
+            rr:constant "Comunidad de Madrid"  # Override with constant value for all entries
         ];
-    ];
+    ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasStation ;
+        rr:predicate mair:hasMunicipality;
         rr:objectMap [
-            fnml:functionValue [
-                fno:executes <#ifFunction>;  # Define a specific function execution
-                fno:predicateObjectMap [
-                    rr:predicate fno:arg1;
-                    rr:objectMap [ rml:reference "MUNICIPALITY" ];
-                ];
-                fno:predicateObjectMap [
-                    rr:predicate fno:arg2;
-                    rr:objectMap [ rr:constant "79" ];
-                ];
-                fno:predicateObjectMap [
-                    rr:predicate fno:returns;
-                    rr:objectMap [ rr:constant "Madrid" ];
-                ];
-            ];
+            rml:reference "MUNICIPALITY" ;  # Reference the PROVINCE column
+            rr:constant "Madrid"  # Override with constant value for all entries
         ];
     ] ;
 
