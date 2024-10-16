@@ -463,7 +463,7 @@
 
 <#MagnitudeMapping>
     rml:logicalSource [
-        rml:source "/../csv/Magnitude-Relationship.csv" ;
+        rml:source "/../csv/Magnitud-Relationship.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
