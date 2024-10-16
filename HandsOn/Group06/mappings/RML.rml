@@ -27,20 +27,32 @@
         ]
     ] ;
 
+    # Province Mapping: 28 = Comunidad de Madrid
     rr:predicateObjectMap [
         rr:predicate mair:hasProvince;
         rr:objectMap [
-            rml:reference "PROVINCE" ;  # Reference the PROVINCE column
-            rr:constant "Comunidad de Madrid"  # Override with constant value for all entries
-        ];
+            rml:reference "PROVINCE" ;
+            rr:constant "Comunidad de Madrid" ;
+            rr:termType rr:Literal ;
+            rr:condition [
+                rr:predicateMap [ rml:reference "PROVINCE" ] ;
+                rr:constant "28"
+            ]
+        ]
     ] ;
 
+    # Municipality Mapping: 79 = Madrid
     rr:predicateObjectMap [
         rr:predicate mair:hasMunicipality;
         rr:objectMap [
-            rml:reference "MUNICIPALITY" ;  # Reference the PROVINCE column
-            rr:constant "Madrid"  # Override with constant value for all entries
-        ];
+            rml:reference "MUNICIPALITY" ;
+            rr:constant "Madrid" ;
+            rr:termType rr:Literal ;
+            rr:condition [
+                rr:predicateMap [ rml:reference "MUNICIPALITY" ] ;
+                rr:constant "79"
+            ]
+        ]
     ] ;
 
     rr:predicateObjectMap [
@@ -478,6 +490,11 @@
     rml:logicalSource [
         rml:source "/;;/csv/LocationCode-Relationship;csv" ;
         rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality/ontology/sampling_location/{CODE}" ;
+        rr:class mair:Magnitude ;
     ] ;
 
     rr:predicateObjectMap [
