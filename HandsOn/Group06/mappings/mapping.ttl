@@ -1,79 +1,70 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix mair: <http://MadridAirQuality.org/#> .
-@prefix fno: <https://w3id.org/function/ontology#> .
-@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 @base <http://MadridAirQuality.org/#> .
 
-<#StationMapping>
+<#StreetMap> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "/../csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
+        rml:source "csv/LocationCode-Relationship.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
-    
+
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
-        rr:class mair:Station
+        rr:template "http://MadridAirQuality.org/ontology/sampling_location/{CODE}" ;
+        rr:class mair:Street
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasStreet ;
-        rr:objectMap [
-            rr:parentTriplesMap <#StreetMapping> ;
-            rr:joinCondition [
-                rr:child "STATION" ;  # Column in main data CSV
-                rr:parent "CODE"      # Column in street mapping CSV
-            ]
-        ]
-    ] ;
-
-    # Province Mapping: 28 = Comunidad de Madrid
-    rr:predicateObjectMap [
-        rr:predicate mair:hasProvince;
-        rr:objectMap [
-            rml:reference "PROVINCE" ;
-            rr:constant "Comunidad de Madrid" ;
-            rr:termType rr:Literal ;
-            rr:condition [
-                rr:predicateMap [ rml:reference "PROVINCE" ] ;
-                rr:constant "28"
-            ]
-        ]
-    ] ;
-
-    # Municipality Mapping: 79 = Madrid
-    rr:predicateObjectMap [
-        rr:predicate mair:hasMunicipality;
-        rr:objectMap [
-            rml:reference "MUNICIPALITY" ;
-            rr:constant "Madrid" ;
-            rr:termType rr:Literal ;
-            rr:condition [
-                rr:predicateMap [ rml:reference "MUNICIPALITY" ] ;
-                rr:constant "79"
-            ]
-        ]
+        rr:predicate mair:hasLocationCode ;
+        rr:objectMap [ rml:reference "CODE" ] 
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasObservation ;
-        rr:objectMap [
-            rr:parentTriplesMap <#MeasurementMapping>;
-            rr:child "MAGNITUDE" ;  # Column in main data CSV
-            rr:parent "MAGNITUDE"   # Column in magnitude mapping CSV
-        ]
+        rr:predicate mair:hasSamplingLocation ;
+        rr:objectMap [ rml:reference "SAMPLING_LOCATION" ] 
     ] .
 
-<#MeasurementMapping>
+<#MagnitudeMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/Magnitud-Relationship.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
     rr:subjectMap [
-        rr:template "http://example;org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}"
+        rr:template "http://MadridAirQuality.org/ontology/magnitude/{MAGNITUDE}" ;
+        rr:class mair:Magnitude
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMagnitude ;
+        rr:objectMap [ rml:reference "MAGNITUDE" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasParameterName ;
+        rr:objectMap [ rml:reference "PARAMETER_NAME" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurementUnit ;
+        rr:objectMap [ rml:reference "MEASUREMENT_UNIT" ]
+    ] .
+
+<#MeasurementMap>
+    rml:logicalSource [
+        rml:source "csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}";
         rr:class mair:Observation
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate mair:hasParameter ;
-        rr:objectMap <#MagnitudeMapping>
+        rr:objectMap <#MagnitudeMap>
     ] ;
 
     rr:predicateObjectMap [
@@ -461,49 +452,67 @@
         ]
     ] .
 
-<#MagnitudeMapping>
+<#StationMap> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "/../csv/Magnitud-Relationship.csv" ;
+        rml:source "csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality/ontology/magnitude/{MAGNITUDE}" ;
-        rr:class mair:Magnitude
+        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:class mair:Station
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasMagnitude ;
-        rr:objectMap [ rml:reference "MAGNITUDE" ]
+        rr:predicate mair:hasStreet ;
+        rr:objectMap [
+            rr:parentTriplesMap <#StreetMap> ;
+            rr:joinCondition [
+                rr:child "STATION" ;  # Column in main data CSV
+                rr:parent "CODE"      # Column in street mapping CSV
+            ]
+        ]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasObservation ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MeasurementMap>;
+            rr:joinCondition [
+                rr:child "MAGNITUDE" ;  # Column in main data CSV
+                rr:parent "MAGNITUDE"   # Column in magnitude mapping CSV
+            ]
+        ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasParameterName ;
-        rr:objectMap [ rml:reference "PARAMETER_NAME" ]
+        rr:predicate mair:hasProvince;
+        rr:objectMap [
+            rml:reference "PROVINCE" ;  # Use the province code
+            rr:termType rr:Literal
+        ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasMeasurementUnit ;
-        rr:objectMap [ rml:reference "MEASUREMENT_UNIT" ]
-    ] .
-
-<#StreetMapping>
-    rml:logicalSource [
-        rml:source "/../csv/LocationCode-Relationship.csv" ;
-        rml:referenceFormulation ql:CSV
+        rr:predicate mair:hasProvinceName;  # New predicate for province name
+        rr:objectMap [
+            rr:constant "Comunidad de Madrid" ;  # Constant for full name
+            rr:termType rr:Literal
+        ]
     ] ;
 
-    rr:subjectMap [
-        rr:template "http://MadridAirQuality/ontology/sampling_location/{CODE}" ;
-        rr:class mair:Street
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:hasLocationCode ;
-        rr:objectMap [ rml:reference "CODE" ] 
+        rr:predicateObjectMap [
+        rr:predicate mair:hasMunicipality;
+        rr:objectMap [
+            rml:reference "MUNICIPALITY" ;  # Use the province code
+            rr:termType rr:Literal
+        ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasSamplingLocation ;
-        rr:objectMap [ rml:reference "SAMPLING_LOCATION" ] 
-    ] .
+        rr:predicate mair:hasMunicipalityName;  # New predicate for province name
+        rr:objectMap [
+            rr:constant "Madrid" ;  # Constant for full name
+            rr:termType rr:Literal
+        ]
+    ].
