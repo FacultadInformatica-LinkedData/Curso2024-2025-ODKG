@@ -1,18 +1,18 @@
-@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-@prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix ql: <http://www.w3.org/ns/ql#> .
-@prefix mair: <http://MadridAirQuality.org/ontology#> .
-@prefix fno: <https://w3id.org/function/ontology#> .
-@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> ;
+@prefix rr: <http://www.w3.org/ns/r2rml#> ;
+@prefix ql: <http://www.w3.org/ns/ql#> ;
+@prefix mair: <http://MadridAirQuality.org/ontology#> ;
+@prefix fno: <https://w3id.org/function/ontology#> ;
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> ;
 
 <#StationMapping>
     rml:logicalSource [
-        rml:source "/;;/csv/ODKG-Group06-AirQualityDataset-updated;csv" ;
+        rml:source "/../csv/ODKG-Group06-AirQualityDataset-updated;csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
     
     rr:subjectMap [
-        rr:template "http://MadridAirQuality;org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
         rr:class mair:Station
     ] ;
 
