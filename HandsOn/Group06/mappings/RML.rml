@@ -494,7 +494,7 @@
 
     rr:subjectMap [
         rr:template "http://MadridAirQuality/ontology/sampling_location/{CODE}" ;
-        rr:class mair:Magnitude ;
+        rr:class mair:Street ;
     ] ;
 
     rr:predicateObjectMap [
