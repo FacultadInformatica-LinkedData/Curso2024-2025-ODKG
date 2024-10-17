@@ -64,6 +64,11 @@
 
     rr:predicateObjectMap [
         rr:predicate mair:hasTechnique ;
+        rr:objectMap [ rml:reference "STATION" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasTechnique ;
         rr:objectMap [ rml:reference "TECHNIQUE" ]
     ] ;
 
@@ -335,8 +340,8 @@
         rr:objectMap [
             rr:parentTriplesMap <#MeasurementMap>;
             rr:joinCondition [
-                rr:child "TECHNIQUE";
-                rr:parent "TECHNIQUE";
+                rr:child "STATION";
+                rr:parent "STATION";
             ]
         ]
     ] ;
