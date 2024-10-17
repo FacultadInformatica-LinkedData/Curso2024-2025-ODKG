@@ -1,0 +1,108 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geolocation_unlock",
+    "expression": "jython:return value.split(\"[\")[1].split(\"]\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geolocation_unlock using expression jython:return value.split(\"[\")[1].split(\"]\")[0]"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geolocation_unlock",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column geolocation_unlock by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fleet",
+    "description": "Remove column fleet"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geolocation_lock",
+    "expression": "jython:return value.split(\"[\")[1].split(\"]\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column geolocation_lock using expression jython:return value.split(\"[\")[1].split(\"]\")[0]"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "geolocation_lock",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column geolocation_lock by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "geolocation_unlock 1",
+    "newColumnName": "lat",
+    "description": "Rename column geolocation_unlock 1 to lat"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "lat",
+    "newColumnName": "start_latitude",
+    "description": "Rename column lat to start_latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "geolocation_lock 1",
+    "newColumnName": "end_latitude",
+    "description": "Rename column geolocation_lock 1 to end_latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "geolocation_unlock 2",
+    "newColumnName": "start_longitude",
+    "description": "Rename column geolocation_unlock 2 to start_longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "geolocation_lock 2",
+    "newColumnName": "end_longitude",
+    "description": "Rename column geolocation_lock 2 to end_longitude"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha",
+    "description": "Remove column fecha"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "idBike",
+    "description": "Remove column idBike"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "trip_minutes",
+    "description": "Remove column trip_minutes"
+  }
+]

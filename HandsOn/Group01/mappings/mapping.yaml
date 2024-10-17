@@ -1,0 +1,23 @@
+prefixes:
+  ns: "http://www.bikeradar.es/ontology/ont#"
+  geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  res: "http://www.bikeradar.es/resources/"
+
+mappings:
+  bikeParking:
+    sources:
+      - ['~jsonpath', '$[*]']  # Asegúrate de que esté bien escrito
+    s: res:BicycleParkingSpot/$(ID)  # Asegúrate de que esto sea una cadena
+    po:
+      - [a, ns:BicycleParkingSpot]
+      - [ns:id, $(ID)]
+      - [ns:direccion, $(DIRECCION)]
+      - [ns:isInDistrito, $(DISTRITO)]
+      - [ns:isInBarrio, $(BARRIO)]
+      - [ns:latitud, $(LATITUD), xsd:float]
+      - [ns:longitud, $(LONGITUD), xsd:float]
+      - [ns:hasFechaInstalacion, $(FECHA_INSTALACION), xsd:dateTime]
+      - [ns:modelo, $(MODELO)]
+
+

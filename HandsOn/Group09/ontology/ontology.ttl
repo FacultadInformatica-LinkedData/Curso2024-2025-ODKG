@@ -1,0 +1,108 @@
+@prefix : <http://mAIRdrid.org/ontology/> .
+@prefix ns: <http://mAIRdrid.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix http: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qudt-1-1: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudt-unit-1-1: <http://qudt.org/1.1/vocab/unit#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://mAIRdrid.org/ontology/> .
+
+<http://mAIRdrid.org/ontology#> rdf:type owl:Ontology ;
+			dc:title "mAIRdrid"@en ;
+			dc:description "Ontology for the development of services about air quality. Born with Madrid in mind, but designed to be usable in any town in Spain and even internationally."@en ;
+			dc:created "2024-10-06"^^xsd:date ;
+			dc:creator "Rafael Orihuela Brindis" ;
+			dc:creator "Pedro Pedregal Pérez" ;
+			dc:creator "Elias Herrero Lázaro" ;
+			dc:creator "Carlos de la Cruz Ayala Vargas" ;
+			dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+			vann:preferredNamespaceUri <https://mAIRdrid.org/ontology#> ;
+			vann:preferredNamespacePrefix "mAIR" ;
+			owl:versionIRI <https://mAIRdrid.org/1.0.2> ;
+			owl:versionInfo "0.0.1" ;
+			mod:createdWith <https://chowlk.linkeddata.es/> .
+
+dc:title a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:created a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:license a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+#################################
+#    Object Properties
+#################################
+
+## ns:inPublicSpace
+ns:inPublicSpace rdf:type owl:ObjectProperty ;
+		rdfs:domain ns:Location ;
+		rdfs:range wd:Q111415237 ;
+		rdfs:label "in public space" .
+
+## ns:relevantToMeasure
+ns:relevantToMeasure rdf:type owl:ObjectProperty ;
+		rdfs:domain ns:AirQualityMetric ;
+		rdfs:range wd:Q2144359 ;
+		rdfs:label "relevant to measure" .
+
+#################################
+#    Data Properties
+#################################
+
+## ns:nationalStationID
+ns:nationalStationID rdf:type owl:DatatypeProperty ;
+		rdfs:domain ns:Station ;
+		rdfs:range xsd:integer ;
+		rdfs:label "national station ID" .
+
+#################################
+#    Classes
+#################################
+
+## ns:Station
+ns:Station rdf:type owl:Class ;
+	rdfs:label "Station" ;
+	rdfs:subClassOf ssn:System .
+
+## ns:Location
+ns:Location rdf:type owl:Class ;
+	rdfs:label "Location" ;
+	rdfs:subClassOf sosa:FeatureOfInterest .
+
+## ns:AirQualityMetric
+ns:AirQualityMetric rdf:type owl:Class ;
+	rdfs:label "Air Quality Metric" ;
+	rdfs:subClassOf sosa:ObservableProperty .
+
+#################################
+#    General Axioms
+#################################
+
