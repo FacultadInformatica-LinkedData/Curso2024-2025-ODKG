@@ -32,13 +32,13 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/ontology/magnitude/{MAGNITUDE}" ;
+        rr:template "http://MadridAirQuality.org/ontology/magnitude/{MAGNITUDE_CODE}" ;  # Changed to MAGNITUDE_CODE
         rr:class mair:Magnitude
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate mair:hasMagnitude ;
-        rr:objectMap [ rml:reference "MAGNITUDE" ]
+        rr:objectMap [ rml:reference "MAGNITUDE_CODE" ]  # Changed to MAGNITUDE_CODE
     ] ;
 
     rr:predicateObjectMap [
@@ -51,20 +51,15 @@
         rr:objectMap [ rml:reference "MEASUREMENT_UNIT" ]
     ] .
 
-<#MeasurementMap>
+<#MeasurementMap> a rr:TriplesMap;
     rml:logicalSource [
         rml:source "csv/ODKG-Group06-AirQualityDataset-updated.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/observation/{PROVINCE}-{MUNICIPALITY}-{STATION}/{MAGNITUDE}/{YEAR}-{MONTH}/D{D01}";
+        rr:template "http://MadridAirQuality.org/observation/{PROVINCE}/{MUNICIPALITY}/{STATION}/{YEAR}/{MONTH}/readings";
         rr:class mair:Observation
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:hasParameter ;
-        rr:objectMap <#MagnitudeMap>
     ] ;
 
     rr:predicateObjectMap [
@@ -72,383 +67,244 @@
         rr:objectMap [ rml:reference "TECHNIQUE" ]
     ] ;
 
+    rr:predicateObjectMap [
+        rr:predicate mair:hasObservation ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MagnitudeMap>;
+            rr:joinCondition [
+                rr:child "MAGNITUDE" ;  # Column in main data CSV
+                rr:parent "MAGNITUDE_CODE"   # Column in magnitude mapping CSV
+            ]
+        ]
+    ];
+    
+    # Mapping for the year
+    rr:predicateObjectMap [
+        rr:predicate mair:hasYear ;
+        rr:objectMap [ rml:reference "YEAR" ]
+    ] ;
+
+    # Mapping for the month
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMonth ;
+        rr:objectMap [ rml:reference "MONTH" ]
+    ] ;
+
     # Mapping for each day's measurements
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D01" ]  # D01 measurement
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-01"  # Date for D01
-        ]
-    ] ;
-
-    # D02 Mapping
-    rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D02" ]  # D02 measurement
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-02"  # Date for D02
-        ]
-    ] ;
-
-    # D03 Mapping
-    rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D03" ]  # D03 measurement
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-03"  # Date for D03
-        ]
-    ] ;
-
-    # Repeat similar mappings for D04 to D31
-    # D04
-    rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D04" ]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-04"
-        ]
-    ] ;
-
-    # D05
-    rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D05" ]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-05"
-        ]
-    ] ;
-
-    # D06
-    rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D06" ]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-06"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D01"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D07" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-07"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D02"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D08" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-08"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D03"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D09" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-09"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D04"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D10" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-10"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D05"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D11" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-11"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D06"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D12" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-12"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D07"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D13" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-13"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D08"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D14" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-14"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D09"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D15" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-15"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D10"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D16" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-16"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D11"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D17" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-17"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D12"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D18" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-18"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D13"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D19" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-19"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D14"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D20" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-20"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D15"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D21" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-21"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D16"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D22" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-22"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D17"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D23" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-23"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D18"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D24" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-24"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D19"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D25" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-25"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D20"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D26" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-26"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D21"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D27" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-27"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D22"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D28" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-28"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D23"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D29" ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-29"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D24"
         ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D30" ]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-30"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D25"
         ]
     ] ;
 
-    # D31
     rr:predicateObjectMap [
-        rr:predicate mair:hasValue ;
-        rr:objectMap [ rml:reference "D31" ]
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D26"
+        ]
     ] ;
-    
+
     rr:predicateObjectMap [
-        rr:predicate mair:observationDate ;
-        rr:objectMap [ 
-            rr:template "{YEAR}-{MONTH}-31"
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D27"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D28"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D29"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D30"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasDailyMeasurement ;
+        rr:objectMap [
+            rml:reference "D31"
         ]
     ] .
 
@@ -459,7 +315,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}-{MUNICIPALITY}-{STATION}" ;
+        rr:template "http://MadridAirQuality.org/ontology/station/{PROVINCE}/{MUNICIPALITY}/{STATION}" ;
         rr:class mair:Station
     ] ;
 
@@ -475,12 +331,12 @@
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate mair:hasObservation ;
+        rr:predicate mair:hasTechnique ;
         rr:objectMap [
             rr:parentTriplesMap <#MeasurementMap>;
             rr:joinCondition [
-                rr:child "MAGNITUDE" ;  # Column in main data CSV
-                rr:parent "MAGNITUDE"   # Column in magnitude mapping CSV
+                rr:child "TECHNIQUE";
+                rr:parent "TECHNIQUE";
             ]
         ]
     ] ;
