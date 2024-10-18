@@ -9,6 +9,110 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
+<#FreeMap>
+    rml:logicalSource [
+        rml:source "updated_dataset_free_places.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://bicimap.com/place/{id_free_place}" ;
+        rr:class schema:Place
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:id ;
+        rr:objectMap [
+            rml:reference "id_free_place" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:address ;
+        rr:objectMap [
+            rml:reference "address" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:latitude ;
+        rr:objectMap [
+            rml:reference "latitude" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:longitude ;
+        rr:objectMap [
+            rml:reference "longitude" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:double
+        ]
+    ] .
+
+
+<#StationMap>
+    rml:logicalSource [
+        rml:source "updated_dataset_stations.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://bicimap.com/place/{id_station}" ;
+        rr:class bicimap:BikeStation
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:id ;
+        rr:objectMap [
+            rml:reference "id_station" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "station_name" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:address ;
+        rr:objectMap [
+            rml:reference "address" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:latitude ;
+        rr:objectMap [
+            rml:reference "latitude" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:longitude ;
+        rr:objectMap [
+            rml:reference "longitude" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:double
+        ]
+    ] .
+
 <#BiketripsMapping>
     rml:logicalSource [
         rml:source "biketrips.csv" ;
@@ -20,29 +124,29 @@
         rr:class bicimap:BikeTrip
     ] ;
 
-    rr:predicateObjectMap [ # TEMPLATE TO FOLLOW
+    rr:predicateObjectMap [
         rr:predicateMap [
             rr:constant bicimap:bikeId;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rml:column "id_Bike" ;
+            rml:reference "id_Bike" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:integer
         ]
     ] ;
 
-    rr:predicateObjectMap [
-        rr:predicateMap [
-            rr:constant bicimap:tripMinutes;
-            rr:termType rr:IRI
-        ] ;
-        rr:objectMap [
-            rml:column "duration" ;
-            rr:termType rr:Literal ;
-            rr:datatype xsd:double
-        ]
-    ] ;
+#    rr:predicateObjectMap [
+#        rr:predicateMap [
+#            rr:constant bicimap:tripMinutes;
+#            rr:termType rr:IRI
+#        ] ;
+#        rr:objectMap [
+#            rml:reference "duration" ;
+#            rr:termType rr:Literal ;
+#            rr:datatype xsd:double
+#        ]
+#    ] ;
 
     rr:predicateObjectMap [
         rr:predicateMap [
@@ -50,7 +154,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rml:column "lock_date" ;
+            rml:reference "lock_date" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:datetime
         ]
@@ -62,7 +166,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rml:column "unlock_date" ;
+            rml:reference "unlock_date" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:datetime
         ]
@@ -74,7 +178,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rml:column "unlock_dock" ;
+            rml:reference "dock_unlock" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:integer
         ]
@@ -86,7 +190,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rml:column "lock_dock" ;
+            rml:reference "dock_unlock" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:integer
         ]
@@ -98,40 +202,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-          rr:parentTriplesMap <#FreeMap>;
-          rr:joinCondition [
-            rr:child "start_id";
-            rr:parent "id"
-          ]
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicateMap [
-            rr:constant bicimap:endAt ;
-            rr:termType rr:IRI
-        ] ;
-        rr:objectMap [
-            rr:parentTriplesMap <#FreeMap> ;
-            rr:joinCondition [
-                rr:child "end_id" ;
-                rr:parent "id"
-            ]
-        ]
-    ] ;
-
-
-    rr:predicateObjectMap [
-        rr:predicateMap [
-            rr:constant bicimap:startAt;
-            rr:termType rr:IRI
-        ] ;
-        rr:objectMap [
-          rr:parentTriplesMap <#StationMap>;
-          rr:joinCondition [
-            rr:child "start_id";
-            rr:parent "id"
-          ]
+            rr:template "http://bicimap.com/places/{id_place_unlock}"
         ]
     ] ;
 
@@ -141,97 +212,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-          rr:parentTriplesMap <#StationMap>;
-          rr:joinCondition [
-            rr:child "end_id";
-            rr:parent "id"
-          ]
+            rr:template "http://bicimap.com/places/{id_place_lock}"
         ]
     ] .
 
-
-<#FreeMap>
-    rml:logicalSource [
-        rml:source "free_places.csv" ;
-        rml:referenceFormulation ql:CSV
-    ] ;
-
-    rr:subjectMap [
-        rr:template "http://bicimap.com/place/free/{id_free_place}" ;
-        rr:class schema:Place
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:address ;
-        rr:objectMap [
-            rml:column "address" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:latitude ;
-        rr:objectMap [
-            rml:column "latitude" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:longitude ;
-        rr:objectMap [
-            rml:column "longitude" ;
-            rr:termType rr:Literal
-        ]
-    ] .
-
-<#StationMap>
-    rml:logicalSource [
-        rml:source "stations.csv" ;
-        rml:referenceFormulation ql:CSV
-    ] ;
-
-    rr:subjectMap [
-        rr:template "http://bicimap.com/place/station/{id_station}" ;
-        rr:class bicimap:BikeStation
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate rdfs:label ;
-        rr:objectMap [
-            rml:column "station_name" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:address ;
-        rr:objectMap [
-            rml:column "address" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate rdfs:label ;
-        rr:objectMap [
-            rml:column "address" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:latitude ;
-        rr:objectMap [
-            rml:column "latitude" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate schema:longitude ;
-        rr:objectMap [
-            rml:column "longitude" ;
-            rr:termType rr:Literal
-        ]
-    ] .
