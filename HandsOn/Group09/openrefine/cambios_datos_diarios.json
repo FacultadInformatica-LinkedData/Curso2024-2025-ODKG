@@ -797,16 +797,16 @@
     "description": "Fill down cells in column PUNTO_MUESTREO"
   },
   {
-    "op": "core/column-addition",
+    "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "MAGNITUD",
-    "expression": "grel:if(value==\"CO\",\"mg/m3\",\"μg/m3\")",
-    "onError": "set-to-blank",
-    "newColumnName": "UNIDAD",
-    "columnInsertIndex": 1,
-    "description": "Create column UNIDAD at index 1 based on column MAGNITUD using expression grel:if(value==\"CO\",\"mg/m3\",\"μg/m3\")"
+    "columnName": "MEDIDA",
+    "expression": "grel:if(cells.MAGNITUD.value == \"CO\", value*1000, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MEDIDA using expression grel:if(cells.MAGNITUD.value == \"CO\", value*1000, value)"
   }
 ]
