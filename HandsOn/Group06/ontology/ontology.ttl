@@ -7,17 +7,27 @@
 # Ontology Definition
 mair:AirQualityOntology a owl:Ontology ;
     rdfs:label "Air Quality Monitoring Ontology" ;
-    rdfs:comment "An ontology for representing air quality monitoring data including locations, stations, magnitudes, and measurements." .
+    rdfs:comment "An ontology for representing air quality monitoring data including locations, provinces, municipalities, stations, and measurements." .
 
 # Class Definitions
 mair:Location a rdfs:Class ;
     rdfs:label "Location" ;
     rdfs:comment "A physical location where air quality measurements are taken." .
 
+mair:Province a rdfs:Class ;
+    rdfs:label "Province" ;
+    rdfs:comment "A province where air quality measurements are taken." ;
+    rdfs:subClassOf mair:Location .  # Province is a subclass of Location
+
+mair:Municipality a rdfs:Class ;
+    rdfs:label "Municipality" ;
+    rdfs:comment "A municipality where air quality measurements are taken." ;
+    rdfs:subClassOf mair:Location .  # Municipality is also a subclass of Location
+
 mair:Station a rdfs:Class ;
     rdfs:label "Station" ;
     rdfs:comment "A monitoring station that measures air quality at a specific location." ;
-    rdfs:subClassOf mair:Location .  # A Station is a type of Location
+    rdfs:subClassOf mair:Location .  # A Station is also a subclass of Location
 
 mair:Magnitude a rdfs:Class ;
     rdfs:label "Magnitude" ;
@@ -28,11 +38,29 @@ mair:Measurement a rdfs:Class ;
     rdfs:comment "A recorded observation of air quality data at a specific time and location." .
 
 # Object Properties
-mair:hasLocation a rdf:Property ;
-    rdfs:label "has location" ;
-    rdfs:comment "Relates a Station to its Location." ;
+mair:hasProvince a rdf:Property ;
+    rdfs:label "has province" ;
+    rdfs:comment "Relates a Location to its Province." ;
+    rdfs:domain mair:Location ;
+    rdfs:range mair:Province .
+
+mair:hasMunicipality a rdf:Property ;
+    rdfs:label "has municipality" ;
+    rdfs:comment "Relates a Province to its Municipality." ;
+    rdfs:domain mair:Province ;
+    rdfs:range mair:Municipality .
+
+mair:hasStation a rdf:Property ;
+    rdfs:label "has station" ;
+    rdfs:comment "Relates a Municipality to its Stations." ;
+    rdfs:domain mair:Municipality ;
+    rdfs:range mair:Station .
+
+mair:hasMeasurement a rdf:Property ;
+    rdfs:label "has measurement" ;
+    rdfs:comment "Relates a Station to its Measurements." ;
     rdfs:domain mair:Station ;
-    rdfs:range mair:Location .
+    rdfs:range mair:Measurement .
 
 mair:measuresMagnitude a rdf:Property ;
     rdfs:label "measures magnitude" ;
