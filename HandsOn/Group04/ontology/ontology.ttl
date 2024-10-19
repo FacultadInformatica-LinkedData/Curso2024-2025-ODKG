@@ -1,6 +1,6 @@
-@prefix base: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/> .
+@prefix base: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#> .
+@prefix ns: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -28,14 +28,6 @@ ns:chademoKw a owl:DatatypeProperty ;
     rdfs:label "chademo kw" ;
     rdfs:domain ns:ChargePoint .
 
-ns:coordinateX a owl:DatatypeProperty ;
-    rdfs:label "coordinate x" ;
-    rdfs:domain ns:Coordinates .
-
-ns:coordinateY a owl:DatatypeProperty ;
-    rdfs:label "coordinate y" ;
-    rdfs:domain ns:Coordinates .
-
 ns:dischargeDate a owl:DatatypeProperty ;
     rdfs:label "discharge date" ;
     rdfs:domain ns:ChargePoint .
@@ -45,15 +37,20 @@ ns:isPartOf a owl:ObjectProperty ;
     rdfs:domain ns:Neighborhood ;
     rdfs:range ns:District .
 
-ns:locatedIn a owl:ObjectProperty ;
-    rdfs:label "located in" ;
+ns:locatedInNeighborhood a owl:ObjectProperty ;
+    rdfs:label "located in neighborhood" ;
+    rdfs:domain ns:Street ;
+    rdfs:range ns:Neighborhood .
+
+ns:locatedInStreet a owl:ObjectProperty ;
+    rdfs:label "located in street" ;
     rdfs:domain ns:ChargePoint,
-        ns:Coordinates,
-        ns:Parking,
-        ns:Street ;
-    rdfs:range ns:Coordinates,
-        ns:Neighborhood,
-        ns:Street .
+        ns:Parking ;
+    rdfs:range ns:Street .
+
+ns:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:domain ns:ChargePoint .
 
 ns:managedBy a owl:ObjectProperty ;
     rdfs:label "managed by" ;
@@ -104,9 +101,6 @@ ns:Neighborhood a owl:Class ;
 
 ns:Street a owl:Class ;
     rdfs:label "Street" .
-
-ns:Coordinates a owl:Class ;
-    rdfs:label "Coordinates" .
 
 ns:Parking a owl:Class ;
     rdfs:label "Parking" .
