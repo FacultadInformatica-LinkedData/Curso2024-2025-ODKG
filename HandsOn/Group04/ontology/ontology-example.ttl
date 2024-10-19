@@ -8,6 +8,7 @@
 
 
 ns:04_PV rdf:type ns:ChargingPoint ;
+    rdf:label "Punto de carga 04_PV";
     ns:dischargeDate "2022-03-02-05T15:21:24Z"^^xsd:dateTime ;
     ns:openingHours "24" ;
     ns:numberOfEquipments 1:integer ;
@@ -16,8 +17,8 @@ ns:04_PV rdf:type ns:ChargingPoint ;
     ns:ccsKw "50" ;
     ns:mennekesConnectors 1:integer ;
     ns:chademoConnectors 2:integer ;
-    ns:ccsConnectors 2:integer.
-     ns:location "Ronda de Valencia 1"
+    ns:ccsConnectors 2:integer;
+    ns:location "Ronda de Valencia 1".
 
 ns:RondaValencia1 rdf:type ns:Street ;
     rdf:label "Ronda de Valencia".
