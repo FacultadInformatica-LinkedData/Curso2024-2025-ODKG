@@ -5,7 +5,7 @@
 
 bicient:Station1 a bicimap:BikeStation ;
     schema:address [
-        a schema:PostalAddress
+        a schema:PostalAddress ;
         schema:streetAddress "Calle Jes�s n� 1"
     ];
     schema:latitude 40.4132798 ;
