@@ -19,6 +19,7 @@ mappings:
       - "../csv/estaciones-de-recarga-updated.csv"
     s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/{ID_Punto}"
     po:
+      - [rdf:label, "ESTACION"^^xsd:string]
       - [vocab:openingHours, "HORARIO"^^xsd:string]
       - [vocab:dischargeDate, "FECHA_ALTA"^^xsd:date]
       - [vocab:numberOfEquipments, "Nº_EQUIPOS"^^xsd:integer]
