@@ -22,7 +22,14 @@
     rr:class vocab:ChargePoint;
     rr:termType rr:IRI
   ];
-
+  rr:predicateObjectMap [
+      rr:predicate rdf:label;
+      rr:objectMap [
+        rml:reference "ESTACION";
+        rr:termType rr:Literal ;
+        rr:datatype xsd:string
+      ]
+    ];
   rr:predicateObjectMap [
     rr:predicate vocab:openingHours;
     rr:objectMap [
