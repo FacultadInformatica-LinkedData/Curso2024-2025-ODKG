@@ -2493,5 +2493,24 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column CALLE_ID using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ID_Punto",
+    "expression": "grel:\"Punto de carga \"+value",
+    "onError": "set-to-blank",
+    "newColumnName": "ESTACION",
+    "columnInsertIndex": 1,
+    "description": "Create column ESTACION at index 1 based on column ID_Punto using expression grel:\"Punto de carga \"+value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "ESTACION",
+    "index": 0,
+    "description": "Move column ESTACION to position 0"
   }
 ]
