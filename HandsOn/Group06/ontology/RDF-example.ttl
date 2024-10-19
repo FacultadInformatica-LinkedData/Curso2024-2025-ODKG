@@ -1,44 +1,40 @@
-@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mair: <http://MadridAirQuality.org/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# Province
+<http://MadridAirQuality.org/province/28> a mair:Province ;
+    mair:hasProvinceLocationID 28 ;
+    mair:hasProvinceName "Madrid" .
 
-# mairamples
+# Municipality
+<http://MadridAirQuality.org/municipality/79> a mair:Municipality ;
+    mair:hasMunicipalityLocationID 79 ;
+    mair:hasMunicipalityName "Madrid" ;
+    mair:hasProvince <http://MadridAirQuality.org/province/28> .
 
-mair:provincia/Madrid a mair:Provincia ;
-    rdfs:label "Madrid" .
+# Street
+<http://MadridAirQuality.org/street/4> a mair:Street ;
+    mair:hasStreetLocationID 4 ;
+    mair:hasStreetName "Plaza España" ;
+    mair:hasMunicipality <http://MadridAirQuality.org/municipality/79> .
 
-mair:municipio/Madrid a mair:Municipio ;
-    rdfs:label "Madrid" ;
-    mair:hasProvincia mair:provincia/Madrid ;
-    mair:hasEstacion mair:estacion/PlazaDeEspana, mair:estacion/EscuelasAguirre .
+# Station
+<http://MadridAirQuality.org/station/4> a mair:Station ;
+    mair:hasStationLocationID 4 ;
+    mair:hasStreet <http://MadridAirQuality.org/street/4> .
 
-mair:estacion/PlazaDeEspana a mair:Estacion ;
-    rdfs:label "Plaza de España" ;
-    mair:monitors mair:parametro/Ozono ;
-    mair:recordsObservation mair:observacion/2024-01-01 .
+# Magnitude (Pollutant)
+<http://MadridAirQuality.org/magnitude/8> a mair:Magnitude ;
+    mair:hasMagnitudeCode 8 ;
+    mair:hasMagnitudeName "Nitrogen Dioxide (NO2)" ;
+    mair:hasMagnitudeMeasurementUnit "µg/m³" .
 
-mair:estacion/EscuelasAguirre a mair:Estacion ;
-    rdfs:label "Escuelas Aguirre" ;
-    mair:monitors mair:parametro/PM2.5 ;
-    mair:recordsObservation mair:observacion/2024-02-05 .
-
-mair:parametro/Ozono a mair:Parametro ;
-    mair:hasMagnitud "Ozono" .
-
-mair:parametro/PM2.5 a mair:Parametro ;
-    mair:hasMagnitud "PM2.5" .
-
-mair:observacion/2024-01-01 a mair:Observacion ;
-    mair:hasFecha "2024-01-01"^^xsd:date ;
-    mair:hasValor 2 ;
-    mair:monitors mair:Parametro/Ozono ;
-    mair:recordsObservation mair:estacion/PlazaDeEspana .
-
-mair:observacion/2024-02-05 a mair:Observacion ;
-    mair:hasFecha "2024-02-05"^^xsd:date ;
-    mair:hasValor 19 ;
-    mair:monitors mair:parametro/PM2.5 ;
-    mair:recordsObservation mair:estacion/EscuelasAguirre .
+# Measurement of NO2 at Station
+<http://MadridAirQuality.org/measurement/2024-10-18-Station4-NO2> a mair:Measurement ;
+    mair:hasMeasurementValue 35.7 ;
+    mair:hasMeasurementDay 18 ;
+    mair:hasMeasurementMonth 10 ;
+    mair:hasMeasurementYear 2024 ;
+    mair:isMeasurementValid true ;
+    mair:recordedFrom <http://MadridAirQuality.org/station/4> ;
+    mair:hasMagnitude <http://MadridAirQuality.org/magnitude/8> .
