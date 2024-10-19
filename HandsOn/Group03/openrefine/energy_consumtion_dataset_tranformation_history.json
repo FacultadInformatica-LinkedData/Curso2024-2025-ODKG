@@ -486,5 +486,752 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column STREET NUMBER using expression value.toString()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "X-COORDINATE",
+    "description": "Remove column X-COORDINATE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Y-COORDINATE",
+    "description": "Remove column Y-COORDINATE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ENERGY GROUP",
+    "description": "Remove column ENERGY GROUP"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "grel:value.replace(',','.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CONSUMPTION using expression grel:value.replace(',','.')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CONSUMPTION using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ERROR: El servidor devolvió una respuesta no válida o no reconocida\r\n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "(No hay datos)\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NO DATA\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NO DATA PROC\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CONSUMPTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SIN DATOS O INFORMACIÓN INCOMPLETA\r"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column CONSUMPTION"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CONSUMPTION",
+          "expression": "value",
+          "columnName": "CONSUMPTION",
+          "from": -800000,
+          "to": 6000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "value",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ADDRESS",
+    "expression": "grel:cells['STREET TYPE'].value + \" \"+ cells['STREET NAME'].value + \" \"+  cells['STREET NUMBER'].value + \",\" + cells['POSTAL CODE'].value + \" \" + cells['CITY'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ADDRESS using expression grel:cells['STREET TYPE'].value + \" \"+ cells['STREET NAME'].value + \" \"+  cells['STREET NUMBER'].value + \",\" + cells['POSTAL CODE'].value + \" \" + cells['CITY'].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "value",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ADDRESS",
+    "expression": "grel:cells['STREET TYPE'].value + \" \" + cells['STREET NAME'].value + \" \" + cells['STREET NUMBER'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ADDRESS using expression grel:cells['STREET TYPE'].value + \" \" + cells['STREET NAME'].value + \" \" + cells['STREET NUMBER'].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUMBER",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUMBER using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "STREET NUMBER",
+          "expression": "value",
+          "columnName": "STREET NUMBER",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "28012",
+                "l": "28012"
+              }
+            },
+            {
+              "v": {
+                "v": "28025",
+                "l": "28025"
+              }
+            },
+            {
+              "v": {
+                "v": "28044",
+                "l": "28044"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "POSTAL CODE",
+    "expression": "grel:cells['STREET NUMBER'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column POSTAL CODE using expression grel:cells['STREET NUMBER'].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "STREET NUMBER",
+          "expression": "value",
+          "columnName": "STREET NUMBER",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "28025",
+                "l": "28025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUMBER",
+    "expression": "grel:cells['STREET NAME'].value.split(\" \")[1]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUMBER using expression grel:cells['STREET NAME'].value.split(\" \")[1]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "STREET NUMBER",
+          "expression": "value",
+          "columnName": "STREET NUMBER",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "28012",
+                "l": "28012"
+              }
+            },
+            {
+              "v": {
+                "v": "28044",
+                "l": "28044"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUMBER",
+    "expression": "grel:cells['STREET NAME'].value.split(\" \")[2]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUMBER using expression grel:cells['STREET NAME'].value.split(\" \")[2]"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CITY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "MADRID"
+      }
+    ],
+    "description": "Mass edit cells in column CITY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(\",\")",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(cells['POSTAL CODE'].value)",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NAME",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ALISEDA 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALISEDA"
+      }
+    ],
+    "description": "Mass edit cells in column STREET NAME"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(\",\")",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(cells['POSTAL CODE'].value)",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NAME",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CONCEPCIÓN JERÓNIMA 15"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONCEPCIÓN JERÓNIMA"
+      }
+    ],
+    "description": "Mass edit cells in column STREET NAME"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(\",\")",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(cells['POSTAL CODE'].value)",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NAME",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DEL CIDRO 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEL CIDRO"
+      }
+    ],
+    "description": "Mass edit cells in column STREET NAME"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(\",\")",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(cells['POSTAL CODE'].value)",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ADDRESS",
+    "expression": "grel:cells[\"STREET TYPE\"].value + \" \" +cells[\"STREET NAME\"].value + \" \" +cells[\"STREET NUMBER\"].value + \",\" +cells[\"POSTAL CODE\"].value + \" \" +cells[\"CITY\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ADDRESS using expression grel:cells[\"STREET TYPE\"].value + \" \" +cells[\"STREET NAME\"].value + \" \" +cells[\"STREET NUMBER\"].value + \",\" +cells[\"POSTAL CODE\"].value + \" \" +cells[\"CITY\"].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(\",\")",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "grel:value.contains(cells['POSTAL CODE'].value)",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ADDRESS",
+    "expression": "grel:value + \",\" + cells[\"CITY\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ADDRESS using expression grel:value + \",\" + cells[\"CITY\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "YEAR",
+    "expression": "grel:value + \"-\" + cells[\"MONTH\"].value + \"-\" +cells[\"BUILDING\"].value + \"-\" + cells[\"SENSOR\"].value + \"-\" + cells[\"ENERGY UNITS\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Create column ID at index 1 based on column YEAR using expression grel:value + \"-\" + cells[\"MONTH\"].value + \"-\" +cells[\"BUILDING\"].value + \"-\" + cells[\"SENSOR\"].value + \"-\" + cells[\"ENERGY UNITS\"].value"
   }
 ]
