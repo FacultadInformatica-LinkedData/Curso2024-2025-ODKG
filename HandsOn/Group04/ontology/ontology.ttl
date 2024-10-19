@@ -84,7 +84,8 @@ ns:postalCode a owl:DatatypeProperty ;
 
 rdf:label a owl:DatatypeProperty ;
     rdfs:label "label" ;
-    rdfs:domain ns:District,
+    rdfs:domain ns:ChargePoint,
+        ns:District,
         ns:Neighborhood,
         ns:Operator,
         ns:Parking,
