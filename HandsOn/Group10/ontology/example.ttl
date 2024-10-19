@@ -1,65 +1,64 @@
 @prefix bicimap: <https://bicimap.com/ontology#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <https://www.w3.org/2001/XMLSchema#> .
+@prefix bicient: <https://bicimap.com/entity/> .
 
-bicimap:station_1 a bicimap:BikeStation ;
-    schema:address "Calle Jesús nº 1" ;
-    schema:geo [ 
-        a schema:GeoCoordinates ;
-        schema:latitude 40.4132798 ;
-        schema:longitude -3.6956178 
-    ] .
+bicient:Station1 a bicimap:BikeStation ;
+    schema:address [
+        a schema:PostalAddress
+        schema:streetAddress "Calle Jesï¿½s nï¿½ 1"
+    ];
+    schema:latitude 40.4132798 ;
+    schema:longitude -3.6956178 .
 
-bicimap:station_2 a bicimap:BikeStation ;
-    schema:address "Plaza de la Cebada nº 16" ;
-    schema:geo [
-        a schema:GeoCoordinates ;
-        schema:latitude 40.4112744 ;
-        schema:longitude -3.7088337 
-    ] .
+bicient:Station2 a bicimap:BikeStation ;
+    schema:address "Plaza de la Cebada nï¿½ 16" ;
+    schema:latitude 40.4112744 ;
+    schema:longitude -3.7088337 .
 
-bicimap:station_3 a bicimap:BikeStation ;
-    schema:address "Glorieta de Embajadores nº 2" ;
-    schema:geo [
-        a schema:GeoCoordinates ;
-        schema:latitude 40.4056107 ;
-        schema:longitude -3.7022591 
-    ] .
+bicient:station3 a bicimap:BikeStation ;
+    schema:address "Glorieta de Embajadores nï¿½ 2" ;
+    schema:latitude 40.4056107 ;
+    schema:longitude -3.7022591 .
 
-_:trip1 a bicimap:BikeTrip ;
+bicient:trip1 a bicimap:BikeTrip ;
     bicimap:bikeId 7337 ;
     bicimap:tripMinutes 5.52 ;
     bicimap:unlockDate "2023-02-01T00:00:10"^^xsd:dateTime ;
     bicimap:lockDate "2023-02-01T00:05:41"^^xsd:dateTime ;
     bicimap:unlockDock 3 ;
     bicimap:lockDock 3 ;
-    bicimap:startAt bicimap:station_1 ; 
-    bicimap:endAt bicimap:station_2 .
+    bicimap:startAt bicient:Station1 ;
+    bicimap:endAt bicient:Station2 .
 
-_:trip2 a bicimap:BikeTrip ;
+bicient:trip2 a bicimap:BikeTrip ;
     bicimap:bikeId 5098 ;
     bicimap:tripMinutes 0.32 ;
     bicimap:unlockDate "2023-02-01T00:00:25"^^xsd:dateTime ;
     bicimap:lockDate "2023-02-01T00:00:44"^^xsd:dateTime ;
     bicimap:unlockDock 22 ;
     bicimap:lockDock 22 ;
-    bicimap:startAt bicimap:station_3 ; 
-    bicimap:endAt bicimap:station_3 .
+    bicimap:startAt bicient:Station3 ;
+    bicimap:endAt bicient:Station3 .
 
-_:trip3 a bicimap:BikeTrip ;
+bicient:trip3 a bicimap:BikeTrip ;
     bicimap:bikeId 6971 ;
     bicimap:tripMinutes 13.2 ;
     bicimap:unlockDate "2023-01-12T11:33:31"^^xsd:dateTime ;
     bicimap:lockDate "2023-01-12T11:46:43"^^xsd:dateTime ;
     bicimap:unlockDock 3 ;
     bicimap:lockDock 3 ;
-    bicimap:startAt bicimap:station_2 ; 
-    bicimap:endAt [
-        a schema:Place ;
-        schema:address "Calle de Belmonte de tajo 67, 28019, Madrid, Madrid, ES" ;
-        schema:geo [ 
-            a schema:GeoCoordinates ;
-            schema:latitude 40.3900566 ;
-            schema:longitude -3.7201583 
-        ]
+    bicimap:startAt bicient:Station2 ;
+    bicimap:endAt bicient:FreePlace1 .
+
+bicient:FreePlace1 a schema:Place ;
+        schema:latitude 40.3900566 ;
+        schema:longitude -3.7201583 ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:streetAddress "Calle de Belmonte de tajo 67" ;
+            schema:postalCode "28019" ;
+            schema:localityAddress "Madrid" ;
+            schema:regionAddress "Madrid" ;
+        ];
     ] .
