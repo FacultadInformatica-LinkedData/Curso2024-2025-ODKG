@@ -1,27 +1,27 @@
-CODE,SAMPLING_LOCATION
-102,"J.M.D. Moratalaz"
-103,"J.M.D. Villaverde"
-104,"E.D.A.R. La China"
-106,"Centro Mpal. De AcÃºstica"
-107,"J.M.D. Hortaleza"
-108,"PeÃ±agrande"
-109,"J.M.D. ChamberÃ­"
-110,"J.M.D. Centro"
-111,"J.M.D. Chamartin"
-112,"J.M.D. Vallecas 1"
-113,"J.M.D. Vallecas 2"
-114,"Matadero 01"
-115,"Matadero 02"
-4,"Plaza EspaÃ±a"
-8,"Escuelas Aguirre"
-16,"Arturo Soria"
-18,"Farolillo"
-24,"Casa de Campo"
-35,"Plaza del Carmen"
-36,"Moratalaz"
-38,"Cuatro Caminos"
-39,"Barrio del Pilar"
-54,"Ensanche de Vallecas"
-56,"Plaza ElÃ­ptica"
-58,"El Pardo"
-59,"Juan Carlos I"
+STREET_CODE,SAMPLING_LOCATION_NAME
+102,J.M.D. Moratalaz
+103,J.M.D. Villaverde
+104,E.D.A.R. La China
+106,Centro Mpal. De Acústica
+107,J.M.D. Hortaleza
+108,Peñagrande
+109,J.M.D. Chamberí
+110,J.M.D. Centro
+111,J.M.D. Chamartin
+112,J.M.D. Vallecas 1
+113,J.M.D. Vallecas 2
+114,Matadero 01
+115,Matadero 02
+4,Plaza España
+8,Escuelas Aguirre
+16,Arturo Soria
+18,Farolillo
+24,Casa de Campo
+35,Plaza del Carmen
+36,Moratalaz
+38,Cuatro Caminos
+39,Barrio del Pilar
+54,Ensanche de Vallecas
+56,Plaza Elíptica
+58,El Pardo
+59,Juan Carlos I
