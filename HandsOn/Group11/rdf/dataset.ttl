@@ -1,0 +1,2681 @@
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix schema: <https://schema.org/> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/01CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "Mercado municipal" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01CoCe18> ;
+    ns:idPoint "01CoCe18" ;
+    ns:isLocated <https://schema.org/Place/01CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/01CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Mercado Municipal" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01CoCe20> ;
+    ns:idPoint "01CoCe20" ;
+    ns:isLocated <https://schema.org/Place/01CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/01EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento público rotación. EMT" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01EMT> ;
+    ns:idPoint "01EMT" ;
+    ns:isLocated <https://schema.org/Place/01EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/01PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01PRIV> ;
+    ns:idPoint "01PRIV" ;
+    ns:isLocated <https://schema.org/Place/01PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/01VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01VP> ;
+    ns:idPoint "01VP" ;
+    ns:isLocated <https://schema.org/Place/01VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/02CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02CoCe18> ;
+    ns:idPoint "02CoCe18" ;
+    ns:isLocated <https://schema.org/Place/02CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/02CoCe20> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02CoCe20> ;
+    ns:idPoint "02CoCe20" ;
+    ns:isLocated <https://schema.org/Place/02CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/02EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento público rotación. EMT" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02EMT> ;
+    ns:idPoint "02EMT" ;
+    ns:isLocated <https://schema.org/Place/02EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "4" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/02PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02PRIV> ;
+    ns:idPoint "02PRIV" ;
+    ns:isLocated <https://schema.org/Place/02PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/03CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03CoCe18> ;
+    ns:idPoint "03CoCe18" ;
+    ns:isLocated <https://schema.org/Place/03CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/03CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03CoCe20> ;
+    ns:idPoint "03CoCe20" ;
+    ns:isLocated <https://schema.org/Place/03CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/03EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento público rotación. EMT" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03EMT> ;
+    ns:idPoint "03EMT" ;
+    ns:isLocated <https://schema.org/Place/03EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/03PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación. Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03PRIV> ;
+    ns:idPoint "03PRIV" ;
+    ns:isLocated <https://schema.org/Place/03PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/04CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04CoCe18> ;
+    ns:idPoint "04CoCe18" ;
+    ns:isLocated <https://schema.org/Place/04CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/04CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Mercado Municipal" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04CoCe20> ;
+    ns:idPoint "04CoCe20" ;
+    ns:isLocated <https://schema.org/Place/04CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/04EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento público rotación. EMT" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04EMT> ;
+    ns:idPoint "04EMT" ;
+    ns:isLocated <https://schema.org/Place/04EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/04PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación. Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04PRIV> ;
+    ns:idPoint "04PRIV" ;
+    ns:isLocated <https://schema.org/Place/04PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/04VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04VP> ;
+    ns:idPoint "04VP" ;
+    ns:isLocated <https://schema.org/Place/04VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/05CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05CoCe18> ;
+    ns:idPoint "05CoCe18" ;
+    ns:isLocated <https://schema.org/Place/05CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/05CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05CoCe20> ;
+    ns:idPoint "05CoCe20" ;
+    ns:isLocated <https://schema.org/Place/05CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/05EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento" ;
+    ns:characteristicsDevices "4 equipos 400 kW, 4 equipos 200 kW, 4 equipos 50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05EMT> ;
+    ns:idPoint "05EMT" ;
+    ns:isLocated <https://schema.org/Place/05EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "12" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/05PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05PRIV> ;
+    ns:idPoint "05PRIV" ;
+    ns:isLocated <https://schema.org/Place/05PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/06CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06CoCe18> ;
+    ns:idPoint "06CoCe18" ;
+    ns:isLocated <https://schema.org/Place/06CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/06EMT> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento público rotación. EMT" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06EMT> ;
+    ns:idPoint "06EMT" ;
+    ns:isLocated <https://schema.org/Place/06EMT> ;
+    ns:management "EMT" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "EMT" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/06PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06PRIV> ;
+    ns:idPoint "06PRIV" ;
+    ns:isLocated <https://schema.org/Place/06PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC/ GALP" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/06VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06VP> ;
+    ns:idPoint "06VP" ;
+    ns:isLocated <https://schema.org/Place/06VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/07CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07CoCe18> ;
+    ns:idPoint "07CoCe18" ;
+    ns:isLocated <https://schema.org/Place/07CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/07PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07PRIV> ;
+    ns:idPoint "07PRIV" ;
+    ns:isLocated <https://schema.org/Place/07PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "NATURGY" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/07VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07VP> ;
+    ns:idPoint "07VP" ;
+    ns:isLocated <https://schema.org/Place/07VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/08CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08CoCe18> ;
+    ns:idPoint "08CoCe18" ;
+    ns:isLocated <https://schema.org/Place/08CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/08CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08CoCe20> ;
+    ns:idPoint "08CoCe20" ;
+    ns:isLocated <https://schema.org/Place/08CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/08PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08PRIV> ;
+    ns:idPoint "08PRIV" ;
+    ns:isLocated <https://schema.org/Place/08PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/08VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08VP> ;
+    ns:idPoint "08VP" ;
+    ns:isLocated <https://schema.org/Place/08VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/09CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "Mercado Municipal" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09CoCe18> ;
+    ns:idPoint "09CoCe18" ;
+    ns:isLocated <https://schema.org/Place/09CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/09CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09CoCe20> ;
+    ns:idPoint "09CoCe20" ;
+    ns:isLocated <https://schema.org/Place/09CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/09PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "350 kW conector CC (CCS)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09PRIV> ;
+    ns:idPoint "09PRIV" ;
+    ns:isLocated <https://schema.org/Place/09PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "4" ;
+    ns:operator "GIC / CEPSA" ;
+    ns:placement "Estación de servicio" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/09VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09VP> ;
+    ns:idPoint "09VP" ;
+    ns:isLocated <https://schema.org/Place/09VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/10CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10CoCe18> ;
+    ns:idPoint "10CoCe18" ;
+    ns:isLocated <https://schema.org/Place/10CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "ECOLINERAS" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/10CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10CoCe20> ;
+    ns:idPoint "10CoCe20" ;
+    ns:isLocated <https://schema.org/Place/10CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/10PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación. Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10PRIV> ;
+    ns:idPoint "10PRIV" ;
+    ns:isLocated <https://schema.org/Place/10PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/10VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10VP> ;
+    ns:idPoint "10VP" ;
+    ns:isLocated <https://schema.org/Place/10VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/11CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11CoCe18> ;
+    ns:idPoint "11CoCe18" ;
+    ns:isLocated <https://schema.org/Place/11CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/11CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "Aparcamiento privado rotación" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11CoCe20> ;
+    ns:idPoint "11CoCe20" ;
+    ns:isLocated <https://schema.org/Place/11CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/11VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11VP> ;
+    ns:idPoint "11VP" ;
+    ns:isLocated <https://schema.org/Place/11VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/12CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12CoCe18> ;
+    ns:idPoint "12CoCe18" ;
+    ns:isLocated <https://schema.org/Place/12CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/12CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12CoCe20> ;
+    ns:idPoint "12CoCe20" ;
+    ns:isLocated <https://schema.org/Place/12CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/12PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12PRIV> ;
+    ns:idPoint "12PRIV" ;
+    ns:isLocated <https://schema.org/Place/12PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/12VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12VP> ;
+    ns:idPoint "12VP" ;
+    ns:isLocated <https://schema.org/Place/12VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/13CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13CoCe18> ;
+    ns:idPoint "13CoCe18" ;
+    ns:isLocated <https://schema.org/Place/13CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/13PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13PRIV> ;
+    ns:idPoint "13PRIV" ;
+    ns:isLocated <https://schema.org/Place/13PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/13VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13VP> ;
+    ns:idPoint "13VP" ;
+    ns:isLocated <https://schema.org/Place/13VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/14CoCe18> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14CoCe18> ;
+    ns:idPoint "14CoCe18" ;
+    ns:isLocated <https://schema.org/Place/14CoCe18> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/14CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14CoCe20> ;
+    ns:idPoint "14CoCe20" ;
+    ns:isLocated <https://schema.org/Place/14CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/14PRIV> a ns:ChargingStation ;
+    ns:additionalInfo "Iniciativa privada" ;
+    ns:characteristicsDevices "180 kW 2 conectores CC (CCS)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14PRIV> ;
+    ns:idPoint "14PRIV" ;
+    ns:isLocated <https://schema.org/Place/14PRIV> ;
+    ns:management "Iniciativa privada" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/14VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14VP> ;
+    ns:idPoint "14VP" ;
+    ns:isLocated <https://schema.org/Place/14VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/15CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/15CoCe20> ;
+    ns:idPoint "15CoCe20" ;
+    ns:isLocated <https://schema.org/Place/15CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "Sudel" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/15VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/15VP> ;
+    ns:idPoint "15VP" ;
+    ns:isLocated <https://schema.org/Place/15VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/16CoCe20> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16CoCe20> ;
+    ns:idPoint "16CoCe20" ;
+    ns:isLocated <https://schema.org/Place/16CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/16CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16CoCe22> ;
+    ns:idPoint "16CoCe22" ;
+    ns:isLocated <https://schema.org/Place/16CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/16VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes. Equipo 150 kW: DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16VP> ;
+    ns:idPoint "16VP" ;
+    ns:isLocated <https://schema.org/Place/16VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/17CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/17CoCe20> ;
+    ns:idPoint "17CoCe20" ;
+    ns:isLocated <https://schema.org/Place/17CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/17VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/17VP> ;
+    ns:idPoint "17VP" ;
+    ns:isLocated <https://schema.org/Place/17VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/18CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/18CoCe20> ;
+    ns:idPoint "18CoCe20" ;
+    ns:isLocated <https://schema.org/Place/18CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "NATURGY" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "de 6 a 24 h" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/18VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/18VP> ;
+    ns:idPoint "18VP" ;
+    ns:isLocated <https://schema.org/Place/18VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/19CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/19CoCe20> ;
+    ns:idPoint "19CoCe20" ;
+    ns:isLocated <https://schema.org/Place/19CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/19VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/19VP> ;
+    ns:idPoint "19VP" ;
+    ns:isLocated <https://schema.org/Place/19VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/1CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/1CoCe22> ;
+    ns:idPoint "1CoCe22" ;
+    ns:isLocated <https://schema.org/Place/1CoCe22> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "CC LA VAGUADA" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "de 6:00 a 1:00 a.m." ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/1PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/1PropDG> ;
+    ns:idPoint "1PropDG" ;
+    ns:isLocated <https://schema.org/Place/1PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "TOTALENERGIES" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/20CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20CoCe20> ;
+    ns:idPoint "20CoCe20" ;
+    ns:isLocated <https://schema.org/Place/20CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/20CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20CoCe22> ;
+    ns:idPoint "20CoCe22" ;
+    ns:isLocated <https://schema.org/Place/20CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/20VP> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20VP> ;
+    ns:idPoint "20VP" ;
+    ns:isLocated <https://schema.org/Place/20VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/21CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/21CoCe20> ;
+    ns:idPoint "21CoCe20" ;
+    ns:isLocated <https://schema.org/Place/21CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "NATURGY" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/21VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/21VP> ;
+    ns:idPoint "21VP" ;
+    ns:isLocated <https://schema.org/Place/21VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/22PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS Combo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/22PropDG> ;
+    ns:idPoint "22PropDG" ;
+    ns:isLocated <https://schema.org/Place/22PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/22VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/22VP> ;
+    ns:idPoint "22VP" ;
+    ns:isLocated <https://schema.org/Place/22VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/23CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/23CoCe20> ;
+    ns:idPoint "23CoCe20" ;
+    ns:isLocated <https://schema.org/Place/23CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GALP" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/23VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/23VP> ;
+    ns:idPoint "23VP" ;
+    ns:isLocated <https://schema.org/Place/23VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/24CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/24CoCe20> ;
+    ns:idPoint "24CoCe20" ;
+    ns:isLocated <https://schema.org/Place/24CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/24VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/24VP> ;
+    ns:idPoint "24VP" ;
+    ns:isLocated <https://schema.org/Place/24VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/25VP> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/25VP> ;
+    ns:idPoint "25VP" ;
+    ns:isLocated <https://schema.org/Place/25VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/26CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/26CoCe20> ;
+    ns:idPoint "26CoCe20" ;
+    ns:isLocated <https://schema.org/Place/26CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/26VP> a ns:ChargingStation ;
+    ns:characteristicsDevices "1 equipo de 150 kW (DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)) y 1 equipo de 50 kW (DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW))" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/26VP> ;
+    ns:idPoint "26VP" ;
+    ns:isLocated <https://schema.org/Place/26VP> ;
+    ns:management "Convenio vía pública" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/27CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/27CoCe20> ;
+    ns:idPoint "27CoCe20" ;
+    ns:isLocated <https://schema.org/Place/27CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GALP" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/27PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS Combo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/27PropDG> ;
+    ns:idPoint "27PropDG" ;
+    ns:isLocated <https://schema.org/Place/27PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/28CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/28CoCe20> ;
+    ns:idPoint "28CoCe20" ;
+    ns:isLocated <https://schema.org/Place/28CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GALP" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/29CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/29CoCe20> ;
+    ns:idPoint "29CoCe20" ;
+    ns:isLocated <https://schema.org/Place/29CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "Cerdeira" ;
+    ns:placement "Estación de servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/29CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/29CoCe22> ;
+    ns:idPoint "29CoCe22" ;
+    ns:isLocated <https://schema.org/Place/29CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA X SERVICIOS S.L." ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/2CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) - AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/2CoCe22> ;
+    ns:idPoint "2CoCe22" ;
+    ns:isLocated <https://schema.org/Place/2CoCe22> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "UAM" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/30CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 KW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/30CoCe20> ;
+    ns:idPoint "30CoCe20" ;
+    ns:isLocated <https://schema.org/Place/30CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "NATURGY" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/30PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS Combo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/30PropDG> ;
+    ns:idPoint "30PropDG" ;
+    ns:isLocated <https://schema.org/Place/30PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/31CoCe20> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/31CoCe20> ;
+    ns:idPoint "31CoCe20" ;
+    ns:isLocated <https://schema.org/Place/31CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/31PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/31PropDG> ;
+    ns:idPoint "31PropDG" ;
+    ns:isLocated <https://schema.org/Place/31PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "TOTALENERGIES" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/32PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS Combo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/32PropDG> ;
+    ns:idPoint "32PropDG" ;
+    ns:isLocated <https://schema.org/Place/32PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "IBERDROLA" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/33CoCe20> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/33CoCe20> ;
+    ns:idPoint "33CoCe20" ;
+    ns:isLocated <https://schema.org/Place/33CoCe20> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "REPSOL" ;
+    ns:placement "Estación de Servicio" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/34CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "Conectores: DC- CCS Combo 2, 50 kW y CHAdeMO 50 kW.  Toma: AC- Tipo 2, 22 kW" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/34CoCe22> ;
+    ns:idPoint "34CoCe22" ;
+    ns:isLocated <https://schema.org/Place/34CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "ENDESA X SERVICIOS S.L." ;
+    ns:placement "Aparcamiento" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/35PropDG> a ns:ChargingStation ;
+    ns:characteristicsDevices "2 equipos 100 kW CCS/Chademo, y 1 equipo 50 kW CCS/Chademo + 1 conector 22kW AC modo 2." ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/35PropDG> ;
+    ns:idPoint "35PropDG" ;
+    ns:isLocated <https://schema.org/Place/35PropDG> ;
+    ns:management "Concesión demanial" ;
+    ns:numberOfDevices "3" ;
+    ns:operator "TOTALENERGIES" ;
+    ns:placement "Vía pública" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/3CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) - AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/3CoCe22> ;
+    ns:idPoint "3CoCe22" ;
+    ns:isLocated <https://schema.org/Place/3CoCe22> ;
+    ns:management "Convenio cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "UAM" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/3MerM> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/3MerM> ;
+    ns:idPoint "3MerM" ;
+    ns:isLocated <https://schema.org/Place/3MerM> ;
+    ns:management "Acuerdo bilateral" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/5CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW). AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/5CoCe22> ;
+    ns:idPoint "5CoCe22" ;
+    ns:isLocated <https://schema.org/Place/5CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "2" ;
+    ns:operator "BLAUDRIVE" ;
+    ns:placement "Aparcamiento" ;
+    ns:schedule "de 7:30h a 21:00h" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/5MerM> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/5MerM> ;
+    ns:idPoint "5MerM" ;
+    ns:isLocated <https://schema.org/Place/5MerM> ;
+    ns:management "Acuerdo bilateral" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "DRIVE THE CITY" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/6CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/6CoCe22> ;
+    ns:idPoint "6CoCe22" ;
+    ns:isLocated <https://schema.org/Place/6CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "BLAUDRIVE" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "De lunes a sábados, de 9:00h – 21:30h" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/6MerM> a ns:ChargingStation ;
+    ns:additionalInfo "-" ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/6MerM> ;
+    ns:idPoint "6MerM" ;
+    ns:isLocated <https://schema.org/Place/6MerM> ;
+    ns:management "Acuerdo bilateral" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "GIC (CIRCUTOR)" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/7MerM> a ns:ChargingStation ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/7MerM> ;
+    ns:idPoint "7MerM" ;
+    ns:isLocated <https://schema.org/Place/7MerM> ;
+    ns:management "Acuerdo bilateral" ;
+    ns:numberOfDevices "2" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/8CoCe22> a ns:ChargingStation ;
+    ns:characteristicsDevices "DC-CCS Combo 2 (50kW) y CHAdeMO (50kW) AC- Tipo 2 (22kW)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/8CoCe22> ;
+    ns:idPoint "8CoCe22" ;
+    ns:isLocated <https://schema.org/Place/8CoCe22> ;
+    ns:management "Convenio Cesión" ;
+    ns:numberOfDevices "1" ;
+    ns:operator "BLAUDRIVE" ;
+    ns:placement "Mercado municipal" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/8MerM> a ns:ChargingStation ;
+    ns:characteristicsDevices "150 kW DC-CCS Combo 2 (≥ 250 A) y CHAdeMO (≥ 100 A)" ;
+    ns:hasDates <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/8MerM> ;
+    ns:idPoint "8MerM" ;
+    ns:isLocated <https://schema.org/Place/8MerM> ;
+    ns:management "Acuerdo bilateral" ;
+    ns:numberOfDevices "1" ;
+    ns:placement "Mercamadrid" ;
+    ns:schedule "24" ;
+    ns:state "Ejecutado" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01CoCe18> a ns:Dates ;
+    ns:editionDate "2023-08-09T11:31:29Z" ;
+    ns:openingDate "2020-05-11T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01CoCe20> a ns:Dates ;
+    ns:editionDate "2023-08-09T11:30:51Z" ;
+    ns:openingDate "2022-01-20T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01EMT> a ns:Dates ;
+    ns:editionDate "2023-08-09T10:36:52Z" ;
+    ns:openingDate "2018-03-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2020-04-11T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/01VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2018-03-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02CoCe18> a ns:Dates ;
+    ns:editionDate "2022-06-13T10:09:09Z" ;
+    ns:openingDate "2021-02-25T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T12:24:55Z" ;
+    ns:openingDate "2022-01-25T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02EMT> a ns:Dates ;
+    ns:editionDate "2024-01-24T11:24:04Z" ;
+    ns:openingDate "2018-01-03T01:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/02PRIV> a ns:Dates ;
+    ns:editionDate "2022-06-17T06:54:22Z" ;
+    ns:openingDate "2013-12-04T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03CoCe18> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:53Z" ;
+    ns:openingDate "2021-02-25T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03CoCe20> a ns:Dates ;
+    ns:editionDate "2022-06-17T06:55:13Z" ;
+    ns:openingDate "2022-02-05T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03EMT> a ns:Dates ;
+    ns:editionDate "2023-08-09T10:38:11Z" ;
+    ns:openingDate "2019-03-18T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/03PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2020-04-11T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:51:45Z" ;
+    ns:openingDate "2022-05-19T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04CoCe20> a ns:Dates ;
+    ns:editionDate "2023-08-09T11:32:52Z" ;
+    ns:openingDate "2022-07-31T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04EMT> a ns:Dates ;
+    ns:editionDate "2023-12-21T08:04:25Z" ;
+    ns:openingDate "2018-10-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2019-12-28T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/04VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2019-05-09T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:52:03Z" ;
+    ns:openingDate "2021-04-14T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05CoCe20> a ns:Dates ;
+    ns:editionDate "2022-11-22T07:40:58Z" ;
+    ns:openingDate "2022-11-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05EMT> a ns:Dates ;
+    ns:editionDate "2023-08-09T10:39:25Z" ;
+    ns:openingDate "2022-07-11T23:00:00Z" ;
+    ns:registerDate "2022-12-20T08:04:03Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/05PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2016-12-28T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:53:35Z" ;
+    ns:openingDate "2021-12-04T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06EMT> a ns:Dates ;
+    ns:editionDate "2024-06-24T07:16:21Z" ;
+    ns:openingDate "2024-06-20T22:00:00Z" ;
+    ns:registerDate "2024-06-24T07:16:21Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2020-10-31T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/06VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-27T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:54:41Z" ;
+    ns:openingDate "2021-07-04T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2019-12-31T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/07VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2019-07-11T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:56:12Z" ;
+    ns:openingDate "2021-01-05T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08CoCe20> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2022-01-21T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08PRIV> a ns:Dates ;
+    ns:editionDate "2022-06-17T06:57:01Z" ;
+    ns:openingDate "2018-01-31T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/08VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09CoCe18> a ns:Dates ;
+    ns:editionDate "2023-08-09T11:32:05Z" ;
+    ns:openingDate "2021-10-15T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09CoCe20> a ns:Dates ;
+    ns:editionDate "2023-06-13T07:31:09Z" ;
+    ns:openingDate "2021-05-20T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2020-10-31T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/09VP> a ns:Dates ;
+    ns:editionDate "2023-04-25T10:33:19Z" ;
+    ns:openingDate "2019-06-17T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10CoCe18> a ns:Dates ;
+    ns:editionDate "2022-06-17T06:57:43Z" ;
+    ns:openingDate "2019-09-25T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10CoCe20> a ns:Dates ;
+    ns:editionDate "2022-06-17T06:58:24Z" ;
+    ns:openingDate "2022-01-21T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2019-12-28T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/10VP> a ns:Dates ;
+    ns:editionDate "2022-03-05T08:24:25Z" ;
+    ns:openingDate "2020-12-27T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11CoCe18> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:54Z" ;
+    ns:openingDate "2020-02-24T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11CoCe20> a ns:Dates ;
+    ns:editionDate "2022-06-17T07:00:12Z" ;
+    ns:openingDate "2022-01-21T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/11VP> a ns:Dates ;
+    ns:editionDate "2022-06-17T07:00:55Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12CoCe18> a ns:Dates ;
+    ns:editionDate "2022-07-15T07:01:45Z" ;
+    ns:openingDate "2022-07-14T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T12:52:54Z" ;
+    ns:openingDate "2022-07-14T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2021-10-20T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/12VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-27T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:59:08Z" ;
+    ns:openingDate "2021-12-04T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13PRIV> a ns:Dates ;
+    ns:editionDate "2022-04-28T12:42:55Z" ;
+    ns:openingDate "2021-07-15T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/13VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2019-11-21T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14CoCe18> a ns:Dates ;
+    ns:editionDate "2023-07-09T12:00:21Z" ;
+    ns:openingDate "2022-03-20T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:56:59Z" ;
+    ns:openingDate "2022-07-14T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14PRIV> a ns:Dates ;
+    ns:editionDate "2022-11-21T15:35:01Z" ;
+    ns:openingDate "2022-04-24T22:00:00Z" ;
+    ns:registerDate "2022-04-28T12:46:34Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/14VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/15CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:58:24Z" ;
+    ns:openingDate "2023-01-19T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/15VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:56:59Z" ;
+    ns:openingDate "2022-02-05T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16CoCe22> a ns:Dates ;
+    ns:editionDate "2024-04-03T11:51:08Z" ;
+    ns:openingDate "2024-01-30T23:00:00Z" ;
+    ns:registerDate "2022-06-24T07:49:04Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/16VP> a ns:Dates ;
+    ns:editionDate "2023-08-30T09:50:58Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/17CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T12:01:34Z" ;
+    ns:openingDate "2022-01-25T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/17VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2019-05-09T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/18CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:56:59Z" ;
+    ns:openingDate "2022-02-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/18VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-16T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/19CoCe20> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2022-02-28T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/19VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2019-07-11T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/1CoCe22> a ns:Dates ;
+    ns:editionDate "2023-08-09T10:03:10Z" ;
+    ns:openingDate "2023-02-15T23:00:00Z" ;
+    ns:registerDate "2022-06-17T11:04:15Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/1PropDG> a ns:Dates ;
+    ns:editionDate "2024-01-07T10:16:20Z" ;
+    ns:openingDate "2024-05-26T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20CoCe20> a ns:Dates ;
+    ns:editionDate "2023-08-09T11:14:33Z" ;
+    ns:openingDate "2022-04-24T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20CoCe22> a ns:Dates ;
+    ns:editionDate "2024-04-03T11:51:44Z" ;
+    ns:openingDate "2024-01-30T23:00:00Z" ;
+    ns:registerDate "2022-06-24T07:57:55Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/20VP> a ns:Dates ;
+    ns:editionDate "2023-02-03T13:52:16Z" ;
+    ns:openingDate "2019-10-15T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/21CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:56:59Z" ;
+    ns:openingDate "2022-01-08T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/21VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:52Z" ;
+    ns:openingDate "2020-12-27T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/22PropDG> a ns:Dates ;
+    ns:editionDate "2024-01-07T10:10:15Z" ;
+    ns:openingDate "2024-05-06T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/22VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:53Z" ;
+    ns:openingDate "2021-03-31T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/23CoCe20> a ns:Dates ;
+    ns:editionDate "2023-02-17T08:29:15Z" ;
+    ns:openingDate "2023-09-01T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/23VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:53Z" ;
+    ns:openingDate "2019-05-09T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/24CoCe20> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2022-01-21T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/24VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:53Z" ;
+    ns:openingDate "2021-01-30T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/25VP> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:53Z" ;
+    ns:openingDate "2020-12-27T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/26CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:58:24Z" ;
+    ns:openingDate "2022-07-14T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/26VP> a ns:Dates ;
+    ns:editionDate "2023-01-16T12:43:31Z" ;
+    ns:openingDate "2022-11-30T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/27CoCe20> a ns:Dates ;
+    ns:editionDate "2023-02-17T08:30:11Z" ;
+    ns:openingDate "2023-09-01T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/27PropDG> a ns:Dates ;
+    ns:editionDate "2024-01-07T10:09:34Z" ;
+    ns:openingDate "2024-05-06T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/28CoCe20> a ns:Dates ;
+    ns:editionDate "2022-10-10T06:58:48Z" ;
+    ns:openingDate "2022-09-15T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/29CoCe20> a ns:Dates ;
+    ns:editionDate "2023-12-01T08:39:23Z" ;
+    ns:openingDate "2022-03-17T23:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/29CoCe22> a ns:Dates ;
+    ns:editionDate "2024-03-21T14:30:31Z" ;
+    ns:openingDate "2024-10-03T23:00:00Z" ;
+    ns:registerDate "2022-08-23T07:30:47Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/2CoCe22> a ns:Dates ;
+    ns:editionDate "2023-04-12T07:47:35Z" ;
+    ns:openingDate "2023-11-20T23:00:00Z" ;
+    ns:registerDate "2022-06-17T11:12:42Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/30CoCe20> a ns:Dates ;
+    ns:editionDate "2023-07-09T11:58:24Z" ;
+    ns:openingDate "2022-09-05T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/30PropDG> a ns:Dates ;
+    ns:editionDate "2024-01-07T10:11:29Z" ;
+    ns:openingDate "2024-06-20T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/31CoCe20> a ns:Dates ;
+    ns:editionDate "2022-06-17T07:02:25Z" ;
+    ns:openingDate "2021-05-08T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/31PropDG> a ns:Dates ;
+    ns:editionDate "2024-08-28T08:23:42Z" ;
+    ns:openingDate "2024-06-08T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/32PropDG> a ns:Dates ;
+    ns:editionDate "2024-01-07T10:10:53Z" ;
+    ns:openingDate "2024-05-16T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/33CoCe20> a ns:Dates ;
+    ns:editionDate "2024-01-15T13:03:49Z" ;
+    ns:openingDate "2023-09-10T22:00:00Z" ;
+    ns:registerDate "2023-02-27T12:05:31Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/34CoCe22> a ns:Dates ;
+    ns:editionDate "2024-03-21T14:38:03Z" ;
+    ns:openingDate "2023-05-11T23:00:00Z" ;
+    ns:registerDate "2022-08-23T07:40:46Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/35PropDG> a ns:Dates ;
+    ns:editionDate "2024-08-28T08:22:10Z" ;
+    ns:openingDate "2024-06-26T22:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/3CoCe22> a ns:Dates ;
+    ns:editionDate "2023-04-12T07:46:59Z" ;
+    ns:openingDate "2023-11-20T23:00:00Z" ;
+    ns:registerDate "2022-06-17T11:14:10Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/3MerM> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:56Z" ;
+    ns:openingDate "2021-08-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/5CoCe22> a ns:Dates ;
+    ns:editionDate "2023-01-31T07:18:52Z" ;
+    ns:openingDate "2023-01-30T23:00:00Z" ;
+    ns:registerDate "2022-06-24T06:57:35Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/5MerM> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2021-08-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/6CoCe22> a ns:Dates ;
+    ns:editionDate "2024-02-02T08:21:26Z" ;
+    ns:openingDate "2023-05-07T22:00:00Z" ;
+    ns:registerDate "2022-06-24T07:01:08Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/6MerM> a ns:Dates ;
+    ns:editionDate "2022-04-27T10:43:57Z" ;
+    ns:openingDate "2021-08-16T00:00:00Z" ;
+    ns:registerDate "2022-02-03T15:21:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/7MerM> a ns:Dates ;
+    ns:editionDate "2022-10-27T10:42:43Z" ;
+    ns:openingDate "2022-06-27T22:00:00Z" ;
+    ns:registerDate "2022-06-17T07:19:00Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/8CoCe22> a ns:Dates ;
+    ns:editionDate "2023-11-13T14:15:56Z" ;
+    ns:registerDate "2022-06-24T07:05:24Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates/8MerM> a ns:Dates ;
+    ns:editionDate "2022-11-21T15:34:01Z" ;
+    ns:openingDate "2022-10-31T23:00:00Z" ;
+    ns:registerDate "2022-06-17T07:22:02Z" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/11> a ns:District ;
+    ns:districtCode "11" ;
+    ns:districtName "Carabanchel" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/2> a ns:District ;
+    ns:districtCode "2" ;
+    ns:districtName "Arganzuela" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_10> a ns:Neighborhood ;
+    ns:neighborhoodCode "10" ;
+    ns:neighborhoodName "Aluche" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/10> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_7> a ns:Neighborhood ;
+    ns:neighborhoodCode "7" ;
+    ns:neighborhoodName "Águilas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/10> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/11_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Buenavista" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/11> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_12> a ns:Neighborhood ;
+    ns:neighborhoodCode "12" ;
+    ns:neighborhoodName "Moscardó" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/12> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_13> a ns:Neighborhood ;
+    ns:neighborhoodCode "13" ;
+    ns:neighborhoodName "San Diego" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/13> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Palomeras Sureste" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/13> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Pavones" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/14> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Marroquina" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/14> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Ventas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_15> a ns:Neighborhood ;
+    ns:neighborhoodCode "15" ;
+    ns:neighborhoodName "San Juan Bautista" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "San Pascual" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "San Juan Bautista" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_7> a ns:Neighborhood ;
+    ns:neighborhoodCode "7" ;
+    ns:neighborhoodName "Colina" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Canillas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/16> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Pinar del Rey" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/16> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Apostol Santiago" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/16> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Villaverde Alto, Casco Histórico de Villaverde" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/17> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "San Cristóbal" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/17> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Butarque" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/17> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Los Rosales" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/17> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Valdebernardo" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/19> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Valderrivas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/19> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Justicia" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/1> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Universidad" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/1> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Sol" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/1> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Arcos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/20> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Rosas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/20> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_21> a ns:Neighborhood ;
+    ns:neighborhoodCode "21" ;
+    ns:neighborhoodName "Corralejos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/21> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Ibiza" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/3> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Goya" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Lista" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "El Viso" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Prosperidad" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Almenara" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/6> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Berruguete" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/6> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Almagro" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/7> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "La Paz" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/8> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Valverde" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/8> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Argüelles" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/9> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Ciudad Universitaria" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/9> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "El Plantío" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/9> .
+
+<https://schema.org/Place/01CoCe18> a schema:Place ;
+    schema:address "Mercado de la Cebada. Plaza de la Cebada" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
+
+<https://schema.org/Place/01CoCe20> a schema:Place ;
+    schema:address "Mercado de Guindalera. Plaza de San Cayetano, s/n" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
+
+<https://schema.org/Place/01EMT> a schema:Place ;
+    schema:address "Plaza de Jacinto Benavente 6" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_6> .
+
+<https://schema.org/Place/01PRIV> a schema:Place ;
+    schema:address "Plaza de la Cebada" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
+
+<https://schema.org/Place/01VP> a schema:Place ;
+    schema:address "Calle Génova 24" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_4> .
+
+<https://schema.org/Place/02CoCe18> a schema:Place ;
+    schema:address "Calle Mateo Inurria, 4" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
+
+<https://schema.org/Place/02CoCe20> a schema:Place ;
+    schema:address "Avenida Alfonso XIII, esquina, Costa Rica" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_4> .
+
+<https://schema.org/Place/02EMT> a schema:Place ;
+    schema:address "Jardines del Descubrimiento - Acceso a Complejo de Aparcamientos subterráneos por Calle de la Armada Española" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_1> .
+
+<https://schema.org/Place/02PRIV> a schema:Place ;
+    schema:address "Calle Alberto Aguilera 9" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_5> .
+
+<https://schema.org/Place/03CoCe18> a schema:Place ;
+    schema:address "Calle Ofelia Nieto, 64" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_6> .
+
+<https://schema.org/Place/03CoCe20> a schema:Place ;
+    schema:address "Avenida Alberto Alcocer, 11" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
+
+<https://schema.org/Place/03EMT> a schema:Place ;
+    schema:address "Plaza de Marqués de Salamanca" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_5> .
+
+<https://schema.org/Place/03PRIV> a schema:Place ;
+    schema:address "Plaza del Conde de Casal 6" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_2> .
+
+<https://schema.org/Place/04CoCe18> a schema:Place ;
+    schema:address "ES Repsol 96849 - Calle Abetal 8 - Las Tablas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_6> .
+
+<https://schema.org/Place/04CoCe20> a schema:Place ;
+    schema:address "Mercado Municipal de Maravillas, Calle Bravo Murillo 122" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_2> .
+
+<https://schema.org/Place/04EMT> a schema:Place ;
+    schema:address "Calle Hiedra 36" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_6> .
+
+<https://schema.org/Place/04PRIV> a schema:Place ;
+    schema:address "Calle del Monasterio de Arlanza, 20 (Centro Comercial Montecarmelo)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
+
+<https://schema.org/Place/04VP> a schema:Place ;
+    schema:address "Ronda de Valencia 1" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/2_6> .
+
+<https://schema.org/Place/05CoCe18> a schema:Place ;
+    schema:address "ES Hipódromo(CR A-6, 8)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_3> .
+
+<https://schema.org/Place/05CoCe20> a schema:Place ;
+    schema:address "Avenida del General Perón, 21" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_2> .
+
+<https://schema.org/Place/05EMT> a schema:Place ;
+    schema:address "Calle Alcalá 17. Parking de Canalejas." ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
+
+<https://schema.org/Place/05PRIV> a schema:Place ;
+    schema:address "Avenida de Machupichu 105" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_3> .
+
+<https://schema.org/Place/06CoCe18> a schema:Place ;
+    schema:address "ES Aravaca - El Plantío (Avenida Victoria 34)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_6> .
+
+<https://schema.org/Place/06EMT> a schema:Place ;
+    schema:address "Paseo Recoletos 4" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
+
+<https://schema.org/Place/06PRIV> a schema:Place ;
+    schema:address "Avenida de Niceto Alcala Zamora 20" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_6> .
+
+<https://schema.org/Place/06VP> a schema:Place ;
+    schema:address "Calle Cerro de la Plata 4" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_2> .
+
+<https://schema.org/Place/07CoCe18> a schema:Place ;
+    schema:address "ES Repsol 33826 - Pº Extremadura 543 (A5 PK9)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
+
+<https://schema.org/Place/07PRIV> a schema:Place ;
+    schema:address "Avenida Eje Central, 7" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/07VP> a schema:Place ;
+    schema:address "Calle Ibiza 1" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_4> .
+
+<https://schema.org/Place/08CoCe18> a schema:Place ;
+    schema:address "CRED PAU CARABANCHEL, Av. de la Peseta" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
+
+<https://schema.org/Place/08CoCe20> a schema:Place ;
+    schema:address "Calle Marqués de Urquijo, 27" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_2> .
+
+<https://schema.org/Place/08PRIV> a schema:Place ;
+    schema:address "Carretera de Villaverde a Vallecas 278" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/08VP> a schema:Place ;
+    schema:address "Calle Alfonso XII, 2" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_5> .
+
+<https://schema.org/Place/09CoCe18> a schema:Place ;
+    schema:address "Mercado de las Águilas - Calle de José Cadalso" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_7> .
+
+<https://schema.org/Place/09CoCe20> a schema:Place ;
+    schema:address "Calle Sinfonia, 9 (ES Ballenoil Aviación)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
+
+<https://schema.org/Place/09PRIV> a schema:Place ;
+    schema:address "Avenida del Consejo de Europa 2" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_5> .
+
+<https://schema.org/Place/09VP> a schema:Place ;
+    schema:address "Plaza de la Lealtad, s/n" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_5> .
+
+<https://schema.org/Place/10CoCe18> a schema:Place ;
+    schema:address "Avenida de la Albufera 319" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_4> .
+
+<https://schema.org/Place/10CoCe20> a schema:Place ;
+    schema:address "Calle Hilario Herranz Establos, 20" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/11_6> .
+
+<https://schema.org/Place/10PRIV> a schema:Place ;
+    schema:address "Avenida del Partenón 5 (Recinto IFEMA)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_5> .
+
+<https://schema.org/Place/10VP> a schema:Place ;
+    schema:address "Calle Goya 36" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_1> .
+
+<https://schema.org/Place/11CoCe18> a schema:Place ;
+    schema:address "Avenida María de Portugal 15" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_6> .
+
+<https://schema.org/Place/11CoCe20> a schema:Place ;
+    schema:address "Calle de Eduardo Barreiros, 2 (On rent)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_2> .
+
+<https://schema.org/Place/11VP> a schema:Place ;
+    schema:address "Calle Goya 123" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_2> .
+
+<https://schema.org/Place/12CoCe18> a schema:Place ;
+    schema:address "Avda. de los Rosales 147 M-301 km 4,1" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_3> .
+
+<https://schema.org/Place/12CoCe20> a schema:Place ;
+    schema:address "ES Avenida de Andalucía 38 - Carretera A-4 PK6.70 D" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_2> .
+
+<https://schema.org/Place/12PRIV> a schema:Place ;
+    schema:address "Calle San Aquilino, 1 B" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_4> .
+
+<https://schema.org/Place/12VP> a schema:Place ;
+    schema:address "Calle Castelló 105" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
+
+<https://schema.org/Place/13CoCe18> a schema:Place ;
+    schema:address "GPV-PAU VALLECAS-139, Calle Real de Arganda, 75" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_3> .
+
+<https://schema.org/Place/13PRIV> a schema:Place ;
+    schema:address "Avenida de América 9 A, planta -3" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_2> .
+
+<https://schema.org/Place/13VP> a schema:Place ;
+    schema:address "Calle Velázquez 74" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
+
+<https://schema.org/Place/14CoCe18> a schema:Place ;
+    schema:address "ES Repsol Barajas II (CR N-2 P.K. 12,60 D)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
+
+<https://schema.org/Place/14CoCe20> a schema:Place ;
+    schema:address "CRE Moratalaz Glorieta del Corregidor Sancho de Córdoba" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_3> .
+
+<https://schema.org/Place/14PRIV> a schema:Place ;
+    schema:address "Calle 29. Mercamadrid" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
+
+<https://schema.org/Place/14VP> a schema:Place ;
+    schema:address "Paseo Castellana 52" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
+
+<https://schema.org/Place/15CoCe20> a schema:Place ;
+    schema:address "Estación de Servicio SUDEL, Calle Ricardo Ortiz, 44" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_1> .
+
+<https://schema.org/Place/15VP> a schema:Place ;
+    schema:address "Paseo Castellana 106" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_1> .
+
+<https://schema.org/Place/16CoCe20> a schema:Place ;
+    schema:address "Calle Verdaguer y García 5 (Ipark-Verdaguer ampliación)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_5> .
+
+<https://schema.org/Place/16CoCe22> a schema:Place ;
+    schema:address "Ctra A-5, Km 5.4. Estación de Servicio El Batán" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_10> .
+
+<https://schema.org/Place/16VP> a schema:Place ;
+    schema:address "Paseo Castellana 160" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_4> .
+
+<https://schema.org/Place/17CoCe20> a schema:Place ;
+    schema:address "ES Calle Arturo Soria, 175" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_7> .
+
+<https://schema.org/Place/17VP> a schema:Place ;
+    schema:address "Calle Cardenal Marcelo Spínola 6" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_6> .
+
+<https://schema.org/Place/18CoCe20> a schema:Place ;
+    schema:address "SEDE NATURGY, Av San Luis, 77" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_5> .
+
+<https://schema.org/Place/18VP> a schema:Place ;
+    schema:address "Calle Fernández de los Ríos 42" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_2> .
+
+<https://schema.org/Place/19CoCe20> a schema:Place ;
+    schema:address "Calle Valle de Tobalina, 24 (ES Ballenoil)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_1> .
+
+<https://schema.org/Place/19VP> a schema:Place ;
+    schema:address "Plaza del Conde de Valle de Suchil" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_2> .
+
+<https://schema.org/Place/1CoCe22> a schema:Place ;
+    schema:address "CENTRO COMERCIAL MADRID 2 - LA VAGUADA. Av. de Monforte de Lemos, 36" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
+
+<https://schema.org/Place/1PropDG> a schema:Place ;
+    schema:address "Calle del General Lacy, 21" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/2_6> .
+
+<https://schema.org/Place/20CoCe20> a schema:Place ;
+    schema:address "Atolón 98 (Mercamadrid), Calle 29." ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/20CoCe22> a schema:Place ;
+    schema:address "E.S. ESMO, S.A. Calle María de Molina 21" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
+
+<https://schema.org/Place/20VP> a schema:Place ;
+    schema:address "Calle Fuencarral 114" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
+
+<https://schema.org/Place/21CoCe20> a schema:Place ;
+    schema:address "ESTACIÓN DE SUMINISTRO GNC (CTM), Avenida Eje Central, 7" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/21VP> a schema:Place ;
+    schema:address "Calle Manuel Silvela 16" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
+
+<https://schema.org/Place/22PropDG> a schema:Place ;
+    schema:address "Calle Hacienda de Pavones 231 (enfrente del LIDL)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_1> .
+
+<https://schema.org/Place/22VP> a schema:Place ;
+    schema:address "Calle Santa Engracia 115" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
+
+<https://schema.org/Place/23CoCe20> a schema:Place ;
+    schema:address "Avenida Mayorazgo, 20" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/23VP> a schema:Place ;
+    schema:address "Paseo Castellana 33" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_4> .
+
+<https://schema.org/Place/24CoCe20> a schema:Place ;
+    schema:address "Calle Alto del Retiro, s/n" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_3> .
+
+<https://schema.org/Place/24VP> a schema:Place ;
+    schema:address "Calle de Sinesio Delgado 2" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_5> .
+
+<https://schema.org/Place/25VP> a schema:Place ;
+    schema:address "Calle Bueso Pineda 29" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_6> .
+
+<https://schema.org/Place/26CoCe20> a schema:Place ;
+    schema:address "Calle Alcalá 510 (CRED San Blas)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_1> .
+
+<https://schema.org/Place/26VP> a schema:Place ;
+    schema:address "Calle de Roberto Domingo, 4" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
+
+<https://schema.org/Place/27CoCe20> a schema:Place ;
+    schema:address "Avenida Arcentales, 7" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_1> .
+
+<https://schema.org/Place/27PropDG> a schema:Place ;
+    schema:address "Glorieta De Sandro Pertini (frente a edificio c/ Arequipa, 1)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_4> .
+
+<https://schema.org/Place/28CoCe20> a schema:Place ;
+    schema:address "Avenida Canillejas a Vicálvaro, 80" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_4> .
+
+<https://schema.org/Place/29CoCe20> a schema:Place ;
+    schema:address "Avenida Canillejas a Vicálvaro, 147" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_5> .
+
+<https://schema.org/Place/29CoCe22> a schema:Place ;
+    schema:address "Hospital Vithas Clinsa SA. Calle de Ramírez de Arellano, 2" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_15> .
+
+<https://schema.org/Place/2CoCe22> a schema:Place ;
+    schema:address "CAMPUS CANTOBLANCO – RECTORADO" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
+
+<https://schema.org/Place/30CoCe20> a schema:Place ;
+    schema:address "CENTRO DE OPERACIONES NATURGY, Calle Deyanira, 10" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
+
+<https://schema.org/Place/30PropDG> a schema:Place ;
+    schema:address "Calle de Santa Florencia (enfrente del 1)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_4> .
+
+<https://schema.org/Place/31CoCe20> a schema:Place ;
+    schema:address "Calle Nanclares de Oca, 5-17" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
+
+<https://schema.org/Place/31PropDG> a schema:Place ;
+    schema:address "Calle Godella 116" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_2> .
+
+<https://schema.org/Place/32PropDG> a schema:Place ;
+    schema:address "Bulevar José Prat, 27A" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_2> .
+
+<https://schema.org/Place/33CoCe20> a schema:Place ;
+    schema:address "ES Cardenal Herrera Oria. Avenida Cardenal Herrera Oria 290" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
+
+<https://schema.org/Place/34CoCe22> a schema:Place ;
+    schema:address "C.C. ABC SERRANO. Calle Serrano, 61" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
+
+<https://schema.org/Place/35PropDG> a schema:Place ;
+    schema:address "Calle de Minerva, 17" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_3> .
+
+<https://schema.org/Place/3CoCe22> a schema:Place ;
+    schema:address "CAMPUS CANTOBLANCO – DERECHO" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
+
+<https://schema.org/Place/3MerM> a schema:Place ;
+    schema:address "Parcela D.2.1 Anexo avenida de legazpi" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/5CoCe22> a schema:Place ;
+    schema:address "C/Vía Dublín s/n. Club de golf Olivar de la Hinojosa." ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_21> .
+
+<https://schema.org/Place/5MerM> a schema:Place ;
+    schema:address "Parcela E4 Anexo Avda Legazpi" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/6CoCe22> a schema:Place ;
+    schema:address "Calle Martínez de la Riva, 4. Mercado Puente de Vallecas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_13> .
+
+<https://schema.org/Place/6MerM> a schema:Place ;
+    schema:address "Parcela B14 Anexo Calle 3" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
+
+<https://schema.org/Place/7MerM> a schema:Place ;
+    schema:address "Avda. de Madrid - Aparcamiento Este del Mercado Central de Pescados (Parcela C2)" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
+
+<https://schema.org/Place/8CoCe22> a schema:Place ;
+    schema:address "Calle Amparo Usera, 46. Mercado Usera" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_12> .
+
+<https://schema.org/Place/8MerM> a schema:Place ;
+    schema:address "Avda. de Madrid - Aparcamiento Este del Mercado Central  de Pescados (Parcela C2)  Mercamadrid." ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/12> a ns:District ;
+    ns:districtCode "12" ;
+    ns:districtName "Usera" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/13> a ns:District ;
+    ns:districtCode "13" ;
+    ns:districtName "Puente de Vallecas" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/14> a ns:District ;
+    ns:districtCode "14" ;
+    ns:districtName "Moratalaz" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/19> a ns:District ;
+    ns:districtCode "19" ;
+    ns:districtName "Vicálvaro" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/21> a ns:District ;
+    ns:districtCode "21" ;
+    ns:districtName "Barajas" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Orcasur" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/12> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Valdefuentes" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/16> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Ensanche de Vallecas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/18> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Simancas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/20> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Corralejos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/21> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/2_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Palos de Moguer" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/2> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Adelfas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/3> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "Jerónimos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/3> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Recoletos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Hispanoamérica" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Castilla" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Cuatro Caminos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/6> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_2> a ns:Neighborhood ;
+    ns:neighborhoodCode "2" ;
+    ns:neighborhoodName "Arapiles" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/7> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/10> a ns:District ;
+    ns:districtCode "10" ;
+    ns:districtName "Latina" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/18> a ns:District ;
+    ns:districtCode "18" ;
+    ns:districtName "Villa de Vallecas" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/3> a ns:District ;
+    ns:districtCode "3" ;
+    ns:districtName "Retiro" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/6> a ns:District ;
+    ns:districtCode "6" ;
+    ns:districtName "Tetuán" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/7> a ns:District ;
+    ns:districtCode "7" ;
+    ns:districtName "Chamberí" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/8> a ns:District ;
+    ns:districtCode "8" ;
+    ns:districtName "Fuencarral - El Pardo" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/9> a ns:District ;
+    ns:districtCode "9" ;
+    ns:districtName "Moncloa - Aravaca" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Cuatro Vientos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/10> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> a ns:Neighborhood ;
+    ns:neighborhoodCode "18" ;
+    ns:neighborhoodName "Casco Histórico de Vallecas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/18> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Palacio",
+        "Sol" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/1> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Rejas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/20> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> a ns:Neighborhood ;
+    ns:neighborhoodCode "6" ;
+    ns:neighborhoodName "Castellana" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> a ns:Neighborhood ;
+    ns:neighborhoodCode "5" ;
+    ns:neighborhoodName "El Viso",
+        "Nueva España" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> a ns:Neighborhood ;
+    ns:neighborhoodCode "3" ;
+    ns:neighborhoodName "Trafalgar" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/7> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/1> a ns:District ;
+    ns:districtCode "1" ;
+    ns:districtName "Centro" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/16> a ns:District ;
+    ns:districtCode "16" ;
+    ns:districtName "Hortaleza" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/17> a ns:District ;
+    ns:districtCode "17" ;
+    ns:districtName "Villaverde" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/20> a ns:District ;
+    ns:districtCode "20" ;
+    ns:districtName "San Blas - Canillejas" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> a ns:Neighborhood ;
+    ns:neighborhoodCode "4" ;
+    ns:neighborhoodName "Castellana",
+        "Guindalera",
+        "Recoletos" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/15> a ns:District ;
+    ns:districtCode "15" ;
+    ns:districtName "Ciudad Lineal" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/4> a ns:District ;
+    ns:districtCode "4" ;
+    ns:districtName "Salamanca" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/5> a ns:District ;
+    ns:districtCode "5" ;
+    ns:districtName "Chamartín" .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> a ns:Neighborhood ;
+    ns:neighborhoodCode "8" ;
+    ns:neighborhoodName "El Goloso",
+        "Peñagrande",
+        "Pilar" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/8> .
+
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> a ns:Neighborhood ;
+    ns:neighborhoodCode "1" ;
+    ns:neighborhoodName "Casco Histórico de Vallecas" ;
+    schema:containedInPlace <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District/18> .
+
