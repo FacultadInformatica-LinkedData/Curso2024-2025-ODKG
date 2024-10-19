@@ -4,6 +4,33 @@
 @prefix mair: <http://MadridAirQuality.org/#> .
 @base <http://MadridAirQuality.org/#> .
 
+<#StationMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/LocationCode-Relationship.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/street/{STATION_CODE}" ;
+        rr:class mair:Street
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasStreetLocationID ;
+        rr:objectMap [ 
+            rml:reference "STATION_CODE";
+            rr:termType rr:Literal
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasStreetName;
+        rr:objectMap [
+            rml:reference "SAMPLING_LOCATION_NAME" ;
+            rr:termType rr:Literal
+        ]
+    ] .
+
 <#MagnitudeMap> a rr:TriplesMap;
     rml:logicalSource [
         rml:source "csv/Magnitud-Relationship.csv" ;
@@ -88,14 +115,6 @@
         ] 
     ] ;
 
-    # rr:predicateObjectMap [
-    #     rr:predicate mair:hasDate ;
-    #     rr:objectMap [ 
-    #         rml:reference "DATE";
-    #         rr:termType rr:Literal
-    #     ] 
-    # ] .
-
     rr:predicateObjectMap [
         rr:predicate mair:hasMeasurementYear ;
         rr:objectMap [ 
@@ -120,63 +139,6 @@
         ] 
     ] .
 
-<#StationMap> a rr:TriplesMap;
-    rml:logicalSource [
-        rml:source "csv/Transformed_Air_Quality_Data.csv" ;
-        rml:referenceFormulation ql:CSV
-    ] ;
-
-    rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/station/{STATION_CODE}" ;
-        rr:class mair:Station
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:hasStationLocationID ;
-        rr:objectMap [ 
-            rml:reference "STATION_CODE";
-            rr:termType rr:Literal
-        ] 
-    ] .
-
-<#StreetMap> a rr:TriplesMap;
-    rml:logicalSource [
-        rml:source "csv/LocationCode-Relationship.csv" ;
-        rml:referenceFormulation ql:CSV
-    ] ;
-
-    rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/street/{STREET_CODE}" ;
-        rr:class mair:Street
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate mair:hasStreetLocationID ;
-        rr:objectMap [ 
-            rml:reference "STREET_CODE";
-            rr:termType rr:Literal
-        ] 
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:hasStreetName;
-        rr:objectMap [
-            rml:reference "SAMPLING_LOCATION_NAME" ;
-            rr:termType rr:Literal
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:hasStation ;
-        rr:objectMap [
-            rr:parentTriplesMap <#StationMap>;
-            rr:joinCondition [
-                rr:child "STREET_CODE";  # Column in ProvinceMunicipality-Relationship.csv
-                rr:parent "STATION_CODE"; # Column in MunicipalityCode-Relationship.csv
-            ]
-        ]
-    ] .
-
 <#MunicipalityStreetMap> a rr:TriplesMap;
     rml:logicalSource [
         rml:source "csv/MunicipalityStreet-Relationship.csv" ;
@@ -189,12 +151,12 @@
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate mair:hasStreet ;
+        rr:predicate mair:hasStation ;
         rr:objectMap [
-            rr:parentTriplesMap <#StreetMap>;
+            rr:parentTriplesMap <#StationMap>;
             rr:joinCondition [
-                rr:child "STREET_CODE";  # Column in ProvinceMunicipality-Relationship.csv
-                rr:parent "STREET_CODE"; # Column in MunicipalityCode-Relationship.csv
+                rr:child "STATION_CODE";  # Column in ProvinceMunicipality-Relationship.csv
+                rr:parent "STATION_CODE"; # Column in MunicipalityCode-Relationship.csv
             ]
         ]
     ] .
