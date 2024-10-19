@@ -29,6 +29,17 @@
             rml:reference "SAMPLING_LOCATION_NAME" ;
             rr:termType rr:Literal
         ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurement ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MeasurementMap>;
+            rr:joinCondition [
+                rr:child "STATION_CODE";
+                rr:parent "STATION_CODE";
+            ]
+        ]
     ] .
 
 <#MagnitudeMap> a rr:TriplesMap;
@@ -84,17 +95,6 @@
             rr:joinCondition [
                 rr:child "MAGNITUDE_CODE";
                 rr:parent "MAGNITUDE_CODE";
-            ]
-        ]
-    ] ;
-
-    rr:predicateObjectMap [
-        rr:predicate mair:recordedFrom ;
-        rr:objectMap [
-            rr:parentTriplesMap <#StationMap>;
-            rr:joinCondition [
-                rr:child "STATION_CODE";
-                rr:parent "STATION_CODE";
             ]
         ]
     ] ;
