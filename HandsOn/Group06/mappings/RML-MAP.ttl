@@ -11,12 +11,12 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/street/{STATION_CODE}" ;
-        rr:class mair:Street
+        rr:template "http://MadridAirQuality.org/station/{STATION_CODE}" ;
+        rr:class mair:Station
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate mair:hasStreetLocationID ;
+        rr:predicate mair:hasStationLocationID ;
         rr:objectMap [ 
             rml:reference "STATION_CODE";
             rr:termType rr:Literal
@@ -24,7 +24,7 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasStreetName;
+        rr:predicate mair:hasStationName;
         rr:objectMap [
             rml:reference "SAMPLING_LOCATION_NAME" ;
             rr:termType rr:Literal
@@ -139,9 +139,9 @@
         ] 
     ] .
 
-<#MunicipalityStreetMap> a rr:TriplesMap;
+<#MunicipalityStationMap> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "csv/MunicipalityStreet-Relationship.csv" ;
+        rml:source "csv/MunicipalityStation-Relationship.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
@@ -200,7 +200,7 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasLocationID ;
+        rr:predicate mair:hasProvinceLocationID ;
         rr:objectMap [ 
             rml:reference "PROVINCE_CODE";
             rr:termType rr:Literal
@@ -208,7 +208,7 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate mair:hasName;
+        rr:predicate mair:hasProvinceName;
         rr:objectMap [
             rml:reference "PROVINCE_NAME" ;
             rr:termType rr:Literal
