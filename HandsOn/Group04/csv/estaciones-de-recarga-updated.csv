@@ -1,106 +1,106 @@
-ID_Punto,DISTRITO,BARRIO,UBICACIÓN,EMPLAZAMIENTO,Nº_EQUIPOS,Mennekes_KW,CHAdeMO_KW,CCS_KW,Mennekes_Conectores,CHAdeMO_Conectores,CCS_Conectores,OPERADOR,GESTIÓN,FECHA_ALTA,HORARIO
-04 VP,Arganzuela,Palos de Moguer,Ronda de Valencia 1,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-06 VP,Retiro,Adelfas,Calle Cerro de la Plata 4,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-08 VP,Retiro,Jerónimos,"Calle Alfonso XII, 2",Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-10 VP,Salamanca,Recoletos,Calle Goya 36,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-11 VP,Salamanca,Goya,Calle Goya 123,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-12 VP,Salamanca,Castellana,Calle Castelló 105,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-01 CoCe20,Salamanca,Guindalera,"Mercado de Guindalera. Plaza de San Cayetano, s/n",Mercado municipal,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-09 CoCe20,Latina,Cuatro Vientos,"Calle Sinfonia, 9",Estación de servicio,1,50,50,50,1,2,2,IBERDROLA,Convenio cesión,2022-02-03T15:21:24Z,24
-32 PropDG,Vicálvaro,Valdebernardo,"Bulevar José Prat, 27A",Vía pública,3,22,50,"100, 50",1,1,3,IBERDROLA,Concesión demanial,2022-02-03T15:21:24Z,24
-02 CoCe20,Chamartín,Hispanoamérica,"Avenida Alfonso XIII, esquina, Costa Rica",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-13 VP,Salamanca,Castellana,Calle Velázquez 74,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-14 VP,Salamanca,Castellana,Paseo Castellana 52,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-15 VP,Chamartín,El Viso,Paseo Castellana 106,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-16 VP,Chamartín,Hispanoamérica,Paseo Castellana 160,Vía pública,2,50,"150, 50","150, 50",1,3,3,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-17 VP,Chamartín,Castilla,Calle Cardenal Marcelo Spínola 6,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-18 VP,Chamberí,Arapiles,Calle Fernández de los Ríos 42,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-19 VP,Chamberí,Arapiles,Plaza del Conde de Valle de Suchil,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-20 VP,Chamberí,Trafalgar,Calle Fuencarral 114,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-21 VP,Chamberí,Trafalgar,Calle Manuel Silvela 16,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-03 CoCe20,Chamartín,Nueva España,"Avenida Alberto Alcocer, 11",Aparcamiento,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-22 VP,Chamberí,Trafalgar,Calle Santa Engracia 115,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-23 VP,Chamberí,Almagro,Paseo Castellana 33,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-24 VP,Fuencarral - El Pardo,La Paz,Calle de Sinesio Delgado 2,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-25 VP,Ciudad Lineal,San Juan Bautista,Calle Bueso Pineda 29,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-01 CoCe18,Centro,Palacio,Mercado de la Cebada. Plaza de la Cebada,Mercado municipal,1,,50,50,0,2,2,DRIVE THE CITY,Convenio cesión,2022-02-03T15:21:24Z,24
-02 CoCe18,Chamartín,Nueva España,"Calle Mateo Inurria, 4",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-03 CoCe18,Tetuán,Berruguete,"Calle Ofelia Nieto, 64",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-04 CoCe18,Fuencarral - El Pardo,Valverde,ES Repsol 96849 - Calle Abetal 8 - Las Tablas,Estación de servicio,2,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-05 CoCe18,Moncloa - Aravaca,Ciudad Universitaria,ES Hipódromo,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-06 CoCe18,Moncloa - Aravaca,El Plantío,ES Aravaca - El Plantío,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-07 CoCe18,Latina,Cuatro Vientos,ES Repsol 33826 - Pº Extremadura 543,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-08 CoCe18,Latina,Cuatro Vientos,"CRED PAU CARABANCHEL, Av. de la Peseta",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-09 CoCe18,Latina,Águilas,Mercado de las Águilas - Calle de José Cadalso,Mercado municipal,1,50,50,50,1,2,2,DRIVE THE CITY,Convenio cesión,2022-02-03T15:21:24Z,24
-10 CoCe18,Puente de Vallecas,Palomeras Sureste,Avenida de la Albufera 319,Aparcamiento,2,50,50,50,1,2,2,ECOLINERAS,Convenio cesión,2022-02-03T15:21:24Z,24
-11 CoCe18,Hortaleza,Valdefuentes,Avenida María de Portugal 15,Estación de servicio,1,50,50,50,1,2,2,IBERDROLA,Convenio cesión,2022-02-03T15:21:24Z,24
-12 CoCe18,Villaverde,Butarque,"Avda. de los Rosales 147 M-301 km 4,1",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-13 CoCe18,Villa de Vallecas,Ensanche de Vallecas,"GPV-PAU VALLECAS-139, Calle Real de Arganda, 75",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-14 CoCe18,San Blas - Canillejas,Rejas,ES Repsol Barajas II,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-01 EMT,Centro,Sol,Plaza de Jacinto Benavente 6,Aparcamiento,1,50,50,50,1,2,2,EMT,EMT,2022-02-03T15:21:24Z,24
-02 EMT,Salamanca,Recoletos,Jardines del Descubrimiento - Acceso a Complejo de Aparcamientos subterráneos por Calle de la Armada Española,Aparcamiento,4,50,50,50,1,2,2,EMT,EMT,2022-02-03T15:21:24Z,24
-03 EMT,Salamanca,Lista,Plaza de Marqués de Salamanca,Aparcamiento,1,50,50,50,1,2,2,EMT,EMT,2022-02-03T15:21:24Z,24
-04 EMT,Chamartín,Castilla,Calle Hiedra 36,Aparcamiento,2,50,50,50,1,2,2,EMT,EMT,2022-02-03T15:21:24Z,24
-01 PRIV,Centro,Palacio,Plaza de la Cebada,Aparcamiento,1,,50,50,0,2,2,DRIVE THE CITY,Iniciativa privada,2022-02-03T15:21:24Z,24
-02 PRIV,Centro,Universidad,Calle Alberto Aguilera 9,Estación de servicio,1,,50,50,0,2,2,REPSOL,Iniciativa privada,2022-02-03T15:21:24Z,24
-03 PRIV,Retiro,Adelfas,Plaza del Conde de Casal 6,Aparcamiento,2,,50,50,0,2,2,DRIVE THE CITY,Iniciativa privada,2022-02-03T15:21:24Z,24
-04 PRIV,Fuencarral - El Pardo,El Goloso,"Calle del Monasterio de Arlanza, 20",Aparcamiento,2,,50,50,0,2,2,IBERDROLA,Iniciativa privada,2022-02-03T15:21:24Z,24
-05 PRIV,Hortaleza,Canillas,Avenida de Machupichu 105,Estación de servicio,1,,50,50,0,2,2,GIC,Iniciativa privada,2022-02-03T15:21:24Z,24
-06 PRIV,Hortaleza,Valdefuentes,Avenida de Niceto Alcala Zamora 20,Estación de servicio,1,,50,50,0,2,2,GIC/ GALP,Iniciativa privada,2022-02-03T15:21:24Z,24
-07 PRIV,Villa de Vallecas,Casco Histórico de Vallecas,"Avenida Eje Central, 7",Estación de servicio,1,50,50,50,1,2,2,NATURGY,Iniciativa privada,2022-02-03T15:21:24Z,24
-08 PRIV,Villa de Vallecas,Casco Histórico de Vallecas,Carretera de Villaverde a Vallecas 278,Estación de servicio,1,,50,50,0,2,2,REPSOL,Iniciativa privada,2022-02-03T15:21:24Z,24
-09 PRIV,Barajas,Corralejos,Avenida del Consejo de Europa 2,Estación de servicio,4,,,350,0,0,1,GIC / CEPSA,Iniciativa privada,2022-02-03T15:21:24Z,24
-10 PRIV,Barajas,Corralejos,Avenida del Partenón 5,Aparcamiento,2,,50,50,0,2,2,IBERDROLA,Iniciativa privada,2022-02-03T15:21:24Z,24
-1 PropDG,Arganzuela,Palos de Moguer,"Calle del General Lacy, 21",Vía pública,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,Concesión demanial,2022-02-03T15:21:24Z,24
-22 PropDG,Moratalaz,Pavones,Calle Hacienda de Pavones 231,Vía pública,3,22,50,"100, 50",1,1,3,IBERDROLA,Concesión demanial,2022-02-03T15:21:24Z,24
-27 PropDG,Hortaleza,Pinar del Rey,Glorieta De Sandro Pertini,Vía pública,3,22,50,"100, 50",1,1,3,IBERDROLA,Concesión demanial,2022-02-03T15:21:24Z,24
-30 PropDG,Villaverde,Los Rosales,Calle de Santa Florencia,Vía pública,3,22,50,"100, 50",1,1,3,IBERDROLA,Concesión demanial,2022-02-03T15:21:24Z,24
-35 PropDG,Vicálvaro,Valderrivas,"Calle de Minerva, 17",Vía pública,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,Concesión demanial,2022-02-03T15:21:24Z,24
-3 MerM,Villa de Vallecas,Casco Histórico de Vallecas,Parcela D.2.1 Anexo avenida de legazpi,Mercamadrid,2,50,50,50,1,2,2,DRIVE THE CITY,Acuerdo bilateral,2022-02-03T15:21:24Z,24
-5 MerM,Villa de Vallecas,Casco Histórico de Vallecas,Parcela E4 Anexo Avda Legazpi,Mercamadrid,1,50,50,50,1,2,2,DRIVE THE CITY,Acuerdo bilateral,2022-02-03T15:21:24Z,24
-6 MerM,Villa de Vallecas,Casco Histórico de Vallecas,Parcela B14 Anexo Calle 3,Mercamadrid,1,50,50,50,1,2,2,GIC (CIRCUTOR),Acuerdo bilateral,2022-02-03T15:21:24Z,24
-07 VP,Retiro,Ibiza,Calle Ibiza 1,Vía pública,1,50,50,50,1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-09 VP,Retiro,Jerónimos,"Plaza de la Lealtad, s/n",Vía pública,2,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-10 CoCe20,Carabanchel,Buenavista,"Calle Hilario Herranz Establos, 20",Estación de servicio,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-08 CoCe20,Moncloa - Aravaca,Argüelles,"Calle Marqués de Urquijo, 27",Aparcamiento,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-19 CoCe20,Villaverde,"Villaverde Alto, Casco Histórico de Villaverde","Calle Valle de Tobalina, 24",Estación de servicio,1,50,50,50,1,2,2,IBERDROLA,Convenio cesión,2022-02-03T15:21:24Z,24
-04 CoCe20,Tetuán,Cuatro Caminos,"Mercado Municipal de Maravillas, Calle Bravo Murillo 122",Mercado municipal,2,50,50,50,1,2,2,DRIVE THE CITY,Convenio cesión,2022-02-03T15:21:24Z,24
-11 CoCe20,Usera,Orcasur,"Calle de Eduardo Barreiros, 2",Aparcamiento,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-05 CoCe20,Tetuán,Cuatro Caminos,"Avenida del General Perón, 21",Aparcamiento,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-12 CoCe20,Usera,Orcasur,ES Avenida de Andalucía 38 - Carretera A-4 PK6.70 D,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-18 CoCe20,Hortaleza,Apostol Santiago,"SEDE NATURGY, Av San Luis, 77",Aparcamiento,1,50,50,50,1,2,2,NATURGY,Convenio cesión,2022-02-03T15:21:24Z,de 6:00 a 00:00 h
-20 CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,"Atolón 98, Calle 29.",Mercamadrid,3,50,50,50,1,2,2,DRIVE THE CITY,Convenio cesión,2022-02-03T15:21:24Z,24
-15 CoCe20,Ciudad Lineal,Ventas,"Estación de Servicio SUDEL, Calle Ricardo Ortiz, 44",Estación de servicio,1,50,50,50,1,2,2,Sudel,Convenio cesión,2022-02-03T15:21:24Z,24
-17 CoCe20,Ciudad Lineal,Colina,"ES Calle Arturo Soria, 175",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-16 CoCe20,Ciudad Lineal,San Pascual,Calle Verdaguer y García 5,Aparcamiento,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-14 CoCe20,Moratalaz,Marroquina,CRE Moratalaz Glorieta del Corregidor Sancho de Córdoba,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-23 CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,"Avenida Mayorazgo, 20",Estación de servicio,1,50,50,50,1,2,2,GALP,Convenio cesión,2022-02-03T15:21:24Z,24
-27 CoCe20,San Blas - Canillejas,Simancas,"Avenida Arcentales, 7",Estación de servicio,1,50,50,50,1,2,2,GALP,Convenio cesión,2022-02-03T15:21:24Z,24
-26 CoCe20,San Blas - Canillejas,Simancas,Calle Alcalá 510,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-02-03T15:21:24Z,24
-28 CoCe20,San Blas - Canillejas,Arcos,"Avenida Canillejas a Vicálvaro, 80",Estación de servicio,1,50,50,50,1,2,2,GALP,Convenio cesión,2022-02-03T15:21:24Z,24
-29 CoCe20,San Blas - Canillejas,Rosas,"Avenida Canillejas a Vicálvaro, 147",Estación de servicio,1,50,50,50,1,2,2,Cerdeira,Convenio cesión,2022-02-03T15:21:24Z,24
-24 CoCe20,Villa de Vallecas,Ensanche de Vallecas,"Calle Alto del Retiro, s/n",Estación de servicio,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-02-03T15:21:24Z,24
-30 CoCe20,San Blas - Canillejas,Rejas,"CENTRO DE OPERACIONES NATURGY, Calle Deyanira, 10",Aparcamiento,1,50,50,50,1,2,2,NATURGY,Convenio cesión,2022-02-03T15:21:24Z,24
-31 CoCe20,San Blas - Canillejas,Rejas,"Calle Nanclares de Oca, 5-17",Aparcamiento,2,50,50,50,1,2,2,IBERDROLA,Convenio cesión,2022-02-03T15:21:24Z,24
-21 CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,"ESTACIÓN DE SUMINISTRO GNC, Avenida Eje Central, 7",Estación de servicio,1,50,50,50,1,2,2,NATURGY,Convenio cesión,2022-02-03T15:21:24Z,24
-01 VP,Centro,Justicia,Calle Génova 24,Vía pública,1,50,50,50,1,2,2,GIC,Convenio vía pública,2022-02-03T15:21:24Z,24
-31 PropDG,Villaverde,San Cristóbal,Calle Godella 116,Vía pública,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,Concesión demanial,2022-02-03T15:21:24Z,24
-26 VP,Salamanca,Guindalera,"Calle de Roberto Domingo, 4",Vía pública,2,22,"150, 50","150, 50",1,2,2,REPSOL,Convenio vía pública,2022-02-03T15:21:24Z,24
-12 PRIV,Tetuán,Almenara,"Calle San Aquilino, 1 B",Aparcamiento,2,,50,50,0,2,2,IBERDROLA,Iniciativa privada,2022-02-03T15:21:24Z,24
-13 PRIV,Chamartín,Prosperidad,"Avenida de América 9 A, planta -3",Aparcamiento,2,,50,50,0,2,2,IBERDROLA,Iniciativa privada,2022-02-03T15:21:24Z,24
-7 MerM,Villa de Vallecas,Casco Histórico de Vallecas,Avda. de Madrid - Aparcamiento Este del Mercado Central de Pescados,Mercamadrid,2,50,50,50,1,2,2,,Acuerdo bilateral,2022-06-17T07:19:00Z,24
-1 CoCe22,Fuencarral - El Pardo,Pilar,"CENTRO COMERCIAL MADRID 2 - LA VAGUADA. Av. de Monforte de Lemos, 36",Aparcamiento,2,22,50,50,1,2,2,CC LA VAGUADA,Convenio cesión,2022-06-17T11:04:15Z,de 6:00h a 1:00h
-8 MerM,Villa de Vallecas,Casco Histórico de Vallecas,Avda. de Madrid - Aparcamiento Este del Mercado Central  de Pescados  Mercamadrid.,Mercamadrid,1,,150,150,0,1,1,,Acuerdo bilateral,2022-06-17T07:22:02Z,24
-2 CoCe22,Fuencarral - El Pardo,El Goloso,CAMPUS CANTOBLANCO – RECTORADO,Aparcamiento,2,22,50,50,1,2,2,UAM,Convenio cesión,2022-06-17T11:12:42Z,24
-5 CoCe22,Barajas,Corralejos,C/Vía Dublín s/n. Club de golf Olivar de la Hinojosa.,Aparcamiento,2,22,50,50,1,2,2,BLAUDRIVE,Convenio cesión,2022-06-24T06:57:35Z,de 7:30h a 21:00h
-8 CoCe22,Usera,Moscardó,"Calle Amparo Usera, 46. Mercado Usera",Mercado municipal,1,22,50,50,1,2,2,BLAUDRIVE,Convenio cesión,2022-06-24T07:05:24Z,24
-16 CoCe22,Latina,Aluche,"Ctra A-5, Km 5.4. Estación de Servicio El Batán",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-06-24T07:49:04Z,24
-29 CoCe22,Ciudad Lineal,San Juan Bautista,"Hospital Vithas Clinsa SA. Calle de Ramírez de Arellano, 2",Aparcamiento,1,22,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-08-23T07:30:47Z,24
-34 CoCe22,Salamanca,Castellana,"C.C. ABC SERRANO. Calle Serrano, 61",Aparcamiento,1,22,50,50,1,2,2,ENDESA X SERVICIOS S.L.,Convenio cesión,2022-08-23T07:40:46Z,24
-14 PRIV,Villa de Vallecas,Casco Histórico de Vallecas,Calle 29. Mercamadrid,Aparcamiento,1,,,180,0,0,2,DRIVE THE CITY,Iniciativa privada,2022-04-28T12:46:34Z,24
-3 CoCe22,Fuencarral - El Pardo,El Goloso,CAMPUS CANTOBLANCO – DERECHO,Aparcamiento,2,22,50,50,1,2,2,UAM,Convenio cesión,2022-06-17T11:14:10Z,24
-6 CoCe22,Puente de Vallecas,San Diego,"Calle Martínez de la Riva, 4. Mercado Puente de Vallecas",Mercado municipal,1,22,50,50,1,2,2,BLAUDRIVE,Convenio cesión,2022-06-24T07:01:08Z,de 9:00h a 21:30h
-20 CoCe22,Chamartín,El Viso,"E.S. ESMO, S.A. Calle María de Molina 21",Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2022-06-24T07:57:55Z,24
-05 EMT,Centro,Sol,Calle Alcalá 17. Parking de Canalejas.,Aparcamiento,12,"400, 200, 50","400, 200, 50","400, 200, 50",3,24,24,EMT,EMT,2022-12-20T08:04:03Z,24
-33 CoCe20,Fuencarral - El Pardo,Peñagrande,ES Cardenal Herrera Oria. Avenida Cardenal Herrera Oria 290,Estación de servicio,1,50,50,50,1,2,2,REPSOL,Convenio cesión,2023-02-27T12:05:31Z,24
-06 EMT,Salamanca,Recoletos,Paseo Recoletos 4,Aparcamiento,2,50,50,50,1,2,2,EMT,EMT,2024-06-24T07:16:21Z,24
+ID_Punto,DISTRITO,BARRIO,ID_BARRIO,UBICACIÓN,CALLE,CALLE_ID,Nº_EQUIPOS,Mennekes_KW,CHAdeMO_KW,CCS_KW,Mennekes_Conectores,CHAdeMO_Conectores,CCS_Conectores,OPERADOR,FECHA_ALTA,HORARIO
+04_VP,Arganzuela,Palos de Moguer,PalosdeMoguer,Ronda de Valencia 1,Ronda de Valencia,RondadeValencia,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+06_VP,Retiro,Adelfas,Adelfas,Calle Cerro de la Plata 4,Calle Cerro de la Plata,CalleCerrodelaPlata,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+08_VP,Retiro,Jerónimos,Jerónimos,"Calle Alfonso XII, 2",Calle Alfonso XII,CalleAlfonsoXII,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+10_VP,Salamanca,Recoletos,Recoletos,Calle de Goya 36,Calle de Goya,CalledeGoya,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+11_VP,Salamanca,Goya,Goya,Calle de Goya 123,Calle de Goya,CalledeGoya,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+12_VP,Salamanca,Castellana,Castellana,Calle Castelló 105,Calle Castelló,CalleCastelló,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+01_CoCe20,Salamanca,Guindalera,Guindalera,Plaza de San Cayetano,Plaza de San Cayetano,PlazadeSanCayetano,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+09_CoCe20,Latina,Cuatro Vientos,CuatroVientos,"Calle de la Sinfonia, 9",Calle de la Sinfonia,CalledelaSinfonia,1,50,50,50,1,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+32_PropDG,Vicálvaro,Valdebernardo,Valdebernardo,"Bulevar José Prat, 27",Bulevar José Prat,BulevarJoséPrat,3,22,50,"100, 50",1,1,3,IBERDROLA,2022-02-03T15:21:24Z,24
+02_CoCe20,Chamartín,Hispanoamérica,Hispanoamérica,Avenida Alfonso XIII,Avenida Alfonso XIII,AvenidaAlfonsoXIII,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+13_VP,Salamanca,Castellana,Castellana,Calle Velázquez 74,Calle Velázquez,CalleVelázquez,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+14_VP,Salamanca,Castellana,Castellana,Paseo Castellana 52,Paseo Castellana,PaseoCastellana,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+15_VP,Chamartín,El Viso,ElViso,Paseo Castellana 106,Paseo Castellana,PaseoCastellana,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+16_VP,Chamartín,Hispanoamérica,Hispanoamérica,Paseo Castellana 160,Paseo Castellana,PaseoCastellana,2,50,"150, 50","150, 50",1,3,3,REPSOL,2022-02-03T15:21:24Z,24
+17_VP,Chamartín,Castilla,Castilla,Calle Cardenal Marcelo Spínola 6,Calle Cardenal Marcelo Spínola,CalleCardenalMarceloSpínola,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+18_VP,Chamberí,Arapiles,Arapiles,Calle Fernández de los Ríos 42,Calle Fernández de los Ríos,CalleFernándezdelosRíos,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+19_VP,Chamberí,Arapiles,Arapiles,Plaza del Conde de Valle de Suchil,Plaza del Conde de Valle de Suchil,PlazadelCondedeValledeSuchil,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+20_VP,Chamberí,Trafalgar,Trafalgar,Calle Fuencarral 114,Calle Fuencarral,CalleFuencarral,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+21_VP,Chamberí,Trafalgar,Trafalgar,Calle Manuel Silvela 16,Calle Manuel Silvela,CalleManuelSilvela,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+03_CoCe20,Chamartín,Nueva España,NuevaEspaña,"Avenida Alberto Alcocer, 11",Avenida Alberto Alcocer,AvenidaAlbertoAlcocer,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+22_VP,Chamberí,Trafalgar,Trafalgar,Calle Santa Engracia 115,Calle Santa Engracia,CalleSantaEngracia,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+23_VP,Chamberí,Almagro,Almagro,Paseo Castellana 33,Paseo Castellana,PaseoCastellana,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+24_VP,Fuencarral - El Pardo,La Paz,LaPaz,Calle de Sinesio Delgado 2,Calle de Sinesio Delgado,CalledeSinesioDelgado,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+25_VP,Ciudad Lineal,San Juan Bautista,SanJuanBautista,Calle Bueso Pineda 29,Calle Bueso Pineda,CalleBuesoPineda,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+01_CoCe18,Centro,Palacio,Palacio,Plaza de la Cebada,Plaza de la Cebada,PlazadelaCebada,1,,50,50,0,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+02_CoCe18,Chamartín,Nueva España,NuevaEspaña,"Calle Mateo Inurria, 4",Calle Mateo Inurria,CalleMateoInurria,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+03_CoCe18,Tetuán,Berruguete,Berruguete,"Calle Ofelia Nieto, 64",Calle Ofelia Nieto,CalleOfeliaNieto,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+04_CoCe18,Fuencarral - El Pardo,Valverde,Valverde,Calle Abetal 8,Calle Abetal,CalleAbetal,2,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+05_CoCe18,Moncloa - Aravaca,Ciudad Universitaria,CiudadUniversitaria,Hipódromo,Hipódromo,Hipódromo,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+06_CoCe18,Moncloa - Aravaca,El Plantío,ElPlantío,El Plantío,El Plantío,ElPlantío,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+07_CoCe18,Latina,Cuatro Vientos,CuatroVientos,Paseo de Extremadura 543,Paseo de Extremadura,PaseodeExtremadura,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+08_CoCe18,Latina,Cuatro Vientos,CuatroVientos,Avenida de la Peseta,Avenida de la Peseta,AvenidadelaPeseta,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+09_CoCe18,Latina,Águilas,Águilas,Calle de José Cadalso,Calle de José Cadalso,CalledeJoséCadalso,1,50,50,50,1,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+10_CoCe18,Puente de Vallecas,Palomeras Sureste,PalomerasSureste,Avenida de la Albufera 319,Avenida de la Albufera,AvenidadelaAlbufera,2,50,50,50,1,2,2,ECOLINERAS,2022-02-03T15:21:24Z,24
+11_CoCe18,Hortaleza,Valdefuentes,Valdefuentes,Calle de María de Portugal 15,Calle de María de Portugal,CalledeMaríadePortugal,1,50,50,50,1,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+12_CoCe18,Villaverde,Butarque,Butarque,Avenida de los Rosales 147 M-301,Avenida de los Rosales,AvenidadelosRosales,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+13_CoCe18,Villa de Vallecas,Ensanche de Vallecas,EnsanchedeVallecas,"Calle Real de Arganda, 75",Calle Real de Arganda,CalleRealdeArganda,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+14_CoCe18,San Blas - Canillejas,Rejas,Rejas,"Calle de Fuentelencina, 50",Calle de Fuentelencina,CalledeFuentelencina,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+01_EMT,Centro,Sol,Sol,Plaza de Jacinto Benavente 6,Plaza de Jacinto Benavente,PlazadeJacintoBenavente,1,50,50,50,1,2,2,EMT,2022-02-03T15:21:24Z,24
+02_EMT,Salamanca,Recoletos,Recoletos,Jardines del Descubrimiento,Jardines del Descubrimiento,JardinesdelDescubrimiento,4,50,50,50,1,2,2,EMT,2022-02-03T15:21:24Z,24
+03_EMT,Salamanca,Lista,Lista,Plaza de Marqués de Salamanca,Plaza de Marqués de Salamanca,PlazadeMarquésdeSalamanca,1,50,50,50,1,2,2,EMT,2022-02-03T15:21:24Z,24
+04_EMT,Chamartín,Castilla,Castilla,Calle de la Hiedra 36,Calle de la Hiedra,CalledelaHiedra,2,50,50,50,1,2,2,EMT,2022-02-03T15:21:24Z,24
+01_PRIV,Centro,Palacio,Palacio,Plaza de la Cebada,Plaza de la Cebada,PlazadelaCebada,1,,50,50,0,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+02_PRIV,Centro,Universidad,Universidad,Calle Alberto Aguilera 9,Calle Alberto Aguilera,CalleAlbertoAguilera,1,,50,50,0,2,2,REPSOL,2022-02-03T15:21:24Z,24
+03_PRIV,Retiro,Adelfas,Adelfas,Plaza del Conde de Casal 6,Plaza del Conde de Casal,PlazadelCondedeCasal,2,,50,50,0,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+04_PRIV,Fuencarral - El Pardo,El Goloso,ElGoloso,"Calle Monasterio de Arlanza, 20",Calle Monasterio de Arlanza,CalleMonasteriodeArlanza,2,,50,50,0,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+05_PRIV,Hortaleza,Canillas,Canillas,Avenida de Machupichu 105,Avenida de Machupichu,AvenidadeMachupichu,1,,50,50,0,2,2,GIC,2022-02-03T15:21:24Z,24
+06_PRIV,Hortaleza,Valdefuentes,Valdefuentes,Avenida de Niceto Alcala Zamora 20,Avenida de Niceto Alcala Zamora,AvenidadeNicetoAlcalaZamora,1,,50,50,0,2,2,GIC/ GALP,2022-02-03T15:21:24Z,24
+07_PRIV,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,"Avenida Eje Central, 7",Avenida Eje Central,AvenidaEjeCentral,1,50,50,50,1,2,2,NATURGY,2022-02-03T15:21:24Z,24
+08_PRIV,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Carretera de Villaverde a Vallecas 278,Carretera de Villaverde a Vallecas,CarreteradeVillaverdeaVallecas,1,,50,50,0,2,2,REPSOL,2022-02-03T15:21:24Z,24
+09_PRIV,Barajas,Corralejos,Corralejos,Avenida del Consejo de Europa 2,Avenida del Consejo de Europa,AvenidadelConsejodeEuropa,4,,,350,0,0,1,GIC / CEPSA,2022-02-03T15:21:24Z,24
+10_PRIV,Barajas,Corralejos,Corralejos,Avenida del Partenón 5,Avenida del Partenón,AvenidadelPartenón,2,,50,50,0,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+1_PropDG,Arganzuela,Palos de Moguer,PalosdeMoguer,"Calle del General Lacy, 21",Calle del General Lacy,CalledelGeneralLacy,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,2022-02-03T15:21:24Z,24
+22_PropDG,Moratalaz,Pavones,Pavones,Calle Hacienda de Pavones 231,Calle Hacienda de Pavones,CalleHaciendadePavones,3,22,50,"100, 50",1,1,3,IBERDROLA,2022-02-03T15:21:24Z,24
+27_PropDG,Hortaleza,Pinar del Rey,PinardelRey,Glorieta De Sandro Pertini,Glorieta De Sandro Pertini,GlorietaDeSandroPertini,3,22,50,"100, 50",1,1,3,IBERDROLA,2022-02-03T15:21:24Z,24
+30_PropDG,Villaverde,Los Rosales,LosRosales,Calle de Santa Florencia,Calle de Santa Florencia,CalledeSantaFlorencia,3,22,50,"100, 50",1,1,3,IBERDROLA,2022-02-03T15:21:24Z,24
+35_PropDG,Vicálvaro,Valderrivas,Valderrivas,"Calle de Minerva, 17",Calle de Minerva,CalledeMinerva,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,2022-02-03T15:21:24Z,24
+3_MerM,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Avenida de Legazpi,Avenida de Legazpi,AvenidadeLegazpi,2,50,50,50,1,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+5_MerM,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Avenida de Legazpi,Avenida de Legazpi,AvenidadeLegazpi,1,50,50,50,1,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+6_MerM,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Avenida Arganzuela,Avenida Arganzuela,AvenidaArganzuela,1,50,50,50,1,2,2,GIC (CIRCUTOR),2022-02-03T15:21:24Z,24
+07_VP,Retiro,Ibiza,Ibiza,Calle Ibiza 1,Calle Ibiza,CalleIbiza,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+09_VP,Retiro,Jerónimos,Jerónimos,Plaza de la Lealtad,Plaza de la Lealtad,PlazadelaLealtad,2,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+10_CoCe20,Carabanchel,Buenavista,Buenavista,"Calle Hilario Herranz Establos, 20",Calle Hilario Herranz Establos,CalleHilarioHerranzEstablos,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+08_CoCe20,Moncloa - Aravaca,Argüelles,Argüelles,"Calle Marqués de Urquijo, 27",Calle Marqués de Urquijo,CalleMarquésdeUrquijo,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+19_CoCe20,Villaverde,"Villaverde Alto, Casco Histórico de Villaverde","VillaverdeAlto,CascoHistóricodeVillaverde","Calle Valle de Tobalina, 24",Calle Valle de Tobalina,CalleValledeTobalina,1,50,50,50,1,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+04_CoCe20,Tetuán,Cuatro Caminos,CuatroCaminos,Calle Bravo Murillo 122,Calle Bravo Murillo,CalleBravoMurillo,2,50,50,50,1,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+11_CoCe20,Usera,Orcasur,Orcasur,"Calle de Eduardo Barreiros, 2",Calle de Eduardo Barreiros,CalledeEduardoBarreiros,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+05_CoCe20,Tetuán,Cuatro Caminos,CuatroCaminos,"Avenida del General Perón, 21",Avenida del General Perón,AvenidadelGeneralPerón,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+12_CoCe20,Usera,Orcasur,Orcasur,Avenida de Andalucía 38,Avenida de Andalucía,AvenidadeAndalucía,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+18_CoCe20,Hortaleza,Apostol Santiago,ApostolSantiago,"Avenida de San Luis, 77",Avenida de San Luis,AvenidadeSanLuis,1,50,50,50,1,2,2,NATURGY,2022-02-03T15:21:24Z,de 6:00 a 00:00 h
+20_CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Atolón 98,Atolón,Atolón,3,50,50,50,1,2,2,DRIVE THE CITY,2022-02-03T15:21:24Z,24
+15_CoCe20,Ciudad Lineal,Ventas,Ventas,"Calle Ricardo Ortiz, 44",Calle Ricardo Ortiz,CalleRicardoOrtiz,1,50,50,50,1,2,2,Sudel,2022-02-03T15:21:24Z,24
+17_CoCe20,Ciudad Lineal,Colina,Colina,"Calle Arturo Soria, 175",Calle Arturo Soria,CalleArturoSoria,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+16_CoCe20,Ciudad Lineal,San Pascual,SanPascual,Calle Verdaguer y García 5,Calle Verdaguer y García,CalleVerdagueryGarcía,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+14_CoCe20,Moratalaz,Marroquina,Marroquina,Corregidor Sancho de Córdoba,Corregidor Sancho de Córdoba,CorregidorSanchodeCórdoba,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+23_CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,"Avenida Mayorazgo, 20",Avenida Mayorazgo,AvenidaMayorazgo,1,50,50,50,1,2,2,GALP,2022-02-03T15:21:24Z,24
+27_CoCe20,San Blas - Canillejas,Simancas,Simancas,"Avenida Arcentales, 7",Avenida Arcentales,AvenidaArcentales,1,50,50,50,1,2,2,GALP,2022-02-03T15:21:24Z,24
+26_CoCe20,San Blas - Canillejas,Simancas,Simancas,Calle de Alcalá 510,Calle de Alcalá,CalledeAlcalá,1,50,50,50,1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+28_CoCe20,San Blas - Canillejas,Arcos,Arcos,"Avenida Canillejas a Vicálvaro, 80",Avenida Canillejas a Vicálvaro,AvenidaCanillejasaVicálvaro,1,50,50,50,1,2,2,GALP,2022-02-03T15:21:24Z,24
+29_CoCe20,San Blas - Canillejas,Rosas,Rosas,"Avenida Canillejas a Vicálvaro, 147",Avenida Canillejas a Vicálvaro,AvenidaCanillejasaVicálvaro,1,50,50,50,1,2,2,Cerdeira,2022-02-03T15:21:24Z,24
+24_CoCe20,Villa de Vallecas,Ensanche de Vallecas,EnsanchedeVallecas,Calle Alto del Retiro,Calle Alto del Retiro,CalleAltodelRetiro,1,50,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-02-03T15:21:24Z,24
+30_CoCe20,San Blas - Canillejas,Rejas,Rejas,"Calle Deyanira, 10",Calle Deyanira,CalleDeyanira,1,50,50,50,1,2,2,NATURGY,2022-02-03T15:21:24Z,24
+31_CoCe20,San Blas - Canillejas,Rejas,Rejas,"Calle Nanclares de Oca, 5-17",Calle Nanclares de Oca,CalleNanclaresdeOca,2,50,50,50,1,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+21_CoCe20,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,"Avenida Eje Central, 7",Avenida Eje Central,AvenidaEjeCentral,1,50,50,50,1,2,2,NATURGY,2022-02-03T15:21:24Z,24
+01_VP,Centro,Justicia,Justicia,Calle Génova 24,Calle Génova,CalleGénova,1,50,50,50,1,2,2,GIC,2022-02-03T15:21:24Z,24
+31_PropDG,Villaverde,San Cristóbal,SanCristóbal,Calle Godella 116,Calle Godella,CalleGodella,3,22,"100, 50","100, 50",1,3,3,TOTALENERGIES,2022-02-03T15:21:24Z,24
+26_VP,Salamanca,Guindalera,Guindalera,"Calle Roberto Domingo, 4",Calle Roberto Domingo,CalleRobertoDomingo,2,22,"150, 50","150, 50",1,2,2,REPSOL,2022-02-03T15:21:24Z,24
+12_PRIV,Tetuán,Almenara,Almenara,"Calle San Aquilino, 1 B",Calle San Aquilino,CalleSanAquilino,2,,50,50,0,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+13_PRIV,Chamartín,Prosperidad,Prosperidad,Avenida de América 9,Avenida de América,AvenidadeAmérica,2,,50,50,0,2,2,IBERDROLA,2022-02-03T15:21:24Z,24
+7_MerM,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Avenida de Madrid,Avenida de Madrid,AvenidadeMadrid,2,50,50,50,1,2,2,,2022-06-17T07:19:00Z,24
+1_CoCe22,Fuencarral - El Pardo,Pilar,Pilar,"Avenida de Monforte de Lemos, 36",Avenida de Monforte de Lemos,AvenidadeMonfortedeLemos,2,22,50,50,1,2,2,CC LA VAGUADA,2022-06-17T11:04:15Z,de 6:00h a 1:00h
+8_MerM,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Avenida de Madrid,Avenida de Madrid,AvenidadeMadrid,1,,150,150,0,1,1,,2022-06-17T07:22:02Z,24
+2_CoCe22,Fuencarral - El Pardo,El Goloso,ElGoloso,CAMPUS CANTOBLANCO,CAMPUS CANTOBLANCO,CAMPUSCANTOBLANCO,2,22,50,50,1,2,2,UAM,2022-06-17T11:12:42Z,24
+5_CoCe22,Barajas,Corralejos,Corralejos,Vía Dublín,Vía Dublín,VíaDublín,2,22,50,50,1,2,2,BLAUDRIVE,2022-06-24T06:57:35Z,de 7:30h a 21:00h
+8_CoCe22,Usera,Moscardó,Moscardó,"Calle Amparo Usera, 46",Calle Amparo Usera,CalleAmparoUsera,1,22,50,50,1,2,2,BLAUDRIVE,2022-06-24T07:05:24Z,24
+16_CoCe22,Latina,Aluche,Aluche,Carretera de Extremadura,Carretera de Extremadura,CarreteradeExtremadura,1,50,50,50,1,2,2,REPSOL,2022-06-24T07:49:04Z,24
+29_CoCe22,Ciudad Lineal,San Juan Bautista,SanJuanBautista,"Calle de Ramírez de Arellano, 2",Calle de Ramírez de Arellano,CalledeRamírezdeArellano,1,22,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-08-23T07:30:47Z,24
+34_CoCe22,Salamanca,Castellana,Castellana,"Calle Serrano, 61",Calle Serrano,CalleSerrano,1,22,50,50,1,2,2,ENDESA X SERVICIOS S.L.,2022-08-23T07:40:46Z,24
+14_PRIV,Villa de Vallecas,Casco Histórico de Vallecas,CascoHistóricodeVallecas,Calle 29,Calle,Calle,1,,,180,0,0,2,DRIVE THE CITY,2022-04-28T12:46:34Z,24
+3_CoCe22,Fuencarral - El Pardo,El Goloso,ElGoloso,CAMPUS CANTOBLANCO,CAMPUS CANTOBLANCO,CAMPUSCANTOBLANCO,2,22,50,50,1,2,2,UAM,2022-06-17T11:14:10Z,24
+6_CoCe22,Puente de Vallecas,San Diego,SanDiego,"Calle Martínez de la Riva, 4",Calle Martínez de la Riva,CalleMartínezdelaRiva,1,22,50,50,1,2,2,BLAUDRIVE,2022-06-24T07:01:08Z,de 9:00h a 21:30h
+20_CoCe22,Chamartín,El Viso,ElViso,Calle María de Molina 21,Calle María de Molina,CalleMaríadeMolina,1,50,50,50,1,2,2,REPSOL,2022-06-24T07:57:55Z,24
+05_EMT,Centro,Sol,Sol,Calle de Alcalá 17,Calle de Alcalá,CalledeAlcalá,12,"400, 200, 50","400, 200, 50","400, 200, 50",3,24,24,EMT,2022-12-20T08:04:03Z,24
+33_CoCe20,Fuencarral - El Pardo,Peñagrande,Peñagrande,Avenida del Cardenal Herrera Oria 290,Avenida del Cardenal Herrera Oria,AvenidadelCardenalHerreraOria,1,50,50,50,1,2,2,REPSOL,2023-02-27T12:05:31Z,24
+06_EMT,Salamanca,Recoletos,Recoletos,Paseo Recoletos 4,Paseo Recoletos,PaseoRecoletos,2,50,50,50,1,2,2,EMT,2024-06-24T07:16:21Z,24
