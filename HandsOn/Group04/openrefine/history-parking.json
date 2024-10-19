@@ -578,5 +578,54 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column PK using expression value.toString()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CLASE-VIAL",
+    "expression": "grel:value.replace(\" \",\"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "CALLE_ID",
+    "columnInsertIndex": 6,
+    "description": "Create column CALLE_ID at index 6 based on column CLASE-VIAL using expression grel:value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-X",
+    "description": "Remove column COORDENADA-X"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-Y",
+    "description": "Remove column COORDENADA-Y"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE_ID using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:value.replace(\" \", \"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIO_ID",
+    "columnInsertIndex": 9,
+    "description": "Create column BARRIO_ID at index 9 based on column BARRIO using expression grel:value.replace(\" \", \"\")"
   }
 ]
