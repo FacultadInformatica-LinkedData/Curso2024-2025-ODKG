@@ -1,6 +1,8 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 @prefix mair: <http://MadridAirQuality.org/#> .
 @base <http://MadridAirQuality.org/#> .
 
@@ -19,7 +21,8 @@
         rr:predicate mair:hasStationLocationID ;
         rr:objectMap [ 
             rml:reference "STATION_CODE";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -27,7 +30,8 @@
         rr:predicate mair:hasStationName;
         rr:objectMap [
             rml:reference "SAMPLING_LOCATION_NAME" ;
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ]
     ] ;
 
@@ -57,7 +61,8 @@
         rr:predicate mair:hasMagnitudeCode ;
         rr:objectMap [ 
             rml:reference "MAGNITUDE_CODE";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -65,7 +70,8 @@
         rr:predicate mair:hasMagnitudeName ;
         rr:objectMap [ 
             rml:reference "PARAMETER_NAME";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ] 
     ] ;
 
@@ -73,7 +79,8 @@
         rr:predicate mair:hasMagnitudeMeasurementUnit ;
         rr:objectMap [ 
             rml:reference "MEASUREMENT_UNIT";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ] 
     ] .
 
@@ -103,7 +110,8 @@
         rr:predicate mair:hasMeasurementValue ;
         rr:objectMap [ 
             rml:reference "VALUE";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:float
         ] 
     ] ;
 
@@ -111,7 +119,8 @@
         rr:predicate mair:isMeasurementValid ;
         rr:objectMap [ 
             rml:reference "VALID";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:boolean
         ] 
     ] ;
 
@@ -119,7 +128,8 @@
         rr:predicate mair:hasMeasurementYear ;
         rr:objectMap [ 
             rml:reference "YEAR";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -127,7 +137,8 @@
         rr:predicate mair:hasMeasurementMonth ;
         rr:objectMap [ 
             rml:reference "MONTH";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -135,7 +146,8 @@
         rr:predicate mair:hasMeasurementDay ;
         rr:objectMap [ 
             rml:reference "DAY";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ] 
     ] .
 
@@ -176,7 +188,8 @@
         rr:predicate mair:hasMunicipalityLocationID ;
         rr:objectMap [ 
             rml:reference "MUNICIPALITY_CODE";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -184,7 +197,8 @@
         rr:predicate mair:hasMunicipalityName;
         rr:objectMap [
             rml:reference "MUNICIPALITY_NAME" ;
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ]
     ] .
 
@@ -203,7 +217,8 @@
         rr:predicate mair:hasProvinceLocationID ;
         rr:objectMap [ 
             rml:reference "PROVINCE_CODE";
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
         ] 
     ] ;
 
@@ -211,7 +226,8 @@
         rr:predicate mair:hasProvinceName;
         rr:objectMap [
             rml:reference "PROVINCE_NAME" ;
-            rr:termType rr:Literal
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
         ]
     ].
 
