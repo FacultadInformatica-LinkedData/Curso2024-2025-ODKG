@@ -1,0 +1,47 @@
+
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  transit: http://vocab.org/transit/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  vocab: http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#
+  base: http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ns#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  mod: https://w3id.org/mod#
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+mappings:
+  Parking:
+    sources:
+      - "../csv/aparcamientos-publicos-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/{PK}"
+    po:
+      - [rdf:label, "NOMBRE"^^xsd:string]
+      - [vocab:openingHours, "HORARIO"^^xsd:string]
+      - [vocab:accessibility, "ACCESIBILIDAD"^^xsd:string]
+      - [vocab:numberOfTotalPlaces, "NUMERO-PLAZAS"^^xsd:integer]
+      - [vocab:locatedInStreet, parent: Street]
+  Street:
+    sources:
+      - "../csv/calles-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/{ID_CALLE}"
+    po:
+      - [rdf:label, "CALLE_ID"^^xsd:string]
+      - [vocab:locatedInNeighborhood, parent: Neighborhood]
+  Neighborhood:
+    sources:
+      - "../csv/barrios-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/{ID_BARRIO}"
+    po:
+      - [rdf:label, "BARRIO"^^xsd:string]
+      - [vocab:isPartOf, parent: District]
+  District:
+    sources:
+      - "../csv/distritos-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/{CODIGO-POSTAL}"
+    po:
+      - [rdf:label, "DISTRITO"^^xsd:string]
+      - [vocab:postalCode, "CODIGO-POSTAL"^^xsd:string]
