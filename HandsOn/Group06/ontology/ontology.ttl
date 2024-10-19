@@ -43,7 +43,6 @@ mair:Measurement a rdfs:Class ;
     rdfs:comment "A recorded observation of air quality data at a specific time and location." .
 
 # Object Properties
-
 #Location
 mair:hasProvince a rdf:Property ;
     rdfs:label "has province" ;
