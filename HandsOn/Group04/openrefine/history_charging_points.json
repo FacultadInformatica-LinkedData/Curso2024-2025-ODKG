@@ -1141,5 +1141,1357 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column HORARIO using expression value.trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMPLAZAMIENTO",
+    "description": "Remove column EMPLAZAMIENTO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "GESTIÓN",
+    "description": "Remove column GESTIÓN"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_Punto",
+    "expression": "value.replace(/[\\p{Zs}\\s]+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID_Punto using expression value.replace(/[\\p{Zs}\\s]+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID_Punto",
+    "expression": "grel:value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID_Punto using expression grel:value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:value.replace(\" \",\"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "ID_BARRIO",
+    "columnInsertIndex": 3,
+    "description": "Create column ID_BARRIO at index 3 based on column BARRIO using expression grel:value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Atolón 98, Calle 29."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Atolón 98"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. de los Rosales 147 M-301 km 4,1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. de los Rosales 147 M-301"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. de Madrid - Aparcamiento Este del Mercado Central  de Pescados  Mercamadrid."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. de Madrid"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. de Madrid - Aparcamiento Este del Mercado Central de Pescados"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. de Madrid"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avenida Alfonso XIII, esquina, Costa Rica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida Alfonso XIII"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avenida de América 9 A, planta -3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida de América 9"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avenida María de Portugal 15"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de María de Portugal 15"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bulevar José Prat, 27A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bulevar José Prat, 27"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C.C. ABC SERRANO. Calle Serrano, 61"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Serrano, 61"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/Vía Dublín s/n. Club de golf Olivar de la Hinojosa."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/Vía Dublín "
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle 29. Mercamadrid"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle 29"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Alcalá 17. Parking de Canalejas."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Alcalá 17"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Alcalá 17"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Alcalá 17"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Alcalá 510"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Alcalá 510"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Alto del Retiro, s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Alto del Retiro"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Amparo Usera, 46. Mercado Usera"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Amparo Usera, 46"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle de Roberto Domingo, 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Roberto Domingo, 4"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle del Monasterio de Arlanza, 20"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Monasterio de Arlanza, 20"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Goya 123"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Goya 123"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Goya 36"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Goya 36"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Hiedra 36"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de la Hiedra 36"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Sinfonia, 9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de la Sinfonia, 9"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CAMPUS CANTOBLANCO – DERECHO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMPUS CANTOBLANCO"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CAMPUS CANTOBLANCO – RECTORADO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAMPUS CANTOBLANCO"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CENTRO COMERCIAL MADRID 2 - LA VAGUADA. Av. de Monforte de Lemos, 36"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. de Monforte de Lemos, 36"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CENTRO DE OPERACIONES NATURGY, Calle Deyanira, 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Deyanira, 10"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CRE Moratalaz Glorieta del Corregidor Sancho de Córdoba"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Corregidor Sancho de Córdoba"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CRED PAU CARABANCHEL, Av. de la Peseta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. de la Peseta"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ctra A-5, Km 5.4. Estación de Servicio El Batán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ctra. de Extremadura"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E.S. ESMO, S.A. Calle María de Molina 21"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle María de Molina 21"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ES Avenida de Andalucía 38 - Carretera A-4 PK6.70 D"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ES Avenida de Andalucía 38"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ES Cardenal Herrera Oria. Avenida Cardenal Herrera Oria 290"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida del Cardenal Herrera Oria 290"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ES Repsol 33826 - Pº Extremadura 543"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Paseo de Extremadura 543"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ES Repsol 96849 - Calle Abetal 8 - Las Tablas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ES Calle Abetal 8"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ES Repsol Barajas II"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Fuentelencina, 50"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Estación de Servicio SUDEL, Calle Ricardo Ortiz, 44"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Ricardo Ortiz, 44"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ESTACIÓN DE SUMINISTRO GNC, Avenida Eje Central, 7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida Eje Central, 7"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GPV-PAU VALLECAS-139, Calle Real de Arganda, 75"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Real de Arganda, 75"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hospital Vithas Clinsa SA. Calle de Ramírez de Arellano, 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Ramírez de Arellano, 2"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(\"ES \", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(\"ES \", \"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jardines del Descubrimiento - Acceso a Complejo de Aparcamientos subterráneos por Calle de la Armada Española"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jardines del Descubrimiento"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mercado de Guindalera. Plaza de San Cayetano, s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza de San Cayetano"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mercado de la Cebada. Plaza de la Cebada"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza de la Cebada"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mercado de las Águilas - Calle de José Cadalso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de José Cadalso"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Mercado Municipal de Maravillas, Calle Bravo Murillo 122"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Bravo Murillo 122"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parcela B14 Anexo Calle 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parcela D.2.1 Anexo avenida de legazpi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida de Legazpi"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parcela E4 Anexo Avda Legazpi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida de Legazpi"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SEDE NATURGY, Av San Luis, 77"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida de San Luis, 77"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(\"Av.\",\"Avenida\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(\"Av.\",\"Avenida\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(\"Avda.\" \"Avenida\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(\"Avda.\" \"Avenida\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "grel:value.replace(\"Avda.\",\"Avenida\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression grel:value.replace(\"Avda.\",\"Avenida\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/Vía Dublín "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vía Dublín "
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ctra. de Extremadura"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carretera de Extremadura"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Aravaca - El Plantío"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Plantío"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "UBICACIÓN",
+    "expression": "grel:value.replace(/(,?\\s?\\d+)$/, \"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "CALLE_ID",
+    "columnInsertIndex": 5,
+    "description": "Create column CALLE_ID at index 5 based on column UBICACIÓN using expression grel:value.replace(/(,?\\s?\\d+)$/, \"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plaza de la Lealtad, s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza de la Lealtad"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plaza de la Lealtad, s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza de la Lealtad"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle San Aquilino, 1 B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle San Aquilino"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Martínez de la Riva, 4. Mercado Puente de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Martínez de la Riva, 4"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Martínez de la Riva, 4. Mercado Puente de Vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Martínez de la Riva, 4"
+      }
+    ],
+    "description": "Mass edit cells in column UBICACIÓN"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Nanclares de Oca, 5-"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Nanclares de Oca"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Martínez de la Riva, 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Martínez de la Riva"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avenida de los Rosales 147 M-"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avenida de los Rosales"
+      }
+    ],
+    "description": "Mass edit cells in column CALLE_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CALLE_ID",
+    "newColumnName": "CALLE",
+    "description": "Rename column CALLE_ID to CALLE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CALLE",
+    "expression": "grel:value.replace(\" \",\"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "CALLE_ID",
+    "columnInsertIndex": 6,
+    "description": "Create column CALLE_ID at index 6 based on column CALLE using expression grel:value.replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UBICACIÓN",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UBICACIÓN using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE_ID",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE_ID using expression value.trim()"
   }
 ]
