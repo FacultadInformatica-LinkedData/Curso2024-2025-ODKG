@@ -24,11 +24,6 @@ mair:Municipality a rdfs:Class ;
     rdfs:comment "A municipality where air quality measurements are taken." ;
     rdfs:subClassOf mair:Location .  # Municipality is also a subclass of Location
 
-mair:Street a rdfs:Class ;
-    rdfs:label "Street" ;
-    rdfs:comment "A street where air quality measurements are taken." ;
-    rdfs:subClassOf mair:Location .  # Municipality is also a subclass of Location
-
 mair:Station a rdfs:Class ;
     rdfs:label "Station" ;
     rdfs:comment "A monitoring station that measures air quality at a specific location." ;
@@ -69,33 +64,26 @@ mair:hasMagnitude a rdf:Property ;
     rdfs:domain mair:Measurement ;
     rdfs:range mair:Magnitude .
 
-mair:recordedFrom a rdf:Property ;
-    rdfs:label "recorded From" ;
-    rdfs:comment "Relates where a measurement has been taken from" ;
-    rdfs:domain mair:Measurement ;
-    rdfs:range mair:Station .
-
-#Street
+#Municipality
 mair:hasStation a rdf:Property ;
     rdfs:label "has station" ;
-    rdfs:comment "Relates the station location ID to a real street" ;
-    rdfs:domain mair:Street ;
-    rdfs:range mair:Station .
-
-#Municipality
-mair:hasStreet a rdf:Property ;
-    rdfs:label "has street" ;
-    rdfs:comment "Relates the the street to the municipality" ;
+    rdfs:comment "Relates the the station to the municipality" ;
     rdfs:domain mair:Municipality ;
-    rdfs:range mair:Street .
+    rdfs:range mair:Station .
 
 #Province
 mair:hasMunicipality a rdf:Property ;
     rdfs:label "has municipality" ;
     rdfs:comment "Relates the municipality to the province" ;
     rdfs:domain mair:Province ;
-    rdfs:range mair:Street .
+    rdfs:range mair:Municipality .
 
+#Station
+mair:hasMeasurement a rdf:Property ;
+    rdfs:label "has measurement" ;
+    rdfs:comment "Relates the station to its measurements" ;
+    rdfs:domain mair:Station ;
+    rdfs:range mair:Measurement .
 
 # Datatype Properties
 #Datatype for magnitude
@@ -151,21 +139,14 @@ mair:isMeasurementValid a rdf:Property ;
 #Datatype for Station
 mair:hasStationLocationID a rdf:Property ;
     rdfs:label "has station location ID" ;
-    rdfs:comment "The numerical value of the street where the station is located" ;
+    rdfs:comment "The numerical value of the station where the station is located" ;
     rdfs:domain mair:Station ;
     rdfs:range xsd:integer .
 
-#Datatype for Street
-mair:hasStreetLocationID a rdf:Property ;
-    rdfs:label "has street location ID" ;
-    rdfs:comment "The numerical value of the street name" ;
-    rdfs:domain mair:Street ;
-    rdfs:range xsd:integer .
-
-mair:hasStreetName a rdf:Property ;
-    rdfs:label "has street name" ;
-    rdfs:comment "The name of the street" ;
-    rdfs:domain mair:Street ;
+mair:hasStationName a rdf:Property ;
+    rdfs:label "has station name" ;
+    rdfs:comment "The name of the station" ;
+    rdfs:domain mair:Station ;
     rdfs:range xsd:String .
 
 #Municipality
