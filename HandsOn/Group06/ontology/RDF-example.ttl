@@ -4,7 +4,7 @@
 # Province
 <http://MadridAirQuality.org/province/28> a mair:Province ;
     mair:hasProvinceLocationID 28 ;
-    mair:hasProvinceName "Madrid" .
+    mair:hasProvinceName "Comunidad de Madrid" .
 
 # Municipality
 <http://MadridAirQuality.org/municipality/79> a mair:Municipality ;
