@@ -1,0 +1,37 @@
+
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  transit: http://vocab.org/transit/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  vocab: http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#
+  base: http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ns#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  mod: https://w3id.org/mod#
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+mappings:
+  ChargePoint:
+    sources:
+      - "../csv/estaciones-de-recarga-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/{ID_Punto}"
+    po:
+      - [vocab:openingHours, "HORARIO"^^xsd:string]
+      - [vocab:dischargeDate, "FECHA_ALTA"^^xsd:date]
+      - [vocab:numberOfEquipments, "Nº_EQUIPOS"^^xsd:integer]
+      - [vocab:mennekesKw, "Mennekes_KW"^^xsd:string]
+      - [vocab:chademoKw, "CHAdeMO_KW"^^xsd:string]
+      - [vocab:ccsKw, "CCS_KW"^^xsd:string]
+      - [vocab:mennekesConnectors, "Mennekes_Conectores"^^xsd:integer]
+      - [vocab:chademoConnectors, "CHAdeMO_Conectores"^^xsd:integer]
+      - [vocab:ccsConnectors, "CCS_Conectores"^^xsd:integer]
+  District:
+    sources:
+      - "../csv/estaciones-de-recarga-updated.csv"
+    s: "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/operator/{CODIGO-POSTAL}"
+    po:
+      - [rdf:label, "DISTRITO"^^xsd:string]
+      - [vocab:postalCode, "CODIGO-POSTAL"^^xsd:string]

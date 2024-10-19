@@ -4,8 +4,8 @@
 @prefix transit: <http://vocab.org/transit/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
-@prefix vocab: <http://www.chargingStationMadrid.org/opendata/handsOn/group04/ontology/ChargingStationOntology#> .
-@base <http://www.chargingStationMadrid.org/opendata/handsOn/group04/ns#>.
+@prefix vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> .
+@base <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ns#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -18,11 +18,18 @@
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
-    rr:template "http://www.chargingStationMadrid.org/opendata/handsOn/group04/resource/chargingPoint/{ID_Punto}";
-    rr:class vocab:ChargePoint
+    rr:template "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/{ID_Punto}";
+    rr:class vocab:ChargePoint;
     rr:termType rr:IRI
   ];
-
+  rr:predicateObjectMap [
+      rr:predicate rdf:label;
+      rr:objectMap [
+        rml:reference "ESTACION";
+        rr:termType rr:Literal ;
+        rr:datatype xsd:string
+      ]
+    ];
   rr:predicateObjectMap [
     rr:predicate vocab:openingHours;
     rr:objectMap [
@@ -104,15 +111,61 @@
       ]
   ];
 
+  rr:predicateObjectMap [
+    rr:predicate vocab:location;
+    rr:objectMap [
+      rml:reference "UBICACIÓN";
+      rr:termType rr:Literal ;
+      rr:datatype xsd:string
+      ]
+  ];
 
- <#District> a rr:TriplesMap;
+  rr:predicateObjectMap [
+    rr:predicate vocab:locatedInStreet;
+    rr:objectMap [
+      rr:parentTriplesMap <#Street>
+    ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:managedBy;
+    rr:objectMap [
+      rr:parentTriplesMap <#Operator>
+    ]
+  ] .
+
+
+<#Operator> a rr:TriplesMap;
   rml:logicalSource [
     rml:source "../csv/estaciones-de-recarga-updated.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
+
   rr:subjectMap [
-    rr:template "http://www.chargingStationMadrid.org/opendata/handsOn/group04/resource/operator/{CODIGO-POSTAL}";
-    rr:class vocab:District
+    rr:template "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/operator/{OPERADOR}";
+    rr:class vocab:Operator;
+    rr:termType rr:IRI
+  ];
+
+    rr:predicateObjectMap [
+    rr:predicate rdf:label;
+    rr:objectMap [
+      rml:reference "OPERADOR";
+      rr:termType rr:Literal ;
+      rr:datatype xsd:string
+      ]
+  ].
+
+
+<#District> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/estaciones-de-recarga-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/{DISTRITO}";
+    rr:class vocab:District;
     rr:termType rr:IRI
   ];
 
@@ -123,65 +176,65 @@
       rr:termType rr:Literal ;
       rr:datatype xsd:string
       ]
-  ];
+  ].
 
-    rr:predicateObjectMap [
-    rr:predicate vocab:postalCode;
-    rr:objectMap [
-      rml:reference "CODIGO-POSTAL";
-      rr:termType rr:Literal ;
-      rr:datatype xsd:string
-      ]
-  ];
-
-
- <#Parking> a rr:TriplesMap;
+<#Street> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "../csv/aparcamientos-publicos-updated.csv" ;
+    rml:source "../csv/estaciones-de-recarga-updated.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
 
   rr:subjectMap [
-    rr:template "http://www.chargingStationMadrid.org/opendata/handsOn/group04/resource/operator/{PK}";
-    rr:class vocab:District
+    rr:template "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/{CALLE_ID}";
+    rr:class vocab:Street;
     rr:termType rr:IRI
   ];
 
   rr:predicateObjectMap [
     rr:predicate rdf:label;
     rr:objectMap [
-      rml:reference "NOMBRE";
+      rml:reference "CALLE";
+      rr:termType rr:Literal ;
+      rr:datatype xsd:string
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:locatedInNeighborhood;
+    rr:objectMap [
+      rr:parentTriplesMap <#Neighborhood>
+    ]
+  ] .
+
+
+<#Neighborhood> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/estaciones-de-recarga-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/{ID_BARRIO}";
+    rr:class vocab:Neighborhood;
+    rr:termType rr:IRI
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:label;
+    rr:objectMap [
+      rml:reference "BARRIO";
       rr:termType rr:Literal ;
       rr:datatype xsd:string
       ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate vocab:openingHours;
+    rr:predicate vocab:isPartOf;
     rr:objectMap [
-      rml:reference "HORARIO";
-      rr:termType rr:Literal ;
-      rr:datatype xsd:string
-      ]
-  ];
+      rr:parentTriplesMap <#District>
+    ]
+  ] .
 
-  rr:predicateObjectMap [
-    rr:predicate vocab:accessibility;
-    rr:objectMap [
-      rml:reference "ACCESIBILIDAD";
-      rr:termType rr:Literal ;
-      rr:datatype xsd:string
-      ]
-  ];
 
-    rr:predicateObjectMap [
-    rr:predicate vocab:numberOfTotalPlaces;
-    rr:objectMap [
-      rml:reference "NUMERO-PLAZAS";
-      rr:termType rr:Literal ;
-      rr:datatype xsd:integer
-      ]
-  ];
 
 
 
