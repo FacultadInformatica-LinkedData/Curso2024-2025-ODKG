@@ -30,7 +30,7 @@
     mair:hasMagnitudeMeasurementUnit "µg/m³" .
 
 # Measurement of NO2 at Station
-<http://MadridAirQuality.org/measurement/2024-10-18-Station4-NO2> a mair:Measurement ;
+<http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8> a mair:Measurement ;
     mair:hasMeasurementValue 35.7 ;
     mair:hasMeasurementDay 18 ;
     mair:hasMeasurementMonth 10 ;
