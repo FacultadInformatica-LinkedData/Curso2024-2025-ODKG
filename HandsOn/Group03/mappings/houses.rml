@@ -397,4 +397,33 @@
     rdfs:label "rentPricesBySq".
 :s_007 a rr:SubjectMap.
 :map_rentPricesBySq_000 rr:subjectMap :s_007.
-:s_007 rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}\n- [a, schema".
+:s_007 rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}".
+:pom_032 a rr:PredicateObjectMap.
+:map_rentPricesBySq_000 rr:predicateObjectMap :pom_032.
+:pm_032 a rr:PredicateMap.
+:pom_032 rr:predicateMap :pm_032.
+:pm_032 rr:constant rdf:type.
+:pom_032 rr:objectMap :om_032.
+:om_032 a rr:ObjectMap;
+    rr:constant schema:MonetaryAmount;
+    rr:termType rr:IRI.
+:pom_033 a rr:PredicateObjectMap.
+:map_rentPricesBySq_000 rr:predicateObjectMap :pom_033.
+:pm_033 a rr:PredicateMap.
+:pom_033 rr:predicateMap :pm_033.
+:pm_033 rr:constant schema:value.
+:pom_033 rr:objectMap :om_033.
+:om_033 a rr:ObjectMap;
+    rml:reference "RENT_PRICE_BY_SQ_METER";
+    rr:termType rr:Literal;
+    rr:datatype xsd:float.
+:pom_034 a rr:PredicateObjectMap.
+:map_rentPricesBySq_000 rr:predicateObjectMap :pom_034.
+:pm_034 a rr:PredicateMap.
+:pom_034 rr:predicateMap :pm_034.
+:pm_034 rr:constant schema:currency.
+:pom_034 rr:objectMap :om_034.
+:om_034 a rr:ObjectMap;
+    rr:constant "EUR";
+    rr:termType rr:Literal;
+    rr:datatype xsd:string.
