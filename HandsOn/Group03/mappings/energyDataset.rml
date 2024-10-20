@@ -1,0 +1,323 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix schema: <https://schema.org/> .
+@prefix sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
+@base <http://www.semanticweb.org/>.
+
+<#SensorMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/Sensor/{SENSOR}";
+    rr:class sosa:Sensor
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sbm:hasSensorType;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/SensorType/{SENSOR TYPE}";
+      rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate sbm:madeObservation;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/Observation/{ID}";
+      rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate sosa:hosts;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/CivicStructure/{BUILDING}";
+      rr:termType rr:IRI
+      ]
+  ].
+  
+<#ObservationMap/> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/Observation/{ID}";
+    rr:class sosa:Observation
+  ];
+    rr:predicateObjectMap [
+    rr:predicate sosa:hasResult;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/QuantitativeValue/{ID}";
+      rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate sosa:madeBySensor;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/Sensor/{SENSOR}";
+      rr:termType rr:IRI
+      ]
+  ];
+	rr:predicateObjectMap [
+    rr:predicate sosa:resultTime;
+    rr:objectMap [
+      rml:reference "DATETIME";
+      rr:datatype xsd:dateTime
+    ]
+  ].
+<#QuantitativeValueMap/> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/QuantitativeValue/{ID}";
+    rr:class schema:QuantitativeValue
+  ];
+   rr:predicateObjectMap [
+    rr:predicate schema:unitCode;
+    rr:objectMap [
+      rml:reference "ENERGY UNITS";
+      rr:datatype xsd:string
+    ]
+  ];
+  
+    rr:predicateObjectMap [
+    rr:predicate schema:unitText;
+    rr:objectMap [
+      rml:reference "ENERGY UNITS";
+      rr:datatype xsd:string
+    ]
+  ];
+	rr:predicateObjectMap [
+    rr:predicate sosa:resultTime;
+    rr:objectMap [
+      rml:reference "CONSUMPTION";
+      rr:datatype xsd:integer
+    ]
+  ].
+  
+ <#CivicStructureMap/> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/CivicStructure/{BUILDING}";
+    rr:class schema:CivicStructure
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sbm:usedFor;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/BuildingUsage/{BUILDING USE}";
+      rr:termType rr:IRI
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate sbm:hasEnergyClass;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/EnergyClass/{ENERGY CLASS}";
+      rr:termType rr:IRI
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate sosa:hosts;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/Sensor/{SENSOR}";
+      rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate schema:geo;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/resource/GeoCoordinates/{BUILDING}";
+      rr:termType rr:IRI
+      ]
+  ];
+     rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/Neighborhood/{NEIGHBORHOOD}";
+		rr:termType rr:IRI
+      ]
+  ].
+ <#BuildingUsageMap/> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/BuildingUsage/{BUILDING USE}";
+    rr:class sbm:BuildingUsage;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:Label;
+    rr:objectMap [
+      rml:reference "BUILDING USE";
+      rr:termType xsd:string
+      ]
+  ].
+  <#GeoCoordinatesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/GeoCoordinates/{BUILDING}";
+    rr:class schema:GeoCoordinates;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:address;
+    rr:objectMap [
+      rml:reference "ADDRESS";
+      rr:termType xsd:string
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate schema:latitude;
+    rr:objectMap [
+      rml:reference "LATITUDE";
+      rr:termType xsd:string
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate schema:longitude;
+    rr:objectMap [
+      rml:reference "LONGITUDE";
+      rr:termType xsd:string
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate schema:postalCode;
+    rr:objectMap [
+      rml:reference "POSTAL CODE";
+      rr:termType xsd:string
+      ]
+  ].
+  <#DistrictMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/District/{DISTRICT}";
+    rr:class sbm:District;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:containsPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/Neighborhood/{NEIGHBORHOOD}";
+      rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/City/{CITY}";
+		rr:termType rr:IRI
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sbm:districtCode;
+    rr:objectMap [
+      rml:reference "DISTRICT CODE";
+      rr:termType xsd:integer
+      ]
+  ].
+   <#NeighborhoodMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/Neighborhood/{NEIGHBORHOOD}";
+    rr:class sbm:Neighborhood;
+  ];
+    rr:predicateObjectMap [
+    rr:predicate schema:containsPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/CivicStructure/{BUILDING}";
+		rr:termType rr:IRI
+      ]
+  ];
+     rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/District/{DISTRICT}";
+		rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/City/{CITY}";
+		rr:termType rr:IRI
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate sbm:neighborhoodCode;
+    rr:objectMap [
+      rr:template "NEIGHBORHOOD CODE";
+      rr:termType xsd:integer
+      ]
+  ].
+  <#CityMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/City/{CITY}";
+    rr:class schema:City;
+  ];
+     rr:predicateObjectMap [
+    rr:predicate schema:containsPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/District/{DISTRICT}";
+		rr:termType rr:IRI
+      ]
+  ];
+    rr:predicateObjectMap [
+    rr:predicate schema:containsPlace;
+    rr:objectMap [
+         rr:template "http://www.semanticweb.org/resource/City/{CITY}";
+		rr:termType rr:IRI
+      ]
+  ].
+  <#SensorTypeMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/SensorType/{SENSOR TYPE}";
+    rr:class schema:SensorType;
+  ];
+	rr:predicateObjectMap [
+    rr:predicate rdfs:Label;
+    rr:objectMap [
+      rml:reference "SENSOR TYPE";
+      rr:termType xsd:string
+      ]
+  ].
+    <#EnergyClassMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "buildings_energy_consumption-v2.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/resource/EnergyClass/{ENERGY CLASS}";
+    rr:class schema:EnergyClass;
+  ];
+	rr:predicateObjectMap [
+    rr:predicate rdfs:Label;
+    rr:objectMap [
+      rml:reference "ENERGY CLASS";
+      rr:termType xsd:string
+      ]
+  ].
