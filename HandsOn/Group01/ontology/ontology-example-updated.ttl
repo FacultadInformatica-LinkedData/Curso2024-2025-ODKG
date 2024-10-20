@@ -1,0 +1,27 @@
+@prefix : <http://www.bikeradar.es/ns#> .
+@prefix ns: http://www.bikeradar.es/ontology/ont#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.bikeradar.es/ontology/ont#> .
+
+<http://www.bikeradar.es/ontology/ont#> rdf:type owl:Ontology ;
+                                     mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################################################
+# Example instance of a BicycleParkingSpot
+#################################################################
+
+# Define a specific bicycle parking spot instance
+<http://www.bikeradar.es/resources/BicycleParkingSpot/101532> a ns:BicycleParkingSpot ;
+    ns:direccion "CALLE JOSE DEL HIERRO 3 28027" ;
+    ns:hasFechaInstalacion "2019-06-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns:id "101532" ;
+    ns:isInBarrio "LA CONCEPCIÓN" ;
+    ns:isInDistrito "CIUDAD LINEAL" ;
+    ns:latitud "40.43652188"^^xsd:float ;
+    ns:longitud "-3.65079129"^^xsd:float ;
+    ns:modelo "MU-51" .

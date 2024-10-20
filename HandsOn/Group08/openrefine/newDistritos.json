@@ -1,0 +1,93 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBJECTID",
+    "columnName": "OBJECTID"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column COD_DIS to position 0",
+    "columnName": "COD_DIS",
+    "index": 0
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Shape_Leng using expression grel:value.replace(',' , '.')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Shape_Leng",
+    "expression": "grel:value.replace(',' , '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Shape_Leng using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Shape_Leng",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Shape_Area using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Shape_Area",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Shape_Area using expression grel:value.replace(',' , '.')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Shape_Area",
+    "expression": "grel:value.replace(',' , '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Shape_Area using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Shape_Area",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COD_DIS_TX",
+    "columnName": "COD_DIS_TX"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DISTRI_MT",
+    "columnName": "DISTRI_MT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DISTRI_MAY",
+    "columnName": "DISTRI_MAY"
+  }
+]

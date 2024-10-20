@@ -1,0 +1,44 @@
+@prefix mair: <http://www.MadridAirQuality.es/air_quality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# mairamples
+
+mair:provincia/Madrid a mair:Provincia ;
+    rdfs:label "Madrid" .
+
+mair:municipio/Madrid a mair:Municipio ;
+    rdfs:label "Madrid" ;
+    mair:hasProvincia mair:provincia/Madrid ;
+    mair:hasEstacion mair:estacion/PlazaDeEspana, mair:estacion/EscuelasAguirre .
+
+mair:estacion/PlazaDeEspana a mair:Estacion ;
+    rdfs:label "Plaza de España" ;
+    mair:monitors mair:parametro/Ozono ;
+    mair:recordsObservation mair:observacion/2024-01-01 .
+
+mair:estacion/EscuelasAguirre a mair:Estacion ;
+    rdfs:label "Escuelas Aguirre" ;
+    mair:monitors mair:parametro/PM2.5 ;
+    mair:recordsObservation mair:observacion/2024-02-05 .
+
+mair:parametro/Ozono a mair:Parametro ;
+    mair:hasMagnitud "Ozono" .
+
+mair:parametro/PM2.5 a mair:Parametro ;
+    mair:hasMagnitud "PM2.5" .
+
+mair:observacion/2024-01-01 a mair:Observacion ;
+    mair:hasFecha "2024-01-01"^^xsd:date ;
+    mair:hasValor 2 ;
+    mair:monitors mair:Parametro/Ozono ;
+    mair:recordsObservation mair:estacion/PlazaDeEspana .
+
+mair:observacion/2024-02-05 a mair:Observacion ;
+    mair:hasFecha "2024-02-05"^^xsd:date ;
+    mair:hasValor 19 ;
+    mair:monitors mair:parametro/PM2.5 ;
+    mair:recordsObservation mair:estacion/EscuelasAguirre .
