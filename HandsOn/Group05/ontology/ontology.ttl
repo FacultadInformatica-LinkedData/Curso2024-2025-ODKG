@@ -1,20 +1,20 @@
-@prefix : <http://example.ontology.com/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <https://www.w3.org/TR/prov-o/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-: a owl:Ontology ;
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+xsd: a owl:Ontology ;
     dc:creator "Dakota Mellish" ;
     dc:title "RiversidePollutionStudyOntology" ;
     owl:versionInfo "0.0.1" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
-
-dc:creator a owl:AnnotationProperty .
-
-dc:title a owl:AnnotationProperty .
 
 owl:versionInfo a owl:AnnotationProperty .
 
@@ -33,7 +33,7 @@ schema:containedInPlace a owl:ObjectProperty ;
     rdfs:label "contained in place" ;
     rdfs:domain schema:AdministrativeArea,
         schema:City,
-        schema:GeoCoordinates,
+        schema:Place,
         schema:State ;
     rdfs:range schema:AdministrativeArea,
         schema:City,
@@ -43,31 +43,22 @@ schema:containedInPlace a owl:ObjectProperty ;
 schema:datePublished a owl:DatatypeProperty ;
     rdfs:label "date published" ;
     rdfs:domain schema:ScholarlyArticle ;
-    rdfs:range xsd:Date .
+    rdfs:range xsd:date .
 
 schema:hasPart a owl:ObjectProperty ;
     rdfs:label "has part" ;
-    rdfs:domain schema:Dataset,
-        schema:ScholarlyArticle ;
-    rdfs:range schema:Article,
-        schema:Dataset,
-        schema:Observation .
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:Article .
 
 schema:isPartOf a owl:ObjectProperty ;
     rdfs:label "is part of" ;
-    rdfs:domain schema:Dataset,
-        schema:Observation ;
-    rdfs:range schema:Dataset,
-        schema:ScholarlyArticle .
+    rdfs:domain schema:Observation ;
+    rdfs:range schema:Dataset .
 
 schema:latitude a owl:DatatypeProperty ;
     rdfs:label "latitude" ;
-    rdfs:domain schema:GeoCoordinates .
-
-schema:longitude a owl:DatatypeProperty ;
-    rdfs:label "longitude" ;
-    rdfs:domain schema:GeoCoordinates ;
-    rdfs:range xsd:string .
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:double .
 
 schema:name a owl:DatatypeProperty ;
     rdfs:label "name" ;
@@ -76,32 +67,37 @@ schema:name a owl:DatatypeProperty ;
         schema:City,
         schema:Country,
         schema:Dataset,
-        schema:GeoCoordinates,
+        schema:Place,
         schema:ScholarlyArticle,
         schema:State ;
     rdfs:range xsd:string .
 
 schema:observationAbout a owl:ObjectProperty ;
     rdfs:label "observation about" ;
+    rdfs:range schema:Place .
+
+schema:observationDateTime a owl:DatatypeProperty ;
+    rdfs:label "observation date time" ;
     rdfs:domain schema:Observation ;
-    rdfs:range schema:GeoCoordinates .
+    rdfs:range xsd:dateTime .
 
-<https://schema.org/observationDate time> a owl:DatatypeProperty ;
-    rdfs:label "observation date time" ;
+schema:unitText a owl:DatatypeProperty ;
+    rdfs:label "unit text" ;
     rdfs:domain schema:Observation .
 
-<https://schema.org/unitsText xsd> a owl:DatatypeProperty ;
-    rdfs:label "units text xsd" ;
-    rdfs:domain schema:Observation .
-
-<https://schema.org/value xsd> a owl:DatatypeProperty ;
-    rdfs:label "value xsd" ;
+schema:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
     rdfs:domain schema:Observation .
 
 schema:variableMeasured a owl:DatatypeProperty ;
     rdfs:label "variable measured" ;
     rdfs:domain schema:Observation ;
     rdfs:range xsd:string .
+
+prov:wasDerivedFrom a owl:ObjectProperty ;
+    rdfs:label "was derived from" ;
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:ScholarlyArticle .
 
 schema:Country a owl:Class ;
     rdfs:label "Country" .
@@ -118,8 +114,8 @@ schema:City a owl:Class ;
 schema:State a owl:Class ;
     rdfs:label "State" .
 
-schema:GeoCoordinates a owl:Class ;
-    rdfs:label "Geo Coordinates" .
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
 
 schema:ScholarlyArticle a owl:Class ;
     rdfs:label "Scholarly Article" .

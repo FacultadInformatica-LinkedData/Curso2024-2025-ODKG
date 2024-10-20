@@ -8,6 +8,19 @@
         "description": "Checked both NO2 and PM2.5 datasets for missing values. None found."
     },
     {
+      "operation": "Check data Length",
+      "description": "use len() feature to see if datasets are of equal length, they are not."
+    },
+    {"operation": "Check data compatibility for join",
+     "description": "check if a join can be performed"    
+    },
+    { "operation":"Union datasets",
+      "description":"datasets are nearly equivalent with the exception of NO2 and PM2.5 specific-columns, however they share disjoint time observations therefore it is easier to union the datasets"
+    },
+    { "operation":"Check missing data",
+    "description":"data have units in the column names, it is necessary to have a common delimiter for when the data is pivoted"
+    },
+    {
         "operation": "Prepare datasets for pivot",
         "description": "Identified columns to pivot from wide format to long format for PM2.5 and NO2 data."
     },
@@ -17,11 +30,11 @@
     },
     {
         "operation": "Pivot datasets",
-        "description": "Applied pd.melt to both datasets, converting the wide format to long format."
+        "description": "Applied pd.melt to unioned dataset, converting the wide format to long format."
     },
     {
         "operation": "Split and clean columns",
-        "description": "Split 'column_name' into street, element_measured, and units, and removed square brackets from units."
+        "description": "Split 'column_name' into location, element_measured, and units, and removed square brackets from units."
     },
     {
         "operation": "Concatenate datasets",
@@ -32,11 +45,23 @@
         "description": "Renamed several columns for clarity, such as 'Temperature [degC]' to 'temperature_celsius'."
     },
     {
-        "operation": "Merge with street data",
-        "description": "Enriched the dataset by merging it with a streets dataset to add latitude and longitude for each street."
+        "operation": "Merge with location data",
+        "description": "Enriched the dataset by merging it with a streets dataset to add latitude and longitude, city, county, state and country for each street."
     },
+    {"operation": "Remove null data due to unioning",
+    "description":"Due to prior union operation, some data rows have nul data and can be discarded"
+    },
+
+    {"operation": "Remove duplicate data",
+    "description":"Due to dataset construction, there is much shared background data between the two files and we only need unique observations"
+    },
+  
     {
         "operation": "Save updated dataset",
         "description": "Saved the final cleaned and transformed dataset as 'updated.csv'."
-    }
+    },
+
+    {"operation":"Add ID column",
+    "description": "Added column so that each observation can be uniquely identified"}
 ]
+
