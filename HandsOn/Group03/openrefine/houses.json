@@ -1817,5 +1817,67 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SQUARE METERS",
+    "newColumnName": "SQUARE_METERS",
+    "description": "Rename column SQUARE METERS to SQUARE_METERS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUM OF ROOMS",
+    "newColumnName": "NUM_OF_ROOMS",
+    "description": "Rename column NUM OF ROOMS to NUM_OF_ROOMS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "STREET NAME",
+    "newColumnName": "STREET_NAME",
+    "description": "Rename column STREET NAME to STREET_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CITY",
+    "description": "Remove column CITY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STREET_NAME",
+    "description": "Remove column STREET_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STREET NUM",
+    "description": "Remove column STREET NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DISTRICT CODE",
+    "description": "Remove column DISTRICT CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT PRICE",
+    "newColumnName": "RENT_PRICE",
+    "description": "Rename column RENT PRICE to RENT_PRICE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT PRICE BY SQ METER",
+    "newColumnName": "RENT_PRICE_BY_SQ_METER",
+    "description": "Rename column RENT PRICE BY SQ METER to RENT_PRICE_BY_SQ_METER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT BY ROOM",
+    "newColumnName": "RENT_BY_ROOM",
+    "description": "Rename column RENT BY ROOM to RENT_BY_ROOM"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ENERGY CERTIFICATE",
+    "newColumnName": "ENERGY_CERTIFICATE",
+    "description": "Rename column ENERGY CERTIFICATE to ENERGY_CERTIFICATE"
   }
 ]
