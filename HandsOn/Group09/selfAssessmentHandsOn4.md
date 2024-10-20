@@ -11,7 +11,7 @@
 
 **Every URI in the RDF files:**
 
-- [X] Is "readable" and has some meaning (e.g., it is not an auto-increased integer) 
+- [X] Is "readable" and has some meaning (e.g., it is not an auto-increased integer)
 - [X] Is not encoded as a string
 - [X] Does not contain a double slash (i.e., “//”)
 
@@ -28,4 +28,5 @@
 - [X] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-_(If required)_
+- Changes has been applied to `datos_diarios-updated.csv` (dates and some strange data cleaning)
+- Data .ttl syntax has been obtained by serializing the data with `rdflib` library from .nt file output from morph
