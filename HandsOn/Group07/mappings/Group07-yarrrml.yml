@@ -1,0 +1,88 @@
+## 
+
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://example.org#
+  ns: http://madrid.events.com/
+  
+mappings:
+
+  Event:
+    sources:
+      - [Dataset_Updated.csv~csv]
+    s: http://madrid.events.com/event/$(ID-EVENTO)
+    po:
+      - [a, schema:Event]
+      - [xml:id,$(ID-EVENTO)]
+      - [schema:name,$(TITULO)]
+      - [schema:isAccesibleForFree,$(GRATUITO)]
+      - [ns:type,$(TIPO)]
+      - [schema:startDate,$(FECHA)]
+      - [schema:endDate,$(FECHA-FIN)]
+      - [schema:doorTime,$(HORA)]
+      - [schema:url,$(CONTENT-URL)]
+      - [ns:longDuration,$(LARGA-DURACION)]
+      - [schema:audience,$(AUDIENCIA)]
+      - [schema:about,$(DESCRIPCION)]
+      - [ns:weekDays,$(DIAS-SEMANA)]
+      - [ns:excludedDays,$(DIAS-EXCLUIDOS)]
+      - p: ns:hasPlace
+        o:
+          mapping: Place
+
+  Place:
+    sources:
+      - [Dataset_Updated.csv~csv]
+      - [installations.csv~csv]
+
+    s: http://madrid.events.com/installation/$(NOMBRE-INSTALACION)
+    po:
+      - [a, schema:Place]
+      - [schema:name,$(NOMBRE-INSTALACION)]
+      - [ns:accessibilityLevel,$(ACCESIBLIDAD-INSTALACION)]
+      - [schema:url,$(URL-INSTALACION)]
+      - [ns:type,$(TIPO-INSTALACION)]
+      - [ns:description,$(DESCRIPCION-ENTIDAD)]
+      - [ns:OpeningHours,$(HORARIO)]
+      - [ns:Equipment,$(EQUIPAMIENTO)]
+      - p: schema:geo
+        o:
+          mapping: GeoCoordinates
+      - p: ns:hasContactDetails
+        o:
+          mapping: ContactDetails
+
+
+  GeoCoordinates:
+    sources:
+      - [Dataset_Updated.csv~csv]
+    s: http://madrid.events.com/installation/$(NOMBRE-INSTALACION)/geo
+    po:
+      - [a, schema:GeoCoordinates]
+      - [ns:district,$(DISTRITO-INSTALACION)]
+      - [ns:neighborhood,$(BARRIO-INSTALACION)]
+      - [schema:postalCode,$(CODIGO-POSTAL-INSTALACION)]
+      - [schema:latitude,$(LATITUD)]
+      - [schema:longitude,$(LONGITUD)]
+
+
+  ContactDetails:
+    sources:
+      - [installations.csv~csv]
+    s: http://madrid.events.com/installation/$(NOMBRE-INSTALACION)/contact
+    po:
+      - [a, schema:ContactDetails]
+      - [schema:telephone,$(TELEFONO)]
+      - [schema:email,$(EMAIL)]
+      - [ns:transportation,$(TRANSPORTE)]
+
+
