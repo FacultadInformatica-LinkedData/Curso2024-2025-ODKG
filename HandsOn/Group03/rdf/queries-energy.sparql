@@ -1,0 +1,54 @@
+PREFIX ql: <http://www.w3.org/2001/XMLSchema#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX schema: <https://schema.org/>
+PREFIX sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+PREFIX base: <http://www.semanticweb.org/resource/>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT *
+WHERE {
+    ?s rdf:type sosa:Sensor .
+    ?s sbm:hasSensorType ?sensorType .
+    ?s sbm:madeObservation ?observation .
+    ?s sosa:hosts ?civicStructure .
+    ?observation sosa:hasResult ?result .
+    ?observation sosa:madeBySensor ?s .
+    ?observation sosa:resultTime ?date .
+    ?observation rdf:type sosa:Observation .
+   
+    ?result schema:unitCode ?unit .
+    ?result rdf:type schema:QuantitativeValue .
+    ?result sosa:resultTime ?consumption .
+    ?civicStructure rdf:type schema:CivicStructure .
+    ?civicStructure rdfs:label ?civicLabel .
+    ?civicStructure sbm:usedFor ?buildingUsage .
+    ?civicStructure sbm:hasEnergyClass ?energyClass .
+    ?civicStructure sosa:hosts ?s .
+    ?civicStructure schema:geo ?building .
+    ?civicStructure schema:containedInPlace ?neigborhood .
+    ?civicStructure schema:containedInPlace ?district .
+    ?buildingUsage rdf:type sbm:BuildingUsage .
+    ?buildingUsage rdfs:label ?buildingLabel .
+    ?building rdf:type schema:GeoCoordinates .
+    ?building schema:address ?address .
+    ?building schema:latitude ?latitude .
+    ?building schema:longitude ?longitude .
+    ?building schema:postalCode ?postalCode .
+    ?district rdf:type sbm:District .
+    ?district schema:containsPlace ?neigborhood .
+    ?district sbm:districtCode ?districtCode .
+    ?neigborhood rdf:type sbm:Neighborhood .
+    ?neigborhood schema:containedInPlace ?district . 
+   ?neigborhood schema:containsPlace ?civicStructure .
+    ?neigborhood sbm:neighborhoodCode ?neigborhoodCode .
+    ?city rdf:type schema:City .
+    ?sensorType rdf:type schema:SensorType .
+    ?sensorType rdfs:label ?sensorLabel .
+    ?energyClass rdf:type schema:EnergyClass .
+    ?energyClass rdfs:label ?energyLabel .
+}
+LIMIT 100
