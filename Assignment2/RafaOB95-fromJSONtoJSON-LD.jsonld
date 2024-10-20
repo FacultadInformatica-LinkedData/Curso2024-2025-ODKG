@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "alumno": "http://assigment02.com/alumno",
+    "full_name": "http://assigment02.com/full_name",
+    "hometown": "http://assigment02.com/hometown",
+    "age": "http://assigment02.com/age",
+    "alma_mater": "http://assigment02.com/alma_mater",
+    "father_name": "http://assigment02.com/father_name",
+    "mother_name": "http://assigment02.com/mother_name",
+    "subjects": "http://assigment02.com/subjects",
+    "name_sub": "http://assigment02.com/name_sub",
+    "teachers": "http://assigment02.com/teachers",
+    "descritp": "http://assigment02.com/descritp"
+  },
+  "@graph": [
+    {
+      "@id": "alumno",
+      "full_name": "Rafael Orihuela Brindis",
+      "hometown": "CDMX, México",
+      "age": 29,
+      "alma_mater": "Universidad La Salle",
+      "father_name": "Rafael Orihuela García",
+      "mother_name": "Fátima Noemí Brindis Olvera",
+      "subjects": [
+        {
+          "name_sub": "Data Processes",
+          "teachers": ["Alejandro Rodríguez", "Ernestina Menasalvas", "Antonio Jesús Díaz Honrubia"],
+          "descritp": "Involves transforming raw data into useful information"
+        },
+        {
+          "name_sub": "Big Data",
+          "teachers": "Antonio LaTorre",
+          "descritp": "Lear to manage the extremely large and diverse collections of structured, unstructured, and semi-structured data that continues to grow exponentially over time."
+        },
+        {
+          "name_sub": "Statistical Analysis",
+          "teachers": "Arminda Moreno Díaz",
+          "descritp": "Investigating trends, patterns, and relationships using quantitative data"
+        },
+        {
+          "name_sub": "Open Data and Knowledge Graphs",
+          "teachers": ["Oscar Corcho", "Raúl García-Castro"],
+          "descritp": "Learn how to manage and analyze the data that can be freely used, re-used and redistributed by anyone"
+        }
+      ]
+    }
+  ]
+}
