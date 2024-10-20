@@ -1,0 +1,52 @@
+# Query 1: Count events per installation
+PREFIX schema: <http://schema.org/>
+PREFIX ns: <http://madrid.events.com/>
+
+SELECT ?installation (COUNT(?event) AS ?eventCount)
+WHERE {
+    ?event a schema:Event ;
+           ns:hasPlace ?installation .
+}
+GROUP BY ?installation
+ORDER BY DESC(?eventCount)
+
+# Query 2: Retrieve all events in a specified neighborhood
+# Change "Cuatro Caminos" to the desired neighborhood name
+PREFIX schema: <http://schema.org/>
+PREFIX ns: <http://madrid.events.com/>
+
+SELECT ?event ?title ?startDate
+WHERE {
+    ?event a schema:Event ;
+           schema:name ?title ;
+           schema:startDate ?startDate ;
+           ns:hasPlace ?installation .
+    ?installation ns:neighborhood "Cuatro Caminos" .
+}
+ORDER BY ?startDate
+
+# Query 3: List all events with their titles and start dates
+PREFIX schema: <http://schema.org/>
+PREFIX ns: <http://madrid.events.com/>
+
+SELECT ?event ?title ?startDate
+WHERE {
+    ?event a schema:Event ;
+           schema:name ?title ;
+           schema:startDate ?startDate .
+}
+ORDER BY ?startDate
+
+# Query 4: Get details of a specific event (replace <EVENT_URI> with actual event URI)
+PREFIX schema: <http://schema.org/>
+PREFIX ns: <http://madrid.events.com/>
+
+SELECT ?title ?startDate ?endDate ?description ?audience
+WHERE {
+    <EVENT_URI> a schema:Event ;
+                schema:name ?title ;
+                schema:startDate ?startDate ;
+                schema:endDate ?endDate ;
+                schema:about ?description ;
+                schema:audience ?audience .
+}
