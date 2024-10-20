@@ -52,12 +52,6 @@
          rdfs:label "hasZoom" .
 
 
-###  http://www.example.com/videocameras/hasCameraID
-:hasCameraID rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:range xsd:string ;
-             rdfs:comment "Represents the unique ID of the camera." ;
-             rdfs:label "hasCameraID" .
 
 
 #################################################################
