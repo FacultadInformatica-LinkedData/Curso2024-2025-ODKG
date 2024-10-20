@@ -1,24 +1,21 @@
-from rdflib import Graph, Namespace, Literal
-from rdflib.namespace import RDF, RDFS, XSD
+from rdflib import Graph
 
 graph = Graph()
 
-# Cargar múltiples esquemas RDF
+path_to_nt = 'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/' #Change according to your path
 
-rdf_files = ['C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/free-places-graph.nt',
-             'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/stations-graph.nt',
-             'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/trips-graph_1.nt',
-             'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/trips-graph_2.nt',
-             'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/trips-graph_3.nt',
-             'C:/Users/salgu/OneDrive/Escritorio/UPM/Data_Science/Open_Data_and_Knowledge_Graphs/Course-Open-Data-and-Knowledge-Graphs/HandsOn/Group10/rdf/trips-graph_4.nt']
+rdf_files = [path_to_nt +'free-places-graph.nt',
+             path_to_nt +'stations-graph.nt',
+             path_to_nt +'trips-graph_1.nt',
+             path_to_nt +'trips-graph_2.nt',
+             path_to_nt +'trips-graph_3.nt',
+             path_to_nt +'trips-graph_4.nt']
 
 for rdf_file in rdf_files:
     graph.parse(rdf_file, format='nt')
 
-# Comprobar cuántos triples hay en el grafo
-print(f"Total de triples cargados: {len(graph)}")
+print(f"Total of triples loaded: {len(graph)}")
 
-from rdflib import Namespace
 
 query1 = """
 SELECT ?trips ?stationName ?unlockDate ?lockDate ?bikeId
