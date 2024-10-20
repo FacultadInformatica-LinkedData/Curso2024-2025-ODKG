@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "ex": "http://www.example.es/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "ex:fullname": "Pedro Pedregal",
+  "ex:hometown": "Madrid",
+  "ex:age": {
+    "@value": 23,
+    "@type": "xsd:integer"
+  },
+  "ex:almaMater": "Universidad Politecnica de Madrid - UPM",
+  "ex:parents": {
+    "ex:father": "Pedro",
+    "ex:mother": "Maria Angeles"
+  },
+  "ex:subjects": [
+    {
+      "ex:name": "Open Data and Knowledge Graphs",
+      "ex:teachers": ["Oscar Corcho", "Daniel Garijo"],
+      "ex:description": "Knowledge graphs"
+    },
+    {
+      "ex:name": "Desarrollo de Aplicaciones distribuidas en tiempo real",
+      "ex:teachers": ["Santiago Tapia"],
+      "ex:description": "This subject teaches real time application developing in C++"
+    }
+  ]
+}

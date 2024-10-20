@@ -1,0 +1,12 @@
+@prefix : <http://example.org#> .
+ns1:Class01 ns1:includes ns1:Computer101,
+        ns1:Sensor029 .
+
+ns1:Computer101 ns1:hasOwner ns1:User10A .
+
+ns1:Measurement8401 ns1:atTime "2010-06-12T12:00:12" ;
+    ns1:hasTemperature 29 .
+
+ns1:Sensor029 ns1:hasMeasurement ns1:Measurement8401 .
+
+ns1:User10A ns1:hasName "Pedro" .
