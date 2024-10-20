@@ -1,0 +1,18 @@
+@prefix sn: <http://www.ontogrid.net/StickyNote#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Definición de eventos y relaciones
+sn:event3 sn:involves sn:PinarAlper ;
+          sn:involves sn:CaroleGoble ;
+          sn:eventDate "2006-05-15"^^xsd:date .
+
+sn:event4 sn:involves sn:OscarCorcho ;
+          sn:eventDate "2006-05-16"^^xsd:date .
+
+sn:event5 sn:involves sn:CaroleGoble ;
+          sn:eventDate "2006-05-15"^^xsd:date .
+
+# Definición de personas
+sn:OscarCorcho a sn:Person .
+sn:PinarAlper a sn:Person .
+sn:CaroleGoble a sn:Person .
