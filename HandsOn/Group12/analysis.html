@@ -120,67 +120,55 @@
     <div class="container">
         <!-- Overview Section -->
         <section class="overview">
-            <h2>Dataset analysis</h2>
+            <h2>Dataset Overview</h2>
             <ul>
-                <li><strong>General Overview:</strong>
-                    <ul>
-                        <li>The dataset consists of 80,189 records and 19 columns, representing traffic accidents in Madrid.</li>
-                        <li>Each record provides details such as accident location, date, weather conditions, vehicle type, person type, age, gender, severity of injuries, and geographical coordinates.</li>
-                    </ul>
-                </li>
+                <li><strong>Records:</strong> 31,359 traffic accidents in Madrid (2024).</li>
+                <li><strong>Columns:</strong> 21 attributes, including accident location, date, weather conditions, vehicle type, person type, age, gender, severity, and geographic coordinates.</li>
+            </ul>
+        </section>
 
-                <li><strong>Missing Data:</strong>
+        <!-- Missing Data Section -->
+        <section class="missing-data">
+            <h2>Missing Data</h2>
+            <ul>
+                <li>Minimal missing data in the new dataset:
                     <ul>
-                        <li>Significant missing data was found, especially in:
-                            <ul>
-                                <li>estado_meteorológico (9,340 missing entries).</li>
-                                <li>cod_lesividad and lesividad (both with 36,940 missing entries), which record the severity of the accident.</li>
-                                <li>Drug test results (positiva_droga): Almost entirely missing for both years (79,835 entries missing).</li>
-                            </ul>
-                        </li>
+                        <li>**tipo_vehiculo**: 243 missing entries</li>
+                        <li>**coordenada_x_utm** and **coordenada_y_utm**: 2 missing entries each</li>
                     </ul>
                 </li>
+            </ul>
+        </section>
 
-                <li><strong>Categorical Variables:</strong>
-                    <ul>
-                        <li>District (distrito): There are 21 unique districts. The most accident-prone district is "Puente de Vallecas", with 6,383 cases.</li>
-                        <li>Type of Accident (tipo_accidente): 13 different accident types are recorded, with "Colisión fronto-lateral" being the most common type (20,877 cases).</li>
-                        <li>Weather Conditions (estado_meteorológico): Accidents mostly occur under "Despejado" (Clear) conditions, appearing in 60,724 cases.</li>
-                        <li>Vehicle Type (tipo_vehiculo): There are 35 unique vehicle types. "Turismo" (Private car) is the most frequent vehicle involved, making up 55,150 cases.</li>
-                        <li>Person Type (tipo_persona): "Conductor" (driver) is the predominant role, with 64,359 cases.</li>
-                        <li>Age Range (rango_edad): 18 distinct age ranges are represented. A large number (8,747) of entries are marked as "Desconocido" (Unknown).</li>
-                        <li>Gender (sexo): "Hombre" (male) accounts for 48,424 cases, while "Mujer" (female) is recorded in 31,765 cases.</li>
-                    </ul>
-                </li>
+        <!-- Categorical Variables -->
+        <section class="categorical-variables">
+            <h2>Categorical Variables</h2>
+            <ul>
+                <li><strong>Weather Conditions:</strong> "Despejado" (clear) dominates (most accidents happen in clear weather).</li>
+                <li><strong>Vehicle Type:</strong> "Turismo" (private car) is the most involved vehicle (majority of accidents).</li>
+                <li><strong>Person Type:</strong> "Conductor" (driver) remains the most common person involved in accidents.</li>
+                <li><strong>Age Range:</strong> Most accidents involve people aged 25-34 years.</li>
+                <li><strong>Gender:</strong> Males are more involved in accidents than females.</li>
+            </ul>
+        </section>
 
-                <li><strong>Lesividad (Severity of Injury):</strong>
-                    <ul>
-                        <li>Severity of accidents is mostly low:
-                            <ul>
-                                <li>"Sin asistencia sanitaria" (No medical assistance) is the most common outcome, occurring in 24,649 cases.</li>
-                                <li>Serious injuries leading to "Fallecido 24 horas" (Death within 24 hours) occurred in 45 cases.</li>
-                                <li>Other cases include different levels of medical attention, such as immediate attention at the scene, hospitalization, or emergency care.</li>
-                                <li>4 cases have unknown severity ("Se desconoce").</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+        <!-- Severity of Accidents -->
+        <section class="lesividad">
+            <h2>Severity of Accidents</h2>
+            <ul>
+                <li>The majority of accidents involve **"Sin asistencia sanitaria"** (no medical assistance).</li>
+                <li>Serious injuries are rare, with only a few deaths within 24 hours.</li>
+                <li>Most accidents are minor, with an average severity code of 40.2.</li>
+            </ul>
+        </section>
 
-                <li><strong>Numerical Data Overview:</strong>
-                    <ul>
-                        <li>The severity code (cod_lesividad) ranges from 1 to 77, with an average severity level of 10.2.</li>
-                        <li>Geographical Coordinates (coordenada_x_utm and coordenada_y_utm) mostly represent locations concentrated around Madrid, with some entries containing zero values indicating missing or incorrect data.</li>
-                    </ul>
-                </li>
-
-                <li><strong>Summary Insights:</strong>
-                    <ul>
-                        <li>Most accidents occur in clear weather, with private cars being the most involved vehicle type.</li>
-                        <li>Males represent the majority of those involved in accidents, and drivers are more commonly reported than passengers or pedestrians.</li>
-                        <li>Low severity incidents dominate the dataset, with a small percentage of severe injuries or fatalities.</li>
-                        <li>The data contains significant gaps, particularly in drug test results and accident severity, which may limit certain types of analysis.</li>
-                    </ul>
-                </li>
+        <!-- Summary Insights -->
+        <section class="summary">
+            <h2>Summary Insights</h2>
+            <ul>
+                <li>Clear weather conditions and private cars are the leading factors in accidents.</li>
+                <li>Males, particularly drivers, remain the most commonly involved demographic.</li>
+                <li>Drug and alcohol test results show a very low positive rate.</li>
             </ul>
         </section>
 
