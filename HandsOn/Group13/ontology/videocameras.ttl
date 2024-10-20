@@ -1,4 +1,4 @@
-@prefix : <http://www.example.com/videocameras//> .
+@prefix : <http://www.example.com/videocameras/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -12,7 +12,7 @@
 #    Data properties
 #################################################################
 
-###  http://www.example.com/videocameras//hasLocation
+###  http://www.example.com/videocameras/hasLocation
 :hasLocation rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:range xsd:string ;
@@ -20,7 +20,7 @@
              rdfs:label "hasLocation" .
 
 
-###  http://www.example.com/videocameras//hasResolution
+###  http://www.example.com/videocameras/hasResolution
 :hasResolution rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:range xsd:string ;
@@ -28,7 +28,7 @@
                rdfs:label "hasResolution" .
 
 
-###  http://www.example.com/videocameras//hasType
+###  http://www.example.com/videocameras/hasType
 :hasType rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:range xsd:string ;
@@ -36,7 +36,7 @@
          rdfs:label "hasType" .
 
 
-###  http://www.example.com/videocameras//hasYearOfAcquisition
+###  http://www.example.com/videocameras/hasYearOfAcquisition
 :hasYearOfAcquisition rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:range xsd:integer ;
@@ -44,7 +44,7 @@
                       rdfs:label "hasYearOfAcquisition" .
 
 
-###  http://www.example.com/videocameras//hasZoom
+###  http://www.example.com/videocameras/hasZoom
 :hasZoom rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:range xsd:string ;
@@ -52,11 +52,19 @@
          rdfs:label "hasZoom" .
 
 
+###  http://www.example.com/videocameras/hasCameraID
+:hasCameraID rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Represents the unique ID of the camera." ;
+             rdfs:label "hasCameraID" .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.example.com/videocameras//Camera
+###  http://www.example.com/videocameras/Camera
 :Camera rdf:type owl:Class ;
         rdfs:comment "Class representing a videocamera" ;
         rdfs:label "Camera" .
