@@ -101,7 +101,7 @@ mappings:
   observation:
     sources:
       - observationsCSV
-    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(DIA)$(MES)$(ANO)#$(MAGNITUD)
+    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(ID_TIEMPO)#$(MAGNITUD)
     po:
       - [a, sosa:Observation]
       - [
@@ -124,16 +124,12 @@ mappings:
             parameters:
               - [str1, $(PUNTO_MUESTREO)$(ID_TIEMPO)$(MAGNITUD), o]
               - [str2, $(PUNTO_MUESTREO)$(ID_TIEMPO)$(MAGNITUD), s]
-      - [sosa:resultTime, $(DIA)$(MES)$(ANO), xsd:date]
+      - [sosa:resultTime, $(ID_TIEMPO), xsd:date]
 
   results:
     sources:
       - observationsCSV
-    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(DIA)$(MES)$(ANO)#$(MAGNITUD)Result
+    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(ID_TIEMPO)#$(MAGNITUD)Result
     po:
       - [a, qudt:QuantityValue]
       - [qudt:numericValue, $(MEDIDA), xsd:double]
-      - [qudt:unit, $(UNIDAD)]
-      
-      #"qudt-unit:MilliGM-PER-M3"
-      #"qudt-unit:MicroGM-PER-M3"
