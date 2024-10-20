@@ -15,4 +15,8 @@ where {
     ?s <https://schema.org/floorSize> ?size .
     ?size rdf:type <https://schema.org/QuantitativeValue> .
     ?size <https://schema.org/value> ?sizevalue .
+    ?s <http://www.semanticweb.org/ontology/SmartBarrioMadrid#rentPrice> ?price .
+    ?price rdf:type <https://schema.org/MonetaryAmount> .
+    ?price <https://schema.org/value> ?pricevalue .
+    ?price <https://schema.org/currency> ?currency .
 } limit 100
