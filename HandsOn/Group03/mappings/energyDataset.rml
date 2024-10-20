@@ -269,7 +269,7 @@
   rr:predicateObjectMap [
     rr:predicate sbm:neighborhoodCode;
     rr:objectMap [
-      rr:template "NEIGHBORHOOD CODE";
+      rml:reference "NEIGHBORHOOD CODE";
       rr:dataType xsd:integer
       ]
   ].
