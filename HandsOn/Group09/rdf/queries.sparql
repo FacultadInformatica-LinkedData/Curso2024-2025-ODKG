@@ -1,0 +1,31 @@
+# Query 1: Give all the stations and their IDs
+
+SELECT ?Subject ?Value WHERE { 
+    ?Subject <http://mAIRdrid.org/ontology/nationalStationID> ?Value. 
+  }
+
+# Query 2: Give all medition results that are QuantityValue type
+
+SELECT ?Subject WHERE { 
+    ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#QuantityValue> .
+  } 
+
+# Query 3: Give all sensors' location labels
+
+SELECT ?Subject ?Value WHERE { 
+    ?Subject <http://www.w3.org/2000/01/rdf-schema#label> ?Value.
+  }
+
+# Query 4: Give all the station's sensors that can metric the air quality
+
+SELECT ?Subject  WHERE { 
+    ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mAIRdrid.org/ontology/AirQualityMetric>.
+  } 
+
+# Query 5: Give all the stations with their altitude, latitude and longitude
+
+SELECT  ?Subject ?Value ?Value2 ?Value3 WHERE {
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ?Value.
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?Value2.
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?Value3.
+  }  
