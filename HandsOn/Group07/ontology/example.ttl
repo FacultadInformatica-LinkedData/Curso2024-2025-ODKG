@@ -1,0 +1,46 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://madrid.eventos.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Instance of an Event (Sample event from the dataset)
+ns:event002 a schema:Event ;
+    schema:name "Exposición de arte contemporáneo" ;
+    schema:startDate "2024-10-20T10:00:00"^^xsd:dateTime ;
+    schema:endDate "2024-11-10T20:00:00"^^xsd:dateTime ;
+    schema:isAccessibleForFree true ;
+    schema:audience "Público general" ;
+    schema:doorTime "09:30:00"^^xsd:time ;
+    ns:longDuration true ;
+    schema:about "Arte, Exhibiciones, Cultura en Madrid" ;
+    ns:type "Exposición" ;
+    schema:url "https://www.mataderomadrid.org/exposiciones" ;
+    schema:Place ns:place002 ;
+    
+# Instance of a Place (Location of the event)
+ns:place002 a schema:Place ;
+    schema:name "Matadero Madrid" ;
+    schema:address "Plaza de Legazpi, 8, 28045 Madrid" ;
+    schema:geo ns:geo002 ;
+    schema:accesibilityLevel "Sin información" ;
+    ns:openingHours "10:00-20:00" .
+
+# Instance of GeoCoordinates for the Place
+ns:geo002 a schema:GeoCoordinates ;
+    schema:latitude 40.391597 ;
+    schema:longitude -3.698615 ;
+    ns:district "Arganzuela" ;
+    ns:neighborhood "Legazpi" ;
+    schema:postalCode 28045 .
+
+# Contact Details for the Event Organizer
+ns:contact002 a ns:ContactDetails ;
+    schema:email "info@mataderomadrid.org" ;
+    schema:telephone "+34 915 177 309" ;
+    ns:transportation "Metro: Legazpi, Líneas 3 y 6" .
+
+
