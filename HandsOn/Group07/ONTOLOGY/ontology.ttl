@@ -1,0 +1,77 @@
+@prefix hasAddress: <http://www.owl-ontologies.com/hasAddress#> .
+@prefix hasLatitude: <http://www.owl-ontologies.com/hasLatitude#> .
+@prefix hasLongitude: <http://www.owl-ontologies.com/hasLongitude#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://dublinbikesharing.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+# CLASSES
+
+# Define the BikeStation class
+ns:BikeStation a owl:Class ;
+    rdfs:label "Bike Station" .
+
+# Availability and Location classes
+ns:Availability a owl:Class ;
+    rdfs:label "Availability" .
+
+ns:Location a owl:Class ;
+    rdfs:label "Location" .
+
+# OBJECT Properties
+ns:hasAvailability a owl:ObjectProperty ;
+    rdfs:label "has availability" ;
+    rdfs:domain ns:BikeStation ;
+    rdfs:range ns:Availability .
+
+ns:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" ;
+    rdfs:domain ns:BikeStation ;
+    rdfs:range ns:Location .
+
+# DATATYPE properties
+
+ns:hasID a owl:DatatypeProperty ;
+    rdfs:label "has station ID" ;
+    rdfs:domain ns:BikeStation ;
+    rdfs:range xsd:integer .
+
+ns:hasAddress a owl:DatatypeProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:string .
+
+ns:hasLatitude a owl:DatatypeProperty ;
+    rdfs:label "has latitude" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:float .
+
+ns:hasLongitude a owl:DatatypeProperty ;
+    rdfs:label "has longitude" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:float .
+
+ns:numBikeAvailability a owl:DatatypeProperty ;
+    rdfs:label "number of bike availability" ;
+    rdfs:domain ns:Availability ;
+    rdfs:range xsd:integer .
+
+ns:numCapacity a owl:DatatypeProperty ;
+    rdfs:label "number of capacity" ;
+    rdfs:domain ns:Availability ;
+    rdfs:range xsd:integer .
+
+ns:numDockAvailability a owl:DatatypeProperty ;
+    rdfs:label "number of dock availability" ;
+    rdfs:domain ns:Availability ;
+    rdfs:range xsd:integer .
+
+ns:lastReported a owl:DatatypeProperty ;
+    rdfs:label "last reported" ;
+    rdfs:domain ns:BikeStation ;
+    rdfs:range xsd:dateTime .

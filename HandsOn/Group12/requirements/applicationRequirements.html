@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Overview</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section p,
+        section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        section ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #4CAF50;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Modern Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Application Overview</h1>
+    </header>
+
+    <div class="container">
+        <!-- Overview Section -->
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>This application is designed to improve the safety of car travel. Using a dataset of traffic accidents in the city of Madrid, it identifies the most dangerous roads and intersections, helping users avoid them. The application targets both human drivers and autonomous vehicles, providing valuable data to guide route choice for safer travel.</p>
+        </section>
+
+        <!-- Key Points Section -->
+        <section class="key-points">
+            <h2>Key Points</h2>
+            <ul>
+                <li>Extract information from the dataset to discover potentially dangerous roads from the history of traffic accidents.</li>
+                <li>Help users or self-driving car algorithms plan the safest routes.</li>
+                <li>Utilize open data resources that are free and openly licensed.</li>
+            </ul>
+        </section>
+
+        <!-- Interface Section -->
+        <section class="interface">
+            <h2>Interface and Functionality</h2>
+            <p>We will develop a user-friendly interface, similar to popular navigation services like Google Maps, to ensure effortless use. Additionally, the application will feature a REST API, enabling integration with other software and making it accessible to algorithms used by self-driving cars.</p>
+        </section>
+    </div>
+</body>
+
+</html>

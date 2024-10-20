@@ -1,0 +1,19 @@
+@prefix : <http://gasolineras.org/> .
+@prefix ns: <http://gasolineras.org/ontology> .
+
+# Instancias de Gasolineras
+ns:gasolinera12345 a ns:Gasolinera ;
+    ns:Rotulo "Repsol" ;
+    ns:Horario "24h" ;
+    ns:tieneUbicacion ns:ubicacion12345 ;
+    ns:PrecioGasolina95E5 "1.589"^^xsd:float ;
+    ns:PrecioGasoleoA "1.479"^^xsd:float .
+
+# Instancias de la Ubicación de la Gasolinera
+ns:ubicacion12345 a ns:Ubicacion ;
+    ns:Provincia "Madrid" ;
+    ns:Municipio "Madrid" ;
+    ns:CodigoPostal "28001" ;
+    ns:Direccion "Calle Gran Vía, 1" ;
+    ns:Latitud "40.4203"^^xsd:float ;
+    ns:Longitud "-3.7057"^^xsd:float .

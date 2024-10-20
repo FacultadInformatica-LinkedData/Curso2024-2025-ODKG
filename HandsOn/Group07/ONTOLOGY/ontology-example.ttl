@@ -1,0 +1,41 @@
+@prefix ns: <http://dublinbikesharing.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Sample instance of a bike station
+ns:Station_001 rdf:type ns:BikeStation ;
+    ns:hasID 1 ;
+    ns:hasAvailability ns:Station_001_Availability ;
+    ns:hasLocation ns:Station_001_Location ;
+    ns:lastReported "2024-10-07T12:00:00"^^xsd:dateTime .
+
+# Availability instance for the bike station
+ns:Station_001_Availability rdf:type ns:Availability ;
+    ns:numBikeAvailability 15 ;
+    ns:numDockAvailability 25 ;
+    ns:numCapacity 40 .
+
+# Location instance for the bike station
+ns:Station_001_Location rdf:type ns:Location ;
+    ns:hasAddress "O'Connell Street, Dublin" ;
+    ns:hasLatitude 53.349805 ;
+    ns:hasLongitude -6.26031 .
+
+# Another bike station
+ns:Station_002 rdf:type ns:BikeStation ;
+    ns:hasID 2 ;
+    ns:hasAvailability ns:Station_002_Availability ;
+    ns:hasLocation ns:Station_002_Location ;
+    ns:lastReported "2024-10-07T12:15:00"^^xsd:dateTime .
+
+# Availability for the second station
+ns:Station_002_Availability rdf:type ns:Availability ;
+    ns:numBikeAvailability 8 ;
+    ns:numDockAvailability 32 ;
+    ns:numCapacity 40 .
+
+# Location for the second station
+ns:Station_002_Location rdf:type ns:Location ;
+    ns:hasAddress "St. Stephen's Green, Dublin" ;
+    ns:hasLatitude 53.338199 ;
+    ns:hasLongitude -6.259256 .

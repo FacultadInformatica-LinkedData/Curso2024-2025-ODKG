@@ -1,0 +1,490 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column DIRECCION by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION 1",
+    "newColumnName": "STREET TYPE",
+    "description": "Rename column DIRECCION 1 to STREET TYPE"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column DIRECCION 2 by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION 2 1",
+    "newColumnName": "STREET NAME",
+    "description": "Rename column DIRECCION 2 1 to STREET NAME"
+  },
+  {
+    "op": "core/row-star",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DIRECCION 2 2",
+          "expression": "value",
+          "columnName": "DIRECCION 2 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "starred": true,
+    "description": "Star rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DIRECCION 2 2",
+          "expression": "value",
+          "columnName": "DIRECCION 2 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DIRECCION 2 2 using expression value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column DIRECCION 2 2 by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION 2 2 1",
+    "newColumnName": "NUM",
+    "description": "Rename column DIRECCION 2 2 1 to NUM"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NUM",
+          "expression": "grel:value.endsWith(\",\")",
+          "columnName": "NUM",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NUM",
+    "expression": "grel:value.chomp(\",\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM using expression grel:value.chomp(\",\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2 2 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DIRECCION 2 2 2 using expression value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DIRECCION 2 2 2",
+          "expression": "grel:value.contains(/^\\d{5}/)",
+          "columnName": "DIRECCION 2 2 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column DIRECCION 2 2 2 by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DIRECCION 2 2 2",
+          "expression": "grel:value.contains(/^\\d{5}/)",
+          "columnName": "DIRECCION 2 2 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION 2 2 2 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " MADRID"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MADRID"
+      }
+    ],
+    "description": "Mass edit cells in column DIRECCION 2 2 2 2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION 2 2 2 2",
+    "newColumnName": "CITY",
+    "description": "Rename column DIRECCION 2 2 2 2 to CITY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCION 2 2 2 1",
+    "newColumnName": "POSTAL CODE",
+    "description": "Rename column DIRECCION 2 2 2 1 to POSTAL CODE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NAME",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NAME using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CÓDIGO BARRIO",
+    "newColumnName": "NEIGHBORHOOD CODE",
+    "description": "Rename column CÓDIGO BARRIO to NEIGHBORHOOD CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "NEIGHBORHOOD",
+    "description": "Rename column BARRIO to NEIGHBORHOOD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "DISTRICT",
+    "description": "Rename column DISTRITO to DISTRICT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CÓDIGO DISTRITO",
+    "newColumnName": "DISTRICT CODE",
+    "description": "Rename column CÓDIGO DISTRITO to DISTRICT CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EDIFICIO",
+    "newColumnName": "BUILDING",
+    "description": "Rename column EDIFICIO to BUILDING"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPOEDIFICIO",
+    "newColumnName": "BUILDING USE",
+    "description": "Rename column TIPOEDIFICIO to BUILDING USE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID",
+    "description": "Remove column ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MES",
+    "newColumnName": "MONTH",
+    "description": "Rename column MES to MONTH"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "AÑO",
+    "newColumnName": "YEAR",
+    "description": "Rename column AÑO to YEAR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADA-X",
+    "newColumnName": "X-COORDINATE",
+    "description": "Rename column COORDENADA-X to X-COORDINATE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADA-Y",
+    "newColumnName": "Y-COORDINATE",
+    "description": "Rename column COORDENADA-Y to Y-COORDINATE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LONGITUD",
+    "newColumnName": "LONGITUDE",
+    "description": "Rename column LONGITUD to LONGITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LATITUD",
+    "newColumnName": "LATITUDE",
+    "description": "Rename column LATITUD to LATITUDE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO",
+    "newColumnName": "SENSOR TYPE",
+    "description": "Rename column TIPO to SENSOR TYPE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CLASE",
+    "newColumnName": "ENERGY CLASS",
+    "description": "Rename column CLASE to ENERGY CLASS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "GRUPO",
+    "newColumnName": "ENERGY GROUP",
+    "description": "Rename column GRUPO to ENERGY GROUP"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UNIDADES",
+    "newColumnName": "ENERGY UNITS",
+    "description": "Rename column UNIDADES to ENERGY UNITS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONSUMO",
+    "newColumnName": "CONSUMPTION",
+    "description": "Rename column CONSUMO to CONSUMPTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENERGY GROUP",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column ENERGY GROUP"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUM",
+    "newColumnName": "STREET NUMBER",
+    "description": "Rename column NUM to STREET NUMBER"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ENERGY GROUP",
+          "expression": "value",
+          "columnName": "ENERGY GROUP",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "STREET TYPE",
+    "expression": "grel:cells[\"STREET TYPE\"].value +\" \" + cells[\"STREET NAME\"].value +  \" \" + cells[\"STREET NUMBER\"].value + \",\" + cells[\"POSTAL CODE\"].value +\" \" + cells[\"CITY\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "ADDRESS",
+    "columnInsertIndex": 5,
+    "description": "Create column ADDRESS at index 5 based on column STREET TYPE using expression grel:cells[\"STREET TYPE\"].value +\" \" + cells[\"STREET NAME\"].value +  \" \" + cells[\"STREET NUMBER\"].value + \",\" + cells[\"POSTAL CODE\"].value +\" \" + cells[\"CITY\"].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ENERGY GROUP",
+          "expression": "value",
+          "columnName": "ENERGY GROUP",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "ADDRESS",
+          "expression": "value",
+          "columnName": "ADDRESS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ADDRESS",
+    "expression": "grel:cells[\"STREET TYPE\"].value + \" \" + cells[\"STREET NAME\"].value + \" \" + cells[\"STREET NUMBER\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ADDRESS using expression grel:cells[\"STREET TYPE\"].value + \" \" + cells[\"STREET NAME\"].value + \" \" + cells[\"STREET NUMBER\"].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ENERGY GROUP",
+          "expression": "value",
+          "columnName": "ENERGY GROUP",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "STREET NUMBER",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column STREET NUMBER using expression value.toString()"
+  }
+]

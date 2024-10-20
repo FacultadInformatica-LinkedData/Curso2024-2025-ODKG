@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid City Heatmap Open Data License</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            text-decoration: underline;
+        }
+        table {
+            font-family: arial, cambria math;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #000000;
+            text-align: justify;
+            padding:11px;
+            vertical-align: middle;
+        }
+        .centered-header {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Potential License:</h1>
+    <h2 class="section-title">Madrid City Heatmap Open Data License</h2>
+    <ul>
+        <li>
+            <strong>1. Purpose and License Grant:</strong><br>
+            This dataset, hereinafter referred to as the files: <code>"2024_Accidentalidad.csv"</code> and <code>"distritos.csv"</code>, is made available under the terms of the Madrid City Heatmap Open Data License for the purpose of advancing the development of smart city applications and services. By accessing or using the Data, you agree to be bound by the terms and conditions of this license.
+        </li>
+        <li>
+            <strong>2. Open Data Principles:</strong><br>
+            The Data follows the principles of open data as outlined on the 
+            <a href="https://datos.madrid.es/egob" target="_blank">Madrid City Open Data Portal</a>, which can be found at 
+            <a href="https://datos.madrid.es/egob/catalogo/aviso-legal" target="_blank">Legal Notice</a>.
+        </li>
+        <li>
+            <strong>3. Real-World Entities:</strong><br>
+            The Data may be linked with generic real-world entities, including but not limited to Madrid's Districts, to enhance the context and utility of the information.
+        </li>
+        <li>
+            <strong>4. Smart City Domains:</strong><br>
+            The Data encompasses the following city domains:
+            <ul>
+                <li><strong>Transportation:</strong> Data related to traffic, transportation and road safety.</li>
+                <li><strong>Districts:</strong> Data related to the districts of Madrid.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>5. Data Source:</strong><br>
+            The Data is sourced from the Madrid City Open Data Portal, and users are encouraged to refer to the original data source for additional details and updates.
+        </li>
+        <li>
+            <strong>6. Usage Rights:</strong><br>
+            Users of the Data are granted the right to access, use, modify, and distribute the Data for any lawful purpose, including research, application development, and innovation, provided that they comply with the terms and conditions of this license.
+        </li>
+        <li>
+            <strong>7. Attribution:</strong><br>
+            Users are required to provide appropriate attribution when using the Data. Attribution should include the following:
+            <ul>
+                <li>The source: <a href="https://datos.madrid.es/egob" target="_blank">https://datos.madrid.es/egob</a></li>
+                <li>A reference to "Portal de datos abiertos del Ayuntamiento de Madrid".</li>
+            </ul>
+        </li>
+        <li>
+            <strong>8. Redistribution:</strong><br>
+            Redistribution of the Data or any derivative works is allowed, provided that the terms of this license are adhered to, and that the redistributed Data remains open and accessible to others.
+        </li>
+        <li>
+            <strong>9. Data Integrity:</strong><br>
+            Users should make reasonable efforts to ensure the accuracy and reliability of any information derived from the Data.
+        </li>
+        <li>
+            <strong>10. Termination:</strong><br>
+            Failure to comply with the terms of this license may result in the revocation of usage rights.
+        </li>
+        <li>
+            <strong>11. Governing Law:</strong><br>
+            This license shall be governed by and construed in accordance with the laws of <em>Article 11 of Law 37/2007</em>, and any disputes arising from or related to this license shall be subject to the exclusive jurisdiction of the courts of Madrid.
+        </li>
+    </ul>
+    <h2 class="section-title">Resource Naming Strategy:</h2>
+    <ul>
+        <li>
+            Uses a domain that is not the one given by default in Protégé:
+            <ul>
+                <li><code>http://madridcityheatmap.org/group08</code></li>
+            </ul>
+        </li>
+        <li>
+            Uses different paths for ontology resources:
+            <ul>
+                <li><code>http://madridcityheatmap.org/group08/accidentalidad</code></li>
+                <li><code>http://madridcityheatmap.org/group08/distritos</code></li>
+            </ul>
+        </li>
+        <li>
+            Ensures that the paths for individuals of different classes are not the same:
+            <ul>
+                <li>The paths for the individuals are different.</li>
+            </ul>
+        </li>
+        <li>
+            Defines property URIs independently of class URIs:
+            <ul>
+                <li>Done</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2 class="section-title">Data Analysis</h2>
+    <h3 class="section-title">2024_Accidentalidad.csv</h3>
+    <table>
+        <tr>
+          <th class="centered-header">Name</th>
+          <th class="centered-header">Type</th>
+          <th class="centered-header">Description</th>
+        </tr>
+        <tr>
+          <th>num_expediente</th>
+          <th>String</th>
+          <td>Unique identifier for the accident</td>
+        </tr>
+        <tr>
+          <th>fecha</th>
+          <th>DateTime</th>
+          <td>Contains the date of the accident</td>
+        </tr>
+        <tr>
+          <th>hora</th>
+          <th>DateTime</th>
+          <td>Contains the hour of the accident</td>
+        </tr>
+        <tr>
+          <th>localizacion</th>
+          <th>String</th>
+          <td>Address where the accident took place</td>
+        </tr>
+        <tr>
+          <th>numero</th>
+          <th>String</th>
+          <td>Number of the street (when necessary).</td>
+        </tr>
+        <tr>
+          <th>cod_distrito</th>
+          <th>Integer</th>
+          <td>Identifier for the district</td>
+        </tr>
+        <tr>
+          <th>distrito</th>
+          <th>String</th>
+          <td>Name of the district.</td>
+        </tr>
+        <tr>
+          <th>tipo_accidente</th>
+          <th>Integer</th>
+          <td>Accident description</td>
+        </tr>
+        <tr>
+          <th>estado_meteorologico</th>
+          <th>String</th>
+          <td>Weather description</td>
+        </tr>
+        <tr>
+          <th>tipo_vehiculo</th>
+          <th>String</th>
+          <td>Vehicle description</td>
+        </tr>
+        <tr>
+          <th>tipo_persona</th>
+          <th>Float</th>
+          <td>Role of the person in the accident: pedestrian, driver, passenger...</td>
+        </tr>
+        <tr>
+          <th>rango_edad</th>
+          <th>String</th>
+          <td>Age range of the person</td>
+        </tr>
+        <tr>
+          <th>sexo</th>
+          <th>String</th>
+          <td>Sex of the person</td>
+        </tr>
+        <tr>
+          <th>cod_lesividad</th>
+          <th>Integer</th>
+          <td>Identifier for the severity of the lesions caused by the accident</td>
+        </tr>
+        <tr>
+          <th>lesividad</th>
+          <th>String</th>
+          <td>Description of the sanitary action taken</td>
+        </tr>
+        <tr>
+          <th>coordenada_x_utm</th>
+          <th>Float</th>
+          <td>Location x coordinate</td>
+        </tr>
+        <tr>
+            <th>coordenada_y_utm</th>
+            <th>Float</th>
+            <td>Location y coordinate</td>
+          </tr>
+        <tr>
+          <th>positiva_alcohol</th>
+          <th>String</th>
+          <td>Identifies if the person was tested positive for alcohol</td>
+        </tr>
+        <tr>
+          <th>positiva_droga</th>
+          <th>String</th>
+          <td>Identifies if the person was tested positive for drugs</td>
+        </tr>
+      </table>
+
+    
+      <h3 class="section-title">Distritos.csv</h3>
+      <table>
+          <tr>
+            <th class="centered-header">Name</th>
+            <th class="centered-header">Type</th>
+            <th class="centered-header">Description</th>
+          </tr>
+          <tr>
+            <th>OBJECTID</th>
+            <th>Integer</th>
+            <td>Unique identifier for the object</td>
+          </tr>
+          <tr>
+            <th>Shape_lengt</th>
+            <th>Float</th>
+            <td>Length of the district</td>
+          </tr>
+          <tr>
+            <th>Shape_Area</th>
+            <th>Float</th>
+            <td>Area of the district</td>
+          </tr>
+          <tr>
+            <th>COD_DIS</th>
+            <th>Integer</th>
+            <td>Unique identifier of the district</td>
+          </tr>
+          <tr>
+            <th>COD_DIS_TX</th>
+            <th>Integer</th>
+            <td>Identifier of the district</td>
+          </tr>
+          <tr>
+            <th>DISTRI_MAY</th>
+            <th>String</th>
+            <td>Name of the district in uppercase</td>
+          </tr>
+          <tr>
+            <th>NOMBRE</th>
+            <th>String</th>
+            <td>Name of the district</td>
+          </tr>
+          <tr>
+            <th>DISTRI_MT</th>
+            <th>String</th>
+            <td>Name of the district</td>
+          </tr>
+        </table>
+</body>
+</html>
