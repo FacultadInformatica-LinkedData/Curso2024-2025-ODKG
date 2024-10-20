@@ -1,0 +1,103 @@
+@prefix ql: <http://www.w3.org/2001/XMLSchema#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix schema: <https://schema.org/> .
+@prefix sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
+@prefix base: <http://www.semanticweb.org/resource/> .
+@base <http://www.semanticweb.org/> .
+
+base:Apartment/1a2b3c rdf:type schema:Apartment ;
+    rdfs:label "Piso en venta en calle de Godella, 64"^^xsd:string ;
+    schema:numberOfRooms "2"^^xsd:integer ;
+    schema:geo base:GeoCoordinates/4d5e6f ;
+    schema:containedInPlace base:District/BARAJAS ;
+    schema:containedInPlace base:Barrio/SAN%20CRISTOBAL ;
+    schema:containedInPlace base:City/Madrid ;
+    sbm:energyCertificate "D"^^xsd:string ;
+    sbm:floorSize base:QuantitativeValue/7g8h9i ;
+    sbm:rentPrice base:MonetaryAmount/10j11k ;
+    sbm:rentPriceByRoom base:MonetaryAmount/12l13m ;
+    sbm:rentPriceBySq base:MonetaryAmount/14n15o .
+
+base:GeoCoordinates/4d5e6f rdf:type schema:GeoCoordinates ;
+    schema:address "Calle de Godella 64"^^xsd:string .
+
+base:District/BARAJAS rdf:type sbm:District ;
+    rdfs:label "BARAJAS"^^xsd:string ;
+    schema:containsPlace base:Barrio/SAN%20CRISTOBAL ;
+    schema:containedInPlace base:City/Madrid .
+
+base:Barrio/SAN%20CRISTOBAL rdf:type sbm:Barrio ;
+    rdfs:label "SAN CRISTOBAL"^^xsd:string ;
+    schema:containedInPlace base:District/BARAJAS ;
+    schema:containedInPlace base:City/Madrid .
+
+base:QuantitativeValue/7g8h9i rdf:type schema:QuantitativeValue ;
+    schema:value "64"^^xsd:float ;
+    schema:unitCode "m2"^^xsd:string ;
+    schema:unitText "square meters"^^xsd:string .
+
+base:MonetaryAmount/10j11k rdf:type schema:MonetaryAmount ;
+    schema:value "471"^^xsd:float ;
+    schema:currency "EUR"^^xsd:string .
+
+base:MonetaryAmount/12l13m rdf:type schema:MonetaryAmount ;
+    schema:value "235"^^xsd:float ;
+    schema:currency "EUR"^^xsd:string .
+
+base:MonetaryAmount/14n15o rdf:type schema:MonetaryAmount ;
+    schema:value "7"^^xsd:float ;
+    schema:currency "EUR"^^xsd:string .
+
+base:Sensor/AMBIBAMMATUTE%20General a sosa:Sensor ;
+    sbm:hasSensorType base:SensorType/Externo ;
+    sbm:madeObservation base:Observation/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20General ;
+    sosa:hosts base:CivicStructure/Biblioteca%20Ana%20María%20Matute .
+
+base:Observation/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20General a sosa:Observation ;
+    sosa:hasResult base:QuantitativeValue/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20General ;
+    sosa:madeBySensor base:Sensor/AMBIBAMMATUTE%20General ;
+    sosa:resultTime "2020-03-01T00:00:00Z"^^xsd:dateTime .
+
+base:QuantitativeValue/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20General a schema:QuantitativeValue ;
+    schema:unitCode "kWh"^^xsd:string ;
+    schema:unitText "kWh"^^xsd:string ;
+    sosa:resultTime "13099"^^xsd:integer .
+
+base:CivicStructure/Biblioteca%20Ana%20María%20Matute a schema:CivicStructure ;
+    sbm:usedFor base:BuildingUsage/Centros%20culturales%20y%20bibliotecas ;
+    sbm:hasEnergyClass base:EnergyClass/Energía%20activa ;
+    sosa:hosts base:Sensor/AMBIBAMMATUTE%20General ;
+    schema:geo base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute ;
+    schema:containedInPlace base:Neighborhood/SAN%20ISIDRO .
+
+base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute a schema:GeoCoordinates ;
+    schema:address "CALLE ISAAC ALBENIZ 1,28019 MADRID"^^xsd:string ;
+    schema:latitude "40.397752"^^xsd:string ;
+    schema:longitude "-3.720294"^^xsd:string ;
+    schema:postalCode "28019.0"^^xsd:string .
+
+base:Neighborhood/SAN%20ISIDRO a sbm:Neighborhood ;
+    schema:containsPlace base:CivicStructure/Biblioteca%20Ana%20María%20Matute ;
+    schema:containedInPlace base:District/CARABANCHEL ;
+    schema:containedInPlace base:City/MADRID ;
+    sbm:neighborhoodCode "113"^^xsd:integer .
+
+base:District/CARABANCHEL a sbm:District ;
+    schema:containsPlace base:Neighborhood/SAN%20ISIDRO ;
+    schema:containedInPlace base:City/MADRID ;
+    sbm:districtCode "11"^^xsd:integer .
+
+base:City/MADRID a schema:City ;
+    schema:containsPlace base:District/CARABANCHEL .
+
+base:SensorType/Externo a schema:SensorType ;
+    rdfs:label "Externo"^^xsd:string .
+
+base:BuildingUsage/Centros%20culturales%20y%20bibliotecas a sbm:BuildingUsage ;
+    rdfs:label "Centros culturales y bibliotecas"^^xsd:string .
+
+base:EnergyClass/Energía%20activa a schema:EnergyClass ;
+    rdfs:label "Energía activa"^^xsd:string .
