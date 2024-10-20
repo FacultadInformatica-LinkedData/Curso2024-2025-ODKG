@@ -1,0 +1,170 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix schema: <http://schema.org/> .
+@prefix ns: <http://madrid.events.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://madrid.events.com/ns#> .
+
+### TriplesMap for Event ###
+<#TriplesMapEvent> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "Dataset_Updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://madrid.events.com/event/{ID-EVENTO}";
+    rr:class schema:Event
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate xml:id;
+    rr:objectMap [ rml:reference "ID-EVENTO" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:name;
+    rr:objectMap [ rml:reference "TITULO" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:isAccessibleForFree;
+    rr:objectMap [ rml:reference "GRATUITO"; rr:datatype xsd:Boolean ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:type;
+    rr:objectMap [ rml:reference "TIPO" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:startDate;
+    rr:objectMap [ rml:reference "FECHA"; rr:datatype xsd:dateTime ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:endDate;
+    rr:objectMap [ rml:reference "FECHA-FIN"; rr:datatype xsd:dateTime ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:doorTime;
+    rr:objectMap [ rml:reference "HORA"; rr:datatype xsd:time ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:url;
+    rr:objectMap [ rml:reference "CONTENT-URL" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:longDuration;
+    rr:objectMap [ rml:reference "LARGA-DURACION"; rr:datatype xsd:Boolean ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:audience;
+    rr:objectMap [ rml:reference "AUDIENCIA" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:about;
+    rr:objectMap [ rml:reference "DESCRIPCION" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:weekDays;
+    rr:objectMap [ rml:reference "DIAS-SEMANA" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:excludedDays;
+    rr:objectMap [ rml:reference "DIAS-EXCLUIDOS" ]
+  ];
+  
+  ### Linking Event to Place ###
+  rr:predicateObjectMap [
+    rr:predicate ns:hasPlace;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapPlace> ]
+  ] .
+
+### TriplesMap for Place ###
+<#TriplesMapPlace> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "Dataset_Updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://madrid.events.com/installation/{NOMBRE-INSTALACION}";
+    rr:class schema:Place
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:name;
+    rr:objectMap [ rml:reference "NOMBRE-INSTALACION" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:accessibilityLevel;
+    rr:objectMap [ rml:reference "ACCESIBILIDAD-INSTALACION" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:url;
+    rr:objectMap [ rml:reference "URL-INSTALACION" ]
+  ];
+
+
+  ### Linking Place to GeoCoordinates ###
+  rr:predicateObjectMap [
+    rr:predicate schema:geo;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapGeoCoordinates> ]
+  ];
+
+  ### Linking Place to ContactDetails ###
+  rr:predicateObjectMap [
+    rr:predicate ns:hasContactDetails;
+    rr:objectMap [ rr:parentTriplesMap <#TriplesMapContactDetails> ]
+  ] .
+
+### TriplesMap for GeoCoordinates ###
+<#TriplesMapGeoCoordinates> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "Dataset_Updated.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://madrid.events.com/installation/{NOMBRE-INSTALACION}/geo";
+    rr:class schema:GeoCoordinates
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate ns:district;
+    rr:objectMap [ rml:reference "DISTRITO-INSTALACION" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:neighborhood;
+    rr:objectMap [ rml:reference "BARRIO-INSTALACION" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:postalCode;
+    rr:objectMap [ rml:reference "CODIGO-POSTAL-INSTALACION"; rr:datatype xsd:Integer ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:latitude;
+    rr:objectMap [ rml:reference "LATITUD"; rr:datatype xsd:Float ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:longitude;
+    rr:objectMap [ rml:reference "LONGITUD"; rr:datatype xsd:Float ]
+  ] .
+
+### TriplesMap for ContactDetails ###
+<#TriplesMapContactDetails> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "installations.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://madrid.events.com/installation/{NOMBRE-INSTALACION}/contact";
+    rr:class ns:ContactDetails
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:telephone;
+    rr:objectMap [ rml:reference "TELEFONO" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate schema:email;
+    rr:objectMap [ rml:reference "EMAIL" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:transportation;
+    rr:objectMap [ rml:reference "TRANSPORTE" ]
+  ] .
