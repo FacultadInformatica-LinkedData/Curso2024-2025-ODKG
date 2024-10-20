@@ -7,7 +7,7 @@
 @base <http://www.example.com/videocameras/> .
 
 # Camera 101
-:Camera1 rdf:type :Camera ;
+:"CAM101" rdf:type :Camera ;
     :hasCameraID "CAM101" ;
     :hasType "DOMO" ;
     :hasLocation "BALLESTA-GRAN VIA" ;
