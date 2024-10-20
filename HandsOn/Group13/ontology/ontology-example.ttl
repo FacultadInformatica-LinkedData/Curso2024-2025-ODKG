@@ -8,7 +8,6 @@
 
 # Camera 101
 :"CAM101" rdf:type :Camera ;
-    :hasCameraID "CAM101" ;
     :hasType "DOMO" ;
     :hasLocation "BALLESTA-GRAN VIA" ;
     :hasResolution "1920x1080" ;
