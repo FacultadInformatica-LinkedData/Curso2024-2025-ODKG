@@ -1,0 +1,11 @@
+mappings:
+  DistritosMapping:
+    sources:
+      - ['Distritos-updated.csv~csv']
+    s: http://opendataandkg.org/group08/ontology/distrito/{COD_DIS}
+    po:
+      - [a, distrito:Distrito]
+      - [distrito:nombre, NOMBRE~xsd:string]
+      - [distrito:codigo, COD_DIS~xsd:integer]
+      - [distrito:longitud, Shape_Leng~xsd:decimal]
+      - [distrito:area, Shape_Area~xsd:decimal]
