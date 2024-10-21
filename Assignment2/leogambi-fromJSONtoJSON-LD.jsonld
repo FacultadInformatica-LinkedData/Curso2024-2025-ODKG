@@ -1,0 +1,36 @@
+{
+    "@context": {
+      "ex": "http://assignment2/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema": "http://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@type": "Person",
+    "foaf:fullName": "Leonardo Gambirasio",
+    "schema:homeTown": "Bassano del Grappa",
+    "age": { "@value": "24", "@type": "xsd:integer" },
+    "schema:alumniOf": "Università degli studi di Padova",
+    "ex:parents": {
+      "ex:father": "Carlo",
+      "ex:mother": "Alessandra"
+    },
+    "ex:subjects": [
+      {
+        "schema:name": "Open Data and Knowledge Graphs",
+        "ex:teachers": ["CORCHO GARCIA OSCAR", "GARCIA CASTRO RAUL"],
+        "schema:description": "Principles of Open Data and Knowledge Graphs."
+      },
+      {
+        "schema:name": "Data Mining and Time Series",
+        "ex:teachers": ["PEREZ PEREZ AURORA"],
+        "schema:description": "Principles of Data Mining and Time Series."
+      },
+      {
+        "schema:name": "Data Analysis",
+        "ex:teachers": ["MENASALVAS RUIZ ERNESTINA"],
+        "schema:description": "Principles of Data Analysis."
+      }
+    ]
+  }
+  
+  
