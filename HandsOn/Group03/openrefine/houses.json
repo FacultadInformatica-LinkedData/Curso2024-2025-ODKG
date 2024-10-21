@@ -1554,5 +1554,330 @@
     "op": "core/column-removal",
     "columnName": "ID",
     "description": "Remove column ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM OF BATHROOMS",
+    "description": "Remove column NUM OF BATHROOMS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BUY PRICE",
+    "description": "Remove column BUY PRICE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "RENT PRICE",
+    "expression": "grel:value/cells[\"SQUARE METERS\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "RENT PRICE BY SQ METER",
+    "columnInsertIndex": 10,
+    "description": "Create column RENT PRICE BY SQ METER at index 10 based on column RENT PRICE using expression grel:value/cells[\"SQUARE METERS\"].value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT PRICE BY SQ METER",
+          "expression": "value",
+          "columnName": "RENT PRICE BY SQ METER",
+          "from": 0,
+          "to": 210,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "RENT PRICE BY SQ METER",
+          "expression": "value",
+          "columnName": "RENT PRICE BY SQ METER",
+          "from": 0,
+          "to": 10,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "RENT PRICE BY SQ METER",
+          "columnName": "RENT PRICE BY SQ METER",
+          "query": "0",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "grel:value.replace(\"É\", \"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression grel:value.replace(\"É\", \"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "grel:value.replace(\"Ó\", \"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression grel:value.replace(\"Ó\", \"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "grel:value.replace(\"Á\", \"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression grel:value.replace(\"Á\", \"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "grel:value.replace(\"Í\", \"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression grel:value.replace(\"Í\", \"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "grel:value.replace(\"Ú\", \"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NEIGHBORHOOD using expression grel:value.replace(\"Ú\", \"U\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12 DE OCTUBRE-ORCASUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ORCASUR"
+      }
+    ],
+    "description": "Mass edit cells in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "STREET NAME",
+    "expression": "grel:if(cells['STREET NUM'].value == null,value, value + \" \" + cells['STREET NUM'].value)",
+    "onError": "set-to-blank",
+    "newColumnName": "ADDRESS",
+    "columnInsertIndex": 6,
+    "description": "Create column ADDRESS at index 6 based on column STREET NAME using expression grel:if(cells['STREET NUM'].value == null,value, value + \" \" + cells['STREET NUM'].value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:value.replace(\"É\",\"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"É\",\"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:value.replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "expression": "grel:value.replace(\"Ú\",\"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRICT using expression grel:value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SQUARE METERS",
+    "newColumnName": "SQUARE_METERS",
+    "description": "Rename column SQUARE METERS to SQUARE_METERS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUM OF ROOMS",
+    "newColumnName": "NUM_OF_ROOMS",
+    "description": "Rename column NUM OF ROOMS to NUM_OF_ROOMS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "STREET NAME",
+    "newColumnName": "STREET_NAME",
+    "description": "Rename column STREET NAME to STREET_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CITY",
+    "description": "Remove column CITY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STREET_NAME",
+    "description": "Remove column STREET_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "STREET NUM",
+    "description": "Remove column STREET NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DISTRICT CODE",
+    "description": "Remove column DISTRICT CODE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT PRICE",
+    "newColumnName": "RENT_PRICE",
+    "description": "Rename column RENT PRICE to RENT_PRICE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT PRICE BY SQ METER",
+    "newColumnName": "RENT_PRICE_BY_SQ_METER",
+    "description": "Rename column RENT PRICE BY SQ METER to RENT_PRICE_BY_SQ_METER"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RENT BY ROOM",
+    "newColumnName": "RENT_BY_ROOM",
+    "description": "Rename column RENT BY ROOM to RENT_BY_ROOM"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ENERGY CERTIFICATE",
+    "newColumnName": "ENERGY_CERTIFICATE",
+    "description": "Rename column ENERGY CERTIFICATE to ENERGY_CERTIFICATE"
   }
 ]

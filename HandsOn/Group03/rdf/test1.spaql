@@ -1,0 +1,22 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select * 
+where {
+    ?s rdf:type <https://schema.org/Apartment> .
+    ?s rdfs:label ?label .
+    ?s <https://schema.org/numberOfRooms> ?rooms .
+    ?s <https://schema.org/geo> ?geo .
+    ?geo rdf:type <https://schema.org/GeoCoordinates> .
+    ?geo <https://schema.org/address> ?address .
+    ?s <https://schema.org/containedInPlace> ?place .
+    ?place rdf:type <http://www.semanticweb.org/ontology/SmartBarrioMadrid#Neighborhood> .
+    ?place rdfs:label ?placelabel .
+    ?s <http://www.semanticweb.org/ontology/SmartBarrioMadrid#energyCertificate> ?certificate .
+    ?s <https://schema.org/floorSize> ?size .
+    ?size rdf:type <https://schema.org/QuantitativeValue> .
+    ?size <https://schema.org/value> ?sizevalue .
+    ?s <http://www.semanticweb.org/ontology/SmartBarrioMadrid#rentPrice> ?price .
+    ?price rdf:type <https://schema.org/MonetaryAmount> .
+    ?price <https://schema.org/value> ?pricevalue .
+    ?price <https://schema.org/currency> ?currency .
+} limit 100

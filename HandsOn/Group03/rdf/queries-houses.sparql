@@ -1,0 +1,88 @@
+#1. Get 20 apartments with their labels, number of rooms and rent prices
+prefix schema: <https://schema.org/>
+prefix base: <http://www.semanticweb.org/resource/>
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?apartment ?label ?rooms ?rentPrice
+where {
+  ?apartment a schema:Apartment ;
+             rdfs:label ?label ;
+             schema:numberOfRooms ?rooms ;
+             barrio:rentPrice ?rentAmount .
+  
+  ?rentAmount schema:value ?rentPrice .
+}
+limit 20
+
+
+
+#2. Get the neighborhoods and the districts they are part of
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix schema: <https://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?neighborhood ?neighborhoodLabel ?districtLabel
+where {
+  ?neighborhood a barrio:Barrio ;
+                rdfs:label ?neighborhoodLabel ;
+                schema:containedInPlace ?district .
+
+  ?district a barrio:District ;
+            rdfs:label ?districtLabel .
+}
+
+
+
+#3. Get 20 apartments that have more than 3 rooms and show their energy certificates
+prefix schema: <https://schema.org/>
+prefix base: <http://www.semanticweb.org/resource/>
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?apartment ?label ?numRooms ?energyCertificate
+where {
+  ?apartment a schema:Apartment ;
+             rdfs:label ?label ;
+             schema:numberOfRooms ?numRooms ;
+             barrio:energyCertificate ?energyCertificate .
+  
+  filter(?numRooms > 3)
+}
+limit 20
+
+
+
+#4. Show the total number of apartments available for each district
+prefix schema: <https://schema.org/>
+prefix base: <http://www.semanticweb.org/resource/>
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?districtLabel (count(?apartment) as ?numApartments)
+where {
+  ?apartment a schema:Apartment ;
+             schema:containedInPlace ?district .
+             
+  ?district a barrio:District ;
+            rdfs:label ?districtLabel .
+}
+group by ?districtLabel
+
+
+
+#5. Get the apartments that are cheaper than 1000 euros
+prefix schema: <https://schema.org/>
+prefix base: <http://www.semanticweb.org/resource/>
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?apartment ?label ?rentPrice
+where {
+  ?apartment a schema:Apartment ;
+             rdfs:label ?label ;
+             barrio:rentPrice ?rentAmount .
+
+  ?rentAmount schema:value ?rentPrice .
+  filter(?rentPrice < 1000)
+}
