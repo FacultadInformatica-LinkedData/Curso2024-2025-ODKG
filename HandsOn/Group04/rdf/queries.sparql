@@ -1,0 +1,135 @@
+# QUERY 1
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT (COUNT(?chargePoint) AS ?total)
+WHERE {
+    ?chargePoint rdf:type vocab:ChargePoint .
+}
+
+# SPARQL result:
+# 105
+
+# QUERY 2
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?chargePoint
+WHERE {
+    ?chargePoint rdf:type vocab:ChargePoint .
+}
+
+# SPARQL result:
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_CoCe18
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_CoCe20
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_EMT
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_PRIV
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/02_CoCe18
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/02_CoCe20
+# .....
+
+# QUERY 3
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?chargePoint
+WHERE {
+    ?chargePoint vocab:managedBy ?operator .
+    ?operator rdf:label ?name .
+    FILTER( ?name = "GIC") .
+}
+
+# SPARQL result:
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/01_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/04_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/05_PRIV
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/06_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/09_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/10_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/12_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/17_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/21_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/22_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/23_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/24_VP
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/chargingPoint/25_VP
+
+# QUERY 4
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT (COUNT(?parking) AS ?total)
+WHERE {
+    ?parking rdf:type vocab:Parking .
+}
+
+# SPARQL result:
+# 63
+
+# QUERY 5
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?parkings
+WHERE {
+    ?parkings vocab:locatedInStreet ?street .
+    ?street rdf:label ?name .
+    FILTER( ?name = "Calle Fuente De Lima") .
+}
+
+# SPARQL result:
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/11483771
+
+# QUERY 6
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT ?parkings
+WHERE {
+    ?parkings rdf:type vocab:Parking .
+    ?parkings vocab:locatedInStreet ?street .
+    ?street vocab:locatedInNeighborhood ?neighborhood .
+    ?neighborhood vocab:isPartOf ?district .
+    ?district rdf:label ?name .
+    FILTER( ?name = "Retiro") .
+}
+
+# SPARQL result:
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/13465
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/183748
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/24809
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/parking/81828
+
+# QUERY 7
+
+PREFIX vocab: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT (COUNT(?place) AS ?total)
+WHERE {
+    ?place rdf:type ?class .
+    ?place vocab:locatedInStreet ?street .
+    ?street vocab:locatedInNeighborhood ?neighborhood .
+    ?neighborhood vocab:isPartOf ?district .
+    ?district rdf:label ?name .
+    FILTER(?name = "Retiro")
+}
+GROUP BY ?class
+
+#  SPARQL result:
+# 5
+# 4
