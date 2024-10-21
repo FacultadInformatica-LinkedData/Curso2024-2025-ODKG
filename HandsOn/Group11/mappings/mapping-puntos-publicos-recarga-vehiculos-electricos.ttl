@@ -1,0 +1,252 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix ex: <http://example.com/> .
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix sc: <https://schema.org/> .
+@prefix swpo: <http://sw-portal.deri.org/ontologies/swportal#> .
+
+map:map_Fechas_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Fechas" ;
+	rr:predicateObjectMap map:pom_015, map:pom_016, map:pom_017 ;
+	rr:subjectMap map:s_002 .
+
+map:map_Lugar_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Lugar" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007 ;
+	rr:subjectMap map:s_000 .
+
+map:map_Situacion_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Situacion" ;
+	rr:predicateObjectMap map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014 ;
+	rr:subjectMap map:s_001 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant ns:Lugar ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "ID_Punto" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "COD_DIS" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "EMPLAZAMIENTO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "ESTADO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "COD_BAR" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "BARRIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "DISTRITO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_008 rdf:type rr:ObjectMap ;
+	rr:constant ns:Situacion ;
+	rr:termType rr:IRI .
+
+map:om_009 rml:reference "CARACTERÍSTICAS_EQUIPO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_010 rml:reference "ESTADO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_011 rml:reference "GESTIÓN" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_012 rml:reference "INFO_ADICIONAL" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_013 rml:reference "N_EQUIPOS" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_014 rml:reference "OPERADOR" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_015 rdf:type rr:ObjectMap ;
+	rr:constant ns:Fechas ;
+	rr:termType rr:IRI .
+
+map:om_016 rml:reference "FECHA_EDICION" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_017 rml:reference "HORARIO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant swpo:hasLocation .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant ns:codigoDeDistrito .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant ns:emplazamiento .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant ns:estado .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant ns:neighborhoodCode .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant ns:Barrio .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant ns:Distrito .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant ns:caracteristicasEquipo .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant ns:estado .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant ns:gestion .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant ns:infoAdicional .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant ns:numeroEquipos .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant ns:operador .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant ns:fechaEdicion .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant sc:openingHours .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_017 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_Fechas_000, map:map_Lugar_000, map:map_Situacion_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/{UBICACIÓN}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/{ID_Punto}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/{ID_Punto}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "../csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "../csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "../csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv" ;
+	rdf:type rml:LogicalSource .
+
