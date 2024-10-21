@@ -1,0 +1,15 @@
+prefixes:
+ ex: "http://example.com/"
+
+mappings:
+  person:
+    sources:
+      - ['data.json~jsonpath', '$.cameras[*]']
+    s: http://example.com/$(ID Cámara)
+    po:
+      - [a, foaf:Camera]
+      - [ex:type, $(Tipo)]
+      - [ex:location, $(Ubicación)]
+      - [ex:resolution, $(Resolución)]
+      - [ex:zoom, $(Zoom Optico)]
+      - [ex:adquision, $(Año Adquisición)]
