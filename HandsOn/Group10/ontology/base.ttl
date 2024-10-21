@@ -32,7 +32,7 @@ bicimap:endAt a owl:ObjectProperty ;
     rdfs:domain bicimap:BikeTrip ;
     rdfs:range schema:Place ;
     dct:title "Bike location at the start of the trip"@en ;
-    dct:alternative "Localización de la bicicleta al inicio del viaje."@es ;
+    dct:alternative "Localizaciï¿½n de la bicicleta al inicio del viaje."@es ;
     dct:description "schema:Place where the bike was at the start of the trip. Typically a BikeStation class."@en ;
     dct:publisher <http://bicimap.com/publisher#> ;
     rdf:type dctypes:Dataset .
@@ -42,18 +42,8 @@ bicimap:startAt a owl:ObjectProperty ;
     rdfs:domain bicimap:BikeTrip ;
     rdfs:range schema:Place ;
     dct:title "Bike location at the end of the trip"@en ;
-    dct:alternative "Localización de la bicicleta al final del viaje."@es ;
+    dct:alternative "Localizaciï¿½n de la bicicleta al final del viaje."@es ;
     dct:description "schema:Place where the bike was at the end of the trip. Typically a BikeStation class."@en ;
-    dct:publisher <http://bicimap.com/publisher#> ;
-    rdf:type dctypes:Dataset .
-
-bicimap:tripMinutes a owl:DatatypeProperty ;
-    rdfs:label "trip minutes" ;
-    rdfs:domain bicimap:BikeTrip ;
-    rdfs:range xsd:float ;
-    dct:title "Duration of the bike trip"@en ;
-    dct:alternative "Duración del viaje en bicicleta."@es ;
-    dct:description "Duration in minutes that the bike trip took."@en ;
     dct:publisher <http://bicimap.com/publisher#> ;
     rdf:type dctypes:Dataset .
 
@@ -81,7 +71,7 @@ bicimap:lockDock a owl:DatatypeProperty ;
     rdfs:label "lock dock" ;
     rdfs:domain bicimap:BikeTrip ;
     dct:title "Locking dock of a bike station"@en ;
-    dct:alternative "Muelle de bloqueo en la estación de bicicletas."@es ;
+    dct:alternative "Muelle de bloqueo en la estaciï¿½n de bicicletas."@es ;
     dct:description "The charging dock in the bike station this bike was taken to."@en ;
     dct:publisher <http://bicimap.com/publisher#> ;
     rdf:type dctypes:Dataset .
@@ -90,7 +80,7 @@ bicimap:unlockDock a owl:DatatypeProperty ;
     rdfs:label "unlock dock" ;
     rdfs:domain bicimap:BikeTrip ;
     dct:title "Unlocking dock of a bike station"@en ;
-    dct:alternative "Muelle de desbloqueo en la estación de bicicletas."@es ;
+    dct:alternative "Muelle de desbloqueo en la estaciï¿½n de bicicletas."@es ;
     dct:description "The charging dock in the bike station this bike was taken from."@en ;
     dct:publisher <http://bicimap.com/publisher#> ;
     rdf:type dctypes:Dataset .
@@ -99,7 +89,7 @@ bicimap:BikeStation a owl:Class ;
     rdfs:label "Bike Station" ;
     rdfs:subClassOf schema:Place ;
     dct:title "Bike station"@en ;
-    dct:alternative "Estación de bicicletas."@es ;
+    dct:alternative "Estaciï¿½n de bicicletas."@es ;
     dct:description "Bike station with coordinates and an address."@en ;
     dct:publisher <http://bicimap.com/publisher#> ;
     rdf:type dctypes:Dataset .

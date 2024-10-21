@@ -1,0 +1,64 @@
+-- Query 1
+SELECT ?trips ?stationName ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips <https://bicimap.com/ontology#endAt> <http://bicimap.com/places/Station170> .
+  <http://bicimap.com/entity/Station170> <https://schema.org/address> ?address .
+  ?address <https://schema.org/streetAddress> ?stationName .
+  ?trips <https://bicimap.com/ontology#unlockDate> ?unlockDate .
+  ?trips <https://bicimap.com/ontology#lockDate> ?lockDate .
+  ?trips <https://bicimap.com/ontology#bikeId> ?bikeId .
+}
+LIMIT 10
+
+-- Query 2
+SELECT ?trips ?stationName ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips <https://bicimap.com/ontology#endAt> <http://bicimap.com/places/FreePlace715> .
+  <http://bicimap.com/entity/FreePlace715> <https://schema.org/address> ?address .
+  ?address <https://schema.org/streetAddress> ?stationName .
+  ?trips <https://bicimap.com/ontology#unlockDate> ?unlockDate .
+  ?trips <https://bicimap.com/ontology#lockDate> ?lockDate .
+  ?trips <https://bicimap.com/ontology#bikeId> ?bikeId .
+}
+LIMIT 10
+
+-- Query 3
+SELECT ?trips ?stationName ?unlockDate ?bikeId
+WHERE {
+  ?trips <https://bicimap.com/ontology#startAt> <http://bicimap.com/places/Station170> .
+  <http://bicimap.com/entity/Station170> <https://schema.org/address> ?address .
+  ?address <https://schema.org/streetAddress> ?stationName .
+  ?trips <https://bicimap.com/ontology#unlockDate> ?unlockDate .
+  ?trips <https://bicimap.com/ontology#bikeId> ?bikeId .
+   
+  FILTER (SUBSTR(STR(?unlockDate), 1, 10) = "2023-02-07")
+}
+LIMIT 10
+
+-- Query 4
+SELECT ?trips ?station ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips <https://bicimap.com/ontology#lockDock> ?lockDock .
+  ?trips <https://bicimap.com/ontology#startAt> ?station .
+  ?trips <https://bicimap.com/ontology#unlockDate> ?unlockDate .
+  ?trips <https://bicimap.com/ontology#lockDate> ?lockDate .
+  ?trips <https://bicimap.com/ontology#bikeId> ?bikeId .
+
+  FILTER (SUBSTR(STR(?lockDock), 1, 2) = "24")
+}
+LIMIT 10
+
+-- Query 5
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?trips ?station ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips <https://bicimap.com/ontology#startAt> ?station .
+  ?trips <https://bicimap.com/ontology#unlockDate> ?unlockDate .
+  ?trips <https://bicimap.com/ontology#lockDate> ?lockDate .
+  ?trips <https://bicimap.com/ontology#bikeId> ?bikeId .
+
+  FILTER (?bikeId = "33"^^xsd:integer)
+}
+LIMIT 10
+
