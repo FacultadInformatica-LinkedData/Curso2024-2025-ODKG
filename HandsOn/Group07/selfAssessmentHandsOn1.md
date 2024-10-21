@@ -22,4 +22,4 @@
 - [X] Includes a description of the application user interface
 
 ## Comments on the self-assessment
-_(If required)_
+_We have used CSS to improve the visualization of the requirements. For future cases, let us know if you prefer it with or without styling._
