@@ -16,6 +16,38 @@ dc:creator a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
+ns:Alcance a owl:Class ;
+    rdfs:label "Alcance" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:AtropelloPersona a owl:Class ;
+    rdfs:label "Atropello Persona" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:Caida a owl:Class ;
+    rdfs:label "Caida" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:ChoqueObstaculo a owl:Class ;
+    rdfs:label "Choque Obstaculo" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:ColisionDoble a owl:Class ;
+    rdfs:label "Colision Doble" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:ColisionMultiple a owl:Class ;
+    rdfs:label "Colision Multiple" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:Otras a owl:Class ;
+    rdfs:label "Otras" ;
+    rdfs:subClassOf ns:Accidente .
+
+ns:Vuelco a owl:Class ;
+    rdfs:label "Vuelco" ;
+    rdfs:subClassOf ns:Accidente .
+
 ns:cod_lesividad a owl:DatatypeProperty ;
     rdfs:label "cod_lesividad" ;
     rdfs:domain ns:Lesividad ;
@@ -59,8 +91,8 @@ ns:hora a owl:DatatypeProperty ;
 ns:lesividad a owl:DatatypeProperty,
         owl:ObjectProperty ;
     rdfs:label "lesividad" ;
-    rdfs:domain ns:Accidente,
-        ns:Lesividad ;
+    rdfs:domain ns:Lesividad,
+        ns:Participante ;
     rdfs:range ns:Lesividad,
         xsd:string .
 
@@ -72,11 +104,6 @@ ns:localizacion a owl:DatatypeProperty ;
 ns:num_expediente a owl:DatatypeProperty ;
     rdfs:label "num_expediente" ;
     rdfs:domain ns:Accidente ;
-    rdfs:range xsd:string .
-
-ns:numero a owl:DatatypeProperty ;
-    rdfs:label "numero" ;
-    rdfs:domain ns:Distrito ;
     rdfs:range xsd:string .
 
 ns:positiva_alcohol a owl:DatatypeProperty ;
@@ -134,11 +161,11 @@ owl:versionInfo a owl:AnnotationProperty .
 ns:Lesividad a owl:Class ;
     rdfs:label "Lesividad" .
 
-ns:Localizacion a owl:Class ;
-    rdfs:label "Localizacion" .
-
 ns:Distrito a owl:Class ;
     rdfs:label "Distrito" .
+
+ns:Localizacion a owl:Class ;
+    rdfs:label "Localizacion" .
 
 ns:Participante a owl:Class ;
     rdfs:label "Participante" .
