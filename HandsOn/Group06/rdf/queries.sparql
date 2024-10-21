@@ -1,0 +1,54 @@
+#All the measurements from a station with their magnitudes
+
+PREFIX mair: <http://MadridAirQuality.org/#>
+
+SELECT ?stationName ?measurementDay ?measurementMonth ?measurementYear ?measurementValue ?magnitudeName ?validity
+WHERE {
+    {
+        # Join with the station to get the station name
+        ?station mair:hasStationLocationID "35" ;
+        mair:hasStationName ?stationName;
+        mair:hasMeasurement ?measurement.
+        
+        # Find the measurement for Sulfur Dioxide (magnitude 1) at the street with location ID 35
+        ?measurement mair:hasMagnitude ?magnitude ;
+                     mair:hasMeasurementDay ?measurementDay ;
+                     mair:hasMeasurementMonth ?measurementMonth ;
+                     mair:hasMeasurementYear ?measurementYear ;
+                     mair:hasMeasurementValue ?measurementValue ;
+                     mair:isMeasurementValid ?validity .
+       ?magnitude mair:hasMagnitudeName ?magnitudeName
+    }
+}
+
+LIMIT 10
+
+#List all stations
+PREFIX mair: <http://MadridAirQuality.org/#>
+
+SELECT ?station ?stationName
+WHERE {
+    ?station mair:hasStationName ?stationName .
+}
+
+#List all magnitudes with their codes and measuremente data
+PREFIX mair: <http://MadridAirQuality.org/#>
+
+SELECT ?magnitudeCode ?magnitudeName ?measurementUnit
+WHERE {
+    ?magnitude mair:hasMagnitudeName ?magnitudeName ;
+    mair:hasMagnitudeCode ?magnitudeCode;
+    mair:hasMagnitudeMeasurementUnit ?measurementUnit.
+}
+
+#List all the station with their municipalities and provinces
+PREFIX mair: <http://MadridAirQuality.org/#>
+
+SELECT ?provinceName ?municipalityName ?stationName
+WHERE {
+?province mair:hasProvinceName ?provinceName;
+    mair:hasMunicipality ?municipality.
+    ?municipality mair:hasMunicipalityName ?municipalityName;
+    mair:hasStation ?Station.
+    ?station mair:hasStationName ?stationName.
+}
