@@ -1,0 +1,20 @@
+MAGNITUDE_CODE,PARAMETER_NAME,MEASUREMENT_UNIT,same_as_wikidata_SIUnit
+1,Sulfur Dioxide,parts per million,https://www.wikidata.org/wiki/Q61610698
+6,Carbon Monoxide,parts per million,https://www.wikidata.org/wiki/Q61610698
+7,Nitrogen Monoxide,parts per million,https://www.wikidata.org/wiki/Q61610698
+8,Nitrogen Dioxide,parts per million,https://www.wikidata.org/wiki/Q61610698
+9,Particles less than 2.5 micrometers,parts per million,https://www.wikidata.org/wiki/Q61610698
+10,Particles less than 10 micrometers,parts per million,https://www.wikidata.org/wiki/Q61610698
+12,Nitrogen Oxides,parts per million,https://www.wikidata.org/wiki/Q61610698
+14,Ozone,parts per million,https://www.wikidata.org/wiki/Q61610698
+20,Tuolene,parts per million,https://www.wikidata.org/wiki/Q61610698
+30,Benzene,parts per million,https://www.wikidata.org/wiki/Q61610698
+35,Ethylbenzene,parts per million,https://www.wikidata.org/wiki/Q61610698
+80,UV Radaition,ultraviolet radiation,https://www.wikidata.org/wiki/Q61610698
+81,Wind Speed,metre per second,https://www.wikidata.org/wiki/Q61610698
+82,Wind Direction,,https://www.wikidata.org/wiki/Q61610698
+83,Temperatures,degree Celsius,https://www.wikidata.org/wiki/Q61610698
+86,Relative Humidity,relative humidity,https://www.wikidata.org/wiki/Q61610698
+87,Barometric Preassure,atmospheric pressure,https://www.wikidata.org/wiki/Q61610698
+88,Solar Radiation,solar radiation,https://www.wikidata.org/wiki/Q61610698
+89,Precipitation,precipitation,https://www.wikidata.org/wiki/Q61610698
