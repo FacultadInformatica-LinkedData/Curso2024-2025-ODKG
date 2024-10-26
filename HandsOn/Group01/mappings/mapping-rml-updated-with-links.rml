@@ -10,205 +10,144 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix res: <http://www.bikeradar.es/resources/> .
 
-map:map_barrio_000 rml:logicalSource map:source_001 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "barrio" ;
-	rr:predicateObjectMap map:pom_009, map:pom_010, map:pom_011 ;
-	rr:subjectMap map:s_001 .
+<#TriplesMap_barrio>
+    rr:logicalSource [
+        rml:source "aparcabicis202410-updated-v2-with-links";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$[*]"
+    ];
+    rr:subjectMap [
+        rr:template "http://www.bikeradar.es/resources/Barrio/{BARRIO}";
+        rr:termType rr:IRI;
+        rr:class ns:Barrio
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant rdf:type;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:constant ns:Barrio;
+            rr:termType rr:IRI
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:isInDistrito;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "DISTRITO"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:sameAs;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "WIKIDATA_BARRIO"
+        ]
+    ].
 
-map:map_bikeParking_000 rml:logicalSource map:source_000 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "bikeParking" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008 ;
-	rr:subjectMap map:s_000 .
+<#TriplesMap_bikeParking>
+    rr:logicalSource [
+        rml:source "aparcabicis202410-updated-v2-with-links";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$[*]"
+    ];
+    rr:subjectMap [
+        rr:template "http://www.bikeradar.es/resources/BicycleParkingSpot/{ID}";
+        rr:termType rr:IRI;
+        rr:class ns:BicycleParkingSpot
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant rdf:type;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:constant ns:BicycleParkingSpot;
+            rr:termType rr:IRI
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:id;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "ID"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:direccion;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "DIRECCION"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:isInDistrito;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "DISTRITO"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:isInBarrio;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "BARRIO"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:latitud;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "LATITUD";
+            rr:datatype xsd:float
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:longitud;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "LONGITUD";
+            rr:datatype xsd:float
+        ]
+    ].
+    
+<#TriplesMap_distrito>
+    rr:logicalSource [
+        rml:source "aparcabicis202410-updated-v2-with-links";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$[*]"
+    ];
+    rr:subjectMap [
+        rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}";
+        rr:termType rr:IRI;
+        rr:class ns:Distrito
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant rdf:type;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:constant ns:Distrito;
+            rr:termType rr:IRI
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:sameAs;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "WIKIDATA_DISTRITO"
+        ]
+    ].
 
-map:map_distrito_000 rml:logicalSource map:source_002 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "distrito" ;
-	rr:predicateObjectMap map:pom_012, map:pom_013 ;
-	rr:subjectMap map:s_002 .
-
-map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant ns:BicycleParkingSpot ;
-	rr:termType rr:IRI .
-
-map:om_001 rml:reference "ID" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_002 rml:reference "DIRECCION" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_003 rml:reference "DISTRITO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_004 rml:reference "BARRIO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_005 rml:reference "LATITUD" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:float ;
-	rr:termType rr:Literal .
-
-map:om_006 rml:reference "LONGITUD" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:float ;
-	rr:termType rr:Literal .
-
-map:om_007 rml:reference "FECHA_INSTALACION" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:dateTime ;
-	rr:termType rr:Literal .
-
-map:om_008 rml:reference "MODELO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_009 rdf:type rr:ObjectMap ;
-	rr:constant ns:Barrio ;
-	rr:termType rr:IRI .
-
-map:om_010 rdf:type rr:ObjectMap ;
-	rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}" ;
-	rr:termType rr:Literal .
-
-map:om_011 rml:reference "WIKIDATA_BARRIO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_012 rdf:type rr:ObjectMap ;
-	rr:constant ns:Distrito ;
-	rr:termType rr:IRI .
-
-map:om_013 rml:reference "WIKIDATA_DISTRITO" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:pm_000 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant ns:id .
-
-map:pm_002 rdf:type rr:PredicateMap ;
-	rr:constant ns:direccion .
-
-map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant ns:isInDistrito .
-
-map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant ns:isInBarrio .
-
-map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant ns:latitud .
-
-map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant ns:longitud .
-
-map:pm_007 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasFechaInstalacion .
-
-map:pm_008 rdf:type rr:PredicateMap ;
-	rr:constant ns:modelo .
-
-map:pm_009 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant ns:isInDistrito .
-
-map:pm_011 rdf:type rr:PredicateMap ;
-	rr:constant ns:sameAs .
-
-map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant ns:sameAs .
-
-map:pom_000 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_000 ;
-	rr:predicateMap map:pm_000 .
-
-map:pom_001 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_001 ;
-	rr:predicateMap map:pm_001 .
-
-map:pom_002 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_002 ;
-	rr:predicateMap map:pm_002 .
-
-map:pom_003 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_003 ;
-	rr:predicateMap map:pm_003 .
-
-map:pom_004 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_004 ;
-	rr:predicateMap map:pm_004 .
-
-map:pom_005 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_005 ;
-	rr:predicateMap map:pm_005 .
-
-map:pom_006 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_006 ;
-	rr:predicateMap map:pm_006 .
-
-map:pom_007 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_007 ;
-	rr:predicateMap map:pm_007 .
-
-map:pom_008 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_008 ;
-	rr:predicateMap map:pm_008 .
-
-map:pom_009 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_009 ;
-	rr:predicateMap map:pm_009 .
-
-map:pom_010 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_010 ;
-	rr:predicateMap map:pm_010 .
-
-map:pom_011 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_011 ;
-	rr:predicateMap map:pm_011 .
-
-map:pom_012 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_012 ;
-	rr:predicateMap map:pm_012 .
-
-map:pom_013 rdf:type rr:PredicateObjectMap ;
-	rr:objectMap map:om_013 ;
-	rr:predicateMap map:pm_013 .
-
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_barrio_000, map:map_bikeParking_000, map:map_distrito_000 ;
-	rdf:type <http://rdfs.org/ns/void#Dataset> .
-
-map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://www.bikeradar.es/resources/BicycleParkingSpot/{ID}" .
-
-map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://www.bikeradar.es/resources/Barrio/{BARRIO}" .
-
-map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}" .
-
-map:source_000 rml:iterator "$[*]" ;
-	rml:referenceFormulation ql:JSONPath ;
-	rml:source "C:\Users\Claudia\OneDrive - Universidad Politécnica de Madrid\Universidad\Master\Open data\group proyect\aparcabicis202410-updated-with-links.json" ;
-	rdf:type rml:LogicalSource .
-
-map:source_001 rml:iterator "$[*]" ;
-	rml:referenceFormulation ql:JSONPath ;
-	rml:source "C:\Users\Claudia\OneDrive - Universidad Politécnica de Madrid\Universidad\Master\Open data\group proyect\aparcabicis202410-updated-with-links.json" ;
-	rdf:type rml:LogicalSource .
-
-map:source_002 rml:iterator "$[*]" ;
-	rml:referenceFormulation ql:JSONPath ;
-	rml:source "C:\Users\Claudia\OneDrive - Universidad Politécnica de Madrid\Universidad\Master\Open data\group proyect\aparcabicis202410-updated-with-links.json" ;
-	rdf:type rml:LogicalSource .
 
