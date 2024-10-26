@@ -1,0 +1,3444 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NEIGHBORHOOD to type Q10267336"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q390435",
+      "name": "Villaverde Alto, Casco Histórico de Villaverde",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde Alto, Casco Histórico de Villaverde (Q390435) for cells containing \"VILLAVERDE\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "AMBROZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544374",
+      "name": "Casco Histórico de Vicálvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"AMBROZ\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "EL CAÑAVERAL - LOS BERROCALES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5821309",
+      "name": "El Cañaveral neighborhood",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Cañaveral neighborhood (Q5821309) for cells containing \"EL CAÑAVERAL - LOS BERROCALES\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VALDEBERNARDO - VALDERRIBAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q43025212",
+      "name": "Valdebernardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdebernardo (Q43025212) for cells containing \"VALDEBERNARDO - VALDERRIBAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "ENSANCHE DE VALLECAS - LA GAVIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ensanche de Vallecas (Q3847485) for cells containing \"ENSANCHE DE VALLECAS - LA GAVIA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CUZCO-CASTILLEJOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11913212",
+      "name": "Castillejos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Castillejos (Q11913212) for cells containing \"CUZCO-CASTILLEJOS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VENTILLA-ALMENARA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2265427",
+      "name": "Almenara",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Almenara (Q2265427) for cells containing \"VENTILLA-ALMENARA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LAS TABLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076589",
+      "name": "Las Tablas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Las Tablas (Q3076589) for cells containing \"LAS TABLAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "MONTECARMELO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10271137",
+      "name": "El Goloso",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Goloso (Q10271137) for cells containing \"MONTECARMELO\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "TRES OLIVOS - VALVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31132",
+      "name": "Valverde",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valverde (Q31132) for cells containing \"TRES OLIVOS - VALVERDE\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CONDE ORGAZ-PIOVERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5964851",
+      "name": "La Piovera",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Piovera (Q5964851) for cells containing \"CONDE ORGAZ-PIOVERA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "SANCHINARRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10388714",
+      "name": "Valdefuentes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdefuentes (Q10388714) for cells containing \"SANCHINARRO\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VALDEBEBAS - VALDEFUENTES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10388714",
+      "name": "Valdefuentes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdefuentes (Q10388714) for cells containing \"VALDEBEBAS - VALDEFUENTES\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VIRGEN DEL CORTIJO - MANOTERAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10388714",
+      "name": "Valdefuentes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdefuentes (Q10388714) for cells containing \"VIRGEN DEL CORTIJO - MANOTERAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "NUEVOS MINISTERIOS-RIOS ROSAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10366270",
+      "name": "Ríos Rosas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ríos Rosas (Q10366270) for cells containing \"NUEVOS MINISTERIOS-RIOS ROSAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "BERNABEU-HISPANOAMERICA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3814573",
+      "name": "Hispanoamérica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hispanoamérica (Q3814573) for cells containing \"BERNABEU-HISPANOAMERICA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LAVAPIES-EMBAJADORES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2566034",
+      "name": "Lavapiés",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Lavapiés (Q2566034) for cells containing \"LAVAPIES-EMBAJADORES\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHUECA-JUSTICIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q284642",
+      "name": "Chueca",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Chueca (Q284642) for cells containing \"CHUECA-JUSTICIA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "HUERTAS-CORTES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2535637",
+      "name": "Cortes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cortes (Q2535637) for cells containing \"HUERTAS-CORTES\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "TETUAN",
+    "description": "Clear recon data for cells containing \"TETUAN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "USERA",
+    "description": "Clear recon data for cells containing \"USERA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "MONCLOA",
+    "description": "Clear recon data for cells containing \"MONCLOA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "MORATALAZ",
+    "description": "Clear recon data for cells containing \"MORATALAZ\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "ARROYO DEL FRESNO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31134",
+      "name": "Mirasierra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mirasierra (Q31134) for cells containing \"ARROYO DEL FRESNO\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "HORTALEZA",
+    "description": "Clear recon data for cells containing \"HORTALEZA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CARABANCHEL",
+    "description": "Clear recon data for cells containing \"CARABANCHEL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CENTRO",
+    "description": "Clear recon data for cells containing \"CENTRO\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CAMPO DE LAS NACIONES-CORRALEJOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10260772",
+      "name": "Corralejos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Corralejos (Q10260772) for cells containing \"CAMPO DE LAS NACIONES-CORRALEJOS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://wikidata.reconci.link/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q35120",
+        "name": "entidad"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NEIGHBORHOOD to type Q35120"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "errors",
+                "l": "errors"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PAU DE CARABANCHEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q953929",
+      "name": "Buenavista",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Buenavista (Q953929) for cells containing \"PAU DE CARABANCHEL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "errors",
+                "l": "errors"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "NEIGHBORHOOD: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "NEIGHBORHOOD",
+          "from": 32,
+          "to": 40,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "BUENA VISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q953929",
+      "name": "Buenavista",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Buenavista (Q953929) for cells containing \"BUENA VISTA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "VILLA DE VALLECAS",
+    "description": "Clear recon data for cells containing \"VILLA DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "RETIRO",
+    "description": "Clear recon data for cells containing \"RETIRO\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "palomeras sure",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10343901",
+      "name": "Palomeras Sureste",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 34
+    },
+    "shareNewTopics": false,
+    "description": "Match item Palomeras Sureste (Q10343901) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "palomeras bajas",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10343902",
+      "name": "Palomeras Bajas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 42
+    },
+    "shareNewTopics": false,
+    "description": "Match item Palomeras Bajas (Q10343902) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Numancia",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10338144",
+      "name": "Numancia",
+      "types": [
+        "Q10267336",
+        "Q123705"
+      ],
+      "score": 39
+    },
+    "shareNewTopics": false,
+    "description": "Match item Numancia (Q10338144) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "San Diego",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11946851",
+      "name": "San Diego",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 32
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Diego (Q11946851) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Portazgo",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18005921",
+      "name": "Portazgo",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 33
+    },
+    "shareNewTopics": false,
+    "description": "Match item Portazgo (Q18005921) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Entrevías",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q71756",
+      "name": "Entrevías",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Entrevías (Q71756) for cells containing \"PUENTE DE VALLECAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Aluche",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31140",
+      "name": "Aluche",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Aluche (Q31140) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Lucero",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31162",
+      "name": "Lucero",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Lucero (Q31162) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Cármenes",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10319792",
+      "name": "Los Cármenes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Los Cármenes (Q10319792) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Campamento",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31169",
+      "name": "Campamento",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Campamento (Q31169) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Águilas",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5971372",
+      "name": "Las Águilas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Las Águilas (Q5971372) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Puerta del Ángel",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31142",
+      "name": "Barrio de Puerta del Ángel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barrio de Puerta del Ángel (Q31142) for cells containing \"LATINA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Las tablas",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31132",
+      "name": "Valverde",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valverde (Q31132) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "La paz",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5869740",
+      "name": "La Paz",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 26
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Paz (Q5869740) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Peñagrande",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3319582",
+      "name": "Peñagrande",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item Peñagrande (Q3319582) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Montecarmelo",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31134",
+      "name": "Mirasierra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mirasierra (Q31134) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Mirasierra",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31134",
+      "name": "Mirasierra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mirasierra (Q31134) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Pilar",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Pilar",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PILAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"PILAR\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Fuentelarreina",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10286156",
+      "name": "Fuentelarreina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuentelarreina (Q10286156) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Valverde",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31132",
+      "name": "Valverde",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 53
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valverde (Q31132) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Valverde",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "PILAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"PILAR\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1059853",
+      "name": "Fuencarral",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral (Q1059853) for cells containing \"FUENCARRAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMBERI",
+    "description": "Clear recon data for cells containing \"CHAMBERI\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CIUDAD LINEAL",
+    "description": "Clear recon data for cells containing \"CIUDAD LINEAL\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Nueva España",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10338128",
+      "name": "Nueva España",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nueva España (Q10338128) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "el viso",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4778",
+      "name": "El Viso",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Viso (Q4778) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Castilla",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3813735",
+      "name": "Castilla",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Castilla (Q3813735) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Hispanoamérica",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3814573",
+      "name": "Hispanoamérica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hispanoamérica (Q3814573) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Prosperidad",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4776",
+      "name": "Prosperidad",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Prosperidad (Q4776) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "Ciudad Jardín",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773744",
+      "name": "Ciudad Jardín",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ciudad Jardín (Q3773744) for cells containing \"CHAMARTIN\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "MALASAÑA-UNIVERSIDAD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10387767",
+      "name": "Universidad",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 74
+    },
+    "shareNewTopics": false,
+    "description": "Match item Universidad (Q10387767) for cells containing \"MALASAÑA-UNIVERSIDAD\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "BARRIO DE SALAMANCA",
+    "description": "Clear recon data for cells containing \"BARRIO DE SALAMANCA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "ARGANZUELA",
+    "description": "Clear recon data for cells containing \"ARGANZUELA\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NEIGHBORHOOD",
+    "similarValue": "BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9701730",
+      "name": "Casco Histórico de Barajas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 48
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Barajas (Q9701730) for cells containing \"BARAJAS\" in column NEIGHBORHOOD"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NEIGHBORHOOD: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NEIGHBORHOOD",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "TITLE",
+          "columnName": "TITLE",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NEIGHBORHOOD",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "NEIGHBORHOOD_URL_WIKI",
+    "columnInsertIndex": 2,
+    "description": "Create column NEIGHBORHOOD_URL_WIKI at index 2 based on column NEIGHBORHOOD using expression if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRICT",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRICT to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRICT",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRICT_URL_WIKI",
+    "columnInsertIndex": 7,
+    "description": "Create column DISTRICT_URL_WIKI at index 7 based on column DISTRICT using expression if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  }
+]
