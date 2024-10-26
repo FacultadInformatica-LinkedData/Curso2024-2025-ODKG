@@ -26,10 +26,13 @@ WHERE {
 
 ### Consult the relationship between Neighborhood and District
 
-SELECT ?barrio ?distrito
+SELECT ?barrio ?distrito ?barrioEquivalente
 WHERE {
-    ?barrio a <http://www.bikeradar.es/ontology/ont#Barrio> ;
-            <http://www.bikeradar.es/ontology/ont#isInDistrito> ?distrito .
+    ?barrio a ont:Barrio ;
+            ont:isInDistrito ?distrito .
+    OPTIONAL {
+        ?barrio owl:sameAs ?barrioEquivalente .
+    }
 }
 
 
