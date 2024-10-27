@@ -1,0 +1,84 @@
+#Query 1: count the events per neighborhood
+    PREFIX schema: <http://schema.org/>
+    PREFIX ns: <http://madrid.events.com/>
+
+    SELECT ?neighborhood (COUNT(?event) AS ?eventCount)
+    WHERE {
+        ?event a schema:Event ;
+               ns:hasPlace ?place .
+        ?place a schema:Place ;
+               schema:geo ?geoCoor .
+        ?geoCoor a schema:GeoCoordinates ;
+                 ns:neighborhood ?neighborhood .
+    }
+    GROUP BY ?neighborhood
+    ORDER BY DESC(?eventCount)
+
+#Query 2: Retrieve events along with their installation's district
+    PREFIX schema: <http://schema.org/>
+    PREFIX ns: <http://madrid.events.com/>
+
+    SELECT ?eventName ?placeName ?district
+    WHERE {
+        ?event a schema:Event ;
+               schema:name ?eventName ;
+               ns:hasPlace ?place .
+        ?place a schema:Place ;
+                schema:name ?placeName ;
+                schema:geo ?geoCoor .
+        ?geoCoor a schema:GeoCoordinates ;
+                ns:district ?district .
+    }
+    LIMIT 10
+
+#Query 3: Calculate the duration of an event
+    PREFIX schema: <http://schema.org/>
+    SELECT ?event ?name ?startDate ?endDate 
+    ((?endDate - ?startDate) AS ?durationInDays)
+    WHERE {
+        ?event a schema:Event;
+             schema:name ?name;
+             schema:startDate ?startDate;
+             schema:endDate ?endDate.
+    }
+    GROUP BY ?event
+    ORDER BY DESC(?durationInDays)
+    LIMIT 10
+
+#Query 4: Retrieve all the events having place until the end of the year
+    PREFIX schema: <http://schema.org/>
+    SELECT ?event ?name ?startDate
+    WHERE {
+    ?event a schema:Event;
+             schema:name ?name;
+             schema:startDate ?startDate.
+    FILTER(?startDate >= "2024-10-25T00:00:00Z"^^xsd:dateTime && ?startDate <= "2024-12-31T23:59:59Z"^^xsd:dateTime)
+    }
+    ORDER BY ?startDate
+
+#Query 5: Retrieve all the events happening today along with their end date
+    PREFIX schema: <http://schema.org/>
+    SELECT ?event ?name ?startDate ?endDate
+    WHERE {
+    ?event a schema:Event;
+             schema:name ?name;
+             schema:startDate ?startDate;
+             schema:endDate ?endDate.
+    FILTER(?startDate = "2024-10-25T00:00:00Z"^^xsd:dateTime)
+    }
+    ORDER BY ?endDate
+
+#Query 6: Retrieve all installations along with their district and wikidata link to the district
+    PREFIX schema: <http://schema.org/>
+    PREFIX ns: <http://madrid.events.com/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?installationName ?district ?wikidataDistrictLink
+    WHERE {
+        ?place a schema:Place ;
+               schema:name ?installationName ;
+               schema:geo ?geoCoor .
+        ?geoCoor a schema:GeoCoordinates ;
+                 ns:district ?district ;
+                 owl:sameAs ?wikidataDistrictLink .
+    }
+   
