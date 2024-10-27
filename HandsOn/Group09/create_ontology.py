@@ -46,9 +46,9 @@ def apply_operations(project_id, operations_json_file):
         data = {
             'operations': json.dumps(operations),
         }
-    
+
         response = requests.post(f'{url}?project={project_id}&csrf_token={csrf_token}', data=data)
-    
+
         if response.json()["code"] == "error":
             raise Exception(f"Error al aplicar los cambios: {response.text}")
     return 0
@@ -85,13 +85,13 @@ def apply_changes_csv(path_csv, project_name, changes_json_path, export_file_pat
     print(string)
     # Crear un proyecto1
     project_id = create_project(path_csv, project_name)
-    
+
     apply_operations(project_id,changes_json_path)
-    
+
     wait_for_reconciliation(project_id)
 
     export_project_to_csv(project_id, export_file_path)
-   
+
     delete_project(project_id)
 
 def apply_changes_2_csv(path_csv1, path_csv2, project_name, changes_json_path, export_file_path):
@@ -99,13 +99,13 @@ def apply_changes_2_csv(path_csv1, path_csv2, project_name, changes_json_path, e
     print(string)
     # Crear un proyecto1
     project_id = create_project_2_files(path_csv1, path_csv2, project_name)
-    
+
     apply_operations(project_id,changes_json_path)
-    
+
     wait_for_reconciliation(project_id)
 
     export_project_to_csv(project_id, export_file_path)
-    
+
     delete_project(project_id)
 
 '''
@@ -175,14 +175,14 @@ def stations_csv2json(csv_file, json_file, with_links):
     # Leer el archivo CSV
     with open(csv_file, 'r', encoding='utf-8') as file:
         lector_csv = csv.DictReader(file)
-        
+
         # Crear una lista para almacenar los datos
         lista_datos = []
-        
+
         # Recorrer cada fila del archivo CSV y agregarlo a la lista
         for fila in lector_csv:
             # Convertir las columnas numéricas a enteros
-            
+
             measures = []
             if fila['NO2'] == "true":
                 measures.append('NO')
@@ -200,7 +200,7 @@ def stations_csv2json(csv_file, json_file, with_links):
                 measures.append('O3')
             if fila['BTX'] == "true":
                 measures.append('BTX')
-            
+
 
             station_no_links = {
               'CODIGO': fila['CODIGO'],
@@ -242,7 +242,7 @@ def treatment_measures(with_links):
     # Air quality measures
     apply_changes_2_csv(source_file1, source_file2, "measures", cambios_json_path, output_path)
 
-def treatment_stations(with_links): 
+def treatment_stations(with_links):
     source_file = "csv/informacion_estaciones_red_calidad_aire.csv"
     if(with_links):
         output_path = "csv/informacion_estaciones_red_calidad_aire-updated-with-links.csv"
@@ -263,7 +263,7 @@ def main():
     #get_csrf_token()
     #treatment_measures(False)
     #treatment_stations(False)
-    
+
     #g = generate_rdf(False)
     #turtle_serialization(g,False)
 

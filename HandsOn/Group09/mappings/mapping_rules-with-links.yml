@@ -73,7 +73,6 @@ mappings:
           es~lang,
         ]
       - [rdfs:label, $(MEDIDAS) concentration at $(ESTACION) station, en~lang]
-      - [owl:sameAs, $(SAME_AS_WIKIDATA_TYPE_OF_CHEMICAL_ENTITY)]
       - p: sosa:isObservedBy
         o:
           mapping: sensor
@@ -136,3 +135,4 @@ mappings:
     po:
       - [a, qudt:QuantityValue]
       - [qudt:numericValue, $(MEDIDA), xsd:double]
+      - [qudt:unit, $(SAME_AS_WIKIDATA_TYPE_OF_CHEMICAL_ENTITY)]
