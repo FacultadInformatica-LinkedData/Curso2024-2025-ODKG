@@ -19,7 +19,7 @@ prefixes:
 mappings:
   houses:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:Apartment/$(uuid) 
     po:
       - [a, schema:Apartment]
@@ -37,7 +37,7 @@ mappings:
      
   geos:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:GeoCoordinates/$(uuid)
     po:
       - [a, schema:GeoCoordinates]
@@ -45,7 +45,7 @@ mappings:
 
   districts:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:District/$(DISTRICT)
     po:
       - [a, barrio:District]
@@ -56,7 +56,7 @@ mappings:
 
   neighbourhoods:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:Neighborhood/$(NEIGHBORHOOD)
     po:
       - [a, barrio:Barrio]
@@ -67,7 +67,7 @@ mappings:
 
   floorSizes:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:QuantitativeValue/$(uuid)
     po:
       - [a, schema:QuantitativeValue]
@@ -77,7 +77,7 @@ mappings:
 
   rentPrices:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:MonetaryAmount/$(uuid2)
     po:
       - [a, schema:MonetaryAmount]
@@ -86,16 +86,16 @@ mappings:
 
   rentPricesByRoom:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:MonetaryAmount/$(uuid3)
     po:
       - [a, schema:MonetaryAmount]
-      - [schema:value, $(RENT_PRICE_BY_ROOM), xsd:float]
+      - [schema:value, $(RENT_BY_ROOM), xsd:float]
       - [schema:currency, "EUR", xsd:string]
 
   rentPricesBySq:
     sources:
-      - [../../data/houses-Madrid-final.csv~csv]
+      - [./data/houses-Madrid-final.csv~csv]
     s: base:MonetaryAmount/$(uuid4)
       - [a, schema:MonetaryAmount]
       - [schema:value, $(RENT_PRICE_BY_SQ), xsd:float]
