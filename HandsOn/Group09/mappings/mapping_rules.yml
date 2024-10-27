@@ -14,10 +14,10 @@ prefixes:
 
 sources:
   observationsCSV:
-    access: ../csv/datos_diarios-updated.csv
+    access: csv/datos_diarios-updated.csv
     referenceFormulation: csv
   stationsJSON:
-    access: ../csv/informacion_estaciones_red_calidad_aire-updated.json
+    access: csv/informacion_estaciones_red_calidad_aire-updated.json
     referenceFormulation: jsonpath
     iterator: "$[*]"
 

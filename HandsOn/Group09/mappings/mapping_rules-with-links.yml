@@ -1,0 +1,138 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  mAIR: "http://mAIRdrid.org/ontology/"
+  mAIRres: "http://mAIRdrid.org/resources/"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  ssn: "http://www.w3.org/ns/ssn/"
+  sosa: "http://www.w3.org/ns/sosa/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  qudt: "http://qudt.org/schema/qudt#"
+  qudt-unit: "http://qudt.org/vocab/unit/"
+  owl: "http://www.w3.org/2002/07/owl#"
+
+sources:
+  observationsCSV:
+    access: csv/datos_diarios-updated-with-links.csv
+    referenceFormulation: csv
+  stationsJSON:
+    access: csv/informacion_estaciones_red_calidad_aire-updated-with-links.json
+    referenceFormulation: jsonpath
+    iterator: "$[*]"
+
+mappings:
+  station:
+    sources:
+      - stationsJSON
+    s: mAIRres:$(CODIGO)
+    po:
+      - [a, mAIR:Station]
+      - [rdfs:label, Estación $(ESTACION), es~lang]
+      - [rdfs:label, $(ESTACION) station, en~lang]
+      - [mAIR:nationalStationID, $(CODIGO)]
+      - p: ssn:hasSubSystem
+        o:
+          mapping: sensor
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(CODIGO)$(MEDIDAS), o]
+              - [str2, $(CODIGO)$(MEDIDAS), s]
+  location:
+    sources:
+      - stationsJSON
+    s: mAIRres:$(CODIGO)#Location
+    po:
+      - [a, mAIR:Location]
+      - [rdfs:label, Ubicación de la estación $(ESTACION), es~lang]
+      - [rdfs:label, Location of $(ESTACION) station, en~lang]
+      - [geo:lat, $(LATITUD)]
+      - [geo:long, $(LONGITUD)]
+      - [geo:alt, $(ALTITUD)]
+      - [owl:sameAs, $(same_as_wikidata_streets)]
+      - p: ssn:hasProperty
+        o:
+          mapping: metric
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(CODIGO)$(MEDIDAS), o]
+              - [str2, $(CODIGO)$(MEDIDAS), s]
+  metric:
+    sources:
+      - stationsJSON
+    s: mAIRres:$(CODIGO)#$(MEDIDAS)
+    po:
+      - [a, mAIR:AirQualityMetric]
+      - [a, ssn:Property]
+      - [
+          rdfs:label,
+          Concentración de $(MEDIDAS) en la estación $(ESTACION),
+          es~lang,
+        ]
+      - [rdfs:label, $(MEDIDAS) concentration at $(ESTACION) station, en~lang]
+      - [owl:sameAs, $(SAME_AS_WIKIDATA_TYPE_OF_CHEMICAL_ENTITY)]
+      - p: sosa:isObservedBy
+        o:
+          mapping: sensor
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(CODIGO)$(MEDIDAS), o]
+              - [str2, $(CODIGO)$(MEDIDAS), s]
+  sensor:
+    sources:
+      - stationsJSON
+    s: mAIRres:$(CODIGO)#$(MEDIDAS)Sensor
+    po:
+      - [a, sosa:Sensor]
+      - [a, ssn:System]
+      - [rdfs:label, Estación $(ESTACION) - Sensor $(MEDIDAS), es~lang]
+      - [rdfs:label, $(ESTACION) Station - $(MEDIDAS) sensor, en~lang]
+      - [sosa:observes, mAIRres:Station/$(CODIGO)#$(MEDIDAS)~iri]
+      - p: sosa:observes
+        o:
+          mapping: metric
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(CODIGO)$(MEDIDAS), o]
+              - [str2, $(CODIGO)$(MEDIDAS), s]
+
+  observation:
+    sources:
+      - observationsCSV
+    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(ID_TIEMPO)#$(MAGNITUD)
+    po:
+      - [a, sosa:Observation]
+      - [
+          sosa:madeBySensor,
+          mAIRres:Station/$(PUNTO_MUESTREO)#$(MAGNITUD)Sensor~iri,
+        ]
+      - [
+          sosa:hasFeatureOfInterest,
+          mAIRres:Station/$(PUNTO_MUESTREO)#Location~iri,
+        ]
+      - [
+          sosa:observedProperty,
+          mAIRres:Station/$(PUNTO_MUESTREO)#$(MAGNITUD)~iri,
+        ]
+      - p: sosa:hasResult
+        o:
+          mapping: results
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(PUNTO_MUESTREO)$(ID_TIEMPO)$(MAGNITUD), o]
+              - [str2, $(PUNTO_MUESTREO)$(ID_TIEMPO)$(MAGNITUD), s]
+      - [sosa:resultTime, $(ID_TIEMPO), xsd:date]
+
+  results:
+    sources:
+      - observationsCSV
+    s: mAIRres:Station/$(PUNTO_MUESTREO)/$(ID_TIEMPO)#$(MAGNITUD)Result
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:numericValue, $(MEDIDA), xsd:double]
