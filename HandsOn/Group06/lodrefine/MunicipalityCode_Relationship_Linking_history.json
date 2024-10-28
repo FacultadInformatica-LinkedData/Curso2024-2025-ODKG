@@ -1,0 +1,38 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPALITY_NAME",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPALITY_NAME to type Q2074737"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MUNICIPALITY_NAME",
+    "expression": "grel:\"https://www.wikidata.org/wiki/Q2807\"",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_WikiData_Madrid",
+    "columnInsertIndex": 2,
+    "description": "Create column same_as_WikiData_Madrid at index 2 based on column MUNICIPALITY_NAME using expression grel:\"https://www.wikidata.org/wiki/Q2807\""
+  }
+]

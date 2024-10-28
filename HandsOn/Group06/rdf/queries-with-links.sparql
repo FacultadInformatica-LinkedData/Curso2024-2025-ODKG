@@ -1,0 +1,28 @@
+# Links to SI Unit
+
+PREFIX mair: <http://MadridAirQuality.org/#>
+PREFIX owl: <http://www.w3.org/2022/07/owl#>
+
+SELECT ?magnitude ?code ?name ?unit ?sameAsLink
+WHERE {
+    ?magnitude a mair:Magnitud ;
+               mair:hasMagnitudeCode ?code ;
+               mair:hasMagnitudeName ?name ;
+               mair:hasMagnitudeMeasurementUnit ?unit ;
+    			owl:sameAs ?sameAsLink.
+}
+ORDER BY ?code
+
+
+# Links to Distritos Madrid
+PREFIX mair: <http://MadridAirQuality.org/#>
+PREFIX owl: <http://www.w3.org/2022/07/owl#>
+
+SELECT ?magnitude ?code ?name ?unit ?sameAsLink
+WHERE {
+    ?magnitude a mair:Station ;
+               mair:hasStationLocationID ?code ;
+               mair:hasStationName ?name ;
+    			owl:sameAs ?sameAsLink.
+}
+ORDER BY ?code
