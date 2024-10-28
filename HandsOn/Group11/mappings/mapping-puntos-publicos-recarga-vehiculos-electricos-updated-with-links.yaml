@@ -1,0 +1,68 @@
+prefixes:
+  ns: "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#"
+  schema: "https://schema.org/"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+
+mappings:
+  chargingStation:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:ChargingStation/$(ID_Punto)"
+    po:
+      - [a, ns:ChargingStation]
+      - [ns:idPoint, $(ID_Punto)]
+      - [ns:management, $(GESTIÓN)]
+      - [ns:state, $(ESTADO)]
+      - [ns:numberOfDevices, $(N_EQUIPOS)]
+      - [ns:characteristicsDevices, $(CARACTERÍSTICAS_EQUIPO)]
+      - [ns:operator, $(OPERADOR)]
+      - [ns:placement, $(EMPLAZAMIENTO)]
+      - [ns:schedule, $(HORARIO)]
+      - [ns:additionalInfo, $(INFO_ADICIONAL)]
+      - [ns:isLocated, schema:Place/$(ID_Punto)]
+      - [ns:hasDates, ns:Dates/$(ID_Punto)]
+
+  place:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "schema:Place/$(ID_Punto)"
+    po:
+      - [a, schema:Place]
+      - [schema:address, $(UBICACIÓN)]
+      - [schema:containedInPlace, ns:Neighborhood/$(COD_DIS)_$(COD_BAR)]
+  
+  neighborhood:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:Neighborhood/$(COD_DIS)_$(COD_BAR)"
+    po:
+      - [a, ns:Neighborhood]
+      - [ns:neighborhoodCode, $(COD_BAR)]
+      - [ns:neighborhoodName, $(BARRIO)]
+      - [schema:containedInPlace, ns:District/$(COD_DIS)]
+      - [owl:sameAs, $(same_as_wikidata_barrio)~iri]
+
+  district:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:District/$(COD_DIS)"
+    po:
+      - [a, ns:District]
+      - [ns:districtCode, $(COD_DIS)]
+      - [ns:districtName, $(DISTRITO)]
+      - [owl:sameAs, $(same_as_wikidata_distrito)~iri]
+
+  dates:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:Dates/$(ID_Punto)"
+    po:
+      - [a, ns:Dates]
+      - [ns:openingDate, $(FECHA_APERTURA)]
+      - [ns:registerDate, $(FECHA_ALTA)]
+      - [ns:editionDate, $(FECHA_EDICION)]

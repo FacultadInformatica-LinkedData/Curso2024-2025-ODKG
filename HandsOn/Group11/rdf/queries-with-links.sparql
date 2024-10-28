@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#>
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT ?neighborhoodname ?sameas
+WHERE {
+    ?neighborhood a ns:Neighborhood ;
+          ns:neighborhoodName ?neighborhoodname ;
+          owl:sameAs ?sameas .
+        }
+
+
+SELECT ?districtname ?sameas
+WHERE {
+    ?neighborhood a ns:District ;
+          ns:districtName ?districtname ;
+          owl:sameAs ?sameas .
+        }
+
