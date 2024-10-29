@@ -42,27 +42,39 @@ ns:isInDistrito rdf:type owl:ObjectProperty ;
 
 ###  http://www.bikeradar.es/ontology/ont#hasFechaInstalacion
 ns:hasFechaInstalacion rdf:type owl:DatatypeProperty ;
+                       rdfs:domain ns:BicycleParkingSpot ;
+                       rdfs:range xsd:dateTime ;
                        rdfs:label "has fecha instalacion" .
 
 
 ###  http://www.bikeradar.es/ontology/ont#id
 ns:id rdf:type owl:DatatypeProperty ;
+      rdfs:domain ns:BicycleParkingSpot ;
+      rdfs:range xsd:string;
       rdfs:label "id" .
 
 ###  http://www.bikeradar.es/ontology/ont#latitud
 ns:latitud rdf:type owl:DatatypeProperty ;
+           rdfs:domain ns:BicycleParkingSpot ;
+           rdfs:range xsd:float;
            rdfs:label "latitud" .
 
 ###  http://www.bikeradar.es/ontology/ont#longitud
 ns:longitud rdf:type owl:DatatypeProperty ;
+            rdfs:domain ns:BicycleParkingSpot ;
+            rdfs:range xsd:float;
             rdfs:label "longitud" .
 
 ###  http://www.bikeradar.es/ontology/ont#direccion
 ns:direccion rdf:type owl:DatatypeProperty ;
+             rdfs:domain ns:BicycleParkingSpot ;
+             rdfs:range xsd:string;
              rdfs:label "dirección" .
 
 ###  http://www.bikeradar.es/ontology/ont#modelo
 ns:modelo rdf:type owl:DatatypeProperty ;
+          rdfs:domain ns:BicycleParkingSpot ;
+          rdfs:range xsd:string;
           rdfs:label "modelo" .
 
 
