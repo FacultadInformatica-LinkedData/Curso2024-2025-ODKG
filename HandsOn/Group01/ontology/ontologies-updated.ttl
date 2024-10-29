@@ -31,7 +31,7 @@ ns:isInBarrio rdf:type owl:ObjectProperty ;
 
 ###  http://www.bikeradar.es/ontology/ont#isInDistrito
 ns:isInDistrito rdf:type owl:ObjectProperty ;
-                rdfs:domain ns:BicycleParkingSpot ;
+                rdfs:domain ns:Barrio ;
                 rdfs:range ns:Distrito ;
                 rdfs:label "is in distrito" .
 
