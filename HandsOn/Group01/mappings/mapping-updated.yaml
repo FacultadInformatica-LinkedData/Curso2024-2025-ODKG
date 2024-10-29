@@ -13,7 +13,6 @@ mappings:
       - [a, ns:BicycleParkingSpot]
       - [ns:id, $(ID)]
       - [ns:direccion, $(DIRECCION)]
-      - [ns:isInDistrito, res:Distrito/$(DISTRITO)]
       - [ns:isInBarrio, res:Barrio/$(BARRIO)]
       - [ns:latitud, $(LATITUD), xsd:float]
       - [ns:longitud, $(LONGITUD), xsd:float]

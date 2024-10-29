@@ -28,9 +28,6 @@ map:map_bikeParking_000 a rr:TriplesMap;
         rr:predicate ns:direccion;
         rr:objectMap [ rml:reference "DIRECCION"; rr:termType rr:Literal ]
     ], [
-        rr:predicate ns:isInDistrito;
-        rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}"; rr:termType rr:Literal ]
-    ], [
         rr:predicate ns:isInBarrio;
         rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Barrio/{BARRIO}"; rr:termType rr:Literal ]
     ], [
