@@ -147,7 +147,7 @@ mair:hasStationName a rdf:Property ;
     rdfs:label "has station name" ;
     rdfs:comment "The name of the station" ;
     rdfs:domain mair:Station ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
 
 #Municipality
 mair:hasMunicipalityLocationID a rdf:Property ;
@@ -160,7 +160,7 @@ mair:hasMunicipalityName a rdf:Property ;
     rdfs:label "has muinicipality name" ;
     rdfs:comment "The name of the municipality" ;
     rdfs:domain mair:Municipality ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
 
 #Province
 mair:hasProvinceLocationID a rdf:Property ;
@@ -173,4 +173,4 @@ mair:hasProvinceName a rdf:Property ;
     rdfs:label "has province name" ;
     rdfs:comment "The name of the province" ;
     rdfs:domain mair:Province ;
-    rdfs:range xsd:String .
+    rdfs:range xsd:string .
