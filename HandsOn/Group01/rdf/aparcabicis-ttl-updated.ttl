@@ -1,5 +1,8 @@
 @prefix ns: <http://www.bikeradar.es/ontology/ont#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix res1: <http://www.bikeradar.es/resources/BicycleParkingSpot/> .
+@prefix res2: <http://www.bikeradar.es/resources/Distrito/> .
+@prefix res3: <http://www.bikeradar.es/resources/Barrio/> .
 
 <res1:101532> a ns:BicycleParkingSpot ;
     ns:direccion "CALLE JOSE DEL HIERRO 3 28027" ;
