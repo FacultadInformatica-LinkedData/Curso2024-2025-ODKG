@@ -10,7 +10,7 @@
 
 <#StationMap> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "csv/LocationCode-Relationship.csv" ;
+        rml:source "csv/LocationCode_Relationship-with-links.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
@@ -38,6 +38,32 @@
     ] ;
 
     rr:predicateObjectMap [
+        rr:predicate mair:hasLatitude;
+        rr:objectMap [
+            rml:reference "COORDINATES_LATITUDE" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:float
+        ]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasLongitude;
+        rr:objectMap [
+            rml:reference "COORDINATES_LONGUITUDE" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:float
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_JuntaMunicipalDistrito";
+            rr:termType rr:IRI
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
         rr:predicate mair:hasMeasurement ;
         rr:objectMap [
             rr:parentTriplesMap <#MeasurementMap>;
@@ -50,7 +76,7 @@
 
 <#MagnitudeMap> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "csv/Magnitud-Relationship.csv" ;
+        rml:source "csv/Magnitud_Relationship_Linking.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
@@ -84,7 +110,15 @@
             rr:termType rr:Literal;
             rr:datatype xsd:string
         ] 
-    ] .
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_wikidata_SIUnit";
+            rr:termType rr:IRI
+        ]
+    ].
 
 <#MeasurementMap> a rr:TriplesMap;
     rml:logicalSource [
@@ -176,6 +210,11 @@
     ] .
 
 <#MunicipalityMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/MunicipalityCode_Relationship_Linking.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
     rr:subjectMap [
         rr:template "http://MadridAirQuality.org/municipality/{MUNICIPALITY_CODE}" ;
         rr:class wd:Q15284
@@ -188,9 +227,22 @@
             rr:termType rr:Literal;
             rr:datatype xsd:integer
         ]
-    ] .
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_WikiData_Madrid";
+            rr:termType rr:IRI
+        ]
+    ].
 
 <#ProvinceMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/ProvinceCode_Relationship_Linking.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
     rr:subjectMap [
         rr:template "http://MadridAirQuality.org/province/{PROVINCE_CODE}" ;
         rr:class dbowl:Province
