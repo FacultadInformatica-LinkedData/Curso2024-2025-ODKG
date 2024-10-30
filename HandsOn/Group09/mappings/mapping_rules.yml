@@ -17,7 +17,7 @@ sources:
     access: csv/datos_diarios-updated.csv
     referenceFormulation: csv
   stationsJSON:
-    access: csv/informacion_estaciones_red_calidad_aire-updated.json
+    access: csv/info_estaciones_-updated.json
     referenceFormulation: jsonpath
     iterator: "$[*]"
 

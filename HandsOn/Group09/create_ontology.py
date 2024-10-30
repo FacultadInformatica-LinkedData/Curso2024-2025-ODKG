@@ -279,15 +279,15 @@ def treatment_measures(with_links):
     apply_changes_2_csv(source_file1, source_file2, "measures", cambios_json_path, output_path)
 
 def treatment_stations(with_links):
-    source_file = "csv/informacion_estaciones_red_calidad_aire.csv"
+    source_file = "csv/info_estaciones.csv"
     if(with_links):
-        output_path = "csv/informacion_estaciones_red_calidad_aire-updated-with-links.csv"
-        cambios_json_path = "openrefine/informacion_estaciones_red_calidad_aire-with-links.json"
-        json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated-with-links.json"
+        output_path = "csv/info_estaciones-updated-with-links.csv"
+        cambios_json_path = "openrefine/cambios_estaciones-with-links.json"
+        json_ouput_path = "csv/info_estaciones-updated-with-links.json"
     else:
-        output_path = "csv/informacion_estaciones_red_calidad_aire-updated.csv"
-        cambios_json_path = "openrefine/informacion_estaciones_red_calidad_aire 1.json"
-        json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated.json"
+        output_path = "csv/info_estaciones-updated.csv"
+        cambios_json_path = "openrefine/cambios_estaciones.json"
+        json_ouput_path = "csv/info_estaciones-updated.json"
 
     apply_changes_csv(source_file, "stations", cambios_json_path, output_path)
     # Generate json version
