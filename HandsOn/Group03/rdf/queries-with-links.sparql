@@ -1,0 +1,104 @@
+# ---------QUERIES TO TEST THE HOUSES DATA---------
+# 1. Get 10 partments with the number of rooms for each
+select ?apartment ?title ?rooms
+where {
+  ?apartment a schema:Apartment ;
+             rdfs:label ?title ;
+             schema:numberOfRooms ?rooms .
+}
+limit 10
+
+# 2. Get geographical coordinates of 10 apartments
+select ?apartment ?geo
+where {
+  ?apartment a schema:Apartment ;
+             schema:geo ?geo .
+}
+limit 10
+
+# 3. Get 10 districts and their wikidata links
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+select ?district ?wikiLink
+where {
+  ?district a barrio:District ;
+            owl:sameAs ?wikiLink .
+}
+limit 10
+
+# 4. Get 10 apartments and their energy certificate
+select ?apartment ?energyCertificate
+where {
+  ?apartment a schema:Apartment ;
+             barrio:energyCertificate ?energyCertificate .
+}
+limit 10
+
+# 5. Get number of apartments in each district
+select ?district (count(?apartment) as ?apartmentCount)
+where {
+    ?apartment rdf:type schema:Apartment ;
+               schema:containedInPlace ?district .
+}
+group by ?district
+
+# 6. Get the available sizes (in square meters) for apartments
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <https://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix barrio: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+select ?apartment ?title ?floorSize
+where {
+    ?apartment rdf:type schema:Apartment ;
+               rdfs:label ?title ;
+               barrio:floorSize ?floorSize .
+}
+limit 20
+
+
+# ---------QUERIES TO TEST THE ENERGY DATA---------
+# 1. Get 10 sensors and their type
+prefix sosa: <http://www.w3.org/ns/sosa/>
+prefix sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?sensor ?sensorTypeLabel
+where {
+    ?sensor a sosa:Sensor ;
+            sbm:hasSensorType ?sensorType .
+    ?sensorType rdfs:label ?sensorTypeLabel .
+}
+limit 10
+
+# 2. Get 10 buildings with their energy class and neighborhood
+prefix schema: <https://schema.org/>
+prefix sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+select ?building ?energyClass ?neighborhood
+where {
+    ?building a schema:CivicStructure ;
+              sbm:hasEnergyClass ?energyClass ;
+              schema:containedInPlace ?neighborhood .
+}
+limit 10
+
+# 3. Count buildings in each neighborhood by energy class
+prefix schema: <https://schema.org/>
+prefix sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+select ?neighborhood ?energyClass (count(?building) as ?buildingCount)
+where {
+    ?building a schema:CivicStructure ;
+              sbm:hasEnergyClass ?energyClass ;
+              schema:containedInPlace ?neighborhood .
+}
+group by ?neighborhood ?energyClass
+
+# 4. Get the civic structures that host more than 1 sensor
+prefix sosa: <http://www.w3.org/ns/sosa/>
+select ?building (count(?sensor) as ?sensorCount)
+where {
+    ?sensor sosa:hosts ?building .
+}
+group by ?building
+having (count(?sensor) > 1)
+
+
