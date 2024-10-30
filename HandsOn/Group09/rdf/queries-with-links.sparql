@@ -1,6 +1,15 @@
 # Select all the locations that has a correlation with a wikidata entry
 
-SELECT ?v ?v2 WHERE {
+  SELECT ?v ?v2 WHERE {
+    ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mAIRdrid.org/ontology/Location>.
+    ?Subject <http://www.w3.org/2000/01/rdf-schema#label> ?v.
+    FILTER(LANG(?v) = "es")
+    ?Subject <http://www.w3.org/2002/07/owl#sameAs> ?v2.
+  }
+
+# Select all the medition that has its unit reconciled with a WikiData entry
+  SELECT ?v ?v2 WHERE {
+    ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mAIRdrid.org/ontology/AirQualityMetric>.
     ?Subject <http://www.w3.org/2000/01/rdf-schema#label> ?v.
     FILTER(LANG(?v) = "es")
     ?Subject <http://www.w3.org/2002/07/owl#sameAs> ?v2.
