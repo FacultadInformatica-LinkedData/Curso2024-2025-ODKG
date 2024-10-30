@@ -51,7 +51,7 @@ mappings:
       - [geo:lat, $(LATITUD)]
       - [geo:long, $(LONGITUD)]
       - [geo:alt, $(ALTITUD)]
-      - [owl:sameAs, $(same_as_wikidata_streets)]
+      - [owl:sameAs, $(same_as_wikidata_streets)~iri]
       - p: ssn:hasProperty
         o:
           mapping: metric
@@ -77,7 +77,7 @@ mappings:
           $(MEDIDAS.label) concentration at $(ESTACION) station,
           en~lang,
         ]
-      - [owl:sameAs, $(MEDIDAS.sameAsWikidata)]
+      - [owl:sameAs, $(MEDIDAS.sameAsWikidata)~iri]
       - p: sosa:isObservedBy
         o:
           mapping: sensor
