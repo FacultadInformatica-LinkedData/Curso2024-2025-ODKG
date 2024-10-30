@@ -183,23 +183,59 @@ def stations_csv2json(csv_file, json_file, with_links):
         for fila in lector_csv:
             # Convertir las columnas numéricas a enteros
 
+            no = {
+                "label": "NO",
+                "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+            }
+            no2 = {
+                "label": "NO2",
+                "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+            }
+            nox = {
+                "label": "NOx",
+                "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+            }
+            so2 = {
+                "label": "SO2",
+                "sameAsWikidata": "http://wikidata.org/entity/Q5282"
+            }
+            co = {
+                "label": "CO",
+                "sameAsWikidata": "http://wikidata.org/entity/Q2025"
+            }
+            pm10 = {
+                "label": "PM10",
+                "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+            }
+            pm2_5 = {
+                "label": "PM2.5",
+                "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+            }
+            o3 = {
+                "label": "O3",
+                "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+            }
+            btx = {
+                "label": "BTX",
+                "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+            }
             measures = []
             if fila['NO2'] == "true":
-                measures.append('NO')
-                measures.append('NOx')
-                measures.append('NO2')
+                measures.append(no)
+                measures.append(nox)
+                measures.append(no2)
             if fila['SO2'] == "true":
-                measures.append('SO2')
+                measures.append(so2)
             if fila['CO'] == "true":
-                measures.append('CO')
+                measures.append(co)
             if fila['PM10'] == "true":
-                measures.append('PM10')
+                measures.append(pm10)
             if fila['PM2_5'] == "true":
-                measures.append('PM2_5')
+                measures.append(pm2_5)
             if fila['O3'] == "true":
-                measures.append('O3')
+                measures.append(o3)
             if fila['BTX'] == "true":
-                measures.append('BTX')
+                measures.append(btx)
 
 
             station_no_links = {
@@ -234,7 +270,7 @@ def treatment_measures(with_links):
     source_file2 = "csv/datos_diarios_2024.csv"
     if(with_links):
         output_path = "csv/datos_diarios-updated-with-links.csv"
-        cambios_json_path = "openrefine/cambios_datos_diarios-with-links.json"
+        cambios_json_path = "openrefine/cambios_datos_diarios.json"
     else:
         output_path = "csv/datos_diarios-updated.csv"
         cambios_json_path = "openrefine/cambios_datos_diarios.json"

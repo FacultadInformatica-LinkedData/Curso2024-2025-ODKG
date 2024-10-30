@@ -38,8 +38,8 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(CODIGO)$(MEDIDAS), o]
-              - [str2, $(CODIGO)$(MEDIDAS), s]
+              - [str1, $(CODIGO)$(MEDIDAS.label), o]
+              - [str2, $(CODIGO)$(MEDIDAS.label), s]
   location:
     sources:
       - stationsJSON
@@ -58,47 +58,52 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(CODIGO)$(MEDIDAS), o]
-              - [str2, $(CODIGO)$(MEDIDAS), s]
+              - [str1, $(CODIGO)$(MEDIDAS.label), o]
+              - [str2, $(CODIGO)$(MEDIDAS.label), s]
   metric:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#$(MEDIDAS)
+    s: mAIRres:$(CODIGO)#$(MEDIDAS.label)
     po:
       - [a, mAIR:AirQualityMetric]
       - [a, ssn:Property]
       - [
           rdfs:label,
-          Concentración de $(MEDIDAS) en la estación $(ESTACION),
+          Concentración de $(MEDIDAS.label) en la estación $(ESTACION),
           es~lang,
         ]
-      - [rdfs:label, $(MEDIDAS) concentration at $(ESTACION) station, en~lang]
+      - [
+          rdfs:label,
+          $(MEDIDAS.label) concentration at $(ESTACION) station,
+          en~lang,
+        ]
+      - [owl:sameAs, $(MEDIDAS.sameAsWikidata)]
       - p: sosa:isObservedBy
         o:
           mapping: sensor
           condition:
             function: equal
             parameters:
-              - [str1, $(CODIGO)$(MEDIDAS), o]
-              - [str2, $(CODIGO)$(MEDIDAS), s]
+              - [str1, $(CODIGO)$(MEDIDAS.label), o]
+              - [str2, $(CODIGO)$(MEDIDAS.label), s]
   sensor:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#$(MEDIDAS)Sensor
+    s: mAIRres:$(CODIGO)#$(MEDIDAS.label)Sensor
     po:
       - [a, sosa:Sensor]
       - [a, ssn:System]
-      - [rdfs:label, Estación $(ESTACION) - Sensor $(MEDIDAS), es~lang]
-      - [rdfs:label, $(ESTACION) Station - $(MEDIDAS) sensor, en~lang]
-      - [sosa:observes, mAIRres:Station/$(CODIGO)#$(MEDIDAS)~iri]
+      - [rdfs:label, Estación $(ESTACION) - Sensor $(MEDIDAS.label), es~lang]
+      - [rdfs:label, $(ESTACION) Station - $(MEDIDAS.label) sensor, en~lang]
+      - [sosa:observes, mAIRres:Station/$(CODIGO)#$(MEDIDAS.label)~iri]
       - p: sosa:observes
         o:
           mapping: metric
           condition:
             function: equal
             parameters:
-              - [str1, $(CODIGO)$(MEDIDAS), o]
-              - [str2, $(CODIGO)$(MEDIDAS), s]
+              - [str1, $(CODIGO)$(MEDIDAS.label), o]
+              - [str2, $(CODIGO)$(MEDIDAS.label), s]
 
   observation:
     sources:
@@ -135,4 +140,3 @@ mappings:
     po:
       - [a, qudt:QuantityValue]
       - [qudt:numericValue, $(MEDIDA), xsd:double]
-      - [qudt:unit, $(SAME_AS_WIKIDATA_TYPE_OF_CHEMICAL_ENTITY)]

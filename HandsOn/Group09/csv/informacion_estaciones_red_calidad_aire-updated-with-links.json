@@ -5,11 +5,26 @@
     "ESTACION": "Plaza de España",
     "ALTITUD": "637",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "SO2",
-      "CO"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "SO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q5282"
+      },
+      {
+        "label": "CO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q2025"
+      }
     ],
     "COD_VIA": "273600",
     "LONGITUD": "-3.7122567",
@@ -21,15 +36,42 @@
     "ESTACION": "Escuelas Aguirre",
     "ALTITUD": "672",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "SO2",
-      "CO",
-      "PM10",
-      "PM2_5",
-      "O3",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "SO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q5282"
+      },
+      {
+        "label": "CO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q2025"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "18900",
     "LONGITUD": "-3.6823158",
@@ -41,10 +83,22 @@
     "ESTACION": "Avenida de Ramón y Cajal, Madrid",
     "ALTITUD": "708",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "610450",
     "LONGITUD": "-3.6773491",
@@ -56,10 +110,22 @@
     "ESTACION": "calle de Arturo Soria",
     "ALTITUD": "695",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "798700",
     "LONGITUD": "-3.6392422",
@@ -71,10 +137,22 @@
     "ESTACION": "Villaverde",
     "ALTITUD": "601",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "417200",
     "LONGITUD": "-3.7133167",
@@ -86,12 +164,30 @@
     "ESTACION": "Farolillo",
     "ALTITUD": "632",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "O3",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "1903",
     "LONGITUD": "-3.7318356",
@@ -103,13 +199,34 @@
     "ESTACION": "Casa de Campo",
     "ALTITUD": "646",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5",
-      "O3",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "905219",
     "LONGITUD": "-3.7473445",
@@ -121,10 +238,22 @@
     "ESTACION": "Barajas Pueblo",
     "ALTITUD": "620",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "425700",
     "LONGITUD": "-3.5800258",
@@ -136,12 +265,30 @@
     "ESTACION": "Plaza del Carmen",
     "ALTITUD": "660",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "SO2",
-      "CO",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "SO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q5282"
+      },
+      {
+        "label": "CO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q2025"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "145800",
     "LONGITUD": "-3.7031662",
@@ -153,11 +300,26 @@
     "ESTACION": "Avenida de Moratalaz",
     "ALTITUD": "671",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "SO2",
-      "PM10"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "SO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q5282"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      }
     ],
     "COD_VIA": "522000",
     "LONGITUD": "-3.6453104",
@@ -169,12 +331,30 @@
     "ESTACION": "Cuatro Caminos",
     "ALTITUD": "699",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "554550",
     "LONGITUD": "-3.7071303",
@@ -186,10 +366,22 @@
     "ESTACION": "Barrio del Pilar",
     "ALTITUD": "676",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "514425",
     "LONGITUD": "-3.7115364",
@@ -201,10 +393,22 @@
     "ESTACION": "Vallecas",
     "ALTITUD": "677",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      }
     ],
     "COD_VIA": "75500",
     "LONGITUD": "-3.6515286",
@@ -216,11 +420,26 @@
     "ESTACION": "Calle de Méndez Álvaro, Madrid",
     "ALTITUD": "600",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      }
     ],
     "COD_VIA": "414800",
     "LONGITUD": "-3.6868138",
@@ -232,11 +451,26 @@
     "ESTACION": "Paseo de la Castellana",
     "ALTITUD": "680",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      }
     ],
     "COD_VIA": "401400",
     "LONGITUD": "-3.6903729",
@@ -248,10 +482,22 @@
     "ESTACION": "Parque del Retiro",
     "ALTITUD": "662",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "905011",
     "LONGITUD": "-3.6824999",
@@ -263,11 +509,26 @@
     "ESTACION": "Plaza Castilla",
     "ALTITUD": "728",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      }
     ],
     "COD_VIA": "154500",
     "LONGITUD": "-3.6887449",
@@ -279,10 +540,22 @@
     "ESTACION": "Ensanche de Vallecas",
     "ALTITUD": "629",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "31000516",
     "LONGITUD": "-3.6121394",
@@ -294,11 +567,26 @@
     "ESTACION": "Urb. Embajada",
     "ALTITUD": "619",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "BTX"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "BTX",
+        "sameAsWikidata": "http://wikidata.org/entity/Q411087"
+      }
     ],
     "COD_VIA": "639250",
     "LONGITUD": "-3.5805649",
@@ -310,12 +598,30 @@
     "ESTACION": "Plaza Elíptica",
     "ALTITUD": "605",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "CO",
-      "PM10",
-      "PM2_5"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "CO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q2025"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      }
     ],
     "COD_VIA": "293200",
     "LONGITUD": "-3.7187679",
@@ -327,11 +633,26 @@
     "ESTACION": "Sanchinarro",
     "ALTITUD": "700",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "PM2_5"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "PM2.5",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035814"
+      }
     ],
     "COD_VIA": "31000002",
     "LONGITUD": "-3.6605173",
@@ -343,10 +664,22 @@
     "ESTACION": "Calle de Mira el Río, Madrid",
     "ALTITUD": "612",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "348500",
     "LONGITUD": "-3.7746101",
@@ -358,10 +691,22 @@
     "ESTACION": "Juan Carlos I",
     "ALTITUD": "660",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "1111",
     "LONGITUD": "-3.6163407",
@@ -373,11 +718,26 @@
     "ESTACION": "Tres Olivos",
     "ALTITUD": "715",
     "MEDIDAS": [
-      "NO",
-      "NOx",
-      "NO2",
-      "PM10",
-      "O3"
+      {
+        "label": "NO",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207843"
+      },
+      {
+        "label": "NOx",
+        "sameAsWikidata": "http://wikidata.org/entity/Q20962970"
+      },
+      {
+        "label": "NO2",
+        "sameAsWikidata": "http://wikidata.org/entity/Q207895"
+      },
+      {
+        "label": "PM10",
+        "sameAsWikidata": "http://wikidata.org/entity/Q48035511"
+      },
+      {
+        "label": "O3",
+        "sameAsWikidata": "http://wikidata.org/entity/Q36933"
+      }
     ],
     "COD_VIA": "1427",
     "LONGITUD": "-3.6897308",
