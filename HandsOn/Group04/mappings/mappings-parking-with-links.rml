@@ -90,13 +90,6 @@
     rr:class esadm2:Via;
   ];
 
-  rr:predicateObjectMap [
-    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
-    rr:objectMap [
-      rr:column "same_as_wikidata_CALLE";
-      rr:termType rr:IRI 
-    ]
-  ];
 
   rr:predicateObjectMap [
     rr:predicate rdf:label;
