@@ -16,7 +16,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/station/{STATION_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/station/{STATION_CODE}" ;
         rr:class mair:Station
     ] ;
     
@@ -82,7 +82,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/magnitude/{MAGNITUDE_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/magnitude/{MAGNITUDE_CODE}" ;
         rr:class mair:Magnitud
     ] ;
 
@@ -128,7 +128,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/measurement/station{STATION_CODE}-magnitude{MAGNITUDE_CODE}-{YEAR}-{MONTH}-{DAY}" ;
+        rr:template "http://MadridAirQuality.org/resource/measurement/station{STATION_CODE}-magnitude{MAGNITUDE_CODE}-{YEAR}-{MONTH}-{DAY}" ;
         rr:class mair:Measurement
     ] ;
 
@@ -195,7 +195,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/municipality/{MUNICIPALITY_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/municipality/{MUNICIPALITY_CODE}" ;
         rr:class wd:Q15284
     ] ;
     
@@ -217,7 +217,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/municipality/{MUNICIPALITY_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/municipality/{MUNICIPALITY_CODE}" ;
         rr:class wd:Q15284
     ] ;
 
@@ -245,7 +245,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/province/{PROVINCE_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/province/{PROVINCE_CODE}" ;
         rr:class dbowl:Province
     ] ;
 
@@ -265,7 +265,7 @@
     ] ;
 
     rr:subjectMap [
-        rr:template "http://MadridAirQuality.org/province/{PROVINCE_CODE}" ;
+        rr:template "http://MadridAirQuality.org/resource/province/{PROVINCE_CODE}" ;
         rr:class dbowl:Province
     ] ;
 
