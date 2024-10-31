@@ -1,0 +1,261 @@
+id_station,station_name,latitude,longitude,address,district,madrid_district_URI_from_wikidata
+Station1,1a - Puerta del Sol A,-3.7018341,40.4172137,Puerta del Sol nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station2,1b - Puerta del Sol B,-3.701602938060457,40.41731271011562,Puerta del Sol nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station3,2 - Miguel Moya,-3.7058415,40.4205886,Calle Miguel Moya nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station4,3 - Plaza Conde Suchil,-3.7069171,40.4302937,Plaza del Conde del Valle de Súchil nº 3,Chamberí,https://wikidata.org/entity/Q1763370
+Station5,4 - Malasaña,-3.7025875,40.4285524,Calle Manuela Malasaña nº 5,Centro,https://wikidata.org/entity/Q1763376
+Station6,5 - Fuencarral,-3.70205,40.42852,Calle Fuencarral nº 108,Centro,https://wikidata.org/entity/Q1763376
+Station7,6 - Colegio Arquitectos,-3.698447,40.424148,Calle Hortaleza nº 63,Centro,https://wikidata.org/entity/Q1763376
+Station8,7 - Hortaleza,-3.6977715,40.4251906,Calle Hortaleza nº 75,Centro,https://wikidata.org/entity/Q1763376
+Station9,8 - Alonso Martínez,-3.6954403,40.4278682,Plaza de Alonso Martínez nº 5,Chamberí,https://wikidata.org/entity/Q1763370
+Station10,9 - Plaza de San Miguel,-3.7095084,40.4156057,Plaza de San Miguel nº 9,Centro,https://wikidata.org/entity/Q1763376
+Station11,10 - Marqués de la Ensenada,-3.69214,40.42533,Calle Marqués de la Ensenada nº 16,Centro,https://wikidata.org/entity/Q1763376
+Station12,11 - San Andrés,-3.7035918,40.4269483,Calle San Andrés nº 18,Centro,https://wikidata.org/entity/Q1763376
+Station13,12 - San Hermenegildo,-3.7061931,40.4284246,Calle San Bernardo nº 85,Centro,https://wikidata.org/entity/Q1763376
+Station14,13 - Conde Duque,-3.7104417,40.4273264,Calle Conde Duque nº 22,Centro,https://wikidata.org/entity/Q1763376
+Station15,14 - Ventura Rodríguez,-3.713479,40.4260957,Calle Duque de Liria,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station16,15 - San Vicente Ferrer,-3.7074453,40.4262383,Calle San Vicente Ferrer nº 64,Centro,https://wikidata.org/entity/Q1763376
+Station17,16 - San Bernardo,-3.7075065,40.4230721,Calle San Bernardo nº 22,Centro,https://wikidata.org/entity/Q1763376
+Station18,17 - Carlos Cambronero,-3.7038312,40.4232649,Plaza de Carlos Cambronero nº 2,Centro,https://wikidata.org/entity/Q1763376
+Station19,18 - Plaza de Pedro Zerolo,-3.6996502,40.4207773,Plaza de Pedro Zerolo nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station21,20a - Banco de España A,-3.6954615,40.4192342,Calle Alcalá nº 49,Centro,https://wikidata.org/entity/Q1763376
+Station25,22 - Jacometrezo,-3.7065376,40.4200783,Calle Jacometrezo nº 3,Centro,https://wikidata.org/entity/Q1763376
+Station26,23 - Santo Domingo,-3.7081246,40.4202834,Plaza de Santo Domingo nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station27,24 - Palacio de Oriente,-3.710692,40.417908,Calle Carlos III nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station28,25a - Plaza de Celenque A,-3.7057791,40.4173703,Plaza de Celenque nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station29,25b - Plaza de Celenque B,-3.7063837,40.4172781,Plaza de Celenque nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station30,26 - Plaza de las Salesas,-3.694475,40.423855,Plaza de las Salesas 7,Centro,https://wikidata.org/entity/Q1763376
+Station31,27 - Huertas,-3.6956178,40.4132798,Calle Jesús nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station32,28 - Sevilla,-3.6984368,40.4181518,Calle Alcalá nº 27,Centro,https://wikidata.org/entity/Q1763376
+Station33,29 - Marqués de Cubas,-3.6957355,40.4162619,Calle del Marqués de Cubas nº 25,Centro,https://wikidata.org/entity/Q1763376
+Station34,30 - San Quintín,-3.711504,40.4192095,Calle Pavía nº 6,Centro,https://wikidata.org/entity/Q1763376
+Station35,31 - Calle Mayor,-3.7068969,40.4163638,Calle Mayor nº 20,Centro,https://wikidata.org/entity/Q1763376
+Station36,32 - Plaza de la Provincia,-3.7061032,40.4150099,Plaza de la Provincia nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station37,33 - Carretas,-3.7030833,40.4165039,Calle Carretas nº 8,Centro,https://wikidata.org/entity/Q1763376
+Station38,34 - Jacinto Benavente,-3.7036825,40.4146755,Plaza de Jacinto Benavente,Centro,https://wikidata.org/entity/Q1763376
+Station39,35 - Plaza del Cordón,-3.7103285,40.4141931,Plaza del Cordón,Centro,https://wikidata.org/entity/Q1763376
+Station40,36 - Plaza Ramales,-3.71183,40.4168,Plaza de Ramales,Centro,https://wikidata.org/entity/Q1763376
+Station41,37 - Plaza de San Francisco,-3.714113,40.4108,Plaza de San Francisco nº 5,Centro,https://wikidata.org/entity/Q1763376
+Station42,38 - Plaza de los Carros,-3.7114762,40.4114041,Carrera de San Francisco nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station43,39 - Plaza de la Cebada,-3.7088337,40.4112744,Plaza de la Cebada nº 16,Centro,https://wikidata.org/entity/Q1763376
+Station44,40 - Conde de Romanones,-3.7049407,40.4138846,Plaza del Conde de Romanones nº 9,Centro,https://wikidata.org/entity/Q1763376
+Station45,41 - Antón Martín,-3.6991147,40.4122047,Calle Atocha nº 54,Centro,https://wikidata.org/entity/Q1763376
+Station46,42 - Santa Isabel,-3.6982318,40.4107085,Calle Atocha nº 95,Centro,https://wikidata.org/entity/Q1763376
+Station47,43 - Jesús y María,-3.7025024,40.4101564,Calle Lavapiés nº 34,Centro,https://wikidata.org/entity/Q1763376
+Station48,44 - Plaza de Nelson Mandela,-3.7040666,40.4097617,Calle Mesón de Paredes nº 35,Centro,https://wikidata.org/entity/Q1763376
+Station49,45 - Puerta de Toledo,-3.7110513,40.4070358,Glorieta de la Puerta de Toledo nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station50,46 - Ribera de Curtidores,-3.7071259,40.4053153,Calle Ribera de Curtidores nº 28,Arganzuela,https://wikidata.org/entity/Q2000929
+Station51,47 - Embajadores 1,-3.7028265,40.4047851,Glorieta de Embajadores nº 6,Arganzuela,https://wikidata.org/entity/Q2000929
+Station52,48 - Embajadores 2,-3.7022591,40.4056107,Glorieta de Embajadores nº 2,Centro,https://wikidata.org/entity/Q1763376
+Station53,49 - Casa Encendida,-3.6992759,40.4060941,Ronda de Atocha nº 34,Centro,https://wikidata.org/entity/Q1763376
+Station54,50 - Museo Reina Sofía,-3.6933463,40.4083684,Calle Santa Isabel nº 57,Centro,https://wikidata.org/entity/Q1763376
+Station55,51 - Ronda de Atocha,-3.6935205,40.4075606,Ronda de Atocha nº 2,Arganzuela,https://wikidata.org/entity/Q2000929
+Station56,52 - Plaza de Santa Ana,-3.7007164,40.4144226,Plaza de Santa Ana nº 10,Centro,https://wikidata.org/entity/Q1763376
+Station57,53 - Plaza de Lavapiés,-3.7007111,40.4083061,Calle Valencia nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station58,54 - Barceló,-3.700423,40.4266828,Calle Barceló nº 7,Centro,https://wikidata.org/entity/Q1763376
+Station59,55 - Plaza de San Ildefonso,-3.7020842,40.4239757,Plaza de San Ildefonso,Centro,https://wikidata.org/entity/Q1763376
+Station60,56 - Plaza del Carmen,-3.7032414,40.4184192,Plaza del Carmen nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station61,57 - Santa Cruz del Marcenado,-3.7126299,40.4295658,Calle Santa Cruz del Marcenado nº 24,Centro,https://wikidata.org/entity/Q1763376
+Station62,58 - Augusto Figueroa,-3.697895,40.4222862,Calle Augusto Figueroa nº 33,Centro,https://wikidata.org/entity/Q1763376
+Station63,59 - Plaza de Juan Pujol,-3.7043418,40.4255495,Calle Espíritu Santo nº 30,Centro,https://wikidata.org/entity/Q1763376
+Station64,60 - Plaza de la Independencia,-3.688398,40.419752,Plaza de la Independencia nº 6,Retiro,https://wikidata.org/entity/Q2002296
+Station65,61 - Narváez,-3.6752045,40.4213983,Calle ODonnell nº 28,Retiro,https://wikidata.org/entity/Q2002296
+Station66,62 - O'Donnell,-3.6724968,40.4213148,Calle ODonnell nº 50,Retiro,https://wikidata.org/entity/Q2002296
+Station67,63 - Ibiza,-3.6708959,40.4179237,Calle Ibiza nº 62,Retiro,https://wikidata.org/entity/Q2002296
+Station69,65 - Antonio Maura,-3.6894193,40.4166834,Calle Antonio Maura nº 15,Retiro,https://wikidata.org/entity/Q2002296
+Station71,67 - Almadén,-3.693225,40.4108472,Calle Almadén nº 28,Centro,https://wikidata.org/entity/Q1763376
+Station72,68 - Espalter,-3.6912023,40.4128372,Calle Espalter nº 1,Retiro,https://wikidata.org/entity/Q2002296
+Station73,69 - Puerta del Ángel Caído,-3.688822,40.409808,Avenida de Alfonso XII nº 54,Retiro,https://wikidata.org/entity/Q2002296
+Station74,70 - Puerta del Doce de Octubre,-3.6779232,40.4153053,Avenida de Menéndez Pelayo nº 63,Retiro,https://wikidata.org/entity/Q2002296
+Station75,71 - Doce de Octubre,-3.6738865,40.4159569,Calle Doce de Octubre nº 28,Retiro,https://wikidata.org/entity/Q2002296
+Station76,72 - Sainz de Baranda,-3.6691838,40.4157413,Calle Doctor Esquerdo nº 99,Retiro,https://wikidata.org/entity/Q2002296
+Station77,73 - Plaza de los Astros,-3.6689089,40.4114475,Avenida de Nazaret nº 7,Retiro,https://wikidata.org/entity/Q2002296
+Station78,74 - Puerta del Pacífico,-3.6766813,40.4117627,Avenida de Menéndez Pelayo nº 73,Retiro,https://wikidata.org/entity/Q2002296
+Station79,75 - Menéndez Pelayo,-3.6784838,40.4082805,Avenida de Menéndez Pelayo con calle Poeta Esteban Villegas,Retiro,https://wikidata.org/entity/Q2002296
+Station80,76 - Puerta de Mariano de Cavia,-3.6751352,40.4071304,Avenida del Mediterráneo nº 19,Retiro,https://wikidata.org/entity/Q2002296
+Station81,77 - Conde de Casal,-3.670422,40.40635,Plaza del Conde de Casal nº 8,Retiro,https://wikidata.org/entity/Q2002296
+Station82,78 - Pedro Bosch,-3.6744,40.400789,Calle Cerro de la Plata nº 2,Retiro,https://wikidata.org/entity/Q2002296
+Station83,79 - Puerta de Granada,-3.6803874,40.4051451,Avenida de Menéndez Pelayo nº 38,Retiro,https://wikidata.org/entity/Q2002296
+Station84,80a - Atocha A,-3.6902255,40.4075685,Paseo de la Infanta Isabel nº 3,Arganzuela,https://wikidata.org/entity/Q2000929
+Station85,80b - Atocha B,-3.6901234,40.4074902,Paseo de la Infanta Isabel nº 3,Arganzuela,https://wikidata.org/entity/Q2000929
+Station86,81 - Cuesta de Moyano,-3.691987,40.409297,Cuesta de Claudio Moyano,Retiro,https://wikidata.org/entity/Q2002296
+Station87,82 - Niño Jesús,-3.6697526,40.4084556,Calle Doctor Esquerdo nº 161,Retiro,https://wikidata.org/entity/Q2002296
+Station88,83 - Pío Baroja,-3.6745323,40.4132995,Calle Pío Baroja nº 10,Retiro,https://wikidata.org/entity/Q2002296
+Station89,84 - Valderribas,-3.6726019,40.4032501,Calle Doctor Esquerdo nº 191,Retiro,https://wikidata.org/entity/Q2002296
+Station90,85 - Puerta de Madrid,-3.680008,40.421501,Avenida de Menéndez Pelayo esquina calle ODonnell,Retiro,https://wikidata.org/entity/Q2002296
+Station91,86 - Cibeles,-3.6933498,40.4186516,Plaza Cibeles,Retiro,https://wikidata.org/entity/Q2002296
+Station92,87 - Ayala,-3.6832566,40.427736,Calle Ayala nº 44,Salamanca,https://wikidata.org/entity/Q1773521
+Station93,88 - Embajada de Italia,-3.6838303,40.4313576,Calle Velázquez nº 75,Salamanca,https://wikidata.org/entity/Q1773521
+Station94,89 - Conde Peñalver,-3.6752024,40.4272582,Calle Ayala nº 102,Salamanca,https://wikidata.org/entity/Q1773521
+Station95,90 - General Pardiñas,-3.6837876,40.4250361,Calle Goya nº 18,Salamanca,https://wikidata.org/entity/Q1773521
+Station96,91 - Príncipe de Vergara,-3.6787441,40.426134,Calle Hermosilla nº 70,Salamanca,https://wikidata.org/entity/Q1773521
+Station97,92 - Claudio Coello,-3.6865463,40.4262945,Calle Claudio Coello nº 45,Salamanca,https://wikidata.org/entity/Q1773521
+Station98,93 - Plaza de Colón,-3.6893698,40.4257046,Calle Goya nº 1,Salamanca,https://wikidata.org/entity/Q1773521
+Station99,94 - Biblioteca Nacional,-3.690756,40.4232153,Paseo de Recoletos nº 20,Salamanca,https://wikidata.org/entity/Q1773521
+Station100,95 - Villanueva,-3.6870548,40.4226584,Calle Claudio Coello nº 109,Salamanca,https://wikidata.org/entity/Q1773521
+Station101,96 - Castelló,-3.6821793,40.422064,Calle Alcalá nº 111,Salamanca,https://wikidata.org/entity/Q1773521
+Station102,97 - Alcalá,-3.6805189,40.4222969,Avenida de Menéndez Pelayo nº 3,Salamanca,https://wikidata.org/entity/Q1773521
+Station103,98 - Plaza de Felipe II,-3.6758383,40.4239447,Plaza de Felipe II,Salamanca,https://wikidata.org/entity/Q1773521
+Station104,99 - Alcántara,-3.6738714,40.4261851,Calle Alcántara nº 2,Salamanca,https://wikidata.org/entity/Q1773521
+Station105,100 - Palacio de Deportes,-3.67384,40.42478,Calle Goya nº 99,Salamanca,https://wikidata.org/entity/Q1773521
+Station106,101 - Jorge Juan,-3.6691524,40.4231526,Calle Jorge Juan nº 131,Salamanca,https://wikidata.org/entity/Q1773521
+Station107,102 - Velázquez,-3.6840229,40.4211802,Calle Alcalá nº 95,Salamanca,https://wikidata.org/entity/Q1773521
+Station108,103 - Ortega y Gasset,-3.68653,40.43037,Calle José Ortega y Gasset nº 4,Salamanca,https://wikidata.org/entity/Q1773521
+Station109,104 - Castellana,-3.68958,40.42677,Paseo de la Castellana nº 4,Salamanca,https://wikidata.org/entity/Q1773521
+Station110,105 - Serrano,-3.68745,40.42699,Calle Serrano nº 54,Salamanca,https://wikidata.org/entity/Q1773521
+Station111,106a - Colón A,-3.6877227,40.4251002,Calle Serrano nº 34,Salamanca,https://wikidata.org/entity/Q1773521
+Station112,106b - Colón B,-3.687745,40.424963,Calle Serrano nº 34,Salamanca,https://wikidata.org/entity/Q1773521
+Station113,107 - Columela,-3.6884369,40.4215246,Calle Serrano nº 8,Salamanca,https://wikidata.org/entity/Q1773521
+Station114,108 - Mártires Concepcionistas,-3.6706024,40.4273005,Calle Mártires Concepcionistas nº 2,Salamanca,https://wikidata.org/entity/Q1773521
+Station115,109 - Marqués de Salamanca,-3.6816402,40.4300481,Calle José Ortega y Gasset nº 30,Salamanca,https://wikidata.org/entity/Q1773521
+Station116,110 - Moncloa,-3.7200845,40.4347895,Paseo de Moret nº 2,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station117,111a - Arcipreste de Hita A,-3.7175435,40.4337322,Calle Arcipreste de Hita nº 12,Chamberí,https://wikidata.org/entity/Q1763370
+Station118,111b - Arcipreste de Hita B,-3.7179687,40.4341006,Calle Arcipreste de Hita nº 12,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station119,112 - Paseo de Moret,-3.7246532,40.4325991,Paseo de Moret nº 11,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station120,113 - Pintor Rosales,-3.7205129,40.427657,Paseo del Pintor Rosales frente al nº 38,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station121,114 - Quintana,-3.7174158,40.4277456,Calle Quintana nº 11,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station122,115 - Ferraz,-3.7170448,40.4253944,Calle Evaristo San Miguel nº 2,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station123,116a - Plaza de España A,-3.713053,40.423668,Calle Princesa nº 5,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station124,116b - Plaza de España B,-3.710537,40.423681,Calle Princesa nº 5,Centro,https://wikidata.org/entity/Q1763376
+Station125,117 - Altamirano,-3.7188898,40.4309797,Calle Altamirano nº 24,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station126,118 - Juan Martín,-3.6882407,40.400781,Calle Juan Martín el Empecinado nº 16,Arganzuela,https://wikidata.org/entity/Q2000929
+Station127,119 - Méndez Álvaro,-3.6863218,40.4013216,Calle Méndez Álvaro nº 11,Arganzuela,https://wikidata.org/entity/Q2000929
+Station128,120 - Palos de la Frontera,-3.6944768,40.4032208,Calle Palos de la Frontera nº 27,Arganzuela,https://wikidata.org/entity/Q2000929
+Station129,121 - Santa María de la Cabeza,-3.6987665,40.4017926,Paseo de Santa María de la Cabeza nº 58,Arganzuela,https://wikidata.org/entity/Q2000929
+Station130,122 - Santa Engracia 14,-3.6967169,40.4291992,Calle Santa Engracia nº 14,Chamberí,https://wikidata.org/entity/Q1763370
+Station131,123 - Guzmán el Bueno,-3.7133412,40.4306458,Calle Guzmán el Bueno nº 1,Chamberí,https://wikidata.org/entity/Q1763370
+Station132,161 - Paseo de la Florida,-3.7224983,40.4219665,Paseo de la Florida nº 8,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station133,162 - Metro Pirámides,-3.7108108,40.4034076,Paseo de los Olmos nº 28,Arganzuela,https://wikidata.org/entity/Q2000929
+Station134,163 - Paseo de la Esperanza,-3.7064516,40.4035988,Paseo de la Esperanza nº 2,Arganzuela,https://wikidata.org/entity/Q2000929
+Station135,165 - Entrada Matadero,-3.6975708,40.3928821,Paseo de la Chopera nº 14,Arganzuela,https://wikidata.org/entity/Q2000929
+Station136,164 - Paseo de las Delicias,-3.6945025,40.3972616,Paseo de las Delicias nº 92,Arganzuela,https://wikidata.org/entity/Q2000929
+Station137,157 - Castellana 164,-3.6894151,40.4591366,Paseo de la Castellana nº 164,Chamartín,https://wikidata.org/entity/Q1766348
+Station138,158 - Alberto Alcocer,-3.684715,40.4585318,Avenida de Alberto Alcocer nº 22,Chamartín,https://wikidata.org/entity/Q1766348
+Station139,155 - San Germán 57,-3.7009675,40.4572824,Calle San Germán nº 57,Tetuán,https://wikidata.org/entity/Q1773540
+Station140,156 - Sor Ángela de la Cruz,-3.691533,40.4592351,Calle Sor Ángela de la Cruz nº 2,Tetuán,https://wikidata.org/entity/Q1773540
+Station141,154 - Orense 36,-3.6946218,40.4548456,Calle Orense nº 36,Tetuán,https://wikidata.org/entity/Q1773540
+Station144,148 - Serrano 210,-3.6817962,40.4510188,Calle Serrano nº 210,Chamartín,https://wikidata.org/entity/Q1766348
+Station145,151 - Orense 12,-3.6952943,40.4489101,Calle Orense nº 12,Tetuán,https://wikidata.org/entity/Q1773540
+Station146,149 - Paseo de la Habana 42,-3.6881689,40.4498613,Paseo de la Habana nº 42,Chamartín,https://wikidata.org/entity/Q1766348
+Station147,150 - Castellana frente a Hermanos Pinzón,-3.6905604,40.4488924,Paseo de la Castellana nº 122,Chamartín,https://wikidata.org/entity/Q1766348
+Station148,147 - Doctor Arce 45,-3.6797296,40.4483269,Avenida del Doctor Arce nº 45,Chamartín,https://wikidata.org/entity/Q1766348
+Station149,132 - Glorieta de los Cuatro Caminos,-3.7036675,40.4463667,Calle Santa Engracia nº 168,Chamberí,https://wikidata.org/entity/Q1763370
+Station150,133 - Raimundo Fernández,-3.7001669,40.447125,Calle Raimundo Fernández Villaverde nº 33,Tetuán,https://wikidata.org/entity/Q1773540
+Station151,136 - Castellana 106,-3.690861,40.4453307,Paseo de la Castellana nº 106,Chamartín,https://wikidata.org/entity/Q1766348
+Station152,137 - Plaza de la República Argentina,-3.6853312,40.445411,Plaza de la República Argentina nº 6,Chamartín,https://wikidata.org/entity/Q1766348
+Station153,134 - Agustín de Betancourt,-3.6956047,40.4440297,Calle María de Guzmán nº 58,Chamberí,https://wikidata.org/entity/Q1763370
+Station154,138 - Paseo de la Castellana con Raimundo Fernández,-3.6917932,40.4457414,Paseo de la Castellana esquina calle Raimundo Fernández Villaverde,Chamberí,https://wikidata.org/entity/Q1763370
+Station155,146 - María Francisca 1,-3.6787169,40.4442258,Calle María Francisca nº 1,Chamartín,https://wikidata.org/entity/Q1766348
+Station156,131 - Bravo Murillo 44,-3.7040344,40.4418402,Calle Bravo Murillo nº 44,Chamberí,https://wikidata.org/entity/Q1763370
+Station157,130 - Santa Engracia 127,-3.70164,40.44156,Calle Santa Engracia nº 127,Chamberí,https://wikidata.org/entity/Q1763370
+Station158,135 - Plaza de San Juan de la Cruz,-3.6927821,40.4415974,Plaza de San Juan de la Cruz nº 11,Chamberí,https://wikidata.org/entity/Q1763370
+Station159,139 - José Gutiérrez Abascal,-3.6907784,40.4396792,Calle José Gutiérrez Abascal nº 2,Chamartín,https://wikidata.org/entity/Q1766348
+Station160,128 - Cea Bermúdez,-3.7154329,40.438994,Calle Cea Bermúdez nº 59,Chamberí,https://wikidata.org/entity/Q1763370
+Station161,129 - José Abascal,-3.6982353,40.4383865,Calle José Abascal nº 33,Chamberí,https://wikidata.org/entity/Q1763370
+Station162,140 - Velázquez 130,-3.6831578,40.4385127,Calle Velázquez nº 130,Chamartín,https://wikidata.org/entity/Q1766348
+Station163,126 - General Álvarez de Castro,-3.7015686,40.4344731,Calle del General Álvarez de Castro nº 1,Chamberí,https://wikidata.org/entity/Q1763370
+Station164,125 - General Martínez Campos,-3.6948626,40.435285,Calle Fernández de la Hoz nº 29,Chamberí,https://wikidata.org/entity/Q1763370
+Station165,141 - Paseo de la Castellana - Glorieta de Emilio Castelar,-3.6892368,40.4355143,Paseo de la Castellana nº 43,Chamberí,https://wikidata.org/entity/Q1763370
+Station166,143 - Diego de León 52,-3.678492,40.4345973,Calle Diego de León nº 52,Salamanca,https://wikidata.org/entity/Q1773521
+Station167,142 - Castellana 42,-3.6879154,40.4334087,Paseo de la Castellana nº 42,Salamanca,https://wikidata.org/entity/Q1773521
+Station168,127 - Fernando el Católico,-3.708439,40.4338516,Calle Fernando el Católico nº 19,Chamberí,https://wikidata.org/entity/Q1763370
+Station169,124 - Manuel Silvela,-3.6993465,40.4309524,Calle Manuel Silvela nº 20,Chamberí,https://wikidata.org/entity/Q1763370
+Station170,144 - Juan Bravo 50,-3.6758555,40.4323655,Calle Juan Bravo nº 50,Salamanca,https://wikidata.org/entity/Q1773521
+Station171,145 - Ortega y Gasset 87,-3.6712823,40.429887,Calle Ortega y Gasset nº 87,Salamanca,https://wikidata.org/entity/Q1773521
+Station172,160 - Colombia,-3.6763439,40.4572466,Calle Colombia nº 7,Chamartín,https://wikidata.org/entity/Q1766348
+Station173,159 - Paseo de la Habana 63,-3.6835926,40.4543852,Paseo de la Habana nº 63,Chamartín,https://wikidata.org/entity/Q1766348
+Station174,166 - Segovia 26,-3.7135833,40.4138333,Calle Segovia nº 26,Centro,https://wikidata.org/entity/Q1763376
+Station175,167 - Segovia 45,-3.717487,40.413736,Calle Segovia nº 45,Arganzuela,https://wikidata.org/entity/Q2000929
+Station176,168 - Batalla del Salado,-3.6959166,40.4044722,Paseo Santa María de la Cabeza nº 29,Arganzuela,https://wikidata.org/entity/Q2000929
+Station177,169 - Pirámides,-3.7138055,40.4016111,Calle Toledo nº 181,Arganzuela,https://wikidata.org/entity/Q2000929
+Station178,170 - Paseo de la Esperanza,-3.7043611,40.401,Paseo de la Esperanza nº 21,Arganzuela,https://wikidata.org/entity/Q2000929
+Station179,171 - Embajadores-Cáceres,-3.6983888,40.39975,Calle Embajadores nº 101,Arganzuela,https://wikidata.org/entity/Q2000929
+Station180,172 - Delicias,-3.6935833,40.4008888,Calle Bustamante nº 1,Arganzuela,https://wikidata.org/entity/Q2000929
+Station181,173 - Puente Praga,-3.7023918,40.3981798,Paseo de la Esperanza nº 59,Arganzuela,https://wikidata.org/entity/Q2000929
+Station182,174 - Madrid Río-Yeserías,-3.7065277,40.3974444,Paseo de Yeserías nº 45,Arganzuela,https://wikidata.org/entity/Q2000929
+Station183,175 - Jaime el Conquistador,-3.6983055,40.3962222,Calle Jaime el Conquistador nº 30,Arganzuela,https://wikidata.org/entity/Q2000929
+Station184,176 - Beata,-3.6937222,40.39425,Calle Alicante nº 3,Arganzuela,https://wikidata.org/entity/Q2000929
+Station185,177 - Legazpi,-3.6941944,40.3914722,Calle Bolívar nº 3,Arganzuela,https://wikidata.org/entity/Q2000929
+Station186,178 - Junta Municipal Retiro,-3.6788343,40.4029202,Calle León Gil de Palacio nº 3,Retiro,https://wikidata.org/entity/Q2002296
+Station187,179 - Puente de Vallecas,-3.66925,40.3979722,Avenida de la Albufera nº 6,Puente de Vallecas,https://wikidata.org/entity/Q2003054
+Station188,180 - Méndez Álvaro,-3.6758888,40.3941388,Calle Retama nº 5,Arganzuela,https://wikidata.org/entity/Q2000929
+Station189,181 - Retiro-Ibiza,-3.6766111,40.41825,Calle Ibiza nº 18,Retiro,https://wikidata.org/entity/Q2002296
+Station190,182 - Parque Roma,-3.6657777,40.4186666,Calle Alcalde Sáinz de Baranda frente al nº 107,Retiro,https://wikidata.org/entity/Q2002296
+Station191,183 - Doctor Esquerdo-Hermosilla,-3.669339,40.425635,Calle Hermosilla nº 135,Salamanca,https://wikidata.org/entity/Q1773521
+Station192,184 - Marqués de Zafra,-3.6653055,40.426,Paseo Marqués de Zafra nº 24,Salamanca,https://wikidata.org/entity/Q1773521
+Station193,185 - Quinta Fuente del Berro,-3.6615277,40.4250833,Calle Sancho Dávila esquina Paseo Marqués de Zafra,Salamanca,https://wikidata.org/entity/Q1773521
+Station194,186 - General Pardiñas,-3.6782777,40.4290555,Calle General Pardiñas nº 56,Salamanca,https://wikidata.org/entity/Q1773521
+Station195,187 - Alcalá-Ventas,-3.6638888,40.4301666,Calle Alejandro González nº 1,Salamanca,https://wikidata.org/entity/Q1773521
+Station196,188 - Puente de Ventas,-3.6590555,40.4311944,Avenida de Daroca nº 2,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station197,189 - Avenida Donostiarra,-3.6554918,40.4351256,Calle Virgen de la Alegría nº 18,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station198,190 - Velázquez-Diego de León,-3.6835833,40.4343333,Calle Velázquez nº 91,Salamanca,https://wikidata.org/entity/Q1773521
+Station199,191 - Diego de león,-3.674,40.4346388,Calle Alonso Heredia nº 1,Salamanca,https://wikidata.org/entity/Q1773521
+Station200,192 - Avenida de los Toreros,-3.6714166,40.4318611,Avenida de los Toreros nº 3,Salamanca,https://wikidata.org/entity/Q1773521
+Station201,193 - Ventas,-3.6655555,40.4324722,Avenida de los Toreros nº 49,Salamanca,https://wikidata.org/entity/Q1773521
+Station202,194 - Avenida de América 2,-3.6772222,40.43725,Calle Francisco Silvela nº 86,Salamanca,https://wikidata.org/entity/Q1773521
+Station203,195 - Avenida de América 1,-3.6754444,40.4392222,Calle Padre Indalecio Hernández nº 1,Chamartín,https://wikidata.org/entity/Q1766348
+Station204,196 - Prosperidad,-3.6751388,40.4441388,Calle Suero de Quiñones nº 2,Chamartín,https://wikidata.org/entity/Q1766348
+Station205,197 - Parque Berlín,-3.6780555,40.4515833,Avenida de Concha Espina nº 34,Chamartín,https://wikidata.org/entity/Q1766348
+Station206,198 - Rubén Darío,-3.6915555,40.4331111,Glorieta Rubén Darío 2,Chamberí,https://wikidata.org/entity/Q1763370
+Station207,199 - Fernando el Católico,-3.7149166,40.4343611,Calle Fernando el Católico nº 61,Chamberí,https://wikidata.org/entity/Q1763370
+Station208,200 - Quevedo,-3.7046666,40.4336944,Glorieta de Quevedo nº 5,Chamberí,https://wikidata.org/entity/Q1763370
+Station209,201 - Canal,-3.7038333,40.4386944,Calle José Abascal frente al nº 2,Chamberí,https://wikidata.org/entity/Q1763370
+Station210,202 - Parque Santander,-3.7080833,40.4411388,Calle Santander esquina con Avenida de Filipinas,Chamberí,https://wikidata.org/entity/Q1763370
+Station211,203 - San Francisco de Sales,-3.7144722,40.44175,Calle General Ampudia nº 2,Chamberí,https://wikidata.org/entity/Q1763370
+Station212,204 - Cuatro Caminos 2,-3.7041666,40.4476666,Calle Doctor Santero nº 1,Tetuán,https://wikidata.org/entity/Q1773540
+Station213,205 - Estrecho,-3.7032777,40.4535,Calle Navarra nº 1,Tetuán,https://wikidata.org/entity/Q1773540
+Station214,206 - Metro Tetuán,-3.6989925,40.4607502,Calle Marqués de Viana nº 3,Tetuán,https://wikidata.org/entity/Q1773540
+Station215,207 - Remonta,-3.6973333,40.4630277,Calle Azucenas nº 1,Tetuán,https://wikidata.org/entity/Q1773540
+Station216,208 - Plaza de Castilla,-3.6886388,40.4663611,Paseo de la Castellana nº 216,Chamartín,https://wikidata.org/entity/Q1766348
+Station217,209 - Plaza de Castilla 2,-3.6887722,40.4656779,Paseo Castellana (Fundación Canal),Chamartín,https://wikidata.org/entity/Q1766348
+Station218,210 - Tres Cruces,-3.7026735,40.419674,Calle Tres Cruces nº 7,Centro,https://wikidata.org/entity/Q1763376
+Station219,211 - Desengaño,-3.70239,40.42059,Calle Desengaño nº 1,Centro,https://wikidata.org/entity/Q1763376
+Station220,212 - Marqués de Vadillo,-3.716591,40.398247,Glorieta Marqués de Vadillo nº 9,Carabanchel,https://wikidata.org/entity/Q1001991
+Station221,213 - Glorieta de Cádiz,-3.70017,40.38895,Calle Antonio López nº 129,Usera,https://wikidata.org/entity/Q953368
+Station222,214 - Condesa de Venadito,-3.65741,40.44315,Calle Condesa de Venadito nº 2,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station223,215 - Gutierre de Cetina,-3.640994,40.429706,Calle Gutierre de Cetina nº 77,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station224,216 - Puerta del Ángel,-3.728318,40.413764,Plaza Puerta del Ángel nº 4,Latina,https://wikidata.org/entity/Q794954
+Station225,217 - Pedro Rico,-3.688463,40.481086,Calle Pedro Rico nº 4,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196
+Station226,218 - Camino Vinateros,-3.65779,40.41053,Calle Camino de los Vinateros nº 28,Moratalaz,https://wikidata.org/entity/Q2076109
+Station227,219 - Marroquina,-3.646697,40.408264,Calle Camino de los Vinateros nº 108,Moratalaz,https://wikidata.org/entity/Q2076109
+Station228,220 - Plaza del Encuentro,-3.65122,40.40617,Calle Arroyo de las Pilillas nº 6,Moratalaz,https://wikidata.org/entity/Q2076109
+Station229,221 - Pavones,-3.634587,40.400368,Calle Hacienda de Pavones nº 342,Moratalaz,https://wikidata.org/entity/Q2076109
+Station230,222 - Antonio López,-3.7026789,40.3917871,Calle Eugenio Caxes frente al nº 12,Usera,https://wikidata.org/entity/Q953368
+Station231,223 - Ermita Santo,-3.7244893989507686,40.406837862773465,Paseo de la Ermita del Santo nº 48,Latina,https://wikidata.org/entity/Q794954
+Station232,224 - Caramuel,-3.728533714316331,40.40913630273305,Calle Caramuel nº 51,Latina,https://wikidata.org/entity/Q794954
+Station233,225 - Doctor Lozano,-3.660188083470652,40.40248333540473,Calle Sierra Toledana nº 33,Puente de Vallecas,https://wikidata.org/entity/Q2003054
+Station234,226 - Sierra Toledana,-3.6607768678037744,40.39901531507069,Camino de Valderribas nº 94,Puente de Vallecas,https://wikidata.org/entity/Q2003054
+Station235,228 - San Delfín,-3.708042972844556,40.39440607959559,Calle San Delfín nº 9,Carabanchel,https://wikidata.org/entity/Q1001991
+Station236,227 - Concordia,-3.665936242935637,40.39382977920336,Calle Arroyo del Olivar nº 6,Puente de Vallecas,https://wikidata.org/entity/Q2003054
+Station237,229 - C.D. Concepción,-3.64835857929032,40.43715089959262,Calle Jose del Hierro nº 5,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station238,230 - Carlota O’Neill,-3.648958444298144,40.44370542379883,Calle Carlota ONeill nº 32,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station239,231 - Derechos Humanos,-3.6557656204708775,40.43965673033275,Calle Derechos Humanos nº 12,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station240,232 - José María Pereda,-3.648530615287515,40.43272086245887,Calle José María de Pereda nº 1,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station241,233 - Marqués de Corbera 12,-3.6555552857442697,40.422962108947424,Avenida Marqués de Corbera nº 12,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station242,234 - Marqués de Corbera 52,-3.651034981803642,40.42620714320088,Avenida Marqués de Corbera nº 52,Ciudad Lineal,https://wikidata.org/entity/Q1763694
+Station243,235 - Embajadores 191,-3.690358964335348,40.389258643579105,Calle Sodio nº 1B,Arganzuela,https://wikidata.org/entity/Q2000929
+Station244,236 - Paseo Imperial,-3.7172213778842007,40.40765396169372,Paseo Imperial nº 20,Arganzuela,https://wikidata.org/entity/Q2000929
+Station246,238 - San Germán 5,-3.69293767517953,40.45619382579544,Calle San Germán nº 5,Tetuán,https://wikidata.org/entity/Q1773540
+Station247,239 - Francos Rodríguez,-3.708002730875242,40.45673408797698,Calle Francos Rodríguez nº 62,Tetuán,https://wikidata.org/entity/Q1773540
+Station248,240 - Avenida Brasilia,-3.66096,40.43666,Avenida de Brasilia frente al nº 9,Salamanca,https://wikidata.org/entity/Q1773521
+Station249,241 - Camilo José Cela,-3.66779,40.4378,Avenida de Camilo José Cela nº 23,Salamanca,https://wikidata.org/entity/Q1773521
+Station250,242 - Avenida Bruselas,-3.66301,40.43865,Avenida Bruselas nº 56,Salamanca,https://wikidata.org/entity/Q1773521
+Station251,243 - Cartagena,-3.67012,40.43503,Calle Cartagena nº 34,Salamanca,https://wikidata.org/entity/Q1773521
+Station252,244 - Hospital Clínico,-3.71757,40.44003,Calle Isaac Peral nº 44,Chamberí,https://wikidata.org/entity/Q1763370
+Station253,245 - Galileo,-3.71019,40.4364,Calle Galileo nº 63,Chamberí,https://wikidata.org/entity/Q1763370
+Station254,246 - Santa Engracia 87,-3.69928,40.43604,Calle Santa Engracia nº 87,Chamberí,https://wikidata.org/entity/Q1763370
+Station256,248 - Torre Cepsa,-3.68797,40.47435,Calle Sinesio Delgado nº 2,Tetuán,https://wikidata.org/entity/Q1773540
+Station257,249 - Manuel Caldeiro,-3.68532,40.47938,Paseo de la Castellana nº 298,Chamartín,https://wikidata.org/entity/Q1766348
+Station258,250 - Serrano 113,-3.68609,40.44106,Calle Serrano nº 113B,Chamartín,https://wikidata.org/entity/Q1766348
+Station259,251 - Corazón de María,-3.66683,40.44421,Calle Santa Hortensia nº 31,Chamartín,https://wikidata.org/entity/Q1766348
+Station260,252 - Chamartín,-3.68391,40.4716,Calle Rodríguez Jaén nº 40,Chamartín,https://wikidata.org/entity/Q1766348
+Station261,253 - Doctor Fleming,-3.68844,40.45546,Calle Doctor Fleming nº 7,Chamartín,https://wikidata.org/entity/Q1766348
+Station262,254 - Pío XII,-3.67712,40.46041,Avenida Pío XII nº 3,Chamartín,https://wikidata.org/entity/Q1766348
+Station263,255 - López Pozas,-3.68514,40.46361,Calle General López Pozas nº 2,Chamartín,https://wikidata.org/entity/Q1766348
+Station264,256 - Reina Victoria,-3.71383,40.44635,Calle Beatriz de Bobadilla frente al nº 2,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station265,257 - INEF,-3.72997,40.43896,Avenida Juan de Herrera frente a la calle Paul Guinard,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station266,258 - Ciudad Universitaria 1,-3.72699,40.44375,Avenida de la Complutense (Metro Ciudad Universitaria),Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station267,259 - Ciudad Universitaria 2,-3.72693,40.44342,Avenida de la Complutense (Metro Ciudad Universitaria),Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station268,260 - Facultad Biología,-3.7272945,40.4483322,Calle José Antonio Novais frente al nº 12,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station269,261 - Facultad Derecho,-3.72937,40.45109,Avenida Complutense nº 23,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682
+Station270,247 - Zurbano,-3.69281,40.43837,Calle Zurbano nº 90,Chamberí,https://wikidata.org/entity/Q1763370
