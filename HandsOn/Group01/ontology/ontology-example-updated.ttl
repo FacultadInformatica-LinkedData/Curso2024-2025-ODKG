@@ -28,7 +28,7 @@
     ns:longitud "-3.65079129"^^xsd:float ;
     ns:modelo "MU-51" .
 
-<res2:TETUAN> a ns:Distrito .
+<res2:CIUDAD LINEAL> a ns:Distrito .
 
-<res3:AEROPUERTO> a ns:Barrio ;
-    ns:isInDistrito <res2:BARAJAS> .
+<res3:LA%20CONCEPCIÓN> a ns:Barrio ;
+    ns:isInDistrito <res2:CIUDAD LINEAL> .
