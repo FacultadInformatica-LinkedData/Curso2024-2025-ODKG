@@ -1,65 +1,65 @@
 PK,NOMBRE,HORARIO,NUMERO-PLAZAS,ACCESIBILIDAD,CLASE-VIAL,CALLE_ID,CODIGO-POSTAL,BARRIO,BARRIO_ID,DISTRITO
 11483771,Aparcamiento disuasorio Aviación Española,24 h,344,Accesible,Calle Fuente De Lima,CalleFuenteDeLima,28024,Las Aguilas,LasAguilas,Latina
-10489514,Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b,de 6:00 h a 22:00 h,3011,No accesible,Avenida Arcentales,AvenidaArcentales,28022,Rosas,Rosas,San Blas-canillejas
+10489514,Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b,de 6:00 h a 22:00 h,3011,No accesible,Avenida Arcentales,AvenidaArcentales,28022,Rosas,Rosas,San Blas - Canillejas
 11413444,Aparcamiento disuasorio Fuente de la Mora,24 h,368,Accesible,Avenida Manoteras,AvenidaManoteras,28050,Valdefuentes,Valdefuentes,Hortaleza
 11544464,Aparcamiento disuasorio Islazul,,224,Accesible,Calle Calderilla,CalleCalderilla,28054,Buenavista,Buenavista,Carabanchel
-11413620,Aparcamiento disuasorio Pitis,24 h,402,Accesible,Calle Gloria Fuertes,CalleGloriaFuertes,28049,Fuentelarreina,Fuentelarreina,Fuencarral-el Pardo
+11413620,Aparcamiento disuasorio Pitis,24 h,402,Accesible,Calle Gloria Fuertes,CalleGloriaFuertes,28049,Fuentelarreina,Fuentelarreina,Fuencarral - El Pardo
 11544480,Aparcamiento mixto. Alcántara,,121,No accesible,Calle Alcantara,CalleAlcantara,28006,Goya,Goya,Salamanca
-13470,Aparcamiento mixto. Arquitecto Ribera,,318,No accesible,Calle Barcelo,CalleBarcelo,28004,Justicia,Justicia,Centro
-59060,Aparcamiento mixto. Avenida de América (intercambiador),,261,No accesible,Avenida America,AvenidaAmerica,28002,Prosperidad,Prosperidad,Chamartin
+13470,Aparcamiento mixto. Arquitecto Ribera,,318,No accesible,Calle Barceló,CalleBarceló,28004,Justicia,Justicia,Centro
+59060,Aparcamiento mixto. Avenida de América (intercambiador),,261,No accesible,Avenida de América,AvenidaAmérica,28002,Prosperidad,Prosperidad,Chamartín
 5898885,Aparcamiento mixto. Avenida de Portugal,de 6:00 h a 22:00 h,428,No accesible,Avenida Portugal,AvenidaPortugal,28011,Puerta Del Angel,PuertaDelAngel,Latina
-13475,Aparcamiento mixto. Brasil,,226,No accesible,Calle San German,CalleSanGerman,28020,Cuatro Caminos,CuatroCaminos,Tetuan
+13475,Aparcamiento mixto. Brasil,,226,No accesible,Calle San Germán,CalleSanGermán,28020,Cuatro Caminos,CuatroCaminos,Tetuán
 183747,Aparcamiento mixto. Casino de la Reina,,135,No accesible,Calle Casino,CalleCasino,28005,Embajadores,Embajadores,Centro
-13477,Aparcamiento mixto. Condesa de Gavia,,146,No accesible,Plaza Condesa De Gavia,PlazaCondesaDeGavia,28020,Cuatro Caminos,CuatroCaminos,Tetuan
-81736,Aparcamiento mixto. Corona Boreal,,125,Accesible,Calle Perez De Victoria,CallePerezDeVictoria,28023,Aravaca,Aravaca,Moncloa-aravaca
-183748,Aparcamiento mixto. Daoíz y Velarde,,235,No accesible,Avenida Ciudad De Barcelona,AvenidaCiudadDeBarcelona,28007,Pacifico,Pacifico,Retiro
-44724,Aparcamiento mixto. Díaz Porlier,,203,No accesible,Calle Diego De Leon,CalleDiegoDeLeon,28006,Lista,Lista,Salamanca
+13477,Aparcamiento mixto. Condesa de Gavia,,146,No accesible,Plaza Condesa De Gavia,PlazaCondesaDeGavia,28020,Cuatro Caminos,CuatroCaminos,Tetuán
+81736,Aparcamiento mixto. Corona Boreal,,125,Accesible,Calle Pérez De Victoria,CallePérezDeVictoria,28023,Aravaca,Aravaca,Moncloa - Aravaca
+183748,Aparcamiento mixto. Daoíz y Velarde,,235,No accesible,Avenida Ciudad De Barcelona,AvenidaCiudadDeBarcelona,28007,Pacífico,Pacifico,Retiro
+44724,Aparcamiento mixto. Díaz Porlier,,203,No accesible,Calle Diego De León,CalleDiegoDeLeón,28006,Lista,Lista,Salamanca
 36269,Aparcamiento mixto. Encuentro,,104,No accesible,Plaza Encuentro,PlazaEncuentro,28030,Media Legua,MediaLegua,Moratalaz
 13464,Aparcamiento mixto. Felipe II,,1175,No accesible,Calle Goya,CalleGoya,28001,Recoletos,Recoletos,Salamanca
-24809,Aparcamiento mixto. Fernández Shaw,,245,No accesible,Calle Carlos Y Guillermo Fernandez Shaw,CalleCarlosYGuillermoFernandezShaw,28007,Adelfas,Adelfas,Retiro
-13462,Aparcamiento mixto. Fuencarral,,410,No accesible,Calle Fuencarral,CalleFuencarral,28010,Trafalgar,Trafalgar,Chamberi
-36270,Aparcamiento mixto. Hernani,,115,No accesible,Calle Hernani,CalleHernani,28020,Cuatro Caminos,CuatroCaminos,Tetuan
+24809,Aparcamiento mixto. Fernández Shaw,,245,No accesible,Calle Carlos Y Guillermo Fernández Shaw,CalleCarlosYGuillermoFernándezShaw,28007,Adelfas,Adelfas,Retiro
+13462,Aparcamiento mixto. Fuencarral,,410,No accesible,Calle Fuencarral,CalleFuencarral,28010,Trafalgar,Trafalgar,Chamberí
+36270,Aparcamiento mixto. Hernani,,115,No accesible,Calle Hernani,CalleHernani,28020,Cuatro Caminos,CuatroCaminos,Tetuán
 13459,Aparcamiento mixto. Jacinto Benavente,,285,No accesible,Plaza Jacinto Benavente,PlazaJacintoBenavente,28012,Cortes,Cortes,Centro
-13479,Aparcamiento mixto. José Castán Tobeñas,,226,No accesible,Calle Poeta Joan Maragall,CallePoetaJoanMaragall,28020,Castillejos,Castillejos,Tetuan
-6143690,Aparcamiento mixto. Marqués de Salamanca,,356,No accesible,Plaza Marques De Salamanca,PlazaMarquesDeSalamanca,28006,Castellana,Castellana,Salamanca
-182188,Aparcamiento mixto. Miguel Yuste,,168,No accesible,Calle Miguel Yuste,CalleMiguelYuste,28037,Simancas,Simancas,San Blas-canillejas
-13465,Aparcamiento mixto. Montalbán,,146,Accesible,Calle Montalban,CalleMontalban,28014,Los Jeronimos,LosJeronimos,Retiro
-5517342,Aparcamiento mixto. Orense,,129,No accesible,Avenida Brasil,AvenidaBrasil,28020,Cuatro Caminos,CuatroCaminos,Tetuan
+13479,Aparcamiento mixto. José Castán Tobeñas,,226,No accesible,Calle Poeta Joan Maragall,CallePoetaJoanMaragall,28020,Castillejos,Castillejos,Tetuán
+6143690,Aparcamiento mixto. Marqués de Salamanca,,356,No accesible,Plaza Marqués De Salamanca,PlazaMarquésDeSalamanca,28006,Castellana,Castellana,Salamanca
+182188,Aparcamiento mixto. Miguel Yuste,,168,No accesible,Calle Miguel Yuste,CalleMiguelYuste,28037,Simancas,Simancas,San Blas - Canillejas
+13465,Aparcamiento mixto. Montalbán,,146,Accesible,Calle Montalbán,CalleMontalbán,28014,Jerónimos,Jerónimos,Retiro
+5517342,Aparcamiento mixto. Orense,,129,No accesible,Avenida Brasil,AvenidaBrasil,28020,Cuatro Caminos,CuatroCaminos,Tetuán
 52114,Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella',,107,No accesible,Plaza Pedro Zerolo,PlazaPedroZerolo,28004,Justicia,Justicia,Centro
 33440,Aparcamiento mixto. Plaza de Oriente,,242,No accesible,Plaza Oriente,PlazaOriente,28013,Palacio,Palacio,Centro
 11544439,Aparcamiento mixto. Plaza de Santo Domingo,,320,No accesible,Plaza Santo Domingo,PlazaSantoDomingo,28013,Palacio,Palacio,Centro
 13466,Aparcamiento mixto. Plaza Mayor,,694,No accesible,Plaza Mayor,PlazaMayor,28012,Sol,Sol,Centro
-36271,Aparcamiento mixto. Presidente Carmona,24 h,127,No accesible,Avenida General Peron,AvenidaGeneralPeron,28020,Cuatro Caminos,CuatroCaminos,Tetuan
+36271,Aparcamiento mixto. Presidente Carmona,24 h,127,No accesible,Avenida General Perón,AvenidaGeneralPerón,28020,Cuatro Caminos,CuatroCaminos,Tetuán
 13476,Aparcamiento mixto. Recoletos,,102,No accesible,Paseo Recoletos,PaseoRecoletos,28001,Recoletos,Recoletos,Salamanca
-24193,Aparcamiento mixto. República Dominicana,,209,No accesible,Plaza Republica Dominicana,PlazaRepublicaDominicana,28016,Nueva España,NuevaEspaña,Chamartin
+24193,Aparcamiento mixto. República Dominicana,,209,No accesible,Plaza República Dominicana,PlazaRepúblicaDominicana,28016,Nueva España,NuevaEspaña,Chamartín
 81828,Aparcamiento mixto. Reyes Magos,,356,No accesible,Plaza Reyes Magos,PlazaReyesMagos,28007,Niño Jesus,NiñoJesus,Retiro
 167692,Aparcamiento mixto. San Cayetano,,222,No accesible,Plaza San Cayetano,PlazaSanCayetano,28028,Guindalera,Guindalera,Salamanca
-13515,Aparcamiento mixto. San Germán II (antes General Yagüe),,419,No accesible,Calle Orense,CalleOrense,28020,Castillejos,Castillejos,Tetuan
-19053,Aparcamiento mixto. Sánchez Bustillo,,131,No accesible,Calle Sanchez Bustillo,CalleSanchezBustillo,28012,Embajadores,Embajadores,Centro
+13515,Aparcamiento mixto. San Germán II (antes General Yagüe),,419,No accesible,Calle Orense,CalleOrense,28020,Castillejos,Castillejos,Tetuán
+19053,Aparcamiento mixto. Sánchez Bustillo,,131,No accesible,Calle Sánchez Bustillo,CalleSánchezBustillo,28012,Embajadores,Embajadores,Centro
 7416748,Aparcamiento mixto. Serrano I,,307,No accesible,Calle Serrano,CalleSerrano,28006,Castellana,Castellana,Salamanca
 7417028,Aparcamiento mixto. Serrano II,,379,No accesible,Calle Serrano,CalleSerrano,28001,Recoletos,Recoletos,Salamanca
 7417052,Aparcamiento mixto. Serrano III,,261,No accesible,Calle Serrano,CalleSerrano,28001,Recoletos,Recoletos,Salamanca
-13460,Aparcamiento mixto. Sevilla,,649,No accesible,Calle Alcala,CalleAlcala,28014,Sol,Sol,Centro
-13458,Aparcamiento mixto. Velázquez - Ayala,,443,No accesible,Calle Velazquez,CalleVelazquez,28001,Recoletos,Recoletos,Salamanca
-13457,Aparcamiento mixto. Velázquez - Jorge Juan,,548,Accesible,Calle Velazquez,CalleVelazquez,28001,Recoletos,Recoletos,Salamanca
-183607,Aparcamiento mixto. Verdaguer y García,,83,No accesible,Calle Verdaguer Y Garcia,CalleVerdaguerYGarcia,28027,San Pascual,SanPascual,Ciudad Lineal
-13452,Aparcamiento público. Almagro,,463,No accesible,Calle Almagro,CalleAlmagro,28010,Almagro,Almagro,Chamberi
-7393089,Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara),,376,Accesible,Calle Cartagena,CalleCartagena,28002,Ciudad Jardin,CiudadJardin,Chamartin
+13460,Aparcamiento mixto. Sevilla,,649,No accesible,Calle Alcalá,CalleAlcalá,28014,Sol,Sol,Centro
+13458,Aparcamiento mixto. Velázquez - Ayala,,443,No accesible,Calle Velázquez,CalleVelázquez,28001,Recoletos,Recoletos,Salamanca
+13457,Aparcamiento mixto. Velázquez - Jorge Juan,,548,Accesible,Calle Velázquez,CalleVelázquez,28001,Recoletos,Recoletos,Salamanca
+183607,Aparcamiento mixto. Verdaguer y García,,83,No accesible,Calle Verdaguer Y García,CalleVerdaguerYGarcía,28027,San Pascual,SanPascual,Ciudad Lineal
+13452,Aparcamiento público. Almagro,,463,No accesible,Calle Almagro,CalleAlmagro,28010,Almagro,Almagro,Chamberí
+7393089,Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara),,376,Accesible,Calle Cartagena,CalleCartagena,28002,Ciudad Jardin,CiudadJardin,Chamartín
 13473,Aparcamiento público. Descalzas,,400,Accesible,Plaza Descalzas,PlazaDescalzas,28013,Sol,Sol,Centro
 13478,Aparcamiento público. Glorieta Puerta de Toledo,,240,Accesible,Glorieta Puerta De Toledo,GlorietaPuertaDeToledo,28005,Embajadores,Embajadores,Centro
 13467,Aparcamiento público. Las Cortes,,480,Accesible,Plaza Cortes,PlazaCortes,28014,Cortes,Cortes,Centro
-13449,Aparcamiento público. Luna - Tudescos,,481,Accesible,Plaza Santa Maria Soledad Torres Acosta,PlazaSantaMariaSoledadTorresAcosta,28004,Universidad,Universidad,Centro
-13469,Aparcamiento público. Marqués de Urquijo,,482,No accesible,Calle Marques De Urquijo,CalleMarquesDeUrquijo,28008,Arguelles,Arguelles,Moncloa-aravaca
-13451,Aparcamiento público. Mostenses,,361,Accesible,Calle Garcia Molinas,CalleGarciaMolinas,28015,Universidad,Universidad,Centro
-88141,Aparcamiento público. Museo de la Ciudad,,147,No accesible,Calle Principe De Vergara,CallePrincipeDeVergara,28002,Ciudad Jardin,CiudadJardin,Chamartin
-13450,Aparcamiento público. Olavide,,397,No accesible,Plaza Olavide,PlazaOlavide,28010,Trafalgar,Trafalgar,Chamberi
+13449,Aparcamiento público. Luna - Tudescos,,481,Accesible,Plaza Santa María Soledad Torres Acosta,PlazaSantaMaríaSoledadTorresAcosta,28004,Universidad,Universidad,Centro
+13469,Aparcamiento público. Marqués de Urquijo,,482,No accesible,Calle Marqués De Urquijo,CalleMarquésDeUrquijo,28008,Argüelles,Argüelles,Moncloa - Aravaca
+13451,Aparcamiento público. Mostenses,,361,Accesible,Calle García Molinas,CalleGarcíaMolinas,28015,Universidad,Universidad,Centro
+88141,Aparcamiento público. Museo de la Ciudad,,147,No accesible,Calle Príncipe De Vergara,CallePríncipeDeVergara,28002,Ciudad Jardin,CiudadJardin,Chamartín
+13450,Aparcamiento público. Olavide,,397,No accesible,Plaza Olavide,PlazaOlavide,28010,Trafalgar,Trafalgar,Chamberí
 13454,Aparcamiento público. Plaza de Colón,,611,Accesible,Calle Goya,CalleGoya,28001,Recoletos,Recoletos,Salamanca
 13463,Aparcamiento público. Plaza de España,,800,No accesible,Plaza España,PlazaEspaña,28008,Palacio,Palacio,Centro
 13472,Aparcamiento público. Plaza del Carmen (cerrado),,450,No accesible,Plaza Carmen,PlazaCarmen,28013,Sol,Sol,Centro
 13474,Aparcamiento público. Plaza del Rey,,170,No accesible,Plaza Rey,PlazaRey,28004,Justicia,Justicia,Centro
 11750494,Aparcamiento público. San Epifanio,,501,Accesible,Calle San Epifanio,CalleSanEpifanio,28005,Imperial,Imperial,Arganzuela
 13456,Aparcamiento público. Santa Ana,,325,Accesible,Plaza Santa Ana,PlazaSantaAna,28012,Cortes,Cortes,Centro
-10737574,Aparcamiento público. Usera,,36,No accesible,Calle Amparo Usera,CalleAmparoUsera,28026,Moscardo,Moscardo,Usera
-13468,Aparcamiento público. Velázquez - Juan Bravo,,371,Accesible,Calle Velazquez,CalleVelazquez,28006,Castellana,Castellana,Salamanca
-13453,Aparcamiento público. Villa de París,,169,Accesible,Plaza Villa De Paris,PlazaVillaDeParis,28004,Justicia,Justicia,Centro
+10737574,Aparcamiento público. Usera,,36,No accesible,Calle Amparo Usera,CalleAmparoUsera,28026,Moscardó,Moscardó,Usera
+13468,Aparcamiento público. Velázquez - Juan Bravo,,371,Accesible,Calle Velázquez,CalleVelázquez,28006,Castellana,Castellana,Salamanca
+13453,Aparcamiento público. Villa de París,,169,Accesible,Plaza Villa De París,PlazaVillaDeParís,28004,Justicia,Justicia,Centro
 ,,,,,,,,,,
