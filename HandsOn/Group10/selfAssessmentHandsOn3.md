@@ -22,4 +22,4 @@
 - [x] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-_(If required)_
+Instances have groups of columns that can serve as unique identifiers. They, however contain IDs that are in practice similar to auto-increasing integers.

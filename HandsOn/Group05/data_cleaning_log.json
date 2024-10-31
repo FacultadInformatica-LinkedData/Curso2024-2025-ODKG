@@ -1,0 +1,42 @@
+[
+    {
+        "operation": "Read CSV files",
+        "description": "Imported two datasets, NO2 and PM2.5, from CSV files."
+    },
+    {
+        "operation": "Check missing data",
+        "description": "Checked both NO2 and PM2.5 datasets for missing values. None found."
+    },
+    {
+        "operation": "Prepare datasets for pivot",
+        "description": "Identified columns to pivot from wide format to long format for PM2.5 and NO2 data."
+    },
+    {
+        "operation": "Add background info",
+        "description": "Added background element and unit columns for PM2.5 ('ug/m^3') and NO2 ('ppb') datasets."
+    },
+    {
+        "operation": "Pivot datasets",
+        "description": "Applied pd.melt to both datasets, converting the wide format to long format."
+    },
+    {
+        "operation": "Split and clean columns",
+        "description": "Split 'column_name' into street, element_measured, and units, and removed square brackets from units."
+    },
+    {
+        "operation": "Concatenate datasets",
+        "description": "Concatenated the NO2 and PM2.5 datasets into a master dataframe."
+    },
+    {
+        "operation": "Rename columns",
+        "description": "Renamed several columns for clarity, such as 'Temperature [degC]' to 'temperature_celsius'."
+    },
+    {
+        "operation": "Merge with street data",
+        "description": "Enriched the dataset by merging it with a streets dataset to add latitude and longitude for each street."
+    },
+    {
+        "operation": "Save updated dataset",
+        "description": "Saved the final cleaned and transformed dataset as 'updated.csv'."
+    }
+]

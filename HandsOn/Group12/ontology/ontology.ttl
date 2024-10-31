@@ -1,0 +1,148 @@
+@prefix : <http://group12.namespace.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dc:creator "Group12" ;
+    dc:title "Template Ontology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+ns:cod_lesividad a owl:DatatypeProperty ;
+    rdfs:label "cod_lesividad" ;
+    rdfs:domain ns:Lesividad ;
+    rdfs:range xsd:integer .
+
+ns:code_distrito a owl:DatatypeProperty ;
+    rdfs:label "code_distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:integer .
+
+ns:coordenada_x_utm a owl:DatatypeProperty ;
+    rdfs:label "coordenada_x_utm" ;
+    rdfs:domain ns:Localizacion ;
+    rdfs:range xsd:float .
+
+ns:coordenada_y_utm a owl:DatatypeProperty ;
+    rdfs:label "coordenada_y_utm" ;
+    rdfs:domain ns:Localizacion ;
+    rdfs:range xsd:float .
+
+ns:distrito a owl:DatatypeProperty ;
+    rdfs:label "distrito" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
+
+ns:estado_meteorologico a owl:DatatypeProperty ;
+    rdfs:label "estado_meteorologico" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label "fecha" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:date .
+
+ns:hora a owl:DatatypeProperty ;
+    rdfs:label "hora" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:time .
+
+ns:lesividad a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "lesividad" ;
+    rdfs:domain ns:Accidente,
+        ns:Lesividad ;
+    rdfs:range ns:Lesividad,
+        xsd:string .
+
+ns:localizacion a owl:DatatypeProperty ;
+    rdfs:label "localizacion" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
+
+ns:num_expediente a owl:DatatypeProperty ;
+    rdfs:label "num_expediente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:numero a owl:DatatypeProperty ;
+    rdfs:label "numero" ;
+    rdfs:domain ns:Distrito ;
+    rdfs:range xsd:string .
+
+ns:positiva_alcohol a owl:DatatypeProperty ;
+    rdfs:label "positiva_alcohol" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+ns:positiva_droga a owl:DatatypeProperty ;
+    rdfs:label "positiva_droga" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+ns:rango_edad a owl:DatatypeProperty ;
+    rdfs:label "rango_edad" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+ns:sexo a owl:DatatypeProperty ;
+    rdfs:label "sexo" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+ns:tieneDistrito a owl:ObjectProperty ;
+    rdfs:label "tiene distrito" ;
+    rdfs:domain ns:Localizacion ;
+    rdfs:range ns:Distrito .
+
+ns:tieneLocalizacion a owl:ObjectProperty ;
+    rdfs:label "tiene localizacion" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range ns:Localizacion .
+
+ns:tieneParticipante a owl:ObjectProperty ;
+    rdfs:label "tiene participante" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range ns:Participante .
+
+ns:tipo_accidente a owl:DatatypeProperty ;
+    rdfs:label "tipo_accidente" ;
+    rdfs:domain ns:Accidente ;
+    rdfs:range xsd:string .
+
+ns:tipo_persona a owl:DatatypeProperty ;
+    rdfs:label "tipo_persona" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+ns:tipo_vehiculo a owl:DatatypeProperty ;
+    rdfs:label "tipo_vehiculo" ;
+    rdfs:domain ns:Participante ;
+    rdfs:range xsd:string .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns:Lesividad a owl:Class ;
+    rdfs:label "Lesividad" .
+
+ns:Localizacion a owl:Class ;
+    rdfs:label "Localizacion" .
+
+ns:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+ns:Participante a owl:Class ;
+    rdfs:label "Participante" .
+
+ns:Accidente a owl:Class ;
+    rdfs:label "Accidente" .
+

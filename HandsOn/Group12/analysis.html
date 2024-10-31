@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Analysis</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section p,
+        section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        section ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #4CAF50;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Modern Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dataset analysis</h1>
+    </header>
+
+    <div class="container">
+        <!-- Overview Section -->
+        <section class="overview">
+            <h2>Dataset analysis</h2>
+            <ul>
+                <li><strong>General Overview:</strong>
+                    <ul>
+                        <li>The dataset consists of 80,189 records and 19 columns, representing traffic accidents in Madrid.</li>
+                        <li>Each record provides details such as accident location, date, weather conditions, vehicle type, person type, age, gender, severity of injuries, and geographical coordinates.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Missing Data:</strong>
+                    <ul>
+                        <li>Significant missing data was found, especially in:
+                            <ul>
+                                <li>estado_meteorológico (9,340 missing entries).</li>
+                                <li>cod_lesividad and lesividad (both with 36,940 missing entries), which record the severity of the accident.</li>
+                                <li>Drug test results (positiva_droga): Almost entirely missing for both years (79,835 entries missing).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Categorical Variables:</strong>
+                    <ul>
+                        <li>District (distrito): There are 21 unique districts. The most accident-prone district is "Puente de Vallecas", with 6,383 cases.</li>
+                        <li>Type of Accident (tipo_accidente): 13 different accident types are recorded, with "Colisión fronto-lateral" being the most common type (20,877 cases).</li>
+                        <li>Weather Conditions (estado_meteorológico): Accidents mostly occur under "Despejado" (Clear) conditions, appearing in 60,724 cases.</li>
+                        <li>Vehicle Type (tipo_vehiculo): There are 35 unique vehicle types. "Turismo" (Private car) is the most frequent vehicle involved, making up 55,150 cases.</li>
+                        <li>Person Type (tipo_persona): "Conductor" (driver) is the predominant role, with 64,359 cases.</li>
+                        <li>Age Range (rango_edad): 18 distinct age ranges are represented. A large number (8,747) of entries are marked as "Desconocido" (Unknown).</li>
+                        <li>Gender (sexo): "Hombre" (male) accounts for 48,424 cases, while "Mujer" (female) is recorded in 31,765 cases.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Lesividad (Severity of Injury):</strong>
+                    <ul>
+                        <li>Severity of accidents is mostly low:
+                            <ul>
+                                <li>"Sin asistencia sanitaria" (No medical assistance) is the most common outcome, occurring in 24,649 cases.</li>
+                                <li>Serious injuries leading to "Fallecido 24 horas" (Death within 24 hours) occurred in 45 cases.</li>
+                                <li>Other cases include different levels of medical attention, such as immediate attention at the scene, hospitalization, or emergency care.</li>
+                                <li>4 cases have unknown severity ("Se desconoce").</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Numerical Data Overview:</strong>
+                    <ul>
+                        <li>The severity code (cod_lesividad) ranges from 1 to 77, with an average severity level of 10.2.</li>
+                        <li>Geographical Coordinates (coordenada_x_utm and coordenada_y_utm) mostly represent locations concentrated around Madrid, with some entries containing zero values indicating missing or incorrect data.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Summary Insights:</strong>
+                    <ul>
+                        <li>Most accidents occur in clear weather, with private cars being the most involved vehicle type.</li>
+                        <li>Males represent the majority of those involved in accidents, and drivers are more commonly reported than passengers or pedestrians.</li>
+                        <li>Low severity incidents dominate the dataset, with a small percentage of severe injuries or fatalities.</li>
+                        <li>The data contains significant gaps, particularly in drug test results and accident severity, which may limit certain types of analysis.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- License Section -->
+        <section class="license">
+            <h2>License</h2>
+            <ul>
+                <li><strong>Fecha de creación:</strong> 04/06/2018</li>
+                <li><strong>Actualización de los datos en el portal:</strong> 03/10/2024</li>
+                <li><strong>Frecuencia de actualización:</strong> Mensual</li>
+                <li><strong>Responsable del conjunto de datos:</strong> Dirección General de la Policía Municipal</li>
+                <li><strong>Editor:</strong> Ayuntamiento de Madrid</li>
+                <li><strong>Lugar:</strong> Madrid</li>
+                <li><strong>Licencia:</strong> <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">View License</a></li>
+            </ul>
+        </section>
+        <section class="naming-strategy">
+            <h2>Resource Naming Strategy</h2>
+            <p><strong>Domain:</strong></p>
+            <p>Use a custom domain relevant to your dataset, e.g., <span style="color: #0073e6;">http://accidents.madrid.es/</span>.</p>
+        
+            <p><strong>Classes and Properties:</strong></p>
+            <p>Use different paths for ontology resources such as classes (/ontology/) and properties (/properties/):</p>
+            <ul>
+                <li><strong>Classes:</strong></li>
+                <ul>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/ontology/Accident</span></li>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/ontology/Street</span></li>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/ontology/Vehicle</span></li>
+                </ul>
+                <li><strong>Properties:</strong></li>
+                <ul>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/properties/hasLocation</span></li>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/properties/involvesVehicle</span></li>
+                    <li><span style="color: #0073e6;">http://accidents.madrid.es/properties/occurredOnDate</span></li>
+                </ul>
+            </ul>
+        
+            <p><strong>Individuals:</strong> Use different paths for individuals, ensuring they are distinct for different classes:</p>
+            <ul>
+                <li>Accidents: <span style="color: #0073e6;">http://accidents.madrid.es/resources/accident/{AccidentID}</span></li>
+                <li>Streets: <span style="color: #0073e6;">http://accidents.madrid.es/resources/street/{StreetName}</span></li>
+                <li>Vehicles: <span style="color: #0073e6;">http://accidents.madrid.es/resources/vehicle/{VehicleID}</span></li>
+            </ul>
+        
+            <p><strong>Individual URIs Independently Defined:</strong> Ensure each individual URI is unique and independent of class URIs, using specific paths:</p>
+            <ul>
+                <li>Accident Example: <span style="color: #0073e6;">http://accidents.madrid.es/resources/accident/20241007-01</span></li>
+                <li>Street Example: <span style="color: #0073e6;">http://accidents.madrid.es/resources/street/GranVia</span></li>
+                <li>Vehicle Example: <span style="color: #0073e6;">http://accidents.madrid.es/resources/vehicle/AB1234CD</span></li>
+            </ul>
+        
+        </section>
+        
+    </div>
+</body>
+
+</html>
