@@ -182,10 +182,10 @@ schema:unitText rdf:type owl:DatatypeProperty ;
                 rdfs:domain schema:QuantitativeValue ;
                 rdfs:range xsd:string .
 
-
 ###  https://schema.org/value
 schema:value rdf:type owl:DatatypeProperty ;
-             rdfs:domain schema:StructuredValue .
+             rdfs:domain schema:StructuredValue;
+             rdfs:range xsd:float .
 
 
 #################################################################

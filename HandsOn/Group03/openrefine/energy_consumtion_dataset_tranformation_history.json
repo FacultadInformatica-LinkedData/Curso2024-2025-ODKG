@@ -1233,5 +1233,35 @@
     "newColumnName": "ID",
     "columnInsertIndex": 1,
     "description": "Create column ID at index 1 based on column YEAR using expression grel:value + \"-\" + cells[\"MONTH\"].value + \"-\" +cells[\"BUILDING\"].value + \"-\" + cells[\"SENSOR\"].value + \"-\" + cells[\"ENERGY UNITS\"].value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SENSOR TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Externo",
+          "EXTERNO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Externo"
+      },
+      {
+        "from": [
+          "PROCESADO",
+          "Procesado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Procesado"
+      }
+    ],
+    "description": "Mass edit cells in column SENSOR TYPE"
   }
 ]

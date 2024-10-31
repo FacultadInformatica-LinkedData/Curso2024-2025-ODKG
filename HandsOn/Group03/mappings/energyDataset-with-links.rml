@@ -12,7 +12,7 @@
 
 <#SensorMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -43,7 +43,7 @@
   
 <#ObservationMap/> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -73,7 +73,7 @@
   ].
 <#QuantitativeValueMap/> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -88,16 +88,16 @@
     ]
   ];
 	rr:predicateObjectMap [
-    rr:predicate sosa:resultTime;
+    rr:predicate schema:value;
     rr:objectMap [
       rml:reference "CONSUMPTION";
-      rr:datatype xsd:integer
+      rr:datatype xsd:float
     ]
   ].
   
  <#CivicStructureMap/> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -161,7 +161,7 @@
   ].
  <#BuildingUsageMap/> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -177,7 +177,7 @@
   ].
   <#GeoCoordinatesMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -214,7 +214,7 @@
   ].
   <#DistrictMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -244,7 +244,7 @@
   ].
    <#NeighborhoodMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -281,7 +281,7 @@
   ].
   <#CityMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -298,7 +298,7 @@
   
   <#SensorTypeMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
@@ -314,7 +314,7 @@
   ].
     <#EnergyClassMap> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "buildings_energy_consumption-v2-with-links.csv" ;
+    rml:source "../csv/buildings_energy_consumption-v2-with-links.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
   rr:subjectMap [
