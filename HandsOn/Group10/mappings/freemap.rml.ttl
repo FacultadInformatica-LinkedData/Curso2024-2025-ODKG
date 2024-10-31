@@ -3,7 +3,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 @prefix fno: <https://w3id.org/function/ontology#> .
-@prefix bicimap: <https://bicimap.com/ontology#> .
+@prefix bicimap: <https://BiciMad.es/ontology#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,12 +11,12 @@
 
 <#FreeMap>
     rml:logicalSource [
-        rml:source "updated_dataset_free_places.csv" ;
+        rml:source "readable_free_places.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
     rr:subjectMap [
-        rr:template "http://bicimap.com/entity/{id_free_place}" ;
+        rr:template "http://www.BiciMad.es/entity/Place/{readable_id}" ;
         rr:class schema:Place
     ] ;
 
@@ -55,9 +55,10 @@
         ]
     ] .
 
+
 <#AddressMap>
     rml:logicalSource [
-        rml:source "updated_dataset_free_places.csv" ;
+        rml:source "readable_free_places.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
     rr:subjectMap [
@@ -97,4 +98,17 @@
             rr:termType rr:Literal ;
             rr:datatype xsd:int
         ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant schema:containedInPlace;
+            rr:termType rr:IRI
+        ] ;
+        rr:objectMap [
+            rr:template "http://www.BiciMad.es/entity/Place/{district}"
+        ]
     ] .
+
+
+
+
