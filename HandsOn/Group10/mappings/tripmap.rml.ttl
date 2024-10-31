@@ -3,7 +3,7 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
 @prefix fno: <https://w3id.org/function/ontology#> .
-@prefix bicimap: <https://bicimap.com/ontology#> .
+@prefix bicimap: <https://BiciMad.es/ontology#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,12 +11,12 @@
 
 <#BiketripsMapping>
     rml:logicalSource [
-        rml:source "biketrips.csv" ;
+        rml:source "new_readable_trips.csv" ;
         rml:referenceFormulation ql:CSV
     ] ;
 
     rr:subjectMap [
-        rr:template "http://bicimap.com/entity/Trip{id_trip}" ;
+        rr:template "http://www.BiciMad.es/entity/BikeTrip/{readable_id}" ;
         rr:class bicimap:BikeTrip
     ] ;
 
@@ -107,7 +107,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rr:template "http://bicimap.com/places/{id_place_unlock}"
+            rr:template "http://www.BiciMad.es/entity/Place/{id_place_unlock}"
         ]
     ] ;
 
@@ -117,7 +117,7 @@
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
-            rr:template "http://bicimap.com/places/{id_place_lock}"
+            rr:template "http://www.BiciMad.es/entity/Place/{id_place_lock}"
         ]
     ] .
 

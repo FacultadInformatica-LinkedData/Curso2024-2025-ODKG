@@ -1,0 +1,129 @@
+@prefix : <http://www.BiciMad.es/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@base <http://www.BiciMad.es/ontology> .
+
+<http://www.BiciMad.es/ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.BiciMad.es/ontology#bikeId
+:bikeId rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :endAt ;
+        rdfs:domain :BikeTrip ;
+        rdfs:range [ rdf:type owl:Restriction ;
+                     owl:onProperty owl:topDataProperty ;
+                     owl:allValuesFrom xsd:integer
+                   ] ;
+        rdfs:comment "Identificador único de la bicicleta usada en el viaje"@es ,
+                     "Unique identifier of the bike used for the trip"@en ;
+        rdfs:label "Bike Identifier"@en ,
+                   "Identificador de la bicicleta"@es .
+
+
+###  http://www.BiciMad.es/ontology#endAt
+:endAt rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain :BikeTrip ;
+       rdfs:range schema:Place ;
+       rdfs:comment "Lugar de final del trayecto en bicicleta. Tiene que ser un schema:Place."@es ,
+                    "Place where the bike trip ended. This is a schema:Place."@en ;
+       rdfs:label "Ending place of the trip"@en ,
+                  "Lugar de fin del trayecto"@es .
+
+
+###  http://www.BiciMad.es/ontology#lockDate
+:lockDate rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :BikeTrip ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty owl:topDataProperty ;
+                       owl:allValuesFrom xsd:dateTime
+                     ] ;
+          rdfs:comment "This is the Date and Time when the bike was locked."@en ,
+                       "Tiempo y Fecha cuando la bicicleta fue bloqueada."@es ;
+          rdfs:label "Locking date"@en ,
+                     "Tiempo de final del trayecto"@es .
+
+
+###  http://www.BiciMad.es/ontology#lockDock
+:lockDock rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :BikeTrip ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty owl:topDataProperty ;
+                       owl:allValuesFrom xsd:integer
+                     ] ;
+          rdfs:comment "Dock where the bike was locked in a bike station."@en ,
+                       "Puerto donde la bicicleta fue bloqueada en una estación de bicicletas."@es ;
+          rdfs:label "Locking dock"@en ,
+                     "Puerto de bloqueado"@es .
+
+
+###  http://www.BiciMad.es/ontology#startAt
+:startAt rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :BikeTrip ;
+         rdfs:range schema:Place ;
+         rdfs:comment "Lugar de inicio del trayecto en bicicleta. Debe ser un schema:Place"@es ,
+                      "Place where the bike was unlocked. This should be type schema:Place."@en ;
+         rdfs:label "Lugar de fin del trayecto"@es ,
+                    "Starting place of the trip"@en .
+
+
+###  http://www.BiciMad.es/ontology#unlockDate
+:unlockDate rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :BikeTrip ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty owl:topDataProperty ;
+                         owl:allValuesFrom xsd:dateTime
+                       ] ;
+            rdfs:comment "Date and Time when the bike was unlocked."@en ,
+                         "Fecha y Tiempo cuando la bicicleta fue desbloqueada."@es ;
+            rdfs:label "Momento de inicio del trayecto"@es ,
+                       "Unlocking date"@en .
+
+
+###  http://www.BiciMad.es/ontology#unlockDock
+:unlockDock rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :BikeTrip ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty owl:topDataProperty ;
+                         owl:allValuesFrom xsd:integer
+                       ] ;
+            rdfs:comment "Este es el puerto en la Estación de Bicicletas donde la bicicleta fue bloqueada."@es ,
+                         "This is the dock inside a Bike Station where the bike was unlocked."@en ;
+            rdfs:label "Puerto de desbloqueado"@es ,
+                       "Unlocking dock"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.BiciMad.es/ontology#BikeStation
+:BikeStation rdf:type owl:Class ;
+             rdfs:subClassOf schema:Place ;
+             rdfs:comment "Esta clase representa una estación de bicicletas. Suelen empezar y acabar los viajes aquí."@es ,
+                          "This class represents a bike station. It is where bikes tend to begin and end their trips."@en ;
+             rdfs:label "Bike Station"@en ,
+                        "Estación de bicicletas"@es .
+
+
+###  http://www.BiciMad.es/ontology#BikeTrip
+:BikeTrip rdf:type owl:Class ;
+          rdfs:comment "Esta clase representa un viaje en bicicleta entre dos schema:Place y con tiempo de inicio y final."@es ,
+                       "This class represents a trip by bike between two places, with start and end times."@en ;
+          rdfs:label "Bike trip"@en ,
+                     "Viaje en bicicleta"@es .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
