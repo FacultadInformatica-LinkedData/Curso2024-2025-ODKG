@@ -1,0 +1,12 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+ex:persona1 a foaf:Person ;
+    foaf:name "Aníbal Gallegos" ;
+    foaf:age "30" ;
+    foaf:mbox <mailto:anibalg@wcr.org> .
+
+ex:persona2 a foaf:Person ;
+    foaf:name "Natalia Throska" ;
+    foaf:age "25" ;
+    foaf:mbox <mailto:natt@wcr.org> .
