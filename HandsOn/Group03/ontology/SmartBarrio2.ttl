@@ -130,9 +130,7 @@ schema:geoContains rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#neighborhoodCode
-:neighborhoodCode rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:integer .
+
 
 
 ###  http://www.w3.org/ns/sosa/resultTime
