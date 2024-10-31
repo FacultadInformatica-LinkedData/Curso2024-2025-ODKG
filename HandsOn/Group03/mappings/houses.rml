@@ -20,7 +20,7 @@
     void:exampleResource :map_houses_000.
 :map_houses_000 rml:logicalSource :source_000.
 :source_000 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_houses_000 a rr:TriplesMap;
     rdfs:label "houses".
@@ -141,7 +141,7 @@
 :rules_000 void:exampleResource :map_geos_000.
 :map_geos_000 rml:logicalSource :source_001.
 :source_001 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_geos_000 a rr:TriplesMap;
     rdfs:label "geos".
@@ -170,7 +170,7 @@
 :rules_000 void:exampleResource :map_districts_000.
 :map_districts_000 rml:logicalSource :source_002.
 :source_002 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_districts_000 a rr:TriplesMap;
     rdfs:label "districts".
@@ -217,7 +217,7 @@
 :rules_000 void:exampleResource :map_neighbourhoods_000.
 :map_neighbourhoods_000 rml:logicalSource :source_003.
 :source_003 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_neighbourhoods_000 a rr:TriplesMap;
     rdfs:label "neighbourhoods".
@@ -264,7 +264,7 @@
 :rules_000 void:exampleResource :map_floorSizes_000.
 :map_floorSizes_000 rml:logicalSource :source_004.
 :source_004 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_floorSizes_000 a rr:TriplesMap;
     rdfs:label "floorSizes".
@@ -313,7 +313,7 @@
 :rules_000 void:exampleResource :map_rentPrices_000.
 :map_rentPrices_000 rml:logicalSource :source_005.
 :source_005 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_rentPrices_000 a rr:TriplesMap;
     rdfs:label "rentPrices".
@@ -352,7 +352,7 @@
 :rules_000 void:exampleResource :map_rentPricesByRoom_000.
 :map_rentPricesByRoom_000 rml:logicalSource :source_006.
 :source_006 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_rentPricesByRoom_000 a rr:TriplesMap;
     rdfs:label "rentPricesByRoom".
@@ -391,7 +391,7 @@
 :rules_000 void:exampleResource :map_rentPricesBySq_000.
 :map_rentPricesBySq_000 rml:logicalSource :source_007.
 :source_007 a rml:LogicalSource;
-    rml:source "../../data/houses-Madrid-final.csv";
+    rml:source  "../csv/houses-Madrid-with-links.csv";
     rml:referenceFormulation ql:CSV.
 :map_rentPricesBySq_000 a rr:TriplesMap;
     rdfs:label "rentPricesBySq".

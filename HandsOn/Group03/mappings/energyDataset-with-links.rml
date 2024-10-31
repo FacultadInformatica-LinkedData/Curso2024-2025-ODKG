@@ -288,6 +288,12 @@
     rr:template "http://www.semanticweb.org/resource/City/Madrid";
     rr:class schema:City;
   ];
+  rr:predicateObjectMap [
+	rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+    rr:objectMap [
+		rr:column "CITY_WIKI_URL";
+		rr:termType rr:IRI ]
+  ];
      rr:predicateObjectMap [
     rr:predicate schema:containsPlace;
     rr:objectMap [

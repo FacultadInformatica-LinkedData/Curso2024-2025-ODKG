@@ -3890,5 +3890,87 @@
     "newColumnName": "SAME_AS_WIKIDATA_BUILDING",
     "columnInsertIndex": 6,
     "description": "Create column SAME_AS_WIKIDATA_BUILDING at index 6 based on column BUILDING using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAME_AS_WIKIDATA_BUILDING",
+    "expression": "grel:value.replace(\"https\",\"http\").replace(\"wiki/\",\"entity/\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SAME_AS_WIKIDATA_BUILDING using expression grel:value.replace(\"https\",\"http\").replace(\"wiki/\",\"entity/\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CITY",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://wikidata.reconci.link/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q35120",
+        "name": "entidad"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CITY to type Q35120"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CITY",
+    "similarValue": "MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid (Q2807) for cells containing \"MADRID\" in column CITY"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CITY",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "CITY_WIKI_URL",
+    "columnInsertIndex": 13,
+    "description": "Create column CITY_WIKI_URL at index 13 based on column CITY using expression if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CITY_WIKI_URL",
+    "expression": "grel:value.replace(\"https\",\"http\").replace(\"wiki/\",\"entity/\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CITY_WIKI_URL using expression grel:value.replace(\"https\",\"http\").replace(\"wiki/\",\"entity/\")"
   }
 ]
