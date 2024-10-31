@@ -1,0 +1,933 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_DISTRITO",
+    "columnInsertIndex": 11,
+    "description": "Create column same_as_wikidata_DISTRITO at index 11 based on column DISTRITO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_BARRIO",
+    "columnInsertIndex": 9,
+    "description": "Create column same_as_wikidata_BARRIO at index 9 based on column BARRIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CLASE-VIAL to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Alcantara",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28070781",
+      "name": "Calle de Alcántara, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Alcántara, Madrid (Q28070781) for cells containing \"Calle Alcantara\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Barcelo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27051120",
+      "name": "calle de Barceló",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Barceló (Q27051120) for cells containing \"Calle Barcelo\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Avenida America",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5686040",
+      "name": "Avenida de América, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de América, Madrid (Q5686040) for cells containing \"Avenida America\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Avenida Portugal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26736141",
+      "name": "Avenida de Portugal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Portugal (Q26736141) for cells containing \"Avenida Portugal\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle San German",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26750807",
+      "name": "Calle de San Germán, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de San Germán, Madrid (Q26750807) for cells containing \"Calle San German\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Casino",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26248358",
+      "name": "Calle del Casino, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Casino, Madrid (Q26248358) for cells containing \"Calle Casino\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Condesa De Gavia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q118639279",
+      "name": "calle de la Orden",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de la Orden (Q118639279) for cells containing \"Plaza Condesa De Gavia\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Avenida Ciudad De Barcelona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5714227",
+      "name": "Avenida de la Ciudad de Barcelona",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de la Ciudad de Barcelona (Q5714227) for cells containing \"Avenida Ciudad De Barcelona\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Diego De Leon",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28059485",
+      "name": "Calle de Diego de León, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Diego de León, Madrid (Q28059485) for cells containing \"Calle Diego De Leon\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Encuentro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q104778384",
+      "name": "Avenida de Moratalaz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Moratalaz (Q104778384) for cells containing \"Plaza Encuentro\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Goya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28015873",
+      "name": "Calle de Goya",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Goya (Q28015873) for cells containing \"Calle Goya\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Hernani",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26833571",
+      "name": "Calle de Hernani, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Hernani, Madrid (Q26833571) for cells containing \"Calle Hernani\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Jacinto Benavente",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740952",
+      "name": "calle de Carretas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Carretas (Q5740952) for cells containing \"Plaza Jacinto Benavente\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Poeta Joan Maragall",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26810980",
+      "name": "Calle del Poeta Joan Maragall, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Poeta Joan Maragall, Madrid (Q26810980) for cells containing \"Calle Poeta Joan Maragall\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Marques De Salamanca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16540548",
+      "name": "Calle de José Ortega y Gasset, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de José Ortega y Gasset, Madrid (Q16540548) for cells containing \"Plaza Marques De Salamanca\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Avenida Brasil",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27212874",
+      "name": "avenida de Brasil",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de Brasil (Q27212874) for cells containing \"Avenida Brasil\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Santo Domingo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740864",
+      "name": "San Bernardo street",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Bernardo street (Q5740864) for cells containing \"Plaza Santo Domingo\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Mayor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26913879",
+      "name": "calle Imperial",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle Imperial (Q26913879) for cells containing \"Plaza Mayor\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Avenida General Peron",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26761632",
+      "name": "Avenida del General Perón",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida del General Perón (Q26761632) for cells containing \"Avenida General Peron\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Paseo Recoletos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2550870",
+      "name": "Paseo de Recoletos",
+      "types": [
+        "Q787113",
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Recoletos (Q2550870) for cells containing \"Paseo Recoletos\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Republica Dominicana",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29397736",
+      "name": "Avenida de Alfonso XIII, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Alfonso XIII, Madrid (Q29397736) for cells containing \"Plaza Republica Dominicana\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza San Cayetano",
+    "judgment": "matched",
+    "match": {
+      "id": "Q118608536",
+      "name": "calle de Eraso",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Eraso (Q118608536) for cells containing \"Plaza San Cayetano\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Sanchez Bustillo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52153419",
+      "name": "Calle del Hospital, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Hospital, Madrid (Q52153419) for cells containing \"Calle Sanchez Bustillo\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Serrano",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740879",
+      "name": "Serrano Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Serrano Street (Q5740879) for cells containing \"Calle Serrano\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Velazquez",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20031523",
+      "name": "calle de Velázquez",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Velázquez (Q20031523) for cells containing \"Calle Velazquez\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Verdaguer Y Garcia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q130339562",
+      "name": "calle Virgen de África",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle Virgen de África (Q130339562) for cells containing \"Calle Verdaguer Y Garcia\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Almagro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26844339",
+      "name": "Calle de Almagro, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Almagro, Madrid (Q26844339) for cells containing \"Calle Almagro\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Descalzas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54153156",
+      "name": "Calle de San Martín, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de San Martín, Madrid (Q54153156) for cells containing \"Plaza Descalzas\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Glorieta Puerta De Toledo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740883",
+      "name": "calle de Toledo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Toledo (Q5740883) for cells containing \"Glorieta Puerta De Toledo\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Cortes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26830977",
+      "name": "Calle del Duque de Medinaceli, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Duque de Medinaceli, Madrid (Q26830977) for cells containing \"Plaza Cortes\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Santa Maria Soledad Torres Acosta",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27108025",
+      "name": "calle de Silva",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Silva (Q27108025) for cells containing \"Plaza Santa Maria Soledad Torres Acosta\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Marques De Urquijo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17421317",
+      "name": "calle del Marqués de Urquijo",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle del Marqués de Urquijo (Q17421317) for cells containing \"Calle Marques De Urquijo\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Principe De Vergara",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5741020",
+      "name": "calle del Príncipe de Vergara",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle del Príncipe de Vergara (Q5741020) for cells containing \"Calle Principe De Vergara\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle Garcia Molinas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29833222",
+      "name": "Calle de Ricardo León, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Ricardo León, Madrid (Q29833222) for cells containing \"Calle Garcia Molinas\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Olavide",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28538924",
+      "name": "Calle de Santa Feliciana, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Santa Feliciana, Madrid (Q28538924) for cells containing \"Plaza Olavide\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza España",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740935",
+      "name": "Princesa",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Princesa (Q5740935) for cells containing \"Plaza España\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Carmen",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28727307",
+      "name": "calle de la Salud (Madrid)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de la Salud (Madrid) (Q28727307) for cells containing \"Plaza Carmen\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Rey",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21004010",
+      "name": "Calle de las Infantas, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de las Infantas, Madrid (Q21004010) for cells containing \"Plaza Rey\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Calle San Epifanio",
+    "judgment": "matched",
+    "match": {
+      "id": "Q33093214",
+      "name": "Calle de Alejandro Dumas, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Alejandro Dumas, Madrid (Q33093214) for cells containing \"Calle San Epifanio\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Santa Ana",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15788209",
+      "name": "calle de Echegaray",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Echegaray (Q15788209) for cells containing \"Plaza Santa Ana\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "similarValue": "Plaza Villa De Paris",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24294474",
+      "name": "calle de Génova",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Génova (Q24294474) for cells containing \"Plaza Villa De Paris\" in column CLASE-VIAL"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "CLASE-VIAL",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_CALLE",
+    "columnInsertIndex": 6,
+    "description": "Create column same_as_wikidata_CALLE at index 6 based on column CLASE-VIAL using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]
