@@ -135,8 +135,14 @@
 
         <h2>Entities</h2>
         <ul>
+            As a standard, we will use the following format:
             <li><code>http://www.BiciMad.es/entity/className/identifier</code></li>
-            <li>Example: <code>http://www.BiciMad.es/entity/BikeStation/1b_Calle_de_Alcala</code></li>
+            We have two general types of classes, Places (and the subclass BikeStation) and BikeTrips.
+            To keep a homogeneous naming strategy by using, for BikeStations, its superclass.
+            <li>Example 1: <code>http://www.BiciMad.es/entity/Place/1BCalleDeAlcala</code></li>
+            <li>Example 2: <code>http://www.BiciMad.es/entity/Place/0_x_0_CalleSoria3</code></li>
+            The trips will follow the expected format:
+            <li>Example 3: <code>http://www.BiciMad.es/entity/BikeTrip/7230_at_2023-02-01_00-01-46</code></li>
         </ul>
 
         <p>All identifiers must be unique.</p>
