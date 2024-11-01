@@ -156,3 +156,6 @@ dbowl:name rdfs:label "has province name" ;
     rdfs:comment "The name of the province" ;
     rdfs:domain dbowl:Province ;
     rdfs:range xsd:string .
+
+mair:sameAsWikidataMeasurement rdfs:subPropertyOf owl:sameAs .
+mair:sameAsWikidataSIUnit rdfs:subPropertyOf owl:sameAs .
