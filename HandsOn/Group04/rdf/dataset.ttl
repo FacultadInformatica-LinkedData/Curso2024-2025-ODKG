@@ -2013,10 +2013,6 @@
     ns1:postalCode "28054" ;
     rdf:label "Carabanchel" .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/%C3%81guilas> a ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
-    rdf:label "Águilas" .
-
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Almenara> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Tetu%C3%A1n> ;
     rdf:label "Almenara" .
@@ -2076,10 +2072,6 @@
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/LaPaz> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Fuencarral%20-%20El%20Pardo> ;
     rdf:label "La Paz" .
-
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/LasAguilas> a ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
-    rdf:label "Las Aguilas" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/LosRosales> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Villaverde> ;
@@ -2511,6 +2503,10 @@
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Villa%20de%20Vallecas> a ns1:District ;
     rdf:label "Villa de Vallecas" .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/%C3%81guilas> a ns1:Neighborhood ;
+    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
+    rdf:label "Águilas" .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Almagro> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamber%C3%AD> ;
     rdf:label "Almagro" .
@@ -2535,9 +2531,9 @@
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Tetu%C3%A1n> ;
     rdf:label "Castillejos" .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJardin> a ns1:Neighborhood ;
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> ;
-    rdf:label "Ciudad Jardin" .
+    rdf:label "Ciudad Jardín" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/ElGoloso> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Fuencarral%20-%20El%20Pardo> ;
@@ -2660,7 +2656,7 @@
     rdf:label "Calle Carlos Y Guillermo Fernández Shaw" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleCartagena> a ns1:Street ;
-    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJardin> ;
+    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> ;
     rdf:label "Calle Cartagena" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleCasino> a ns1:Street ;
@@ -2672,7 +2668,7 @@
     rdf:label "Calle Diego De León" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleFuenteDeLima> a ns1:Street ;
-    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/LasAguilas> ;
+    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/%C3%81guilas> ;
     rdf:label "Calle Fuente De Lima" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleGarc%C3%ADaMolinas> a ns1:Street ;
@@ -2712,7 +2708,7 @@
     rdf:label "Calle Poeta Joan Maragall" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CallePr%C3%ADncipeDeVergara> a ns1:Street ;
-    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJardin> ;
+    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> ;
     rdf:label "Calle Príncipe De Vergara" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleS%C3%A1nchezBustillo> a ns1:Street ;
@@ -2919,6 +2915,11 @@
     ns1:postalCode "28050" ;
     rdf:label "Hortaleza" .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> a ns1:District ;
+    ns1:postalCode "28011",
+        "28024" ;
+    rdf:label "Latina" .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Moncloa%20-%20Aravaca> a ns1:District ;
     ns1:postalCode "28008",
         "28023" ;
@@ -2957,11 +2958,6 @@
         <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/ElViso>,
         <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Hispanoam%C3%A9rica> ;
     rdf:label "Paseo Castellana" .
-
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> a ns1:District ;
-    ns1:postalCode "28011",
-        "28024" ;
-    rdf:label "Latina" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Retiro> a ns1:District ;
     ns1:postalCode "28007",

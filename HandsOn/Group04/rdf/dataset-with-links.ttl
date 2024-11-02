@@ -2017,14 +2017,10 @@
     rdf:label "Carabanchel" ;
     owl:sameAs <https://wikidata.org/entity/Q1001991> .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/%C3%81guilas> a ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
-    rdf:label "Las Águilas" ;
-    owl:sameAs <https://wikidata.org/entity/Q5971372> .
-
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Almenara> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Tetu%C3%A1n> ;
-    rdf:label "Almenara" .
+    rdf:label "Almenara" ;
+    owl:sameAs <https://wikidata.org/entity/Q2265427> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Aluche> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
@@ -2054,23 +2050,13 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Butarque> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Villaverde> ;
-    rdf:label "Butarque" .
+    rdf:label "Butarque" ;
+    owl:sameAs <https://wikidata.org/entity/Q390453> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Canillas> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Hortaleza> ;
     rdf:label "Canillas" ;
     owl:sameAs <https://wikidata.org/entity/Q9694341> .
-
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> a ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> ;
-    rdf:label "Ciudad Jardín" ;
-    owl:sameAs <https://wikidata.org/entity/Q3773744> .
-
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJardin> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
-        ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> ;
-    rdf:label "Ciudad Jardín" ;
-    owl:sameAs <https://wikidata.org/entity/Q3773744> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadUniversitaria> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Moncloa-Aravaca> ;
@@ -2079,7 +2065,8 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Colina> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Ciudad%20Lineal> ;
-    rdf:label "Colina" .
+    rdf:label "Colina" ;
+    owl:sameAs <https://wikidata.org/entity/Q18475981> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/ElPlant%C3%ADo> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Moncloa-Aravaca> ;
@@ -2108,15 +2095,10 @@
     rdf:label "La Paz" ;
     owl:sameAs <https://wikidata.org/entity/Q5869740> .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Las%C3%81guilas> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
-        ns1:Neighborhood ;
-    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
-    rdf:label "Las Águilas" ;
-    owl:sameAs <https://wikidata.org/entity/Q5971372> .
-
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/LosRosales> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Villaverde> ;
-    rdf:label "Los Rosales" .
+    rdf:label "Los Rosales" ;
+    owl:sameAs <https://wikidata.org/entity/Q10319807> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Marroquina> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Moratalaz> ;
@@ -2190,11 +2172,13 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Valdebernardo> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Vic%C3%A1lvaro> ;
-    rdf:label "Valdebernardo" .
+    rdf:label "Valdebernardo" ;
+    owl:sameAs <https://wikidata.org/entity/Q43025212> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Valderrivas> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Vic%C3%A1lvaro> ;
-    rdf:label "Valderrivas" .
+    rdf:label "Valderrivas" ;
+    owl:sameAs <https://wikidata.org/entity/Q43025770> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Valverde> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Fuencarral-El%20Pardo> ;
@@ -2449,7 +2433,7 @@
     rdf:label "Calle de Fuentelencina" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalledeJos%C3%A9Cadalso> a ns1:Street ;
-    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/%C3%81guilas> ;
+    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Las%C3%81guilas> ;
     rdf:label "Calle de José Cadalso" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalledeMar%C3%ADadePortugal> a ns1:Street ;
@@ -2606,6 +2590,12 @@
     rdf:label "Castillejos" ;
     owl:sameAs <https://wikidata.org/entity/Q11913212> .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
+        ns1:Neighborhood ;
+    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> ;
+    rdf:label "Ciudad Jardín" ;
+    owl:sameAs <https://wikidata.org/entity/Q3773744> .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/ElGoloso> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Fuencarral-El%20Pardo> ;
     rdf:label "El Goloso" ;
@@ -2632,6 +2622,12 @@
     rdf:label "Hispanoamérica" ;
     owl:sameAs <https://wikidata.org/entity/Q3814573> .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Las%C3%81guilas> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
+        ns1:Neighborhood ;
+    ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> ;
+    rdf:label "Las Águilas" ;
+    owl:sameAs <https://wikidata.org/entity/Q5971372> .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Lista> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
         ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Salamanca> ;
@@ -2640,7 +2636,8 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Orcasur> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Usera> ;
-    rdf:label "Orcasur" .
+    rdf:label "Orcasur" ;
+    owl:sameAs <https://wikidata.org/entity/Q10341270> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/PalosdeMoguer> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Arganzuela> ;
@@ -2661,7 +2658,8 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/SanJuanBautista> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Ciudad%20Lineal> ;
-    rdf:label "San Juan Bautista" .
+    rdf:label "San Juan Bautista" ;
+    owl:sameAs <https://wikidata.org/entity/Q165609> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/SanPascual> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
         ns1:Neighborhood ;
@@ -2820,7 +2818,7 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CallePr%C3%ADncipeDeVergara> a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#/Via>,
         ns1:Street ;
-    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJardin> ;
+    ns1:locatedInNeighborhood <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CiudadJard%C3%ADn> ;
     rdf:label "Calle Príncipe De Vergara" .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/street/CalleS%C3%A1nchezBustillo> a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#/Via>,
@@ -2974,7 +2972,8 @@
     rdf:label "Moratalaz" ;
     owl:sameAs <https://wikidata.org/entity/Q2076109> .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Adelfas> a ns1:Neighborhood ;
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Adelfas> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
+        ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Retiro> ;
     rdf:label "Adelfas" ;
     owl:sameAs <https://wikidata.org/entity/Q3774001> .
@@ -3084,6 +3083,13 @@
     rdf:label "Hortaleza" ;
     owl:sameAs <https://wikidata.org/entity/Q1928529> .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
+        ns1:District ;
+    ns1:postalCode "28011",
+        "28024" ;
+    rdf:label "Latina" ;
+    owl:sameAs <https://wikidata.org/entity/Q794954> .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Moncloa-Aravaca> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
         ns1:District ;
     ns1:postalCode "28008",
@@ -3135,13 +3141,6 @@
         <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Hispanoam%C3%A9rica> ;
     rdf:label "Paseo Castellana" .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Latina> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
-        ns1:District ;
-    ns1:postalCode "28011",
-        "28024" ;
-    rdf:label "Latina" ;
-    owl:sameAs <https://wikidata.org/entity/Q794954> .
-
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Retiro> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
         ns1:District ;
     ns1:postalCode "28007",
@@ -3157,7 +3156,8 @@
     rdf:label "Salamanca" ;
     owl:sameAs <https://wikidata.org/entity/Q1773521> .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Castellana> a ns1:Neighborhood ;
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/Castellana> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
+        ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Salamanca> ;
     rdf:label "Castellana" ;
     owl:sameAs <https://wikidata.org/entity/Q4781> .
@@ -3180,6 +3180,13 @@
     rdf:label "Centro" ;
     owl:sameAs <https://wikidata.org/entity/Q1763376> .
 
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
+        ns1:District ;
+    ns1:postalCode "28002",
+        "28016" ;
+    rdf:label "Chamartín" ;
+    owl:sameAs <https://wikidata.org/entity/Q1766348> .
+
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Fuencarral-El%20Pardo> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
         ns1:District ;
     ns1:postalCode "28049" ;
@@ -3201,13 +3208,6 @@
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/operator/EMT> a ns1:Operator ;
     rdf:label "EMT" .
 
-<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Chamart%C3%ADn> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Distrito>,
-        ns1:District ;
-    ns1:postalCode "28002",
-        "28016" ;
-    rdf:label "Chamartín" ;
-    owl:sameAs <https://wikidata.org/entity/Q1766348> .
-
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CuatroCaminos> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/Barrio>,
         ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Tetu%C3%A1n> ;
@@ -3228,7 +3228,8 @@
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/neighborhood/CascoHist%C3%B3ricodeVallecas> a ns1:Neighborhood ;
     ns1:isPartOf <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/district/Villa%20de%20Vallecas> ;
-    rdf:label "Casco Histórico de Vallecas" .
+    rdf:label "Casco Histórico de Vallecas" ;
+    owl:sameAs <https://wikidata.org/entity/Q16544370> .
 
 <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/resource/operator/DRIVE%20THE%20CITY> a ns1:Operator ;
     rdf:label "DRIVE THE CITY" .
