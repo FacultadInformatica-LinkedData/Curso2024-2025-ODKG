@@ -1,0 +1,124 @@
+@prefix base: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/> .
+@prefix esadm2: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+esadm:barrio a owl:ObjectProperty ;
+    rdfs:label "barrio" ;
+    rdfs:domain esadm2:Via ;
+    rdfs:range esadm:Barrio .
+
+esadm:distrito a owl:ObjectProperty ;
+    rdfs:label "distrito" ;
+    rdfs:domain esadm:Barrio ;
+    rdfs:range esadm:Distrito .
+
+base: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:accessibility a owl:DatatypeProperty ;
+    rdfs:label "accessibility" ;
+    rdfs:domain ns:Parking ;
+    rdfs:range xsd:String .
+
+ns:ccsConnectors a owl:DatatypeProperty ;
+    rdfs:label "ccs connectors" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Integer .
+
+ns:ccsKw a owl:DatatypeProperty ;
+    rdfs:label "ccs kw" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:String .
+
+ns:chademoConnectors a owl:DatatypeProperty ;
+    rdfs:label "chademo connectors" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Integer .
+
+ns:chademoKw a owl:DatatypeProperty ;
+    rdfs:label "chademo kw" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:String .
+
+ns:dischargeDate a owl:DatatypeProperty ;
+    rdfs:label "discharge date" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Date .
+
+ns:locatedInStreet a owl:ObjectProperty ;
+    rdfs:label "located in street" ;
+    rdfs:domain ns:Place ;
+    rdfs:range esadm2:Via .
+
+ns:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:String .
+
+ns:managedBy a owl:ObjectProperty ;
+    rdfs:label "managed by" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range ns:Operator .
+
+ns:mennekesConnectors a owl:DatatypeProperty ;
+    rdfs:label "mennekes connectors" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Integer .
+
+ns:mennekesKw a owl:DatatypeProperty ;
+    rdfs:label "mennekes kw" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:String .
+
+ns:numberOfEquipments a owl:DatatypeProperty ;
+    rdfs:label "number of equipments" ;
+    rdfs:domain ns:ChargePoint ;
+    rdfs:range xsd:Integer .
+
+ns:numberOfTotalPlaces a owl:DatatypeProperty ;
+    rdfs:label "number of total places" ;
+    rdfs:domain ns:Parking ;
+    rdfs:range xsd:Integer .
+
+ns:openingHours a owl:DatatypeProperty ;
+    rdfs:label "opening hours" ;
+    rdfs:domain ns:Place ;
+    rdfs:range xsd:String .
+
+ns:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain esadm:Distrito ;
+    rdfs:range xsd:String .
+
+rdfs:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:range xsd:String .
+
+ns:Operator a owl:Class ;
+    rdfs:label "Operator" .
+
+esadm:Barrio a owl:Class ;
+    rdfs:label "Barrio" .
+
+esadm:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+esadm2:Via a owl:Class ;
+    rdfs:label "Via" .
+
+ns:Parking a owl:Class ;
+    rdfs:label "Parking" ;
+    rdfs:subClassOf ns:Place .
+
+ns:Place a owl:Class ;
+    rdfs:label "Place" .
+
+ns:ChargePoint a owl:Class ;
+    rdfs:label "Charge Point" ;
+    rdfs:subClassOf ns:Place .
+
