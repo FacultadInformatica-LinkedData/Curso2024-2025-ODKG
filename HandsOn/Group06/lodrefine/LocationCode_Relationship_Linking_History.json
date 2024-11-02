@@ -1,0 +1,338 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3814115",
+        "name": "Junta Municipal de Distrito"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column SAMPLING_LOCATION_NAME to type Q3814115"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "SAMPLING_LOCATION_NAME",
+    "expression": "grel:\"https://www.wikidata.org/wiki/Q3814115\"",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_JuntaMunicipalDistrito",
+    "columnInsertIndex": 2,
+    "description": "Create column same_as_JuntaMunicipalDistrito at index 2 based on column SAMPLING_LOCATION_NAME using expression grel:\"https://www.wikidata.org/wiki/Q3814115\""
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "J.M.D. Chamberí\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56164429",
+      "name": "Junta Municipal del Distrito de Chamberí",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Junta Municipal del Distrito de Chamberí (Q56164429) for cells containing \"J.M.D. Chamberí\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Peñagrande\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3319582",
+      "name": "Peñagrande",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Peñagrande (Q3319582) for cells containing \"Peñagrande\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "J.M.D. Vallecas 1\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10296",
+      "name": "Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vallecas (Q10296) for cells containing \"J.M.D. Vallecas 1\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "J.M.D. Vallecas 2\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10296",
+      "name": "Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vallecas (Q10296) for cells containing \"J.M.D. Vallecas 2\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Matadero 01\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q110747714",
+      "name": "Matadero",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Matadero (Q110747714) for cells containing \"Matadero 01\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Matadero 02\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56427524",
+      "name": "Matadero Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Matadero Madrid (Q56427524) for cells containing \"Matadero 02\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Escuelas Aguirre\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5397501",
+      "name": "Escuelas Aguirre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Escuelas Aguirre (Q5397501) for cells containing \"Escuelas Aguirre\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Arturo Soria\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481371",
+      "name": "Arturo Soria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Arturo Soria (Q2481371) for cells containing \"Arturo Soria\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Farolillo\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3813733",
+      "name": "San Isidro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Isidro (Q3813733) for cells containing \"Farolillo\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Casa de Campo\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16302441",
+      "name": "Casa de Campo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casa de Campo (Q16302441) for cells containing \"Casa de Campo\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Barrio del Pilar\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pilar (Q3773964) for cells containing \"Barrio del Pilar\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Ensanche de Vallecas\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ensanche de Vallecas (Q3847485) for cells containing \"Ensanche de Vallecas\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Plaza Elíptica\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16619985",
+      "name": "Plaza Elíptica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza Elíptica (Q16619985) for cells containing \"Plaza Elíptica\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "El Pardo\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3314337",
+      "name": "El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pardo (Q3314337) for cells containing \"El Pardo\r\" in column SAMPLING_LOCATION_NAME"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SAMPLING_LOCATION_NAME",
+    "similarValue": "Juan Carlos I\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1583169",
+      "name": "Juan Carlos I Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Juan Carlos I Park (Q1583169) for cells containing \"Juan Carlos I\r\" in column SAMPLING_LOCATION_NAME"
+  }
+]
