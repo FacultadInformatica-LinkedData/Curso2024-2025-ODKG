@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Madrid air quality ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://mAIRdrid.org/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://mAIRdrid.org/ontology#","name":"Madrid air quality ontology", "headline":"This ontology provides a comprehensive framework for representing air quality metrics, including concentrations of pollutants such as NOx, CO, PM2.5, PM10, and BTX, as well as the corresponding measurement values, timestamps, and metadata about monitoring stations and their sensors. The ontology aims to facilitate data interoperability and sharing among environmental monitoring systems, researchers, and policy-makers, enabling better analysis and understanding of air quality dynamics in urban and rural settings.", "dateReleased":"2024-11-01", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"https://github.com/PPedreg","url":"https://github.com/PPedreg"},{"@type":"Person","name":"https://github.com/RafaOB95","url":"https://github.com/RafaOB95"},{"@type":"Person","name":"https://github.com/aiarakoa","url":"https://github.com/aiarakoa"},{"@type":"Person","name":"https://github.com/ehrlz","url":"https://github.com/ehrlz"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Madrid air quality ontology</h1>
+<h2>Release: 2024-11-01</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://mAIRdrid.org/ontology/1.0.0">https://mAIRdrid.org/ontology/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://mAIRdrid.org/ontology#">https://mAIRdrid.org/ontology#</a></dd>
+<dt>Authors:</dt>
+<dd><a href="https://github.com/PPedreg">https://github.com/PPedreg</a></dd><dd><a href="https://github.com/RafaOB95">https://github.com/RafaOB95</a></dd><dd><a href="https://github.com/aiarakoa">https://github.com/aiarakoa</a></dd><dd><a href="https://github.com/ehrlz">https://github.com/ehrlz</a></dd>
+
+<dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>https://github.com/PPedreg, https://github.com/RafaOB95, https://github.com/aiarakoa, https://github.com/ehrlz. Madrid air quality ontology. Retrieved from: https://mAIRdrid.org/ontology/1.0.0</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This ontology provides a comprehensive framework for representing air quality metrics, including concentrations of pollutants such as NOx, CO, PM2.5, PM10, and BTX, as well as the corresponding measurement values, timestamps, and metadata about monitoring stations and their sensors. The ontology aims to facilitate data interoperability and sharing among environmental monitoring systems, researchers, and policy-makers, enabling better analysis and understanding of air quality dynamics in urban and rural settings.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2> Introduction </h2>
+<p> Air pollution poses significant challenges to public health and the environment, necessitating accurate and timely monitoring of air quality metrics. The proliferation of air quality sensors and monitoring stations has generated vast amounts of data, which can be leveraged for research and policy-making. This ontology is designed to standardize the representation of air quality data, encompassing key metrics and contextual information related to monitoring stations and their respective sensors. By providing a structured approach to air quality data, the ontology promotes data sharing, integration, and analysis across different platforms and applications. </p>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2>Overview</h2>
+<p>The air quality ontology includes several core components:</p>
+<ul>
+    <li>
+        <strong>Air Quality Metrics:</strong> Definitions and classifications of
+        various pollutants, including nitrogen oxides (NOx), carbon monoxide
+        (CO), particulate matter (PM2.5 and PM10), and benzene, toluene, and
+        xylene (BTX). Each metric is associated with its concentration value,
+        measurement units, and observation timestamp.
+    </li>
+    <li>
+        <strong>Monitoring Stations:</strong> Information about the geographical
+        locations of air quality monitoring stations, including attributes such
+        as latitude, longitude, altitude, and address. Each station can be
+        linked to multiple sensors.
+    </li>
+    <li>
+        <strong>Sensors:</strong> Details about the sensors deployed at each
+        monitoring station, including their types, operational status, and the
+        specific metrics they measure. Sensors are essential for obtaining
+        accurate and real-time air quality data.
+    </li>
+    <li>
+        <strong>Temporal Aspects:</strong> The ontology captures the temporal
+        dimension of measurements, allowing for time-series analysis of air
+        quality data over days, months, or years.
+    </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2>Description</h2>
+<p>
+    The ontology is structured using established semantic web standards,
+    including
+    <strong>RDF</strong> (Resource Description Framework),
+    <strong>OWL</strong> (Web Ontology Language), and <strong>RDFS</strong> (RDF
+    Schema).
+</p>
+<h3>Key Classes and Properties</h3>
+<ul>
+    <li>
+        <strong>AirQualityMetric:</strong> Represents the measured value of a
+        specific pollutant.
+        <ul>
+            <li>
+                <strong>Properties:</strong> numericValue, measurementUnit,
+                resultTime.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Station:</strong> Represents the physical location of an air
+        quality monitoring station.
+        <ul>
+            <li>
+                <strong>Properties:</strong> latitude, longitude, altitude,
+                address.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Sensor:</strong> Represents the individual sensors deployed at a
+        station.
+        <ul>
+            <li>
+                <strong>Properties:</strong> sensorType, observes, madeBySensor.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    The relationships between these entities are defined using object
+    properties, facilitating queries about air quality data in relation to time,
+    location, and sensor performance.
+</p>
+<p>
+    This ontology enables users to capture, query, and analyze air quality data
+    effectively, enhancing understanding of air pollution trends and
+    facilitating informed decision-making.
+</p>
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for AirQualityOntology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by AirQualityOntology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://mAIRdrid.org/ontology/AirQualityMetric" title="http://mAIRdrid.org/ontology/AirQualityMetric">Air Quality Metric</a></li>
+  <li><a href="#http://mAIRdrid.org/ontology/Location" title="http://mAIRdrid.org/ontology/Location">Location</a></li>
+  <li><a href="#http://mAIRdrid.org/ontology/nationalStationID" title="http://mAIRdrid.org/ontology/nationalStationID">National Station ID</a></li>
+  <li><a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a></li>
+  <li><a href="#http://qudt.org/schema/qudt#QuantityValue" title="http://qudt.org/schema/qudt#QuantityValue">Quantity Value</a></li>
+  <li><a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a></li>
+  <li><a href="#http://mAIRdrid.org/ontology/Station" title="http://mAIRdrid.org/ontology/Station">Station</a></li>
+ </ul>
+ <div class="entity" id="http://mAIRdrid.org/ontology/AirQualityMetric">
+  <h3>Air Quality Metric<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://mAIRdrid.org/ontology/AirQualityMetric</p>
+  <div class="comment">
+   <span class="markdown">An air quality metric is a measurable property of air quality, such as the concentration of specific pollutants (e.g., CO), observed by sensors at a particular air quality station.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://mAIRdrid.org/ontology/Location">
+  <h3>Location<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://mAIRdrid.org/ontology/Location</p>
+  <div class="comment">
+   <span class="markdown">A location is a physical point where a station is placed</span>
+  </div>
+ </div>
+ <div class="entity" id="http://mAIRdrid.org/ontology/nationalStationID">
+  <h3>National Station ID<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://mAIRdrid.org/ontology/nationalStationID</p>
+  <div class="comment">
+   <span class="markdown">A unique identifier assigned to an air quality station at the national level.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/sosa/Observation">
+  <h3>Observation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/sosa/Observation</p>
+  <div class="comment">
+   <span class="markdown">A record of an observed phenomenon, including the features of interest, results, the sensor that made the observation, and the property that was observed.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://qudt.org/schema/qudt#QuantityValue">
+  <h3>Quantity Value<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://qudt.org/schema/qudt#QuantityValue</p>
+  <div class="comment">
+   <span class="markdown">A numeric value representing the measured quantity of a specific air quality metric.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/sosa/Sensor">
+  <h3>Sensor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/sosa/Sensor</p>
+  <div class="comment">
+   <span class="markdown">A device that observes a phenomenon, providing data about specific properties of interest.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://mAIRdrid.org/ontology/Station">
+  <h3>Station<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://mAIRdrid.org/ontology/Station</p>
+  <div class="comment">
+   <span class="markdown">A station is a located element that contains sensors</span>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references"><h2>References</h2>
+<ul>
+    <li>
+        W3C. (2014). RDF 1.1 Primer. Retrieved from
+        <a href="https://www.w3.org/TR/rdf11-primer/"
+            >https://www.w3.org/TR/rdf11-primer/</a
+        >
+    </li>
+    <li>
+        W3C. (2004). OWL Web Ontology Language Guide. Retrieved from
+        <a href="https://www.w3.org/TR/owl-guide/"
+            >https://www.w3.org/TR/owl-guide/</a
+        >
+    </li>
+    <li>
+        T. Berners-Lee, J. A. Hodges, "Linked Data", W3C. Retrieved from
+        <a href="https://www.w3.org/DesignIssues/LinkedData.html"
+            >https://www.w3.org/DesignIssues/LinkedData.html</a
+        >
+    </li>
+    <li>
+        Environmental Protection Agency (EPA). (2022). Air Quality Monitoring.
+        Retrieved from
+        <a href="https://www.epa.gov/air-quality-monitoring"
+            >https://www.epa.gov/air-quality-monitoring</a
+        >
+    </li>
+    <li>
+        G. R. L. Becker, G. L. A., "Air Quality Data in the Semantic Web",
+        Proceedings of the International Conference on Air Quality, 2018.
+    </li>
+</ul>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

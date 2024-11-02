@@ -1,0 +1,178 @@
+[ {
+  "@id" : "http://mAIRdrid.org/ontology/AirQualityMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An air quality metric is a measurable property of air quality, such as the concentration of specific pollutants (e.g., CO), observed by sensors at a particular air quality station."
+  }, {
+    "@language" : "es",
+    "@value" : "Una métrica de calidad del aire es una propiedad medible de la calidad del aire, como la concentración de contaminantes específicos (p. ej. CO), observada por sensores en una estación de calidad del aire determinada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Air Quality Metric"
+  }, {
+    "@language" : "es",
+    "@value" : "Métrica de Calidad del Aire"
+  } ]
+}, {
+  "@id" : "http://mAIRdrid.org/ontology/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A location is a physical point where a station is placed"
+  }, {
+    "@language" : "es",
+    "@value" : "Una ubicación es la posición geográfica donde se encuentra una estación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  }, {
+    "@language" : "es",
+    "@value" : "Ubicación"
+  } ]
+}, {
+  "@id" : "http://mAIRdrid.org/ontology/Station",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A station is a located element that contains sensors"
+  }, {
+    "@language" : "es",
+    "@value" : "Una estación es un elemento localizado que contiene sensores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estación"
+  }, {
+    "@language" : "en",
+    "@value" : "Station"
+  } ]
+}, {
+  "@id" : "http://mAIRdrid.org/ontology/nationalStationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A unique identifier assigned to an air quality station at the national level."
+  }, {
+    "@language" : "es",
+    "@value" : "Un identificador único asignado a una estación de calidad del aire a nivel nacional."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ID de Estación Nacional"
+  }, {
+    "@language" : "en",
+    "@value" : "National Station ID"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt#QuantityValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A numeric value representing the measured quantity of a specific air quality metric."
+  }, {
+    "@language" : "es",
+    "@value" : "Un valor numérico que representa la cantidad medida de un indicador específico de calidad del aire."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quantity Value"
+  }, {
+    "@language" : "es",
+    "@value" : "Valor de Cantidad"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A record of an observed phenomenon, including the features of interest, results, the sensor that made the observation, and the property that was observed."
+  }, {
+    "@language" : "es",
+    "@value" : "Un registro de un fenómeno observado, incluyendo las características de interés, resultados, el sensor que realizó la observación y la propiedad que fue observada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Observación"
+  }, {
+    "@language" : "en",
+    "@value" : "Observation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device that observes a phenomenon, providing data about specific properties of interest."
+  }, {
+    "@language" : "es",
+    "@value" : "Un dispositivo que observa un fenómeno, proporcionando datos sobre propiedades específicas de interés."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  }, {
+    "@language" : "es",
+    "@value" : "Sensor"
+  } ]
+}, {
+  "@id" : "https://mAIRdrid.org/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "This ontology provides a comprehensive framework for representing air quality metrics, including concentrations of pollutants such as NOx, CO, PM2.5, PM10, and BTX, as well as the corresponding measurement values, timestamps, and metadata about monitoring stations and their sensors. The ontology aims to facilitate data interoperability and sharing among environmental monitoring systems, researchers, and policy-makers, enabling better analysis and understanding of air quality dynamics in urban and rural settings."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-11-01"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://github.com/PPedreg"
+  }, {
+    "@id" : "https://github.com/RafaOB95"
+  }, {
+    "@id" : "https://github.com/aiarakoa"
+  }, {
+    "@id" : "https://github.com/ehrlz"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Madrid air quality ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://mAIRdrid.org/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AirQualityOntology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://mAIRdrid.org/ontology/1.0.0"
+  } ]
+} ]
