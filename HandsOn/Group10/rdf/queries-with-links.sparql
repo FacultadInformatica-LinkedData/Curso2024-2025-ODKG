@@ -1,32 +1,32 @@
--- Query 1
+-- Query 1 (Obtain the all the classes)
 SELECT DISTINCT ?class
 WHERE {
   ?instance a ?class .
 }
 LIMIT 10
 
--- Query 2
+-- Query 2 (Obtain some properties)
 SELECT DISTINCT ?property
 WHERE {
   ?s ?property ?o .
 }
 LIMIT 10
 
--- Query 3
+-- Query 3 (Obtain some BikeTrips)
 SELECT DISTINCT ?trips
 WHERE {
   ?trips a <https://BiciMad.es/ontology#BikeTrip> .
 }
 LIMIT 10
 
--- Query 4
+-- Query 4 (Obtain some BikeStations)
 SELECT DISTINCT ?stations
 WHERE {
   ?stations a <https://BiciMad.es/ontology#BikeStation> .
 }
 LIMIT 10
 
--- Query 5
+-- Query 5 (Obtaion the BikeStations that are in "Centro")
 PREFIX bici: <https://BiciMad.es/ontology#>
 PREFIX schema: <https://schema.org/>
 
@@ -38,7 +38,7 @@ WHERE {
 }
 LIMIT 10
 
--- Query 6
+-- Query 6 (Obtain the FreePlaces tha have postalCode 28050)
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -52,7 +52,7 @@ WHERE {
 }
 LIMIT 10
 
--- Query 7
+-- Query 7 (Obtain the trips that endAt the Station170)
 PREFIX schema: <https://schema.org/>
 PREFIX bici: <https://BiciMad.es/ontology#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -70,7 +70,7 @@ WHERE {
 }
 LIMIT 10
 
--- Query 8
+-- Query 8 (Obtain the trips that happend on a certain date 2023-02-07)
 PREFIX schema: <https://schema.org/>
 PREFIX bici: <https://BiciMad.es/ontology#>
 SELECT ?trips ?stationName ?unlockDate ?bikeId
@@ -86,7 +86,7 @@ WHERE {
 }
 LIMIT 10
 
--- Query 9
+-- Query 9 (Obtain the trips that had the lockDock 24)
 PREFIX bici: <https://BiciMad.es/ontology#>
 SELECT ?trips ?station ?unlockDate ?lockDate ?bikeId
 WHERE {
@@ -100,7 +100,7 @@ WHERE {
 }
 LIMIT 10
 
--- Query 10
+-- Query 10 (Obtain the trips that where done with the bike with ID 33)
 PREFIX bici: <https://BiciMad.es/ontology#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
