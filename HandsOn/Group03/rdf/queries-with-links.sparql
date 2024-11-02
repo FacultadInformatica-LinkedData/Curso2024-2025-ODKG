@@ -101,4 +101,23 @@ where {
 group by ?building
 having (count(?sensor) > 1)
 
+#get population of districts in out dataset using wikidata
+
+PREFIX sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+SELECT ?district ?wikidataEntity ?population
+WHERE {
+    
+    ?district a sbm:District .
+    ?district owl:sameAs ?wikidataEntity .
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?wikidataEntity wdt:P1082 ?population .
+        ?wikidataEntity wdt:P31 wd:Q3032114.
+    }
+    
+}
+
 
