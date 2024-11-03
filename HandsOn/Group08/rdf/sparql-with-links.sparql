@@ -1,0 +1,34 @@
+PREFIX accidente: <http://example.org/ontology/accidente#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# Consulta para recuperar accidentes en el distrito "Centro"
+SELECT ?accidente ?fecha ?hora ?tipo_accidente
+WHERE {
+  ?accidente a accidente:Accidente ;
+             accidente:distrito "Centro" ;
+             accidente:fecha ?fecha ;
+             accidente:hora ?hora ;
+             accidente:tipo_accidente ?tipo_accidente .
+}
+ORDER BY ?fecha
+
+# Consulta para contar accidentes por distrito
+SELECT ?distrito (COUNT(?accidente) AS ?num_accidentes)
+WHERE {
+  ?accidente a accidente:Accidente ;
+             accidente:distrito ?distrito .
+}
+GROUP BY ?distrito
+ORDER BY DESC(?num_accidentes)
+
+# Consulta para recuperar accidentes y URLs de distritos, incluyendo owl:sameAs
+SELECT ?accidente ?distrito ?distrito_url ?otroAccidente
+WHERE {
+  ?accidente a accidente:Accidente ;
+             accidente:distrito ?distrito ;
+             accidente:distrito_urls ?distrito_url .
+  OPTIONAL {
+    ?accidente owl:sameAs ?otroAccidente .
+  }
+}
+ORDER BY ?distrito
