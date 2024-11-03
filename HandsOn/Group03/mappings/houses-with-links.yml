@@ -98,5 +98,5 @@ mappings:
       - [./data/houses-Madrid-final.csv~csv]
     s: base:MonetaryAmount/$(uuid4)
       - [a, schema:MonetaryAmount]
-      - [schema:value, $(RENT_PRICE_BY_SQ), xsd:float]
+      - [schema:value, $(RENT_PRICE_BY_SQ_METER), xsd:float]
       - [schema:currency, "EUR", xsd:string]

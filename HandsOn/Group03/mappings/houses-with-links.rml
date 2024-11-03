@@ -478,37 +478,37 @@ map:s_006 rdf:type rr:SubjectMap ;
 	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid3}" .
 
 map:s_007 rdf:type rr:SubjectMap ;
-	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}" .
+	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}\n- [a, schema" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_002 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_006 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_007 rml:referenceFormulation ql:CSV ;
-	rml:source "houses-Madrid-with-links.csv" ;
+	rml:source "./data/houses-Madrid-final.csv" ;
 	rdf:type rml:LogicalSource .
 
