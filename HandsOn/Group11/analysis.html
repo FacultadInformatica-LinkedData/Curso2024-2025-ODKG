@@ -142,21 +142,35 @@ The analysis was performed using the dataset titled "Public Electric Vehicle Cha
   </p>
 
 <br><br>
+<h3>Resource Naming Strategy</h3>
 
-<h3>Resource Name Strategy:</h3>
-  <h4>Domain&nbsp;</h4>
-  <p><a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/</a></p>
-  <h4>Path</h4>
-  <p>Group11/ontology/estaciones_carga</p>
-  <h4>Hash URIs for ontological terms. Slash URIs for individuals:</h4>
-  <ul>
-  <li>Ontological terms path ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#">https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#</a></li>
-  <li>Ontological terms example ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#Pozuelo">https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#Pozuelo</a></li>
-  <li>Individuals terms path ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/ID_Punto#">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/ID_Punto#</a></li>
-  <li>Individuals terms example ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/04_VP">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/04_VP</a></li>
-  </ul>
-  
-  
+<p>This ontology uses a structured and consistent approach to naming URIs, enhancing clarity and uniqueness across resources related to public electric vehicle charging stations in Madrid.</p>
 
+<ol>
+    <li><strong>Base URI</strong>: All resources are based on the namespace:
+        <pre>https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#</pre>
+        This base URI is prefixed as <code>ns:</code> for readability.
+    </li>
+
+    <li>Each resource URI follows the structure <code>&lt;Base URI&gt;/&lt;Class&gt;/&lt;Unique ID&gt;</code>, where <code>&lt;Class&gt;</code> represents the type of entity and <code>&lt;Unique ID&gt;</code> the resource unique identifier.</li>
+
+    <li><strong>Naming Conventions</strong>:
+        <ul>
+            <li><strong>Classes</strong>: Classes are capitalized in CamelCase (<code>ChargingStation</code>, <code>Location</code>, <code>Neighborhood</code>, <code>District</code>, <code>Dates</code>).</li>
+            <li><strong>Properties</strong>: Properties follow camelCase for readability (e.g., <code>management</code>, <code>state</code>). Each class has several properties.</li>
+        </ul>
+    </li>
+
+    <li><strong>Data Types</strong>: Datatypes are explicitly specified where needed. For example, <code>xsd:int</code> for integers, such as <code>ns:numberOfDevices</code> and <code>ns:neighborhoodCode</code>; <code>xsd:dateTime</code> for dates, such as <code>ns:openingDate</code>, <code>ns:registerDate</code>, and <code>ns:editionDate</code>.</li>
+</ol>
+
+<h4>Examples</h4>
+<ul>
+    <li><strong>Charging Station</strong>: <code>ns:ChargingStation/04VP</code></li>
+    <li><strong>Location</strong>: <code>ns:Location/04VP</code></li>
+    <li><strong>Neighborhood</strong>: <code>ns:Neighborhood/2_6</code> (where 2 is the district code and 6 the neighborhood code)</li>
+    <li><strong>District</strong>: <code>ns:District/2</code></li>
+    <li><strong>Dates</strong>: <code>ns:Dates/04VP</code></li>
+</ul>
 </body>
 </html>
