@@ -97,6 +97,7 @@ mappings:
     sources:
       - [../csv/houses-Madrid-with-links.csv~csv]
     s: base:MonetaryAmount/$(uuid4)
+    po:
       - [a, schema:MonetaryAmount]
       - [schema:value, $(RENT_PRICE_BY_SQ_METER), xsd:float]
       - [schema:currency, "EUR", xsd:string]
