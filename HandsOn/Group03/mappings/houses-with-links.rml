@@ -478,7 +478,7 @@ map:s_006 rdf:type rr:SubjectMap ;
 	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid3}" .
 
 map:s_007 rdf:type rr:SubjectMap ;
-	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}\n- [a, schema" .
+	rr:template "http://www.semanticweb.org/resource/MonetaryAmount/{uuid4}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "../csv/houses-Madrid-with-links.csv" ;
