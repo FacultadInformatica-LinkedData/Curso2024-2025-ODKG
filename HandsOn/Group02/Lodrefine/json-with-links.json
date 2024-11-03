@@ -1,0 +1,17 @@
+{
+  "update": {
+    "description": "Added two new columns for linking to Wikidata.",
+    "columns_added": [
+      {
+        "column_name": "sameAsWikidataProvince",
+        "purpose": "Contains links to Wikidata entries for provinces, allowing ontology linkage.",
+        "example_value": "https://www.wikidata.org/wiki/"
+      },
+      {
+        "column_name": "sameAsWikidataLabel",
+        "purpose": "Contains links to Wikidata entries for labels, enhancing semantic connectivity within the ontology.",
+        "example_value": "https://www.wikidata.org/wiki/"
+      }
+    ]
+  }
+}

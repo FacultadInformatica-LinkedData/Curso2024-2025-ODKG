@@ -1,0 +1,24 @@
+QUERIES SPARQL LINKS
+
+QUERY1. STATION NAME, ADDRESS AND LINK TO SATION NAME
+PREFIX ex: <http://fuelpricespain.org/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?stationName ?address ?sameAsRotulo WHERE {
+    ?station a ex:GasStation ;
+             ex:stationName ?stationName ;
+             ex:address ?address ;
+             ex:sameAsWikiDataRotulo ?sameAsRotulo .
+}
+
+
+QUERY 2 STATION NAME AND LINK TO PROVINCE
+PREFIX ex: <https://fuelpricespain.org/gasstations#>
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?stationName ?sameAsProvince WHERE {
+    ?station a ex:GasStation ;
+             ex:stationName ?stationName ;
+             ex:sameAsWikiDataProvince ?sameAsProvince .
+}
