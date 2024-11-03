@@ -1,7 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#>
-PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 # show all charging stations with all properties
 SELECT ?s ?o ?p
@@ -9,7 +8,6 @@ WHERE {
   ?s a ns:ChargingStation .
   ?s ?o ?p ;
 }
-
 
 # show each charging station along with its operator
 SELECT ?chargingStation ?operator
@@ -23,15 +21,14 @@ SELECT ?s ?address ?neighborhoodName ?districtName
 WHERE {
   ?s a ns:ChargingStation .
   ?s ns:isLocated ?place .
-  ?place a schema:Place ;
-     	schema:address ?address ;
-  		schema:containedInPlace ?neighborhood .
+  ?place a ns:Place ;
+     	ns:address ?address ;
+  		ns:containedInNeighborhood ?neighborhood .
   ?neighborhood a ns:Neighborhood ;
     ns:neighborhoodName ?neighborhoodName ;
-    schema:containedInPlace ?district .
+    ns:containedInDistrict   ?district .
   ?district a ns:District ;
     ns:districtName ?districtName .
-     
 }
 
 # show each station with its assigned dates
@@ -64,7 +61,7 @@ SELECT ?district ?districtname (COUNT(DISTINCT ?neighborhood) as ?numberOfNeighb
 WHERE {
     ?district a ns:District ;
               ns:districtName ?districtname .
-    ?neighborhood schema:containedInPlace ?district .
+    ?neighborhood ns:containedInDistric ?district .
 }
 GROUP BY ?district
 ORDER BY DESC(?numberOfNeighborhoods)
@@ -74,8 +71,8 @@ SELECT ?neighborhoodname (COUNT(?chargingStation) AS ?stationCount)
 WHERE {
   ?chargingStation a ns:ChargingStation ;
         ns:isLocated ?place .
-  ?place a schema:Place ;
-        schema:containedInPlace ?neighborhood .
+  ?place a ns:Place ;
+        ns:containedInNeighborhood ?neighborhood .
   ?neighborhood a ns:Neighborhood ;
         ns:neighborhoodName ?neighborhoodname .
 }
