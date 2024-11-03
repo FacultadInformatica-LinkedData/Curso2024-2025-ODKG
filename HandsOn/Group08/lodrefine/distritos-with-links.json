@@ -23,6 +23,19 @@
     "description": "Reconcile cells in column NOMBRE to type Q3032114"
   },
   {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE_urls",
+    "columnInsertIndex": 4,
+    "description": "Create column NOMBRE_urls at index 4 based on column NOMBRE using expression if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
     "op": "wikidata/save-wikibase-schema",
     "schema": {
       "entityEdits": [
@@ -34,6 +47,68 @@
           },
           "nameDescs": [],
           "statementGroups": [
+            {
+              "property": {
+                "type": "wbpropconstant",
+                "pid": "P2043",
+                "label": "length",
+                "datatype": "quantity"
+              },
+              "statements": [
+                {
+                  "value": {
+                    "type": "wbquantityexpr",
+                    "amount": {
+                      "type": "wbstringvariable",
+                      "columnName": "Shape_Leng"
+                    },
+                    "unit": {
+                      "type": "wbentityidvalueconstant",
+                      "id": "Q828224",
+                      "label": "kilometre"
+                    }
+                  },
+                  "qualifiers": [],
+                  "references": [
+                    {
+                      "snaks": [
+                        {
+                          "prop": {
+                            "type": "wbpropconstant",
+                            "pid": "P854",
+                            "label": "reference URL",
+                            "datatype": "url"
+                          },
+                          "value": {
+                            "type": "wbstringconstant",
+                            "value": "http://opendataandknowledgegraphs.org/group08/ontology"
+                          }
+                        },
+                        {
+                          "prop": {
+                            "type": "wbpropconstant",
+                            "pid": "P813",
+                            "label": "retrieved",
+                            "datatype": "time"
+                          },
+                          "value": {
+                            "type": "wbdateconstant",
+                            "value": "2024-11-01"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "mergingStrategy": {
+                    "type": "snak",
+                    "valueMatcher": {
+                      "type": "lax"
+                    }
+                  },
+                  "mode": "add_or_merge"
+                }
+              ]
+            },
             {
               "property": {
                 "type": "wbpropconstant",
@@ -68,7 +143,7 @@
                           },
                           "value": {
                             "type": "wbstringconstant",
-                            "value": "http://opendata.org/group08"
+                            "value": "http://opendataandknowledgegraphs.org/group08/ontology"
                           }
                         },
                         {
@@ -109,151 +184,21 @@
     "description": "Save Wikibase schema"
   },
   {
-    "op": "wikidata/save-wikibase-schema",
-    "schema": {
-      "entityEdits": [
-        {
-          "type": "wbitemeditexpr",
-          "subject": {
-            "type": "wbentityvariable",
-            "columnName": "NOMBRE"
-          },
-          "nameDescs": [],
-          "statementGroups": [
-            {
-              "property": {
-                "type": "wbpropconstant",
-                "pid": "P2046",
-                "label": "area",
-                "datatype": "quantity"
-              },
-              "statements": [
-                {
-                  "value": {
-                    "type": "wbquantityexpr",
-                    "amount": {
-                      "type": "wbstringvariable",
-                      "columnName": "Shape_Area"
-                    },
-                    "unit": {
-                      "type": "wbentityidvalueconstant",
-                      "id": "Q712226",
-                      "label": "square kilometre"
-                    }
-                  },
-                  "qualifiers": [],
-                  "references": [
-                    {
-                      "snaks": [
-                        {
-                          "prop": {
-                            "type": "wbpropconstant",
-                            "pid": "P854",
-                            "label": "reference URL",
-                            "datatype": "url"
-                          },
-                          "value": {
-                            "type": "wbstringconstant",
-                            "value": "http://opendata.org/group08"
-                          }
-                        },
-                        {
-                          "prop": {
-                            "type": "wbpropconstant",
-                            "pid": "P813",
-                            "label": "retrieved",
-                            "datatype": "time"
-                          },
-                          "value": {
-                            "type": "wbdateconstant",
-                            "value": "2024-11-01"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "mergingStrategy": {
-                    "type": "snak",
-                    "valueMatcher": {
-                      "type": "lax"
-                    }
-                  },
-                  "mode": "add_or_merge"
-                }
-              ]
-            },
-            {
-              "property": {
-                "type": "wbpropconstant",
-                "pid": "P2043",
-                "label": "length",
-                "datatype": "quantity"
-              },
-              "statements": [
-                {
-                  "value": {
-                    "type": "wbquantityexpr",
-                    "amount": {
-                      "type": "wbstringvariable",
-                      "columnName": "Shape_Leng"
-                    },
-                    "unit": {
-                      "type": "wbentityidvalueconstant",
-                      "id": "Q11573",
-                      "label": "metre"
-                    }
-                  },
-                  "qualifiers": [],
-                  "references": [
-                    {
-                      "snaks": [
-                        {
-                          "prop": {
-                            "type": "wbpropconstant",
-                            "pid": "P854",
-                            "label": "reference URL",
-                            "datatype": "url"
-                          },
-                          "value": {
-                            "type": "wbstringconstant",
-                            "value": "http://opendata.org/group08"
-                          }
-                        },
-                        {
-                          "prop": {
-                            "type": "wbpropconstant",
-                            "pid": "P813",
-                            "label": "retrieved",
-                            "datatype": "time"
-                          },
-                          "value": {
-                            "type": "wbdateconstant",
-                            "value": "2024-11-01"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "mergingStrategy": {
-                    "type": "snak",
-                    "valueMatcher": {
-                      "type": "lax"
-                    }
-                  },
-                  "mode": "add_or_merge"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "siteIri": "http://www.wikidata.org/entity/",
-      "entityTypeSiteIRI": {
-        "item": "http://www.wikidata.org/entity/",
-        "property": "http://www.wikidata.org/entity/"
-      },
-      "mediaWikiApiEndpoint": "https://www.wikidata.org/w/api.php"
-    },
-    "description": "Save Wikibase schema"
+    "op": "core/column-rename",
+    "oldColumnName": "COD_DIS",
+    "newColumnName": "codigo_distrito",
+    "description": "Rename column COD_DIS to codigo_distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "nombre_distrito",
+    "description": "Rename column NOMBRE to nombre_distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_urls",
+    "newColumnName": "nombre_distritos_urls",
+    "description": "Rename column NOMBRE_urls to nombre_distritos_urls"
   }
 ]
