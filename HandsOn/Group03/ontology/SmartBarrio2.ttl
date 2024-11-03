@@ -8,7 +8,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix schema: <https://schema.org/> .
 @prefix resource: <http://www.semanticweb.org/resource/> .
-@base <http://www.semanticweb.org/ontology/SmartBarrioMadrid> .
+@base <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
 
 <http://www.semanticweb.org/ontology/SmartBarrioMadrid> rdf:type owl:Ontology ;
                                                          owl:versionIRI <http://www.semanticweb.org/ontology/SmartBarrioMadrid/1.0> .
@@ -87,7 +87,9 @@ sosa:madeObservation rdf:type owl:ObjectProperty ;
 
 ###  https://schema.org/containedInPlace
 schema:containedInPlace rdf:type owl:ObjectProperty ;
-                        owl:inverseOf schema:containsPlace .
+                        owl:inverseOf schema:containsPlace ;
+                        rdfs:domain schema:Place ;
+                        rdfs:range schema:Place .
 
 
 ###  https://schema.org/containsPlace
@@ -130,7 +132,10 @@ schema:geoContains rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:string .
 
 
-
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#neighborhoodCode
+:neighborhoodCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Neighborhood ;
+                  rdfs:range xsd:integer .
 
 
 ###  http://www.w3.org/ns/sosa/resultTime
@@ -143,6 +148,12 @@ sosa:resultTime rdf:type owl:DatatypeProperty ;
 schema:address rdf:type owl:DatatypeProperty ;
                rdfs:domain schema:GeoCoordinates ;
                rdfs:range xsd:string .
+
+
+###  https://schema.org/currency
+schema:currency rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:MonetaryAmount ;
+                rdfs:range xsd:string .
 
 
 ###  https://schema.org/latitude
@@ -180,10 +191,10 @@ schema:unitText rdf:type owl:DatatypeProperty ;
                 rdfs:domain schema:QuantitativeValue ;
                 rdfs:range xsd:string .
 
+
 ###  https://schema.org/value
 schema:value rdf:type owl:DatatypeProperty ;
-             rdfs:domain schema:StructuredValue;
-             rdfs:range xsd:float .
+             rdfs:domain schema:StructuredValue .
 
 
 #################################################################
