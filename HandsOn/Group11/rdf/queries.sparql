@@ -6,7 +6,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?s ?o ?p
 WHERE {
   ?s a ns:ChargingStation .
-  ?s ?o ?p ;
+  ?s ?o ?p .
 }
 
 # show each charging station along with its operator
@@ -63,7 +63,7 @@ WHERE {
               ns:districtName ?districtname .
     ?neighborhood ns:containedInDistric ?district .
 }
-GROUP BY ?district
+GROUP BY ?district ?districtname
 ORDER BY DESC(?numberOfNeighborhoods)
 
 # see the number of charging stations from each neighborhood
@@ -76,4 +76,4 @@ WHERE {
   ?neighborhood a ns:Neighborhood ;
         ns:neighborhoodName ?neighborhoodname .
 }
-GROUP BY ?neighborhood
+GROUP BY ?neighborhoodname
