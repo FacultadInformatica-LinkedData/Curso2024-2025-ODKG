@@ -58,6 +58,7 @@ map:map_rentPricesByRoom_000 rml:logicalSource map:source_006 ;
 map:map_rentPricesBySq_000 rml:logicalSource map:source_007 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "rentPricesBySq" ;
+	rr:predicateObjectMap map:pom_034, map:pom_035, map:pom_036 ;
 	rr:subjectMap map:s_007 .
 
 map:map_rentPrices_000 rml:logicalSource map:source_005 ;
@@ -215,6 +216,20 @@ map:om_033 rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
+map:om_034 rdf:type rr:ObjectMap ;
+	rr:constant schema:MonetaryAmount ;
+	rr:termType rr:IRI .
+
+map:om_035 rml:reference "RENT_PRICE_BY_SQ_METER" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_036 rdf:type rr:ObjectMap ;
+	rr:constant "EUR" ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
@@ -315,6 +330,15 @@ map:pm_032 rdf:type rr:PredicateMap ;
 	rr:constant schema:value .
 
 map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant schema:currency .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant schema:value .
+
+map:pm_036 rdf:type rr:PredicateMap ;
 	rr:constant schema:currency .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -452,6 +476,18 @@ map:pom_032 rdf:type rr:PredicateObjectMap ;
 map:pom_033 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_033 ;
 	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_036 .
 
 map:rules_000 void:exampleResource map:map_districts_000, map:map_floorSizes_000, map:map_geos_000, map:map_houses_000, map:map_neighbourhoods_000, map:map_rentPricesByRoom_000, map:map_rentPricesBySq_000, map:map_rentPrices_000 ;
 	rdf:type void:Dataset .
