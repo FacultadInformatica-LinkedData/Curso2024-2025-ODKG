@@ -1,7 +1,8 @@
 prefixes:
   ns: "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#"
-  schema: "https://schema.org/"
+  owl: "http://www.w3.org/2002/07/owl#"
   rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
 
 mappings:
   chargingStation:
@@ -14,24 +15,23 @@ mappings:
       - [ns:idPoint, $(ID_Punto)]
       - [ns:management, $(GESTIÓN)]
       - [ns:state, $(ESTADO)]
-      - [ns:numberOfDevices, $(N_EQUIPOS)]
+      - [ns:numberOfDevices, $(N_EQUIPOS), xsd:int]
       - [ns:characteristicsDevices, $(CARACTERÍSTICAS_EQUIPO)]
       - [ns:operator, $(OPERADOR)]
       - [ns:placement, $(EMPLAZAMIENTO)]
       - [ns:schedule, $(HORARIO)]
       - [ns:additionalInfo, $(INFO_ADICIONAL)]
-      - [ns:isLocated, schema:Place/$(ID_Punto)]
+      - [ns:isLocated, ns:Location/$(ID_Punto)]
       - [ns:hasDates, ns:Dates/$(ID_Punto)]
-
-  place:
+  location:
     sources:
       - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
     s: 
-      - value: "schema:Place/$(ID_Punto)"
+      - value: "ns:Location/$(ID_Punto)"
     po:
-      - [a, schema:Place]
-      - [schema:address, $(UBICACIÓN)]
-      - [schema:containedInPlace, ns:Neighborhood/$(COD_DIS)_$(COD_BAR)]
+      - [a, ns:]
+      - [ns:address, $(UBICACIÓN)]
+      - [ns:containedInNeighborhood, ns:Neighborhood/$(COD_DIS)_$(COD_BAR)]
   
   neighborhood:
     sources:
@@ -40,9 +40,9 @@ mappings:
       - value: "ns:Neighborhood/$(COD_DIS)_$(COD_BAR)"
     po:
       - [a, ns:Neighborhood]
-      - [ns:neighborhoodCode, $(COD_BAR)]
+      - [ns:neighborhoodCode, $(COD_DIS)_$(COD_BAR), xsd:int]
       - [ns:neighborhoodName, $(BARRIO)]
-      - [schema:containedInPlace, ns:District/$(COD_DIS)]
+      - [ns:containedInDistrict, ns:District/$(COD_DIS)]
       - [owl:sameAs, $(same_as_wikidata_barrio)~iri]
 
   district:
@@ -52,7 +52,7 @@ mappings:
       - value: "ns:District/$(COD_DIS)"
     po:
       - [a, ns:District]
-      - [ns:districtCode, $(COD_DIS)]
+      - [ns:districtCode, $(COD_DIS), xsd:int]
       - [ns:districtName, $(DISTRITO)]
       - [owl:sameAs, $(same_as_wikidata_distrito)~iri]
 
@@ -63,6 +63,6 @@ mappings:
       - value: "ns:Dates/$(ID_Punto)"
     po:
       - [a, ns:Dates]
-      - [ns:openingDate, $(FECHA_APERTURA)]
-      - [ns:registerDate, $(FECHA_ALTA)]
-      - [ns:editionDate, $(FECHA_EDICION)]
+      - [ns:openingDate, $(FECHA_APERTURA), xsd:dateTime]
+      - [ns:registerDate, $(FECHA_ALTA), xsd:dateTime]
+      - [ns:editionDate, $(FECHA_EDICION), xsd:dateTime]
