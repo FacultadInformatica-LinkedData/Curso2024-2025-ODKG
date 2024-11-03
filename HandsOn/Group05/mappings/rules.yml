@@ -7,6 +7,7 @@ prefixes:
     prov: "https://www.w3.org/TR/prov-o/"
     rps: "http://riversidepollutionstudy.org/ontology/"
     xsd: "http://www.w3.org/2001/XMLSchema#"
+    owl: "http://www.w3.org/2002/07/owl#"
 
 sources:
   observations:

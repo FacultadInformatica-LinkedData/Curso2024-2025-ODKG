@@ -1,0 +1,133 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q1093829",
+        "name": "city in the United States"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q1093829"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "Riverside",
+    "judgment": "matched",
+    "match": {
+      "id": "Q49243",
+      "name": "Riverside",
+      "types": [
+        "Q1093829",
+        "Q1549591",
+        "Q13218391",
+        "Q62049"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Riverside (Q49243) for cells containing \"Riverside\" in column city"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_city",
+    "columnInsertIndex": 8,
+    "description": "Create column same_as_wikidata_city at index 8 based on column city using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q1093829",
+        "name": "city in the United States"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column same_as_wikidata_city to type Q1093829"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "same_as_wikidata_city",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P6",
+          "name": "head of government"
+        },
+        {
+          "id": "P473",
+          "name": "local dialing code"
+        },
+        {
+          "id": "P281",
+          "name": "postal code"
+        },
+        {
+          "id": "P856",
+          "name": "official website"
+        },
+        {
+          "id": "P1082",
+          "name": "population"
+        },
+        {
+          "id": "P2044",
+          "name": "elevation above sea level"
+        },
+        {
+          "id": "P571",
+          "name": "inception"
+        },
+        {
+          "id": "P8138",
+          "name": "located in statistical territorial entity"
+        }
+      ]
+    },
+    "columnInsertIndex": 9,
+    "description": "Extend data at index 9 based on column same_as_wikidata_city"
+  }
+]
