@@ -120,4 +120,27 @@ WHERE {
     
 }
 
+#get number of tourist attraction in every district
+PREFIX sbm: <http://www.semanticweb.org/ontology/SmartBarrioMadrid#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
 
+SELECT ?district (COUNT(?attraction) AS ?attractionCount)
+WHERE {
+    
+    ?district a sbm:District .
+    ?district owl:sameAs ?wikidataEntity .
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?attraction wdt:P31 ?type;         
+              wdt:P131 ?location.    
+  
+  VALUES ?type { wd:Q570116 wd:Q17431399 wd:Q41176 wd:Q2065736 wd:Q4989906 } 
+
+  ?location wdt:P131* ?wikidataEntity.      
+  ?wikidataEntity wdt:P31 wd:Q3032114.      
+    }
+    
+}
+GROUP BY ?district ?districtLabel
+ORDER BY DESC(?attractionCount)
