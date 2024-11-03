@@ -28,7 +28,7 @@ mappings:
     s: 
       - value: "ns:Location/$(ID_Punto)"
     po:
-      - [a, ns:]
+      - [a, ns:Location]
       - [ns:address, $(UBICACIÓN)]
       - [ns:containedInNeighborhood, ns:Neighborhood/$(COD_DIS)_$(COD_BAR)]
   

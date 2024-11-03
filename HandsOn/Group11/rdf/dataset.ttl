@@ -1857,423 +1857,423 @@
     ns:districtCode "2"^^xsd:int ;
     ns:districtName "Arganzuela" .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01CoCe18> a ns:Location ;
     ns:address "Mercado de la Cebada. Plaza de la Cebada" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01CoCe20> a ns:Location ;
     ns:address "Mercado de Guindalera. Plaza de San Cayetano, s/n" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01EMT> a ns:Location ;
     ns:address "Plaza de Jacinto Benavente 6" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01PRIV> a ns:Location ;
     ns:address "Plaza de la Cebada" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/01VP> a ns:Location ;
     ns:address "Calle Génova 24" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02CoCe18> a ns:Location ;
     ns:address "Calle Mateo Inurria, 4" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02CoCe20> a ns:Location ;
     ns:address "Avenida Alfonso XIII, esquina, Costa Rica" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02EMT> a ns:Location ;
     ns:address "Jardines del Descubrimiento - Acceso a Complejo de Aparcamientos subterráneos por Calle de la Armada Española" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/02PRIV> a ns:Location ;
     ns:address "Calle Alberto Aguilera 9" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03CoCe18> a ns:Location ;
     ns:address "Calle Ofelia Nieto, 64" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03CoCe20> a ns:Location ;
     ns:address "Avenida Alberto Alcocer, 11" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03EMT> a ns:Location ;
     ns:address "Plaza de Marqués de Salamanca" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/03PRIV> a ns:Location ;
     ns:address "Plaza del Conde de Casal 6" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04CoCe18> a ns:Location ;
     ns:address "ES Repsol 96849 - Calle Abetal 8 - Las Tablas" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04CoCe20> a ns:Location ;
     ns:address "Mercado Municipal de Maravillas, Calle Bravo Murillo 122" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04EMT> a ns:Location ;
     ns:address "Calle Hiedra 36" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04PRIV> a ns:Location ;
     ns:address "Calle del Monasterio de Arlanza, 20 (Centro Comercial Montecarmelo)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/04VP> a ns:Location ;
     ns:address "Ronda de Valencia 1" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/2_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05CoCe18> a ns:Location ;
     ns:address "ES Hipódromo(CR A-6, 8)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05CoCe20> a ns:Location ;
     ns:address "Avenida del General Perón, 21" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05EMT> a ns:Location ;
     ns:address "Calle Alcalá 17. Parking de Canalejas." ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/1_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/05PRIV> a ns:Location ;
     ns:address "Avenida de Machupichu 105" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06CoCe18> a ns:Location ;
     ns:address "ES Aravaca - El Plantío (Avenida Victoria 34)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06EMT> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06EMT> a ns:Location ;
     ns:address "Paseo Recoletos 4" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06PRIV> a ns:Location ;
     ns:address "Avenida de Niceto Alcala Zamora 20" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/06VP> a ns:Location ;
     ns:address "Calle Cerro de la Plata 4" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07CoCe18> a ns:Location ;
     ns:address "ES Repsol 33826 - Pº Extremadura 543 (A5 PK9)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07PRIV> a ns:Location ;
     ns:address "Avenida Eje Central, 7" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/07VP> a ns:Location ;
     ns:address "Calle Ibiza 1" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08CoCe18> a ns:Location ;
     ns:address "CRED PAU CARABANCHEL, Av. de la Peseta" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08CoCe20> a ns:Location ;
     ns:address "Calle Marqués de Urquijo, 27" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/9_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08PRIV> a ns:Location ;
     ns:address "Carretera de Villaverde a Vallecas 278" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/08VP> a ns:Location ;
     ns:address "Calle Alfonso XII, 2" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09CoCe18> a ns:Location ;
     ns:address "Mercado de las Águilas - Calle de José Cadalso" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_7> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09CoCe20> a ns:Location ;
     ns:address "Calle Sinfonia, 9 (ES Ballenoil Aviación)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09PRIV> a ns:Location ;
     ns:address "Avenida del Consejo de Europa 2" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/09VP> a ns:Location ;
     ns:address "Plaza de la Lealtad, s/n" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/3_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10CoCe18> a ns:Location ;
     ns:address "Avenida de la Albufera 319" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10CoCe20> a ns:Location ;
     ns:address "Calle Hilario Herranz Establos, 20" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/11_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10PRIV> a ns:Location ;
     ns:address "Avenida del Partenón 5 (Recinto IFEMA)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/10VP> a ns:Location ;
     ns:address "Calle Goya 36" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11CoCe18> a ns:Location ;
     ns:address "Avenida María de Portugal 15" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11CoCe20> a ns:Location ;
     ns:address "Calle de Eduardo Barreiros, 2 (On rent)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/11VP> a ns:Location ;
     ns:address "Calle Goya 123" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12CoCe18> a ns:Location ;
     ns:address "Avda. de los Rosales 147 M-301 km 4,1" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12CoCe20> a ns:Location ;
     ns:address "ES Avenida de Andalucía 38 - Carretera A-4 PK6.70 D" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12PRIV> a ns:Location ;
     ns:address "Calle San Aquilino, 1 B" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/6_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/12VP> a ns:Location ;
     ns:address "Calle Castelló 105" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13CoCe18> a ns:Location ;
     ns:address "GPV-PAU VALLECAS-139, Calle Real de Arganda, 75" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13PRIV> a ns:Location ;
     ns:address "Avenida de América 9 A, planta -3" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/13VP> a ns:Location ;
     ns:address "Calle Velázquez 74" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14CoCe18> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14CoCe18> a ns:Location ;
     ns:address "ES Repsol Barajas II (CR N-2 P.K. 12,60 D)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14CoCe20> a ns:Location ;
     ns:address "CRE Moratalaz Glorieta del Corregidor Sancho de Córdoba" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14PRIV> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14PRIV> a ns:Location ;
     ns:address "Calle 29. Mercamadrid" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/14VP> a ns:Location ;
     ns:address "Paseo Castellana 52" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/15CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/15CoCe20> a ns:Location ;
     ns:address "Estación de Servicio SUDEL, Calle Ricardo Ortiz, 44" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/15VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/15VP> a ns:Location ;
     ns:address "Paseo Castellana 106" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16CoCe20> a ns:Location ;
     ns:address "Calle Verdaguer y García 5 (Ipark-Verdaguer ampliación)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16CoCe22> a ns:Location ;
     ns:address "Ctra A-5, Km 5.4. Estación de Servicio El Batán" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/10_10> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/16VP> a ns:Location ;
     ns:address "Paseo Castellana 160" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/17CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/17CoCe20> a ns:Location ;
     ns:address "ES Calle Arturo Soria, 175" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_7> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/17VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/17VP> a ns:Location ;
     ns:address "Calle Cardenal Marcelo Spínola 6" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/18CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/18CoCe20> a ns:Location ;
     ns:address "SEDE NATURGY, Av San Luis, 77" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/18VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/18VP> a ns:Location ;
     ns:address "Calle Fernández de los Ríos 42" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/19CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/19CoCe20> a ns:Location ;
     ns:address "Calle Valle de Tobalina, 24 (ES Ballenoil)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/19VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/19VP> a ns:Location ;
     ns:address "Plaza del Conde de Valle de Suchil" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/1CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/1CoCe22> a ns:Location ;
     ns:address "CENTRO COMERCIAL MADRID 2 - LA VAGUADA. Av. de Monforte de Lemos, 36" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/1PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/1PropDG> a ns:Location ;
     ns:address "Calle del General Lacy, 21" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/2_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20CoCe20> a ns:Location ;
     ns:address "Atolón 98 (Mercamadrid), Calle 29." ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20CoCe22> a ns:Location ;
     ns:address "E.S. ESMO, S.A. Calle María de Molina 21" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/5_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/20VP> a ns:Location ;
     ns:address "Calle Fuencarral 114" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/21CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/21CoCe20> a ns:Location ;
     ns:address "ESTACIÓN DE SUMINISTRO GNC (CTM), Avenida Eje Central, 7" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/21VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/21VP> a ns:Location ;
     ns:address "Calle Manuel Silvela 16" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/22PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/22PropDG> a ns:Location ;
     ns:address "Calle Hacienda de Pavones 231 (enfrente del LIDL)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/14_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/22VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/22VP> a ns:Location ;
     ns:address "Calle Santa Engracia 115" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/23CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/23CoCe20> a ns:Location ;
     ns:address "Avenida Mayorazgo, 20" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/23VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/23VP> a ns:Location ;
     ns:address "Paseo Castellana 33" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/7_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/24CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/24CoCe20> a ns:Location ;
     ns:address "Calle Alto del Retiro, s/n" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/24VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/24VP> a ns:Location ;
     ns:address "Calle de Sinesio Delgado 2" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/25VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/25VP> a ns:Location ;
     ns:address "Calle Bueso Pineda 29" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/26CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/26CoCe20> a ns:Location ;
     ns:address "Calle Alcalá 510 (CRED San Blas)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/26VP> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/26VP> a ns:Location ;
     ns:address "Calle de Roberto Domingo, 4" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/27CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/27CoCe20> a ns:Location ;
     ns:address "Avenida Arcentales, 7" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/27PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/27PropDG> a ns:Location ;
     ns:address "Glorieta De Sandro Pertini (frente a edificio c/ Arequipa, 1)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/16_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/28CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/28CoCe20> a ns:Location ;
     ns:address "Avenida Canillejas a Vicálvaro, 80" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/29CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/29CoCe20> a ns:Location ;
     ns:address "Avenida Canillejas a Vicálvaro, 147" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_5> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/29CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/29CoCe22> a ns:Location ;
     ns:address "Hospital Vithas Clinsa SA. Calle de Ramírez de Arellano, 2" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/15_15> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/2CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/2CoCe22> a ns:Location ;
     ns:address "CAMPUS CANTOBLANCO – RECTORADO" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/30CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/30CoCe20> a ns:Location ;
     ns:address "CENTRO DE OPERACIONES NATURGY, Calle Deyanira, 10" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/30PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/30PropDG> a ns:Location ;
     ns:address "Calle de Santa Florencia (enfrente del 1)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/31CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/31CoCe20> a ns:Location ;
     ns:address "Calle Nanclares de Oca, 5-17" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/20_6> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/31PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/31PropDG> a ns:Location ;
     ns:address "Calle Godella 116" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/17_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/32PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/32PropDG> a ns:Location ;
     ns:address "Bulevar José Prat, 27A" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_2> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/33CoCe20> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/33CoCe20> a ns:Location ;
     ns:address "ES Cardenal Herrera Oria. Avenida Cardenal Herrera Oria 290" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/34CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/34CoCe22> a ns:Location ;
     ns:address "C.C. ABC SERRANO. Calle Serrano, 61" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/4_4> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/35PropDG> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/35PropDG> a ns:Location ;
     ns:address "Calle de Minerva, 17" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/19_3> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/3CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/3CoCe22> a ns:Location ;
     ns:address "CAMPUS CANTOBLANCO – DERECHO" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/8_8> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/3MerM> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/3MerM> a ns:Location ;
     ns:address "Parcela D.2.1 Anexo avenida de legazpi" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/5CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/5CoCe22> a ns:Location ;
     ns:address "C/Vía Dublín s/n. Club de golf Olivar de la Hinojosa." ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/21_21> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/5MerM> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/5MerM> a ns:Location ;
     ns:address "Parcela E4 Anexo Avda Legazpi" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/6CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/6CoCe22> a ns:Location ;
     ns:address "Calle Martínez de la Riva, 4. Mercado Puente de Vallecas" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/13_13> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/6MerM> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/6MerM> a ns:Location ;
     ns:address "Parcela B14 Anexo Calle 3" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_1> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/7MerM> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/7MerM> a ns:Location ;
     ns:address "Avda. de Madrid - Aparcamiento Este del Mercado Central de Pescados (Parcela C2)" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/8CoCe22> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/8CoCe22> a ns:Location ;
     ns:address "Calle Amparo Usera, 46. Mercado Usera" ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/12_12> .
 
-<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/8MerM> a ns: ;
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/8MerM> a ns:Location ;
     ns:address "Avda. de Madrid - Aparcamiento Este del Mercado Central  de Pescados (Parcela C2)  Mercamadrid." ;
     ns:containedInNeighborhood <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/18_18> .
 

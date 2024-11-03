@@ -89,7 +89,7 @@ map:om_011 rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_012 rdf:type rr:ObjectMap ;
-	rr:constant <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> ;
+	rr:constant ns:Location ;
 	rr:termType rr:IRI .
 
 map:om_013 rml:reference "UBICACIÓN" ;
