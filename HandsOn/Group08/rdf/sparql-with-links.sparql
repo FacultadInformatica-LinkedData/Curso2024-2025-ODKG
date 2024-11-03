@@ -1,18 +1,13 @@
-PREFIX accidente: <http://example.org/ontology/accidente#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-
-# Consulta para recuperar accidentes en el distrito "Centro"
 SELECT ?accidente ?fecha ?hora ?tipo_accidente
 WHERE {
-  ?accidente a accidente:Accidente ;
-             accidente:distrito "Centro" ;
-             accidente:fecha ?fecha ;
-             accidente:hora ?hora ;
-             accidente:tipo_accidente ?tipo_accidente .
+  ?accidente a <http://example.org/ontology/accidente#Accidente> ;
+             <http://example.org/ontology/accidente#distrito> "Centro" ;
+             <http://example.org/ontology/accidente#fecha> ?fecha ;
+             <http://example.org/ontology/accidente#hora> ?hora ;
+             <http://example.org/ontology/accidente#tipo_accidente> ?tipo_accidente .
 }
 ORDER BY ?fecha
 
-# Consulta para contar accidentes por distrito
 SELECT ?distrito (COUNT(?accidente) AS ?num_accidentes)
 WHERE {
   ?accidente a accidente:Accidente ;
@@ -21,14 +16,10 @@ WHERE {
 GROUP BY ?distrito
 ORDER BY DESC(?num_accidentes)
 
-# Consulta para recuperar accidentes y URLs de distritos, incluyendo owl:sameAs
-SELECT ?accidente ?distrito ?distrito_url ?otroAccidente
+SELECT ?accidente ?distrito ?distrito_url
 WHERE {
-  ?accidente a accidente:Accidente ;
-             accidente:distrito ?distrito ;
-             accidente:distrito_urls ?distrito_url .
-  OPTIONAL {
-    ?accidente owl:sameAs ?otroAccidente .
-  }
+  ?accidente a <http://example.org/ontology/accidente#Accidente> ;
+             <http://example.org/ontology/accidente#distrito> ?distrito ;
+             <http://example.org/ontology/accidente#distrito_urls> ?distrito_url .
 }
 ORDER BY ?distrito
