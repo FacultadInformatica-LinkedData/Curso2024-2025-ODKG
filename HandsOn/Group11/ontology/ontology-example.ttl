@@ -1,66 +1,33 @@
 @prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
-@prefix sc: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns:ChargingStation_04VP a ns:ChargingStation ;
     ns:idPoint "04VP" ;
     ns:management "Convenio vía pública" ;
     ns:state "Ejecutado" ;
+    ns:isLocated ns:Location_04VP ;
     ns:placement "Vía pública" ;
     ns:additionalInfo "-" ;
     ns:numberOfDevices 1 ;
     ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
     ns:operator "GIC" ;
-    ns:schedule "24" ;
-    ns:isLocated ns:Place_04VP ;
-    ns:hasDates ns:Dates_04VP .
+    ns:hasDates ns:Dates_04VP ;
+    ns:schedule "24" .
 
-ns:Place_04VP a sc:Place ;
-    sc:address "Ronda de Valencia 1" ;
-    sc:containedInPlace ns:Neighborhood_Palos_de_Moguer .
+ns:Location_04VP a ns:Location ;
+    ns:address "Ronda de Valencia 1" ;
+    ns:containedInNeighborhood ns:Neighborhood_6 .
 
-ns:Neighborhood_Palos_de_Moguer a ns:Neighborhood ;
+ns:Neighborhood_2_6 a ns:Neighborhood ;
     ns:neighborhoodName "Palos de Moguer" ;
     ns:neighborhoodCode 6 ;
-    sc:containedInPlace ns:District_Arganzuela .
+    ns:containedInDistrict ns:District_2 .
 
-ns:District_Arganzuela a ns:District ;
+ns:District_2 a ns:District ;
     ns:districtName "Arganzuela" ;
     ns:districtCode 2 .
 
 ns:Dates_04VP a ns:Dates ;
     ns:openingDate "2019-05-09T22:00:00Z"^^xsd:dateTime ;
-    ns:registerDate "2022-02-03T15:21:24Z"^^xsd:dateTime ;
-    ns:editionDate "2022-04-27T10:43:52Z"^^xsd:dateTime .
-
-
-ns:ChargingStation_06VP a ns:ChargingStation ;
-    ns:idPoint "06VP" ;
-    ns:management "Convenio vía pública" ;
-    ns:state "Ejecutado" ;
-    ns:placement "Vía pública" ;
-    ns:additionalInfo "-" ;
-    ns:numberOfDevices 1 ;
-    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
-    ns:operator "GIC" ;
-    ns:schedule "24" ;
-    ns:isLocated ns:Place_06VP ;
-    ns:hasDates ns:Dates_06VP .
-
-ns:Place_06VP a sc:Place ;
-    sc:address "Calle Cerro de la Plata 4" ;
-    sc:containedInPlace ns:Neighborhood_Adelfas .
-
-ns:Neighborhood_Adelfas a ns:Neighborhood ;
-    ns:neighborhoodName "Adelfas" ;
-    ns:neighborhoodCode 2 ;
-    sc:containedInPlace ns:District_Retiro .
-
-ns:District_Retiro a ns:District ;
-    ns:districtName "Retiro" ;
-    ns:districtCode 3 .
-
-ns:Dates_06VP a ns:Dates ;
-    ns:openingDate "2020-12-27T23:00:00Z"^^xsd:dateTime ;
     ns:registerDate "2022-02-03T15:21:24Z"^^xsd:dateTime ;
     ns:editionDate "2022-04-27T10:43:52Z"^^xsd:dateTime .

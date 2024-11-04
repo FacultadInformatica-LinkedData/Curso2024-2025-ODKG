@@ -119,7 +119,7 @@ The analysis was performed using the dataset titled "Public Electric Vehicle Cha
 </ul>
 
 <br><br>
-<h3>License:</h3>
+<h3>License of the original data:</h3>
   <p>
   The dataset is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">license CC BY-SA 4.0</a> Internacional. The conditions for its reuse are as follows:<br>
   - The dataset can be reused for commercial and non-commercial purposes.<br>
@@ -130,20 +130,47 @@ The analysis was performed using the dataset titled "Public Electric Vehicle Cha
   More details can be found on their <a href="https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">terms and conditions page</a>.
 <br><br>
 
-<h3>Resource Name Strategy:</h3>
-  <h4>Domain&nbsp;</h4>
-  <p><a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/</a></p>
-  <h4>Path</h4>
-  <p>Group11/ontology/estaciones_carga</p>
-  <h4>Hash URIs for ontological terms. Slash URIs for individuals:</h4>
-  <ul>
-  <li>Ontological terms path ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#">https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#</a></li>
-  <li>Ontological terms example ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#Pozuelo">https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology/location#Pozuelo</a></li>
-  <li>Individuals terms path ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/ID_Punto#">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/ID_Punto#</a></li>
-  <li>Individuals terms example ⮕ <a href="https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/04_VP">https://datos.madrid/estaciones_carga_vehiculos_electricos/resources/ChargePoint/04_VP</a></li>
-  </ul>
-  
-  
+<h3>License of the data generated in this project:</h3>
+  <p>
+    The dataset obtained in this project may be used for both commercial and non-commercial purposes, provided that such use does not involve public administrative functions. The following conditions apply to the reuse of the dataset:<br>
+    - Reuse implies a non-exclusive transfer of relevant intellectual property rights, allowing the user to reproduce, distribute, communicate publicly, or transform the dataset as necessary for permitted reuse.<br> 
+    - The source of the documents must be acknowledged, including the data origin and the most recent update date if present in the original document.<br>  
+    - The metadata related to update dates and reuse conditions must be kept intact and not modified.<br> 
+    - The information must not be used in a way that distorts its original meaning.<br> 
+    - Users of the derived dataset take full responsibility for its usage and any resulting consequences.<br>
+    - The user must adhere to relevant regulations regarding the reuse of public sector information, including any applicable sanctions.
+  </p>
 
+<br><br>
+<h3>Resource Naming Strategy</h3>
+
+<p>This ontology uses a structured and consistent approach to naming URIs, enhancing clarity and uniqueness across resources related to public electric vehicle charging stations in Madrid.</p>
+
+<ol>
+    <li><strong>Base URI</strong>: All resources are based on the namespace:
+        <pre>https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#</pre>
+        This base URI is prefixed as <code>ns:</code> for readability.
+    </li>
+
+    <li>Each resource URI follows the structure <code>&lt;Base URI&gt;/&lt;Class&gt;/&lt;Unique ID&gt;</code>, where <code>&lt;Class&gt;</code> represents the type of entity and <code>&lt;Unique ID&gt;</code> the resource unique identifier.</li>
+
+    <li><strong>Naming Conventions</strong>:
+        <ul>
+            <li><strong>Classes</strong>: Classes are capitalized in CamelCase (<code>ChargingStation</code>, <code>Location</code>, <code>Neighborhood</code>, <code>District</code>, <code>Dates</code>).</li>
+            <li><strong>Properties</strong>: Properties follow camelCase for readability (e.g., <code>management</code>, <code>state</code>). Each class has several properties.</li>
+        </ul>
+    </li>
+
+    <li><strong>Data Types</strong>: Datatypes are explicitly specified where needed. For example, <code>xsd:int</code> for integers, such as <code>ns:numberOfDevices</code> and <code>ns:neighborhoodCode</code>; <code>xsd:dateTime</code> for dates, such as <code>ns:openingDate</code>, <code>ns:registerDate</code>, and <code>ns:editionDate</code>.</li>
+</ol>
+
+<h4>Examples</h4>
+<ul>
+    <li><strong>Charging Station</strong>: <code>ns:ChargingStation/04VP</code></li>
+    <li><strong>Location</strong>: <code>ns:Location/04VP</code></li>
+    <li><strong>Neighborhood</strong>: <code>ns:Neighborhood/2_6</code> (where 2 is the district code and 6 the neighborhood code)</li>
+    <li><strong>District</strong>: <code>ns:District/2</code></li>
+    <li><strong>Dates</strong>: <code>ns:Dates/04VP</code></li>
+</ul>
 </body>
 </html>

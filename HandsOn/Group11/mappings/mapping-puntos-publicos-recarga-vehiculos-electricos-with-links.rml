@@ -4,9 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
-@prefix ma: <http://www.w3.org/ns/ma-ont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
 
 map:map_chargingStation_000 rml:logicalSource map:source_000 ;
@@ -27,17 +27,17 @@ map:map_district_000 rml:logicalSource map:source_003 ;
 	rr:predicateObjectMap map:pom_020, map:pom_021, map:pom_022, map:pom_023 ;
 	rr:subjectMap map:s_003 .
 
+map:map_location_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "location" ;
+	rr:predicateObjectMap map:pom_012, map:pom_013, map:pom_014 ;
+	rr:subjectMap map:s_001 .
+
 map:map_neighborhood_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "neighborhood" ;
 	rr:predicateObjectMap map:pom_015, map:pom_016, map:pom_017, map:pom_018, map:pom_019 ;
 	rr:subjectMap map:s_002 .
-
-map:map_place_000 rml:logicalSource map:source_001 ;
-	rdf:type rr:TriplesMap ;
-	rdfs:label "place" ;
-	rr:predicateObjectMap map:pom_012, map:pom_013, map:pom_014 ;
-	rr:subjectMap map:s_001 .
 
 map:om_000 rdf:type rr:ObjectMap ;
 	rr:constant ns:ChargingStation ;
@@ -57,6 +57,7 @@ map:om_003 rml:reference "ESTADO" ;
 
 map:om_004 rml:reference "N_EQUIPOS" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
 map:om_005 rml:reference "CARACTERÍSTICAS_EQUIPO" ;
@@ -80,7 +81,7 @@ map:om_009 rml:reference "INFO_ADICIONAL" ;
 	rr:termType rr:Literal .
 
 map:om_010 rdf:type rr:ObjectMap ;
-	rr:template "https://schema.org/Place/{ID_Punto}" ;
+	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/{ID_Punto}" ;
 	rr:termType rr:Literal .
 
 map:om_011 rdf:type rr:ObjectMap ;
@@ -88,7 +89,7 @@ map:om_011 rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_012 rdf:type rr:ObjectMap ;
-	rr:constant schema:Place ;
+	rr:constant ns:Location ;
 	rr:termType rr:IRI .
 
 map:om_013 rml:reference "UBICACIÓN" ;
@@ -103,8 +104,9 @@ map:om_015 rdf:type rr:ObjectMap ;
 	rr:constant ns:Neighborhood ;
 	rr:termType rr:IRI .
 
-map:om_016 rml:reference "COD_BAR" ;
-	rdf:type rr:ObjectMap ;
+map:om_016 rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
+	rr:template "{COD_DIS}_{COD_BAR}" ;
 	rr:termType rr:Literal .
 
 map:om_017 rml:reference "BARRIO" ;
@@ -125,6 +127,7 @@ map:om_020 rdf:type rr:ObjectMap ;
 
 map:om_021 rml:reference "COD_DIS" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
 map:om_022 rml:reference "DISTRITO" ;
@@ -141,14 +144,17 @@ map:om_024 rdf:type rr:ObjectMap ;
 
 map:om_025 rml:reference "FECHA_APERTURA" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:dateTime ;
 	rr:termType rr:Literal .
 
 map:om_026 rml:reference "FECHA_ALTA" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:dateTime ;
 	rr:termType rr:Literal .
 
 map:om_027 rml:reference "FECHA_EDICION" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:dateTime ;
 	rr:termType rr:Literal .
 
 map:pm_000 rdf:type rr:PredicateMap ;
@@ -191,10 +197,10 @@ map:pm_012 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant schema:address .
+	rr:constant ns:address .
 
 map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant schema:containedInPlace .
+	rr:constant ns:containedInNeighborhood .
 
 map:pm_015 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -206,7 +212,7 @@ map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant ns:neighborhoodName .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant schema:containedInPlace .
+	rr:constant ns:containedInDistrict .
 
 map:pm_019 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
@@ -347,14 +353,14 @@ map:pom_027 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_027 ;
 	rr:predicateMap map:pm_027 .
 
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_chargingStation_000, map:map_dates_000, map:map_district_000, map:map_neighborhood_000, map:map_place_000 ;
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_chargingStation_000, map:map_dates_000, map:map_district_000, map:map_location_000, map:map_neighborhood_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
 	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation/{ID_Punto}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "https://schema.org/Place/{ID_Punto}" .
+	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Location/{ID_Punto}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
 	rr:template "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood/{COD_DIS}_{COD_BAR}" .
