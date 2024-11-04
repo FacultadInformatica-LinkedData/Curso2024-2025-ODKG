@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dbowl: <http://dbpedia.org/ontology/> .
 
 # Ontology Definition
 mair:AirQualityOntology a owl:Ontology ;
@@ -14,13 +16,11 @@ mair:Location a rdfs:Class ;
     rdfs:label "Location" ;
     rdfs:comment "A physical location where air quality measurements are taken." .
 
-mair:Province a rdfs:Class ;
-    rdfs:label "Province" ;
+dbowl:Province rdfs:label "Province" ;
     rdfs:comment "A province where air quality measurements are taken." ;
     rdfs:subClassOf mair:Location .  # Province is a subclass of Location
 
-mair:Municipality a rdfs:Class ;
-    rdfs:label "Municipality" ;
+wd:Q15284 rdfs:label "Municipality" ;
     rdfs:comment "A municipality where air quality measurements are taken." ;
     rdfs:subClassOf mair:Location .  # Municipality is also a subclass of Location
 
@@ -43,40 +43,26 @@ mair:hasProvince a rdf:Property ;
     rdfs:label "has province" ;
     rdfs:comment "Relates a Location to its Province." ;
     rdfs:domain mair:Location ;
-    rdfs:range mair:Province .
+    rdfs:range dbowl:Province .
 
 mair:hasMunicipality a rdf:Property ;
     rdfs:label "has municipality" ;
     rdfs:comment "Relates a Province to its Municipality." ;
-    rdfs:domain mair:Province ;
-    rdfs:range mair:Municipality .
+    rdfs:domain dbowl:Province ;
+    rdfs:range wd:Q15284 .
 
 mair:hasStation a rdf:Property ;
     rdfs:label "has station" ;
     rdfs:comment "Relates a Municipality to its Stations." ;
-    rdfs:domain mair:Municipality ;
+    rdfs:domain wd:Q15284 ;
     rdfs:range mair:Station .
 
 #Measurements
 mair:hasMagnitude a rdf:Property ;
-    rdfs:label "has mmagnitude" ;
+    rdfs:label "has magnitude" ;
     rdfs:comment "Relates a measurement to a magnitude" ;
     rdfs:domain mair:Measurement ;
     rdfs:range mair:Magnitude .
-
-#Municipality
-mair:hasStation a rdf:Property ;
-    rdfs:label "has station" ;
-    rdfs:comment "Relates the the station to the municipality" ;
-    rdfs:domain mair:Municipality ;
-    rdfs:range mair:Station .
-
-#Province
-mair:hasMunicipality a rdf:Property ;
-    rdfs:label "has municipality" ;
-    rdfs:comment "Relates the municipality to the province" ;
-    rdfs:domain mair:Province ;
-    rdfs:range mair:Municipality .
 
 #Station
 mair:hasMeasurement a rdf:Property ;
@@ -86,7 +72,7 @@ mair:hasMeasurement a rdf:Property ;
     rdfs:range mair:Measurement .
 
 # Datatype Properties
-#Datatype for magnitude
+#Datatype for Magnitude
 mair:hasMagnitudeCode a rdf:Property ;
     rdfs:label "has magnitude code" ;
     rdfs:comment "The numerical value of the magnitude." ;
@@ -149,28 +135,27 @@ mair:hasStationName a rdf:Property ;
     rdfs:domain mair:Station ;
     rdfs:range xsd:string .
 
-#Municipality
-mair:hasMunicipalityLocationID a rdf:Property ;
-    rdfs:label "has municipality location id" ;
-    rdfs:comment "THe numerical value for the municipality" ;
-    rdfs:domain mair:Municipality ;
+#Municipality (using Wikidata)
+wd:P131 rdfs:label "has municipality location id" ;
+    rdfs:comment "The numerical value for the municipality" ;
+    rdfs:domain wd:Q15284 ;
     rdfs:range xsd:integer .
 
-mair:hasMunicipalityName a rdf:Property ;
-    rdfs:label "has muinicipality name" ;
+wd:P1448 rdfs:label "has municipality name" ;
     rdfs:comment "The name of the municipality" ;
-    rdfs:domain mair:Municipality ;
+    rdfs:domain wd:Q15284 ;
     rdfs:range xsd:string .
 
-#Province
-mair:hasProvinceLocationID a rdf:Property ;
-    rdfs:label "has punicipality location id" ;
-    rdfs:comment "THe numerical value for the province" ;
-    rdfs:domain mair:Province ;
+#Province (using DBpedia)
+dbowl:code rdfs:label "has province location id" ;
+    rdfs:comment "The numerical value for the province" ;
+    rdfs:domain dbowl:Province ;
     rdfs:range xsd:integer .
 
-mair:hasProvinceName a rdf:Property ;
-    rdfs:label "has province name" ;
+dbowl:name rdfs:label "has province name" ;
     rdfs:comment "The name of the province" ;
-    rdfs:domain mair:Province ;
+    rdfs:domain dbowl:Province ;
     rdfs:range xsd:string .
+
+mair:sameAsWikidataMeasurement rdfs:subPropertyOf owl:sameAs .
+mair:sameAsWikidataSIUnit rdfs:subPropertyOf owl:sameAs .
