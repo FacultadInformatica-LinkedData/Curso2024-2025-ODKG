@@ -46,7 +46,7 @@
     },
     {
         "operation": "Merge with location data",
-        "description": "Enriched the dataset by merging it with a streets dataset to add latitude and longitude, city, county, state and country for each street."
+        "description": "Enriched the dataset by merging it with a streets dataset to add latitude and longitude and city"
     },
     {"operation": "Remove null data due to unioning",
     "description":"Due to prior union operation, some data rows have nul data and can be discarded"

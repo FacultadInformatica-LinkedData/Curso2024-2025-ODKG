@@ -590,15 +590,24 @@ Iowa NO2 [ppb],Chicago NO2 [ppb],Cranford NO2 [ppb],Magnolia NO2 [ppb]
 <p> The resource naming strategy:
 
   <br>
-  https://riversidepollutionstudy.org/ontology/
+  http://riversidepollutionstudy.org/
   
   <br>
-  We will use the slash "/" to define our resources in out ontology because our dataset is large and we want to be able to provide individual mesaurements
+  We will use the slash "/" to define our resources and our properties in our ontology because our dataset is large and we want to be able to provide individual mesaurements
   <br>
-  Because our ontology is entirely borrowed from resources such as schema, xsd, endpoints and properties are already differentiated with the use of capitalization and all objects and properties will fall under 
-  <br>
-  <b> https://riversidepollutionstudy.org/ontology/ </b>
+  To differentiate between classes, properties, and instances, we will use the following strategy 
 
+  <br>
+  For general classes, we will define classes with "/ontology". An example would be 
+  <b> http://riversidepollutionstudy.org/ontology/Observation </b>
+
+  <br> 
+  For properties, we will define them with "/property". An example would be
+  <b>http://riversidepollutionstudy.org/hasPart  </b>
+  
+  <br> 
+  For instances, we will define them with the general scheme: "/CLASS_NAME/instance/id"
+  an example would be: "http://riversidepollutionstudy.org/Dataset/instance/1"
 <br>
 <h1> Mockup </h1>
 <img src="mockup.jpg" />

@@ -1,0 +1,195 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q1093829",
+        "name": "city in the United States"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column city to type Q1093829"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "similarValue": "Riverside",
+    "judgment": "matched",
+    "match": {
+      "id": "Q49243",
+      "name": "Riverside",
+      "types": [
+        "Q1093829",
+        "Q1549591",
+        "Q13218391",
+        "Q62049"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Riverside (Q49243) for cells containing \"Riverside\" in column city"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_city",
+    "columnInsertIndex": 8,
+    "description": "Create column same_as_wikidata_city at index 8 based on column city using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P17",
+          "name": null
+        },
+        {
+          "id": "P131",
+          "name": null
+        },
+        {
+          "id": "P281",
+          "name": null
+        },
+        {
+          "id": "P6",
+          "name": null
+        },
+        {
+          "id": "P473",
+          "name": null
+        },
+        {
+          "id": "P1082",
+          "name": null
+        },
+        {
+          "id": "P2044",
+          "name": null
+        },
+        {
+          "id": "P31",
+          "name": null,
+          "settings": {
+            "limit": "1",
+            "rank": "best",
+            "references": "any"
+          }
+        },
+        {
+          "id": "P571",
+          "name": null
+        },
+        {
+          "id": "P8138",
+          "name": null
+        }
+      ]
+    },
+    "columnInsertIndex": 8,
+    "description": "Extend data at index 8 based on column city"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "located in the administrative territorial entity",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P131",
+          "name": null,
+          "settings": {
+            "limit": "0",
+            "rank": "best",
+            "references": "any"
+          }
+        }
+      ]
+    },
+    "columnInsertIndex": 10,
+    "description": "Extend data at index 10 based on column located in the administrative territorial entity"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "located in the administrative territorial entity2",
+    "newColumnName": "state",
+    "description": "Rename column located in the administrative territorial entity2 to state"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "located in the administrative territorial entity",
+    "newColumnName": "county",
+    "description": "Rename column located in the administrative territorial entity to county"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "county",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_county_url",
+    "columnInsertIndex": 10,
+    "description": "Create column wikidata_county_url at index 10 based on column county using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "city",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P856",
+          "name": "official website"
+        }
+      ]
+    },
+    "columnInsertIndex": 8,
+    "description": "Extend data at index 8 based on column city"
+  }
+]

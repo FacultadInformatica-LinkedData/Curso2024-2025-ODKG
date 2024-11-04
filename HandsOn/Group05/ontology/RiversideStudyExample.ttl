@@ -47,17 +47,3 @@ rsd:Location1 a schema:Place ;
 rsd:RiversideCity a schema:City ;
     schema:name "Riverside"^^xsd:string ;
     schema:containedInPlace rsd:RiversideCounty .
-
-# Riverside County contained in California
-rsd:RiversideCounty a schema:AdministrativeArea ;
-    schema:name "Riverside County"^^xsd:string ;
-    schema:containedInPlace rsd:CaliforniaState .
-
-# California contained in the United States
-rsd:CaliforniaState a schema:State ;
-    schema:name "California"^^xsd:string ;
-    schema:containedInPlace rsd:UnitedStates .
-
-# California state contained in the United States
-rsd:UnitedStates a schema:Country ;
-    schema:name "United States"^^xsd:string .
