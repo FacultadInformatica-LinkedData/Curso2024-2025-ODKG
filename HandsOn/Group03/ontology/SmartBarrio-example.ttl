@@ -64,7 +64,7 @@ base:Observation/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20Gener
 base:QuantitativeValue/2020-3-Biblioteca%20Ana%20María%20Matute-AMBIBAMMATUTE%20General a schema:QuantitativeValue ;
     schema:unitCode "kWh"^^xsd:string ;
     schema:unitText "kWh"^^xsd:string ;
-    sosa:resultTime "13099"^^xsd:integer .
+    schema:value "13099"^^xsd:float .
 
 base:CivicStructure/Biblioteca%20Ana%20María%20Matute a schema:CivicStructure ;
     sbm:usedFor base:BuildingUsage/Centros%20culturales%20y%20bibliotecas ;
@@ -82,8 +82,7 @@ base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute a schema:GeoCoordinates ;
 base:Neighborhood/SAN%20ISIDRO a sbm:Neighborhood ;
     schema:containsPlace base:CivicStructure/Biblioteca%20Ana%20María%20Matute ;
     schema:containedInPlace base:District/CARABANCHEL ;
-    schema:containedInPlace base:City/MADRID ;
-    sbm:neighborhoodCode "113"^^xsd:integer .
+    schema:containedInPlace base:City/MADRID .
 
 base:District/CARABANCHEL a sbm:District ;
     schema:containsPlace base:Neighborhood/SAN%20ISIDRO ;
