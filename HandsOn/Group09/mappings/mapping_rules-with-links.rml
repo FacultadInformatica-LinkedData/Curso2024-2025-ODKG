@@ -1,0 +1,654 @@
+
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix mAIR: <http://mAIRdrid.org/ontology/> .
+@prefix mAIRres: <http://mAIRdrid.org/resources/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix qudt-unit: <http://qudt.org/vocab/unit/> .
+
+map:fn_000 rr:predicateObjectMap map:pom_033, map:pom_034, map:pomexec_000 .
+
+map:fn_001 rr:predicateObjectMap map:pom_035, map:pom_036, map:pomexec_001 .
+
+map:fn_002 rr:predicateObjectMap map:pom_037, map:pom_038, map:pomexec_002 .
+
+map:fn_003 rr:predicateObjectMap map:pom_039, map:pom_040, map:pomexec_003 .
+
+map:fn_004 rr:predicateObjectMap map:pom_041, map:pom_042, map:pomexec_004 .
+
+map:jc_000 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_000 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_001 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_001 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_002 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_002 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_003 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_003 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_004 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_004 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:language_000 rr:constant "es" .
+
+map:language_001 rr:constant "en" .
+
+map:language_002 rr:constant "es" .
+
+map:language_003 rr:constant "en" .
+
+map:language_004 rr:constant "es" .
+
+map:language_005 rr:constant "en" .
+
+map:language_006 rr:constant "es" .
+
+map:language_007 rr:constant "en" .
+
+map:map_location_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "location" ;
+	rr:predicateObjectMap map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
+	rr:subjectMap map:s_001 .
+
+map:map_metric_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "metric" ;
+	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:subjectMap map:s_002 .
+
+map:map_observation_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "observation" ;
+	rr:predicateObjectMap map:pom_025, map:pom_026, map:pom_027, map:pom_028, map:pom_029, map:pom_030 ;
+	rr:subjectMap map:s_004 .
+
+map:map_results_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "results" ;
+	rr:predicateObjectMap map:pom_031, map:pom_032 ;
+	rr:subjectMap map:s_005 .
+
+map:map_sensor_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "sensor" ;
+	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024 ;
+	rr:subjectMap map:s_003 .
+
+map:map_station_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "station" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004 ;
+	rr:subjectMap map:s_000 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant mAIR:Station ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:languageMap map:language_000 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "Estación {ESTACION}" ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:languageMap map:language_001 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "{ESTACION} station" ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "CODIGO" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_004 rdf:type rr:ObjectMap ;
+	rr:constant mAIR:Location ;
+	rr:termType rr:IRI .
+
+map:om_005 rml:languageMap map:language_002 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "Ubicación de la estación {ESTACION}" ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:languageMap map:language_003 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "Location of {ESTACION} station" ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "LATITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "LONGITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_009 rml:reference "ALTITUD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_010 rml:reference "same_as_wikidata_streets" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_011 rdf:type rr:ObjectMap ;
+	rr:constant mAIR:AirQualityMetric ;
+	rr:termType rr:IRI .
+
+map:om_012 rdf:type rr:ObjectMap ;
+	rr:constant ssn:Property ;
+	rr:termType rr:IRI .
+
+map:om_013 rml:languageMap map:language_004 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "Concentración de {MEDIDAS.label} en la estación {ESTACION}" ;
+	rr:termType rr:Literal .
+
+map:om_014 rml:languageMap map:language_005 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "{MEDIDAS.label} concentration at {ESTACION} station" ;
+	rr:termType rr:Literal .
+
+map:om_015 rml:reference "MEDIDAS.sameAsWikidata" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_016 rdf:type rr:ObjectMap ;
+	rr:constant sosa:Sensor ;
+	rr:termType rr:IRI .
+
+map:om_017 rdf:type rr:ObjectMap ;
+	rr:constant ssn:System ;
+	rr:termType rr:IRI .
+
+map:om_018 rml:languageMap map:language_006 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "Estación {ESTACION} - Sensor {MEDIDAS.label}" ;
+	rr:termType rr:Literal .
+
+map:om_019 rml:languageMap map:language_007 ;
+	rdf:type rr:ObjectMap ;
+	rr:template "{ESTACION} Station - {MEDIDAS.label} sensor" ;
+	rr:termType rr:Literal .
+
+map:om_020 rdf:type rr:ObjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{CODIGO}#{MEDIDAS.label}" ;
+	rr:termType rr:IRI .
+
+map:om_021 rdf:type rr:ObjectMap ;
+	rr:constant sosa:Observation ;
+	rr:termType rr:IRI .
+
+map:om_022 rdf:type rr:ObjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{PUNTO_MUESTREO}#{MAGNITUD}Sensor" ;
+	rr:termType rr:IRI .
+
+map:om_023 rdf:type rr:ObjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{PUNTO_MUESTREO}#Location" ;
+	rr:termType rr:IRI .
+
+map:om_024 rdf:type rr:ObjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{PUNTO_MUESTREO}#{MAGNITUD}" ;
+	rr:termType rr:IRI .
+
+map:om_025 rml:reference "ID_TIEMPO" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:date ;
+	rr:termType rr:Literal .
+
+map:om_026 rdf:type rr:ObjectMap ;
+	rr:constant qudt:QuantityValue ;
+	rr:termType rr:IRI .
+
+map:om_027 rml:reference "MEDIDA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:double ;
+	rr:termType rr:Literal .
+
+map:om_028 rml:joinCondition map:jc_000 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_sensor_000 .
+
+map:om_029 rml:parentTermMap map:ptm_000 ;
+	rdf:type rr:ObjectMap .
+
+map:om_030 rdf:type rr:ObjectMap ;
+	rr:template "{CODIGO}{MEDIDAS.label}" ;
+	rr:termType rr:Literal .
+
+map:om_031 rml:joinCondition map:jc_001 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_metric_000 .
+
+map:om_032 rml:parentTermMap map:ptm_001 ;
+	rdf:type rr:ObjectMap .
+
+map:om_033 rdf:type rr:ObjectMap ;
+	rr:template "{CODIGO}{MEDIDAS.label}" ;
+	rr:termType rr:Literal .
+
+map:om_034 rml:joinCondition map:jc_002 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_sensor_000 .
+
+map:om_035 rml:parentTermMap map:ptm_002 ;
+	rdf:type rr:ObjectMap .
+
+map:om_036 rdf:type rr:ObjectMap ;
+	rr:template "{CODIGO}{MEDIDAS.label}" ;
+	rr:termType rr:Literal .
+
+map:om_037 rml:joinCondition map:jc_003 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_metric_000 .
+
+map:om_038 rml:parentTermMap map:ptm_003 ;
+	rdf:type rr:ObjectMap .
+
+map:om_039 rdf:type rr:ObjectMap ;
+	rr:template "{CODIGO}{MEDIDAS.label}" ;
+	rr:termType rr:Literal .
+
+map:om_040 rml:joinCondition map:jc_004 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_results_000 .
+
+map:om_041 rml:parentTermMap map:ptm_004 ;
+	rdf:type rr:ObjectMap .
+
+map:om_042 rdf:type rr:ObjectMap ;
+	rr:template "{PUNTO_MUESTREO}{ID_TIEMPO}{MAGNITUD}" ;
+	rr:termType rr:Literal .
+
+map:omexec_000 rr:constant "http://example.com/idlab/function/equal" ;
+	rr:termType rr:IRI .
+
+map:omexec_001 rr:constant "http://example.com/idlab/function/equal" ;
+	rr:termType rr:IRI .
+
+map:omexec_002 rr:constant "http://example.com/idlab/function/equal" ;
+	rr:termType rr:IRI .
+
+map:omexec_003 rr:constant "http://example.com/idlab/function/equal" ;
+	rr:termType rr:IRI .
+
+map:omexec_004 rr:constant "http://example.com/idlab/function/equal" ;
+	rr:termType rr:IRI .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant mAIR:nationalStationID .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant ssn:hasSubSystem .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant geo:lat .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant geo:long .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant geo:alt .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant ssn:hasProperty .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant sosa:isObservedBy .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant sosa:observes .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant sosa:observes .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant sosa:madeBySensor .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant sosa:hasFeatureOfInterest .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant sosa:observedProperty .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant sosa:hasResult .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant sosa:resultTime .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant qudt:numericValue .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter> .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter2> .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter> .
+
+map:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter2> .
+
+map:pm_037 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter> .
+
+map:pm_038 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter2> .
+
+map:pm_039 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter> .
+
+map:pm_040 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter2> .
+
+map:pm_041 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter> .
+
+map:pm_042 rdf:type rr:PredicateMap ;
+	rr:constant <http://users.ugent.be/~bjdmeest/function/grel.ttl#valueParameter2> .
+
+map:pmexec_000 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_001 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_002 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_003 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_004 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_018 .
+
+map:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_019 .
+
+map:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_020 .
+
+map:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_021 .
+
+map:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_019 ;
+	rr:predicateMap map:pm_022 .
+
+map:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_020 ;
+	rr:predicateMap map:pm_023 .
+
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_037 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_021 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_022 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_023 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_040 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_036 .
+
+map:pom_037 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_037 .
+
+map:pom_038 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_038 .
+
+map:pom_039 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_038 ;
+	rr:predicateMap map:pm_039 .
+
+map:pom_040 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_039 ;
+	rr:predicateMap map:pm_040 .
+
+map:pom_041 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_041 ;
+	rr:predicateMap map:pm_041 .
+
+map:pom_042 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_042 ;
+	rr:predicateMap map:pm_042 .
+
+map:pomexec_000 rr:objectMap map:omexec_000 ;
+	rr:predicateMap map:pmexec_000 .
+
+map:pomexec_001 rr:objectMap map:omexec_001 ;
+	rr:predicateMap map:pmexec_001 .
+
+map:pomexec_002 rr:objectMap map:omexec_002 ;
+	rr:predicateMap map:pmexec_002 .
+
+map:pomexec_003 rr:objectMap map:omexec_003 ;
+	rr:predicateMap map:pmexec_003 .
+
+map:pomexec_004 rr:objectMap map:omexec_004 ;
+	rr:predicateMap map:pmexec_004 .
+
+map:ptm_000 rr:template "{CODIGO}{MEDIDAS.label}" .
+
+map:ptm_001 rr:template "{CODIGO}{MEDIDAS.label}" .
+
+map:ptm_002 rr:template "{CODIGO}{MEDIDAS.label}" .
+
+map:ptm_003 rr:template "{CODIGO}{MEDIDAS.label}" .
+
+map:ptm_004 rr:template "{PUNTO_MUESTREO}{ID_TIEMPO}{MAGNITUD}" .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_location_000, map:map_metric_000, map:map_observation_000, map:map_results_000, map:map_sensor_000, map:map_station_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/{CODIGO}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/{CODIGO}#Location" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/{CODIGO}#{MEDIDAS.label}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/{CODIGO}#{MEDIDAS.label}Sensor" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{PUNTO_MUESTREO}/{ID_TIEMPO}#{MAGNITUD}" .
+
+map:s_005 rdf:type rr:SubjectMap ;
+	rr:template "http://mAIRdrid.org/resources/Station/{PUNTO_MUESTREO}/{ID_TIEMPO}#{MAGNITUD}Result" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "csv/datos_diarios-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource ;
+	rdfs:label "observationsCSV" .
+
+map:source_001 rml:iterator "$[*]" ;
+	rml:referenceFormulation ql:JSONPath ;
+	rml:source "csv/info_estaciones-updated-with-links.json" ;
+	rdf:type rml:LogicalSource ;
+	rdfs:label "stationsJSON" .

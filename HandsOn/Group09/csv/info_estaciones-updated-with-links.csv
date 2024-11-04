@@ -1,0 +1,25 @@
+CODIGO,ESTACION,same_as_wikidata_streets,ALTITUD,NO2,SO2,CO,PM10,PM2_5,O3,BTX,COD_VIA,LONGITUD,LATITUD
+28079004,Plaza de España,,637,true,true,true,false,false,false,false,273600,-3.7122567,40.4238823
+28079008,Escuelas Aguirre,,672,true,true,true,true,true,true,true,18900,-3.6823158,40.4215533
+28079011,"Avenida de Ramón y Cajal, Madrid",http://wikidata.org/entity/Q30467128,708,true,false,false,false,false,false,true,610450,-3.6773491,40.4514734
+28079016,calle de Arturo Soria,http://wikidata.org/entity/Q8255504,695,true,false,false,false,false,true,false,798700,-3.6392422,40.4400457
+28079017,Villaverde,,601,true,false,false,false,false,true,false,417200,-3.7133167,40.347147
+28079018,Farolillo,,632,true,false,false,true,false,true,true,1903,-3.7318356,40.3947825
+28079024,Casa de Campo,,646,true,false,false,true,true,true,true,905219,-3.7473445,40.4193577
+28079027,Barajas Pueblo,,620,true,false,false,false,false,true,false,425700,-3.5800258,40.4769179
+28079035,Plaza del Carmen,,660,true,true,true,false,false,true,false,145800,-3.7031662,40.4192091
+28079036,Avenida de Moratalaz,http://wikidata.org/entity/Q104778384,671,true,true,false,true,false,false,false,522000,-3.6453104,40.4079517
+28079038,Cuatro Caminos,,699,true,false,false,true,true,false,true,554550,-3.7071303,40.4455439
+28079039,Barrio del Pilar,,676,true,false,false,false,false,true,false,514425,-3.7115364,40.4782322
+28079040,Vallecas,,677,true,false,false,true,false,false,false,75500,-3.6515286,40.3881478
+28079047,"Calle de Méndez Álvaro, Madrid",http://wikidata.org/entity/Q5553104,600,true,false,false,true,true,false,false,414800,-3.6868138,40.3980991
+28079048,Paseo de la Castellana,http://wikidata.org/entity/Q1473674,680,true,false,false,true,true,false,false,401400,-3.6903729,40.4398904
+28079049,Parque del Retiro,,662,true,false,false,false,false,true,false,905011,-3.6824999,40.4144444
+28079050,Plaza Castilla,,728,true,false,false,true,true,false,false,154500,-3.6887449,40.4655841
+28079054,Ensanche de Vallecas,,629,true,false,false,false,false,true,false,31000516,-3.6121394,40.3730118
+28079055,Urb. Embajada,,619,true,false,false,true,false,false,true,639250,-3.5805649,40.4623628
+28079056,Plaza Elíptica,,605,true,false,true,true,true,false,false,293200,-3.7187679,40.3850336
+28079057,Sanchinarro,,700,true,false,false,true,true,false,false,31000002,-3.6605173,40.4942012
+28079058,"Calle de Mira el Río, Madrid",http://wikidata.org/entity/Q56121016,612,true,false,false,false,false,true,false,348500,-3.7746101,40.5180701
+28079059,Juan Carlos I,,660,true,false,false,false,false,true,false,1111,-3.6163407,40.4607255
+28079060,Tres Olivos,,715,true,false,false,true,false,true,false,1427,-3.6897308,40.5005477
