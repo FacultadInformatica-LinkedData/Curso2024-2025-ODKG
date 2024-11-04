@@ -1,0 +1,2975 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://camaras.madrid.org/camera/CAM101> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM102> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM103> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM104> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM105> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM106> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM107> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM108> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM109> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM110> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM111> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM112> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM113> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM114> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM115> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM116> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM117> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM118> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM119> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM120> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM121> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM122> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM123> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM124> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM125> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM126> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM127> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM128> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM129> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM130> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM131> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM132> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM133> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM134> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Gran_Via> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1324163> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM201> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM202> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM203> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM204> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM205> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM206> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM207> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM208> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM209> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM210> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM211> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM212> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM213> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM214> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM215> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM216> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM217> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM218> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM219> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM220> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM221> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM222> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM223> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM224> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM225> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM226> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM227> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM228> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM229> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM230> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM231> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM232> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM233> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM234> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM235> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Centro-sur> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q18483314> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM301> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM302> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM303> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM304> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM305> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM306> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM307> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM308> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM309> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM310> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM311> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM312> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM313> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM314> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "30x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM315> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM316> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM317> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM318> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM319> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM320> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM321> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM322> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM323> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM324> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM325> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM326> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM327> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM328> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM329> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM330> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM331> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM332> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM333> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM334> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM335> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM336> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM337> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Main_Square> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1123493> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM401> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM402> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM403> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM404> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM405> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM406> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM407> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM408> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM409> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM410> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM411> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM412> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM413> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM414> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM415> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM416> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM417> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM418> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM419> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM420> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM421> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM422> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM423> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM424> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM425> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM426> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM427> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM428> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM429> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM430> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM431> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM432> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM433> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM434> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM435> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM436> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM437> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM438> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM439> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM440> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM441> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM442> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM443> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM444> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM445> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM446> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM447> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM448> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM449> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM450> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM451> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM452> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM453> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM454> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM455> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM456> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM457> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM458> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM459> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM460> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM461> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM462> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM463> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM464> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM465> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Lavapiés> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2566034> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM501> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM502> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM503> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM504> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM505> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM506> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM507> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM508> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM509> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM510> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Museo_de_Escultura_al_Aire_Libre_de_La_Castellana> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q2283575> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2016> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532814> .
+
+<http://camaras.madrid.org/camera/CAM601> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM602> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM603> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM604> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM605> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM606> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM607> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM608> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM609> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM610> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM611> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM612> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM613> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM614> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM615> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM616> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM617> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM618> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM619> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM620> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM621> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM622> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM623> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM624> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM625> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM626> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM627> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM628> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM629> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM630> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM631> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM632> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM633> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM634> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM635> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM636> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM637> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM638> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM639> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM640> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM641> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM642> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM643> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM644> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM645> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM646> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM647> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM648> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM649> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM650> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM651> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM652> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM653> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM654> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x720" ;
+    schema:opticalZoom "18x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM655> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/AZCA> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q300275> ;
+    schema:resolution "1280x960" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2015> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109532732> .
+
+<http://camaras.madrid.org/camera/CAM701> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM702> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM703> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM704> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM705> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM706> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM707> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM708> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM709> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM710> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM711> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM712> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM713> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM714> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM715> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM716> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM717> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM718> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM719> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Tetuán> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1773540> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM801> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM802> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM803> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM804> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM805> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM806> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM807> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM808> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM809> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM810> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM811> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM812> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM813> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM814> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM815> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM816> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM817> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM818> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM819> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM820> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM821> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM822> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM823> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM824> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM825> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Villa_de_Vallecas> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q1947988> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2020> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q25337> .
+
+<http://camaras.madrid.org/camera/CAM901> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM902> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM903> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM904> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM905> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM906> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM907> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM908> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM909> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM910> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM911> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM912> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM913> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM914> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM915> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM916> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM917> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM918> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM919> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM920> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM921> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM922> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM923> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM924> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Colonia_Marconi> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q5777792> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1001> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1002> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1003> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1004> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1005> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1006> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1007> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1008> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1009> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1010> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1011> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1012> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1013> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1014> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1015> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1016> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1017> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "DOMO" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "40x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1018> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1019> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1020> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1021> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1022> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1023> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1024> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1025> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
+<http://camaras.madrid.org/camera/CAM1026> a <http://camaras.madrid.org/resources/Camera> ;
+    rdf:type "FIJA" ;
+    schema:location <http://camaras.madrid.org/resources/Location/Chueca> ;
+    owl:sameAsDistric <https://wikidata.org/entity/Q284642> ;
+    schema:resolution "1920x1080" ;
+    schema:opticalZoom "0x" ;
+    schema:acquisitionYear <http://camaras.madrid.org/resources/Year/2022> ;
+    owl:sameAsCalendarYear <https://wikidata.org/entity/Q109521907> .
+
