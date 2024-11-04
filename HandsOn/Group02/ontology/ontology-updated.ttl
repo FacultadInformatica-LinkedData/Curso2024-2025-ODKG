@@ -14,95 +14,95 @@ ns:GasolinerasOntology a owl:Ontology ;
     owl:versionInfo "0.1" .
 
 # Clases
-ns:Gasolinera a owl:Class ;
+ns:GasStation a owl:Class ;
     rdfs:label "Gasolinera" .
 
 ns:Ubicacion a owl:Class ;
     rdfs:label "Ubicación" .
 
 # Propiedades de Datos
-ns:direccion a owl:DatatypeProperty ;
-    rdfs:label "dirección" ;
+ns:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
 
-ns:provincia a owl:DatatypeProperty ;
-    rdfs:label "provincia" ;
+ns:locatedInProvince a owl:DatatypeProperty ;
+    rdfs:label "locatedInProvince" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
 
-ns:municipio a owl:DatatypeProperty ;
-    rdfs:label "municipio" ;
+ns:locatedInMunicipality a owl:DatatypeProperty ;
+    rdfs:label "locatedInMunicipality" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
 
-ns:codigoPostal a owl:DatatypeProperty ;
-    rdfs:label "código postal" ;
+ns:locality a owl:DatatypeProperty ;
+    rdfs:label "locality" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:string .
 
-ns:latitud a owl:DatatypeProperty ;
-    rdfs:label "latitud" ;
+ns:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postalCode" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:float .
 
-ns:longitud a owl:DatatypeProperty ;
-    rdfs:label "longitud" ;
+ns:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
     rdfs:domain ns:Ubicacion ;
     rdfs:range xsd:float .
 
-ns:precioGasolina95E5 a owl:DatatypeProperty ;
-    rdfs:label "precio gasolina 95 E5" ;
-    rdfs:domain ns:Gasolinera ;
+ns:priceOf95E5 a owl:DatatypeProperty ;
+    rdfs:label "priceOf95E5" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:float .
 
-ns:precioGasolina95E5 a owl:DatatypeProperty ;
-    rdfs:label "precio gasolina 98 E5" ;
-    rdfs:domain ns:Gasolinera ;
+ns:priceOf98E5 a owl:DatatypeProperty ;
+    rdfs:label "priceOf98E5" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:float .
 
-ns:precioGasoleoA a owl:DatatypeProperty ;
-    rdfs:label "precio gasóleo A" ;
-    rdfs:domain ns:Gasolinera ;
+ns:priceOfDieselA a owl:DatatypeProperty ;
+    rdfs:label "priceOfDieselA" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:float .
 
-ns:precioGasoleoA a owl:DatatypeProperty ;
-    rdfs:label "precio gasóleo A premium" ;
-    rdfs:domain ns:Gasolinera ;
+ns:priceOfDieselPremium a owl:DatatypeProperty ;
+    rdfs:label "priceOfDieselPremium" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:float .
 
-ns:horario a owl:DatatypeProperty ;
-    rdfs:label "horario" ;
-    rdfs:domain ns:Gasolinera ;
+ns:time a owl:DatatypeProperty ;
+    rdfs:label "time" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:string .
 
-ns:rotulo a owl:DatatypeProperty ;
-    rdfs:label "rótulo" ;
-    rdfs:domain ns:Gasolinera ;
+ns:stationName a owl:DatatypeProperty ;
+    rdfs:label "stationName" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:string .
 
-ns:rotulo a owl:DatatypeProperty ;
-    rdfs:label "ID" ;
-    rdfs:domain ns:Gasolinera ;
+ns:sellType a owl:DatatypeProperty ;
+    rdfs:label "sellType" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:string .
 
-ns:rotulo a owl:DatatypeProperty ;
-    rdfs:label "Tipo Venta" ;
-    rdfs:domain ns:Gasolinera ;
-    rdfs:range xsd:string .
-
-ns:rotulo a owl:DatatypeProperty ;
+ns:rem a owl:DatatypeProperty ;
     rdfs:label "rem" ;
-    rdfs:domain ns:Gasolinera ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:string .
 
-ns:rotulo a owl:DatatypeProperty ;
-    rdfs:label "Tipo Servicio" ;
-    rdfs:domain ns:Gasolinera ;
+ns:typeofservice a owl:DatatypeProperty ;
+    rdfs:label "typeofservice" ;
+    rdfs:domain ns:GasStation ;
     rdfs:range xsd:string .
 
 # Propiedades de Objetos
 ns:tieneUbicacion a owl:ObjectProperty ;
     rdfs:label "tiene ubicación" ;
-    rdfs:domain ns:Gasolinera ;
+    rdfs:domain ns:GasStation ;
     rdfs:range ns:Ubicacion .
