@@ -86,8 +86,6 @@ async function loadCameras(location) {
 }
 
 
-
-
 // Cambiar evento para cargar cámaras al cambiar el selector de ubicación
 document.getElementById("locationSelect").addEventListener("change", (event) => {
     const selectedLocation = event.target.value;
