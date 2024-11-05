@@ -1,0 +1,142 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uiot: <http://www.w3id.org/urban-iot/electric#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns: a owl:Ontology ;
+    dc:creator "Group11" ;
+    dc:title "HandsOn" ;
+    owl:versionInfo "0.0.2" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:districtCode a owl:DatatypeProperty ;
+    rdfs:label "district code" ;
+    rdfs:domain esadm:District ;
+    rdfs:range xsd:int .
+
+ns:districtName a owl:DatatypeProperty ;
+    rdfs:label "district name" ;
+    rdfs:domain esadm:District ;
+    rdfs:range xsd:string .
+
+uiot:operatedBy a owl:DatatypeProperty ;
+    rdfs:label "operated by" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:additionalInfo a owl:DatatypeProperty ;
+    rdfs:label "additional info" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain ns:Location ;
+    rdfs:range xsd:string .
+
+ns:characteristicsDevices a owl:DatatypeProperty ;
+    rdfs:label "characteristics devices" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:containedInDistrict a owl:ObjectProperty ;
+    rdfs:label "contained in district" ;
+    rdfs:domain ns:Neighborhood ;
+    rdfs:range esadm:District .
+
+ns:containedInNeighborhood a owl:ObjectProperty ;
+    rdfs:label "contained in neighborhood" ;
+    rdfs:domain ns:Location ;
+    rdfs:range ns:Neighborhood .
+
+ns:editionDate a owl:DatatypeProperty ;
+    rdfs:label "edition date" ;
+    rdfs:domain ns:Dates ;
+    rdfs:range xsd:dateTime .
+
+ns:hasDates a owl:ObjectProperty ;
+    rdfs:label "has dates" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range ns:Dates .
+
+ns:idPoint a owl:DatatypeProperty ;
+    rdfs:label "id point" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:isLocated a owl:ObjectProperty ;
+    rdfs:label "is located" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range ns:Location .
+
+ns:management a owl:DatatypeProperty ;
+    rdfs:label "management" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:neighborhoodCode a owl:DatatypeProperty ;
+    rdfs:label "neighborhood code" ;
+    rdfs:domain ns:Neighborhood ;
+    rdfs:range xsd:int .
+
+ns:neighborhoodName a owl:DatatypeProperty ;
+    rdfs:label "neighborhood name" ;
+    rdfs:domain ns:Neighborhood ;
+    rdfs:range xsd:string .
+
+ns:numberOfDevices a owl:DatatypeProperty ;
+    rdfs:label "number of devices" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:int .
+
+ns:openingDate a owl:DatatypeProperty ;
+    rdfs:label "opening date" ;
+    rdfs:domain ns:Dates ;
+    rdfs:range xsd:dateTime .
+
+ns:placement a owl:DatatypeProperty ;
+    rdfs:label "placement" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:registerDate a owl:DatatypeProperty ;
+    rdfs:label "register date" ;
+    rdfs:domain ns:Dates ;
+    rdfs:range xsd:dateTime .
+
+ns:schedule a owl:DatatypeProperty ;
+    rdfs:label "schedule" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+ns:state a owl:DatatypeProperty ;
+    rdfs:label "state" ;
+    rdfs:domain km4c:ChargingStation ;
+    rdfs:range xsd:string .
+
+esadm:District a owl:Class ;
+    rdfs:label "District" .
+
+ns:Location a owl:Class ;
+    rdfs:label "Location" .
+
+ns:Dates a owl:Class ;
+    rdfs:label "Dates" .
+
+ns:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" .
+
+km4c:ChargingStation a owl:Class ;
+    rdfs:label "Charging Station" .
+
