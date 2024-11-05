@@ -1,21 +1,14 @@
 from flask import Flask, jsonify, g, request, render_template
-import rdflib
+
 import requests
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)  # Habilitar CORS para toda la aplicación
 
-# Cargar el grafo RDF en memoria
-@app.before_request
-def load_graph():
-    g.graph = rdflib.Graph()
-    g.graph.parse("CCTV-via-publica-updated-with-links.ttl", format="ttl")
-
 @app.route('/')
 def index():
     return render_template('index.html')  # Renderiza index.html
-
 
 
 @app.route('/api/locations', methods=['GET'])
@@ -33,6 +26,7 @@ def get_locations():
 
     print(locations)
     return jsonify(list(locations))
+
 
 @app.route('/api/cameras', methods=['GET'])
 def get_cameras():
