@@ -51,7 +51,7 @@ def get_cameras():
     for camera in camera_info:
         camera_data = {
             'id': camera['id']['value'].split('/')[-1],
-            'type': camera['type']['value'].replace('http://camaras.madrid.org/resources/',''),
+            'type': camera['type']['value'],
             'resolution': camera['resolution']['value'],
             'zoom': camera['zoom']['value'],
             'year': camera['year']['value'].split('/')[-1],
