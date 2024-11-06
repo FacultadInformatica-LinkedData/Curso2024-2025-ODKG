@@ -2,7 +2,7 @@
 
 This changelog uses [semantic versioning](https://semver.org) and is based on [keepachangelog.com](https://keepachangelog.com).
 
-## [Unreleased]
+## [0.6.0] - 2024-11-07
 ### Added
 - publishing memory with Helio and GraphDB
 - documentation with Widoco
