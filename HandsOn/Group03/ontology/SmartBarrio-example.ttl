@@ -13,7 +13,7 @@ base:Apartment/1a2b3c rdf:type schema:Apartment ;
     schema:numberOfRooms "2"^^xsd:integer ;
     schema:geo base:GeoCoordinates/4d5e6f ;
     schema:containedInPlace base:District/BARAJAS ;
-    schema:containedInPlace base:Barrio/SAN%20CRISTOBAL ;
+    schema:containedInPlace base:Neighborhood/SAN%20CRISTOBAL ;
     schema:containedInPlace base:City/Madrid ;
     sbm:energyCertificate "D"^^xsd:string ;
     sbm:floorSize base:QuantitativeValue/7g8h9i ;
@@ -26,10 +26,10 @@ base:GeoCoordinates/4d5e6f rdf:type schema:GeoCoordinates ;
 
 base:District/BARAJAS rdf:type sbm:District ;
     rdfs:label "BARAJAS"^^xsd:string ;
-    schema:containsPlace base:Barrio/SAN%20CRISTOBAL ;
+    schema:containsPlace base:Neighborhood/SAN%20CRISTOBAL ;
     schema:containedInPlace base:City/Madrid .
 
-base:Barrio/SAN%20CRISTOBAL rdf:type sbm:Barrio ;
+base:Neighborhood/SAN%20CRISTOBAL rdf:type sbm:Neighborhood ;
     rdfs:label "SAN CRISTOBAL"^^xsd:string ;
     schema:containedInPlace base:District/BARAJAS ;
     schema:containedInPlace base:City/Madrid .

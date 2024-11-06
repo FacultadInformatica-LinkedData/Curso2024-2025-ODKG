@@ -90,7 +90,7 @@ map:om_004 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_005 rdf:type rr:ObjectMap ;
-	rr:template "http://www.semanticweb.org/resource/Barrio/{NEIGHBORHOOD}" ;
+	rr:template "http://www.semanticweb.org/resource/Neighborhood/{NEIGHBORHOOD}" ;
 	rr:termType rr:IRI .
 
 map:om_006 rdf:type rr:ObjectMap ;
@@ -137,7 +137,7 @@ map:om_015 rml:reference "DISTRICT" ;
 	rr:termType rr:Literal .
 
 map:om_016 rdf:type rr:ObjectMap ;
-	rr:template "http://www.semanticweb.org/resource/Barrio/{NEIGHBORHOOD}" ;
+	rr:template "http://www.semanticweb.org/resource/Neighborhood/{NEIGHBORHOOD}" ;
 	rr:termType rr:IRI .
 
 map:om_017 rdf:type rr:ObjectMap ;
@@ -149,7 +149,7 @@ map:om_018 rml:reference "DISTRICT_URL_WIKI" ;
 	rr:termType rr:IRI .
 
 map:om_019 rdf:type rr:ObjectMap ;
-	rr:constant barrio:Barrio ;
+	rr:constant barrio:Neighborhood ;
 	rr:termType rr:IRI .
 
 map:om_020 rml:reference "NEIGHBORHOOD" ;
