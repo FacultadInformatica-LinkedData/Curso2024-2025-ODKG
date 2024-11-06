@@ -50,7 +50,7 @@ mappings:
     po:
       - [a, barrio:District]
       - [rdfs:label, $(DISTRICT), xsd:string]
-      - [schema:containsPlace, base:Barrio/$(NEIGHBORHOOD)~iri]
+      - [schema:containsPlace, base:Neighborhood/$(NEIGHBORHOOD)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [owl:sameAs, $(DISTRICT_URL_WIKI)~iri]
 
