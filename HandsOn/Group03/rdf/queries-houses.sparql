@@ -86,3 +86,12 @@ where {
   ?rentAmount schema:value ?rentPrice .
   filter(?rentPrice < 1000)
 }
+
+
+#deleting empty GeoCoordinates
+prefix schema:<https://schema.org/>
+DELETE {?geo a schema:GeoCoordinates } 
+  WHERE {
+    ?geo a schema:GeoCoordinates
+  FILTER NOT EXISTS { ?geo schema:address ?address  }
+}
