@@ -6,6 +6,12 @@ This changelog uses [semantic versioning](https://semver.org) and is based on [k
 ### Added
 - publishing memory with Helio and GraphDB
 - documentation with Widoco
+### Fixed
+- sensor iri in ttl ontology
+- location properties literals in ttl ontology
+- CSV BTX measures: only one per sensor and day
+### Deprecated
+- openrefine changes with links
 
 ## [0.5.0] - 2024-11-03
 ### Added
