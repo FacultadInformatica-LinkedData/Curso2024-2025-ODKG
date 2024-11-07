@@ -1,0 +1,73 @@
+prefixes:
+  ns: "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  esadm: "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  km4c: "http://www.disit.org/km4city/schema#"
+  mod: "https://w3id.org/mod#"
+  uiot: "http://www.w3id.org/urban-iot/electric#"
+
+mappings:
+  chargingStation:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "km4c:ChargingStation/$(ID_Punto)"
+    po:
+      - [a, km4c:ChargingStation]
+      - [ns:idPoint, $(ID_Punto)]
+      - [ns:management, $(GESTIÓN)]
+      - [ns:state, $(ESTADO)]
+      - [ns:numberOfDevices, $(N_EQUIPOS), xsd:int]
+      - [ns:characteristicsDevices, $(CARACTERÍSTICAS_EQUIPO)]
+      - [uiot:operatedBy, $(OPERADOR)]
+      - [ns:placement, $(EMPLAZAMIENTO)]
+      - [ns:schedule, $(HORARIO)]
+      - [ns:additionalInfo, $(INFO_ADICIONAL)]
+      - [ns:isLocated, ns:Location/$(ID_Punto)]
+      - [ns:hasDates, ns:Dates/$(ID_Punto)]
+  location:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:Location/$(ID_Punto)"
+    po:
+      - [a, ns:Location]
+      - [ns:address, $(UBICACIÓN)]
+      - [ns:containedInNeighborhood, ns:Neighborhood/$(COD_DIS)_$(COD_BAR)]
+  
+  neighborhood:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:Neighborhood/$(COD_DIS)_$(COD_BAR)"
+    po:
+      - [a, ns:Neighborhood]
+      - [ns:neighborhoodCode, $(COD_DIS)_$(COD_BAR), xsd:int]
+      - [ns:neighborhoodName, $(BARRIO)]
+      - [ns:containedInDistrict, ns:District/$(COD_DIS)]
+      - [owl:sameAs, $(same_as_wikidata_barrio)~iri]
+
+  district:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "esadm:District/$(COD_DIS)"
+    po:
+      - [a, esadm:District]
+      - [ns:districtCode, $(COD_DIS), xsd:int]
+      - [ns:districtName, $(DISTRITO)]
+      - [owl:sameAs, $(same_as_wikidata_distrito)~iri]
+
+  dates:
+    sources:
+      - ['./csv/PUNTOS-PUBLICOS-RECARGA-VEHICULOS-ELECTRICOS-updated.csv~csv']
+    s: 
+      - value: "ns:Dates/$(ID_Punto)"
+    po:
+      - [a, ns:Dates]
+      - [ns:openingDate, $(FECHA_APERTURA), xsd:dateTime]
+      - [ns:registerDate, $(FECHA_ALTA), xsd:dateTime]
+      - [ns:editionDate, $(FECHA_EDICION), xsd:dateTime]

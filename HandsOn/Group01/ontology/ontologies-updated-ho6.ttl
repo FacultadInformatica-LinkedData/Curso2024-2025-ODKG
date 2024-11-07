@@ -1,0 +1,98 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix est: <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#>
+@prefix ter: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+@prefix dir: <https://schema.org/>
+@prefix eqi: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#>
+@prefix idn: <http://purl.org/dc/terms/>
+@prefix common: <http://www.w3.org/2007/uwa/context/common.owl#>
+@prefix og: <http://ogp.me/ns#>
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio
+ter:barrio rdf:type owl:ObjectProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range ter:Barrio ;
+            rdfs:label "is in barrio" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+ter:distrito rdf:type owl:ObjectProperty ;
+            rdfs:domain ter:Barrio ;
+            rdfs:range ter:Distrito ;
+            rdfs:label "is in distrito" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta
+eqi:fechaAlta rdf:type owl:DatatypeProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range xsd:dateTime ;
+            rdfs:label "has fecha alta" .
+
+###  http://purl.org/dc/terms/identifier
+idn:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain ns:BicycleParkingSpot ;
+            rdfs:range xsd:string;
+            rdfs:label "id" .
+
+###  http://ogp.me/ns#latitude
+og:latitude rdf:type owl:DatatypeProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range xsd:float;
+            rdfs:label "latitude" .
+
+###  http://ogp.me/ns#longitude
+og:longitude rdf:type owl:DatatypeProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range xsd:float;
+            rdfs:label "longitude" .
+
+###  https://schema.org/address
+dir:address rdf:type owl:DatatypeProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range xsd:string;
+            rdfs:label "dirección" .
+
+###  http://www.w3.org/2007/uwa/context/common.owl#model
+common:model rdf:type owl:DatatypeProperty ;
+            rdfs:domain est:EstacionBicicleta ;
+            rdfs:range xsd:string;
+            rdfs:label "Model" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+ter:Barrio rdf:type owl:Class ;
+            rdfs:label "Barrio" .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta
+est:EstacionBicicleta rdf:type owl:Class ;
+            rdfs:label "Estacion de Bicicleta" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+ter:Distrito rdf:type owl:Class ;
+            rdfs:label "Distrito" .
