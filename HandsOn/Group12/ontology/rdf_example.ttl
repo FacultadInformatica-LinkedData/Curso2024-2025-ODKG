@@ -1,53 +1,131 @@
-@prefix : <http://group12.namespace.com/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://www.owl-ontologies.com/ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix :     <http://accidentes.madrid.es/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# Sample Instances
+# ===========================================================
+# ================== Accidentes =============================
+# ===========================================================
 
-# Example of an Accident (Colision Multiple)
-:Accidente1 a ns:ColisionMultiple ;
-    ns:fecha "2024-02-15"^^xsd:date ;
-    ns:hora "16:45:00"^^xsd:time ;
-    ns:estado_meteorologico "Cloudy"^^xsd:string ;
-    ns:num_expediente "EXP202456"^^xsd:string ;
-    ns:tipo_accidente "Multiple Collision"^^xsd:string ;
-    ns:tieneLocalizacion :Localizacion1 ;
-    ns:tieneParticipante :Participante1, :Participante2 .
+<http://accidentes.madrid.es/Alcance/2024S0000>
+  rdf:type             :Alcance ;
+  :tieneLocalizacion   <http://accidentes.madrid.es/Localizacion/40.3817896372909_-3.7766235070678587> ;
+  :tieneParticipante   <http://accidentes.madrid.es/Participante/2024S0000_1> ;
+  :tieneParticipante   <http://accidentes.madrid.es/Participante/2024S0000_2> ;
+  :estadoMeteorologico "Despejado" ;
+  :fechaHora           "2024-10-29T18:00:00Z"^^xsd:dateTimeStamp ;
+  :numExpediente       "2024S0000" .
 
-# Example of a Participant (Driver)
-:Participante1 a ns:Participante ;
-    ns:tipo_persona "Driver"^^xsd:string ;
-    ns:sexo "Male"^^xsd:string ;
-    ns:rango_edad "35-44"^^xsd:string ;
-    ns:tipo_vehiculo "Truck"^^xsd:string ;
-    ns:positiva_alcohol "Negative"^^xsd:string ;
-    ns:positiva_droga "Negative"^^xsd:string .
+<http://accidentes.madrid.es/ColisionDoble/2024S0001>
+  rdf:type             :ColisionDoble ;
+  :tieneLocalizacion   <http://accidentes.madrid.es/Localizacion/40.3852941217644_-3.7107936505298054> ;
+  :tieneParticipante   <http://accidentes.madrid.es/Participante/2024S0001_3> ;
+  :tieneParticipante   <http://accidentes.madrid.es/Participante/2024S0001_4> ;
+  :tieneParticipante   <http://accidentes.madrid.es/Participante/2024S0001_5> ;
+  :estadoMeteorologico "Lluvia débil" ;
+  :fechaHora           "2024-10-31T13:37:00Z"^^xsd:dateTimeStamp ;
+  :numExpediente       "2024S0001" .
 
-# Example of a Participant (Pedestrian)
-:Participante2 a ns:Participante ;
-    ns:tipo_persona "Pedestrian"^^xsd:string ;
-    ns:sexo "Female"^^xsd:string ;
-    ns:rango_edad "20-29"^^xsd:string ;
-    ns:positiva_alcohol "Negative"^^xsd:string ;
-    ns:positiva_droga "Negative"^^xsd:string .
+# ===========================================================
+# ================ Localizacion =============================
+# ===========================================================
 
-# Example of Location
-:Localizacion1 a ns:Localizacion ;
-    ns:coordenada_x_utm 432500.12^^xsd:float ;
-    ns:coordenada_y_utm 4489120.78^^xsd:float ;
-    ns:tieneDistrito :Distrito1 .
+<http://accidentes.madrid.es/Localizacion/40.3817896372909_-3.7766235070678587>
+  rdf:type        :Localizacion ;
+  :tieneDistrito  <http://accidentes.madrid.es/Distrito/10> ;
+  :coordenadaXUtm 40.3817896372909 ;
+  :coordenadaYUtm -3.7766235070678587 .
 
-# Example of a District
-:Distrito1 a ns:Distrito ;
-    ns:code_distrito 5^^xsd:integer ;
-    ns:distrito "Usera"^^xsd:string ;
-    ns:localizacion "Main Road"^^xsd:string .
 
-# Example of Injury Severity (Lesividad)
-:Lesividad1 a ns:Lesividad ;
-    ns:cod_lesividad 3^^xsd:integer ;
-    ns:lesividad "Serious Injuries"^^xsd:string .
+<http://accidentes.madrid.es/Localizacion/40.3852941217644_-3.7107936505298054>
+  rdf:type        :Localizacion ;
+  :tieneDistrito  <http://accidentes.madrid.es/Distrito/12> ;
+  :coordenadaXUtm 40.3852941217644 ;
+  :coordenadaYUtm -3.7107936505298054 .
+
+
+# ===========================================================
+# ================ Participantes ============================
+# ===========================================================
+<http://accidentes.madrid.es/Participante/2024S0000_1>
+  rdf:type         :Participante ;
+  :tieneLesividad  <http://accidentes.madrid.es/Lesividad/1> ;
+  :numParticipante "1"^^xsd:integer ;
+  :positivaAlcohol "0"^^xsd:boolean ;
+  :positivaDroga   "0"^^xsd:boolean ;
+  :tipoPersona     "Conductor" ;
+  :tipoVehiculo    "Turismo" .
+
+<http://accidentes.madrid.es/Participante/2024S0000_2>
+  rdf:type         :Participante ;
+  :tieneLesividad  <http://accidentes.madrid.es/Lesividad/1> ;
+  :numParticipante "2"^^xsd:integer ;
+  :positivaAlcohol "1"^^xsd:boolean ;
+  :positivaDroga   "0"^^xsd:boolean ;
+  :tipoPersona     "Pasajero" ;
+  :tipoVehiculo    "Turismo" .
+
+
+<http://accidentes.madrid.es/Participante/2024S0001_1>
+  rdf:type         :Participante ;
+  :tieneLesividad  <http://accidentes.madrid.es/Lesividad/2> ;
+  :numParticipante "1"^^xsd:integer ;
+  :positivaAlcohol "0"^^xsd:boolean ;
+  :positivaDroga   "1"^^xsd:boolean ;
+  :tipoPersona     "Conductor" ;
+  :tipoVehiculo    "Autobús" .
+
+<http://accidentes.madrid.es/Participante/2024S0001_2>
+  rdf:type         :Participante ;
+  :tieneLesividad  <http://accidentes.madrid.es/Lesividad/2> ;
+  :numParticipante "2"^^xsd:integer ;
+  :positivaAlcohol "0"^^xsd:boolean ;
+  :positivaDroga   "0"^^xsd:boolean ;
+  :tipoPersona     "Pasajero" ;
+  :tipoVehiculo    "Autobús" .
+
+<http://accidentes.madrid.es/Participante/2024S0001_3>
+  rdf:type         :Participante ;
+  :tieneLesividad  <http://accidentes.madrid.es/Lesividad/3> ;
+  :numParticipante "3"^^xsd:integer ;
+  :positivaAlcohol "1"^^xsd:boolean ;
+  :positivaDroga   "1"^^xsd:boolean ;
+  :tipoPersona     "Pasajero" ;
+  :tipoVehiculo    "Autobús" .
+
+
+
+# ===========================================================
+# ===================== Distritos ===========================
+# ===========================================================
+
+<http://accidentes.madrid.es/Distrito/10>
+  rdf:type :Distrito ;
+  :codDistrito "10"^^xsd:integer ;
+  :distrito "Latina" .
+
+<http://accidentes.madrid.es/Distrito/12>
+  rdf:type :Distrito ;
+  :codDistrito "12"^^xsd:integer ;
+  :distrito "Usera" .
+
+
+# ===========================================================
+# ==================== Lesvidades ===========================
+# ===========================================================
+
+<http://accidentes.madrid.es/Lesividad/1>
+  rdf:type :Lesvidad ;
+  :lesividad "Atención en urgencias sin posterior ingreso." ;
+  :codLesividad "01"^^xsd:integer .
+
+<http://accidentes.madrid.es/Lesividad/1>
+  rdf:type :Lesvidad ;
+  :lesividad "Ingreso inferior o igual a 24 horas." ;
+  :codLesividad "02"^^xsd:integer .
+
+<http://accidentes.madrid.es/Lesividad/1>
+  rdf:type :Lesvidad ;
+  :lesividad "Ingreso superior a 24 horas." ;
+  :codLesividad "03"^^xsd:integer .

@@ -1,0 +1,179 @@
+@prefix : <http://accidentes.madrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://accidentes.madrid.es/> .
+
+<http://accidentes.madrid.es> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://accidentes.madrid.es/tieneDistrito
+:tieneDistrito rdf:type owl:ObjectProperty ;
+               rdfs:domain :Localizacion ;
+               rdfs:range :Distrito .
+
+
+###  http://accidentes.madrid.es/tieneLesividad
+:tieneLesividad rdf:type owl:ObjectProperty ;
+                rdfs:domain :Participante ;
+                rdfs:range :Lesividad .
+
+
+###  http://accidentes.madrid.es/tieneLocalizacion
+:tieneLocalizacion rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range :Localizacion .
+
+
+###  http://accidentes.madrid.es/tieneParticipante
+:tieneParticipante rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range :Participante .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://accidentes.madrid.es#numParticipante
+:numParticipante rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Participante ;
+                 rdfs:range xsd:integer .
+
+
+###  http://accidentes.madrid.es/codDistrito
+:codDistrito rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Distrito ;
+             rdfs:range xsd:integer .
+
+
+###  http://accidentes.madrid.es/codLesividad
+:codLesividad rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Lesividad ;
+              rdfs:range xsd:integer .
+
+
+###  http://accidentes.madrid.es/distrito
+:distrito rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Distrito ;
+          rdfs:range xsd:string .
+
+
+###  http://accidentes.madrid.es/estadoMeteorologico
+:estadoMeteorologico rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Accidente ;
+                     rdfs:range xsd:string .
+
+
+###  http://accidentes.madrid.es/fechaHora
+:fechaHora rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Accidente ;
+           rdfs:range xsd:dateTimeStamp .
+
+
+###  http://accidentes.madrid.es/lesividad
+:lesividad rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Lesividad ;
+           rdfs:range xsd:string .
+
+
+###  http://accidentes.madrid.es/numExpediente
+:numExpediente rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Accidente ;
+               rdfs:range xsd:string .
+
+
+###  http://accidentes.madrid.es/positivaAlcohol
+:positivaAlcohol rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Participante ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://accidentes.madrid.es/positivaDroga
+:positivaDroga rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Participante ;
+               rdfs:range xsd:boolean .
+
+
+###  http://accidentes.madrid.es/tipoPersona
+:tipoPersona rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Participante ;
+             rdfs:range xsd:string .
+
+
+###  http://accidentes.madrid.es/tipoVehiculo
+:tipoVehiculo rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Participante ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://accidentes.madrid.es/Accidente
+:Accidente rdf:type owl:Class .
+
+
+###  http://accidentes.madrid.es/Alcance
+:Alcance rdf:type owl:Class ;
+         rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/AtropelloPersona
+:AtropelloPersona rdf:type owl:Class ;
+                  rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/Caida
+:Caida rdf:type owl:Class ;
+       rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/ChoqueObstaculo
+:ChoqueObstaculo rdf:type owl:Class ;
+                 rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/ColisionDoble
+:ColisionDoble rdf:type owl:Class ;
+               rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/ColisionMultiple
+:ColisionMultiple rdf:type owl:Class ;
+                  rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/Distrito
+:Distrito rdf:type owl:Class .
+
+
+###  http://accidentes.madrid.es/Lesividad
+:Lesividad rdf:type owl:Class .
+
+
+###  http://accidentes.madrid.es/Localizacion
+:Localizacion rdf:type owl:Class .
+
+
+###  http://accidentes.madrid.es/Otras
+:Otras rdf:type owl:Class ;
+       rdfs:subClassOf :Accidente .
+
+
+###  http://accidentes.madrid.es/Participante
+:Participante rdf:type owl:Class .
+
+
+###  http://accidentes.madrid.es/Vuelco
+:Vuelco rdf:type owl:Class ;
+        rdfs:subClassOf :Accidente .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
