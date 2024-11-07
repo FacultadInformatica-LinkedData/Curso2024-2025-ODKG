@@ -6,14 +6,6 @@ WHERE {
 } LIMIT 10
 
 
-### Get all the bycycle parkings located in HORTALEZA and CENTRO districts
-
-SELECT DISTINCT ?bicycleParking ?district WHERE {
-?bicycleParking <http://www.bikeradar.es/ontology/ont#isInDistrito> ?district .
-FILTER(?district = "HORTALEZA" || ?district = "CENTRO") .
-} LIMIT 10
-
-
 ### Count all the bycicle parkings per each neighbourhood
 
 SELECT (COUNT(?bicycleParking) AS ?totalParking) ?barrio WHERE {
