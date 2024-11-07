@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "ex": "http://example.org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:GabrielaSalasCabrera",
+      "@type": "ex:Person",
+      "ex:fullName": "Gabriela Salas Cabrera",
+      "ex:hometown": "Chapulhuacán, Hidalgo, México",
+      "ex:age": {
+        "@value": 28,
+        "@type": "xsd:integer"
+      },
+      "ex:almaMater": "Universidad Nacional Autónoma de México",
+      "ex:parents": {
+        "ex:father": {
+          "@id": "ex:AurelioSalasM",
+          "@type": "ex:Person",
+          "ex:fullName": "Aurelio Salas Márquez"
+        },
+        "ex:mother": {
+          "@id": "ex:YolandaCabreraM",
+          "@type": "ex:Person",
+          "ex:fullName": "Yolanda Cabrera Morales"
+        }
+      },
+      "ex:subjectsThisYear": [
+        {
+          "@id": "ex:ODKG",
+          "@type": "ex:Subject",
+          "ex:name": "Open Data and Knowledge Graphs",
+          "ex:teachers": {
+            "@id": "ex:OscarCorcho", 
+            "@type": "ex:Person",
+            "ex:fullName": "Oscar Corcho",
+
+            "@id": "ex:RaulG",
+            "@type": "ex:Person",
+            "ex:fullName": "Raul García"
+          },
+          "ex:description": "Curso enfocado en los datos y sus estructuras"
+        },
+        {
+          "@id": "ex:StatisticalDataAnalysis",
+          "@type": "ex:Subject",
+          "ex:name": "Statistical Data Analysis",
+          "ex:teachers": {
+            "@id": "ex:ArmindaDM",
+            "@type": "ex:Person",
+            "ex:fullName": "Arminda Diaz Moreno"
+          },
+          "ex:description": "Este curso explora las técnicas de la estadística y las matemáticas."
+        },
+        {
+          "@id": "ex:BigData",
+          "@type": "ex:Subject",
+          "ex:name": "Big Data",
+          "ex:teachers": {
+            "@id": "ex:JulianAG",
+            "@type": "ex:Person",
+            "ex:fullName": "Julian Arenas Guerrero"
+          },
+          "ex:description": "El estudio de datos masivos"
+        }
+      ]
+    }
+  ]
+}
