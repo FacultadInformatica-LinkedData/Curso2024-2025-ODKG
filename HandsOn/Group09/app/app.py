@@ -149,10 +149,11 @@ def updateDateSelectors():
     customQuery()
 
 def relevantStationsColumnToString(stationIDiterator):
-    resultString = "('" + next(stationIDiterator)[1]['StationID'] + "'"
+    resultArray = []
     for index, row in stationIDiterator:
-        resultString = resultString + ",'" + row['StationID'] + "'"
-    return resultString + ")"
+        if ("'" + row['StationID'] + "'") not in resultArray:
+            resultArray.append("'" + row['StationID'] + "'")
+    return "(" + ",".join(str(statID) for statID in resultArray) + ")"
 
 def showMap(data, dateString, metricString):
     df = pd.DataFrame(data)
