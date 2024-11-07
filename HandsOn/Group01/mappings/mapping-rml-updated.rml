@@ -29,7 +29,7 @@ map:map_bikeParking_000 a rr:TriplesMap;
         rr:objectMap [ rml:reference "DIRECCION"; rr:termType rr:Literal ]
     ], [
         rr:predicate ns:isInBarrio;
-        rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Barrio/{BARRIO}"; rr:termType rr:Literal ]
+        rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Barrio/{BARRIO}"; rr:termType rr:IRI ]
     ], [
         rr:predicate ns:latitud;
         rr:objectMap [ rml:reference "LATITUD"; rr:termType rr:Literal; rr:datatype xsd:float ]
@@ -61,7 +61,7 @@ map:map_barrio_000 a rr:TriplesMap;
         rr:objectMap [ rr:constant ns:Barrio; rr:termType rr:IRI ]
     ], [
         rr:predicate ns:isInDistrito;
-        rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}"; rr:termType rr:Literal ]
+        rr:objectMap [ rr:template "http://www.bikeradar.es/resources/Distrito/{DISTRITO}"; rr:termType rr:IRI ]
     ].
 
 # TriplesMap for Distrito
