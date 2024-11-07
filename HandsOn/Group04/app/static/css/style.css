@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background-color: #fef2e4; /* Light background color */
+}
+
+#title {
+    display: flex; /* Use flexbox for title layout */
+    align-content: center; /* Center title content */
+    font-size: 30px; /* Set font size for title */
+}
+
+#search-container {
+    display: flex; /* Use flexbox for search container */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between items */
+    /* margin: 10px 0; */
+}
+
+#search-bar, #district-select, #neighborhood-select {
+    width: 90%; /* Width of input fields */
+    max-width: 500px; /* Maximum width for input fields */
+    padding: 8px; /* Padding inside input fields */
+    font-size: 16px; /* Font size for input fields */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#main-container {
+    display: flex; /* Use flexbox for main container */
+    width: 100%; /* Full width */
+    flex-direction: row; /* Arrange children in a row */
+    height: 450px; /* Set height for the main container */
+    margin-top: 10px; /* Space above the main container */
+}
+
+#map-container {
+    flex: 3; /* Map container takes 3 parts of the available space */
+    margin-left: 10%; /* Left margin for the map container */
+}
+
+#map {
+    /* Take 100% height of the container */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    max-width: 90%; /* Maximum width of 90% of the screen */
+    border: 1px solid #ddd; /* Border style */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#detail-container {
+    flex: 1; /* Detail container takes 1 part of the available space */
+    height: 450px; /* Set height for the detail container */
+    background-color: #f9f9f9; /* Light background for the detail container */
+    padding: 15px; /* Padding inside the detail container */
+    border: 1px solid #333; /* Dark border style */
+    max-width: 300px; /* Maximum width for the detail container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-right: 10%; /* Right margin for the detail container */
+    overflow-y: auto; /* Add vertical scroll when content exceeds height */
+}
+
+#check {
+    display: flex; /* Use flexbox for check container */
+    flex-direction: row; /* Arrange items in a row */
+    gap: 45px; /* Space between elements */
+}
+
+/* General style for the checkbox container */
+label {
+    display: flex; /* Use flexbox for label layout */
+    align-items: center; /* Center items vertically */
+    font-family: Arial, sans-serif; /* Font for labels */
+    font-size: 16px; /* Font size for labels */
+    color: #333; /* Dark text color */
+    margin: 8px 0; /* Space above and below labels */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hide the original checkbox */
+input[type="checkbox"] {
+    display: none; /* Hide checkboxes */
+}
+
+/* Style for the custom checkbox */
+.checkbox-custom {
+    width: 20px; /* Width of custom checkbox */
+    height: 20px; /* Height of custom checkbox */
+    border: 2px solid #888; /* Neutral border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 8px; /* Space between checkbox and label */
+    background-color: #fff; /* Always white background */
+    position: relative; /* Position for the checkbox */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+/* Add the tick when the checkbox is checked */
+input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: "✓"; /* Checkmark character */
+    position: absolute; /* Absolute positioning for the tick */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the tick */
+    font-size: 14px; /* Font size for the tick */
+    color: #333; /* Dark color for the tick */
+    font-weight: bold; /* Bold weight for the tick */
+}
+
+input[type="checkbox"]:checked + .checkbox-custom {
+    transform: scale(1.1); /* Scale up the checkbox when checked */
+}
