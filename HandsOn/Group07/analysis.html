@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid Events Data Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .container {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Madrid Events Data Analysis</h1>
+    
+    <div class="container">
+        <h2>1. Dataset Overview</h2>
+        <p>The dataset contains records of events and activities taking place in Madrid.</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID-EVENTO</td>
+      <td>int64</td>
+      <td>Identifier for each event</td>
+    </tr>
+    <tr>
+      <td>TITULO</td>
+      <td>object</td>
+      <td>Name of the event</td>
+    </tr>
+    <tr>
+      <td>PRECIO</td>
+      <td>int64</td>
+      <td>Information about the price of attending the event</td>
+    </tr>
+    <tr>
+      <td>GRATUITO</td>
+      <td>bool</td>
+      <td>Indicates if the event is free or not</td>
+    </tr>
+    <tr>
+      <td>LARGA-DURACION</td>
+      <td>int64</td>
+      <td>Indicates whether the event repeats over time</td>
+    </tr>
+    <tr>
+      <td>DIAS-SEMANA</td>
+      <td>object</td>
+      <td>Specifies which days of the week the event occurs</td>
+    </tr>
+    <tr>
+      <td>DIAS-EXCLUIDOS</td>
+      <td>object</td>
+      <td>Lists days that the event does not occur</td>
+    </tr>
+    <tr>
+      <td>FECHA</td>
+      <td>object</td>
+      <td>The start date of the event</td>
+    </tr>
+    <tr>
+      <td>FECHA-FIN</td>
+      <td>object</td>
+      <td>The end date of the event</td>
+    </tr>
+    <tr>
+      <td>HORA</td>
+      <td>object</td>
+      <td>The time when the event starts</td>
+    </tr>  
+    <tr>
+      <td>DESCRIPCION</td>
+      <td>object</td>
+      <td>Provides a description of the event or activity</td>
+    </tr>
+    <tr>
+      <td>CONTENT-URL</td>
+      <td>object</td>
+      <td>Contains a URL link related to the content or additional information about the event</td>
+    </tr>
+    <tr>
+      <td>TITULO-ACTIVIDAD</td>
+      <td>object</td>
+      <td>The title or name of a specific activity within an event</td>
+    </tr>
+    <tr>
+      <td>URL-ACTIVIDAD</td>
+      <td>object</td>
+      <td>URL pointing to further details about a particular activity within an event</td>
+    </tr>
+    <tr>
+      <td>URL-INSTALACION</td>
+      <td>object</td>
+      <td>A URL pointing to additional information about the venue or installation hosting the event</td>
+    </tr>
+    <tr>
+      <td>NOMBRE-INSTALACION</td>
+      <td>object</td>
+      <td>Name of the venue or installation where the event takes place</td>
+    </tr>
+    <tr>
+      <td>ACCESIBILIDAD-INSTALACION</td>
+      <td>object</td>
+      <td>Indicates whether the installation or venue is accessible to people with disabilities</td>
+    </tr>
+    <tr>
+      <td>CLASE-VIAL-INSTALACION</td>
+      <td>object</td>
+      <td>Refers to the type of street or road where the venue is located</td>
+    </tr>
+    <tr>
+      <td>NOMBRE-VIA-INSTALACION</td>
+      <td>object</td>
+      <td>The name of the street or road where the venue is situated</td>
+    </tr>
+    <tr>
+      <td>NUM-INSTALACION</td>
+      <td>float64</td>
+      <td>Number associated with the installation or venue hosting the event</td>
+    </tr>
+    <tr>
+      <td>DISTRITO-INSTALACION</td>
+      <td>float64</td>
+      <td>The district where the event's installation or venue is located</td>
+    </tr>
+    <tr>
+      <td>BARRIO-INSTALACION</td>
+      <td>object</td>
+      <td>The neighborhood of the installation or venue</td>
+    </tr>
+    <tr>
+      <td>CODIGO-POSTAL-INSTALACION</td>
+      <td>float64</td>
+      <td>The postal code of the event's venue</td>
+    </tr>
+    <tr>
+      <td>COORDENADA-X</td>
+      <td>float64</td>
+      <td>X-coordinate of the event's location</td>
+    </tr>
+    <tr>
+      <td>COORDENADA-Y</td>
+      <td>float64</td>
+      <td>Y-coordinate of the event's location</td>
+    </tr>
+    <tr>
+      <td>LATITUD</td>
+      <td>float64</td>
+      <td>Latitude of the event's location. </td>
+    </tr>
+    <tr>
+      <td>LONGITUD</td>
+      <td>float64</td>
+      <td>Longitude of the event's location. </td>
+    </tr>
+    <tr>
+      <td>TIPO</td>
+      <td>object</td>
+      <td>Indicates the type of event</td>
+    </tr>
+    <tr>
+      <td>AUDIENCIA</td>
+      <td>object</td>
+      <td>Describes the audience type</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+        <p>The dataset contains a mix of numerical and data types. </p>
+        <p>Some variables have a significant number of missing values, which indicates incomplete information.</p>
+        <p>However, key metrics such as <code>TITULO<code>, <code>GRATUITO<code> and <code>FECHA<code> provide consistent identification and temporal details for the events.</p>
+    </div>
+
+    <div class="container">
+        <h2>2. Licensing of Data Source</h2>
+        <p>The dataset is sourced from <a href="https://datos.madrid.es/sites/v/index.jsp?vgnextoid=57be24206a91b510VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD">Madrid City Council Open Data Portal</a>.<p> 
+        <p>The terms of use for the City of Madrid's data reuse allow both commercial and non-commercial use of documents, including copying, modification, and distribution, with non-exclusive intellectual property rights. Users must attribute the source, not alter the data’s meaning, and cannot imply City sponsorship. The City is not liable for any misuse, and data reusers are responsible for compliance with applicable laws.</p>
+    </div>
+
+    <div class="container">
+        <h2>3. Resource Naming Strategy</h2>
+        <p>The following resource naming strategy was applied to the dataset for consistency and clarity in Linked Data and RDF representations:</p>
+        <ul>
+            <li>Continue using the <code>http://madrid.events.com/</code> as the base URI</code></li>
+            <li><strong>Events:</strong> <code>http://madrid.events.com/event/{ID-EVENTO}</code></li>
+            <li><strong>Place:</strong> <code>http://madrid.events.com/installation/{NOMBRE-INSTALACION}</code></li>
+            <li><strong>URLs for Further Info:</strong> Link directly using <code>CONTENT-URL</code> and <code>URL-INSTALACION</code>.</li>
+        </ul>
+        <p>This strategy ensures that each resource is uniquely identified and can be referenced easily in a semantic web context.</p>
+    </div>
+</body>
+</html>

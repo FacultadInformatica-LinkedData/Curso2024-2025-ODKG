@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fullName": "rdf:name",
+    "hometown": "rdf:homeLocation",
+    "age": {
+      "@id": "rdf:age",
+      "@type": "xsd:integer"
+    },
+    "almaMater": "rdf:alumniOf",
+    "parents": {
+      "@id": "rdf:parent"
+    },
+    "subjects": "rdf:Course",
+    "subjectName": "rdf:name",
+    "teacher": "rdf:teacher",
+    "briefDescription": "rdf:description"
+  },
+  "@type": "rdf:Person",
+  "fullName": "Ling Zhang",
+  "hometown": {
+    "@type": "rdf:Place",
+    "fullName": "China"
+  },
+  "age": 34,
+  "almaMater": {
+    "@type": "rdf:EducationalOrganization",
+    "fullName": "Universidad Politécnica de Madrid"
+  },
+  "parents": [
+    {
+      "@type": "rdf:Person",
+      "fullName": "Baixue Zhang"
+    },
+    {
+      "@type": "rdf:Person",
+      "fullName": "Dexue Zhao"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "rdf:Course",
+      "subjectName": "Open Data and Knowledge Graphs",
+      "teacher": [
+        {
+          "@type": "rdf:Person",
+          "fullName": "Oscar Corcho"
+        },
+        {
+          "@type": "rdf:Person",
+          "fullName": "Raúl García"
+        }
+      ],
+      "briefDescription": "Learn about the data representation, RDF, SPARQL, and methodologies for generating, linking, and publishing knowledge graphs from diverse data sources."
+    },
+    {
+      "@type": "rdf:Course",
+      "subjectName": "Statistical Data Analysis",
+      "teacher": {
+        "@type": "rdf:Person",
+        "fullName": "Arminda Moreno Díaz"
+      },
+      "briefDescription": "Learn about the foundation of statistics and practical data analysis skills."
+    },
+    {
+      "@type": "rdf:Course",
+      "subjectName": "Data Visualization",
+      "teacher": {
+        "@type": "rdf:Person",
+        "fullName": "Pablo Toharia"
+      },
+      "briefDescription": "Learn about the visualization analysis and design principles."
+    },
+    {
+      "@type": "rdf:Course",
+      "subjectName": "Data Process",
+      "teacher": {
+        "@type": "rdf:Person",
+        "fullName": "Ernestina Menasalvas"
+      },
+      "briefDescription": "Learn about the overall data process and practical skills including data preparation, modeling, and deployment."
+    }
+  ]
+}

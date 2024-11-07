@@ -1,0 +1,5 @@
+# Query for checking published data on GraphDB
+select * where {
+    ?s ?p ?o .
+}
+limit 100

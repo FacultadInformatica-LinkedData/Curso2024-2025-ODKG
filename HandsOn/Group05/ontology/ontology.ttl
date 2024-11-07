@@ -1,0 +1,119 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <https://www.w3.org/TR/prov-o/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+xsd: a owl:Ontology ;
+    dc:creator "Dakota Mellish" ;
+    dc:title "RiversidePollutionStudyOntology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+schema:about a owl:DatatypeProperty ;
+    rdfs:label "about" ;
+    rdfs:domain schema:Article,
+        schema:Dataset ;
+    rdfs:range xsd:string .
+
+schema:author a owl:DatatypeProperty ;
+    rdfs:label "author" ;
+    rdfs:domain schema:ScholarlyArticle ;
+    rdfs:range xsd:string .
+
+schema:containedInPlace a owl:ObjectProperty ;
+    rdfs:label "contained in place" ;
+    rdfs:domain schema:AdministrativeArea,
+        schema:City,
+        schema:Place,
+        schema:State ;
+    rdfs:range schema:AdministrativeArea,
+        schema:City,
+        schema:Country,
+        schema:State .
+
+schema:datePublished a owl:DatatypeProperty ;
+    rdfs:label "date published" ;
+    rdfs:domain schema:ScholarlyArticle ;
+    rdfs:range xsd:date .
+
+schema:hasPart a owl:ObjectProperty ;
+    rdfs:label "has part" ;
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:Article .
+
+schema:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range schema:Dataset .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:double .
+
+schema:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain schema:AdministrativeArea,
+        schema:Article,
+        schema:City,
+        schema:Country,
+        schema:Dataset,
+        schema:Place,
+        schema:ScholarlyArticle,
+        schema:State ;
+    rdfs:range xsd:string .
+
+schema:observationAbout a owl:ObjectProperty ;
+    rdfs:label "observation about" ;
+    rdfs:range schema:Place .
+
+schema:observationDateTime a owl:DatatypeProperty ;
+    rdfs:label "observation date time" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range xsd:dateTime .
+
+schema:unitText a owl:DatatypeProperty ;
+    rdfs:label "unit text" ;
+    rdfs:domain schema:Observation .
+
+schema:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
+    rdfs:domain schema:Observation .
+
+schema:variableMeasured a owl:DatatypeProperty ;
+    rdfs:label "variable measured" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range xsd:string .
+
+prov:wasDerivedFrom a owl:ObjectProperty ;
+    rdfs:label "was derived from" ;
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:ScholarlyArticle .
+
+schema:Article a owl:Class ;
+    rdfs:label "Article" .
+
+schema:City a owl:Class ;
+    rdfs:label "City" .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
+
+schema:ScholarlyArticle a owl:Class ;
+    rdfs:label "Scholarly Article" .
+
+schema:Dataset a owl:Class ;
+    rdfs:label "Dataset" .
+
+schema:Observation a owl:Class ;
+    rdfs:label "Observation" .
+

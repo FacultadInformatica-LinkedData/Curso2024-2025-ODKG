@@ -1,0 +1,116 @@
+prefixes:
+
+    dc: "http://purl.org/dc/elements/1.1/" 
+    foaf: "http://xmlns.com/foaf/0.1/" 
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    schema: "https://schema.org/"
+    prov: "https://www.w3.org/TR/prov-o/"
+    rps: "http://riversidepollutionstudy.org/ontology/"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    owl: "http://www.w3.org/2002/07/owl#"
+
+sources:
+  observations:
+    access: "riverside_pollution_study.csv"
+    referenceFormulation: csv
+  datasets:
+    access: "datasets.csv"
+    referenceFormulation: csv
+  scholarly_articles:
+    access: "scholarly_articles.csv"
+    referenceFormulation: csv
+  readmes:
+    access: "readmes.csv"
+    referenceFormulation: csv
+
+
+mappings:
+    TriplesMap1:
+        sources:
+            - observations
+        s: rps:Observation/$(observation_id)
+        po:
+            - [schema:variableMeasured, $(element), xsd:string]
+            - [schema:value, $(observed), xsd:float]
+            - [schema:unitsText, $(units), xsd:string]
+            - [schema:observationDate, $(datetime_america_los_angeles), xsd:dateTime]
+            - [schema:observationAbout, rps:Place/$(latitude)_$(longitude)]
+            - [schema:isPartOf,rps:Dataset/$(dataset_id)]
+      
+    TriplesMap2:
+      sources:
+          - observations
+      s: rps:Place/$(latitude)_$(longitude)
+      po:
+          
+          - [schema:latitude, $(latitude), xsd:double]
+          - [schema:longitude, $(longitude), xsd:double]
+          - [schema:name, $(location), xsd:string]
+          - [schema:containedInPlace, rps/City/$(city)]
+
+
+    TriplesMap3:
+      sources:
+          - observations
+      s: rps:City/$(city)
+      po:
+          
+          - [schema:name, $(city), xsd:string]
+          - [schema:containedInPlace, rps:AdministrativeArea/$(county)]
+
+    TriplesMap4:
+      sources:
+          - observations
+      s: rps:AdministrativeArea/$(county)
+      po:
+          
+          - [schema:name, $(county), xsd:string]
+          - [schema:containedInPlace, rps:State/$(state)]
+        
+
+    TriplesMap5:
+        sources:
+            - observations
+        s: rps:State/$(state)
+        po:
+            - [schema:name, $(state), xsd:string]
+            - [schema:containedInPlace, rps:Country/$(country)]
+
+
+    TriplesMap6:
+      sources:
+          - observations
+      s: rps:Country/$(country)
+      po:
+          - [schema:name, $(country), xsd:string]
+
+    TriplesMap7:
+      sources:
+          - datasets
+      s: rps:Dataset/$(dataset_id)
+      po:
+          - [schema:name, $(name), xsd:string]
+          - [schema:about, $(description), xsd:string]
+          - [schema:identifier, $(uri), xsd:string]
+          - [schema:hasPart, rps:Article/$(readme_id)]
+          - [prov:isDerivedFrom, rps:ScholarlyArticle/$(scholarly_article_id)]
+    
+    TriplesMap8:
+      sources:
+          - scholarly_articles
+      s: rps:ScholarlyArticle/$(scholarly_article_id)
+      po:
+          - [schema:name, $(name), xsd:string]
+          - [schema:author, $(author),xsd:string]
+          - [schema:datePublished, $(datePublished),xsd:date]
+          - [schema:identifier, $(uri), xsd:string]
+      
+    
+    TriplesMap9:
+      sources:
+        - readmes
+      s: rps:Article/$(article_id)
+      po:
+          - [schema:name, $(name), xsd:string]
+          - [schema:about, $(description), xsd:string]
+          - [schema:identifier, $(uri), xsd:string]

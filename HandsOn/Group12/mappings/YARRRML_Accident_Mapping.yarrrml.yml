@@ -1,0 +1,24 @@
+
+prefixes:
+  ns: "http://accidents.madrid.es/"
+
+mappings:
+  accident:
+    sources:
+      - "2024-Accidentalidad_processed.csv~csv"
+    s: ns:$(num_expediente)
+    po:
+      - [ns:date, $(fecha)]
+      - [ns:time, $(hora)]
+      - [ns:timestamp, $(timestamp)]
+      - [ns:location, $(localizacion)]
+      - [ns:accidentType, $(tipo_accidente)]
+      - [ns:weatherCondition, $(estado_meteorológico)]
+      - [ns:personType, $(tipo_persona)]
+      - [ns:ageRange, $(rango_edad)]
+      - [ns:gender, $(sexo)]
+      - [ns:injurySeverityCode, $(cod_lesividad)]
+      - [ns:injurySeverity, $(lesividad)]
+      - [ns:combinedCoordinates, $(coordenadas)]
+      - [ns:positiveAlcohol, $(positiva_alcohol)]
+      - [ns:positiveDrug, $(positiva_droga)]

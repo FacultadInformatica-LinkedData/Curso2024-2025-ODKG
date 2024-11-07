@@ -1,0 +1,138 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q69197847",
+        "name": "coherent SI unit"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MEASUREMENT_UNIT to type Q69197847"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MEASUREMENT_UNIT",
+    "expression": "grel:\"https://www.wikidata.org/wiki/Q69197847\"",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_SIUnit",
+    "columnInsertIndex": 3,
+    "description": "Create column same_as_wikidata_SIUnit at index 3 based on column MEASUREMENT_UNIT using expression grel:\"https://www.wikidata.org/wiki/Q69197847\""
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "similarValue": "PPM\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2541",
+      "name": "prediction by partial matching",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item prediction by partial matching (Q2541) for cells containing \"PPM\r\" in column MEASUREMENT_UNIT"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "similarValue": "%\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11229",
+      "name": "percent",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item percent (Q11229) for cells containing \"%\r\" in column MEASUREMENT_UNIT"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "similarValue": "mb\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q81809",
+      "name": "atmospheric pressure",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item atmospheric pressure (Q81809) for cells containing \"mb\r\" in column MEASUREMENT_UNIT"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "similarValue": "l/m2\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q119856947",
+      "name": "liters per square meter",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item liters per square meter (Q119856947) for cells containing \"l/m2\r\" in column MEASUREMENT_UNIT"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MEASUREMENT_UNIT",
+    "similarValue": "Mw/m2\r",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3566737",
+      "name": "watt per square metre",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item watt per square metre (Q3566737) for cells containing \"Mw/m2\r\" in column MEASUREMENT_UNIT"
+  }
+]

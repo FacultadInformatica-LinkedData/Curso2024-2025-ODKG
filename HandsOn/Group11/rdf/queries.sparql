@@ -1,0 +1,79 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# show all charging stations with all properties
+SELECT ?s ?o ?p
+WHERE {
+  ?s a ns:ChargingStation .
+  ?s ?o ?p .
+}
+
+# show each charging station along with its operator
+SELECT ?chargingStation ?operator
+WHERE {
+  ?chargingStation a ns:ChargingStation ;
+                   ns:operator ?operator .
+}
+
+# show each charging station with its address, neighborhood and district 
+SELECT ?s ?address ?neighborhoodname ?districtname
+WHERE {
+  ?s a ns:ChargingStation ;
+    ns:isLocated ?location .
+  ?location a ns:Location ;
+      ns:address ?address ;
+      ns:containedInNeighborhood ?neighborhood .
+  ?neighborhood a ns:Neighborhood ;
+    ns:neighborhoodName ?neighborhoodname ;
+    ns:containedInDistrict ?district .
+  ?district a ns:District ;
+    ns:districtName ?districtname . 
+}
+LIMIT 10
+
+# show each station with its assigned dates
+SELECT ?IDchargingStation ?openingdate ?editiondate ?registerdate
+WHERE {
+  ?chargingStation a ns:ChargingStation ;
+                   ns:hasDates ?dates ;
+                   ns:idPoint ?IDchargingStation .
+  ?dates a ns:Dates ;
+        ns:openingDate ?openingdate ;
+        ns:editionDate ?editiondate ;
+        ns:registerDate ?registerdate .
+}
+
+# show the most recent edited stations
+SELECT ?IDchargingStation ?editiondate 
+WHERE {
+  ?chargingStation a ns:ChargingStation ;
+        ns:hasDates ?dates ;
+        ns:idPoint ?IDchargingStation .
+  ?dates a ns:Dates ;
+        ns:editionDate ?editiondate ;
+}
+ORDER BY DESC(?editiondate)
+
+# see the number of neighborhoods from each disctrict orderer desc
+SELECT ?district ?districtname (COUNT(DISTINCT ?neighborhood) as ?numberOfNeighborhoods)
+WHERE {
+    ?district a ns:District ;
+              ns:districtName ?districtname .
+    ?neighborhood ns:containedInDistrict ?district .
+}
+GROUP BY ?district ?districtname
+ORDER BY DESC(?numberOfNeighborhoods)
+
+# see the number of charging stations from each neighborhood
+SELECT ?neighborhoodname (COUNT(?chargingStation) AS ?stationCount)
+WHERE {
+  ?chargingStation a ns:ChargingStation ;
+        ns:isLocated ?Location .
+  ?place a ns:Location ;
+        ns:containedInNeighborhood ?neighborhood .
+  ?neighborhood a ns:Neighborhood ;
+        ns:neighborhoodName ?neighborhoodname .
+}
+GROUP BY ?neighborhoodname
+ORDER BY DESC(?stationCount)

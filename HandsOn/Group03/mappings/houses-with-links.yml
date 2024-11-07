@@ -1,0 +1,103 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  fnml: "http://semweb.mmlab.be/ns/fnml#"
+  fno: "https://w3id.org/function/ontology#"
+  d2rq: "http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#"
+  void: "http://rdfs.org/ns/void#"
+  dc: "http://purl.org/dc/terms/"
+  foaf: "http://xmlns.com/foaf/0.1/"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  schema: "https://schema.org/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  base: "http://www.semanticweb.org/resource/"
+  barrio: "http://www.semanticweb.org/ontology/SmartBarrioMadrid#"
+  owl: "http://www.w3.org/2002/07/owl#"
+mappings:
+  houses:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:Apartment/$(uuid) 
+    po:
+      - [a, schema:Apartment]
+      - [rdfs:label, $(TITLE), xsd:string]
+      - [schema:numberOfRooms, $(NUM_OF_ROOMS), xsd:integer]
+      - [schema:geo, base:GeoCoordinates/$(uuid)~iri]
+      - [schema:containedInPlace, base:District/$(DISTRICT)~iri]
+      - [schema:containedInPlace, base:Barrio/$(NEIGHBORHOOD)~iri]
+      - [schema:containedInPlace, base:City/Madrid~iri]
+      - [barrio:energyCertificate, $(ENERGY_CERTIFICATE), xsd:string]
+      - [barrio:floorSize, base:QuantitativeValue/$(uuid)~iri]
+      - [barrio:rentPrice, base:MonetaryAmount/$(uuid2)~iri]
+      - [barrio:rentPriceByRoom, base:MonetaryAmount/$(uuid3)~iri]
+      - [barrio:rentPriceBySq, base:MonetaryAmount/$(uuid4)~iri]
+     
+  geos:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:GeoCoordinates/$(uuid)
+    po:
+      - [a, schema:GeoCoordinates]
+      - [schema:address, $(ADDRESS), xsd:string]
+
+  districts:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:District/$(DISTRICT)
+    po:
+      - [a, barrio:District]
+      - [rdfs:label, $(DISTRICT), xsd:string]
+      - [schema:containsPlace, base:Barrio/$(NEIGHBORHOOD)~iri]
+      - [schema:containedInPlace, base:City/Madrid~iri]
+      - [owl:sameAs, $(DISTRICT_URL_WIKI)~iri]
+
+  neighbourhoods:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:Neighborhood/$(NEIGHBORHOOD)
+    po:
+      - [a, barrio:Barrio]
+      - [rdfs:label, $(NEIGHBORHOOD), xsd:string]
+      - [schema:containedInPlace, base:District/$(DISTRICT)~iri]
+      - [schema:containedInPlace, base:City/Madrid~iri]
+      - [owl:sameAs, $(NEIGHBORHOOD_URL_WIKI)~iri]
+
+  floorSizes:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:QuantitativeValue/$(uuid)
+    po:
+      - [a, schema:QuantitativeValue]
+      - [schema:value, $(SQUARE_METERS), xsd:float]
+      - [schema:unitCode, "m2", xsd:string]
+      - [schema:unitText, "square meters", xsd:string]
+
+  rentPrices:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:MonetaryAmount/$(uuid2)
+    po:
+      - [a, schema:MonetaryAmount]
+      - [schema:value, $(RENT_PRICE), xsd:float]
+      - [schema:currency, "EUR", xsd:string]
+
+  rentPricesByRoom:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:MonetaryAmount/$(uuid3)
+    po:
+      - [a, schema:MonetaryAmount]
+      - [schema:value, $(RENT_BY_ROOM), xsd:float]
+      - [schema:currency, "EUR", xsd:string]
+
+  rentPricesBySq:
+    sources:
+      - [../csv/houses-Madrid-with-links.csv~csv]
+    s: base:MonetaryAmount/$(uuid4)
+    po:
+      - [a, schema:MonetaryAmount]
+      - [schema:value, $(RENT_PRICE_BY_SQ_METER), xsd:float]
+      - [schema:currency, "EUR", xsd:string]

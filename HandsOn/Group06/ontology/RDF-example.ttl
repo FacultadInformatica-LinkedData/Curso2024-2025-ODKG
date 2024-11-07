@@ -1,0 +1,40 @@
+@prefix mair: <http://MadridAirQuality.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Province
+<http://MadridAirQuality.org/province/28> a mair:Province ;
+    mair:hasProvinceLocationID 28 ;
+    mair:hasProvinceName "Comunidad de  Madrid" .
+
+# Municipality
+<http://MadridAirQuality.org/municipality/79> a mair:Municipality ;
+    mair:hasMunicipalityLocationID 79 ;
+    mair:hasMunicipalityName "Madrid" ;
+    mair:hasProvince <http://MadridAirQuality.org/province/28> .
+
+# Street
+<http://MadridAirQuality.org/street/4> a mair:Street ;
+    mair:hasStreetLocationID 4 ;
+    mair:hasStreetName "Plaza España" ;
+    mair:hasMunicipality <http://MadridAirQuality.org/municipality/79> .
+
+# Station
+<http://MadridAirQuality.org/station/4> a mair:Station ;
+    mair:hasStationLocationID 4 ;
+    mair:hasStreet <http://MadridAirQuality.org/street/4> .
+
+# Magnitude (Pollutant)
+<http://MadridAirQuality.org/magnitude/8> a mair:Magnitude ;
+    mair:hasMagnitudeCode 8 ;
+    mair:hasMagnitudeName "Nitrogen Dioxide (NO2)" ;
+    mair:hasMagnitudeMeasurementUnit "µg/m³" .
+
+# Measurement of NO2 at Station
+<http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8> a mair:Measurement ;
+    mair:hasMeasurementValue 35.7 ;
+    mair:hasMeasurementDay 18 ;
+    mair:hasMeasurementMonth 10 ;
+    mair:hasMeasurementYear 2024 ;
+    mair:isMeasurementValid true ;
+    mair:recordedFrom <http://MadridAirQuality.org/station/4> ;
+    mair:hasMagnitude <http://MadridAirQuality.org/magnitude/8> .

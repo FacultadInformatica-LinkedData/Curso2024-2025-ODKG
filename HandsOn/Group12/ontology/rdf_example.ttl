@@ -1,0 +1,53 @@
+@prefix : <http://group12.namespace.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Sample Instances
+
+# Example of an Accident (Colision Multiple)
+:Accidente1 a ns:ColisionMultiple ;
+    ns:fecha "2024-02-15"^^xsd:date ;
+    ns:hora "16:45:00"^^xsd:time ;
+    ns:estado_meteorologico "Cloudy"^^xsd:string ;
+    ns:num_expediente "EXP202456"^^xsd:string ;
+    ns:tipo_accidente "Multiple Collision"^^xsd:string ;
+    ns:tieneLocalizacion :Localizacion1 ;
+    ns:tieneParticipante :Participante1, :Participante2 .
+
+# Example of a Participant (Driver)
+:Participante1 a ns:Participante ;
+    ns:tipo_persona "Driver"^^xsd:string ;
+    ns:sexo "Male"^^xsd:string ;
+    ns:rango_edad "35-44"^^xsd:string ;
+    ns:tipo_vehiculo "Truck"^^xsd:string ;
+    ns:positiva_alcohol "Negative"^^xsd:string ;
+    ns:positiva_droga "Negative"^^xsd:string .
+
+# Example of a Participant (Pedestrian)
+:Participante2 a ns:Participante ;
+    ns:tipo_persona "Pedestrian"^^xsd:string ;
+    ns:sexo "Female"^^xsd:string ;
+    ns:rango_edad "20-29"^^xsd:string ;
+    ns:positiva_alcohol "Negative"^^xsd:string ;
+    ns:positiva_droga "Negative"^^xsd:string .
+
+# Example of Location
+:Localizacion1 a ns:Localizacion ;
+    ns:coordenada_x_utm 432500.12^^xsd:float ;
+    ns:coordenada_y_utm 4489120.78^^xsd:float ;
+    ns:tieneDistrito :Distrito1 .
+
+# Example of a District
+:Distrito1 a ns:Distrito ;
+    ns:code_distrito 5^^xsd:integer ;
+    ns:distrito "Usera"^^xsd:string ;
+    ns:localizacion "Main Road"^^xsd:string .
+
+# Example of Injury Severity (Lesividad)
+:Lesividad1 a ns:Lesividad ;
+    ns:cod_lesividad 3^^xsd:integer ;
+    ns:lesividad "Serious Injuries"^^xsd:string .

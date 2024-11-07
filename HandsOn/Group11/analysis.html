@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle Charging Points Analysis - Group 11</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<h1>Analysis of Public Electric Vehicle Charging Points in Madrid</h1>
+
+<h3>Data Analysis:</h3>
+The following entities have been identified from the analysis of the **Public Electric Vehicle Charging Points** dataset:
+
+<table>
+
+  <tr>
+    <th>Entity</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <th>ID_Punto</th>
+    <th>Unique identifier for each charging station. (e.g., ID_Punto like "04 VP").</th>
+  </tr>
+
+  <tr>
+    <th>Distrito</th>
+    <th>District in Madrid where the charging station is located. (e.g., DISTRITO like "Arganzuela").</th>
+  </tr>
+
+  <tr>
+    <th>Barrio</th>
+    <th>Neighborhood in Madrid where the charging station is located. (e.g., BARRIO like "Palos de Moguer").</th>
+  </tr>
+
+  <tr>
+    <th>Estado</th>
+    <th>Operational status of the charging point (e.g., ESTADO like "Ejecutado").</th>
+  </tr>
+
+  <tr>
+    <th>Ubicación</th>
+    <th>Address of the point where the vehicle can be charged (e.g., Ubicación like "Ronda de Valencia 1").</th>
+  </tr>
+
+  <tr>
+    <th>Emplazamiento</th>
+    <th>Type of place where it is found. (e.g., Emplazamiento like "Vía pública").</th>
+  </tr>
+
+  <tr>
+    <th>Info_Adicional</th>
+    <th>More relevant information about the place, if it is necessary. (e.g., Info_Adicional like "Aparcamiento privado rotación").</th>
+  </tr>
+
+  <tr>
+    <th>Nº_Equipos</th>
+    <th>Number of vehicles which can be charged at the same time. (e.g., Nº_Equipos like "1").</th>
+  </tr>
+
+  <tr>
+    <th>CARACTERÍSTICAS_EQUIPO</th>
+    <th>The type of charging available and the equipment characteristics. (e.g., CARACTERÍSTICAS_EQUIPO like "50 kW 2 conectores CC").</th>
+  </tr>
+
+  <tr>
+    <th>Operator</th>
+    <th>Company or entity that operates the charging point (e.g., OPERADOR like "GIC" or "REPSOL").</th>
+  </tr>
+
+  <tr>
+    <th>Gestión</th>
+    <th>Type of arrangement for the electrical vehicle station. (e.g., Gestión like "Convenio vía pública").</th>
+  </tr>
+
+  <tr>
+    <th>INFO_FECHA_APERTURA</th>
+    <th>The date of the day that the station was opened. (e.g, INFO_FECHA_APERTURA like "01/09/2019").</th>
+  </tr>
+
+  <tr>
+    <th>FECHA_APERTURA</th>
+    <th>The date and time when the station was opened. (e.g., FECHA_APERTURA like "05/09/2019  22:00:00").</th>
+  </tr>
+
+  <tr>
+    <th>FECHA_ALTA</th>
+    <th>Date and time when the station was registered. (e.g., FECHA_ALTA like "02/03/2022  15:21:24").</th>
+  </tr>
+
+  <tr>
+    <th>FECHA_EDICION</th>
+    <th>Last time when the information was edited. (e.g., FECHA_EDICION like "27/04/2022  10:43:52").</th>
+  </tr>
+
+  <tr>
+    <th>COD_DIS</th>
+    <th>The code of the district where it is located the station. (e.g., COD_DIS like "2").</th>
+  </tr>
+
+  <tr>
+    <th>COD_BAR</th>
+    <th>The code of the neighborhood where it is located the station. (e.g., COD_BAR like "6").</th>
+  </tr>
+
+  <tr>
+    <th>HORARIO</th>
+    <th>Number of hours that the station is opened. (e.g., HORARIO like "24" or "de 7:30h a 21:00h").</th>
+  </tr>
+
+</table>
+<br><br>
+
+The analysis was performed using the dataset titled "Public Electric Vehicle Charging Points." You can download the dataset from the following link:
+
+<ul>
+    <li><a href="https://datos.madrid.es/egob/catalogo/208979-11637359-puntos-recarga-historico.csv">Public Electric Vehicle Charging Points dataset</a></li>
+</ul>
+
+<br><br>
+<h3>License of the original data:</h3>
+  <p>
+  The dataset is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">license CC BY-SA 4.0</a> Internacional. The conditions for its reuse are as follows:<br>
+  - The dataset can be reused for commercial and non-commercial purposes.<br>
+  - The source of the dataset must be cited.<br>
+  - If you transform or build upon the material, you must use the same license.<br>
+  - It is forbidden to alter the meaning of the information.
+  </p>
+  More details can be found on their <a href="https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">terms and conditions page</a>.
+<br><br>
+
+<h3>License of the data generated in this project:</h3>
+  <p>
+    The dataset obtained in this project may be used for both commercial and non-commercial purposes, provided that such use does not involve public administrative functions. The following conditions apply to the reuse of the dataset:<br>
+    - Reuse implies a non-exclusive transfer of relevant intellectual property rights, allowing the user to reproduce, distribute, communicate publicly, or transform the dataset as necessary for permitted reuse.<br> 
+    - The source of the documents must be acknowledged, including the data origin and the most recent update date if present in the original document.<br>  
+    - The metadata related to update dates and reuse conditions must be kept intact and not modified.<br> 
+    - The information must not be used in a way that distorts its original meaning.<br> 
+    - Users of the derived dataset take full responsibility for its usage and any resulting consequences.<br>
+    - The user must adhere to relevant regulations regarding the reuse of public sector information, including any applicable sanctions.
+  </p>
+
+<br><br>
+<h3>Resource Naming Strategy</h3>
+
+<p>This ontology uses a structured and consistent approach to naming URIs, enhancing clarity and uniqueness across resources related to public electric vehicle charging stations in Madrid.</p>
+
+<ol>
+    <li><strong>Base URI</strong>: All resources are based on the namespace:
+        <pre>https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#</pre>
+        This base URI is prefixed as <code>ns:</code> for readability.
+    </li>
+
+    <li>Each resource URI follows the structure <code>&lt;Base URI&gt;/&lt;Class&gt;/&lt;Unique ID&gt;</code>, where <code>&lt;Class&gt;</code> represents the type of entity and <code>&lt;Unique ID&gt;</code> the resource unique identifier.</li>
+
+    <li><strong>Naming Conventions</strong>:
+        <ul>
+            <li><strong>Classes</strong>: Classes are capitalized in CamelCase (<code>ChargingStation</code>, <code>Location</code>, <code>Neighborhood</code>, <code>District</code>, <code>Dates</code>).</li>
+            <li><strong>Properties</strong>: Properties follow camelCase for readability (e.g., <code>management</code>, <code>state</code>). Each class has several properties.</li>
+        </ul>
+    </li>
+
+    <li><strong>Data Types</strong>: Datatypes are explicitly specified where needed. For example, <code>xsd:int</code> for integers, such as <code>ns:numberOfDevices</code> and <code>ns:neighborhoodCode</code>; <code>xsd:dateTime</code> for dates, such as <code>ns:openingDate</code>, <code>ns:registerDate</code>, and <code>ns:editionDate</code>.</li>
+</ol>
+
+<h4>Examples</h4>
+<ul>
+    <li><strong>Charging Station</strong>: <code>ns:ChargingStation/04VP</code></li>
+    <li><strong>Location</strong>: <code>ns:Location/04VP</code></li>
+    <li><strong>Neighborhood</strong>: <code>ns:Neighborhood/2_6</code> (where 2 is the district code and 6 the neighborhood code)</li>
+    <li><strong>District</strong>: <code>ns:District/2</code></li>
+    <li><strong>Dates</strong>: <code>ns:Dates/04VP</code></li>
+</ul>
+</body>
+</html>

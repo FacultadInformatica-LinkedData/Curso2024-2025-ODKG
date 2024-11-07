@@ -1,0 +1,28 @@
+prefixes:
+  ex: "http://example.com/"
+  geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+
+mappings:
+  TriplesMap:
+    sources:
+      - [/data/data/preciosEESS_es-updated.csv~csv]
+    s: http://example.com/station/{ID}
+    po:
+      - [ex:locatedInProvince, $(Provincia)]
+      - [ex:locatedInMunicipality, $(Municipio)] 
+      - [ex:locality, $(Localidad)] 
+      - [ex:postalCode, $(Código postal)]
+      - [ex:direction, $(Dirección)]
+      - [ex:margen, $(Margen)]   
+      - [geo:long, $(Longitud)]
+      - [geo:lat, $(Latitud)]
+      - [ex:priceOf95E5, $(Precio gasolina 95 E5)]
+      - [ex:priceOf98E5, $(Precio gasolina 98 E5)]
+      - [ex:priceOfDieselA, $(Precio gasóleo A)]
+      - [ex:priceOfDieselPremium, $(Precio gasóleo Premium)]
+      - [ex:brand, $(Rótulo)]
+      - [ex:id, $(ID)]
+      - [ex:selltype, $(Tipo venta)]
+      - [ex:rem, $(Rem.)]
+      - [ex:time, $(Horario)]
+      - [ex:typeofservice, $(Tipo servicio)]

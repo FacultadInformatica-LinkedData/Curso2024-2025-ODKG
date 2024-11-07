@@ -1,0 +1,2313 @@
+@prefix ex: <http://example.com/videocameras#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:CAM101 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM102 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM103 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM104 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM105 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM106 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM107 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM108 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM109 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM110 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM111 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM112 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM113 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM114 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM115 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM116 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM117 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM118 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM119 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM120 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM121 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM122 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM123 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM124 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM125 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM126 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM127 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM128 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM129 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM130 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM131 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM132 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM133 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM134 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "BALLESTA-GRAN VIA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM201 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM202 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM203 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM204 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM205 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM206 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM207 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM208 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM209 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM210 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM211 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM212 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM213 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM214 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM215 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM216 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM217 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM218 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM219 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM220 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM221 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM222 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM223 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM224 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM225 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM226 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM227 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM228 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM229 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM230 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM231 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM232 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM233 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM234 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM235 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CENTRO SUR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM301 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM302 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM303 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM304 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM305 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM306 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM307 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM308 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM309 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM310 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM311 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM312 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM313 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM314 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "30x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM315 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM316 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM317 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM318 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM319 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM320 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM321 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM322 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM323 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM324 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM325 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM326 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM327 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM328 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM329 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM330 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM331 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM332 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM333 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM334 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM335 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM336 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM337 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "PLAZA MAYOR" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM401 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM402 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM403 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM404 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM405 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM406 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM407 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM408 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM409 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM410 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM411 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM412 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM413 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM414 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM415 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM416 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM417 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM418 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM419 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM420 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM421 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM422 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM423 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM424 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM425 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM426 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM427 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM428 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM429 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM430 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM431 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM432 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM433 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM434 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM435 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM436 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM437 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM438 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM439 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM440 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM441 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM442 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM443 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM444 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM445 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM446 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM447 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM448 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM449 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM450 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM451 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM452 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM453 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM454 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM455 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM456 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM457 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM458 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM459 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM460 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM461 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM462 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM463 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM464 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM465 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "LAVAPIES" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM501 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM502 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM503 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM504 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM505 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM506 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM507 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM508 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM509 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM510 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MUSEO ARTE PUBLICO" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2016"^^xsd:gYear .
+
+ex:CAM601 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM602 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM603 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM604 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM605 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM606 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM607 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM608 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM609 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM610 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM611 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM612 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM613 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM614 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM615 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM616 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM617 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM618 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM619 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM620 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM621 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM622 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM623 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM624 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM625 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM626 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM627 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM628 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM629 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM630 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM631 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM632 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM633 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM634 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM635 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM636 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM637 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM638 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM639 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM640 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM641 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM642 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM643 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM644 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM645 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM646 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM647 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM648 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM649 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM650 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM651 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM652 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM653 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM654 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x720" ;
+    ex:opticalZoom "18x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM655 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "AZCA" ;
+    ex:resolution "1280x960" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2015"^^xsd:gYear .
+
+ex:CAM701 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM702 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM703 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM704 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM705 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM706 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM707 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM708 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM709 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM710 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM711 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM712 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM713 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM714 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM715 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM716 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM717 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM718 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM719 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "TETUAN" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM801 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM802 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM803 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM804 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM805 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM806 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM807 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM808 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM809 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM810 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM811 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM812 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM813 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM814 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM815 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM816 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM817 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM818 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM819 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM820 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM821 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM822 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM823 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM824 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM825 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "VALLECAS" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2020"^^xsd:gYear .
+
+ex:CAM901 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM902 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM903 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM904 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM905 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM906 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM907 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM908 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM909 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM910 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM911 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM912 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM913 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM914 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM915 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM916 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM917 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM918 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM919 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM920 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM921 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM922 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM923 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM924 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "MARCONI" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1001 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1002 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1003 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1004 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1005 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1006 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1007 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1008 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1009 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1010 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1011 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1012 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1013 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1014 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1015 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1016 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1017 a ex:Camera ;
+    ex:type "DOMO" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "40x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1018 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1019 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1020 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1021 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1022 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1023 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1024 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1025 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+
+ex:CAM1026 a ex:Camera ;
+    ex:type "FIJA" ;
+    ex:location "CHUECA" ;
+    ex:resolution "1920x1080" ;
+    ex:opticalZoom "0x" ;
+    ex:acquisitionYear "2022"^^xsd:gYear .
+

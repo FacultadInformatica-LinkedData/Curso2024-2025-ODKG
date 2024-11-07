@@ -1,0 +1,287 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2022/07/owl#>.
+
+@prefix mair: <http://MadridAirQuality.org/#> .
+@base <http://MadridAirQuality.org/#> .
+
+<#StationMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/LocationCode_Relationship_Linked.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/station/{STATION_CODE}" ;
+        rr:class mair:Station
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasStationLocationID ;
+        rr:objectMap [ 
+            rml:reference "STATION_CODE";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasStationName;
+        rr:objectMap [
+            rml:reference "SAMPLING_LOCATION_NAME" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_JuntaMunicipalDistrito";
+            rr:termType rr:IRI
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurement ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MeasurementMap>;
+            rr:joinCondition [
+                rr:child "STATION_CODE";
+                rr:parent "STATION_CODE";
+            ]
+        ]
+    ] .
+
+<#MagnitudeMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/Magnitud_Relationship_Linking.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/magnitude/{MAGNITUDE_CODE}" ;
+        rr:class mair:Magnitud
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMagnitudeCode ;
+        rr:objectMap [ 
+            rml:reference "MAGNITUDE_CODE";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMagnitudeName ;
+        rr:objectMap [ 
+            rml:reference "PARAMETER_NAME";
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMagnitudeMeasurementUnit ;
+        rr:objectMap [ 
+            rml:reference "MEASUREMENT_UNIT";
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_wikidata_SIUnit";
+            rr:termType rr:IRI
+        ]
+    ].
+
+<#MeasurementMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/Transformed_Air_Quality_Data.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/measurement/station{STATION_CODE}-magnitude{MAGNITUDE_CODE}-{YEAR}-{MONTH}-{DAY}" ;
+        rr:class mair:Measurement
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMagnitude ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MagnitudeMap>;
+            rr:joinCondition [
+                rr:child "MAGNITUDE_CODE";
+                rr:parent "MAGNITUDE_CODE";
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurementValue ;
+        rr:objectMap [ 
+            rml:reference "VALUE";
+            rr:termType rr:Literal;
+            rr:datatype xsd:float
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:isMeasurementValid ;
+        rr:objectMap [ 
+            rml:reference "VALID";
+            rr:termType rr:Literal;
+            rr:datatype xsd:boolean
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurementYear ;
+        rr:objectMap [ 
+            rml:reference "YEAR";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurementMonth ;
+        rr:objectMap [ 
+            rml:reference "MONTH";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMeasurementDay ;
+        rr:objectMap [ 
+            rml:reference "DAY";
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ] 
+    ] .
+
+<#MunicipalityStationMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/MunicipalityStation-Relationship.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/municipality/{MUNICIPALITY_CODE}" ;
+        rr:class mair:Municipality
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate mair:hasStation ;
+        rr:objectMap [
+            rr:parentTriplesMap <#StationMap>;
+            rr:joinCondition [
+                rr:child "STATION_CODE";  # Column in ProvinceMunicipality-Relationship.csv
+                rr:parent "STATION_CODE"; # Column in MunicipalityCode-Relationship.csv
+            ]
+        ]
+    ] .
+
+<#MunicipalityMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/MunicipalityCode_Relationship_Linking.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/municipality/{MUNICIPALITY_CODE}" ;
+        rr:class mair:Municipality
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMunicipalityLocationID ;
+        rr:objectMap [ 
+            rml:reference "MUNICIPALITY_CODE";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMunicipalityName;
+        rr:objectMap [
+            rml:reference "MUNICIPALITY_NAME" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_WikiData_Madrid";
+            rr:termType rr:IRI
+        ]
+    ].
+
+<#ProvinceMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/ProvinceCode_Relationship_Linking.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/province/{PROVINCE_CODE}" ;
+        rr:class mair:Province
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasProvinceLocationID ;
+        rr:objectMap [ 
+            rml:reference "PROVINCE_CODE";
+            rr:termType rr:Literal;
+            rr:datatype xsd:integer
+        ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasProvinceName;
+        rr:objectMap [
+            rml:reference "PROVINCE_NAME" ;
+            rr:termType rr:Literal;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [
+            rml:reference "same_as_WikiData_CommunityMadrid";
+            rr:termType rr:IRI
+        ]
+    ].
+
+<#ProvinceMunicipalityMap> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "csv/ProvinceMunicipality-Relationship.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://MadridAirQuality.org/province/{PROVINCE_CODE}" ;
+        rr:class mair:Province
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate mair:hasMunicipality ;
+        rr:objectMap [
+            rr:parentTriplesMap <#MunicipalityMap>;
+            rr:joinCondition [
+                rr:child "MUNICIPALITY_CODE";  # Column in ProvinceMunicipality-Relationship.csv
+                rr:parent "MUNICIPALITY_CODE"; # Column in MunicipalityCode-Relationship.csv
+            ]
+        ]
+    ] .

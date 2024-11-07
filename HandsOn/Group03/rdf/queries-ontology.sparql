@@ -1,0 +1,56 @@
+#1. Get all the available instances
+select distinct ?individual
+where {
+  ?individual a ?type .
+}
+
+
+
+
+#2. Get 20 examples of relationships
+select ?subject ?predicate ?object
+where {
+  ?subject ?predicate ?object .
+}
+limit 20
+
+
+
+
+#3.Get 20 examples of object properties and the classes they connect
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?property ?domain ?range WHERE { 
+  ?property rdf:type owl:ObjectProperty .
+  ?property rdfs:domain ?domain .
+  ?property rdfs:range ?range .
+}
+limit 20
+
+
+
+
+#4. Get 5 properties from objects and their corresponding domain
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?property ?domain
+where {
+  ?property a rdf:Property ;
+            rdfs:domain ?domain .
+}
+limit 5
+
+
+
+
+#5. Get 20 pairs of subclasses and the respective superclasses for them
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?subClass ?superClass
+where {
+  ?subClass rdfs:subClassOf ?superClass .
+}
+limit 20

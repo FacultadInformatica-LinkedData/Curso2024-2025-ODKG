@@ -1,0 +1,49 @@
+### Get some triples of the RDF
+
+SELECT DISTINCT ?subject ?property ?object
+WHERE {
+?subject ?property ?object
+} LIMIT 10
+
+
+### Get all the bycycle parkings located in HORTALEZA and CENTRO districts
+
+SELECT DISTINCT ?bicycleParking ?district WHERE {
+?bicycleParking <http://www.bikeradar.es/ontology/ont#isInDistrito> ?district .
+FILTER(?district = "HORTALEZA" || ?district = "CENTRO") .
+} LIMIT 10
+
+
+### Count all the bycicle parkings per each neighbourhood
+
+SELECT (COUNT(?bicycleParking) AS ?totalParking) ?barrio WHERE {
+?bicycleParking <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio .
+} GROUP BY ?barrio
+
+
+### Count the number of bicycle parkings that were installed between January 1, 2019, and December 31, 2020.
+
+SELECT DISTINCT (COUNT(?bicycleParking) AS ?totalParking) WHERE {
+?bicycleParking <http://www.bikeradar.es/ontology/ont#hasFechaInstalacion> ?date .
+FILTER(?date >= "2018-01-01"^^xsd:dateTime && ?date <= "2020-12-31"^^xsd:dateTime) .
+}
+
+
+### Get the total number of bicycle parkings that are located in either the USERA district or the RETIRO district.
+
+SELECT (SUM(?count) AS ?Total) WHERE {
+  {
+    SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
+      ?bicycleParking <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio .
+      ?barrio <http://www.bikeradar.es/ontology/ont#isInDistrito> "USERA" .
+    }
+  }
+  UNION
+  {
+    SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
+      ?bicycleParking <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio .
+      ?barrio <http://www.bikeradar.es/ontology/ont#isInDistrito> "RETIRO" .
+    }
+  }
+}
+

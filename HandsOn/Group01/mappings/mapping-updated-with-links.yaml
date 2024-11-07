@@ -1,0 +1,36 @@
+prefixes:
+  ns: "http://www.bikeradar.es/ontology/ont#"
+  geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  res: "http://www.bikeradar.es/resources/"
+  owl: "http://www.w3.org/2002/07/owl#"
+
+mappings:
+  bikeParking:
+    sources:
+      - ['~jsonpath', '$[*]']  
+    s: res:BicycleParkingSpot/$(ID) 
+    po:
+      - [a, ns:BicycleParkingSpot]
+      - [ns:id, $(ID)]
+      - [ns:direccion, $(DIRECCION)]
+      - [ns:isInBarrio, res:Barrio/$(BARRIO)~iri]
+      - [ns:latitud, $(LATITUD), xsd:float]
+      - [ns:longitud, $(LONGITUD), xsd:float]
+      - [ns:hasFechaInstalacion, $(FECHA_INSTALACION), xsd:dateTime]
+      - [ns:modelo, $(MODELO)]
+  barrio:
+    sources:
+      - ['~jsonpath', '$[*]']
+    s: res:Barrio/$(BARRIO)
+    po:
+      - [a, ns:Barrio]  
+      - [ns:isInDistrito, res:Distrito/$(DISTRITO)~iri]
+      - [owl:sameAs, $(WIKIDATA_BARRIO)~iri] 
+  distrito:
+    sources:
+      - ['~jsonpath', '$[*]']
+    s: res:Distrito/$(DISTRITO)
+    po:
+      - [a, ns:Distrito]  
+      - [owl:sameAs, $(WIKIDATA_DISTRITO)~iri] 

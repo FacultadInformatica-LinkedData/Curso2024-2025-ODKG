@@ -1,0 +1,33 @@
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:ChargingStation_04VP a ns:ChargingStation ;
+    ns:idPoint "04VP" ;
+    ns:management "Convenio vía pública" ;
+    ns:state "Ejecutado" ;
+    ns:isLocated ns:Location_04VP ;
+    ns:placement "Vía pública" ;
+    ns:additionalInfo "-" ;
+    ns:numberOfDevices 1 ;
+    ns:characteristicsDevices "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" ;
+    ns:operator "GIC" ;
+    ns:hasDates ns:Dates_04VP ;
+    ns:schedule "24" .
+
+ns:Location_04VP a ns:Location ;
+    ns:address "Ronda de Valencia 1" ;
+    ns:containedInNeighborhood ns:Neighborhood_6 .
+
+ns:Neighborhood_2_6 a ns:Neighborhood ;
+    ns:neighborhoodName "Palos de Moguer" ;
+    ns:neighborhoodCode 6 ;
+    ns:containedInDistrict ns:District_2 .
+
+ns:District_2 a ns:District ;
+    ns:districtName "Arganzuela" ;
+    ns:districtCode 2 .
+
+ns:Dates_04VP a ns:Dates ;
+    ns:openingDate "2019-05-09T22:00:00Z"^^xsd:dateTime ;
+    ns:registerDate "2022-02-03T15:21:24Z"^^xsd:dateTime ;
+    ns:editionDate "2022-04-27T10:43:52Z"^^xsd:dateTime .

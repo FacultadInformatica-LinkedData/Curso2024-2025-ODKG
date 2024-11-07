@@ -1,0 +1,56 @@
+### See All BicycleParkingSpot
+
+SELECT ?bicycleParkingSpot ?id ?direccion ?latitud ?longitud
+WHERE {
+    ?bicycleParkingSpot a <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> ;
+                        <http://www.bikeradar.es/ontology/ont#id> ?id ;
+                        <http://www.bikeradar.es/ontology/ont#direccion> ?direccion ;
+                        <http://www.bikeradar.es/ontology/ont#latitud> ?latitud ;
+                        <http://www.bikeradar.es/ontology/ont#longitud> ?longitud .
+}
+
+
+### Consult the BicycleParkingSpot in a Specific Neighborhood
+
+SELECT ?bicycleParkingSpot ?id ?direccion ?latitud ?longitud ?barrio
+WHERE {
+    ?bicycleParkingSpot a <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> ;
+                        <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio ;
+                        <http://www.bikeradar.es/ontology/ont#id> ?id ;
+                        <http://www.bikeradar.es/ontology/ont#direccion> ?direccion ;
+                        <http://www.bikeradar.es/ontology/ont#latitud> ?latitud ;
+                        <http://www.bikeradar.es/ontology/ont#longitud> ?longitud .
+    FILTER (?barrio = "Canillas")  # Filtro para el barrio específico
+}
+
+
+### Consult the relationship between Neighborhood and District
+
+SELECT ?barrio ?distrito ?barrioEquivalente
+WHERE {
+    ?barrio a <http://www.bikeradar.es/ontology/ont#Barrio>;
+        <http://www.bikeradar.es/ontology/ont#isInDistrito> ?distrito .
+    OPTIONAL {
+        ?barrio <http://www.w3.org/2002/07/owl#sameAs> ?barrioEquivalente .
+    }
+}
+
+
+### Consult bicycle parking models
+
+SELECT DISTINCT ?modelo ?id
+WHERE {
+    ?bicycleParkingSpot a <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> ;
+                        <http://www.bikeradar.es/ontology/ont#modelo> ?modelo ;
+                        <http://www.bikeradar.es/ontology/ont#id> ?id .
+}
+
+
+### Check the date of installation of the BicycleParkingSpot
+
+SELECT ?bicycleParkingSpot ?id ?fechaInstalacion
+WHERE {
+    ?bicycleParkingSpot a <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> ;
+                        <http://www.bikeradar.es/ontology/ont#id> ?id ;
+                        <http://www.bikeradar.es/ontology/ont#hasFechaInstalacion> ?fechaInstalacion .
+}

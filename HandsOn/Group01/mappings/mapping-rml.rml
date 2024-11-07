@@ -1,0 +1,100 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ns: <http://www.bikeradar.es/ontology/ont#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix res: <http://www.bikeradar.es/resources/> .
+
+<#TriplesMap_bikeRadar>
+    rr:logicalSource [
+        rml:source "aparcabicis202410-updated-v2";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$[*]"
+    ];
+    rr:subjectMap [
+        rr:template "http://www.bikeradar.es/resources/BicycleParkingSpot/{ID}";
+        rr:termType rr:IRI;
+        rr:class ns:BicycleParkingSpot
+    ];
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant rdf:type;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:constant ns:BicycleParkingSpot;
+            rr:termType rr:IRI
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:id;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "ID"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:direccion;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "DIRECCION"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:isInDistrito;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "DISTRITO"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:isInBarrio;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rml:reference "BARRIO"
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:latitud;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "LATITUD";
+            rr:datatype xsd:float
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:longitud;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "LONGITUD";
+            rr:datatype xsd:float
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:hasFechaInstalacion;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "FECHA_INSTALACION";
+            rr:datatype xsd:dateTime
+        ]
+    ], [
+        rr:predicateMap [
+            rr:constant ns:modelo;
+            rr:termType rr:Literal
+        ];
+        rr:objectMap [
+            rml:reference "MODELO"
+        ]
+    ].

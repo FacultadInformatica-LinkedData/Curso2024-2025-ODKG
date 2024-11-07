@@ -1,0 +1,23 @@
+1. Query to retrieves the ID of each camera and its objects
+
+    SELECT DISTINCT ?type ?object
+    WHERE {
+      ?camera ?type ?object .
+    }
+
+2. Query to retrieve the distinct wikidata's URL
+
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    
+    SELECT distinct ?same_wikidata
+    WHERE {
+      ?camera owl:sameAs ?same_wikidata .
+    }
+
+3. Query to retrieves all distinct cameras that have a specific owl:sameAs, e.g., "https://wikidata.org/entity/Q300275".
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    
+    SELECT distinct ?camera 
+    WHERE {
+      ?camera owl:sameAs 'https://wikidata.org/entity/Q300275' .
+    }

@@ -1,0 +1,137 @@
+@prefix dbp: <https://dbpedia.org/page/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <https://schema.org/> .
+@prefix swpo: <http://sw-portal.deri.org/ontologies/swportal#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+swpo:hasLocation a owl:ObjectProperty ;
+    rdfs:label "has location" ;
+    rdfs:domain ns:OID ;
+    rdfs:range sc:Location .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+ns: a owl:Ontology ;
+    dc:creator "Group11" ;
+    dc:title "HandsOn2" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:Charge_Point a owl:Class ;
+    rdfs:label "Charge_ Point" .
+
+ns:IdPunto a owl:Class ;
+    rdfs:label "Id Punto" .
+
+ns:caracteristicasEquipo a owl:DatatypeProperty ;
+    rdfs:label "caracteristicas equipo" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:codigoDeDistrito a owl:DatatypeProperty ;
+    rdfs:label "codigo de distrito" ;
+    rdfs:domain ns:Distrito .
+
+ns:dates a owl:ObjectProperty ;
+    rdfs:label "dates" ;
+    rdfs:domain ns:OID ;
+    rdfs:range ns:Fechas .
+
+ns:emplazamiento a owl:ObjectProperty ;
+    rdfs:label "emplazamiento" ;
+    rdfs:domain sc:Location ;
+    rdfs:range ns:Emplazamiento .
+
+ns:equipamiento a owl:ObjectProperty ;
+    rdfs:label "equipamiento" ;
+    rdfs:domain ns:OID ;
+    rdfs:range ns:ChargePoint .
+
+ns:estado a owl:DatatypeProperty ;
+    rdfs:label "estado" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:fechaEdicion a owl:DatatypeProperty ;
+    rdfs:label "fecha edicion" ;
+    rdfs:domain ns:Fechas .
+
+ns:gestion a owl:ObjectProperty ;
+    rdfs:label "gestion" ;
+    rdfs:domain ns:OID ;
+    rdfs:range ns:Gestion .
+
+ns:hasPublicationDate a owl:DatatypeProperty ;
+    rdfs:label "has publication date" ;
+    rdfs:domain ns:Fechas .
+
+ns:idPunto a owl:DatatypeProperty ;
+    rdfs:label "id punto" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:infoAdicional a owl:DatatypeProperty ;
+    rdfs:label "info adicional" ;
+    rdfs:domain ns:Emplazamiento .
+
+ns:infoFechaApertura a owl:DatatypeProperty ;
+    rdfs:label "info fecha apertura" ;
+    rdfs:domain ns:Fechas .
+
+ns:neighborhoodCode a owl:DatatypeProperty ;
+    rdfs:label "neighborhood code" ;
+    rdfs:domain dbp:Neighborhood .
+
+ns:numeroEquipos a owl:DatatypeProperty ;
+    rdfs:label "numero equipos" ;
+    rdfs:domain ns:ChargePoint .
+
+ns:operador a owl:ObjectProperty ;
+    rdfs:label "operador" ;
+    rdfs:domain ns:OID ;
+    rdfs:range ns:Operador .
+
+sc:openingHours a owl:ObjectProperty ;
+    rdfs:label "opening hours" ;
+    rdfs:domain ns:OID ;
+    rdfs:range sc:Schedule .
+
+ns:Barrio a owl:Class ;
+    rdfs:label "Barrio" ;
+    rdfs:subClassOf sc:Location .
+
+ns:Distrito a owl:Class ;
+    rdfs:label "Distrito" ;
+    rdfs:subClassOf ns:Barrio .
+
+ns:Gestion a owl:Class ;
+    rdfs:label "Gestion" .
+
+ns:Operador a owl:Class ;
+    rdfs:label "Operador" .
+
+dbp:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" .
+
+sc:Schedule a owl:Class ;
+    rdfs:label "Schedule" .
+
+ns:Emplazamiento a owl:Class ;
+    rdfs:label "Emplazamiento" .
+
+sc:Location a owl:Class ;
+    rdfs:label "Location" .
+
+ns:ChargePoint a owl:Class ;
+    rdfs:label "Charge Point" .
+
+ns:Fechas a owl:Class ;
+    rdfs:label "Fechas" .
+
+ns:OID a owl:Class ;
+    rdfs:label "O I D" .
+

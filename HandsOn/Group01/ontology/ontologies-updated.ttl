@@ -1,0 +1,97 @@
+@prefix ns: <http://www.bikeradar.es/ontology/ont#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.bikeradar.es/ontology/ont#> .
+
+<http://www.bikeradar.es/ontology/ont#> rdf:type owl:Ontology ;
+                                     mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.bikeradar.es/ontology/ont#isInBarrio
+ns:isInBarrio rdf:type owl:ObjectProperty ;
+              rdfs:domain ns:BicycleParkingSpot ;
+              rdfs:range ns:Barrio ;
+              rdfs:label "is in barrio" .
+
+
+###  http://www.bikeradar.es/ontology/ont#isInDistrito
+ns:isInDistrito rdf:type owl:ObjectProperty ;
+                rdfs:domain ns:Barrio ;
+                rdfs:range ns:Distrito ;
+                rdfs:label "is in distrito" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.bikeradar.es/ontology/ont#hasFechaInstalacion
+ns:hasFechaInstalacion rdf:type owl:DatatypeProperty ;
+                       rdfs:domain ns:BicycleParkingSpot ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:label "has fecha instalacion" .
+
+
+###  http://www.bikeradar.es/ontology/ont#id
+ns:id rdf:type owl:DatatypeProperty ;
+      rdfs:domain ns:BicycleParkingSpot ;
+      rdfs:range xsd:string;
+      rdfs:label "id" .
+
+###  http://www.bikeradar.es/ontology/ont#latitud
+ns:latitud rdf:type owl:DatatypeProperty ;
+           rdfs:domain ns:BicycleParkingSpot ;
+           rdfs:range xsd:float;
+           rdfs:label "latitud" .
+
+###  http://www.bikeradar.es/ontology/ont#longitud
+ns:longitud rdf:type owl:DatatypeProperty ;
+            rdfs:domain ns:BicycleParkingSpot ;
+            rdfs:range xsd:float;
+            rdfs:label "longitud" .
+
+###  http://www.bikeradar.es/ontology/ont#direccion
+ns:direccion rdf:type owl:DatatypeProperty ;
+             rdfs:domain ns:BicycleParkingSpot ;
+             rdfs:range xsd:string;
+             rdfs:label "dirección" .
+
+###  http://www.bikeradar.es/ontology/ont#modelo
+ns:modelo rdf:type owl:DatatypeProperty ;
+          rdfs:domain ns:BicycleParkingSpot ;
+          rdfs:range xsd:string;
+          rdfs:label "modelo" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.bikeradar.es/ontology/ont#Barrio
+ns:Barrio rdf:type owl:Class ;
+          rdfs:label "Barrio" .
+
+
+###  http://www.bikeradar.es/ontology/ont#BicycleParkingSpot
+ns:BicycleParkingSpot rdf:type owl:Class ;
+                      rdfs:label "Bicycle Parking Spot" .
+
+
+###  http://www.bikeradar.es/ontology/ont#Distrito
+ns:Distrito rdf:type owl:Class ;
+            rdfs:label "Distrito" .

@@ -1,0 +1,108 @@
+@prefix : <http://fuelpricespain.org/> .
+@prefix ns: <http://fuelpricespain.org/ontology> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://gasolineras.org/ontology> .
+
+# Definición de la Ontología
+ns:GasolinerasOntology a owl:Ontology ;
+    dc:creator "Grupo de Desarrollo" ;
+    dc:description "Ontología para representar gasolineras y sus ubicaciones" ;
+    dc:title "Ontología de Gasolineras" ;
+    owl:versionInfo "0.1" .
+
+# Clases
+ns:GasStation a owl:Class ;
+    rdfs:label "Gasolinera" .
+
+ns:Ubicacion a owl:Class ;
+    rdfs:label "Ubicación" .
+
+# Propiedades de Datos
+ns:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:locatedInProvince a owl:DatatypeProperty ;
+    rdfs:label "locatedInProvince" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:locatedInMunicipality a owl:DatatypeProperty ;
+    rdfs:label "locatedInMunicipality" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:locality a owl:DatatypeProperty ;
+    rdfs:label "locality" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postalCode" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:string .
+
+ns:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
+ns:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:domain ns:Ubicacion ;
+    rdfs:range xsd:float .
+
+ns:priceOf95E5 a owl:DatatypeProperty ;
+    rdfs:label "priceOf95E5" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:float .
+
+ns:priceOf98E5 a owl:DatatypeProperty ;
+    rdfs:label "priceOf98E5" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:float .
+
+ns:priceOfDieselA a owl:DatatypeProperty ;
+    rdfs:label "priceOfDieselA" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:float .
+
+ns:priceOfDieselPremium a owl:DatatypeProperty ;
+    rdfs:label "priceOfDieselPremium" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:float .
+
+ns:time a owl:DatatypeProperty ;
+    rdfs:label "time" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:string .
+
+ns:stationName a owl:DatatypeProperty ;
+    rdfs:label "stationName" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:string .
+
+ns:sellType a owl:DatatypeProperty ;
+    rdfs:label "sellType" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:string .
+
+ns:rem a owl:DatatypeProperty ;
+    rdfs:label "rem" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:string .
+
+ns:typeofservice a owl:DatatypeProperty ;
+    rdfs:label "typeofservice" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range xsd:string .
+
+# Propiedades de Objetos
+ns:tieneUbicacion a owl:ObjectProperty ;
+    rdfs:label "tiene ubicación" ;
+    rdfs:domain ns:GasStation ;
+    rdfs:range ns:Ubicacion .

@@ -1,0 +1,161 @@
+@prefix mair: <http://MadridAirQuality.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dbowl: <http://dbpedia.org/ontology/> .
+
+# Ontology Definition
+mair:AirQualityOntology a owl:Ontology ;
+    rdfs:label "Air Quality Monitoring Ontology" ;
+    rdfs:comment "An ontology for representing air quality monitoring data including locations, provinces, municipalities, stations, and measurements." .
+
+# Class Definitions
+mair:Location a rdfs:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A physical location where air quality measurements are taken." .
+
+dbowl:Province rdfs:label "Province" ;
+    rdfs:comment "A province where air quality measurements are taken." ;
+    rdfs:subClassOf mair:Location .  # Province is a subclass of Location
+
+wd:Q15284 rdfs:label "Municipality" ;
+    rdfs:comment "A municipality where air quality measurements are taken." ;
+    rdfs:subClassOf mair:Location .  # Municipality is also a subclass of Location
+
+mair:Station a rdfs:Class ;
+    rdfs:label "Station" ;
+    rdfs:comment "A monitoring station that measures air quality at a specific location." ;
+    rdfs:subClassOf mair:Location .  # A Station is also a subclass of Location
+
+mair:Magnitude a rdfs:Class ;
+    rdfs:label "Magnitude" ;
+    rdfs:comment "A type of measurement related to air quality, such as pollutants or meteorological parameters." .
+
+mair:Measurement a rdfs:Class ;
+    rdfs:label "Measurement" ;
+    rdfs:comment "A recorded observation of air quality data at a specific time and location." .
+
+# Object Properties
+#Location
+mair:hasProvince a rdf:Property ;
+    rdfs:label "has province" ;
+    rdfs:comment "Relates a Location to its Province." ;
+    rdfs:domain mair:Location ;
+    rdfs:range dbowl:Province .
+
+mair:hasMunicipality a rdf:Property ;
+    rdfs:label "has municipality" ;
+    rdfs:comment "Relates a Province to its Municipality." ;
+    rdfs:domain dbowl:Province ;
+    rdfs:range wd:Q15284 .
+
+mair:hasStation a rdf:Property ;
+    rdfs:label "has station" ;
+    rdfs:comment "Relates a Municipality to its Stations." ;
+    rdfs:domain wd:Q15284 ;
+    rdfs:range mair:Station .
+
+#Measurements
+mair:hasMagnitude a rdf:Property ;
+    rdfs:label "has magnitude" ;
+    rdfs:comment "Relates a measurement to a magnitude" ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range mair:Magnitude .
+
+#Station
+mair:hasMeasurement a rdf:Property ;
+    rdfs:label "has measurement" ;
+    rdfs:comment "Relates the station to its measurements" ;
+    rdfs:domain mair:Station ;
+    rdfs:range mair:Measurement .
+
+# Datatype Properties
+#Datatype for Magnitude
+mair:hasMagnitudeCode a rdf:Property ;
+    rdfs:label "has magnitude code" ;
+    rdfs:comment "The numerical value of the magnitude." ;
+    rdfs:domain mair:Magnitude ;
+    rdfs:range xsd:integer .
+
+mair:hasMagnitudeName a rdf:Property ;
+    rdfs:label "has magnitude name" ;
+    rdfs:comment "The string value of the magnitude." ;
+    rdfs:domain mair:Magnitude ;
+    rdfs:range xsd:string .
+
+mair:hasMagnitudeMeasurementUnit a rdf:Property ;
+    rdfs:label "has magnitude measurement unit" ;
+    rdfs:comment "The string value of the magnitude measurement unit." ;
+    rdfs:domain mair:Magnitude ;
+    rdfs:range xsd:string .
+
+#Datatype for Measurements
+mair:hasMeasurementValue a rdf:Property ;
+    rdfs:label "has measurement value" ;
+    rdfs:comment "The numerical value of the measurement." ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range xsd:decimal .
+
+mair:hasMeasurementDay a rdf:Property ;
+    rdfs:label "has day" ;
+    rdfs:comment "The day when the measurement was recorded." ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range xsd:string .
+
+mair:hasMeasurementMonth a rdf:Property ;
+    rdfs:label "has month" ;
+    rdfs:comment "The month when the measurement was recorded." ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range xsd:integer .
+
+mair:hasMeasurementYear a rdf:Property ;
+    rdfs:label "has year" ;
+    rdfs:comment "The year when the measurement was recorded." ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range xsd:integer .
+
+mair:isMeasurementValid a rdf:Property ;
+    rdfs:label "is measurement valid" ;
+    rdfs:comment "Determines if the measurement is valid" ;
+    rdfs:domain mair:Measurement ;
+    rdfs:range xsd:boolean .
+
+#Datatype for Station
+mair:hasStationLocationID a rdf:Property ;
+    rdfs:label "has station location ID" ;
+    rdfs:comment "The numerical value of the station where the station is located" ;
+    rdfs:domain mair:Station ;
+    rdfs:range xsd:integer .
+
+mair:hasStationName a rdf:Property ;
+    rdfs:label "has station name" ;
+    rdfs:comment "The name of the station" ;
+    rdfs:domain mair:Station ;
+    rdfs:range xsd:string .
+
+#Municipality (using Wikidata)
+wd:P131 rdfs:label "has municipality location id" ;
+    rdfs:comment "The numerical value for the municipality" ;
+    rdfs:domain wd:Q15284 ;
+    rdfs:range xsd:integer .
+
+wd:P1448 rdfs:label "has municipality name" ;
+    rdfs:comment "The name of the municipality" ;
+    rdfs:domain wd:Q15284 ;
+    rdfs:range xsd:string .
+
+#Province (using DBpedia)
+dbowl:code rdfs:label "has province location id" ;
+    rdfs:comment "The numerical value for the province" ;
+    rdfs:domain dbowl:Province ;
+    rdfs:range xsd:integer .
+
+dbowl:name rdfs:label "has province name" ;
+    rdfs:comment "The name of the province" ;
+    rdfs:domain dbowl:Province ;
+    rdfs:range xsd:string .
+
+mair:sameAsWikidataMeasurement rdfs:subPropertyOf owl:sameAs .
+mair:sameAsWikidataSIUnit rdfs:subPropertyOf owl:sameAs .

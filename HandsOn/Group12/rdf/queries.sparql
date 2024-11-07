@@ -1,0 +1,53 @@
+# Query 1: Get the Location of All Accidents
+PREFIX ns: <http://madrid.com/ns#>
+SELECT ?accident ?location
+WHERE {
+  ?accident ns:location ?location .
+}
+
+#Query 2: Retrieve the Accident Type and Date
+PREFIX ns: <http://madrid.com/ns#>
+SELECT ?accident ?accidentType ?date
+WHERE {
+  ?accident ns:accidentType ?accidentType ;
+            ns:date ?date .
+}
+
+
+# Query 3: Filter Accidents with Injuries
+PREFIX ns: <http://madrid.com/ns#>
+SELECT ?accident ?injurySeverity ?injurySeverityCode
+WHERE {
+  ?accident ns:injurySeverity ?injurySeverity ;
+            ns:injurySeverityCode ?injurySeverityCode .
+}
+
+
+# Query 4: Retrieve Accidents with Multiple Injured Person
+PREFIX ns: <http://madrid.com/ns#>
+SELECT ?accident ?injurySeverity ?injurySeverityCode
+WHERE {
+  ?accident ns:injurySeverity ?injurySeverity ;
+            ns:injurySeverityCode ?injurySeverityCode .
+  
+  FILTER (COUNT(?injurySeverity) > 1)
+}
+GROUP BY ?accident ?injurySeverity ?injurySeverityCode
+HAVING (COUNT(?injurySeverity) > 1)
+
+# Query 5: Retrieve Accidents in Winter Months 
+PREFIX ns: <http://madrid.com/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?accident ?date ?time ?location ?injurySeverity ?injurySeverityCode ?weatherCondition
+WHERE {
+  ?accident ns:injurySeverity ?injurySeverity ;
+            ns:injurySeverityCode ?injurySeverityCode ;
+            ns:date ?date ;
+            ns:time ?time ;
+            ns:location ?location ;
+            ns:weatherCondition ?weatherCondition .
+    
+  FILTER (MONTH(xsd:date(?date)) IN (12, 1, 2))
+}
+ORDER BY DESC(?injurySeverityCode)
+

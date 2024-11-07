@@ -1,0 +1,49 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <https://www.w3.org/TR/prov-o/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+# ScholarlyArticle (Riverside Study)
+rsd:RiversideStudy a schema:ScholarlyArticle ;
+    schema:name "Hyperlocal monitoring of traffic-related air pollution to assess near-term impacts of sustainable trarsdportation interventiorsd"^^xsd:string ;
+    schema:author "Cesunica Ivey, Alexander Nguyen, Ruoming Xu, Khanh Hao Do, Matthew Peng Barth"^^xsd:string  ;
+    schema:datePublished "2023-02-06"^^xsd:date .
+
+# Dataset (May Dataset)
+rsd:DatasetMay a schema:Dataset ;
+    schema:name "Pollution on Riverside California"^^xsd:string ;
+    schema:about "Measurements of PM2.5 and NO2 on 4 of the main intersectiorsd of Riverside California, with climatic measurements"^^xsd:string ;
+    schema:hasPart rsd:MyArticle .
+    prov:isDerivedFrom rsd:RiversideStudy
+
+# Article (My Article)
+rsd:MyArticle a schema:Article ;
+    schema:name "ReadMe PM2.5"^^xsd:string ;
+    schema:about "Metadata on the columns of PM2.5 dataset"^^xsd:string .
+
+# Observation 1
+rsd:Observation1 a schema:Observation ;
+    schema:variableMeasured "PO2"^^xsd:string ;
+    schema:unitsText     "ppm"^^xsd:string ;
+    schema:value "0.8"^^xsd:float ;
+    schema:observationDate "2023-05-01T12:00:00"^^time:dateTimeStamp ;
+    schema:observationAbout rsd:Location1 .
+    schema:isPartOf: rsd:DatasetMay
+
+# GeoCoordinates for Location 1 (Intersection Magnolia)
+rsd:Location1 a schema:Place ;
+    schema:latitude 33.9533^^xsd:float ;
+    schema:longitude -117.3962^^xsd:float ;
+    schema:name "Magnolia"^^xsd:string ;
+    schema:containedInPlace rsd:RiversideCity .
+
+# Riverside City contained in Riverside County
+rsd:RiversideCity a schema:City ;
+    schema:name "Riverside"^^xsd:string ;
+    schema:containedInPlace rsd:RiversideCounty .

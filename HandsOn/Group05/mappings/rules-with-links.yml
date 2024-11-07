@@ -1,0 +1,145 @@
+prefixes:
+
+    dc: "http://purl.org/dc/elements/1.1/" 
+    foaf: "http://xmlns.com/foaf/0.1/" 
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    schema: "https://schema.org/"
+    prov: "https://www.w3.org/TR/prov-o/"
+    rps: "http://riversidepollutionstudy.org/"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    owl: "http://www.w3.org/2002/07/owl#"
+    wdp: "https://www.wikidata.org/wiki/Property"
+    wd: "http://www.wikidata.org/entity/"
+    dcid: "https://datacommons.org/browser/"
+
+sources:
+  observations:
+    access: "riverside-pollution-study-with-links.csv"
+    referenceFormulation: csv
+  datasets:
+    access: "datasets.csv"
+    referenceFormulation: csv
+  scholarly_articles:
+    access: "scholarly_articles.csv"
+    referenceFormulation: csv
+  readmes:
+    access: "readmes.csv"
+    referenceFormulation: csv
+  zip_codes:
+    access: "datacommons_zip_code_data.csv"
+    referenceFormulation: csv
+
+
+mappings:
+    TriplesMap1:
+        sources:
+            - observations
+        s: rps:Observation/instance/$(observation_id)
+        po:
+            - [rdf:type, schema:Observation~iri]
+            - [schema:variableMeasured, $(element), xsd:string]
+            - [schema:value, $(observed), xsd:float]
+            - [schema:unitsText, $(units), xsd:string]
+            - [schema:observationDate, $(datetime_america_los_angeles), xsd:dateTime]
+            - [schema:observationAbout, rps:Place/instance/$(latitude)_$(longitude)~iri]
+            - [schema:isPartOf,rps:Dataset/instance/$(dataset_id)]
+       
+    TriplesMap2:
+      sources:
+          - observations
+      s: rps:Place/instance/$(latitude)_$(longitude)
+      po:
+          - [rdf:type, schema:Place~iri]
+          - [schema:latitude, $(latitude), xsd:double]
+          - [schema:longitude, $(longitude), xsd:double]
+          - [rdfs:label, $(location), xsd:string]
+          - [schema:address, rps:PostalAddress/instance/$(postal code)~iri]
+          - [schema:containedInPlace, rps:City/instance/$(city)~iri]
+          # - [schema:address, $(postal code), xsd:integer]
+  
+
+    TriplesMap3:
+      sources:
+          - observations
+      s: rps:City/instance/$(city)
+      po:
+          - [rdf:type, schema:City~iri] 
+          - [rdfs:label, $(city), xsd:string]
+          - [owl:sameAs, $(wikidata_url)~iri]
+
+    TriplesMap7:
+      sources:
+          - datasets
+      s: rps:Dataset/instance/$(dataset_id)
+      po:
+          - [rdf:type, schema:Dataset~iri]
+          - [rdfs:label, $(name), xsd:string]
+          - [schema:about, $(description), xsd:string]
+          - [schema:identifier, $(uri), xsd:string]
+          - [rps:hasDocumentation, rps:Article/instance/$(readme_id)~iri]
+          - [prov:isDerivedFrom, rps:ScholarlyArticle/instance/$(scholarly_article_id)~iri]
+    
+    TriplesMap8:
+      sources:
+          - scholarly_articles
+      s: rps:ScholarlyArticle/instance/$(scholarly_article_id)
+      po:
+          - [rdf:type, schema:ScholarlyArticle~iri]
+          - [rdfs:label, $(name), xsd:string]
+          - [schema:author, $(author), xsd:string]
+          - [schema:datePublished, $(datePublished), xsd:date]
+          - [schema:identifier, $(uri), xsd:string]
+      
+    
+    TriplesMap9:
+      sources:
+        - readmes
+      s: rps:Article/instance/$(article_id)
+      po:
+          - [rdf:type, schema:Article~iri]
+          - [rdfs:label, $(name), xsd:string]
+          - [schema:about, $(description), xsd:string]
+          - [schema:identifier, $(uri), xsd:string]
+
+    TriplesMap11:
+      sources:
+          - observations
+      s: $(wikidata_url)
+      po:
+          - [rdf:type, wd:Q1093829~iri]
+          - [rdfs:label, $(city), xsd:string]
+          - [wdp:P31, $(instance of), xsd:string]
+          - [wdp:P6, $(head of government), xsd:string]
+          - [wdp:P473, $(local dialing code), xsd:string]
+          - [wdp:P856, $(official website), xsd:string]
+          - [wdp:P1082, $(population), xsd:integer]
+          - [wdp:P2044, $(elevation above sea level), xsd:integer]
+          - [wdp:P571, $(inception), xsd:date]
+          - [wdp:P8138, $(wikidata_county_url)~iri]
+     
+    TriplesMap12:
+      sources:
+          - observations
+      s: $(wikidata_county_url)
+      po:
+          - [rdf:type, wd:Q13212489~iri]
+          - [rdfs:label, $(county), xsd:string]
+          - [wdp:P17, $(country), xsd:string]
+          - [wdp:P361, $(state), xsd:string]
+
+    TriplesMap13:
+      sources:
+          - zip_codes
+      s: rps:PostalAddress/instance/$(zip_code)
+      po:
+          - [rdf:type, schema:PostalAddress:~iri]
+          - [rdfs:postalCode, $(zip_code), xsd:string]
+          - [rps:hasPopulationCount, $(Count_Person), xsd:integer]
+          - [rps:hasPersonMedianIncome, $(Median_Income_Person), xsd:integer]
+          - [rps:hasPersonBelowPovertyLevelLastTwelveMonthsCount, $(Count_Person_BelowPovertyLevelInThePast12Months), xsd:integer]
+          - [rps:hasHousingUnitCount, $(Count_HousingUnit), xsd:integer]
+          - [rps:hasPercentPersonPhysicalInactivity, $(Percent_Person_PhysicalInactivity), xsd:float]
+          - [rps:hasPercentPersonWithHighCholesterol,$(Percent_Person_WithHighCholesterol), xsd:float]
+          - [rps:hasPercentPersonWithHighBloodPressure,$(Percent_Person_WithHighBloodPressure), xsd:float]
+          - [rps:hasPercentPersonObesity, $(Percent_Person_Obesity), xsd:float]
+   

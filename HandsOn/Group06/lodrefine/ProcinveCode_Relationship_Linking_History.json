@@ -1,0 +1,38 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCE_NAME",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10742",
+        "name": "autonomous community of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCE_NAME to type Q10742"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCE_NAME",
+    "expression": "grel:\"https://www.wikidata.org/wiki/Q5756\"",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_WikiData_CommunityMadrid",
+    "columnInsertIndex": 2,
+    "description": "Create column same_as_WikiData_CommunityMadrid at index 2 based on column PROVINCE_NAME using expression grel:\"https://www.wikidata.org/wiki/Q5756\""
+  }
+]

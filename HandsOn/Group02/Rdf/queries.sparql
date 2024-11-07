@@ -1,0 +1,52 @@
+Query 1: All gas stations with DieselA
+
+PREFIX ex: <https://fuelpricespain.org/gasstations#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+SELECT ?stationName ?locality ?priceOfDieselA
+WHERE {
+  ?station a ex:GasStation;
+           ex:stationName ?stationName;
+           ex:locality ?locality;
+           ex:priceOfDieselA ?priceOfDieselA.
+}
+
+Query 2: Gas station names, localities, and 95E5 gasoline prices for stations located in the province of Madrid.
+
+PREFIX ex: <https://fuelpricespain.org/gasstations#>
+
+SELECT ?stationName ?locality ?priceOf95E5
+WHERE {
+  ?station a ex:GasStation;
+           ex:stationName ?stationName;
+           ex:locality ?locality;
+           ex:locatedInProvince "Madrid";
+           ex:priceOf95E5 ?priceOf95E5.
+}
+
+Query 3: Gas station names, localities, and types of service for stations open 24 hours every day.
+
+PREFIX ex: <https://fuelpricespain.org/gasstations#>
+
+SELECT ?stationName ?locality ?typeofservice
+WHERE {
+  ?station a ex:GasStation;
+           ex:stationName ?stationName;
+           ex:locality ?locality;
+           ex:time "L-D: 24H";
+           ex:typeofservice ?typeofservice.
+}
+
+Query 4: Gas station names and their geographical coordinates (latitude and longitude) for stations located in the locality of Badajoz.
+
+PREFIX ex: <https://fuelpricespain.org/gasstations#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+SELECT ?stationName ?lat ?long
+WHERE {
+  ?station a ex:GasStation;
+           ex:stationName ?stationName;
+           geo:lat ?lat;
+           geo:long ?long;
+           ex:locality "BADAJOZ".
+}
