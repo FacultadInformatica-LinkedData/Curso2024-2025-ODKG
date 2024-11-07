@@ -99,20 +99,11 @@ prov:wasDerivedFrom a owl:ObjectProperty ;
     rdfs:domain schema:Dataset ;
     rdfs:range schema:ScholarlyArticle .
 
-schema:Country a owl:Class ;
-    rdfs:label "Country" .
-
-schema:AdministrativeArea a owl:Class ;
-    rdfs:label "Administrative Area" .
-
 schema:Article a owl:Class ;
     rdfs:label "Article" .
 
 schema:City a owl:Class ;
     rdfs:label "City" .
-
-schema:State a owl:Class ;
-    rdfs:label "State" .
 
 schema:Place a owl:Class ;
     rdfs:label "Place" .

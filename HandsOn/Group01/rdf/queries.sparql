@@ -32,14 +32,18 @@ FILTER(?date >= "2018-01-01"^^xsd:dateTime && ?date <= "2020-12-31"^^xsd:dateTim
 ### Get the total number of bicycle parkings that are located in either the USERA district or the RETIRO district.
 
 SELECT (SUM(?count) AS ?Total) WHERE {
-{
-SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
-?bicycleParking <http://www.bikeradar.es/ontology/ont#isInDistrito> "USERA".}
-}
-UNION
-{
-SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
-?bicycleParking <http://www.bikeradar.es/ontology/ont#isInDistrito> "RETIRO".}
-}
+  {
+    SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
+      ?bicycleParking <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio .
+      ?barrio <http://www.bikeradar.es/ontology/ont#isInDistrito> "USERA" .
+    }
+  }
+  UNION
+  {
+    SELECT (COUNT(?bicycleParking) AS ?count) WHERE {
+      ?bicycleParking <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio .
+      ?barrio <http://www.bikeradar.es/ontology/ont#isInDistrito> "RETIRO" .
+    }
+  }
 }
 

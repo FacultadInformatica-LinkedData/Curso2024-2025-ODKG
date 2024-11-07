@@ -10,17 +10,17 @@ WHERE {
 }
 
 
-### Consult the BicycleParkingSpot in a Specific District
+### Consult the BicycleParkingSpot in a Specific Neighborhood
 
-SELECT ?bicycleParkingSpot ?id ?direccion ?latitud ?longitud ?distrito
+SELECT ?bicycleParkingSpot ?id ?direccion ?latitud ?longitud ?barrio
 WHERE {
     ?bicycleParkingSpot a <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> ;
-                        <http://www.bikeradar.es/ontology/ont#isInDistrito> ?distrito ;
+                        <http://www.bikeradar.es/ontology/ont#isInBarrio> ?barrio ;
                         <http://www.bikeradar.es/ontology/ont#id> ?id ;
                         <http://www.bikeradar.es/ontology/ont#direccion> ?direccion ;
                         <http://www.bikeradar.es/ontology/ont#latitud> ?latitud ;
                         <http://www.bikeradar.es/ontology/ont#longitud> ?longitud .
-    FILTER (?distrito = "Carabanchel")  # Filtro para el distrito específico
+    FILTER (?barrio = "Canillas")  # Filtro para el barrio específico
 }
 
 
@@ -28,10 +28,10 @@ WHERE {
 
 SELECT ?barrio ?distrito ?barrioEquivalente
 WHERE {
-    ?barrio a ont:Barrio ;
-            ont:isInDistrito ?distrito .
+    ?barrio a <http://www.bikeradar.es/ontology/ont#Barrio>;
+        <http://www.bikeradar.es/ontology/ont#isInDistrito> ?distrito .
     OPTIONAL {
-        ?barrio owl:sameAs ?barrioEquivalente .
+        ?barrio <http://www.w3.org/2002/07/owl#sameAs> ?barrioEquivalente .
     }
 }
 

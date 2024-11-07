@@ -1,0 +1,180 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns: <http://madrid.eventos.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns: a owl:Ontology ;
+    dc:title "MadridEvents Ontology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+ns:accessibilityLevel a owl:DatatypeProperty ;
+    rdfs:label "accessibility level" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:district a owl:DatatypeProperty ;
+    rdfs:label "district" ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:string .
+
+ns:equipment a owl:DatatypeProperty ;
+    rdfs:label "equipment" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:eventName a owl:DatatypeProperty ;
+    rdfs:label "event name" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+ns:eventType a owl:DatatypeProperty ;
+    rdfs:label "event type" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+ns:excludedDays a owl:DatatypeProperty ;
+    rdfs:label "excluded days" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+ns:hasContactDetails a owl:ObjectProperty ;
+    rdfs:label "has contact details" ;
+    rdfs:domain schema:Place ;
+    rdfs:range ns:ContactDetails .
+
+ns:id a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+ns:longDuration a owl:DatatypeProperty ;
+    rdfs:label "long duration" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:boolean .
+
+ns:neighborhood a owl:DatatypeProperty ;
+    rdfs:label "neighborhood" ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:string .
+
+ns:openingHours a owl:DatatypeProperty ;
+    rdfs:label "opening hours" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:placeName a owl:DatatypeProperty ;
+    rdfs:label "place name" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:placeType a owl:DatatypeProperty ;
+    rdfs:label "place type" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+ns:transportation a owl:DatatypeProperty ;
+    rdfs:label "transportation" ;
+    rdfs:domain ns:ContactDetails ;
+    rdfs:range xsd:string .
+
+ns:weekDays a owl:DatatypeProperty ;
+    rdfs:label "week days" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+dc:title a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+schema:about a owl:DatatypeProperty ;
+    rdfs:label "about" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+schema:address a owl:DatatypeProperty ;
+    rdfs:label "address" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .
+
+schema:audience a owl:DatatypeProperty ;
+    rdfs:label "audience" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:string .
+
+schema:doorTime a owl:DatatypeProperty ;
+    rdfs:label "door time" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:time .
+
+schema:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:domain ns:ContactDetails ;
+    rdfs:range xsd:string .
+
+schema:endDate a owl:DatatypeProperty ;
+    rdfs:label "end date" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:dateTime .
+
+schema:geo a owl:ObjectProperty ;
+    rdfs:label "geo" ;
+    rdfs:domain schema:Place ;
+    rdfs:range schema:GeoCoordinates .
+
+schema:isAccessibleForFree a owl:DatatypeProperty ;
+    rdfs:label "is accessible for free" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:boolean .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:float .
+
+schema:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude" ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:float .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:integer .
+
+schema:startDate a owl:DatatypeProperty ;
+    rdfs:label "start date" ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:dateTime .
+
+schema:telephone a owl:DatatypeProperty ;
+    rdfs:label "telephone" ;
+    rdfs:domain ns:ContactDetails ;
+    rdfs:range xsd:string .
+
+schema:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:domain schema:Event,
+        schema:Place ;
+    rdfs:range xsd:string .
+
+ns:ContactDetails a owl:Class ;
+    rdfs:label "Contact Details" .
+
+schema:GeoCoordinates a owl:Class ;
+    rdfs:label "Geo Coordinates" .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
+
+schema:Event a owl:Class ;
+    rdfs:label "Event" .
+

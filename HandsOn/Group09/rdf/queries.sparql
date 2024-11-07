@@ -1,31 +1,36 @@
 # Query 1: Give all the stations and their IDs
 
-SELECT ?Subject ?Value WHERE { 
-    ?Subject <http://mAIRdrid.org/ontology/nationalStationID> ?Value. 
+  SELECT ?v ?v2 WHERE {
+    ?s <http://www.w3.org/2000/01/rdf-schema#label> ?v.
+    FILTER(LANG(?v) = "es")
+    ?s <http://mAIRdrid.org/ontology/nationalStationID> ?v2.
   }
 
 # Query 2: Give all medition results that are QuantityValue type
 
-SELECT ?Subject WHERE { 
+  SELECT ?Subject WHERE {
     ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#QuantityValue> .
-  } 
+  }
 
 # Query 3: Give all sensors' location labels
 
-SELECT ?Subject ?Value WHERE { 
-    ?Subject <http://www.w3.org/2000/01/rdf-schema#label> ?Value.
+  SELECT ?s ?v WHERE {
+    ?s <http://www.w3.org/2000/01/rdf-schema#label> ?v.
+    FILTER(LANG(?v) = "es")
   }
 
 # Query 4: Give all the station's sensors that can metric the air quality
 
-SELECT ?Subject  WHERE { 
+  SELECT ?Subject  WHERE {
     ?Subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mAIRdrid.org/ontology/AirQualityMetric>.
-  } 
+  }
 
 # Query 5: Give all the stations with their altitude, latitude and longitude
 
-SELECT  ?Subject ?Value ?Value2 ?Value3 WHERE {
-    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ?Value.
-    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?Value2.
-    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?Value3.
+  SELECT ?v ?v2 ?v3 ?v4 WHERE {
+    ?Subject <http://www.w3.org/2000/01/rdf-schema#label> ?v.
+    FILTER(LANG(?v) = "es")
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ?v2.
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?v3.
+    ?Subject <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?v4.
   }  

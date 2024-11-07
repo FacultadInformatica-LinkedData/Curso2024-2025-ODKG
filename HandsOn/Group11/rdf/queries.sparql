@@ -1,15 +1,13 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#>
-PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 # show all charging stations with all properties
 SELECT ?s ?o ?p
 WHERE {
   ?s a ns:ChargingStation .
-  ?s ?o ?p ;
+  ?s ?o ?p .
 }
-
 
 # show each charging station along with its operator
 SELECT ?chargingStation ?operator
@@ -19,20 +17,20 @@ WHERE {
 }
 
 # show each charging station with its address, neighborhood and district 
-SELECT ?s ?address ?neighborhoodName ?districtName
+SELECT ?s ?address ?neighborhoodname ?districtname
 WHERE {
-  ?s a ns:ChargingStation .
-  ?s ns:isLocated ?place .
-  ?place a schema:Place ;
-     	schema:address ?address ;
-  		schema:containedInPlace ?neighborhood .
+  ?s a ns:ChargingStation ;
+    ns:isLocated ?location .
+  ?location a ns:Location ;
+      ns:address ?address ;
+      ns:containedInNeighborhood ?neighborhood .
   ?neighborhood a ns:Neighborhood ;
-    ns:neighborhoodName ?neighborhoodName ;
-    schema:containedInPlace ?district .
+    ns:neighborhoodName ?neighborhoodname ;
+    ns:containedInDistrict ?district .
   ?district a ns:District ;
-    ns:districtName ?districtName .
-     
+    ns:districtName ?districtname . 
 }
+LIMIT 10
 
 # show each station with its assigned dates
 SELECT ?IDchargingStation ?openingdate ?editiondate ?registerdate
@@ -50,12 +48,10 @@ WHERE {
 SELECT ?IDchargingStation ?editiondate 
 WHERE {
   ?chargingStation a ns:ChargingStation ;
-                   ns:hasDates ?dates ;
-                   ns:idPoint ?IDchargingStation .
+        ns:hasDates ?dates ;
+        ns:idPoint ?IDchargingStation .
   ?dates a ns:Dates ;
-        ns:openingDate ?openingdate ;
         ns:editionDate ?editiondate ;
-        ns:registerDate ?registerdate .
 }
 ORDER BY DESC(?editiondate)
 
@@ -64,19 +60,20 @@ SELECT ?district ?districtname (COUNT(DISTINCT ?neighborhood) as ?numberOfNeighb
 WHERE {
     ?district a ns:District ;
               ns:districtName ?districtname .
-    ?neighborhood schema:containedInPlace ?district .
+    ?neighborhood ns:containedInDistrict ?district .
 }
-GROUP BY ?district
+GROUP BY ?district ?districtname
 ORDER BY DESC(?numberOfNeighborhoods)
 
 # see the number of charging stations from each neighborhood
 SELECT ?neighborhoodname (COUNT(?chargingStation) AS ?stationCount)
 WHERE {
   ?chargingStation a ns:ChargingStation ;
-        ns:isLocated ?place .
-  ?place a schema:Place ;
-        schema:containedInPlace ?neighborhood .
+        ns:isLocated ?Location .
+  ?place a ns:Location ;
+        ns:containedInNeighborhood ?neighborhood .
   ?neighborhood a ns:Neighborhood ;
         ns:neighborhoodName ?neighborhoodname .
 }
-GROUP BY ?neighborhood
+GROUP BY ?neighborhoodname
+ORDER BY DESC(?stationCount)

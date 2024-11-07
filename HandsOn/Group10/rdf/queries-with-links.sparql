@@ -1,0 +1,117 @@
+-- Query 1 (Obtain the all the classes)
+SELECT DISTINCT ?class
+WHERE {
+  ?instance a ?class .
+}
+LIMIT 10
+
+-- Query 2 (Obtain some properties)
+SELECT DISTINCT ?property
+WHERE {
+  ?s ?property ?o .
+}
+LIMIT 10
+
+-- Query 3 (Obtain some BikeTrips)
+SELECT DISTINCT ?trips
+WHERE {
+  ?trips a <https://BiciMad.es/ontology#BikeTrip> .
+}
+LIMIT 10
+
+-- Query 4 (Obtain some BikeStations)
+SELECT DISTINCT ?stations
+WHERE {
+  ?stations a <https://BiciMad.es/ontology#BikeStation> .
+}
+LIMIT 10
+
+-- Query 5 (Obtaion the BikeStations that are in "Centro")
+PREFIX bici: <https://BiciMad.es/ontology#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?station
+WHERE {
+  ?station a bici:BikeStation .
+  ?station schema:address ?address .
+  ?address schema:containedInPlace <http://www.BiciMad.es/entity/Place/Centro> .
+}
+LIMIT 10
+
+-- Query 6 (Obtain the FreePlaces tha have postalCode 28050)
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?freePlace ?postalCode
+WHERE {
+    ?freePlace a schema:Place .
+    ?freePlace schema:address ?address .
+    ?address schema:postalCode ?postalCode .
+    ?freePlace schema:id ?freePlaceId . 
+    FILTER(?postalCode= "28050"^^xsd:int) 
+}
+LIMIT 10
+
+-- Query 7 (Obtain the trips that endAt the Station170)
+PREFIX schema: <https://schema.org/>
+PREFIX bici: <https://BiciMad.es/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?trips ?stationName ?unlockDate ?lockDate ?bikeId ?stationId
+WHERE {
+  ?trips bici:endAt ?station .
+  ?station schema:id ?stationId .
+  ?station schema:address ?address .
+  ?address schema:streetAddress ?stationName .
+  ?trips bici:unlockDate ?unlockDate .
+  ?trips bici:lockDate ?lockDate .
+  ?trips bici:bikeId ?bikeId .
+  
+  FILTER(?stationId = "Station170"^^xsd:string)
+}
+LIMIT 10
+
+-- Query 8 (Obtain the trips that happend on a certain date 2023-02-07)
+PREFIX schema: <https://schema.org/>
+PREFIX bici: <https://BiciMad.es/ontology#>
+SELECT ?trips ?stationName ?unlockDate ?bikeId
+WHERE {
+  ?trips bici:startAt ?station .
+  ?station schema:id ?stationId .
+  ?station schema:address ?address .
+  ?address schema:streetAddress ?stationName .
+  ?trips bici:unlockDate ?unlockDate .
+  ?trips bici:bikeId ?bikeId .
+
+  FILTER (SUBSTR(STR(?unlockDate), 1, 10) = "2023-02-07")
+}
+LIMIT 10
+
+-- Query 9 (Obtain the trips that had the lockDock 24)
+PREFIX bici: <https://BiciMad.es/ontology#>
+SELECT ?trips ?station ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips bici:lockDock ?lockDock .
+  ?trips bici:startAt ?station .
+  ?trips bici:unlockDate ?unlockDate .
+  ?trips bici:lockDate ?lockDate .
+  ?trips bici:bikeId ?bikeId .
+
+  FILTER (SUBSTR(STR(?lockDock), 1, 2) = "24")
+}
+LIMIT 10
+
+-- Query 10 (Obtain the trips that where done with the bike with ID 33)
+PREFIX bici: <https://BiciMad.es/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?trips ?station ?unlockDate ?lockDate ?bikeId
+WHERE {
+  ?trips bici:startAt ?station .
+  ?trips bici:unlockDate ?unlockDate .
+  ?trips bici:lockDate ?lockDate .
+  ?trips bici:bikeId ?bikeId .
+
+  FILTER (?bikeId = "33"^^xsd:integer)
+}
+LIMIT 10
+

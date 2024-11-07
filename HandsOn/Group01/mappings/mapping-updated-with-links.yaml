@@ -3,18 +3,18 @@ prefixes:
   geo: "http://www.w3.org/2003/01/geo/wgs84_pos#"
   xsd: "http://www.w3.org/2001/XMLSchema#"
   res: "http://www.bikeradar.es/resources/"
+  owl: "http://www.w3.org/2002/07/owl#"
 
 mappings:
   bikeParking:
     sources:
-      - ['~jsonpath', '$[*]']  # Asegúrate de que esté bien escrito
-    s: res:BicycleParkingSpot/$(ID)  # Asegúrate de que esto sea una cadena
+      - ['~jsonpath', '$[*]']  
+    s: res:BicycleParkingSpot/$(ID) 
     po:
       - [a, ns:BicycleParkingSpot]
       - [ns:id, $(ID)]
       - [ns:direccion, $(DIRECCION)]
-      - [ns:isInDistrito, $(DISTRITO)]
-      - [ns:isInBarrio, $(BARRIO)]
+      - [ns:isInBarrio, res:Barrio/$(BARRIO)~iri]
       - [ns:latitud, $(LATITUD), xsd:float]
       - [ns:longitud, $(LONGITUD), xsd:float]
       - [ns:hasFechaInstalacion, $(FECHA_INSTALACION), xsd:dateTime]
@@ -25,13 +25,12 @@ mappings:
     s: res:Barrio/$(BARRIO)
     po:
       - [a, ns:Barrio]  
-      - [ns:isInDistrito, res:Distrito/$(DISTRITO)]
-      - [ns:sameAs, $(WIKIDATA_BARRIO)] 
+      - [ns:isInDistrito, res:Distrito/$(DISTRITO)~iri]
+      - [owl:sameAs, $(WIKIDATA_BARRIO)~iri] 
   distrito:
     sources:
       - ['~jsonpath', '$[*]']
     s: res:Distrito/$(DISTRITO)
     po:
       - [a, ns:Distrito]  
-      - [ns:sameAs, $(WIKIDATA_DISTRITO)]
-
+      - [owl:sameAs, $(WIKIDATA_DISTRITO)~iri] 

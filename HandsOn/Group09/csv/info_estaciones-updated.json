@@ -1,0 +1,362 @@
+[
+  {
+    "CODIGO": "28079004",
+    "ESTACION": "Plaza de España",
+    "ALTITUD": "637",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "SO2",
+      "CO"
+    ],
+    "COD_VIA": "273600",
+    "LONGITUD": "-3.7122567",
+    "LATITUD": "40.4238823"
+  },
+  {
+    "CODIGO": "28079008",
+    "ESTACION": "Escuelas Aguirre",
+    "ALTITUD": "672",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "SO2",
+      "CO",
+      "PM10",
+      "PM2_5",
+      "O3",
+      "BTX"
+    ],
+    "COD_VIA": "18900",
+    "LONGITUD": "-3.6823158",
+    "LATITUD": "40.4215533"
+  },
+  {
+    "CODIGO": "28079011",
+    "ESTACION": "Ramón y Cajal",
+    "ALTITUD": "708",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "BTX"
+    ],
+    "COD_VIA": "610450",
+    "LONGITUD": "-3.6773491",
+    "LATITUD": "40.4514734"
+  },
+  {
+    "CODIGO": "28079016",
+    "ESTACION": "Arturo Soria",
+    "ALTITUD": "695",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "798700",
+    "LONGITUD": "-3.6392422",
+    "LATITUD": "40.4400457"
+  },
+  {
+    "CODIGO": "28079017",
+    "ESTACION": "Villaverde",
+    "ALTITUD": "601",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "417200",
+    "LONGITUD": "-3.7133167",
+    "LATITUD": "40.347147"
+  },
+  {
+    "CODIGO": "28079018",
+    "ESTACION": "Farolillo",
+    "ALTITUD": "632",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "O3",
+      "BTX"
+    ],
+    "COD_VIA": "1903",
+    "LONGITUD": "-3.7318356",
+    "LATITUD": "40.3947825"
+  },
+  {
+    "CODIGO": "28079024",
+    "ESTACION": "Casa de Campo",
+    "ALTITUD": "646",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5",
+      "O3",
+      "BTX"
+    ],
+    "COD_VIA": "905219",
+    "LONGITUD": "-3.7473445",
+    "LATITUD": "40.4193577"
+  },
+  {
+    "CODIGO": "28079027",
+    "ESTACION": "Barajas Pueblo",
+    "ALTITUD": "620",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "425700",
+    "LONGITUD": "-3.5800258",
+    "LATITUD": "40.4769179"
+  },
+  {
+    "CODIGO": "28079035",
+    "ESTACION": "Plaza del Carmen",
+    "ALTITUD": "660",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "SO2",
+      "CO",
+      "O3"
+    ],
+    "COD_VIA": "145800",
+    "LONGITUD": "-3.7031662",
+    "LATITUD": "40.4192091"
+  },
+  {
+    "CODIGO": "28079036",
+    "ESTACION": "Moratalaz",
+    "ALTITUD": "671",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "SO2",
+      "PM10"
+    ],
+    "COD_VIA": "522000",
+    "LONGITUD": "-3.6453104",
+    "LATITUD": "40.4079517"
+  },
+  {
+    "CODIGO": "28079038",
+    "ESTACION": "Cuatro Caminos",
+    "ALTITUD": "699",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5",
+      "BTX"
+    ],
+    "COD_VIA": "554550",
+    "LONGITUD": "-3.7071303",
+    "LATITUD": "40.4455439"
+  },
+  {
+    "CODIGO": "28079039",
+    "ESTACION": "Barrio del Pilar",
+    "ALTITUD": "676",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "514425",
+    "LONGITUD": "-3.7115364",
+    "LATITUD": "40.4782322"
+  },
+  {
+    "CODIGO": "28079040",
+    "ESTACION": "Vallecas",
+    "ALTITUD": "677",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10"
+    ],
+    "COD_VIA": "75500",
+    "LONGITUD": "-3.6515286",
+    "LATITUD": "40.3881478"
+  },
+  {
+    "CODIGO": "28079047",
+    "ESTACION": "Méndez Álvaro",
+    "ALTITUD": "600",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5"
+    ],
+    "COD_VIA": "414800",
+    "LONGITUD": "-3.6868138",
+    "LATITUD": "40.3980991"
+  },
+  {
+    "CODIGO": "28079048",
+    "ESTACION": "Castellana",
+    "ALTITUD": "680",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5"
+    ],
+    "COD_VIA": "401400",
+    "LONGITUD": "-3.6903729",
+    "LATITUD": "40.4398904"
+  },
+  {
+    "CODIGO": "28079049",
+    "ESTACION": "Parque del Retiro",
+    "ALTITUD": "662",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "905011",
+    "LONGITUD": "-3.6824999",
+    "LATITUD": "40.4144444"
+  },
+  {
+    "CODIGO": "28079050",
+    "ESTACION": "Plaza Castilla",
+    "ALTITUD": "728",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5"
+    ],
+    "COD_VIA": "154500",
+    "LONGITUD": "-3.6887449",
+    "LATITUD": "40.4655841"
+  },
+  {
+    "CODIGO": "28079054",
+    "ESTACION": "Ensanche de Vallecas",
+    "ALTITUD": "629",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "31000516",
+    "LONGITUD": "-3.6121394",
+    "LATITUD": "40.3730118"
+  },
+  {
+    "CODIGO": "28079055",
+    "ESTACION": "Urb. Embajada",
+    "ALTITUD": "619",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "BTX"
+    ],
+    "COD_VIA": "639250",
+    "LONGITUD": "-3.5805649",
+    "LATITUD": "40.4623628"
+  },
+  {
+    "CODIGO": "28079056",
+    "ESTACION": "Plaza Elíptica",
+    "ALTITUD": "605",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "CO",
+      "PM10",
+      "PM2_5"
+    ],
+    "COD_VIA": "293200",
+    "LONGITUD": "-3.7187679",
+    "LATITUD": "40.3850336"
+  },
+  {
+    "CODIGO": "28079057",
+    "ESTACION": "Sanchinarro",
+    "ALTITUD": "700",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "PM2_5"
+    ],
+    "COD_VIA": "31000002",
+    "LONGITUD": "-3.6605173",
+    "LATITUD": "40.4942012"
+  },
+  {
+    "CODIGO": "28079058",
+    "ESTACION": "El Pardo",
+    "ALTITUD": "612",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "348500",
+    "LONGITUD": "-3.7746101",
+    "LATITUD": "40.5180701"
+  },
+  {
+    "CODIGO": "28079059",
+    "ESTACION": "Juan Carlos I",
+    "ALTITUD": "660",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "O3"
+    ],
+    "COD_VIA": "1111",
+    "LONGITUD": "-3.6163407",
+    "LATITUD": "40.4607255"
+  },
+  {
+    "CODIGO": "28079060",
+    "ESTACION": "Tres Olivos",
+    "ALTITUD": "715",
+    "MEDIDAS": [
+      "NO",
+      "NOx",
+      "NO2",
+      "PM10",
+      "O3"
+    ],
+    "COD_VIA": "1427",
+    "LONGITUD": "-3.6897308",
+    "LATITUD": "40.5005477"
+  }
+]
