@@ -13,7 +13,7 @@ base:Apartment/1a2b3c rdf:type schema:Apartment ;
     schema:numberOfRooms "2"^^xsd:integer ;
     schema:geo base:GeoCoordinates/4d5e6f ;
     schema:containedInPlace base:District/BARAJAS ;
-    schema:containedInPlace base:Neighborhood/SAN%20CRISTOBAL ;
+    schema:containedInPlace base:Neighborhood/SAN_CRISTOBAL ;
     schema:containedInPlace base:City/Madrid ;
     sbm:energyCertificate "D"^^xsd:string ;
     sbm:floorSize base:QuantitativeValue/7g8h9i ;
@@ -29,8 +29,8 @@ base:District/BARAJAS rdf:type sbm:District ;
     schema:containsPlace base:Neighborhood/SAN%20CRISTOBAL ;
     schema:containedInPlace base:City/Madrid .
 
-base:Neighborhood/SAN%20CRISTOBAL rdf:type sbm:Neighborhood ;
-    rdfs:label "SAN CRISTOBAL"^^xsd:string ;
+base:Neighborhood/SAN_CRISTOBAL rdf:type sbm:Neighborhood ;
+    rdfs:label "San Cristobal"^^xsd:string ;
     schema:containedInPlace base:District/BARAJAS ;
     schema:containedInPlace base:City/Madrid .
 
@@ -71,7 +71,7 @@ base:CivicStructure/Biblioteca%20Ana%20María%20Matute a schema:CivicStructure ;
     sbm:hasEnergyClass base:EnergyClass/Energía%20activa ;
     sosa:hosts base:Sensor/AMBIBAMMATUTE%20General ;
     schema:geo base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute ;
-    schema:containedInPlace base:Neighborhood/SAN%20ISIDRO .
+    schema:containedInPlace base:Neighborhood/SAN_ISIDRO .
 
 base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute a schema:GeoCoordinates ;
     schema:address "CALLE ISAAC ALBENIZ 1,28019 MADRID"^^xsd:string ;
@@ -79,14 +79,16 @@ base:GeoCoordinates/Biblioteca%20Ana%20María%20Matute a schema:GeoCoordinates ;
     schema:longitude "-3.720294"^^xsd:string ;
     schema:postalCode "28019.0"^^xsd:string .
 
-base:Neighborhood/SAN%20ISIDRO a sbm:Neighborhood ;
+base:Neighborhood/SAN_ISIDRO a sbm:Neighborhood ;
     schema:containsPlace base:CivicStructure/Biblioteca%20Ana%20María%20Matute ;
     schema:containedInPlace base:District/CARABANCHEL ;
+    rdfs:label "San Isidro" ;
     schema:containedInPlace base:City/MADRID .
 
 base:District/CARABANCHEL a sbm:District ;
-    schema:containsPlace base:Neighborhood/SAN%20ISIDRO ;
+    schema:containsPlace base:Neighborhood/SAN_ISIDRO ;
     schema:containedInPlace base:City/MADRID ;
+    rdfs:label "Carabanchel" ;
     sbm:districtCode "11"^^xsd:integer .
 
 base:City/MADRID a schema:City ;
