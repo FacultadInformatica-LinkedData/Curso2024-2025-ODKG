@@ -49,7 +49,7 @@ mappings:
     s: base:District/$(DISTRICT)
     po:
       - [a, barrio:District]
-      - [rdfs:label, $(DISTRICT), xsd:string]
+      - [rdfs:label, $(DISTRICT_LABEL), xsd:string]
       - [schema:containsPlace, base:Neighborhood/$(NEIGHBORHOOD)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [owl:sameAs, $(DISTRICT_URL_WIKI)~iri]
@@ -60,7 +60,7 @@ mappings:
     s: base:Neighborhood/$(NEIGHBORHOOD)
     po:
       - [a, barrio:Neighborhood]
-      - [rdfs:label, $(NEIGHBORHOOD), xsd:string]
+      - [rdfs:label, $(NEIGHBORHOOD_LABEL), xsd:string]
       - [schema:containedInPlace, base:District/$(DISTRICT)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [owl:sameAs, $(NEIGHBORHOOD_URL_WIKI)~iri]
