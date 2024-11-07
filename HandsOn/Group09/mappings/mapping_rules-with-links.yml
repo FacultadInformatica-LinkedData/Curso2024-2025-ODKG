@@ -43,7 +43,7 @@ mappings:
   location:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#Location
+    s: mAIRres:Station/$(CODIGO)#Location
     po:
       - [a, mAIR:Location]
       - [rdfs:label, Ubicación de la estación $(ESTACION), es~lang]
@@ -63,7 +63,7 @@ mappings:
   metric:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#$(MEDIDAS.label)
+    s: mAIRres:Station/$(CODIGO)#$(MEDIDAS.label)
     po:
       - [a, mAIR:AirQualityMetric]
       - [a, ssn:Property]
