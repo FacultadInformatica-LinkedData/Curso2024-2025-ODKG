@@ -27,7 +27,7 @@
       ]
   ];
     rr:predicateObjectMap [
-    rr:predicate sbm:madeObservation;
+    rr:predicate sosa:madeObservation;
     rr:objectMap [
       rr:template "http://www.semanticweb.org/resource/Observation/{ID}";
       rr:termType rr:IRI
