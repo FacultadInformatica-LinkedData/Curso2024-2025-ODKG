@@ -194,7 +194,13 @@ schema:unitText rdf:type owl:DatatypeProperty ;
 
 ###  https://schema.org/value
 schema:value rdf:type owl:DatatypeProperty ;
-             rdfs:domain schema:StructuredValue .
+             rdfs:domain schema:StructuredValue ;
+             rdfs:range xsd:float .
+
+rdfs:label rdf:type owl:DatatypeProperty ;
+            rdfs:domain :District;
+            rdfs:domain :Neighborhood ;
+            rdfs:range xsd:string .
 
 
 #################################################################
