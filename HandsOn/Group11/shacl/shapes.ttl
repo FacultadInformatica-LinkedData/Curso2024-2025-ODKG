@@ -1,0 +1,93 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ns: <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns:ChargingStationShape
+    a sh:NodeShape ;
+    sh:targetClass ns:ChargingStation ;
+    sh:property [
+        sh:path ns:idPoint ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:numberOfDevices ;
+        sh:datatype xsd:int ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:characteristicsDevices ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:operator ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:isLocated ;
+        sh:node ns:LocationShape ;
+        sh:minCount 1 ;
+    ] .
+
+ns:LocationShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Location ;
+    sh:property [
+        sh:path ns:address ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:containedInNeighborhood ;
+        sh:node ns:NeighborhoodShape ;
+    ] .
+
+ns:NeighborhoodShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Neighborhood ;
+    sh:property [
+        sh:path ns:neighborhoodCode ;
+        sh:datatype xsd:int ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:neighborhoodName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:containedInDistrict ;
+        sh:node ns:DistrictShape ;
+    ] .
+
+ns:DistrictShape
+    a sh:NodeShape ;
+    sh:targetClass ns:District ;
+    sh:property [
+        sh:path ns:districtCode ;
+        sh:datatype xsd:int ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:districtName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ns:DatesShape
+    a sh:NodeShape ;
+    sh:targetClass ns:Dates ;
+    sh:property [
+        sh:path ns:editionDate ;
+        sh:datatype xsd:dateTime ;
+    ] ;
+    sh:property [
+        sh:path ns:openingDate ;
+        sh:datatype xsd:dateTime ;
+    ] ;
+    sh:property [
+        sh:path ns:registerDate ;
+        sh:datatype xsd:dateTime ;
+    ] .
+

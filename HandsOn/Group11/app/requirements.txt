@@ -1,0 +1,7 @@
+streamlit
+rdflib
+requests
+folium
+streamlit-folium
+geopy
+requests
