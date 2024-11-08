@@ -1,0 +1,270 @@
+@prefix : <http://madridcityheatmap.org/group08/accidentalidad#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix ns: <http://madridcityheatmap.org/group08/accidentalidad#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@base <http://madridcityheatmap.org/group08/accidentalidad#> .
+
+<http://madridcityheatmap.org/group08/accidentalidad#> rdf:type owl:Ontology ;
+                                                        owl:imports <http://www.geonames.org/ontology> ,
+                                                                    wgs84_pos: ,
+                                                                    <http://www.w3.org/2006/time#2016> ,
+                                                                    <http://www.w3.org/ns/locn> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2006/time#intervalContains
+time:intervalContains rdf:type owl:AnnotationProperty ;
+                      rdfs:subPropertyOf time:intervalDisjoint .
+
+
+###  http://www.w3.org/2006/time#intervalDisjoint
+time:intervalDisjoint rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://madridcityheatmap.org/group08/accidentalidad#pertenceADistrito
+ns:pertenceADistrito rdf:type owl:ObjectProperty ;
+                     rdfs:domain ns:Accidente ;
+                     rdfs:range ns:Distrito .
+
+
+###  http://www.geonames.org/ontology#hasLocation
+gn:hasLocation rdf:type owl:ObjectProperty ;
+               rdfs:domain ns:Accidente ;
+               rdfs:range gn:Location .
+
+
+###  http://www.w3.org/2006/time#startTime
+time:startTime rdf:type owl:ObjectProperty ;
+               rdfs:domain ns:Accidente .
+
+
+###  http://www.w3.org/ns/locn#locatedAt
+locn:locatedAt rdf:type owl:ObjectProperty ;
+               rdfs:domain ns:Accidente ;
+               rdfs:range locn:Address .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://madridcityheatmap.org/group08/accidentalidad#cod_distrito
+ns:cod_distrito rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Accidente ;
+                rdfs:range xsd:integer .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#cod_lesividad
+ns:cod_lesividad rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ns:Accidente ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "codigo tipo lesividad" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#codigo_distrito
+ns:codigo_distrito rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:Distrito ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "codigo distrito" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#coordenada_x_utm
+ns:coordenada_x_utm rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:Accidente ;
+                    rdfs:range xsd:float ;
+                    rdfs:label "coordenaza x lugar accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#coordenada_y_utm
+ns:coordenada_y_utm rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:Accidente ;
+                    rdfs:range xsd:float ;
+                    rdfs:label "coordenaza y lugar accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#distrito
+ns:distrito rdf:type owl:DatatypeProperty ;
+            rdfs:domain ns:Accidente ;
+            rdfs:range xsd:integer .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#estado_meteorologico
+ns:estado_meteorologico rdf:type owl:DatatypeProperty ;
+                        rdfs:domain ns:Accidente ;
+                        rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#fecha
+ns:fecha rdf:type owl:DatatypeProperty ;
+         rdfs:domain ns:Accidente ;
+         rdfs:range xsd:dateTime ;
+         rdfs:label "Fecha del accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#hora
+ns:hora rdf:type owl:DatatypeProperty ;
+        rdfs:domain ns:Accidente ;
+        rdfs:range xsd:string ;
+        rdfs:label "Hora del accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#lesividad
+ns:lesividad rdf:type owl:DatatypeProperty ;
+             rdfs:domain ns:Accidente ;
+             rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#localizacion
+ns:localizacion rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Accidente ;
+                rdfs:range xsd:string ;
+                rdfs:label "nombre carretera del accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#nombre_distrito
+ns:nombre_distrito rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:Distrito ;
+                   rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#num_expediente
+ns:num_expediente rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Accidente ;
+                  rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#numero
+ns:numero rdf:type owl:DatatypeProperty ;
+          rdfs:domain ns:Accidente ;
+          rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#positiva_alcohol
+ns:positiva_alcohol rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:Accidente ;
+                    rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#positiva_droga
+ns:positiva_droga rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Accidente ;
+                  rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#rango_edad
+ns:rango_edad rdf:type owl:DatatypeProperty ;
+              rdfs:domain ns:Accidente ;
+              rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#sexo
+ns:sexo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ns:Accidente ;
+        rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#shape_area
+ns:shape_area rdf:type owl:DatatypeProperty ;
+              rdfs:domain ns:Distrito ;
+              rdfs:range xsd:float ;
+              rdfs:label "area del distrito" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#shape_leng
+ns:shape_leng rdf:type owl:DatatypeProperty ;
+              rdfs:domain ns:Distrito ;
+              rdfs:range xsd:float ;
+              rdfs:label "longitud del distrito" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#tipo_accidente
+ns:tipo_accidente rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Accidente ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "Tipo accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#tipo_persona
+ns:tipo_persona rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Accidente ;
+                rdfs:range xsd:string .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#tipo_vehiculo
+ns:tipo_vehiculo rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ns:Accidente ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+wgs84_pos:latitude rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:Accidente ;
+                   rdfs:range xsd:float .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+wgs84_pos:longitude rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ns:Accidente ;
+                    rdfs:range xsd:float .
+
+
+###  http://www.w3.org/2006/time#startTime
+time:startTime rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://geovocab.org/spatial#Feature
+<http://geovocab.org/spatial#Feature> rdf:type owl:Class .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#Accidente
+ns:Accidente rdf:type owl:Class ;
+             rdfs:label "Accidente" .
+
+
+###  http://madridcityheatmap.org/group08/accidentalidad#Distrito
+ns:Distrito rdf:type owl:Class ;
+            rdfs:label "Distrito" .
+
+
+###  http://www.geonames.org/ontology#Location
+gn:Location rdf:type owl:Class ;
+            rdfs:subClassOf ns:Accidente .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://geovocab.org/spatial#Feature> .
+
+
+###  http://www.w3.org/2006/time#Event
+time:Event rdf:type owl:Class ;
+           rdfs:subClassOf ns:Accidente .
+
+
+###  http://www.w3.org/ns/locn#Address
+locn:Address rdf:type owl:Class ;
+             rdfs:subClassOf ns:Accidente .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
