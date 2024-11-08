@@ -21,9 +21,17 @@
         rr:class schema:Place
     ] ;
     rr:predicateObjectMap [
-        rr:predicate schema:id ;
+        rr:predicate schema:identifier ;
         rr:objectMap [
             rml:reference "district" ;
+            rr:termType rr:Literal ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "readable_id" ;
             rr:termType rr:Literal ;
             rr:datatype xsd:string
         ]

@@ -21,7 +21,7 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate schema:id ;
+        rr:predicate schema:identifier ;
         rr:objectMap [
             rml:reference "id_station" ;
             rr:termType rr:Literal;

@@ -21,7 +21,7 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate schema:id ;
+        rr:predicate schema:identifier ;
         rr:objectMap [
             rml:reference "id_trip" ;
             rr:termType rr:Literal;
@@ -31,7 +31,7 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:bikeId;
+            rr:constant bicimap:bikeIdentifier;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
@@ -55,31 +55,31 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:lockDate;
+            rr:constant schema:arrivalTime;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
             rml:reference "lock_date" ;
             rr:termType rr:Literal ;
-            rr:datatype xsd:datetime
+            rr:datatype xsd:dateTime
         ]
     ] ;
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:unlockDate;
+            rr:constant schema:departureTime;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
             rml:reference "unlock_date" ;
             rr:termType rr:Literal ;
-            rr:datatype xsd:datetime
+            rr:datatype xsd:dateTime
         ]
     ] ;
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:unlockDock;
+            rr:constant bicimap:hasUnlockDock;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
@@ -91,7 +91,7 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:lockDock;
+            rr:constant bicimap:hasLockDock;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
@@ -103,7 +103,7 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:startAt;
+            rr:constant schema:tripOrigin;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
@@ -113,7 +113,7 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant bicimap:endAt;
+            rr:constant schema:itinerary;
             rr:termType rr:IRI
         ] ;
         rr:objectMap [
