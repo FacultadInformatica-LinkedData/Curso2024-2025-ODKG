@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Points Map</title>
+    <!-- Leaflet CSS for map display -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="title">
+        <h2>Charge & Park Madrid</h2>
+    </div>
+    
+    <!-- Dropdown selectors for filtering by district and neighborhood -->
+    <div id="search-container">
+        <select id="district-select">
+            <option value="">Select District (optional)</option>
+        </select>
+        <select id="neighborhood-select">
+            <option value="">Select Neighborhood (optional)</option>
+        </select>
+    </div>
+
+    <!-- Checkbox options to toggle display of charging points and parking locations -->
+    <div id="check">
+        <label>
+            <input type="checkbox" id="show-charging-points" checked>
+            <div class="checkbox-custom"></div> Show Charging Points
+        </label>
+        <label>
+            <input type="checkbox" id="show-parkings" checked>
+            <div class="checkbox-custom"></div> Show Parkings
+        </label>
+    </div>
+    
+    <!-- Main container holding the map and detail view -->
+    <div id="main-container">
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+        <!-- Container for displaying details about a selected point on the right side of the map -->
+        <div id="detail-container" style="display: none;">
+            <h3 id="detail-title">Details</h3>
+            <p id="detail-content">Click on a marker to see details</p>
+        </div>
+    </div>
+
+    <!-- External libraries for Axios and Leaflet map functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Link to custom JavaScript for map functionality -->
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+</body>
+</html>
+
