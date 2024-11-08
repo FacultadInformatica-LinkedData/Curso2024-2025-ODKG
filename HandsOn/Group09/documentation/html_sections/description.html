@@ -1,0 +1,50 @@
+<h2>Description</h2>
+<p>
+    The ontology is structured using established semantic web standards,
+    including
+    <strong>RDF</strong> (Resource Description Framework),
+    <strong>OWL</strong> (Web Ontology Language), and <strong>RDFS</strong> (RDF
+    Schema).
+</p>
+<h3>Key Classes and Properties</h3>
+<ul>
+    <li>
+        <strong>AirQualityMetric:</strong> Represents the measured value of a
+        specific pollutant.
+        <ul>
+            <li>
+                <strong>Properties:</strong> numericValue, measurementUnit,
+                resultTime.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Station:</strong> Represents the physical location of an air
+        quality monitoring station.
+        <ul>
+            <li>
+                <strong>Properties:</strong> latitude, longitude, altitude,
+                address.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Sensor:</strong> Represents the individual sensors deployed at a
+        station.
+        <ul>
+            <li>
+                <strong>Properties:</strong> sensorType, observes, madeBySensor.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    The relationships between these entities are defined using object
+    properties, facilitating queries about air quality data in relation to time,
+    location, and sensor performance.
+</p>
+<p>
+    This ontology enables users to capture, query, and analyze air quality data
+    effectively, enhancing understanding of air pollution trends and
+    facilitating informed decision-making.
+</p>

@@ -43,14 +43,14 @@ mappings:
   location:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#Location
+    s: mAIRres:Station/$(CODIGO)#Location
     po:
       - [a, mAIR:Location]
       - [rdfs:label, Ubicación de la estación $(ESTACION), es~lang]
       - [rdfs:label, Location of $(ESTACION) station, en~lang]
-      - [geo:lat, $(LATITUD)]
-      - [geo:long, $(LONGITUD)]
-      - [geo:alt, $(ALTITUD)]
+      - [geo:lat, $(LATITUD), xsd:double]
+      - [geo:long, $(LONGITUD), xsd:double]
+      - [geo:alt, $(ALTITUD), xsd:integer]
       - [owl:sameAs, $(same_as_wikidata_streets)~iri]
       - p: ssn:hasProperty
         o:
@@ -63,7 +63,7 @@ mappings:
   metric:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#$(MEDIDAS.label)
+    s: mAIRres:Station/$(CODIGO)#$(MEDIDAS.label)
     po:
       - [a, mAIR:AirQualityMetric]
       - [a, ssn:Property]
@@ -89,7 +89,7 @@ mappings:
   sensor:
     sources:
       - stationsJSON
-    s: mAIRres:$(CODIGO)#$(MEDIDAS.label)Sensor
+    s: mAIRres:Station/$(CODIGO)#$(MEDIDAS.label)Sensor
     po:
       - [a, sosa:Sensor]
       - [a, ssn:System]

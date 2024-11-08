@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://mAIRdrid.org/ontology#"
+     xml:base="https://mAIRdrid.org/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://mAIRdrid.org/ontology">
+        <owl:versionIRI rdf:resource="https://mAIRdrid.org/ontology/1.0.0"/>
+        <terms:abstract xml:lang="en">This ontology provides a comprehensive framework for representing air quality metrics, including concentrations of pollutants such as NOx, CO, PM2.5, PM10, and BTX, as well as the corresponding measurement values, timestamps, and metadata about monitoring stations and their sensors. The ontology aims to facilitate data interoperability and sharing among environmental monitoring systems, researchers, and policy-makers, enabling better analysis and understanding of air quality dynamics in urban and rural settings.</terms:abstract>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-01</terms:created>
+        <terms:creator rdf:resource="https://github.com/PPedreg"/>
+        <terms:creator rdf:resource="https://github.com/RafaOB95"/>
+        <terms:creator rdf:resource="https://github.com/aiarakoa"/>
+        <terms:creator rdf:resource="https://github.com/ehrlz"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">Madrid air quality ontology</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://mAIRdrid.org/ontology#"/>
+        <rdfs:label xml:lang="en">AirQualityOntology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://mAIRdrid.org/ontology/AirQualityMetric -->
+
+
+    <owl:Class rdf:about="http://mAIRdrid.org/ontology/AirQualityMetric">
+        <rdfs:comment xml:lang="en">An air quality metric is a measurable property of air quality, such as the concentration of specific pollutants (e.g., CO), observed by sensors at a particular air quality station.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una métrica de calidad del aire es una propiedad medible de la calidad del aire, como la concentración de contaminantes específicos (p. ej. CO), observada por sensores en una estación de calidad del aire determinada.</rdfs:comment>
+        <rdfs:label xml:lang="en">Air Quality Metric</rdfs:label>
+        <rdfs:label xml:lang="es">Métrica de Calidad del Aire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://mAIRdrid.org/ontology/Location -->
+
+
+    <owl:Class rdf:about="http://mAIRdrid.org/ontology/Location">
+        <rdfs:comment xml:lang="en">A location is a physical point where a station is placed</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ubicación es la posición geográfica donde se encuentra una estación</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <rdfs:label xml:lang="es">Ubicación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://mAIRdrid.org/ontology/Station -->
+
+
+    <owl:Class rdf:about="http://mAIRdrid.org/ontology/Station">
+        <rdfs:comment xml:lang="en">A station is a located element that contains sensors</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una estación es un elemento localizado que contiene sensores</rdfs:comment>
+        <rdfs:label xml:lang="es">Estación</rdfs:label>
+        <rdfs:label xml:lang="en">Station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://mAIRdrid.org/ontology/nationalStationID -->
+
+
+    <owl:Class rdf:about="http://mAIRdrid.org/ontology/nationalStationID">
+        <rdfs:comment xml:lang="en">A unique identifier assigned to an air quality station at the national level.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un identificador único asignado a una estación de calidad del aire a nivel nacional.</rdfs:comment>
+        <rdfs:label xml:lang="es">ID de Estación Nacional</rdfs:label>
+        <rdfs:label xml:lang="en">National Station ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#QuantityValue -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#QuantityValue">
+        <rdfs:comment xml:lang="en">A numeric value representing the measured quantity of a specific air quality metric.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un valor numérico que representa la cantidad medida de un indicador específico de calidad del aire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantity Value</rdfs:label>
+        <rdfs:label xml:lang="es">Valor de Cantidad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:comment xml:lang="en">A record of an observed phenomenon, including the features of interest, results, the sensor that made the observation, and the property that was observed.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un registro de un fenómeno observado, incluyendo las características de interés, resultados, el sensor que realizó la observación y la propiedad que fue observada.</rdfs:comment>
+        <rdfs:label xml:lang="es">Observación</rdfs:label>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:comment xml:lang="en">A device that observes a phenomenon, providing data about specific properties of interest.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un dispositivo que observa un fenómeno, proporcionando datos sobre propiedades específicas de interés.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <rdfs:label xml:lang="es">Sensor</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

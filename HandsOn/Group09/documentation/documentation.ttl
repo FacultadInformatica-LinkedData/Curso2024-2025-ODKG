@@ -1,0 +1,65 @@
+@prefix ns1: <http://qudt.org/schema/qudt#> .
+@prefix ns2: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns3: <http://mAIRdrid.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+<https://mAIRdrid.org/ontology> rdf:type owl:Ontology ;
+    dct:title "Madrid air quality ontology"@en ;
+    vann:preferredNamespaceUri <https://mAIRdrid.org/ontology#> ;
+    rdfs:label "AirQualityOntology"@en ;
+	dct:created "2024-11-01"^^xsd:date  ;
+	owl:versionIRI <https://mAIRdrid.org/ontology/1.0.0> ;
+	dct:creator <https://github.com/PPedreg>,
+		<https://github.com/RafaOB95>,
+		<https://github.com/aiarakoa>,
+		<https://github.com/ehrlz>;
+	dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+	dct:abstract "This ontology provides a comprehensive framework for representing air quality metrics, including concentrations of pollutants such as NOx, CO, PM2.5, PM10, and BTX, as well as the corresponding measurement values, timestamps, and metadata about monitoring stations and their sensors. The ontology aims to facilitate data interoperability and sharing among environmental monitoring systems, researchers, and policy-makers, enabling better analysis and understanding of air quality dynamics in urban and rural settings."@en .
+
+ns3:Station rdf:type owl:Class ;
+	rdfs:label "Station"@en ;
+	rdfs:label "Estación"@es ;
+	rdfs:comment"A station is a located element that contains sensors"@en ;
+  rdfs:comment"Una estación es un elemento localizado que contiene sensores"@es.
+
+ns3:Location rdf:type owl:Class ;
+	rdfs:label "Location"@en ;
+    rdfs:label "Ubicación"@es ;
+    rdfs:comment"A location is a physical point where a station is placed"@en ;
+    rdfs:comment"Una ubicación es la posición geográfica donde se encuentra una estación"@es.
+
+sosa:Sensor rdf:type owl:Class ;
+    rdfs:label "Sensor"@en ;
+    rdfs:label "Sensor"@es ;
+    rdfs:comment "A device that observes a phenomenon, providing data about specific properties of interest."@en ;
+    rdfs:comment "Un dispositivo que observa un fenómeno, proporcionando datos sobre propiedades específicas de interés."@es .
+
+ns3:AirQualityMetric rdf:type owl:Class ;
+	rdfs:label "Air Quality Metric"@en ;
+	rdfs:label "Métrica de Calidad del Aire"@es ;
+	rdfs:comment"An air quality metric is a measurable property of air quality, such as the concentration of specific pollutants (e.g., CO), observed by sensors at a particular air quality station."@en ;
+	rdfs:comment"Una métrica de calidad del aire es una propiedad medible de la calidad del aire, como la concentración de contaminantes específicos (p. ej. CO), observada por sensores en una estación de calidad del aire determinada."@es.
+
+sosa:Observation rdf:type owl:Class ;
+    rdfs:label "Observation"@en ;
+    rdfs:label "Observación"@es ;
+    rdfs:comment "A record of an observed phenomenon, including the features of interest, results, the sensor that made the observation, and the property that was observed."@en ;
+    rdfs:comment "Un registro de un fenómeno observado, incluyendo las características de interés, resultados, el sensor que realizó la observación y la propiedad que fue observada."@es .
+
+ns3:nationalStationID rdf:type owl:Class ;
+    rdfs:label "National Station ID"@en ;
+    rdfs:label "ID de Estación Nacional"@es ;
+    rdfs:comment "A unique identifier assigned to an air quality station at the national level."@en ;
+    rdfs:comment "Un identificador único asignado a una estación de calidad del aire a nivel nacional."@es .
+
+ns1:QuantityValue rdf:type owl:Class ;
+    rdfs:label "Quantity Value"@en ;
+    rdfs:label "Valor de Cantidad"@es ;
+    rdfs:comment "A numeric value representing the measured quantity of a specific air quality metric."@en ;
+    rdfs:comment "Un valor numérico que representa la cantidad medida de un indicador específico de calidad del aire."@es .
