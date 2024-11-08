@@ -24,7 +24,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 select ?neighborhood ?neighborhoodLabel ?districtLabel
 where {
-  ?neighborhood a barrio:Barrio ;
+  ?neighborhood a barrio:Neighborhood ;
                 rdfs:label ?neighborhoodLabel ;
                 schema:containedInPlace ?district .
 
@@ -85,4 +85,13 @@ where {
 
   ?rentAmount schema:value ?rentPrice .
   filter(?rentPrice < 1000)
+}
+
+
+#deleting empty GeoCoordinates
+prefix schema:<https://schema.org/>
+DELETE {?geo a schema:GeoCoordinates } 
+  WHERE {
+    ?geo a schema:GeoCoordinates
+  FILTER NOT EXISTS { ?geo schema:address ?address  }
 }

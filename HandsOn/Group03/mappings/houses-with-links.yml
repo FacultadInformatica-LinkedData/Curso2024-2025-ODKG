@@ -27,7 +27,7 @@ mappings:
       - [schema:numberOfRooms, $(NUM_OF_ROOMS), xsd:integer]
       - [schema:geo, base:GeoCoordinates/$(uuid)~iri]
       - [schema:containedInPlace, base:District/$(DISTRICT)~iri]
-      - [schema:containedInPlace, base:Barrio/$(NEIGHBORHOOD)~iri]
+      - [schema:containedInPlace, base:Neighborhood/$(NEIGHBORHOOD)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [barrio:energyCertificate, $(ENERGY_CERTIFICATE), xsd:string]
       - [barrio:floorSize, base:QuantitativeValue/$(uuid)~iri]
@@ -49,8 +49,8 @@ mappings:
     s: base:District/$(DISTRICT)
     po:
       - [a, barrio:District]
-      - [rdfs:label, $(DISTRICT), xsd:string]
-      - [schema:containsPlace, base:Barrio/$(NEIGHBORHOOD)~iri]
+      - [rdfs:label, $(DISTRICT_LABEL), xsd:string]
+      - [schema:containsPlace, base:Neighborhood/$(NEIGHBORHOOD)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [owl:sameAs, $(DISTRICT_URL_WIKI)~iri]
 
@@ -59,8 +59,8 @@ mappings:
       - [../csv/houses-Madrid-with-links.csv~csv]
     s: base:Neighborhood/$(NEIGHBORHOOD)
     po:
-      - [a, barrio:Barrio]
-      - [rdfs:label, $(NEIGHBORHOOD), xsd:string]
+      - [a, barrio:Neighborhood]
+      - [rdfs:label, $(NEIGHBORHOOD_LABEL), xsd:string]
       - [schema:containedInPlace, base:District/$(DISTRICT)~iri]
       - [schema:containedInPlace, base:City/Madrid~iri]
       - [owl:sameAs, $(NEIGHBORHOOD_URL_WIKI)~iri]

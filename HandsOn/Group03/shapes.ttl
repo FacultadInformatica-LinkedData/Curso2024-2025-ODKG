@@ -1,0 +1,198 @@
+@prefix :            <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
+@prefix bot:         <https://w3id.org/bot#> .
+@prefix dash:        <http://datashapes.org/dash#> .
+@prefix dct:         <http://purl.org/dc/terms/> .
+@prefix graphql:     <http://datashapes.org/graphql#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-open: <http://data.sparna.fr/ontologies/owl2sh-open#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix resource:    <http://www.semanticweb.org/resource/> .
+@prefix schema:      <https://schema.org/> .
+@prefix sh:          <http://www.w3.org/ns/shacl#> .
+@prefix sosa:        <http://www.w3.org/ns/sosa/> .
+@prefix swa:         <http://topbraid.org/swa#> .
+@prefix tosh:        <http://topbraid.org/tosh#> .
+@prefix xml:         <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+
+schema:Place  rdf:type  rdfs:Class , sh:NodeShape ;
+        sh:property  schema:Place-buildingUsage , schema:Place-https___schema.org_containedInPlace , schema:Place-energyCertificate , schema:Place-https___schema.org_geo , schema:Place-https___schema.org_geoContains , schema:Place-http___www.w3.org_ns_sosa_hosts , schema:Place-hasEnergyClass , schema:Place-https___schema.org_containsPlace .
+
+:District  rdf:type  rdfs:Class , sh:NodeShape ;
+        sh:property  :District-districtCode .
+
+schema:GeoCoordinates-https___schema.org_address
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:address .
+
+sosa:Observation-http___www.w3.org_ns_sosa_madeBySensor
+        rdf:type  sh:PropertyShape ;
+        sh:class  sosa:Sensor ;
+        sh:path   sosa:madeBySensor .
+
+schema:StructuredValue
+        rdf:type     rdfs:Class , sh:NodeShape ;
+        sh:property  schema:StructuredValue-https___schema.org_value .
+
+schema:Accommodation  rdf:type  sh:NodeShape , rdfs:Class ;
+        sh:property  schema:Accommodation-rentPriceByRoom , schema:Accommodation-rentPrice , schema:Accommodation-rentPriceBySq , schema:Accommodation-https___schema.org_floorSize .
+
+schema:GeoCoordinates
+        rdf:type     rdfs:Class , sh:NodeShape ;
+        sh:property  schema:GeoCoordinates-https___schema.org_postalCode , schema:GeoCoordinates-https___schema.org_latitude , schema:GeoCoordinates-https___schema.org_address , schema:GeoCoordinates-https___schema.org_longitude .
+
+schema:Apartment  rdf:type  rdfs:Class , sh:NodeShape ;
+        sh:property  schema:Apartment-https___schema.org_numberOfRooms .
+
+schema:Accommodation-rentPriceByRoom
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:MonetaryAmount ;
+        sh:path   :rentPriceByRoom .
+
+sosa:Observation-http___www.w3.org_ns_sosa_hasResult
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:QuantitativeValue ;
+        sh:path   sosa:hasResult .
+
+sosa:Sensor-http___www.w3.org_ns_sosa_isHostedBy
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:Place ;
+        sh:path   sosa:isHostedBy .
+
+schema:Place-energyCertificate
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      :energyCertificate .
+
+schema:Place-buildingUsage
+        rdf:type  sh:PropertyShape ;
+        sh:class  :BuildingUsage ;
+        sh:path   :buildingUsage .
+
+schema:Accommodation-https___schema.org_floorSize
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:QuantitativeValue ;
+        sh:path   schema:floorSize .
+
+:District-districtCode
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:path      :districtCode .
+
+sosa:Sensor  rdf:type  rdfs:Class , sh:NodeShape ;
+        sh:property  sosa:Sensor-http___www.w3.org_ns_sosa_madeObservation , sosa:Sensor-http___www.w3.org_ns_sosa_isHostedBy , sosa:Sensor-hasSensorType .
+
+schema:QuantitativeValue-https___schema.org_unitCode
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:unitCode .
+
+:Neighborhood  rdf:type  sh:NodeShape , rdfs:Class ;
+        sh:property  :Neighborhood-neighborhoodCode .
+
+sosa:Sensor-hasSensorType
+        rdf:type  sh:PropertyShape ;
+        sh:class  :SensorType ;
+        sh:path   :hasSensorType .
+
+schema:Place-hasEnergyClass
+        rdf:type  sh:PropertyShape ;
+        sh:class  :EnergyClass ;
+        sh:path   :hasEnergyClass .
+
+schema:QuantitativeValue-https___schema.org_unitText
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:unitText .
+
+schema:Apartment-https___schema.org_numberOfRooms
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:path      schema:numberOfRooms .
+
+schema:MonetaryAmount-https___schema.org_currency
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:currency .
+
+sosa:Observation-http___www.w3.org_ns_sosa_resultTime
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:dateTime ;
+        sh:path      sosa:resultTime .
+
+schema:GeoCoordinates-https___schema.org_latitude
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:latitude .
+
+schema:Place-https___schema.org_containsPlace
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:Place ;
+        sh:path   schema:containsPlace .
+
+schema:Place-https___schema.org_geoContains
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:Place ;
+        sh:path   schema:geoContains .
+
+sosa:Sensor-http___www.w3.org_ns_sosa_madeObservation
+        rdf:type  sh:PropertyShape ;
+        sh:class  sosa:Observation ;
+        sh:path   sosa:madeObservation .
+
+schema:QuantitativeValue
+        rdf:type     sh:NodeShape , rdfs:Class ;
+        sh:property  schema:QuantitativeValue-https___schema.org_unitCode , schema:QuantitativeValue-https___schema.org_unitText .
+
+schema:MonetaryAmount
+        rdf:type     rdfs:Class , sh:NodeShape ;
+        sh:property  schema:MonetaryAmount-https___schema.org_currency .
+
+:Neighborhood-neighborhoodCode
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:integer ;
+        sh:path      :neighborhoodCode .
+
+sosa:Observation  rdf:type  sh:NodeShape , rdfs:Class ;
+        sh:property  sosa:Observation-http___www.w3.org_ns_sosa_madeBySensor , sosa:Observation-http___www.w3.org_ns_sosa_resultTime , sosa:Observation-http___www.w3.org_ns_sosa_hasResult .
+
+schema:Accommodation-rentPrice
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:MonetaryAmount ;
+        sh:path   :rentPrice .
+
+schema:Accommodation-rentPriceBySq
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:MonetaryAmount ;
+        sh:path   :rentPriceBySq .
+
+schema:StructuredValue-https___schema.org_value
+        rdf:type  sh:PropertyShape ;
+        sh:path   schema:value .
+
+schema:Place-http___www.w3.org_ns_sosa_hosts
+        rdf:type  sh:PropertyShape ;
+        sh:class  sosa:Sensor ;
+        sh:path   sosa:hosts .
+
+schema:Place-https___schema.org_containedInPlace
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:Place ;
+        sh:path   schema:containedInPlace .
+
+schema:Place-https___schema.org_geo
+        rdf:type  sh:PropertyShape ;
+        sh:class  schema:GeoCoordinates ;
+        sh:path   schema:geo .
+
+schema:GeoCoordinates-https___schema.org_longitude
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:longitude .
+
+schema:GeoCoordinates-https___schema.org_postalCode
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:path      schema:postalCode .

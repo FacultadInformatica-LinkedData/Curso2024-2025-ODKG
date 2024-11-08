@@ -1,0 +1,307 @@
+@prefix : <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix schema: <https://schema.org/> .
+@prefix resource: <http://www.semanticweb.org/resource/> .
+@base <http://www.semanticweb.org/ontology/SmartBarrioMadrid#> .
+
+<http://www.semanticweb.org/ontology/SmartBarrioMadrid> rdf:type owl:Ontology ;
+                                                         owl:versionIRI <http://www.semanticweb.org/ontology/SmartBarrioMadrid/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#buildingUsage
+:buildingUsage rdf:type owl:ObjectProperty ;
+               rdfs:domain schema:Place ;
+               rdfs:range :BuildingUsage .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#hasEnergyClass
+:hasEnergyClass rdf:type owl:ObjectProperty ;
+                rdfs:domain schema:Place ;
+                rdfs:range :EnergyClass .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#hasSensorType
+:hasSensorType rdf:type owl:ObjectProperty ;
+               rdfs:domain sosa:Sensor ;
+               rdfs:range :SensorType .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#rentPrice
+:rentPrice rdf:type owl:ObjectProperty ;
+           rdfs:domain schema:Accommodation ;
+           rdfs:range schema:MonetaryAmount .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#rentPriceByRoom
+:rentPriceByRoom rdf:type owl:ObjectProperty ;
+                 rdfs:domain schema:Accommodation ;
+                 rdfs:range schema:MonetaryAmount .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#rentPriceBySq
+:rentPriceBySq rdf:type owl:ObjectProperty ;
+               rdfs:domain schema:Accommodation ;
+               rdfs:range schema:MonetaryAmount .
+
+
+###  http://www.w3.org/ns/sosa/hasResult
+sosa:hasResult rdf:type owl:ObjectProperty ;
+               rdfs:domain sosa:Observation ;
+               rdfs:range schema:QuantitativeValue .
+
+
+###  http://www.w3.org/ns/sosa/hosts
+sosa:hosts rdf:type owl:ObjectProperty ;
+           owl:inverseOf sosa:isHostedBy ;
+           rdfs:domain schema:Place ;
+           rdfs:range sosa:Sensor .
+
+
+###  http://www.w3.org/ns/sosa/isHostedBy
+sosa:isHostedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain sosa:Sensor ;
+                rdfs:range schema:Place .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+sosa:madeBySensor rdf:type owl:ObjectProperty ;
+                  owl:inverseOf sosa:madeObservation ;
+                  rdfs:domain sosa:Observation ;
+                  rdfs:range sosa:Sensor .
+
+
+###  http://www.w3.org/ns/sosa/madeObservation
+sosa:madeObservation rdf:type owl:ObjectProperty ;
+                     rdfs:domain sosa:Sensor ;
+                     rdfs:range sosa:Observation .
+
+
+###  https://schema.org/containedInPlace
+schema:containedInPlace rdf:type owl:ObjectProperty ;
+                        owl:inverseOf schema:containsPlace ;
+                        rdfs:domain schema:Place ;
+                        rdfs:range schema:Place .
+
+
+###  https://schema.org/containsPlace
+schema:containsPlace rdf:type owl:ObjectProperty ;
+                     rdfs:domain schema:Place ;
+                     rdfs:range schema:Place .
+
+
+###  https://schema.org/floorSize
+schema:floorSize rdf:type owl:ObjectProperty ;
+                 rdfs:domain schema:Accommodation ;
+                 rdfs:range schema:QuantitativeValue .
+
+
+###  https://schema.org/geo
+schema:geo rdf:type owl:ObjectProperty ;
+           rdfs:domain schema:Place ;
+           rdfs:range schema:GeoCoordinates .
+
+
+###  https://schema.org/geoContains
+schema:geoContains rdf:type owl:ObjectProperty ;
+                   rdfs:domain schema:Place ;
+                   rdfs:range schema:Place .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#districtCode
+:districtCode rdf:type owl:DatatypeProperty ;
+              rdfs:domain :District ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#energyCertificate
+:energyCertificate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain schema:Place ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#neighborhoodCode
+:neighborhoodCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Neighborhood ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.w3.org/ns/sosa/resultTime
+sosa:resultTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain sosa:Observation ;
+                rdfs:range xsd:dateTime .
+
+
+###  https://schema.org/address
+schema:address rdf:type owl:DatatypeProperty ;
+               rdfs:domain schema:GeoCoordinates ;
+               rdfs:range xsd:string .
+
+
+###  https://schema.org/currency
+schema:currency rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:MonetaryAmount ;
+                rdfs:range xsd:string .
+
+
+###  https://schema.org/latitude
+schema:latitude rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:GeoCoordinates ;
+                rdfs:range xsd:string .
+
+
+###  https://schema.org/longitude
+schema:longitude rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:GeoCoordinates ;
+                 rdfs:range xsd:string .
+
+
+###  https://schema.org/numberOfRooms
+schema:numberOfRooms rdf:type owl:DatatypeProperty ;
+                     rdfs:domain schema:Apartment ;
+                     rdfs:range xsd:integer .
+
+
+###  https://schema.org/postalCode
+schema:postalCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain schema:GeoCoordinates ;
+                  rdfs:range xsd:string .
+
+
+###  https://schema.org/unitCode
+schema:unitCode rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:QuantitativeValue ;
+                rdfs:range xsd:string .
+
+
+###  https://schema.org/unitText
+schema:unitText rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:QuantitativeValue ;
+                rdfs:range xsd:string .
+
+
+###  https://schema.org/value
+schema:value rdf:type owl:DatatypeProperty ;
+             rdfs:domain schema:StructuredValue ;
+             rdfs:range xsd:float .
+
+rdfs:label rdf:type owl:DatatypeProperty ;
+            rdfs:domain :District;
+            rdfs:domain :Neighborhood ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#BuildingUsage
+:BuildingUsage rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#District
+:District rdf:type owl:Class ;
+          rdfs:subClassOf schema:AdministrativeArea .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#EnergyClass
+:EnergyClass rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#Neighborhood
+:Neighborhood rdf:type owl:Class ;
+              rdfs:subClassOf schema:AdministrativeArea .
+
+
+###  http://www.semanticweb.org/ontology/SmartBarrioMadrid#SensorType
+:SensorType rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Observation
+sosa:Observation rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+sosa:Sensor rdf:type owl:Class .
+
+
+###  https://schema.org/Accommodation
+schema:Accommodation rdf:type owl:Class ;
+                     rdfs:subClassOf schema:Place .
+
+
+###  https://schema.org/AdministrativeArea
+schema:AdministrativeArea rdf:type owl:Class ;
+                          rdfs:subClassOf schema:Place .
+
+
+###  https://schema.org/Apartment
+schema:Apartment rdf:type owl:Class ;
+                 rdfs:subClassOf schema:Accommodation .
+
+
+###  https://schema.org/City
+schema:City rdf:type owl:Class ;
+            rdfs:subClassOf schema:AdministrativeArea .
+
+
+###  https://schema.org/CivicStructure
+schema:CivicStructure rdf:type owl:Class ;
+                      rdfs:subClassOf schema:Place .
+
+
+###  https://schema.org/GeoCoordinates
+schema:GeoCoordinates rdf:type owl:Class ;
+                      rdfs:subClassOf schema:StructuredValue .
+
+
+###  https://schema.org/House
+schema:House rdf:type owl:Class ;
+             rdfs:subClassOf schema:Accommodation .
+
+
+###  https://schema.org/Intangible
+schema:Intangible rdf:type owl:Class .
+
+
+###  https://schema.org/MonetaryAmount
+schema:MonetaryAmount rdf:type owl:Class ;
+                      rdfs:subClassOf schema:StructuredValue .
+
+
+###  https://schema.org/Place
+schema:Place rdf:type owl:Class .
+
+
+###  https://schema.org/QuantitativeValue
+schema:QuantitativeValue rdf:type owl:Class ;
+                         rdfs:subClassOf schema:StructuredValue .
+
+
+###  https://schema.org/StructuredValue
+schema:StructuredValue rdf:type owl:Class ;
+                       rdfs:subClassOf schema:Intangible .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/resource/City/Madrid
+<http://www.semanticweb.org/resource/City/Madrid> rdf:type owl:NamedIndividual ,
+                                                           schema:City .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

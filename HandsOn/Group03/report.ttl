@@ -1,0 +1,12 @@
+{
+  "head": {
+    "vars": [
+      "subject",
+      "predicate",
+      "object"
+    ]
+  },
+  "results": {
+    "bindings": []
+  }
+}
