@@ -1,0 +1,191 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://accidentes.madrid.es/> .
+@base <http://accidentes.madrid.es/> .
+
+<#TriplesMap_Accidente> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/example/2024-accidentalidad-processed-id-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://accidentes.madrid.es/Accidente/{num_expediente}";
+    rr:class :Accidente
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :numExpediente;
+    rr:objectMap [
+      rml:reference "num_expediente"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :fechaHora;
+    rr:objectMap [
+      rml:reference "fecha_hora";
+      rr:datatype xsd:dateTimeStamp
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :estadoMeteorologico;
+    rr:objectMap [
+      rml:reference "estado_meteorologico"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :tieneLocalizacion;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap_Localizacion>
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :tieneParticipante;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap_Participante>
+    ]
+  ] .
+
+<#TriplesMap_Localizacion> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/example/2024-accidentalidad-processed-id-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://accidentes.madrid.es/Localizacion/{coordenada_x_utm}_{coordenada_y_utm}";
+    rr:class :Localizacion
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :coordenadaXUtm;
+    rr:objectMap [
+      rml:reference "coordenada_x_utm";
+      rr:datatype xsd:float
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :coordenadaYUtm;
+    rr:objectMap [
+      rml:reference "coordenada_y_utm";
+      rr:datatype xsd:float
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :tieneDistrito;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap_Distrito>
+    ]
+  ] .
+
+<#TriplesMap_Distrito> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/example/2024-accidentalidad-processed-id-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://accidentes.madrid.es/Distrito/{cod_distrito}";
+    rr:class :Distrito
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :codDistrito;
+    rr:objectMap [
+      rml:reference "cod_distrito";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :sameAsWikidataDistrito;
+    rr:objectMap [
+      rml:reference "same_as_wikidata_distrito";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :distrito;
+    rr:objectMap [
+      rml:reference "distrito"
+    ]
+  ] .
+
+<#TriplesMap_Participante> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/example/2024-accidentalidad-processed-id-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://accidentes.madrid.es/Participante/{num_expediente}_{num_participante}";
+    rr:class :Participante
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :numParticipante;
+    rr:objectMap [
+      rml:reference "num_participante";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :tipoVehiculo;
+    rr:objectMap [
+      rml:reference "tipo_vehiculo"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :positivaAlcohol;
+    rr:objectMap [
+      rml:reference "positiva_alcohol";
+      rr:datatype xsd:boolean
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :positivaDroga;
+    rr:objectMap [
+      rml:reference "positiva_droga";
+      rr:datatype xsd:boolean
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :tieneLesividad;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap_Lesividad>
+    ]
+  ] .
+
+<#TriplesMap_Lesividad> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/example/2024-accidentalidad-processed-id-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://accidentes.madrid.es/Lesividad/{cod_lesividad}";
+    rr:class :Lesividad
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :codLesividad;
+    rr:objectMap [
+      rml:reference "cod_lesividad";
+      rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate :lesividad;
+    rr:objectMap [
+      rml:reference "lesividad"
+    ]
+  ] .

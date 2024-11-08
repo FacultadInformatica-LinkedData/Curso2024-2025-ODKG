@@ -184,21 +184,38 @@
                 <li><strong>Lugar:</strong> Madrid</li>
 				<li><strong>Creative Commons (CC) license :</strong> CC BY 4.0</li>
                 <li><strong>Licencia:</strong> <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">View License</a></li>
+				<li><strong>Our generated dataset's Creative Commons (CC) license :</strong> CC BY 4.0</li>
             </ul>
         </section>
         <section class="naming-strategy">
             <h2>Resource Naming Strategy</h2>
             <p><strong>Domain:</strong></p>
-            <p> <span style="color: #0073e6;">http://accidents.madrid.es/</span></p>
+            <p> <span style="color: #0073e6;">http://accidentes.madrid.es/</span></p>
 			<p><strong>Ontology:</strong></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology</span></p>
-			<p><strong>Classes:</strong></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology/Accidente</span></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology/Localizacion</span></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology/Distrito</span></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology/Participante</span></p>
-			<p> <span style="color: #0073e6;">http://accidents.madrid.es/ontology/Lesividad</span></p>
-			                
+			<p> <span style="color: #0073e6;">http://accidentes.madrid.es/ontology</span></p>
+			<p><strong>Classes and Identifiers:</strong></p>
+			<ul>
+            <li><strong>Accidents:</strong> <code>http://accidentes.madrid.es/Accidente/{num_expediente}</code></li>
+            <li><strong>Locations:</strong> <code>http://accidentes.madrid.es/Localizacion/{coordenada_x_utm}_{coordenada_y_utm}</code></li>
+            <li><strong>Districts:</strong> <code>http://accidentes.madrid.es/Distrito/{cod_distrito}</code></li>
+            <li><strong>Participants:</strong> <code>http://accidentes.madrid.es/Participante/{num_expediente}_{numParticipante}</code></li>
+            <li><strong>Injury Severity (Lesividad):</strong> <code>http://accidentes.madrid.es/Lesividad/{cod_lesividad}</code></li>
+        </ul>
+		<p><strong>Object Properties:</strong></p>
+        <ul>
+            <li><strong>tieneLocalizacion:</strong> Links accident to location.</li>
+            <li><strong>tieneDistrito:</strong> Links location to district.</li>
+            <li><strong>tieneParticipante:</strong> Links accident to participant.</li>
+            <li><strong>tieneLesividad:</strong> Links participant to injury severity.</li>
+        </ul>     
+		<p><strong>Example:</strong></p>
+        <ul>
+            <li><strong>Accident:</strong> <code>http://accidentes.madrid.es/Accidente/2024S000001</code></li>
+            <li><strong>Location:</strong> <code>http://accidentes.madrid.es/Localizacion/443926.583_4473998.426</code></li>
+            <li><strong>District:</strong> <code>http://accidentes.madrid.es/Distrito/3</code></li>
+            <li><strong>Participant:</strong> <code>http://accidentes.madrid.es/Participante/2024S000001_1</code></li>
+            <li><strong>Injury Severity:</strong> <code>http://accidentes.madrid.es/Lesividad/14</code></li>
+        </ul>
         </section>
         
     </div>
