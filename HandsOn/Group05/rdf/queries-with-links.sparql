@@ -1,7 +1,7 @@
 #Query 01: Get all observations of a specific contaminant within a time range
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT ?observation ?variableMeasured ?datetime
 WHERE {
 	?observation schema:variableMeasured "NO2" ;
@@ -14,7 +14,7 @@ WHERE {
 #Query 02: Get all observations after a specific date
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT ?observation ?variableMeasured ?datetime
 WHERE {
         ?observation schema:variableMeasured ?variableMeasured ;
@@ -25,7 +25,7 @@ WHERE {
 #Query 03: Obtaining observation's most recent hour and date of a specific contaminant
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT ?observation ?datetime
 WHERE {
 	?observation schema:variableMeasured "NO2" ;
@@ -38,7 +38,7 @@ LIMIT 1
 #Query 04: Get all observations which values are higher than 10 of contaminant NO2
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT ?observation ?value ?datetime
 WHERE {
 		?observation schema:variableMeasured "NO2" ;
@@ -52,17 +52,17 @@ WHERE {
 #Query 05: Get all observations of Iowa's street
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT ?observation ?place
 WHERE {
   ?observation schema:observationAbout ?place .
 
-    FILTER (?place = "http://riversidepollutionstudy.org/ontology/Place/33.975674_-117.339872")
+    FILTER (?place = "http://riversidepollutionstudy.org/Place/33.975674_-117.339872")
 }
 
 # Query 06: Get all observation dates for humidity
 PREFIX schema: <https://schema.org/>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?value ?datetime
 WHERE {
@@ -76,7 +76,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX wd: <https://www.wikidata.org/wiki/>
-PREFIX rps: <http://riversidepollutionstudy.org/ontology/>
+PREFIX rps: <http://riversidepollutionstudy.org/>
 SELECT  ?place ?city WHERE { 
     ?place schema:containedInPlace ?city ;
         owl:sameAs <https://www.wikidata.org/wiki/Q49243> .

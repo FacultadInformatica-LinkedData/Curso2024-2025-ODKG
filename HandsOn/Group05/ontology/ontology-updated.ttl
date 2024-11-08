@@ -1,0 +1,225 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/TR/prov-o/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rps: <http://riversidepollutionstudy.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix wdp: <http://www.wikidata.org/wiki/Property#> .
+@prefix wdp: <http://www.wikidata.org/wiki/Property#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+rps: a owl:Ontology ;
+    dc:creator "Dakota Mellish" ;
+    dc:title "RiversidePollutionStudyOntology" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+rps:hasHousingUnitCount a owl:DatatypeProperty ;
+    rdfs:label "has housing unit count" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:integer .
+
+rps:hasPercentPersonObesity a owl:DatatypeProperty ;
+    rdfs:label "has percent person obesity" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:float .
+
+rps:hasPercentPersonPhysicalInactivity a owl:DatatypeProperty ;
+    rdfs:label "has percent person physical inactivity" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:float .
+
+rps:hasPercentPersonWithHighBloodPressure a owl:DatatypeProperty ;
+    rdfs:label "has percent person with high blood pressure" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:float .
+
+rps:hasPercentPersonWithHighCholesterol a owl:DatatypeProperty ;
+    rdfs:label "has percent person with high cholesterol" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:float .
+
+rps:hasPersonBelowPovertyLevelLastTwelveMonthCount a owl:DatatypeProperty ;
+    rdfs:label "has person below poverty level last twelve month count" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:integer .
+
+rps:hasPersonMedianIncome a owl:DatatypeProperty ;
+    rdfs:label "has person median income" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:integer .
+
+rps:hasPopulationCount a owl:DatatypeProperty ;
+    rdfs:label "has population count" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:integer .
+
+schema:about a owl:DatatypeProperty ;
+    rdfs:label "about" ;
+    rdfs:domain schema:Article,
+        schema:Dataset ;
+    rdfs:range xsd:string .
+
+schema:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:domain schema:Place ;
+    rdfs:range schema:PostalAddress .
+
+schema:author a owl:DatatypeProperty ;
+    rdfs:label "author" ;
+    rdfs:domain schema:ScholarlyArticle ;
+    rdfs:range xsd:string .
+
+schema:containedInPlace a owl:ObjectProperty ;
+    rdfs:label "contained in place" ;
+    rdfs:domain schema:Place ;
+    rdfs:range schema:City .
+
+schema:datePublished a owl:DatatypeProperty ;
+    rdfs:label "date published" ;
+    rdfs:domain schema:ScholarlyArticle ;
+    rdfs:range xsd:date .
+
+rps:hasDocumentation a owl:ObjectProperty ;
+    rdfs:label "has part" ;
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:Article .
+
+schema:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range schema:Dataset .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude" ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:double .
+
+schema:observationAbout a owl:ObjectProperty ;
+    rdfs:label "observation about" ;
+    rdfs:range schema:Place .
+
+schema:observationDateTime a owl:DatatypeProperty ;
+    rdfs:label "observation date time" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range xsd:dateTime .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:unitText a owl:DatatypeProperty ;
+    rdfs:label "unit text" ;
+    rdfs:domain schema:Observation .
+
+schema:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
+    rdfs:domain schema:Observation .
+
+schema:variableMeasured a owl:DatatypeProperty ;
+    rdfs:label "variable measured" ;
+    rdfs:domain schema:Observation ;
+    rdfs:range xsd:string .
+
+rdfs:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:domain schema:Article,
+        schema:City,
+        schema:Dataset,
+        schema:Place,
+        schema:PostalAddress,
+        schema:ScholarlyArticle,
+        wd:Q1093829,
+        wd:Q13212489 ;
+    rdfs:range xsd:string .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+prov:wasDerivedFrom a owl:ObjectProperty ;
+    rdfs:label "was derived from" ;
+    rdfs:domain schema:Dataset ;
+    rdfs:range schema:ScholarlyArticle .
+
+wdp:P1082 a owl:DatatypeProperty ;
+    rdfs:label "p1082" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:integer .
+
+wdp:P2044 a owl:DatatypeProperty ;
+    rdfs:label "p2044" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:integer .
+
+wdp:P281 a owl:DatatypeProperty ;
+    rdfs:label "p281" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:integer .
+
+wdp:P31 a owl:DatatypeProperty ;
+    rdfs:label "p31" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:string .
+
+wdp:P361 a owl:DatatypeProperty ;
+    rdfs:label "p361" ;
+    rdfs:domain wd:Q13212489 ;
+    rdfs:range xsd:string .
+
+wdp:P473 a owl:DatatypeProperty ;
+    rdfs:label "p473" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:integer .
+
+wdp:P571 a owl:DatatypeProperty ;
+    rdfs:label "p571" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:date .
+
+wdp:P6 a owl:DatatypeProperty ;
+    rdfs:label "p6" ;
+    rdfs:domain wd:Q1093829,
+        wd:Q13212489 ;
+    rdfs:range xsd:string .
+
+wdp:P8138 a owl:ObjectProperty ;
+    rdfs:label "p8138" .
+
+wdp:P856 a owl:DatatypeProperty ;
+    rdfs:label "p856" ;
+    rdfs:domain wd:Q1093829 ;
+    rdfs:range xsd:string .
+
+schema:City a owl:Class ;
+    rdfs:label "City" .
+
+schema:Article a owl:Class ;
+    rdfs:label "Article" .
+
+wd:Q13212489 a owl:Class ;
+    rdfs:label "Q13212489" .
+
+schema:ScholarlyArticle a owl:Class ;
+    rdfs:label "Scholarly Article" .
+
+schema:Dataset a owl:Class ;
+    rdfs:label "Dataset" .
+
+schema:Observation a owl:Class ;
+    rdfs:label "Observation" .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
+
+wd:Q1093829 a owl:Class ;
+    rdfs:label "Q1093829" .
+
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postal Address" .
+
