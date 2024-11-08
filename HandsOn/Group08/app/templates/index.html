@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information of Madrid</title>
+    <style>
+        /* Basic styling for the mockup */
+        body { font-family: Arial, sans-serif; background-color: #e0d4d1; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+        .filters { display: flex; justify-content: space-around; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Information of Madrid</h1>
+        <form method="post">
+            <div class="filters">
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" value="{{ date }}">
+                </div>
+                <div>
+                    <label for="district">District:</label>
+                    <input type="text" id="district" name="district" value="{{ district }}">
+                </div>
+            </div>
+            <button type="submit">Filter</button>
+        </form>
+        <iframe src="/static/map.html" width="100%" height="600px"></iframe>
+    </div>
+</body>
+</html>
