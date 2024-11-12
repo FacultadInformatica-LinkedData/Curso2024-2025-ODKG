@@ -7,7 +7,6 @@
 @prefix schema: <http://schema.org/> .
 @prefix wd:  <http://www.wikidata.org/entity/> .
 @prefix wdp: <http://www.wikidata.org/wiki/Property#> .
-@prefix wdp: <http://www.wikidata.org/wiki/Property#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dc:creator a owl:AnnotationProperty .
