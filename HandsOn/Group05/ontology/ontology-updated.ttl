@@ -6,11 +6,7 @@
 @prefix rps: <http://riversidepollutionstudy.org/> .
 @prefix schema: <http://schema.org/> .
 @prefix wd:  <http://www.wikidata.org/entity/> .
-<<<<<<< Updated upstream
 @prefix wdp: <http://www.wikidata.org/wiki/Property#> .
-=======
-@prefix wdp: <http://www.wikidata.org/wiki/Property#> . 
->>>>>>> Stashed changes
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dc:creator a owl:AnnotationProperty .
