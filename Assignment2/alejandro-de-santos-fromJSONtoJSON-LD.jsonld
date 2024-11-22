@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "ex": "http://example.org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "ex:alejandro-de-santos",
+      "@type": "ex:Person",
+      "ex:fullName": {
+        "@value": "Alejandro De Santos Otero",
+        "@type": "xsd:string"
+      },
+      "ex:hometown": {
+        "@value": "Segovia",
+        "@type": "xsd:string"
+      },
+      "ex:age": {
+        "@value": 22,
+        "@type": "xsd:integer"
+      },
+      "ex:almamater": {
+        "@value": "UC3M",
+        "@type": "xsd:string"
+      },
+      "ex:parents": {
+        "ex:father": {
+          "@value": "Jesus",
+          "@type": "xsd:string"
+        },
+        "ex:mother": {
+          "@value": "Fuencisla",
+          "@type": "xsd:string"
+        }
+      },
+      "ex:subjects": [
+        {
+          "@id": "ex:DataProcesses",
+          "@type": "ex:Subject",
+          "ex:name": "Data Processes",
+          "ex:teacher": "Alejandro Rodriguez",
+          "ex:description": "Focuses on the methods and techniques used to manage, process, and manipulate data throughout its lifecycle"
+        },
+        {
+          "@id": "ex:DataVisualization",
+          "@type": "ex:Subject",
+          "ex:name": "Data Visualization",
+          "ex:teacher": "Jorge Acosta",
+          "ex:description": "Focus on the tool and principles used to represent complex datasets visually"
+        },
+        {
+          "@id": "ex:StatisticalDataAnalysis",
+          "@type": "ex:Subject",
+          "ex:name": "Statistical Data Analysis",
+          "ex:teacher": "Victor Rodriguez",
+          "ex:description": "Provides an in-depth exploration of statistical techniques and their application in analyzing real-world datasets"
+        },
+        {
+          "@id": "ex:IntelligentSystems",
+          "@type": "ex:Subject",
+          "ex:name": "Intelligent Systems",
+          "ex:teacher": "Daniel Manrique",
+          "ex:description": "Explores the design, implementation, and application of advanced algorithms and models that enable machines to exhibit intelligent behavior"
+        },
+        {
+          "@id": "ex:CloudComputingandBigDataEcosystemsDesign",
+          "@type": "ex:Subject",
+          "ex:name": "Cloud Computing and Big Data Ecosystems Design",
+          "ex:teacher": "Ainhoa Azqueta",
+          "ex:description": "Explores the architecture, design, and implementation of scalable systems for handling and analyzing vast amounts of data using cloud-based infrastructure"
+        },
+        {
+          "@id": "ex:MachineLearning",
+          "@type": "ex:Subject",
+          "ex:name": "Machine Learning",
+          "ex:teacher": "Pedro Larranaga",
+          "ex:description": "Offers a comprehensive study of algorithms and statistical models that enable systems to automatically learn from and make decisions based on data"
+        }
+      ]
+    }
+  ]
+}
