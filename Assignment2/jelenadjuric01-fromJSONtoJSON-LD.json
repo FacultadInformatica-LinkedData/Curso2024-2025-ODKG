@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "subjects": "http://schema.org/Course",
+    "teachers": "http://schema.org/Person",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "name": "Jelena Duric",
+  "hometown": {
+    "@type": "Place",
+    "name": "Bor"
+  },
+  "age": 22,
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "UB"
+  },
+  "parent": [
+    {
+      "@type": "Person",
+      "name": "Desimir",
+      "parentType": "Father"
+    },
+    {
+      "@type": "Person",
+      "name": "Gordana",
+      "parentType": "Mother"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "Open data and Knowledge graphs",
+      "description": "During this course you will learn about the main foundations for Knowledge Graphs, including the W3C recommendations that are applicable in this area (RDF, RDF Schema, SPARQL, OWL, CSV on the Web) and methodologies for the generation and publication of Knowledge Graphs from multiple heterogeneous data sources and formats, using Linked Data technologies.",
+      "teachers": [
+        {
+          "@type": "Person",
+          "name": "Oscar Corcho Garcia"
+        },
+        {
+          "@type": "Person",
+          "name": "Raul Garcia Castro"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Data visualization",
+      "description": "This course will allow the student to gain the fundamentals for the visualization of all kinds of information. With an eminently practical approach, the technologies and fundamentals necessary to create successful information visualization tools will be presented.",
+      "teachers": [
+        {
+          "@type": "Person",
+          "name": "Jorge Acosta Hernandez"
+        },
+        {
+          "@type": "Person",
+          "name": "Pablo Toharia Rabasco"
+        },
+        {
+          "@type": "Person",
+          "name": "Antonio Latorre De La Fuente"
+        }
+      ]
+    }
+  ]
+}
