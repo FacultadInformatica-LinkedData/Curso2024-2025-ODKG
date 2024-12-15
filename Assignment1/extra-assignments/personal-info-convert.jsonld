@@ -1,0 +1,31 @@
+
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "schema:Person",
+  "schema:fullName": "Sheyla Leyva Sánchez",
+  "schema:hometown": "Havana",
+  "schema:age": {
+    "@value": 23,
+    "@type": "xsd:integer"
+  },
+  "schema:alumniOf": "Universidad de La Habana",
+  "schema:parents": {
+    "schema:father": "Ronaldo",
+    "schema:mother": "Mercedes"
+  },
+  "schema:studyCourses": [
+    {
+      "schema:name": "Open Data and Knowledge Graphs",
+      "schema:teacher": ["Oscar Corcho", "Daniel Garijo"],
+      "schema:description": "This subject covers the principles of open data and the creation, management, and querying of knowledge graphs."
+    },
+    {
+      "schema:name": "Machine Learning",
+      "schema:teacher": ["Pedro Larrañaga Múgica"],
+      "schema:description": "This subject introduces the fundamentals of machine learning, covering supervised and unsupervised learning."
+    }
+  ]
+}
